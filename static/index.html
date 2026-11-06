@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Assessment Desk · URL to document</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+  <header class="topbar"><a class="brand" href="/" aria-label="Assessment Desk home"><span class="brand-icon">a<span>·</span></span> assessment desk</a><span class="environment"><i></i> LOCAL WORKSPACE <span class="version">/ 01</span></span></header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">YOUR SOURCE, MADE READABLE</p><h1>From assessment link<br>to a useful document<span>.</span></h1><p class="subtitle">Bring questions, scoring and source evidence into one place.<br>Review what’s available. See what still needs attention.</p></div><div class="intro-note"><span class="note-number">01 — 03</span><p>Paste a source.<br>Review the details.<br>Keep the document.</p><span class="note-line"></span></div></div>
+    <div class="workspace">
+      <aside class="controls">
+        <form id="extract-form"><div class="step-title"><span>01</span><h2>Add your source</h2></div>
+          <label for="url">Assessment URL</label><textarea id="url" name="url" rows="4" required spellcheck="false" placeholder="https://provider.com/assessment"></textarea>
+          <button class="example" id="example" type="button">↗ Try NovoPsych GAD-7 live</button>
+          <label for="mode">Source mode</label><select id="mode"><option value="live">Live extraction · submitted source</option><option value="demo">Saved example · GAD-7 or PHQ-9</option></select>
+          <label><input type="checkbox" id="process-documents" checked> Include linked PDFs (up to 3)</label>
+          <label><input type="checkbox" id="render-browser" checked> Open page tabs with Playwright</label>
+          <p class="help">Paste a public assessment link. The browser reads available tabs and linked PDFs. Missing or inaccessible content is marked in the document.</p>
+          <button class="primary" id="submit" type="submit">Create assessment document <span>→</span></button>
+          <p id="progress" class="progress" role="status" aria-live="polite"></p>
+          <div id="error" class="error" role="alert" hidden></div>
+        </form>
+        <div class="included"><p class="eyebrow">WHAT YOU CAN REVIEW</p><ul><li><span>✓</span> Assessment information</li><li><span>✓</span> Questions & response options</li><li><span>✓</span> Scoring & interpretation</li><li><span>✓</span> Documents & source references</li><li><span>✓</span> Missing fields & permissions</li></ul><p>Coverage depends on the source. Unavailable information stays marked.</p></div>
+        <div class="source-note"><span class="small-icon">i</span><p>Exports include source references and extraction status. Review questionnaire wording and reuse rights before using it elsewhere.</p></div>
+      </aside>
+      <section class="preview-area" aria-label="Assessment preview">
+        <div class="preview-toolbar"><div class="step-title"><span>02</span><h2>Document preview</h2></div><span id="preview-state" class="pill">Ready for a source</span></div>
+        <div id="empty" class="empty"><div class="paper-icon"><span></span><span></span><span></span><span></span></div><p class="eyebrow">A CLEARER VIEW</p><h2>Your assessment,<br>all in one document.</h2><p>Extract a permitted live source,<br>or explore a clearly labelled saved example.</p><button type="button" id="try-example" class="text-button">Preview saved GAD-7 <span>→</span></button><div class="empty-bottom">READABLE PREVIEW <span>·</span> HTML DOCUMENT <span>·</span> JSON DATA</div></div>
+        <div id="results" hidden>
+          <div class="result-summary"><div><p id="result-label" class="eyebrow"></p><h2 id="result-name"></h2><p id="result-origin"></p></div><div class="stats"><div><strong id="question-count">0</strong><span>items</span></div><div><strong id="source-count">0</strong><span>sources</span></div><div><strong id="missing-count">0</strong><span>unavailable</span></div></div></div>
+          <div id="coverage" class="coverage"></div>
+          <div class="document-actions"><div class="tabs" role="tablist" aria-label="Preview format"><button id="document-tab" role="tab" aria-selected="true" aria-controls="document-pane">Document</button><button id="json-tab" role="tab" aria-selected="false" aria-controls="json-pane">JSON</button></div><div class="downloads"><button id="download-html" title="Download a self-contained HTML document">↓ Document</button><button id="download-json">↓ JSON</button><button id="print">Print / PDF</button></div></div>
+          <div id="document-pane" role="tabpanel" aria-labelledby="document-tab"><nav class="document-nav" aria-label="Document sections"><button data-section="overview">Overview</button><button data-section="questionnaire">Questions</button><button data-section="scoring">Scoring</button><button data-section="sources">Sources</button><button data-section="missing">Missing fields</button></nav><iframe id="document-frame" title="Extracted assessment document" sandbox="allow-same-origin allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe></div>
+          <pre id="json-pane" role="tabpanel" aria-labelledby="json-tab" hidden></pre>
+        </div>
+      </section>
+    </div>
+    <footer>ASSESSMENT DESK <span>Source review prototype · No API key required</span><span>Designed for review, with provenance.</span></footer>
+  </main>
+</body></html>
