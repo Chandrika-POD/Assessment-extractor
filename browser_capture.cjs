@@ -4,7 +4,10 @@ const path = require('node:path');
 const readline = require('node:readline');
 let chromium;
 try { ({ chromium } = require('playwright')); }
-catch { ({ chromium } = require('../assessment-database/node_modules/playwright')); }
+catch {
+  try { ({ chromium } = require('../assessment-database/node_modules/playwright')); }
+  catch { ({ chromium } = require(require('node:path').join(require('node:os').homedir(), 'POD/assessment-database/node_modules/playwright'))); }
+}
 const input = readline.createInterface({ input: process.stdin });
 const pending = new Map();
 let initialized = false, sequence = 0;

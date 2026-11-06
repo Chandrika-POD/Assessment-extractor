@@ -1,5 +1,10 @@
 // Optional browser QA using Playwright already installed in the sibling app.
-const { chromium } = require('../../assessment-database/node_modules/@playwright/test');
+let chromium;
+try { ({ chromium } = require('playwright')); }
+catch {
+  try { ({ chromium } = require('../../assessment-database/node_modules/playwright')); }
+  catch { ({ chromium } = require(require('node:path').join(require('node:os').homedir(), 'POD/assessment-database/node_modules/playwright'))); }
+}
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const assert = require('node:assert/strict');

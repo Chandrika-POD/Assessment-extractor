@@ -5,7 +5,7 @@ Paste a public assessment URL to create a visual document and JSON. Live extract
 ## Start
 
 ```bash
-cd /home/chandrikak/POD/assessment-url-preview
+cd /home/chandrikak/Pod_Dev/assessment-url-preview
 python3 server.py
 ```
 
@@ -24,7 +24,7 @@ Verified on 6 November 2026: all public tabs/accordions captured for the four ex
 ## Runtime requirements
 
 - Python 3.10+ and Node.js.
-- Playwright and its Chromium browser. This workspace reuses Playwright from `../assessment-database/node_modules/playwright` and the installed browser cache.
+- Playwright and its Chromium browser. A local installation takes priority; this workspace can also reuse Playwright from `~/POD/assessment-database/node_modules/playwright` (or `../assessment-database/node_modules/playwright` when located inside POD) and the installed browser cache.
 - To install independently: `npm install playwright`, then `npx playwright install chromium` in this folder.
 - Optional `CHROMIUM_EXECUTABLE` specifies an installed Chromium executable.
 - `pdftotext` (`poppler-utils` on Debian/Ubuntu) for text-based PDFs.
