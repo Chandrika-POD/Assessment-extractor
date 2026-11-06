@@ -1,4 +1,4 @@
-# Assessment URL Preview
+# Assessment-extractor
 
 Paste a public assessment URL to create a visual document and JSON. Live extraction uses Playwright to open page tabs and follows up to three linked PDFs. NovoPsych assessment links are supported without adding each assessment to a list.
 
