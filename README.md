@@ -79,3 +79,25 @@ python3 tests/live_novopsych.py
 ```
 
 These save HTML/JSON files for GAD-7, PHQ-9, DASS-21 and ASRS-O in `artifacts/`. Optional browser UI checks use `node tests/browser.cjs`; set `BASE_URL` for a non-default port and `CHROMIUM_EXECUTABLE` if needed. Artifacts are local and ignored by git.
+
+
+## Batch extraction
+
+The supplied 186-URL list is saved in `data/novopsych_assessment_urls.txt`.
+Run all URLs sequentially, saving a checkpoint after each source:
+
+```bash
+python3 batch_extract.py --input data/novopsych_assessment_urls.txt --output artifacts/batches/novopsych-20261106
+```
+
+Repeat the same command to resume interrupted/pending sources. Successfully saved artifacts are verified by checksum and skipped. Use `--retry-failed` to retry failed sources; use a new output folder for a fresh capture. `--limit 2` limits an invocation for a smoke test. A file lock prevents two processes from writing the same run. Distinct URLs with the same slug receive different source keys.
+
+Each URL has its own attempt folder containing `source_url.txt`, `extraction.json`, `document.html` and `status.json`. The batch creates `manifest.json`, `summary.csv`, `urls.txt` and an auto-refreshing `index.html`. Retrieval status is separate from coverage and review status: an extracted page can still have missing questions, failed tabs or unprocessed PDFs. Nothing is automatically approved for clinical use. Current extraction retains parsed source text and provenance, not original PDF/HTML binary snapshots.
+
+For local browser monitoring:
+
+```bash
+python3 -m http.server 4181 --bind 127.0.0.1 --directory artifacts
+```
+
+Open http://127.0.0.1:4181/batches/novopsych-20261106/index.html. If a batch is already running, inspect this page instead of launching another process against the same output folder.
