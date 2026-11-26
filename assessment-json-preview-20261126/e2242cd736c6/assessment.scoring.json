@@ -1,0 +1,143 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "pdf_1",
+   "label": "Total Score",
+   "method": "sum",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17"
+   ],
+   "multiplier": 1.0,
+   "value_field": "printed_value",
+   "minimum": 0.0,
+   "maximum": 34.0,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "page": 1,
+    "text": "Total Score (sum of all 17 items)",
+    "y": 660.0,
+    "url": null,
+    "sha256": "e117a9ac35efe5a3f4a8564e316dc2ec25d62ed2197b0b5db3ae2122e320e07f"
+   },
+   "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+  }
+ ],
+ "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+ "rules_provenance": null,
+ "source_rule_excerpts": [
+  "The PSC-17 results on NovoPsych use a three-tier descriptor framework, with a “Mild” band sitting between “Within typical range” and “Above clinical screening threshold”. The Mild range is anchored to an alternative empirically-derived cut-off reported by Stoppelbein and colleagues (2012), and is intended as a monitoring flag rather than a positive screen. Scores in this range fall below the primary clinical screening cut-off but may still be worth tracking across administrations, particularly if the score is rising over time, if other informants report similar concerns, or if contextual factors (e.g., recent stressors, transitions, or developmental shifts) might explain the elevation. A reliable increase from the typical range into the Mild range, or from the Mild range into the above-clinical-screening-threshold range, may warrant additional clinical attention even when the absolute score remains modest.",
+  "2. A clinically significant change is a reliable change that also crosses the primary clinical screening cut-off, indicating a change in risk status.",
+  "A reliable change that crosses the primary screening cut-off indicates a clinically significant transition and typically prompts more detailed clinical follow-up, regardless of whether the direction is improvement or deterioration. Sub-reliable changes (e.g., a 1-point drop on a subscale) are best interpreted with caution; they may reflect measurement variability rather than meaningful change.",
+  "The PSC-17 produces a raw Total score, three raw subscale scores, and corresponding cut-off classifications and percentiles. Higher scores indicate more parent-reported psychosocial concerns.",
+  "A three-tier descriptor framework is applied to the Total score and to each subscale. The descriptor bands are anchored to two empirically derived cut-offs per scale: the primary and widely used screening cut-off (Gardner et al.,1999), and a more sensitive cut-off (Stoppelbein et al., 2012). The alternative cut-off marks the lower bound of a “Mild” subthreshold band that flags scores worth monitoring without indicating a positive screen.",
+  "Above clinical screening threshold:",
+  "A score above the clinical screening threshold indicates that further psychosocial assessment is warranted. It does not indicate a diagnosis. A score in the Mild range is intended as a monitoring flag rather than a definitive interpretation. It falls below the primary screening threshold but may be worth tracking across administrations and potentially warrant clinical attention. A score within the typical range does not rule out clinical concerns; clinicians should integrate the PSC-17 result with other clinical information when making decisions about further assessment.",
+  "A community percentile is presented for the Total score and each subscale, expressing the respondent’s score relative to a non-clinical community sample of children attending routine paediatric appointments (Stoppelbein et al., 2012). A percentile of 50 represents a typical level of parent-reported psychosocial concerns; a percentile of 90 indicates that the child’s score is higher than 90% of the non-clinical community sample. Percentiles are presented as supporting context, with the cut-off classification serving as the primary interpretive framework.",
+  "Subscale-level interpretation indicates which domain of psychosocial concerns is most prominent in the parent’s report. An elevation (a score above the clinical screening threshold) on each subscale suggests that, per parent-report, the child is experiencing:",
+  "Co-occurrence across multiple subscales is common in childhood and is associated with greater overall psychosocial complexity than single-domain elevations. A subscale score in the Mild range falls below the primary screening threshold but warrants tracking across administrations: a reliable increase from typical to Mild, or from Mild to above the clinical screening threshold, may warrant additional clinical attention even when the absolute score remains modest.",
+  "2. Clinically significant change : A reliable change that also crosses a validated clinical cut-off in either direction (Gardner et al., 1999), indicating a change in risk status (i.e., a transition into or out of the screening-positive range). Crossings into or out of the Mild range are tracked as monitoring signals but do not constitute clinically significant change.",
+  "On a first administration of the PSC-17, four graphs are presented: one for the Total Score and one for each subscale (Internalising, Attention, Externalising) The Total Score graph is a vertical bar showing the score against the full 0 to 34 range. The background is divided into three coloured zones (Within typical range = white, Mild = grey, Above the clinical screening threshold = red), so the descriptor band the score falls in is visible at a glance. Beneath the Total Score, three horizontal subscale graphs are presented, each spanning the subscale’s range (Internalising 0 to 10, Attention 0 to 10, Externalising 0 to 14). A coloured band under each bar shows the same three descriptor zones. When two or more administrations are available, the single-administration graphs are replaced by trajectory graphs. These visualisations enable clinicians to track treatment progress, identify patterns of improvement or deterioration over time, and observe band transitions across administrations. The Total Score trajectory graph shows the Total score across administration dates, with the same three coloured zones shaded as the chart background. Subscale Trajectory panel with three stacked line graphs (Internalising, Attention, Externalising), each with its own y-axis matching the subscale’s score range and the same three shaded descriptor zones.",
+  "Criterion validity was established by Gardner and colleagues (1999) using receiver operating characteristic curves against the Iowa Connors Rating Scale (aggression and inattention-overactivity subscales) and the Screen for Child Anxiety Related Emotional Disorders (SCARED). The Total score showed strong agreement with a composite criterion (AUC = 0.88, sensitivity = 0.82, specificity = 0.81), and subscale agreement was similarly strong (Internalising AUC = 0.82, Attention AUC = 0.90, Externalising AUC = 0.87). Stoppelbein and colleagues (2012) provided independent criterion validation against the Child Behavior Checklist (CBCL) using a clinical-range threshold (T-score equal to or greater than 70). Receiver operating characteristic analyses produced high area-under-curve values across all subscales (Total AUC = 0.95, Internalising AUC = 0.88, Attention AUC = 0.91, Externalising AUC = 0.92).",
+  "These reliability values support reliable change indices (RCIs) that identify the smallest change in score unlikely to reflect measurement error alone. The Murphy and colleagues (2016) short-term ICC results in a Total RCI of 6 points, calculated using the Jacobson and Truax (1991) formula. At the subscale level, Kamin and colleagues (2015) established a 2-point RCI for the PSC Internalising subscale, and McCarthy and colleagues (2016) established a 2-point RCI for the PSC Attention subscale. Both studies administered the 35-item PSC, but the 5-item subscales they analysed are derived from Gardner and colleagues (1999) and are identical to the corresponding PSC-17 subscales, so these values transfer directly. Note: Neither paper derived an RCI for the Externalising subscale; the Massachusetts General Hospital PSC institutional page (Murphy & Jellinek, n.d.) extends the 2-point threshold to Externalising as the institutional default, which NovoPsych adopts pending future validation work specific to that subscale.",
+  "NovoPsych reports change as the raw score difference between the respondent’s initial (baseline) administration and the current administration, and applies the published reliable-change thresholds in the interpretive text. Two concepts are surfaced: (i) a reliable change is one whose magnitude exceeds the reliable-change threshold; and (ii) a clinically significant change is a reliable change that also crosses the clinical cut-off (Gardner et al., 1999), indicating a change in risk status.",
+  "The percentile rankings used in the report are derived from a non-clinical community sample of 322 children (aged 6-16) attending routine paediatric medical appointments, reported by Stoppelbein and colleagues (2012). Average raw scores in this sample are 6.74 for the Total score (SD = 5.62), 1.27 for Internalising (SD = 1.71), 2.67 for Attention (SD = 2.43), and 2.78 for Externalising (SD = 2.78).",
+  "The PSC-17 cut-off scores used by NovoPsych follow the original Gardner and colleagues (1999) recommendations: a Total score equal to or greater than 15, an Internalising score equal to or greater than 5, an Attention score equal to or greater than 7, and an Externalising score equal to or greater than 7 each indicate a positive screen warranting further assessment. These thresholds were derived from the receiver operating characteristic analyses (summarised in the Validity section above) and are widely adopted in the published PSC-17 literature, including the Murphy and colleagues (2016) replication in 80,680 children, which found that observed prevalence rates at these cut-offs were consistent with the rates observed in the original derivation sample.",
+  "An alternative set of receiver operating characteristic-derived cut-offs was reported by Stoppelbein and colleagues (2012) against the Child Behavior Checklist (T-score equal to or greater than 70) as the criterion (Total cut-off equal to or greater than 12, Internalising cut-off equal to or greater than 2, Attention cut-off equal to or greater than 5, Externalising cut-off equal to or greater than 6). These alternative cut-offs are more sensitive but less specific than the cut-offs proposed by Gardner et al. (1999) and were derived against a different criterion. NovoPsych retains the Gardner cut-offs as the primary interpretive framework, consistent with the broader literature and clinical convention.",
+  "Both threshold sets are integrated on NovoPsych under a three-tier descriptor framework. The Gardner cut-offs serve as the primary screening threshold, marking the boundary between the Mild and the above-clinical-screening-threshold ranges. The Stoppelbein cut-offs serve as the lower bound of the Mild range, flagging subthreshold scores worth clinical monitoring without meeting the threshold for a positive screen."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "PSC-17 Scoring & Interpretation",
+   "text": "The PSC-17 produces a raw Total score, three raw subscale scores, and corresponding cut-off classifications and percentiles. Higher scores indicate more parent-reported psychosocial concerns.\n",
+   "source_url": null
+  },
+  {
+   "title": "PSC-17 Scoring",
+   "text": "The Total score is calculated by summing all 17 items (range: 0-34). Subscale scores are calculated by summing the items belonging to each subscale.\n1. Internalising subscale (items 2, 6, 9, 11, 15; range: 0 to 10): assesses inner distress, including sadness, hopelessness, low self-worth, worry, and anhedonia\n2. Attention subscale (items 1, 3, 7, 13, 17; range: 0 to 10): assesses attentional difficulties, including motor restlessness, daydreaming, concentration problems, and distractibility\n3. Externalising subscale (items 4, 5, 8, 10, 12, 14, 16; range: 0 to 14): assesses outwardly directed behavioural difficulties, including fighting, not listening, not understanding others’ feelings, teasing, blaming, refusing to share, and taking others’ belongings\n\n",
+   "source_url": null
+  },
+  {
+   "title": "PSC-17 Percentile Context",
+   "text": "A community percentile is presented for the Total score and each subscale, expressing the respondent’s score relative to a non-clinical community sample of children attending routine paediatric appointments (Stoppelbein et al., 2012). A percentile of 50 represents a typical level of parent-reported psychosocial concerns; a percentile of 90 indicates that the child’s score is higher than 90% of the non-clinical community sample. Percentiles are presented as supporting context, with the cut-off classification serving as the primary interpretive framework.\n",
+   "source_url": null
+  },
+  {
+   "title": "PSC-17 Subscale Interpretation",
+   "text": "Subscale-level interpretation indicates which domain of psychosocial concerns is most prominent in the parent’s report. An elevation (a score above the clinical screening threshold) on each subscale suggests that, per parent-report, the child is experiencing:\n1. Internalising : Inner distress relevant to anxiety, low mood, hopelessness, low self-worth, or anhedonia. Elevated internalising symptoms in this age group commonly co-occur with depressive and anxiety conditions, family-environment stressors, peer difficulties, and bullying.\n2. Attention : Attentional and motor-activity concerns relevant to attention-deficit/hyperactivity disorder. The items do not distinguish between primary attention problems and attention difficulties secondary to other conditions; learning difficulties, anxiety, and sleep disturbance can produce overlapping presentations.\n3. Externalising : Difficulties consistent with conduct or oppositional concerns. Behavioural presentations in this age group commonly vary across settings (home, school, after-school care) and are often influenced by family-environment factors.\nCo-occurrence across multiple subscales is common in childhood and is associated with greater overall psychosocial complexity than single-domain elevations. A subscale score in the Mild range falls below the primary screening threshold but warrants tracking across administrations: a reliable increase from typical to Mild, or from Mild to above the clinical screening threshold, may warrant additional clinical attention even when the absolute score remains modest.\n",
+   "source_url": null
+  },
+  {
+   "title": "PSC-17 Change Score Interpretation",
+   "text": "When PSC-17 scores are available from multiple administrations, changes in scores can support progress monitoring during care. Change is reported as the raw score difference between the respondent’s baseline and the current administration, for the Total score and each subscale. The interpretive text indicates the direction and magnitude of change in plain language and applies the published PSC-17 reliable-change thresholds (Murphy et al., 2016, for the Total; Kamin et al., 2015 and McCarthy et al., 2016, for the subscales). NovoPsych reports two types of change:\n1. Reliable change : The change exceeds the reliable change index (RCI) (6 points for the Total, 2 points for each subscale), indicating that the change is unlikely to reflect measurement error alone.\n2. Clinically significant change : A reliable change that also crosses a validated clinical cut-off in either direction (Gardner et al., 1999), indicating a change in risk status (i.e., a transition into or out of the screening-positive range). Crossings into or out of the Mild range are tracked as monitoring signals but do not constitute clinically significant change.\n",
+   "source_url": null
+  },
+  {
+   "title": "How should I interpret a change in a child's PSC-17 score between administrations?",
+   "text": "Two concepts apply to interpreting change between administrations:\n1. A reliable change is one large enough to be unlikely to reflect measurement noise: 6 points or more on the Total, and 2 points or more on each subscale (Murphy et al., 2016; Kamin et al., 2015; McCarthy et al., 2016).\n2. A clinically significant change is a reliable change that also crosses the primary clinical screening cut-off, indicating a change in risk status.\nIn practice, a reliable change without a band shift (e.g., a Total score moving from 8 to 14, both within the typical and Mild ranges) suggests a meaningful change in symptoms worth discussing with the family but does not constitute a positive screen.\nA reliable change that crosses the primary screening cut-off indicates a clinically significant transition and typically prompts more detailed clinical follow-up, regardless of whether the direction is improvement or deterioration. Sub-reliable changes (e.g., a 1-point drop on a subscale) are best interpreted with caution; they may reflect measurement variability rather than meaningful change.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [
+  {
+   "page": 1,
+   "text": "Internalising (Items 2, 6, 9, 11, 15):",
+   "y": 584.2,
+   "url": null,
+   "sha256": "e117a9ac35efe5a3f4a8564e316dc2ec25d62ed2197b0b5db3ae2122e320e07f",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Attention (Items 1, 3, 7, 13, 17):",
+   "y": 606.0,
+   "url": null,
+   "sha256": "e117a9ac35efe5a3f4a8564e316dc2ec25d62ed2197b0b5db3ae2122e320e07f",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Externalising (Items 4, 5, 8, 10, 12, 14, 16):",
+   "y": 627.7,
+   "url": null,
+   "sha256": "e117a9ac35efe5a3f4a8564e316dc2ec25d62ed2197b0b5db3ae2122e320e07f",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  }
+ ],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+}

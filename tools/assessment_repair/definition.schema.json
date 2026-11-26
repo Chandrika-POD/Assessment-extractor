@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Assessment review draft, version 2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "assessment_id", "definition_version", "status", "cleaned_on", "assessment", "administration", "questionnaire", "scoring", "context_sections", "references", "tables", "assets", "conversation_policy", "review", "provenance", "rights"],
+  "properties": {
+    "schema_version": {"const": "2.0.0"},
+    "assessment_id": {"type": "string", "minLength": 1},
+    "definition_version": {"const": "1.0.0-draft.2"},
+    "status": {"const": "draft"},
+    "cleaned_on": {"type": "string"},
+    "assessment": {"type": "object", "required": ["name", "language", "reference_period", "target_population", "intended_uses"], "properties": {"name": {"type": "string", "minLength": 1}, "reference_period": {"type": "object", "required": ["structured", "instruction_claims", "status"]}}},
+    "administration": {"type": "object", "required": ["instructions", "instructions_source", "item_order", "selected_form_url"], "properties": {"instructions": {"type": ["string", "null"]}, "item_order": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}}},
+    "questionnaire": {
+      "type": "object", "additionalProperties": false, "required": ["item_count", "items", "response_sets"],
+      "properties": {
+        "item_count": {"type": "integer", "minimum": 0},
+        "items": {"type": "array", "items": {"$ref": "#/$defs/item"}},
+        "response_sets": {"type": "array", "items": {"$ref": "#/$defs/response_set"}}
+      }
+    },
+    "scoring": {"type": "object", "required": ["status", "enabled", "rules", "missing_item_policy"], "properties": {"status": {"enum": ["source_checked_draft", "requires_rule_review"]}, "enabled": {"const": false}, "rules": {"type": "array", "items": {"type": "object", "required": ["id", "method", "item_ids", "multiplier", "minimum", "maximum", "severity_bands"], "properties": {"method": {"const": "sum"}, "item_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}, "multiplier": {"type": "number"}}}}}},
+    "context_sections": {"type": "array", "items": {"type": "object", "required": ["id", "title", "text", "source_url", "review_status"]}},
+    "references": {"type": "array", "items": {"type": "object", "required": ["id", "citation", "source_url"]}},
+    "tables": {"type": "array"},
+    "assets": {"type": "array", "items": {"type": "object", "required": ["id", "kind", "role", "source_url", "sha256", "archive_path", "runtime_context_allowed"], "properties": {"runtime_context_allowed": {"const": false}, "archive_path": {"type": ["string", "null"]}, "sha256": {"type": ["string", "null"]}}}},
+    "conversation_policy": {"type": "object", "required": ["status", "context_allowlist", "send_asset_bytes_or_sample_reports"], "properties": {"send_asset_bytes_or_sample_reports": {"const": false}}},
+    "review": {"type": "object", "required": ["ready_for_clinical_use", "questionnaire_status", "questionnaire_completeness_verified", "issues"], "properties": {"ready_for_clinical_use": {"const": false}, "questionnaire_completeness_verified": {"const": false}, "issues": {"type": "array", "items": {"type": "object", "required": ["code", "detail"]}}}},
+    "provenance": {"type": "object", "required": ["source_url", "raw_extraction_path", "raw_extraction_sha256", "layout_evidence_path"]},
+    "rights": {"type": "object"}
+  },
+  "$defs": {
+    "item": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "order", "source_label", "text", "response_type", "selection_mode", "response_set_id", "reverse_scored", "printed_input_unit", "source", "review_status", "review_flags"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^Q[1-9][0-9]*$"}, "order": {"type": "integer", "minimum": 1},
+        "source_label": {"type": "string", "minLength": 1}, "text": {"type": "string", "minLength": 3},
+        "response_type": {"enum": ["single_choice", "choice", "unverified"]},
+        "selection_mode": {"enum": ["single", null]}, "response_set_id": {"type": ["string", "null"]},
+        "reverse_scored": {"type": ["boolean", "null"]}, "printed_input_unit": {"type": ["string", "null"]},
+        "source": {"type": "object", "required": ["url", "sha256", "page", "bbox", "method"], "properties": {"url": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "page": {"type": "integer", "minimum": 1}, "bbox": {"type": ["array", "null"]}}},
+        "review_status": {"type": "string"}, "review_flags": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "response_set": {
+      "type": "object", "additionalProperties": false, "required": ["id", "options", "mapping_status"],
+      "properties": {
+        "id": {"type": "string"}, "mapping_status": {"enum": ["printed_values_only_scores_unverified", "source_checked_draft"]},
+        "options": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["id", "label", "printed_value", "score"], "properties": {"id": {"type": "string"}, "label": {"type": ["string", "null"]}, "printed_value": {"type": ["number", "null"]}, "score": {"type": ["number", "null"]}}}}
+      }
+    }
+  }
+}

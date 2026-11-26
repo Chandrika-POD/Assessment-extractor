@@ -1,0 +1,1041 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "ptsd-checklist-5-pcl-5--5a88422b610e",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "PTSD Checklist for DSM-5 (PCL-5)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Post Traumatic Stress Disorder (PTSD) Checklist for DSM-5 (PCL-5) is a 20-item self-report measure of the twenty DSM-5 symptoms of PTSD in adult populations (ages 18+). It is designed for use with people who have experienced traumatic events.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "LAST MONTH"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Below is a list of problems and complaints that people sometimes have in response to stressful life experiences. How much you have been bothered by that problem IN THE LAST MONTH.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "9d90548e07f03753ded83b03a7e2475cd2686bccc53056e01aa5696346ac6e3f",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_checked_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_raw",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ],
+    "multiplier": 1,
+    "value_field": "score",
+    "minimum": 0,
+    "maximum": 80,
+    "severity_bands": []
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": "Archived questionnaire printed response values and corresponding scoring context sections; formulas tested separately.",
+  "source_rule_excerpts": [
+   "As part of routine screening, he completed the PCL-5 in NovoPsych. His total score was 32, just below the commonly used cutoff of 33. Looking at the NovoPsych report, that places him in the 83rd percentile compared to people without PTSD and around the 41st percentile compared to people with PTSD.",
+   "This pattern doesn’t reflect generalized distress. It reflects a trauma-specific pattern driven by avoidance. And that distinction matters clinically. Even though Michael’s total score fell just below the cutoff, his responses met the DSM-5 symptom cluster criteria, supporting a provisional PTSD diagnosis.",
+   "Total scores can range from 0 to 80, with higher scores indicating greater PTSD symptom severity. Percentiles are also presented for the total score in comparison to both a normative and clinical (PTSD) sample. A normative percentile of 50 is indicative of an average score for someone who does not have PTSD, whereas a PTSD percentile of 50 is indicative of an average score for someone who is currently in care for PTSD.",
+   "In addition to a raw score being presented, a mean score is also computed, which is the subscale score divided by the number of items within that subscale. The average score can help determine elevated symptom clusters when comparing each of the four subscales. These scores range between 0 to 4, where higher scores represent higher severity. Consistent with the likert scale:",
+   "Normal Range – Average score less than or equal to 1.23",
+   "Mild – Average score above 1.23 and less than or equal to 1.64",
+   "Moderate – Average score above 1.64 and less than or equal to 2.455",
+   "Severe – Average score above 2.455 and less than or equal to 3.265",
+   "Extremely Severe – Average score above 3.265",
+   "Notwithstanding the DSM related diagnostic criteria, scores of 33 or above are considered to be of clinical significance, and can serve as an alternative threshold for identifying significant PTSD symptoms that interfere with daily functioning (Bovin et al., 2016; Krüger-Gottschalk et al., 2017; Rosendahl et al., 2019).",
+   "A comparison graph is presented showing where the respondent’s score sits in comparison to the normative and PTSD samples, with shaded areas around the means indicating the two middle quartiles (between 25th and 75th percentile). This graph can help contextualise PCL-5 total scores in comparison to the distribution of responses among clinical and non-clinical groups. A cutoff score of 33 indicates the point at which symptoms are defined as clinically significant.",
+   "A review of the PCL-5 using 51 studies demonstrated that the internal consistency for the total score ranged between .83 – .97 (Forkus et al., 2023). Test-retest reliability was tested across a range of time intervals and was found to range between .58 – .91 (Forkus et al., 2023). The PCL–5 total score showed moderate to strong correlations with other measures of PTSD (.44–.89; Forkus et al., 2023). Construct validity was assessed using group difference tests. Individuals with PTSD (vs. without PTSD) had a significantly higher PCL–5 total score (Fung et al., 2019) and individuals with probable PTSD (determined using recommended cutoff scores) had significantly greater mental functional impairment compared with those without probable PTSD (Forkus et al., 2023).",
+   "Normal Range – < 0.5 SD below mean (average score less than or equal to 1.23)",
+   "Mild – 0.5 to 1 SD above mean (average score above 1.23 and less than or equal to 1.64)",
+   "Moderate – 1 to 2 SD above mean (average score above 1.64 and less than or equal to 2.455)",
+   "Severe – 2 to 3 SD above mean (average score above 2.455 and less than or equal to 3.265)",
+   "Extremely Severe – > 3 SD above mean (average score above 3.265)"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "Scoring & Interpretation",
+    "text": "Total scores can range from 0 to 80, with higher scores indicating greater PTSD symptom severity. Percentiles are also presented for the total score in comparison to both a normative and clinical (PTSD) sample. A normative percentile of 50 is indicative of an average score for someone who does not have PTSD, whereas a PTSD percentile of 50 is indicative of an average score for someone who is currently in care for PTSD.\n\nThere are four subscales which match the four symptom clusters for PTSD within DSM-5:\n1. Re-experiencing (criterion B, items 1-5, max score = 20)\n2. Avoidance (criterion C, items 6-7, max score = 8)\n3. Negative alterations in cognition and mood (Criterion D, items 8-14, max score = 28)\n4. Hyper-arousal (Criterion E, items 15-20, max score = 24)\nIn addition to a raw score being presented, a mean score is also computed, which is the subscale score divided by the number of items within that subscale. The average score can help determine elevated symptom clusters when comparing each of the four subscales. These scores range between 0 to 4, where higher scores represent higher severity. Consistent with the likert scale:\n0 = Not at all\n1 = A little bit\n2 = Moderately\n3 = Quite a bit\n4 = Extremely\nSymptom descriptors are also presented for the total score and each of the subscale scores. These descriptors are determined by the distance from the normative mean:\nNormal Range – Average score less than or equal to 1.23\nMild – Average score above 1.23 and less than or equal to 1.64\nModerate – Average score above 1.64 and less than or equal to 2.455\nSevere – Average score above 2.455 and less than or equal to 3.265\nExtremely Severe – Average score above 3.265\nGiven the PCL-5 questions closely reassembled the diagnostic criteria in the DSM-5-TR, a provisional PTSD diagnosis can be made based on the following rule. The DSM-5 diagnostic criteria requires at least: 1 Criterion B item (questions 1-5), 1 Criterion C item (questions 6-7), 2 Criterion D items (questions 8-14), and 2 Criterion E items (questions 15-20). A score of 2 (Moderately on the likert scale ) or higher is an endorsed symptom.\nNotwithstanding the DSM related diagnostic criteria, scores of 33 or above are considered to be of clinical significance, and can serve as an alternative threshold for identifying significant PTSD symptoms that interfere with daily functioning (Bovin et al., 2016; Krüger-Gottschalk et al., 2017; Rosendahl et al., 2019).\n\nA comparison graph is presented showing where the respondent’s score sits in comparison to the normative and PTSD samples, with shaded areas around the means indicating the two middle quartiles (between 25th and 75th percentile). This graph can help contextualise PCL-5 total scores in comparison to the distribution of responses among clinical and non-clinical groups. A cutoff score of 33 indicates the point at which symptoms are defined as clinically significant.\n\nWhen administered more than once, longitudinal graphs are presented showing change in symptoms over time. A 12 point change during the course of treatment represents clinically significant change (Renyer, 2016).\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Weathers, F.W., Litz, B.T., Keane, T.M., Palmieri, P.A., Marx, B.P., & Schnurr, P.P. (2013).The PTSD Checklist for DSM-5 (PCL-5). Scale available from the National Center for PTSD at www.ptsd.va.gov .",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Bovin MJ, Marx BP, Weathers FW, Gallagher MW, Rodriguez P, Schnurr PP, Keane TM. Psychometric properties of the PTSD Checklist for Diagnostic and Statistical Manual of Mental Disorders-Fifth Edition (PCL-5) in veterans. Psychol Assess. 2016 Nov;28(11):1379-1391. https://doi.org/10.1037/pas0000254\nForkus, S. R., Raudales, A. M., Rafiuddin, H. S., Weiss, N. H., Messman, B. A., & Contractor, A. A. (2023). The Posttraumatic Stress Disorder (PTSD) Checklist for DSM-5: A Systematic Review of Existing Psychometric Evidence. Clinical Psychology: A Publication of the Division of Clinical Psychology of the American Psychological Association, 30(1), 110–121. https://doi.org/10.1037/cps0000111\nFung, H. W., Chan, C., Lee, C. Y., & Ross, C. A. (2019). Using the Post-traumatic Stress Disorder (PTSD) Checklist for DSM-5 to Screen for PTSD in the Chinese Context: A Pilot Study in a Psychiatric Sample. Journal of Evidence-Based Social Work, 16(6), 643–651. https://doi.org/10.1080/26408066.2019.1676858\nKrüger-Gottschalk, A., Knaevelsrud, C., Rau, H., Dyer, A., Schäfer, I., Schellong, J., & Ehring, T. (2017). The German version of the Posttraumatic Stress Disorder Checklist for DSM-5 (PCL-5): psychometric properties and diagnostic utility. BMC Psychiatry, 17(1), 379. https://doi.org/10.1186/s12888-017-1541-6\nRenyer, D. (2016). Non-clinical normative data for ptsd checklist-5 (pcl-5) [PhD Thesis, Pacific University]. https://commons.pacificu.edu/work/sc/f8db5643-8fe5-4f09-ba9a-2b05a516d459\nRosendahl, J., Kisyova, H., Gawlytta, R., & Scherag, A. (2019). Comparative validation of three screening instruments for posttraumatic stress disorder after intensive care. Journal of Critical Care, 53, 149–154. https://doi.org/10.1016/j.jcrc.2019.06.016",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PTSD Checklist for DSM-5 (PCL-5) PDF",
+   "source_url": null,
+   "sha256": "f961753565174c2c404286dd37b757b745783673549022836ea027744389eaf0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f961753565174c2c404286dd37b757b745783673549022836ea027744389eaf0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Life Events Checklist for DSM-5 (LEC-5)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "bb455f9892c8c4c79cd0ba80399733c6ace91864a228a845817ab0dbf100d1a4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/bb455f9892c8c4c79cd0ba80399733c6ace91864a228a845817ab0dbf100d1a4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PTSD Checklist 5 questions",
+   "source_url": null,
+   "sha256": "2af804b48c300ec05c7fbc058dd18df02a2a47b483dca5111098ee37a5994ff4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2af804b48c300ec05c7fbc058dd18df02a2a47b483dca5111098ee37a5994ff4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Example PCL-5 items:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "7b8f1a489f68fb43916cd1e3c43cc063df99a190e91bcc22e38bebab97994a8c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7b8f1a489f68fb43916cd1e3c43cc063df99a190e91bcc22e38bebab97994a8c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e0723ed02a6728c877808a673139d4456bd001841023c18a119df95fc61e8371",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e0723ed02a6728c877808a673139d4456bd001841023c18a119df95fc61e8371.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4d15c87e5e9317aae1a3a1494688ce216e79cd7adc68ca55085a50a82f7f9966",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4d15c87e5e9317aae1a3a1494688ce216e79cd7adc68ca55085a50a82f7f9966.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c7764b420e09b867ef043a84777441f48bddf5bef870779d7dfa40d3cbfb2f31",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c7764b420e09b867ef043a84777441f48bddf5bef870779d7dfa40d3cbfb2f31.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the PTSD Checklist 5 using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "9d90548e07f03753ded83b03a7e2475cd2686bccc53056e01aa5696346ac6e3f",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9d90548e07f03753ded83b03a7e2475cd2686bccc53056e01aa5696346ac6e3f.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "9b1e8ba2997b022b7c9060a6197766b3b2e20db858830318e84affe05527005e",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9b1e8ba2997b022b7c9060a6197766b3b2e20db858830318e84affe05527005e.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "single_choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 0
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "9d90548e07f03753ded83b03a7e2475cd2686bccc53056e01aa5696346ac6e3f",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9d90548e07f03753ded83b03a7e2475cd2686bccc53056e01aa5696346ac6e3f.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "9b1e8ba2997b022b7c9060a6197766b3b2e20db858830318e84affe05527005e",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/9b1e8ba2997b022b7c9060a6197766b3b2e20db858830318e84affe05527005e.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 4,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "total_raw",
+    "label": "Total raw",
+    "minimum": 0,
+    "maximum": 80,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "total_raw",
+    "title": "Total raw",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_raw",
+      "label": "Total raw",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0,
+    "maximum": 80,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": "total_raw",
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "9d90548e07f03753ded83b03a7e2475cd2686bccc53056e01aa5696346ac6e3f",
+   "guidance_titles": [
+    "Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "total_raw"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "total_raw"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "total_raw",
+    "label": "Total raw",
+    "rule_id": "total_raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q17",
+    "question_ref": "/questionnaire/items/16",
+    "source_label": "17",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q18",
+    "question_ref": "/questionnaire/items/17",
+    "source_label": "18",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q19",
+    "question_ref": "/questionnaire/items/18",
+    "source_label": "19",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q20",
+    "question_ref": "/questionnaire/items/19",
+    "source_label": "20",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "c527e216cb62af157b2de2b5b026f0485ba1bfab24bdc53badda5998026bd0d5",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_raw",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_raw",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T07:49:17.241394+00:00",
+  "raw_extraction_sha256": "cde36dae7f84f48b47c61bff25e2cf42fc7a4cc5e3c219c07cc7b008468bba82",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Diagnosis"
+   },
+   {
+    "url": null,
+    "title": "Trauma"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1037/pas0000254",
+    "title": "https://doi.org/10.1037/pas0000254"
+   },
+   {
+    "url": "https://doi.org/10.1037/cps0000111",
+    "title": "https://doi.org/10.1037/cps0000111"
+   },
+   {
+    "url": "https://doi.org/10.1080/26408066.2019.1676858",
+    "title": "https://doi.org/10.1080/26408066.2019.1676858"
+   },
+   {
+    "url": "https://doi.org/10.1186/s12888-017-1541-6",
+    "title": "https://doi.org/10.1186/s12888-017-1541-6"
+   },
+   {
+    "url": "https://commons.pacificu.edu/work/sc/f8db5643-8fe5-4f09-ba9a-2b05a516d459",
+    "title": "https://commons.pacificu.edu/work/sc/f8db5643-8fe5-4f09-ba9a-2b05a516d459"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jcrc.2019.06.016",
+    "title": "https://doi.org/10.1016/j.jcrc.2019.06.016"
+   },
+   {
+    "url": null,
+    "title": "Trauma healing assessment"
+   },
+   {
+    "url": null,
+    "title": "Post-trauma stress measure"
+   },
+   {
+    "url": null,
+    "title": "Complex trauma measure"
+   },
+   {
+    "url": null,
+    "title": "Traumatic events checklist"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Trauma-Focused CBT (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "EMDR Session (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Psychiatric Clinical Interview and Assessment (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,679 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total Score",
+   "minimum": 0.0,
+   "maximum": 26.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 26.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total Score (sum of all 13 items)",
+     "y": 549.0,
+     "url": null,
+     "sha256": "c1b6809176a4e14bac7dd56f0070bda94559206b22eb0c32c64f646dbdb485fc"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "f9e5493e74a75a40f9dd015b6bde1609ca552e9737526ff8fda1f0a67ca92553",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "df9e5493e74a7_p1",
+   "documentSha256": "f9e5493e74a75a40f9dd015b6bde1609ca552e9737526ff8fda1f0a67ca92553",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "df9e5493e74a7_p1_chart_1"
+   ],
+   "tableIds": [
+    "df9e5493e74a7_p1_table_1",
+    "df9e5493e74a7_p1_table_2"
+   ],
+   "sectionIds": [
+    "df9e5493e74a7_p1_section_1",
+    "df9e5493e74a7_p1_section_2",
+    "df9e5493e74a7_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "df9e5493e74a7_p2",
+   "documentSha256": "f9e5493e74a75a40f9dd015b6bde1609ca552e9737526ff8fda1f0a67ca92553",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df9e5493e74a7_p2_table_1"
+   ],
+   "sectionIds": [
+    "df9e5493e74a7_p2_section_1",
+    "df9e5493e74a7_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "df9e5493e74a7_p3",
+   "documentSha256": "f9e5493e74a75a40f9dd015b6bde1609ca552e9737526ff8fda1f0a67ca92553",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df9e5493e74a7_p3_table_1"
+   ],
+   "sectionIds": [
+    "df9e5493e74a7_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "df9e5493e74a7_p1_section_1",
+   "pageId": "df9e5493e74a7_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df9e5493e74a7_p1_section_2",
+   "pageId": "df9e5493e74a7_p1",
+   "title": "MFQ-Parent Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    257.34299,
+    272.43585,
+    394.03497,
+    284.43585
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df9e5493e74a7_p1_section_3",
+   "pageId": "df9e5493e74a7_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    538.09253,
+    124.57652,
+    552.09253
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df9e5493e74a7_p2_section_1",
+   "pageId": "df9e5493e74a7_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    182.69554,
+    290.26645,
+    196.69554
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df9e5493e74a7_p2_section_2",
+   "pageId": "df9e5493e74a7_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34639,
+    461.00906,
+    151.82039,
+    475.00906
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df9e5493e74a7_p3_section_1",
+   "pageId": "df9e5493e74a7_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "df9e5493e74a7_p1_chart_1",
+   "title": "MFQ-Parent Total Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    125.189,
+    298.347,
+    490.189,
+    494.787
+   ],
+   "widthPt": 365.0,
+   "heightPt": 196.44,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      125.189,
+      414.01779,
+      488.18903,
+      496.20801
+     ],
+     "colour": "#ffffff",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      125.189,
+      300.34705,
+      488.18903,
+      414.017
+     ],
+     "colour": "#ea9999",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 117.40899999999999,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 26.0,
+      "positionPt": 301.11993,
+      "text": "26",
+      "colour": "#333333"
+     },
+     {
+      "value": 24.0,
+      "positionPt": 316.07971,
+      "text": "24",
+      "colour": "#333333"
+     },
+     {
+      "value": 22.0,
+      "positionPt": 331.03012,
+      "text": "22",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 345.98993,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 18.0,
+      "positionPt": 360.95013,
+      "text": "18",
+      "colour": "#333333"
+     },
+     {
+      "value": 16.0,
+      "positionPt": 375.90015,
+      "text": "16",
+      "colour": "#333333"
+     },
+     {
+      "value": 14.0,
+      "positionPt": 390.85995,
+      "text": "14",
+      "colour": "#333333"
+     },
+     {
+      "value": 12.0,
+      "positionPt": 405.82016,
+      "text": "12",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 420.78036,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 8.0,
+      "positionPt": 435.73038,
+      "text": "8",
+      "colour": "#333333"
+     },
+     {
+      "value": 6.0,
+      "positionPt": 450.69019,
+      "text": "6",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 465.65039,
+      "text": "4",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 480.6004,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 495.56021,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 26.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#1975d2",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49726023310189865,
+     "barThicknessPt": 40.0,
+     "fill": "#1976d2",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#1975d2"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#1975d2"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#1975d2"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#1975d2"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#1975d2"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "df9e5493e74a7_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 215,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "MFQ-Parent Total Score",
+     "bboxPt": [
+      257.34299,
+      272.43585,
+      394.03497,
+      284.43585
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Elevated",
+     "bboxPt": [
+      457.952,
+      351.22827,
+      485.189,
+      358.22827
+     ],
+     "colour": "#696969",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th",
+     "bboxPt": [
+      489.56699,
+      458.13828,
+      503.189,
+      465.13828
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      489.56699,
+      435.70819,
+      503.189,
+      442.70819
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "90th",
+     "bboxPt": [
+      489.56699,
+      417.00818,
+      503.189,
+      424.00818
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "95th",
+     "bboxPt": [
+      489.56699,
+      402.04837,
+      503.189,
+      409.04837
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "99th",
+     "bboxPt": [
+      489.56699,
+      387.09836,
+      503.189,
+      394.09836
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Interpretation",
+     "bboxPt": [
+      34.3465,
+      538.09253,
+      124.57652,
+      552.09253
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration, a bar graph displaying the total raw score is presented.",
+   "When the assessment is administered multiple times, a longitudinal line graph is generated to track changes in the total raw score over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "MFQ-Parent Scoring & Interpretation",
+    "text": "Each of the 13 MFQ-Parent items are scored 0 (not true), 1 (sometimes), or 2 (true), reflecting the frequency of depressive symptoms observed in the child over the past 2 weeks. The sum of responses to all items produces a total score ranging from 0 to 26. Higher scores indicate greater severity of depressive symptoms.\n\nThe established total cut-off score of 11 and above indicates the presence of significant depressive symptoms that warrant further evaluation. This threshold was established by Thapar and McGuffin (1998) and demonstrates good sensitivity and specificity for identifying youth with depressive disorders. The total score is also presented in comparison to a community sample of children (aged 6-8), and a clinical sample (aged 11-13) who met diagnostic criteria for depression.\nThe MFQ-Parent can be used for monitoring symptom changes over time during treatment. Research examining meaningful score changes suggests a 2-point change in either direction represents a noticeable shift in symptom severity.\nOn first administration, a bar graph displaying the total raw score is presented.\n\nWhen the assessment is administered multiple times, a longitudinal line graph is generated to track changes in the total raw score over time.\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "f9e5493e74a75a40f9dd015b6bde1609ca552e9737526ff8fda1f0a67ca92553",
+    "pageNumber": 2,
+    "text": "Each of the 13 MFQ-Parent items are scored 0 (not true), 1 (sometimes), or 2 (true), reflecting\nthe frequency of depressive symptoms observed in the child over the past 2 weeks. The sum of\nresponses to all items produces a total score ranging from 0 to 26. Higher scores indicate\ngreater severity of depressive symptoms.\nThe established total cut-off score of 11 and above indicates the presence of significant\ndepressive symptoms that warrant further evaluation. This threshold was established by Thapar\nand McGuffin (1998) and demonstrates good sensitivity and specificity for identifying youth with\ndepressive disorders. The total score is also presented in comparison to a community sample of\nchildren (aged 6-8), and a clinical sample (aged 11-13) who met diagnostic criteria for\ndepression.\nThe MFQ-Parent can be used for monitoring symptom changes over time during treatment.\nResearch examining meaningful score changes suggests a 2-point change in either direction\nrepresents a noticeable shift in symptom severity.\nOn first administration, a bar graph displaying the total raw score is presented. When the\nassessment is administered multiple times, a longitudinal line graph is generated to track\nchanges in the total raw score over time.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The established total cut-off score of 11 and above indicates the presence of significant depressive symptoms that warrant further evaluation.",
+   "This threshold was established by Thapar and McGuffin (1998) and demonstrates good sensitivity and specificity for identifying youth with depressive disorders.",
+   "On first administration, a bar graph displaying the total raw score is presented.",
+   "When the assessment is administered multiple times, a longitudinal line graph is generated to track changes in the total raw score over time."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 59
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,869 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "obsessional-compulsive-inventory-revised-parent-choci-r-p--fcfe218a4155",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Obsessional Compulsive Inventory- Revised-Parent (ChOCI-R-P)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Children’s Obsessional Compulsive Inventory–Revised – Parent Report (ChOCI-R-P) is a 38-item parent-report measure of obsessive–compulsive disorder (OCD) symptoms (Uher et al., 2008) in children and adolescents aged 7 to 17 years. It is completed by a parent or caregiver who is familiar with the child’s experiences. There is also a self-report version of the ChOCI ( ChOCI-R-S ) that can be completed by children or adolescents aged 7 to 17 years.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Each of the following questions asks you about things or “habits” you feel your child has to do although they may know that they do not make sense. Sometimes, they may try to stop from doing them but this might not be possible. They might feel worried or angry or frustrated until they have finished what they have to do. An example of a habit like this may be the need to wash their hands over and over again even though they are not really dirty, or the need to count up to a special number (e.g. 6 or 10) while they do certain things. Please answer each question by choosing how much you agree with the statement, or how much you think it is true of your child. Please answer each item, without spending too much time on any one item. There are no right or wrong answers. Compulsions· symptoms",
+  "instructions_source": {
+   "url": null,
+   "sha256": "cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34",
+   "Q35",
+   "Q36",
+   "Q37",
+   "Q38"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "compulsion_symptoms",
+    "label": "Compulsion Symptoms",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 20,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "838d99af99148491c1d4f904303087356b55d6e31785583e0ae54911b1588381",
+     "retrieved_at": "2026-11-13T12:01:16.010569+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "obsession_symptoms",
+    "label": "Obsession Symptoms",
+    "item_ids": [
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 20,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "838d99af99148491c1d4f904303087356b55d6e31785583e0ae54911b1588381",
+     "retrieved_at": "2026-11-13T12:01:16.010569+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "compulsion_impairment",
+    "label": "Compulsion Impairment",
+    "item_ids": [
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 24,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "838d99af99148491c1d4f904303087356b55d6e31785583e0ae54911b1588381",
+     "retrieved_at": "2026-11-13T12:01:16.010569+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "obsession_impairment",
+    "label": "Obsession Impairment",
+    "item_ids": [
+     "Q33",
+     "Q34",
+     "Q35",
+     "Q36",
+     "Q37",
+     "Q38"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 24,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "838d99af99148491c1d4f904303087356b55d6e31785583e0ae54911b1588381",
+     "retrieved_at": "2026-11-13T12:01:16.010569+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "total_symptoms",
+    "label": "Total Symptoms",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 40,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "838d99af99148491c1d4f904303087356b55d6e31785583e0ae54911b1588381",
+     "retrieved_at": "2026-11-13T12:01:16.010569+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "total_impairment",
+    "label": "Total Impairment",
+    "item_ids": [
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q33",
+     "Q34",
+     "Q35",
+     "Q36",
+     "Q37",
+     "Q38"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 48,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "838d99af99148491c1d4f904303087356b55d6e31785583e0ae54911b1588381",
+     "retrieved_at": "2026-11-13T12:01:16.010569+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "NovoPsych placed each subscale’s cut-offs at the same percentile as the matching Total cut-off, using each subscale’s own mean and SD from Uher et al. (2008), with each band starting at the next whole score."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "Children’s Obsessional Compulsive Inventory–Revised – Parent Report (ChOCI-R-P) Scoring",
+    "text": "The ChOCI-R-P produces six raw scores by summing item responses. Higher scores indicate more obsessive-compulsive symptoms or greater associated functional impairment. The measure produces two parallel sets of scores: symptoms (how often and how strongly OCD presents) and impairment (how much OCD disrupts daily life).\nTotal Symptoms : sum of Compulsion and Obsession Symptoms (range 0–40) Compulsion Symptoms : sum of items 1 to 10 (range 0–20) Obsession Symptoms : sum of items 20 to 29 (range 0–20)\nTotal Impairment : sum of Compulsion and Obsession Impairment (range 0–48) Compulsion Impairment : sum of items 14 to 19 (range 0–24) Obsession Impairment : sum of items 33 to 38 (range 0–24)\nSix open-text items (items 11 to 13 for habits and items 30 to 32 for thoughts) ask the parent to describe the child’s three most upsetting habits (compulsions) and thoughts (obsessions), respectively. These items are not scored, but provide additional clinical information to inform assessment and treatment planning.\n",
+    "source_url": null
+   },
+   {
+    "title": "ChOCI-R-P Percentiles",
+    "text": "Each raw score is presented alongside a percentile rank against an OCD-clinical reference sample (Uher et al., 2008). A percentile of 50 corresponds to the OCD-clinical reference average; a percentile of 80 indicates a score exceeding approximately 80% of OCD-diagnosed children in the reference group. Because the reference sample is clinical (not community), percentile interpretation is positional within an OCD-diagnosed group: a percentile of 50 reflects the average level for a child diagnosed with OCD, not the general paediatric population.\n",
+    "source_url": null
+   },
+   {
+    "title": "ChOCI-R-P Subscale Interpretation",
+    "text": "Each subscale assesses a different aspect of obsessive-compulsive symptoms or associated impairment. Higher scores on Compulsion Symptoms indicate that the parent has observed more frequent or more severe compulsive behaviours, including washing, checking, ordering, counting, repeating, and reassurance-seeking. Higher scores on Obsession Symptoms indicate more frequent intrusive thoughts of harm, contamination, doubt, mortality, blasphemy, or aggressive content. Higher scores on Compulsion Impairment indicate greater functional disruption from compulsions, including time spent, interference with school and friends, distress when prevented from acting, difficulty resisting or controlling compulsions, and avoidance. Higher scores on Obsession Impairment indicate similar impacts associated with obsessive thoughts.\n",
+    "source_url": null
+   },
+   {
+    "title": "ChOCI-R-P Change Score Interpretation",
+    "text": "When the ChOCI-R-P is administered on multiple occasions, change between administrations can be evaluated using a Reliable Change Index (RCI). A change of approximately 8.4 raw-score points or greater on Total Impairment, or 8.6 or greater on Total Symptoms, indicates a change that is unlikely to be attributable to measurement error alone.\n",
+    "source_url": null
+   },
+   {
+    "title": "How should I interpret a profile where Symptoms and Impairment scores diverge?",
+    "text": "Symptoms and Impairment measure related but distinct dimensions: how often and how strongly symptoms are present, and how much they disrupt daily life. The two can move independently and the gap itself is informative. Where symptoms are elevated but impairment is lower, possible explanations include early presentation, effective coping strategies, or family routines that accommodate symptoms in ways that buffer functional impact. The reverse profile (lower symptoms with elevated impairment) may indicate that the symptoms present are particularly entrenched or distressing, or that the parent is observing functional effects without fully identifying the underlying symptoms. Both divergent profiles warrant looking beyond the totals during formulation.\n",
+    "source_url": null
+   },
+   {
+    "title": "How should I interpret a large gap between the parent-rated ChOCI-R-P and the child-rated ChOCI-R-S?",
+    "text": "Discrepancies between informants are common and the gap itself is useful clinical data. Parents typically have better visibility of observable compulsions (washing, checking, asking for reassurance) and tend to underestimate obsessions and covert rituals. Children may underreport when symptoms feel shameful, when insight is limited (more common in younger children), or when they have learned to mask symptoms in front of caregivers. When the parent score substantially exceeds the child score, consider limited insight, minimisation, or symptom concealment. When the child score exceeds the parent score, suspect covert symptoms or content the child has not disclosed at home. Both perspectives can provide valuable clinical information; the divergence becomes a formulation discussion point and may warrant exploring family accommodation patterns.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Compulsion Symptoms (Items 1–10):",
+    "y": 519.7,
+    "url": null,
+    "sha256": "cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Compulsion Impairment (Items 14–19):",
+    "y": 639.7,
+    "url": null,
+    "sha256": "cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Obsession Symptoms (Items 20–29):",
+    "y": 175.5,
+    "url": null,
+    "sha256": "cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 4,
+    "text": "Obsession Impairment (Items 33–38):",
+    "y": 240.0,
+    "url": null,
+    "sha256": "cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Uher, R., Heyman, I., Turner, C. M., & Shafran, R. (2008). Self-, parent-report and interview measures of obsessive–compulsive disorder in children and adolescents. Journal of Anxiety Disorders, 22(6), 979-990. doi:10.1016/j.janxdis.2007.10.001",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Obsessional Compulsive Inventory- Revised-Parent (ChOCI-R-P) PDF",
+   "source_url": null,
+   "sha256": "7379e242586b1f48346778de7f71afe84d107f0fb47398de866f26528605b84b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7379e242586b1f48346778de7f71afe84d107f0fb47398de866f26528605b84b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Strengths and Stressors (SAS)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "64fa24306cde4c4d96dee5e7c55d20c21dce1327127ab997f38dee044ba26b4c",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/64fa24306cde4c4d96dee5e7c55d20c21dce1327127ab997f38dee044ba26b4c.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download ChOCI-R-P",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e972a7e307957f925ae4d77e83ade8dad97469f5dbd179895d304afbd27260fe",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e972a7e307957f925ae4d77e83ade8dad97469f5dbd179895d304afbd27260fe.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Children’s Obsessional Compulsive Inventory–Revised – Parent Report (ChOCI-R-P) General Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Obsessional Compulsive Inventory-Revised-Parent using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download ChOCI-R-P",
+   "source_url": null,
+   "sha256": "cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "ChOCI-R-P Sample Results",
+   "source_url": null,
+   "sha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "original_capture_gaps",
+    "detail": "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_format_review": {
+   "resolved_previously_untyped_fields": 6,
+   "basis": "Selected archived PDF edition checked against current public PDF and inspected for field controls.",
+   "clinical_scoring_review": false
+  },
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice",
+   "text"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 32
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/cebabafa6c93b91c9dbfa6be009ed2e6538ba848848ee4dd2cab6ee8695b98dc.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 4,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "408453dc71ac55aed164dd1f01299db6fc851cd2c77a57581acbfcb0c9d9099a",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "compulsion_symptoms",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "obsession_symptoms",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "compulsion_impairment",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "obsession_impairment",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "total_symptoms",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "total_impairment",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "compulsion_symptoms",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "obsession_symptoms",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "compulsion_impairment",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "obsession_impairment",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "total_symptoms",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "total_impairment",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:59:16.066659+00:00",
+  "raw_extraction_sha256": "468bc26fff951f075d634071c0822c7b8b51fa7b3bdbb58c134d9ea076858de9",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "ChOCI-R-S"
+   },
+   {
+    "url": null,
+    "title": "Adolescent"
+   },
+   {
+    "url": null,
+    "title": "Child"
+   },
+   {
+    "url": null,
+    "title": "Diagnosis"
+   },
+   {
+    "url": null,
+    "title": "OCD"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": null,
+    "title": "OCI-R"
+   },
+   {
+    "url": "https://doi.org/10.1192/bjo.2018.10",
+    "title": "https://doi.org/10.1192/bjo.2018.10"
+   },
+   {
+    "url": "https://doi.org/10.1017/S1352465823000450",
+    "title": "https://doi.org/10.1017/S1352465823000450"
+   },
+   {
+    "url": "https://doi.org/10.1001/archpsyc.1989.01810110048007",
+    "title": "https://doi.org/10.1001/archpsyc.1989.01810110048007"
+   },
+   {
+    "url": "https://doi.org/10.1136/bmj.333.7565.424",
+    "title": "https://doi.org/10.1136/bmj.333.7565.424"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jaac.2016.09.515",
+    "title": "https://doi.org/10.1016/j.jaac.2016.09.515"
+   },
+   {
+    "url": "https://doi.org/10.1097/00004583-199706000-00023",
+    "title": "https://doi.org/10.1097/00004583-199706000-00023"
+   },
+   {
+    "url": "https://doi.org/10.1016/S0140-1971(02)00083-0",
+    "title": "https://doi.org/10.1016/S0140-1971(02)00083-0"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.janxdis.2007.10.001",
+    "title": "https://doi.org/10.1016/j.janxdis.2007.10.001"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Download ChOCI-R-P"
+   },
+   {
+    "url": null,
+    "title": "ChOCI-R-P Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Schools - Case Conference/Parent Meeting (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Child Therapy Note - Brief (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,1143 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total Score",
+   "minimum": 0.0,
+   "maximum": 15.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 15.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total Score (sum of all 15 items)",
+     "y": 593.2,
+     "url": null,
+     "sha256": "fe7006c5902caff3a6e4f1aed2bf9089965d92778c3c925282294619f654b160"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "90f047bd52dc1cdaa3a3f0785821be1a9f0f5316e45914e8fb2c6a962e9fc65e",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d90f047bd52dc_p1",
+   "documentSha256": "90f047bd52dc1cdaa3a3f0785821be1a9f0f5316e45914e8fb2c6a962e9fc65e",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d90f047bd52dc_p1_chart_1",
+    "d90f047bd52dc_p1_chart_2"
+   ],
+   "tableIds": [
+    "d90f047bd52dc_p1_table_1",
+    "d90f047bd52dc_p1_table_2"
+   ],
+   "sectionIds": [
+    "d90f047bd52dc_p1_section_1",
+    "d90f047bd52dc_p1_section_2",
+    "d90f047bd52dc_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d90f047bd52dc_p2",
+   "documentSha256": "90f047bd52dc1cdaa3a3f0785821be1a9f0f5316e45914e8fb2c6a962e9fc65e",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d90f047bd52dc_p2_table_1"
+   ],
+   "sectionIds": [
+    "d90f047bd52dc_p2_section_1",
+    "d90f047bd52dc_p2_section_2",
+    "d90f047bd52dc_p2_section_3"
+   ]
+  },
+  {
+   "pageId": "d90f047bd52dc_p3",
+   "documentSha256": "90f047bd52dc1cdaa3a3f0785821be1a9f0f5316e45914e8fb2c6a962e9fc65e",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d90f047bd52dc_p3_table_1"
+   ],
+   "sectionIds": [
+    "d90f047bd52dc_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d90f047bd52dc_p1_section_1",
+   "pageId": "d90f047bd52dc_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d90f047bd52dc_p1_section_2",
+   "pageId": "d90f047bd52dc_p1",
+   "title": "GDS-15 Percentile Score",
+   "type": "results",
+   "bboxPt": [
+    228.851,
+    303.62549,
+    369.57495,
+    315.62549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d90f047bd52dc_p1_section_3",
+   "pageId": "d90f047bd52dc_p1",
+   "title": "Score in Comparison to Normative Community and Depressed Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    69.5523,
+    578.62549,
+    502.96826,
+    590.62549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d90f047bd52dc_p2_section_1",
+   "pageId": "d90f047bd52dc_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    124.57652,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d90f047bd52dc_p2_section_2",
+   "pageId": "d90f047bd52dc_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    214.93466,
+    290.26636,
+    228.93466
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d90f047bd52dc_p2_section_3",
+   "pageId": "d90f047bd52dc_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.346,
+    648.82086,
+    151.82001,
+    662.82086
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d90f047bd52dc_p3_section_1",
+   "pageId": "d90f047bd52dc_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d90f047bd52dc_p1_chart_1",
+   "title": "GDS-15 Percentile Score",
+   "type": "stacked_bar",
+   "bboxPt": [
+    171.213,
+    329.528,
+    451.213,
+    539.969
+   ],
+   "widthPt": 280.0,
+   "heightPt": 210.441,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 163.433,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": "Score in Comparison to Normative Community and Depressed Distributions",
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 332.30212,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 353.14233,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 373.99234,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 394.83215,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 415.68216,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 436.52237,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 457.36218,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 478.21219,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 499.052,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 519.9024,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 540.74219,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Total",
+     "colour": "#bb2f99",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4964285354591811,
+     "barThicknessPt": 50.0,
+     "fill": "#bc2f9a",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#bb2f99"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#bb2f99"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#bb2f99"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#bb2f99"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#bb2f99"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Total",
+     "colour": "#229a55",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4964285354591811,
+     "barThicknessPt": 50.0,
+     "fill": "#239b56",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#229a55"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#229a55"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#229a55"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#229a55"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#229a55"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": null,
+     "colour": "#229a55",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8760714911479635,
+     "barThicknessPt": 20.0,
+     "fill": "#239b56",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#000000"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#229a55"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#229a55"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#229a55"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#000000"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": null,
+     "colour": "#bb2f99",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8760714911479635,
+     "barThicknessPt": 20.0,
+     "fill": "#bc2f9a",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#000000"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#bb2f99"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#bb2f99"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#bb2f99"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#000000"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d90f047bd52dc_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 158,
+    "detectedType": "stacked_bar",
+    "reviewedType": "stacked_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "GDS-15 Percentile Score",
+     "bboxPt": [
+      228.851,
+      303.62549,
+      369.57495,
+      315.62549
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Subclinical",
+     "bboxPt": [
+      420.76001,
+      457.77026,
+      454.21295,
+      464.77026
+     ],
+     "colour": "#f1c40f",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild/Moderate",
+     "bboxPt": [
+      409.86801,
+      357.72028,
+      454.21298,
+      364.72028
+     ],
+     "colour": "#ffa500",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      432.03699,
+      332.69925,
+      454.21298,
+      339.69925
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Total",
+     "bboxPt": [
+      299.09799,
+      546.4422,
+      321.32797,
+      556.4422
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "(Lack of) Positive Mood",
+     "bboxPt": [
+      431.513,
+      497.96295,
+      494.20096,
+      503.96295
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Depressed Mood",
+     "bboxPt": [
+      431.513,
+      510.96292,
+      477.19696,
+      516.96289
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Score in Comparison to Normative Community and Depressed Distributions",
+     "bboxPt": [
+      69.5523,
+      578.62549,
+      502.96826,
+      590.62549
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "d90f047bd52dc_p1_chart_2",
+   "title": null,
+   "type": "horizontal_bar",
+   "bboxPt": [
+    85.26,
+    622.528,
+    518.261,
+    716.969
+   ],
+   "widthPt": 433.0,
+   "heightPt": 94.441,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      315.13,
+      634.52881,
+      458.80002,
+      716.96899
+     ],
+     "colour": "#ff1111",
+     "opacity": 0.1,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      133.53001,
+      634.52881,
+      256.80002,
+      716.96899
+     ],
+     "colour": "#1111ff",
+     "opacity": 0.1,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 85.26050000000001,
+      "text": "0",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 113.9906,
+      "text": "1",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 142.73041,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 171.46051,
+      "text": "3",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 200.19061,
+      "text": "4",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 228.93042,
+      "text": "5",
+      "colour": "#333333"
+     },
+     {
+      "value": 6.0,
+      "positionPt": 257.66052,
+      "text": "6",
+      "colour": "#333333"
+     },
+     {
+      "value": 7.0,
+      "positionPt": 286.390625,
+      "text": "7",
+      "colour": "#333333"
+     },
+     {
+      "value": 8.0,
+      "positionPt": 315.13043000000005,
+      "text": "8",
+      "colour": "#333333"
+     },
+     {
+      "value": 9.0,
+      "positionPt": 343.860535,
+      "text": "9",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 372.590545,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 11.0,
+      "positionPt": 401.330355,
+      "text": "11",
+      "colour": "#333333"
+     },
+     {
+      "value": 12.0,
+      "positionPt": 430.060455,
+      "text": "12",
+      "colour": "#333333"
+     },
+     {
+      "value": 13.0,
+      "positionPt": 458.79056,
+      "text": "13",
+      "colour": "#333333"
+     },
+     {
+      "value": 14.0,
+      "positionPt": 487.53036499999996,
+      "text": "14",
+      "colour": "#333333"
+     },
+     {
+      "value": 15.0,
+      "positionPt": 516.260485,
+      "text": "15",
+      "colour": "#333333"
+     }
+    ],
+    "title": "GDS-15 Total Score",
+    "minimum": 0.0,
+    "maximum": 15.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d90f047bd52dc_p1",
+   "sourceChartId": "chart_2",
+   "typeReview": {
+    "reviewIndex": 159,
+    "detectedType": "unresolved",
+    "reviewedType": "horizontal_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Score in Comparison to Normative Community and Depressed Distributions",
+     "bboxPt": [
+      69.5523,
+      578.62549,
+      502.96826,
+      590.62549
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "GDS-15 Total Score",
+     "bboxPt": [
+      255.745,
+      740.7417,
+      345.77496,
+      750.7417
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Cut-off",
+     "bboxPt": [
+      250.158,
+      613.56561,
+      265.16306,
+      618.56561
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 5.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Depressed Median",
+     "bboxPt": [
+      376.15399,
+      612.5719,
+      426.50595,
+      618.5719
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Depressed 75th",
+     "bboxPt": [
+      437.61401,
+      606.5719,
+      479.96799,
+      612.5719
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentile",
+     "bboxPt": [
+      445.4527,
+      612.5719,
+      472.12869,
+      618.5719
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Normative Community",
+     "bboxPt": [
+      98.6906,
+      606.5719,
+      158.03059,
+      612.5719
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th Percentile",
+     "bboxPt": [
+      108.35036,
+      612.5719,
+      148.37036,
+      618.5719
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Normative Community",
+     "bboxPt": [
+      165.64101,
+      606.5719,
+      224.981,
+      612.5719
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Median",
+     "bboxPt": [
+      185.4738,
+      612.5719,
+      205.1478,
+      618.5719
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null,
+   "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "GDS-15 Scoring & Interpretation",
+    "text": "The GDS-15 has a total score range of 0 to 15, where higher scores reflect more severe levels of depression. Scores of 6-10 indicate mild to moderate depression, while scores of 11-15 indicate severe depression (Friedman et al., 2005). Two subscales are presented:\nThe (Lack of) Positive Mood subscale (items 1, 5, 7, 11, and 13) ranges from 0 to 5. Higher scores indicate the absence of positive emotional experiences and life satisfaction, including a lack of happiness, good spirits, and overall well-being.\nThe Depressed Mood subscale (items 2, 3, 4, 6, 8, 9, 10, 12, 14, and 15) ranges from 0 to 10. Higher scores reflect higher levels of depressive symptoms, such as negative emotional experiences, including worthlessness, hopelessness, and boredom.\n\nA percentile is presented showing the respondent’s score in comparison to normative responses for older adults. A percentile of 50 represents typical (and healthy) patterns of responding. Conversely, a percentile of 99 indicates the respondent scores higher than 99 percent of older adults, indicating severe depressive symptoms.\n\nThe score is presented in comparison to the normative community and depressed distributions, with shaded areas around the two middle quartiles (between the 25th and 75th percentile). This graph helps contextualise scores in comparison to the distribution of responses among non-clinical and clinical samples. A cutoff score of 6 indicates the point at which symptoms are defined as indicative of clinical depression, with a sensitivity of 81.45% and specificity of 75.36% (Friedman et al., 2005). When administered more than once, a clinically important change is defined as a change of 2 points or more (based on Minimally Important Difference calculations).\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "90f047bd52dc1cdaa3a3f0785821be1a9f0f5316e45914e8fb2c6a962e9fc65e",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the GDS-15, \nsee here\n.\nThe GDS-15 has a total score range of 0 to 15, where higher scores reflect more severe levels\nof depression.\nScores of 6-10 indicate mild to moderate depression, while scores of 11-15 indicate severe\ndepression (Friedman et al., 2005).\nTwo subscales are presented:\n-The (Lack of) Positive Mood subscale (items 1, 5, 7, 11, and 13) ranges from 0 to 5.\nHigher scores indicate the absence of positive emotional experiences and life satisfaction,\nincluding a lack of happiness, good spirits, and overall well-being.\n-The Depressed Mood subscale (items 2, 3, 4, 6, 8, 9, 10, 12, 14, and 15) ranges from 0 to 10.\nHigher scores reflect higher levels of depressive symptoms, such as negative emotional\nexperiences, including worthlessness, hopelessness, and boredom.\nA percentile is presented showing the respondent's score in comparison to normative responses\nfor older adults. A percentile of 50 represents typical (and healthy) patterns of responding.\nConversely, a percentile of 99 indicates the respondent scores higher than 99 percent of older\nadults, indicating severe depressive symptoms.\nThe score is presented in comparison to the normative community and depressed distributions,\nwith shaded areas around the two middle quartiles (between the 25th and 75th percentile). This\ngraph helps contextualise scores in comparison to the distribution of responses among non-\nclinical and clinical samples. A cutoff score of 6 indicates the point at which symptoms are\ndefined as indicative of clinical depression, with a sensitivity of 81.45% and specificity of 75.36%\n(Friedman et al., 2005).\nWhen administered more than once, a clinically important change is defined as a change of 2\npoints or more (based on Minimally Important Difference calculations).",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A percentile is presented showing the respondent’s score in comparison to normative responses for older adults.",
+   "A percentile of 50 represents typical (and healthy) patterns of responding.",
+   "Conversely, a percentile of 99 indicates the respondent scores higher than 99 percent of older adults, indicating severe depressive symptoms.",
+   "The score is presented in comparison to the normative community and depressed distributions, with shaded areas around the two middle quartiles (between the 25th and 75th percentile).",
+   "This graph helps contextualise scores in comparison to the distribution of responses among non-clinical and clinical samples."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d90f047bd52dc_p1_chart_2"
+   ]
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 58
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

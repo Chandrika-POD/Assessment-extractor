@@ -1,0 +1,5130 @@
+{
+  "schema_version": "2.3.0-clean-export.4",
+  "assessment_id": "young-persons-core-yp-core--2b7fb1486364",
+  "definition_version": "1.0.0-draft.6",
+  "status": "draft",
+  "assessment": {
+    "name": "Young Person’s CORE (YP-CORE)",
+    "language": "en",
+    "description": "The Young Person’s Clinical Outcomes in Routine Evaluation (YP-CORE) is a 10 item self-report measure designed for monitoring treatment outcomes in young people aged between 11 and 16 years of age. It was derived from the adult measure Clinical Outcomes in Routine Evaluation – Outcome Measure (CORE-OM), and captures a range of presenting problems relevant for mental health services. The copyright holder for the YP-CORE is the CORE System Trust.",
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [
+        "LAST WEEK",
+        "last week"
+      ],
+      "status": "requires_review"
+    }
+  },
+  "administration": {
+    "instructions": "These questions are about how you have been feeling – OVER THE LAST WEEK. Please read each question carefully. Think how often you have felt like that in the last week and then put a cross in the box you think fits best.",
+    "instructions_source": {
+      "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10"
+    ],
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 10,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "I’ve felt edgy or nervous",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "I haven’t felt like talking to anyone",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "I’ve felt able to cope when things go wrong",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS2",
+        "reverse_scored": true,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "I’ve thought of hurting myself",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "There’s been someone I felt able to ask for help",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS2",
+        "reverse_scored": true,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "My thoughts and feelings distressed me",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "My problems have felt too much for me",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q8",
+        "order": 8,
+        "source_label": "8",
+        "text": "It’s been hard to go to sleep or stay asleep",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q9",
+        "order": 9,
+        "source_label": "9",
+        "text": "I’ve felt unhappy",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10",
+        "order": 10,
+        "source_label": "10",
+        "text": "I’ve done all the things I wanted to",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS2",
+        "reverse_scored": true,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page": 1,
+          "bbox": null,
+          "method": "image_transcription_visually_checked"
+        },
+        "review_status": "source_image_checked",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Only occasionally",
+            "source_label": "Only occasionally",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sometimes",
+            "source_label": "Sometimes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Often",
+            "source_label": "Often",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Most or all of the time",
+            "source_label": "Most or all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Not at all",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Not at all",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Only occasionally",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Only occasionally",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Sometimes",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Sometimes",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Often",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Often",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Most or all of the time",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Most or all of the time",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS2",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Not at all",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Not at all",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Only occasionally",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Only occasionally",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Sometimes",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Sometimes",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Often",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Often",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Most or all of the time",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Most or all of the time",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "source_draft_1",
+        "label": "Total raw score",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "sum",
+        "value_field": "printed_value",
+        "multiplier": 1,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "questionnaire_sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+          "page_sha256": "0bd83863f05d8ba9365069abd4407fcf0c4835147808b49d96761f3dc1d02d49",
+          "method": "reviewed_saved_source_membership_and_arithmetic",
+          "context_section_ids": [
+            "C5",
+            "LIVE_C14"
+          ],
+          "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+        },
+        "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+        "minimum": 0.0,
+        "maximum": 40.0
+      }
+    ],
+    "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+    "rules_provenance": {
+      "questionnaire_sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+      "page_sha256": "0bd83863f05d8ba9365069abd4407fcf0c4835147808b49d96761f3dc1d02d49",
+      "method": "reviewed_saved_source_membership_and_arithmetic"
+    },
+    "source_rule_excerpts": [
+      "In addition to the raw score, two percentiles are presented. The Clinical Percentile compares scores with young people presenting for mental health services. A percentile of 50 would indicate an average level of symptoms for a young person on first presentation to a service. NOTE: Please enter accurate date of birth in client profile as normative data differs by age (11 to 13 year olds mean = 15.8, SD 7.12 while 14 to 16 year olds mean = 20.6, SD = 7.06)."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "YP-CORE Scoring & Interpretation",
+        "text": "Raw scores are between 0 and 40, where higher scores represent greater severity of mental health symptoms. Item 4 which relates to thoughts of self-harm should be individually inspected for each patient.\n\nThe raw score has a corresponding symptom severity level as follows:\nHealthy (0–5): Scores in this range indicate no or minimal psychological distress, suggesting the individual is functioning well.\nLow Level (6–10): Scores in this range suggest low levels of distress, where some symptoms of anxiety or low mood might be present but do not significantly impair daily functioning. They are unlikely to meet the diagnostic criteria for depression or anxiety.\nMild (11–14): Scores in this range indicate mild psychological distress of clinical significance, where symptoms are noticeable but unlikely to disrupt daily functioning. People in this range probably meet the criteria for depression, anxiety, or another mental disorder.\nModerate (15–19): Scores in this range reflect moderate distress, with symptoms that are pronounced and interfere with the individual’s daily functioning.\nModerate-to-Severe (20–24): Scores in this range indicate significant psychological distress, where symptoms are likely to interfere with daily functioning and require clinical attention.\nSevere (25 and above): Scores in this range indicate severe distress, suggesting a high level of psychological impairment and an urgent need for clinical intervention. People who score in this range almost certainly meet the diagnostic criteria for an anxiety, mood, or other mental disorder.\n\nIn addition to the raw score, two percentiles are presented. The Clinical Percentile compares scores with young people presenting for mental health services. A percentile of 50 would indicate an average level of symptoms for a young person on first presentation to a service. NOTE: Please enter accurate date of birth in client profile as normative data differs by age (11 to 13 year olds mean = 15.8, SD 7.12 while 14 to 16 year olds mean = 20.6, SD = 7.06).\n\nA Non-Clinical Percentile is also presented which compares scores against a group of healthy young people (M=6.1, SD=6.06). Most people presenting for services will likely score above the 90th percentile compared to this normative sample.\n\nOn first administration a plot is shown presenting the total raw score with the symptom severity levels in the background of the plot. If administered on multiple occasions, a plot is displayed showing the raw score over time to indicate change as a result of treatment.\n"
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+    "remaining_work": [
+      "Normative conversions and clinical publication require separate source-specific review.",
+      "Age-specific thresholds and item-4 review protocol are not implemented."
+    ],
+    "implementation_status": {
+      "raw_calculation": "draft_implemented",
+      "interpretation": "not_compiled",
+      "normative_conversion": "not_implemented",
+      "clinical_use": "not_approved"
+    },
+    "runtime_module": "definition_runtime.py"
+  },
+  "context_sections": [
+    {
+      "id": "C1",
+      "title": "Young Person’s CORE (YP-CORE)",
+      "text": "The Young Person’s Clinical Outcomes in Routine Evaluation (YP-CORE) is a 10 item self-report measure designed for monitoring treatment outcomes in young people aged between 11 and 16 years of age. It was derived from the adult measure Clinical Outcomes in Routine Evaluation – Outcome Measure (CORE-OM), and captures a range of presenting problems relevant for mental health services. The copyright holder for the YP-CORE is the CORE System Trust.\n2 minutes\nAges 11 to 16\nAdolescent , Child , Outcome Monitoring\nAdminister Now",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C2",
+      "title": "FAQ",
+      "text": "How does the YP-CORE relate to the CORE-OM and CORE-10?\nThe YP-CORE is part of the CORE family of measures but has been specifically adapted for young people aged 11-16. While the CORE-OM (Clinical Outcomes in Routine Evaluation – Outcome Measure) is a comprehensive 34-item measure for adults, and the CORE-10 is a shorter 10-item version for those aged 17 and over, the YP-CORE was developed when it became clear that simply rewording adult measures wasn’t sufficient for younger age groups.\nAll YP-CORE items map from original CORE-OM items, but they have been substantially reworded to better suit adolescent language and experiences. For example, where adult measures might use more formal or clinical language, the YP-CORE uses terms and phrases that resonate better with young people. The YP-CORE is also a 10-item measure like the CORE-10 , making it brief enough to use regularly without being burdensome for young people.\nUnlike the adult CORE-OM which provides separate scores for wellbeing, problems, functioning and risk domains, the YP-CORE provides a single total score. This simplification reflects both the developmental considerations of the age group and the need for a streamlined tool that can be quickly completed and interpreted in youth mental health settings. When young people reach 17, services typically transition them to using the adult CORE-10 , ensuring continuity of measurement across the lifespan.\nAll CORE measures are the copyright of the CORE System Trust. More information can be obtained from their website: [reference removed]\nWhy is routine outcome monitoring important for young people aged 11-16?\nRoutine outcome monitoring using tools like the YP-CORE is particularly valuable for the 11-16 age group as this represents a critical developmental period where mental health difficulties often first emerge. Young people in this age range are navigating significant physical, emotional and social changes, and their mental health needs can fluctuate rapidly. Regular monitoring allows practitioners to track these changes session-by-session rather than relying on clinical impressions alone.\nThe YP-CORE provides a standardised way to capture young people’s own perspectives on their wellbeing, which is especially important as adolescents may not always verbally communicate their struggles to adults. By completing the measure regularly, young people become active participants in their own care, and services can quickly identify whether interventions are working or if adjustments are needed. This is particularly crucial given that early intervention during adolescence can prevent more serious mental health problems from developing later in life.\nAdditionally, routine monitoring helps services demonstrate their effectiveness and identify patterns across their young person caseload, supporting quality improvement and ensuring that limited mental health resources are being used effectively to support young people when they need it most.\nWhat does the YP-CORE measure?\nThe YP-CORE is a session-by-session monitoring tool with items covering anxiety, depression, trauma, physical problems, functioning and risk to self. There are a range of questions which aim to understand how a person has been feeling in the past week, providing a snapshot of a young person’s mental health and wellbeing.\nWhy would a service choose to use the YP-CORE?\nMental health practitioners are increasingly being encouraged to adopt evidence-based practices, and the collection of outcome data has been highlighted as a priority for mental health services. The YP-CORE has been shown to be a valid and reliable measure of clinical change, helping services track progress and guide treatment decisions effectively.\nWhat is the YP-CORE and who is it designed for?\nThe YP-CORE (Young Person’s Clinical Outcomes in Routine Evaluation) is a 10-item measure designed for use with young people aged 11-16 years (secondary school age). It is a session-by-session monitoring tool with items covering anxiety, depression, trauma, physical problems, functioning and risk to self. More information about the YP-CORE can be found on the YP-CORE page at the CORE System Trust: [reference removed]",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C3",
+      "title": "YP-CORE Overview",
+      "text": "The YP-CORE is not diagnostic in nature, but rather measures broad-spectrum symptom severity (e.g. self-harm, coping, unhappiness, psychological distress). The YP-CORE is the youth equivalent version of the CORE-10. All CORE measures are produced by CORE System Trust.\nExample YP-CORE Item\n\nThe YP-CORE is useful for clinicians working with young people because it provides a standardised method for tracking therapeutic progress and identifying areas of concern across multiple domains of psychological wellbeing. The YP-CORE efficiently captures core aspects of psychological distress including anxiety, depression, trauma symptoms, and physical problems, while also assessing functioning and risk, making it particularly useful for routine monitoring in time-limited clinical settings.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C4",
+      "title": "FAQ",
+      "text": "How does the YP-CORE relate to the CORE-OM and CORE-10?\nThe YP-CORE is part of the CORE family of measures but has been specifically adapted for young people aged 11-16. While the CORE-OM (Clinical Outcomes in Routine Evaluation – Outcome Measure) is a comprehensive 34-item measure for adults, and the CORE-10 is a shorter 10-item version for those aged 17 and over, the YP-CORE was developed when it became clear that simply rewording adult measures wasn’t sufficient for younger age groups.\nAll YP-CORE items map from original CORE-OM items, but they have been substantially reworded to better suit adolescent language and experiences. For example, where adult measures might use more formal or clinical language, the YP-CORE uses terms and phrases that resonate better with young people. The YP-CORE is also a 10-item measure like the CORE-10 , making it brief enough to use regularly without being burdensome for young people.\nUnlike the adult CORE-OM which provides separate scores for wellbeing, problems, functioning and risk domains, the YP-CORE provides a single total score. This simplification reflects both the developmental considerations of the age group and the need for a streamlined tool that can be quickly completed and interpreted in youth mental health settings. When young people reach 17, services typically transition them to using the adult CORE-10 , ensuring continuity of measurement across the lifespan.\nAll CORE measures are the copyright of the CORE System Trust. More information can be obtained from their website: [reference removed]\nWhy is routine outcome monitoring important for young people aged 11-16?\nWhat does the YP-CORE measure?\nWhy would a service choose to use the YP-CORE?\nWhat is the YP-CORE and who is it designed for?",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C5",
+      "title": "YP-CORE Scoring & Interpretation",
+      "text": "Raw scores are between 0 and 40, where higher scores represent greater severity of mental health symptoms. Item 4 which relates to thoughts of self-harm should be individually inspected for each patient.\n\nThe raw score has a corresponding symptom severity level as follows:\nHealthy (0–5): Scores in this range indicate no or minimal psychological distress, suggesting the individual is functioning well.\nLow Level (6–10): Scores in this range suggest low levels of distress, where some symptoms of anxiety or low mood might be present but do not significantly impair daily functioning. They are unlikely to meet the diagnostic criteria for depression or anxiety.\nMild (11–14): Scores in this range indicate mild psychological distress of clinical significance, where symptoms are noticeable but unlikely to disrupt daily functioning. People in this range probably meet the criteria for depression, anxiety, or another mental disorder.\nModerate (15–19): Scores in this range reflect moderate distress, with symptoms that are pronounced and interfere with the individual’s daily functioning.\nModerate-to-Severe (20–24): Scores in this range indicate significant psychological distress, where symptoms are likely to interfere with daily functioning and require clinical attention.\nSevere (25 and above): Scores in this range indicate severe distress, suggesting a high level of psychological impairment and an urgent need for clinical intervention. People who score in this range almost certainly meet the diagnostic criteria for an anxiety, mood, or other mental disorder.\n\nIn addition to the raw score, two percentiles are presented. The Clinical Percentile compares scores with young people presenting for mental health services. A percentile of 50 would indicate an average level of symptoms for a young person on first presentation to a service. NOTE: Please enter accurate date of birth in client profile as normative data differs by age (11 to 13 year olds mean = 15.8, SD 7.12 while 14 to 16 year olds mean = 20.6, SD = 7.06).\n\nA Non-Clinical Percentile is also presented which compares scores against a group of healthy young people (M=6.1, SD=6.06). Most people presenting for services will likely score above the 90th percentile compared to this normative sample.\n\nOn first administration a plot is shown presenting the total raw score with the symptom severity levels in the background of the plot. If administered on multiple occasions, a plot is displayed showing the raw score over time to indicate change as a result of treatment.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C6",
+      "title": "YP-CORE Psychometrics",
+      "text": "The YP-CORE was developed from the long version of the adult scale, the CORE-OM, and validated on a sample of 243 young people presenting to mental health services in the UK (Twigg et al, 2009). They found that younger children scored significantly lower (11 to 13 year olds mean = 15.8, SD 7.12) compared to older children (14 to 16 year olds mean = 20.6, SD = 7.06). Data revealed that the YP-CORE was sensitive change during the course of treatment (18.5 pre therapy and 8.8 after therapy, effect size = 1.3), indicating it is well suited to measure treatment response.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C7",
+      "title": "FAQ",
+      "text": "How does the YP-CORE relate to the CORE-OM and CORE-10?\nThe YP-CORE is part of the CORE family of measures but has been specifically adapted for young people aged 11-16. While the CORE-OM (Clinical Outcomes in Routine Evaluation – Outcome Measure) is a comprehensive 34-item measure for adults, and the CORE-10 is a shorter 10-item version for those aged 17 and over, the YP-CORE was developed when it became clear that simply rewording adult measures wasn’t sufficient for younger age groups.\nAll YP-CORE items map from original CORE-OM items, but they have been substantially reworded to better suit adolescent language and experiences. For example, where adult measures might use more formal or clinical language, the YP-CORE uses terms and phrases that resonate better with young people. The YP-CORE is also a 10-item measure like the CORE-10 , making it brief enough to use regularly without being burdensome for young people.\nUnlike the adult CORE-OM which provides separate scores for wellbeing, problems, functioning and risk domains, the YP-CORE provides a single total score. This simplification reflects both the developmental considerations of the age group and the need for a streamlined tool that can be quickly completed and interpreted in youth mental health settings. When young people reach 17, services typically transition them to using the adult CORE-10 , ensuring continuity of measurement across the lifespan.\nAll CORE measures are the copyright of the CORE System Trust. More information can be obtained from their website: [reference removed]\nWhy is routine outcome monitoring important for young people aged 11-16?\nRoutine outcome monitoring using tools like the YP-CORE is particularly valuable for the 11-16 age group as this represents a critical developmental period where mental health difficulties often first emerge. Young people in this age range are navigating significant physical, emotional and social changes, and their mental health needs can fluctuate rapidly. Regular monitoring allows practitioners to track these changes session-by-session rather than relying on clinical impressions alone.\nThe YP-CORE provides a standardised way to capture young people’s own perspectives on their wellbeing, which is especially important as adolescents may not always verbally communicate their struggles to adults. By completing the measure regularly, young people become active participants in their own care, and services can quickly identify whether interventions are working or if adjustments are needed. This is particularly crucial given that early intervention during adolescence can prevent more serious mental health problems from developing later in life.\nAdditionally, routine monitoring helps services demonstrate their effectiveness and identify patterns across their young person caseload, supporting quality improvement and ensuring that limited mental health resources are being used effectively to support young people when they need it most.\nWhat does the YP-CORE measure?\nWhy would a service choose to use the YP-CORE?\nWhat is the YP-CORE and who is it designed for?",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C8",
+      "title": "FAQ",
+      "text": "How does the YP-CORE relate to the CORE-OM and CORE-10?\nWhy is routine outcome monitoring important for young people aged 11-16?\nRoutine outcome monitoring using tools like the YP-CORE is particularly valuable for the 11-16 age group as this represents a critical developmental period where mental health difficulties often first emerge. Young people in this age range are navigating significant physical, emotional and social changes, and their mental health needs can fluctuate rapidly. Regular monitoring allows practitioners to track these changes session-by-session rather than relying on clinical impressions alone.\nThe YP-CORE provides a standardised way to capture young people’s own perspectives on their wellbeing, which is especially important as adolescents may not always verbally communicate their struggles to adults. By completing the measure regularly, young people become active participants in their own care, and services can quickly identify whether interventions are working or if adjustments are needed. This is particularly crucial given that early intervention during adolescence can prevent more serious mental health problems from developing later in life.\nAdditionally, routine monitoring helps services demonstrate their effectiveness and identify patterns across their young person caseload, supporting quality improvement and ensuring that limited mental health resources are being used effectively to support young people when they need it most.\nWhat does the YP-CORE measure?\nThe YP-CORE is a session-by-session monitoring tool with items covering anxiety, depression, trauma, physical problems, functioning and risk to self. There are a range of questions which aim to understand how a person has been feeling in the past week, providing a snapshot of a young person’s mental health and wellbeing.\nWhy would a service choose to use the YP-CORE?\nWhat is the YP-CORE and who is it designed for?",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C9",
+      "title": "FAQ",
+      "text": "How does the YP-CORE relate to the CORE-OM and CORE-10?\nWhy is routine outcome monitoring important for young people aged 11-16?\nWhat does the YP-CORE measure?\nThe YP-CORE is a session-by-session monitoring tool with items covering anxiety, depression, trauma, physical problems, functioning and risk to self. There are a range of questions which aim to understand how a person has been feeling in the past week, providing a snapshot of a young person’s mental health and wellbeing.\nWhy would a service choose to use the YP-CORE?\nMental health practitioners are increasingly being encouraged to adopt evidence-based practices, and the collection of outcome data has been highlighted as a priority for mental health services. The YP-CORE has been shown to be a valid and reliable measure of clinical change, helping services track progress and guide treatment decisions effectively.\nWhat is the YP-CORE and who is it designed for?",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C10",
+      "title": "FAQ",
+      "text": "How does the YP-CORE relate to the CORE-OM and CORE-10?\nWhy is routine outcome monitoring important for young people aged 11-16?\nWhat does the YP-CORE measure?\nWhy would a service choose to use the YP-CORE?\nMental health practitioners are increasingly being encouraged to adopt evidence-based practices, and the collection of outcome data has been highlighted as a priority for mental health services. The YP-CORE has been shown to be a valid and reliable measure of clinical change, helping services track progress and guide treatment decisions effectively.\nWhat is the YP-CORE and who is it designed for?\nThe YP-CORE (Young Person’s Clinical Outcomes in Routine Evaluation) is a 10-item measure designed for use with young people aged 11-16 years (secondary school age). It is a session-by-session monitoring tool with items covering anxiety, depression, trauma, physical problems, functioning and risk to self. More information about the YP-CORE can be found on the YP-CORE page at the CORE System Trust: [reference removed]",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "LIVE_C11",
+      "title": "Overview",
+      "text": "Search\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C12",
+      "title": "Young Person’s CORE (YP-CORE)",
+      "text": "The Young Person’s Clinical Outcomes in Routine Evaluation (YP-CORE) is a 10 item self-report measure designed for monitoring treatment outcomes in young people aged between 11 and 16 years of age. It was derived from the adult measure Clinical Outcomes in Routine Evaluation – Outcome Measure (CORE-OM), and captures a range of presenting problems relevant for mental health services. The copyright holder for the YP-CORE is the CORE System Trust.\n2 minutes\nAges 11 to 16\nAdolescent , Child , Outcome Monitoring\nAdminister Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C13",
+      "title": "YP-CORE Overview",
+      "text": "The YP-CORE is not diagnostic in nature, but rather measures broad-spectrum symptom severity (e.g. self-harm, coping, unhappiness, psychological distress). The YP-CORE is the youth equivalent version of the CORE-10. All CORE measures are produced by CORE System Trust.\nExample YP-CORE Item\n\nThe YP-CORE is useful for clinicians working with young people because it provides a standardised method for tracking therapeutic progress and identifying areas of concern across multiple domains of psychological wellbeing. The YP-CORE efficiently captures core aspects of psychological distress including anxiety, depression, trauma symptoms, and physical problems, while also assessing functioning and risk, making it particularly useful for routine monitoring in time-limited clinical settings.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C14",
+      "title": "YP-CORE Scoring & Interpretation",
+      "text": "Raw scores are between 0 and 40, where higher scores represent greater severity of mental health symptoms. Item 4 which relates to thoughts of self-harm should be individually inspected for each patient.\n\nThe raw score has a corresponding symptom severity level as follows:\nHealthy (0–5): Scores in this range indicate no or minimal psychological distress, suggesting the individual is functioning well.\nLow Level (6–10): Scores in this range suggest low levels of distress, where some symptoms of anxiety or low mood might be present but do not significantly impair daily functioning. They are unlikely to meet the diagnostic criteria for depression or anxiety.\nMild (11–14): Scores in this range indicate mild psychological distress of clinical significance, where symptoms are noticeable but unlikely to disrupt daily functioning. People in this range probably meet the criteria for depression, anxiety, or another mental disorder.\nModerate (15–19): Scores in this range reflect moderate distress, with symptoms that are pronounced and interfere with the individual’s daily functioning.\nModerate-to-Severe (20–24): Scores in this range indicate significant psychological distress, where symptoms are likely to interfere with daily functioning and require clinical attention.\nSevere (25 and above): Scores in this range indicate severe distress, suggesting a high level of psychological impairment and an urgent need for clinical intervention. People who score in this range almost certainly meet the diagnostic criteria for an anxiety, mood, or other mental disorder.\n\nIn addition to the raw score, two percentiles are presented. The Clinical Percentile compares scores with young people presenting for mental health services. A percentile of 50 would indicate an average level of symptoms for a young person on first presentation to a service. NOTE: Please enter accurate date of birth in client profile as normative data differs by age (11 to 13 year olds mean = 15.8, SD 7.12 while 14 to 16 year olds mean = 20.6, SD = 7.06).\n\nA Non-Clinical Percentile is also presented which compares scores against a group of healthy young people (M=6.1, SD=6.06). Most people presenting for services will likely score above the 90th percentile compared to this normative sample.\n\nOn first administration a plot is shown presenting the total raw score with the symptom severity levels in the background of the plot. If administered on multiple occasions, a plot is displayed showing the raw score over time to indicate change as a result of treatment.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C15",
+      "title": "YP-CORE Psychometrics",
+      "text": "The YP-CORE was developed from the long version of the adult scale, the CORE-OM, and validated on a sample of 243 young people presenting to mental health services in the UK (Twigg et al, 2009). They found that younger children scored significantly lower (11 to 13 year olds mean = 15.8, SD 7.12) compared to older children (14 to 16 year olds mean = 20.6, SD = 7.06). Data revealed that the YP-CORE was sensitive change during the course of treatment (18.5 pre therapy and 8.8 after therapy, effect size = 1.3), indicating it is well suited to measure treatment response.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C16",
+      "title": "Assess your patients with the Young Person’s CORE u sing a NovoPsych account",
+      "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C17",
+      "title": "FAQ",
+      "text": "How does the YP-CORE relate to the CORE-OM and CORE-10?\nThe YP-CORE is part of the CORE family of measures but has been specifically adapted for young people aged 11-16. While the CORE-OM (Clinical Outcomes in Routine Evaluation – Outcome Measure) is a comprehensive 34-item measure for adults, and the CORE-10 is a shorter 10-item version for those aged 17 and over, the YP-CORE was developed when it became clear that simply rewording adult measures wasn’t sufficient for younger age groups.\nAll YP-CORE items map from original CORE-OM items, but they have been substantially reworded to better suit adolescent language and experiences. For example, where adult measures might use more formal or clinical language, the YP-CORE uses terms and phrases that resonate better with young people. The YP-CORE is also a 10-item measure like the CORE-10 , making it brief enough to use regularly without being burdensome for young people.\nUnlike the adult CORE-OM which provides separate scores for wellbeing, problems, functioning and risk domains, the YP-CORE provides a single total score. This simplification reflects both the developmental considerations of the age group and the need for a streamlined tool that can be quickly completed and interpreted in youth mental health settings. When young people reach 17, services typically transition them to using the adult CORE-10 , ensuring continuity of measurement across the lifespan.\nAll CORE measures are the copyright of the CORE System Trust. More information can be obtained from their website: [reference removed]\nWhy is routine outcome monitoring important for young people aged 11-16?\nRoutine outcome monitoring using tools like the YP-CORE is particularly valuable for the 11-16 age group as this represents a critical developmental period where mental health difficulties often first emerge. Young people in this age range are navigating significant physical, emotional and social changes, and their mental health needs can fluctuate rapidly. Regular monitoring allows practitioners to track these changes session-by-session rather than relying on clinical impressions alone.\nThe YP-CORE provides a standardised way to capture young people’s own perspectives on their wellbeing, which is especially important as adolescents may not always verbally communicate their struggles to adults. By completing the measure regularly, young people become active participants in their own care, and services can quickly identify whether interventions are working or if adjustments are needed. This is particularly crucial given that early intervention during adolescence can prevent more serious mental health problems from developing later in life.\nAdditionally, routine monitoring helps services demonstrate their effectiveness and identify patterns across their young person caseload, supporting quality improvement and ensuring that limited mental health resources are being used effectively to support young people when they need it most.\nWhat does the YP-CORE measure?\nThe YP-CORE is a session-by-session monitoring tool with items covering anxiety, depression, trauma, physical problems, functioning and risk to self. There are a range of questions which aim to understand how a person has been feeling in the past week, providing a snapshot of a young person’s mental health and wellbeing.\nWhy would a service choose to use the YP-CORE?\nMental health practitioners are increasingly being encouraged to adopt evidence-based practices, and the collection of outcome data has been highlighted as a priority for mental health services. The YP-CORE has been shown to be a valid and reliable measure of clinical change, helping services track progress and guide treatment decisions effectively.\nWhat is the YP-CORE and who is it designed for?\nThe YP-CORE (Young Person’s Clinical Outcomes in Routine Evaluation) is a 10-item measure designed for use with young people aged 11-16 years (secondary school age). It is a session-by-session monitoring tool with items covering anxiety, depression, trauma, physical problems, functioning and risk to self. More information about the YP-CORE can be found on the YP-CORE page at the CORE System Trust: [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C18",
+      "title": "Developer",
+      "text": "The copyright holder for the YP-CORE is the CORE System Trust [reference removed]\nTwigg, E., Barkham, M., Bewick, B. M., Mulhern, B., Connell, J., & Cooper, M. (2009). The Young Person’s CORE: Development of a brief outcome measure for young people. Counselling and Psychotherapy Research, 9(3), 160-168. [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C19",
+      "title": "References",
+      "text": "Twigg, E., Barkham, M., Bewick, B. M., Mulhern, B., Connell, J., & Cooper, M. (2009). The Young Person’s CORE: Development of a brief outcome measure for young people. Counselling and Psychotherapy Research, 9(3), 160-168. [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C20",
+      "title": "Clinical Outcomes in Routine Evaluation (CORE-OM)",
+      "text": "Also known as: CORE-OM , Clinical Outcomes in Routine Evaluation , Clinical outcomes questionnaire , Routine evaluation measure\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C21",
+      "title": "Clinical Outcomes in Routine Evaluation 10 (CORE-10)",
+      "text": "Also known as: CORE-10 , Clinical Outcomes in Routine Evaluation , Short outcome measure\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C22",
+      "title": "Depression Anxiety Stress Scales – Youth Version (DASS-Y)",
+      "text": "Also known as: DASS-Y , DASS Youth , Depression Anxiety Stress Scales , Youth depression anxiety scale , Adolescent mental health screening\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C23",
+      "title": "Pediatric Symptom Checklist-17 (PSC-17)",
+      "text": "Also known as: PSC-17 , PSC , Pediatric Symptom Checklist , Paediatric behavioural checklist\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C24",
+      "title": "Brief Emotional Distress Scale for Youth (BEDSY)",
+      "text": "Also known as: BEDSY , Brief Emotional Distress Scale for Youth , Youth emotional distress scale , Brief adolescent distress measure\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C25",
+      "title": "YP-CORE Sample Results",
+      "text": "Administer Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C26",
+      "title": "Dr David Hegarty",
+      "text": "Head of Psychometrics & Psychologist\n",
+      "review_status": "fresh_source_text_needs_review"
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "The copyright holder for the YP-CORE is the CORE System Trust [reference removed]\nTwigg, E., Barkham, M., Bewick, B. M., Mulhern, B., Connell, J., & Cooper, M. (2009). The Young Person’s CORE: Development of a brief outcome measure for young people. Counselling and Psychotherapy Research, 9(3), 160-168. [reference removed]"
+    },
+    {
+      "id": "R2",
+      "citation": "Twigg, E., Barkham, M., Bewick, B. M., Mulhern, B., Connell, J., & Cooper, M. (2009). The Young Person’s CORE: Development of a brief outcome measure for young people. Counselling and Psychotherapy Research, 9(3), 160-168. [reference removed]"
+    }
+  ],
+  "tables": [],
+  "assets": [
+    {
+      "id": "A1",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "'Back to Assessments' navigation button",
+      "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A2",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Young Person’s CORE (YP-CORE) questionnaire PDF",
+      "sha256": "6225893b9eaab5875b8f1357db70859b5657776658afef4c15327957ff1a9b14",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Brief Emotional Distress Scale for Youth (BEDSY)",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A3",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "2397d6047ef4d186ccb8e4861d467688905467fe9775655bfdda10cc5165d491",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Download YP-CORE PDF",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A4",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Picture of Dr David Hegarty",
+      "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Scale information composed by:",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A5",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "82aa66d5f596de32b32c5ed2a1b35459e4e02aad085552457950250f8edc4b18",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "YP-CORE Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A6",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "fd32c0d6efc389446d44c23262a894bdc306af5f203dfac24189749e2fd0da15",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "YP-CORE Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A7",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "50d751ff3cacecf783bec537c3a3ec9ac7617d394545e4ff1242bcaf27e2fb3e",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "YP-CORE Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A8",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "59e3699bb7882a99406ea8571aa1edd845204f7f14a62407c3a6c1e7a719d75f",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "YP-CORE Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A9",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Assess your patients with the Young Person’s CORE u sing a NovoPsych account",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A10",
+      "kind": "documents",
+      "role": "selected_questionnaire",
+      "title": "Download YP-CORE PDF",
+      "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A11",
+      "kind": "documents",
+      "role": "sample_report_not_runtime_context",
+      "title": "YP-CORE Sample Results",
+      "sha256": "2497de49f4c48cd1a3358b51d439871508026b2d71c1826e788830d9082ca775",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A12",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Original response",
+      "sha256": "7b3531608eba605bbed0068de1938039f08ad2d3de891a6573e878d39ad33af2",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A13",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Initial page",
+      "sha256": "274bcbcc4b4e02a8900fce6c97d8881576bc454aac198db11e3f57729be206df",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A14",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "YP-CORE Overview",
+      "sha256": "274bcbcc4b4e02a8900fce6c97d8881576bc454aac198db11e3f57729be206df",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A15",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "YP-CORE Scoring & Interpretation",
+      "sha256": "29aabb0d14c60e99d7f38258a37942fed51f2e995003f3237ea79f33bd213ba7",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A16",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "YP-CORE Psychometrics",
+      "sha256": "6774a42e7047b8adec5424d8469f8983e38794bc3a2423d6b25d817f6a9ca0b0",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A17",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Professional Access",
+      "sha256": "0a2238b5c059bcf113b13295a30bacb440f44c147892788021d579c7dd22df65",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A18",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "How does the YP-CORE relate to the CORE-OM and CORE-10?",
+      "sha256": "0a2238b5c059bcf113b13295a30bacb440f44c147892788021d579c7dd22df65",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A19",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Why is routine outcome monitoring important for young people aged 11-16?",
+      "sha256": "41a2854a52fb6ae411e99f8c356c7d66936024da71344fc26e96c17c843cd516",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A20",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "What does the YP-CORE measure?",
+      "sha256": "d2129611153d77956a319f82777836b5dca0ae51fc0a4390adb28a2de683f924",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A21",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Why would a service choose to use the YP-CORE?",
+      "sha256": "309239fe8b9000b20de824e6b4c3aa85ea0b4d745da3d147ff49132d85040ab6",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A22",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "What is the YP-CORE and who is it designed for?",
+      "sha256": "ff3c4b2dfc0beb6a714512f408111af351d41628be089ba842732634461fe1c1",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    }
+  ],
+  "conversation_policy": {
+    "status": "draft_disabled_pending_review",
+    "preserve_question_wording": true,
+    "require_answer_confirmation": true,
+    "infer_unanswered_items": false,
+    "calculate_scores_in_backend": true,
+    "treat_source_as_data_not_instructions": true,
+    "context_allowlist": [
+      "assessment",
+      "administration",
+      "questionnaire",
+      "context_sections"
+    ],
+    "send_asset_bytes_or_sample_reports": false
+  },
+  "review": {
+    "ready_for_clinical_use": false,
+    "questionnaire_status": "recovered_needs_review",
+    "questionnaire_completeness_verified": false,
+    "complete_capture_verified": false,
+    "independent_clinical_review_completed": false,
+    "issues": [
+      {
+        "code": "selection_and_branching_need_review",
+        "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+      },
+      {
+        "code": "draft_scoring_review_pending",
+        "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+      },
+      {
+        "code": "independent_review_pending",
+        "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+      }
+    ],
+    "previous_review_notes": [],
+    "response_structure_complete": true,
+    "unresolved_response_item_ids": [],
+    "required_input_widgets": [
+      "choice"
+    ],
+    "option_refresh": {
+      "corrected_cells_or_fields": 0,
+      "unrenderable_option_count": 0,
+      "numeric_only_options_are_not_missing": true,
+      "selection_modes_still_needing_review": 10
+    },
+    "definition_repair": {
+      "status": "source_implementation_draft",
+      "content_repairs": [],
+      "scoring_rule_count": 1,
+      "remaining_work": [
+        "Normative conversions and clinical publication require separate source-specific review.",
+        "Age-specific thresholds and item-4 review protocol are not implemented."
+      ],
+      "clinical_approval": false
+    }
+  },
+  "rights": {
+    "access": "public_page",
+    "reproduction_permission": "not_verified",
+    "note": "Public retrieval does not establish licensing or reuse rights."
+  },
+  "source_documents": [
+    {
+      "id": "selected_pdf",
+      "role": "questionnaire_source",
+      "sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+      "runtime_context_allowed": false,
+      "page_count": 1,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    },
+    {
+      "id": "live_pdf_2",
+      "role": "supplemental_source_document",
+      "sha256": "2497de49f4c48cd1a3358b51d439871508026b2d71c1826e788830d9082ca775",
+      "runtime_context_allowed": false,
+      "source_titles": [
+        "linked_pdf"
+      ],
+      "page_count": 3,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    }
+  ],
+  "reporting": {
+    "version": "2.0.0-draft.1",
+    "status": "draft_requires_clinical_review",
+    "clinical_scoring_enabled": false,
+    "metrics": [
+      {
+        "rule_id": "source_draft_1",
+        "label": "Total raw score",
+        "minimum": 0.0,
+        "maximum": 40.0,
+        "favourable_direction": null,
+        "direction_status": "not_compiled",
+        "calculation_method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "severity_bands_rule_id": null,
+        "axis_unit": "score"
+      }
+    ],
+    "charts": [
+      {
+        "id": "source_draft_1",
+        "title": "Total raw score",
+        "kind": "domain_trend",
+        "series": [
+          {
+            "id": "source_draft_1",
+            "label": "Total raw score",
+            "value_field": "rule_result"
+          }
+        ],
+        "minimum": 0.0,
+        "maximum": 40.0,
+        "axis_unit": "score"
+      }
+    ],
+    "comparisons": {
+      "reference_visits": [
+        "previous",
+        "baseline"
+      ],
+      "delta_formula": "current_minus_reference",
+      "deduplicate_same_reference_visit": true,
+      "require_same_assessment_definition_language_and_scoring_version": true,
+      "missing_result": "withhold_comparison",
+      "single_visit": "show_current_scores_only",
+      "date_source": "saved_session_completion_timestamp",
+      "require_compatible_respondent_context": true,
+      "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+      "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+      "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+    },
+    "percentiles": {
+      "enabled": false,
+      "reason": "verified_lookup_not_available"
+    },
+    "interpretation": {
+      "method": "deterministic_templates",
+      "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+      "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+      "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+      "clinical_significance": "not_implemented_requires_review",
+      "diagnosis": "not_inferred",
+      "severity_source": "not_compiled",
+      "overall_total": null,
+      "combine_metrics_into_new_total": false,
+      "source_guidance_ref": {
+        "section": "scoring",
+        "field": "source_guidance"
+      },
+      "source_guidance_use": "reference_text_for_review_not_executable_rules",
+      "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+      "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+      "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+    },
+    "source_evidence": {
+      "questionnaire_sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+      "guidance_titles": [
+        "YP-CORE Scoring & Interpretation"
+      ]
+    },
+    "mode": "numeric_scores",
+    "required_context": [],
+    "coverage": {
+      "questionnaire_available": true,
+      "numeric_rule_count": 1,
+      "rules_included": [
+        "source_draft_1"
+      ],
+      "raw_calculation_status": "draft_implemented",
+      "interpretation_status": "not_compiled",
+      "full_source_coverage_verified": false,
+      "clinical_review_complete": false,
+      "remaining_work": [
+        "Normative conversions and clinical publication require separate source-specific review.",
+        "Age-specific thresholds and item-4 review protocol are not implemented."
+      ],
+      "review_issue_codes": [
+        "selection_and_branching_need_review",
+        "scoring_not_structured",
+        "independent_review_pending"
+      ],
+      "reference_guidance_only": false,
+      "missing_direction_rule_ids": [
+        "source_draft_1"
+      ]
+    },
+    "sections": [
+      {
+        "id": "patient_details",
+        "enabled": true,
+        "source": "saved_patient_and_session"
+      },
+      {
+        "id": "assessment_summary",
+        "enabled": true,
+        "source": "assessment_and_reporting_coverage"
+      },
+      {
+        "id": "results",
+        "enabled": true,
+        "source": "reporting.metrics"
+      },
+      {
+        "id": "score_charts",
+        "enabled": true,
+        "source": "reporting.charts",
+        "single_visit": "range_bar",
+        "repeated_visits": "line_chart"
+      },
+      {
+        "id": "comparisons",
+        "enabled": true,
+        "source": "compatible_saved_sessions"
+      },
+      {
+        "id": "protocol_result",
+        "enabled": false,
+        "source": "scoring.protocol"
+      },
+      {
+        "id": "paired_profile",
+        "enabled": false,
+        "source": "scoring.paired_profile"
+      },
+      {
+        "id": "response_history",
+        "enabled": true,
+        "source": "reporting.item_history"
+      },
+      {
+        "id": "responses",
+        "enabled": true,
+        "source": "reporting.response_groups"
+      },
+      {
+        "id": "source_guidance",
+        "enabled": true,
+        "source": "scoring.source_guidance",
+        "role": "reference_material_requires_review"
+      },
+      {
+        "id": "limitations",
+        "enabled": true,
+        "source": "reporting.coverage"
+      }
+    ],
+    "response_groups": [
+      {
+        "id": "source_draft_1",
+        "label": "Total raw score",
+        "rule_id": "source_draft_1",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ]
+      }
+    ],
+    "item_history": [
+      {
+        "item_id": "Q1",
+        "source_label": "1",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q2",
+        "source_label": "2",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q3",
+        "source_label": "3",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q4",
+        "source_label": "4",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q5",
+        "source_label": "5",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q6",
+        "source_label": "6",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q7",
+        "source_label": "7",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q8",
+        "source_label": "8",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q9",
+        "source_label": "9",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q10",
+        "source_label": "10",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      }
+    ],
+    "protocol": null,
+    "paired_profile": null
+  },
+  "verification": {
+    "schema_version": "1.0.0",
+    "checked_on": "2026-11-18",
+    "definition_version": "1.0.0-draft.6",
+    "scoring_content_sha256": "cfde7d187317c0c105105ea149fbd3ce94d462143d3c6e5f2f8ef91ae009aa6c",
+    "status": "technical_checks_passed",
+    "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+    "questionnaire": {
+      "status": "pending_independent_review",
+      "complete_wording_review": false
+    },
+    "rules": [
+      {
+        "rule_id": "source_draft_1",
+        "technical_status": "passed",
+        "source_check": "not_checked",
+        "source_scope": null,
+        "source_ids": [],
+        "example_case_ids": [],
+        "example_result_counts": {
+          "passed": 0,
+          "known_gap_confirmed": 0,
+          "failed": 0
+        },
+        "clinical_approved": false
+      }
+    ],
+    "interpretation": [
+      {
+        "rule_id": "source_draft_1",
+        "status": "not_encoded",
+        "clinical_approved": false
+      }
+    ],
+    "percentiles": {
+      "status": "not_implemented",
+      "clinical_approved": false
+    },
+    "protocol": {
+      "status": "not_encoded",
+      "clinical_approved": false
+    },
+    "source_references": [],
+    "evidence_build": {
+      "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+      "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+      "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+      "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+    },
+    "remaining_work": [
+      "Normative conversions and clinical publication require separate source-specific review.",
+      "Age-specific thresholds and item-4 review protocol are not implemented.",
+      "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+      "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+      "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+      "No independent primary-source benchmark was added for this assessment in this pass."
+    ],
+    "clinical_approval": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "approved_definition_version": null,
+      "approved_scoring_sha256": null
+    },
+    "runtime_policy": {
+      "clinical_scoring_enabled": false,
+      "draft_label": "Draft score — not clinically validated",
+      "draft_requires_explicit_opt_in": true,
+      "missing_rule_result": "unavailable",
+      "reject_stale_verification": true,
+      "source_links_are_evidence_only": true
+    }
+  },
+  "report_configuration": {
+    "schemaVersion": "assessment-report-config/2.0.0",
+    "status": "source_specific_draft",
+    "metricBindings": [
+      {
+        "id": "metric_source_draft_1",
+        "ruleId": "source_draft_1",
+        "label": "Total raw score",
+        "minimum": 0.0,
+        "maximum": 40.0,
+        "calculation": {
+          "id": "source_draft_1",
+          "label": "Total raw score",
+          "item_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q6",
+            "Q7",
+            "Q8",
+            "Q9",
+            "Q10"
+          ],
+          "method": "sum",
+          "value_field": "printed_value",
+          "multiplier": 1,
+          "severity_bands": [],
+          "status": "source_arithmetic_draft",
+          "enabled": false,
+          "source": {
+            "questionnaire_sha256": "47d91397772a99b54a45d91d97327d3e8ef350629ebd187754d2a21fdbf2746b",
+            "page_sha256": "0bd83863f05d8ba9365069abd4407fcf0c4835147808b49d96761f3dc1d02d49",
+            "method": "reviewed_saved_source_membership_and_arithmetic",
+            "context_section_ids": [
+              "C5",
+              "LIVE_C14"
+            ],
+            "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+          },
+          "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+          "minimum": 0.0,
+          "maximum": 40.0
+        },
+        "status": "source_arithmetic_draft",
+        "runtimeEnabled": false
+      }
+    ],
+    "sources": [
+      {
+        "sha256": "2497de49f4c48cd1a3358b51d439871508026b2d71c1826e788830d9082ca775",
+        "pageCount": 3,
+        "identityStatus": "title_or_acronym_matches",
+        "hashVerified": true,
+        "usage": "reference_identity_only_no_runtime_fetch"
+      }
+    ],
+    "page": {
+      "coordinateUnit": "pt",
+      "origin": "top_left",
+      "documentsAreAlternativesNotConcatenated": true
+    },
+    "theme": {
+      "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+      "branding": "application_branding",
+      "sourceLogosRequired": false
+    },
+    "pages": [
+      {
+        "pageId": "d2497de49f4c4_p1",
+        "documentSha256": "2497de49f4c48cd1a3358b51d439871508026b2d71c1826e788830d9082ca775",
+        "pageNumber": 1,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [
+          "d2497de49f4c4_p1_chart_1"
+        ],
+        "tableIds": [
+          "d2497de49f4c4_p1_table_1",
+          "d2497de49f4c4_p1_table_2"
+        ],
+        "sectionIds": [
+          "d2497de49f4c4_p1_section_1",
+          "d2497de49f4c4_p1_section_2",
+          "d2497de49f4c4_p1_section_3",
+          "d2497de49f4c4_p1_section_4"
+        ]
+      },
+      {
+        "pageId": "d2497de49f4c4_p2",
+        "documentSha256": "2497de49f4c48cd1a3358b51d439871508026b2d71c1826e788830d9082ca775",
+        "pageNumber": 2,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [
+          "d2497de49f4c4_p2_table_1"
+        ],
+        "sectionIds": [
+          "d2497de49f4c4_p2_section_1"
+        ]
+      },
+      {
+        "pageId": "d2497de49f4c4_p3",
+        "documentSha256": "2497de49f4c48cd1a3358b51d439871508026b2d71c1826e788830d9082ca775",
+        "pageNumber": 3,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [
+          "d2497de49f4c4_p3_table_1"
+        ],
+        "sectionIds": [
+          "d2497de49f4c4_p3_section_1"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "d2497de49f4c4_p1_section_1",
+        "pageId": "d2497de49f4c4_p1",
+        "title": "Results",
+        "type": "results",
+        "bboxPt": [
+          34.3465,
+          197.90677,
+          84.91451,
+          211.90677
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d2497de49f4c4_p1_section_2",
+        "pageId": "d2497de49f4c4_p1",
+        "title": "Interpretation",
+        "type": "interpretation",
+        "bboxPt": [
+          34.34682,
+          281.52896,
+          124.57684,
+          295.52896
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d2497de49f4c4_p1_section_3",
+        "pageId": "d2497de49f4c4_p1",
+        "title": "YP-CORE Psychological Distress",
+        "type": "source_heading",
+        "bboxPt": [
+          204.515,
+          363.96851,
+          393.91098,
+          375.96851
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d2497de49f4c4_p1_section_4",
+        "pageId": "d2497de49f4c4_p1",
+        "title": "Scoring and Interpretation Information",
+        "type": "scoring_guidance",
+        "bboxPt": [
+          34.3465,
+          654.62671,
+          290.26645,
+          668.62671
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d2497de49f4c4_p2_section_1",
+        "pageId": "d2497de49f4c4_p2",
+        "title": "Client Responses",
+        "type": "responses",
+        "bboxPt": [
+          34.3465,
+          524.5257,
+          151.8205,
+          538.5257
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d2497de49f4c4_p3_section_1",
+        "pageId": "d2497de49f4c4_p3",
+        "title": "Client Responses (cont.)",
+        "type": "responses",
+        "bboxPt": [
+          34.3465,
+          144.0488,
+          198.48251,
+          158.0488
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      }
+    ],
+    "charts": [
+      {
+        "id": "d2497de49f4c4_p1_chart_1",
+        "title": "YP-CORE Psychological Distress",
+        "type": "vertical_bar",
+        "bboxPt": [
+          166.213,
+          389.87,
+          451.213,
+          625.31
+        ],
+        "widthPt": 285.0,
+        "heightPt": 235.44,
+        "axisColour": "#333333",
+        "observedDataType": "unresolved",
+        "backgroundBands": [
+          {
+            "bboxPt": [
+              166.213,
+              593.211,
+              451.21298,
+              625.31104
+            ],
+            "colour": "#006400",
+            "opacity": 0.5,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              166.213,
+              564.03088,
+              451.21298,
+              593.211
+            ],
+            "colour": "#008000",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              166.213,
+              540.6908,
+              451.21298,
+              564.03101
+            ],
+            "colour": "#ffff00",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              166.213,
+              511.51031,
+              451.21298,
+              540.69
+            ],
+            "colour": "#ffa500",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              166.213,
+              482.3309,
+              451.21298,
+              511.51102
+            ],
+            "colour": "#ff0000",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          }
+        ],
+        "variantEvidence": "single_visit_observed",
+        "xAxis": {
+          "status": "unresolved",
+          "ticks": [
+            {
+              "value": 0.0,
+              "positionPt": 158.433,
+              "text": "0",
+              "colour": "#333333"
+            }
+          ],
+          "title": null,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "yAxis": {
+          "status": "linear_ticks_observed",
+          "ticks": [
+            {
+              "value": 40.0,
+              "positionPt": 392.64413,
+              "text": "40",
+              "colour": "#333333"
+            },
+            {
+              "value": 36.0,
+              "positionPt": 415.98434,
+              "text": "36",
+              "colour": "#333333"
+            },
+            {
+              "value": 32.0,
+              "positionPt": 439.33435,
+              "text": "32",
+              "colour": "#333333"
+            },
+            {
+              "value": 28.0,
+              "positionPt": 462.67416,
+              "text": "28",
+              "colour": "#333333"
+            },
+            {
+              "value": 24.0,
+              "positionPt": 486.02417,
+              "text": "24",
+              "colour": "#333333"
+            },
+            {
+              "value": 20.0,
+              "positionPt": 509.36401,
+              "text": "20",
+              "colour": "#333333"
+            },
+            {
+              "value": 16.0,
+              "positionPt": 532.70422,
+              "text": "16",
+              "colour": "#333333"
+            },
+            {
+              "value": 12.0,
+              "positionPt": 556.0542,
+              "text": "12",
+              "colour": "#333333"
+            },
+            {
+              "value": 8.0,
+              "positionPt": 579.39404,
+              "text": "8",
+              "colour": "#333333"
+            },
+            {
+              "value": 4.0,
+              "positionPt": 602.74402,
+              "text": "4",
+              "colour": "#333333"
+            },
+            {
+              "value": 0.0,
+              "positionPt": 626.08423,
+              "text": "0",
+              "colour": "#333333"
+            }
+          ],
+          "title": null,
+          "minimum": 0.0,
+          "maximum": 40.0,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "series": [
+          {
+            "id": "series_1",
+            "label": "Raw Score",
+            "colour": "#4e79a6",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.49649119273622405,
+            "barThicknessPt": 50.0,
+            "fill": "#4e79a7",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#4e79a6"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          }
+        ],
+        "runtimePolicy": {
+          "missingBinding": "withhold_chart",
+          "missingNorm": "withhold_chart",
+          "useSampleValues": false,
+          "substituteRawScoreForPercentile": false,
+          "unknownHistoryVariant": "withhold_unestablished_variant",
+          "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+        },
+        "pageId": "d2497de49f4c4_p1",
+        "sourceChartId": "chart_1",
+        "typeReview": {
+          "reviewIndex": 414,
+          "detectedType": "vertical_bar",
+          "reviewedType": "vertical_bar",
+          "method": "AI_visual_inspection_of_source_PDF_crop",
+          "scope": "chart_kind_only_not_scoring_or_full_layout",
+          "panelCount": 1,
+          "changed": false
+        },
+        "panelCount": 1,
+        "runtimeEnabled": false,
+        "labels": [
+          {
+            "text": "YP-CORE Psychological Distress",
+            "bboxPt": [
+              204.515,
+              363.96851,
+              393.91098,
+              375.96851
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Healthy",
+            "bboxPt": [
+              426.983,
+              607.72223,
+              450.71298,
+              614.72223
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Low Level",
+            "bboxPt": [
+              419.19904,
+              578.54218,
+              450.71301,
+              585.54218
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Mild",
+            "bboxPt": [
+              437.88199,
+              549.37225,
+              450.71295,
+              556.37225
+            ],
+            "colour": "#ffa500",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Moderate",
+            "bboxPt": [
+              421.14499,
+              520.18127,
+              450.71298,
+              527.18127
+            ],
+            "colour": "#ff0000",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Moderate-to-Severe",
+            "bboxPt": [
+              388.46899,
+              491.00226,
+              450.71298,
+              498.00226
+            ],
+            "colour": "#b03a2e",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Severe",
+            "bboxPt": [
+              428.53699,
+              447.23126,
+              450.71298,
+              454.23126
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Raw Score",
+            "bboxPt": [
+              283.263,
+              631.78418,
+              332.16299,
+              641.78418
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 10.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Scoring and Interpretation Information",
+            "bboxPt": [
+              34.3465,
+              654.62671,
+              290.26645,
+              668.62671
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 14.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "For comprehensive information on the YP-CORE, ",
+            "bboxPt": [
+              91.0394,
+              673.8714,
+              335.5694,
+              684.8714
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 11.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "see here",
+            "bboxPt": [
+              335.57001,
+              673.87158,
+              378.371,
+              684.87158
+            ],
+            "colour": "#0000ff",
+            "font": "Helvetica",
+            "fontSizePt": 11.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+        "referenceDistributions": null
+      }
+    ],
+    "tables": [
+      {
+        "id": "d2497de49f4c4_p1_table_1",
+        "type": "patient_metadata",
+        "bboxPt": [
+          28.3465,
+          113.38562,
+          566.9295,
+          180.0
+        ],
+        "rowCount": 4,
+        "columnCount": 4,
+        "cellsPt": [
+          [
+            28.3465,
+            113.38562,
+            566.9295,
+            133.22818
+          ],
+          [
+            28.3465,
+            133.22818,
+            141.73212,
+            148.81921
+          ],
+          [
+            28.3465,
+            148.81921,
+            141.73212,
+            164.40973
+          ],
+          [
+            28.3465,
+            164.40973,
+            141.73212,
+            180.0
+          ],
+          [
+            141.73212,
+            133.22818,
+            354.33059,
+            148.81921
+          ],
+          [
+            141.73212,
+            148.81921,
+            354.33059,
+            164.40973
+          ],
+          [
+            141.73212,
+            164.40973,
+            354.33059,
+            180.0
+          ],
+          [
+            354.33059,
+            133.22818,
+            467.7164,
+            148.81921
+          ],
+          [
+            354.33059,
+            148.81921,
+            467.7164,
+            164.40973
+          ],
+          [
+            354.33059,
+            164.40973,
+            467.7164,
+            180.0
+          ],
+          [
+            467.7164,
+            133.22818,
+            566.9295,
+            148.81921
+          ],
+          [
+            467.7164,
+            148.81921,
+            566.9295,
+            164.40973
+          ],
+          [
+            467.7164,
+            164.40973,
+            566.9295,
+            180.0
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d2497de49f4c4_p1",
+        "sourceTableId": "table_1",
+        "columns": [],
+        "rowBindings": [],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Young Person’s CORE (YP -CORE)",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "static_label",
+            "content": "Client Name",
+            "runtimeEnabled": false,
+            "followingCellBindingCandidate": "patient.displayName"
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "patient_or_session_field",
+            "content": null,
+            "runtimeEnabled": false,
+            "contentBinding": "patient.displayName"
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "static_label",
+            "content": "Date administered",
+            "runtimeEnabled": false,
+            "followingCellBindingCandidate": "session.completedAt"
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "patient_or_session_field",
+            "content": null,
+            "runtimeEnabled": false,
+            "contentBinding": "session.completedAt"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "static_label",
+            "content": "Date of birth (age)",
+            "runtimeEnabled": false,
+            "followingCellBindingCandidate": "patient.dateOfBirthAndAgeAtAdministration"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "patient_or_session_field",
+            "content": null,
+            "runtimeEnabled": false,
+            "contentBinding": "patient.dateOfBirthAndAgeAtAdministration"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "static_label",
+            "content": "Time taken",
+            "runtimeEnabled": false,
+            "followingCellBindingCandidate": "session.duration"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "patient_or_session_field",
+            "content": null,
+            "runtimeEnabled": false,
+            "contentBinding": "session.duration"
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "static_label",
+            "content": "Assessor",
+            "runtimeEnabled": false,
+            "followingCellBindingCandidate": "session.assessorName"
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "patient_or_session_field",
+            "content": null,
+            "runtimeEnabled": false,
+            "contentBinding": "session.assessorName"
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      },
+      {
+        "id": "d2497de49f4c4_p1_table_2",
+        "type": "unresolved_table",
+        "bboxPt": [
+          28.3465,
+          195.59017,
+          566.9295,
+          265.039
+        ],
+        "rowCount": 3,
+        "columnCount": 6,
+        "cellsPt": [
+          [
+            28.3465,
+            195.59017,
+            566.9295,
+            215.43301
+          ],
+          [
+            28.3465,
+            215.43301,
+            85.03951,
+            249.44893
+          ],
+          [
+            28.3465,
+            249.44893,
+            85.03951,
+            265.039
+          ],
+          [
+            85.03951,
+            215.43301,
+            283.314,
+            249.44893
+          ],
+          [
+            85.03951,
+            249.44893,
+            283.314,
+            265.039
+          ],
+          [
+            283.314,
+            215.43301,
+            354.33059,
+            249.44893
+          ],
+          [
+            283.314,
+            249.44893,
+            354.33059,
+            265.039
+          ],
+          [
+            354.33059,
+            215.43301,
+            425.19702,
+            249.44893
+          ],
+          [
+            354.33059,
+            249.44893,
+            425.19702,
+            265.039
+          ],
+          [
+            425.19702,
+            215.43301,
+            496.06302,
+            249.44893
+          ],
+          [
+            425.19702,
+            249.44893,
+            496.06302,
+            265.039
+          ],
+          [
+            496.06302,
+            215.43301,
+            566.9295,
+            249.44893
+          ],
+          [
+            496.06302,
+            249.44893,
+            566.9295,
+            265.039
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d2497de49f4c4_p1",
+        "sourceTableId": "table_2",
+        "columns": [
+          {
+            "sourceColumnIndex": 2,
+            "label": "Raw Score",
+            "binding": null
+          }
+        ],
+        "rowBindings": [],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Results",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "static_column_header",
+            "content": "Raw Score",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      },
+      {
+        "id": "d2497de49f4c4_p2_table_1",
+        "type": "response_table",
+        "bboxPt": [
+          28.3465,
+          522.20959,
+          566.9296,
+          740.47699
+        ],
+        "rowCount": 8,
+        "columnCount": 8,
+        "cellsPt": [
+          [
+            28.3465,
+            522.20959,
+            566.9296,
+            542.05226
+          ],
+          [
+            28.3465,
+            542.05226,
+            51.02344,
+            570.39889
+          ],
+          [
+            28.3465,
+            570.39889,
+            51.02344,
+            598.74513
+          ],
+          [
+            28.3465,
+            598.74513,
+            51.02344,
+            627.09189
+          ],
+          [
+            28.3465,
+            627.09189,
+            51.02344,
+            655.43812
+          ],
+          [
+            28.3465,
+            655.43812,
+            51.02344,
+            683.785
+          ],
+          [
+            28.3465,
+            683.785,
+            51.02344,
+            712.13097
+          ],
+          [
+            28.3465,
+            712.13097,
+            51.02344,
+            740.47699
+          ],
+          [
+            51.02344,
+            542.05226,
+            257.9528,
+            570.39889
+          ],
+          [
+            51.02344,
+            570.39889,
+            257.9528,
+            598.74513
+          ],
+          [
+            51.02344,
+            598.74513,
+            257.9528,
+            627.09189
+          ],
+          [
+            51.02344,
+            627.09189,
+            257.9528,
+            655.43812
+          ],
+          [
+            51.02344,
+            655.43812,
+            257.9528,
+            683.785
+          ],
+          [
+            51.02344,
+            683.785,
+            257.9528,
+            712.13097
+          ],
+          [
+            51.02344,
+            712.13097,
+            257.9528,
+            740.47699
+          ],
+          [
+            257.9528,
+            542.05226,
+            317.48024,
+            570.39889
+          ],
+          [
+            257.9528,
+            570.39889,
+            317.48024,
+            598.74513
+          ],
+          [
+            257.9528,
+            598.74513,
+            317.48024,
+            627.09189
+          ],
+          [
+            257.9528,
+            627.09189,
+            317.48024,
+            655.43812
+          ],
+          [
+            257.9528,
+            655.43812,
+            317.48024,
+            683.785
+          ],
+          [
+            257.9528,
+            683.785,
+            317.48024,
+            712.13097
+          ],
+          [
+            257.9528,
+            712.13097,
+            317.48024,
+            740.47699
+          ],
+          [
+            317.48024,
+            542.05226,
+            377.00778,
+            570.39889
+          ],
+          [
+            317.48024,
+            570.39889,
+            377.00778,
+            598.74513
+          ],
+          [
+            317.48024,
+            598.74513,
+            377.00778,
+            627.09189
+          ],
+          [
+            317.48024,
+            627.09189,
+            377.00778,
+            655.43812
+          ],
+          [
+            317.48024,
+            655.43812,
+            377.00778,
+            683.785
+          ],
+          [
+            317.48024,
+            683.785,
+            377.00778,
+            712.13097
+          ],
+          [
+            317.48024,
+            712.13097,
+            377.00778,
+            740.47699
+          ],
+          [
+            377.00778,
+            542.05226,
+            436.53589,
+            570.39889
+          ],
+          [
+            377.00778,
+            570.39889,
+            436.53589,
+            598.74513
+          ],
+          [
+            377.00778,
+            598.74513,
+            436.53589,
+            627.09189
+          ],
+          [
+            377.00778,
+            627.09189,
+            436.53589,
+            655.43812
+          ],
+          [
+            377.00778,
+            655.43812,
+            436.53589,
+            683.785
+          ],
+          [
+            377.00778,
+            683.785,
+            436.53589,
+            712.13097
+          ],
+          [
+            377.00778,
+            712.13097,
+            436.53589,
+            740.47699
+          ],
+          [
+            436.53589,
+            542.05226,
+            496.06309,
+            570.39889
+          ],
+          [
+            436.53589,
+            570.39889,
+            496.06309,
+            598.74513
+          ],
+          [
+            436.53589,
+            598.74513,
+            496.06309,
+            627.09189
+          ],
+          [
+            436.53589,
+            627.09189,
+            496.06309,
+            655.43812
+          ],
+          [
+            436.53589,
+            655.43812,
+            496.06309,
+            683.785
+          ],
+          [
+            436.53589,
+            683.785,
+            496.06309,
+            712.13097
+          ],
+          [
+            436.53589,
+            712.13097,
+            496.06309,
+            740.47699
+          ],
+          [
+            496.06309,
+            542.05226,
+            555.5907,
+            570.39889
+          ],
+          [
+            496.06309,
+            570.39889,
+            555.5907,
+            598.74513
+          ],
+          [
+            496.06309,
+            598.74513,
+            555.5907,
+            627.09189
+          ],
+          [
+            496.06309,
+            627.09189,
+            555.5907,
+            655.43812
+          ],
+          [
+            496.06309,
+            655.43812,
+            555.5907,
+            683.785
+          ],
+          [
+            496.06309,
+            683.785,
+            555.5907,
+            712.13097
+          ],
+          [
+            496.06309,
+            712.13097,
+            555.5907,
+            740.47699
+          ],
+          [
+            555.5907,
+            542.05226,
+            566.9296,
+            740.47699
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d2497de49f4c4_p2",
+        "sourceTableId": "table_1",
+        "columns": [
+          {
+            "sourceColumnIndex": 4,
+            "label": "Sometimes",
+            "binding": null
+          }
+        ],
+        "rowBindings": [
+          {
+            "sourceRowIndex": 2,
+            "questionId": "Q1",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "questionId": "Q2",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "questionId": "Q3",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "questionId": "Q4",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "questionId": "Q5",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "questionId": "Q6",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          }
+        ],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Client Responses",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "response_option_header",
+            "content": "Notatall",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "response_option_header",
+            "content": "Only\noccasionally",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 4,
+            "kind": "response_option_header",
+            "content": "Sometimes",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 5,
+            "kind": "response_option_header",
+            "content": "Often",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 6,
+            "kind": "response_option_header",
+            "content": "Mostorallof\nthetime",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q1",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q2",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q3",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q4",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q5",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q6",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 7,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      },
+      {
+        "id": "d2497de49f4c4_p3_table_1",
+        "type": "response_table",
+        "bboxPt": [
+          28.3465,
+          141.73221,
+          566.92926,
+          303.30701
+        ],
+        "rowCount": 6,
+        "columnCount": 7,
+        "cellsPt": [
+          [
+            28.3465,
+            141.73221,
+            566.92926,
+            161.57475
+          ],
+          [
+            28.3465,
+            161.57475,
+            51.02344,
+            189.92116
+          ],
+          [
+            28.3465,
+            189.92116,
+            51.02344,
+            218.26787
+          ],
+          [
+            28.3465,
+            218.26787,
+            51.02344,
+            246.61415
+          ],
+          [
+            28.3465,
+            246.61415,
+            51.02344,
+            274.96087
+          ],
+          [
+            28.3465,
+            274.96087,
+            51.02344,
+            303.30701
+          ],
+          [
+            51.02344,
+            161.57475,
+            257.9528,
+            189.92116
+          ],
+          [
+            51.02344,
+            189.92116,
+            257.9528,
+            218.26787
+          ],
+          [
+            51.02344,
+            218.26787,
+            257.9528,
+            246.61415
+          ],
+          [
+            51.02344,
+            246.61415,
+            257.9528,
+            274.96087
+          ],
+          [
+            51.02344,
+            274.96087,
+            257.9528,
+            303.30701
+          ],
+          [
+            257.9528,
+            161.57475,
+            317.48024,
+            189.92116
+          ],
+          [
+            257.9528,
+            189.92116,
+            317.48024,
+            218.26787
+          ],
+          [
+            257.9528,
+            218.26787,
+            317.48024,
+            246.61415
+          ],
+          [
+            257.9528,
+            246.61415,
+            317.48024,
+            274.96087
+          ],
+          [
+            257.9528,
+            274.96087,
+            317.48024,
+            303.30701
+          ],
+          [
+            317.48024,
+            161.57475,
+            377.00778,
+            189.92116
+          ],
+          [
+            317.48024,
+            189.92116,
+            377.00778,
+            218.26787
+          ],
+          [
+            317.48024,
+            218.26787,
+            377.00778,
+            246.61415
+          ],
+          [
+            317.48024,
+            246.61415,
+            377.00778,
+            274.96087
+          ],
+          [
+            317.48024,
+            274.96087,
+            377.00778,
+            303.30701
+          ],
+          [
+            377.00778,
+            161.57475,
+            436.53589,
+            189.92116
+          ],
+          [
+            377.00778,
+            189.92116,
+            436.53589,
+            218.26787
+          ],
+          [
+            377.00778,
+            218.26787,
+            436.53589,
+            246.61415
+          ],
+          [
+            377.00778,
+            246.61415,
+            436.53589,
+            274.96087
+          ],
+          [
+            377.00778,
+            274.96087,
+            436.53589,
+            303.30701
+          ],
+          [
+            436.53589,
+            161.57475,
+            496.06309,
+            189.92116
+          ],
+          [
+            436.53589,
+            189.92116,
+            496.06309,
+            218.26787
+          ],
+          [
+            436.53589,
+            218.26787,
+            496.06309,
+            246.61415
+          ],
+          [
+            436.53589,
+            246.61415,
+            496.06309,
+            274.96087
+          ],
+          [
+            436.53589,
+            274.96087,
+            496.06309,
+            303.30701
+          ],
+          [
+            496.06309,
+            161.57475,
+            555.5907,
+            189.92116
+          ],
+          [
+            496.06309,
+            189.92116,
+            555.5907,
+            218.26787
+          ],
+          [
+            496.06309,
+            218.26787,
+            555.5907,
+            246.61415
+          ],
+          [
+            496.06309,
+            246.61415,
+            555.5907,
+            274.96087
+          ],
+          [
+            496.06309,
+            274.96087,
+            555.5907,
+            303.30701
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d2497de49f4c4_p3",
+        "sourceTableId": "table_1",
+        "columns": [
+          {
+            "sourceColumnIndex": 4,
+            "label": "Sometimes",
+            "binding": null
+          }
+        ],
+        "rowBindings": [
+          {
+            "sourceRowIndex": 2,
+            "questionId": "Q7",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "questionId": "Q8",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "questionId": "Q9",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "questionId": "Q10",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          }
+        ],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Client Responses (cont )\n.",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "response_option_header",
+            "content": "Notatall",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "response_option_header",
+            "content": "Only\noccasionally",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 4,
+            "kind": "response_option_header",
+            "content": "Sometimes",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 5,
+            "kind": "response_option_header",
+            "content": "Often",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 6,
+            "kind": "response_option_header",
+            "content": "Mostorallof\nthetime",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q7",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q8",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q9",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q10",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 6,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      }
+    ],
+    "variants": {
+      "sourceStatements": [
+        "A percentile of 50 would indicate an average level of symptoms for a young person on first presentation to a service.",
+        "On first administration a plot is shown presenting the total raw score with the symptom severity levels in the background of the plot.",
+        "If administered on multiple occasions, a plot is displayed showing the raw score over time to indicate change as a result of treatment."
+      ],
+      "firstAdministration": {
+        "status": "requires_review"
+      },
+      "repeatAdministration": {
+        "status": "requires_review"
+      },
+      "policy": "Do not invent a repeat chart from an observed first-visit chart."
+    },
+    "interpretationRules": {
+      "encodedRules": [],
+      "sourceGuidance": [
+        {
+          "title": "YP-CORE Scoring & Interpretation",
+          "text": "Raw scores are between 0 and 40, where higher scores represent greater severity of mental health symptoms. Item 4 which relates to thoughts of self-harm should be individually inspected for each patient.\n\nThe raw score has a corresponding symptom severity level as follows:\nHealthy (0–5): Scores in this range indicate no or minimal psychological distress, suggesting the individual is functioning well.\nLow Level (6–10): Scores in this range suggest low levels of distress, where some symptoms of anxiety or low mood might be present but do not significantly impair daily functioning. They are unlikely to meet the diagnostic criteria for depression or anxiety.\nMild (11–14): Scores in this range indicate mild psychological distress of clinical significance, where symptoms are noticeable but unlikely to disrupt daily functioning. People in this range probably meet the criteria for depression, anxiety, or another mental disorder.\nModerate (15–19): Scores in this range reflect moderate distress, with symptoms that are pronounced and interfere with the individual’s daily functioning.\nModerate-to-Severe (20–24): Scores in this range indicate significant psychological distress, where symptoms are likely to interfere with daily functioning and require clinical attention.\nSevere (25 and above): Scores in this range indicate severe distress, suggesting a high level of psychological impairment and an urgent need for clinical intervention. People who score in this range almost certainly meet the diagnostic criteria for an anxiety, mood, or other mental disorder.\n\nIn addition to the raw score, two percentiles are presented. The Clinical Percentile compares scores with young people presenting for mental health services. A percentile of 50 would indicate an average level of symptoms for a young person on first presentation to a service. NOTE: Please enter accurate date of birth in client profile as normative data differs by age (11 to 13 year olds mean = 15.8, SD 7.12 while 14 to 16 year olds mean = 20.6, SD = 7.06).\n\nA Non-Clinical Percentile is also presented which compares scores against a group of healthy young people (M=6.1, SD=6.06). Most people presenting for services will likely score above the 90th percentile compared to this normative sample.\n\nOn first administration a plot is shown presenting the total raw score with the symptom severity levels in the background of the plot. If administered on multiple occasions, a plot is displayed showing the raw score over time to indicate change as a result of treatment.\n"
+        }
+      ],
+      "reportScoringGuidance": [
+        {
+          "documentSha256": "2497de49f4c48cd1a3358b51d439871508026b2d71c1826e788830d9082ca775",
+          "pageNumber": 1,
+          "text": "For comprehensive information on the YP-CORE, \nsee here\n.\nRaw scores are between 0 and 40, where higher scores represent greater severity of mental\nhealth symptoms. Item 4 which relates to thoughts of self-harm should be individually inspected\nfor each patient. The raw score has a corresponding symptom severity level as follows:\n- Healthy (0–5): Scores in this range indicate no or minimal psychological distress, suggesting",
+          "usage": "source_guidance_for_review_not_executable_scoring",
+          "runtimeEnabled": false
+        }
+      ],
+      "sourceRequirements": [
+        "In addition to the raw score, two percentiles are presented.",
+        "The Clinical Percentile compares scores with young people presenting for mental health services.",
+        "A percentile of 50 would indicate an average level of symptoms for a young person on first presentation to a service.",
+        "A Non-Clinical Percentile is also presented which compares scores against a group of healthy young people (M=6.1, SD=6.06).",
+        "Most people presenting for services will likely score above the 90th percentile compared to this normative sample.",
+        "On first administration a plot is shown presenting the total raw score with the symptom severity levels in the background of the plot.",
+        "If administered on multiple occasions, a plot is displayed showing the raw score over time to indicate change as a result of treatment."
+      ],
+      "templates": [],
+      "sampleNarrativeReusable": false,
+      "runtimeEnabled": false
+    },
+    "referenceTables": [],
+    "paintStyles": [
+      {
+        "id": "paint_77d6cb2f71f7acc6e3b8de825b47bdc6",
+        "status": "source_colour_stops_extracted_role_requires_review",
+        "type": "linear_gradient_samples",
+        "direction": "vertical",
+        "stops": [
+          {
+            "offset": 0.0,
+            "colour": "#ffffff",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.03125,
+            "colour": "#fbfbfb",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.0625,
+            "colour": "#f6f6f6",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.09375,
+            "colour": "#f1f1f1",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.125,
+            "colour": "#eeeeee",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.15625,
+            "colour": "#e8e8e8",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.1875,
+            "colour": "#e3e4e3",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.21875,
+            "colour": "#dfdfdf",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.25,
+            "colour": "#d9d9d9",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.28125,
+            "colour": "#d4d5d4",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.3125,
+            "colour": "#d1d1d1",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.34375,
+            "colour": "#cccccc",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.375,
+            "colour": "#c7c7c7",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.40625,
+            "colour": "#c2c2c2",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.4375,
+            "colour": "#bcbdbc",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.46875,
+            "colour": "#b8b8b8",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.5,
+            "colour": "#b2b2b2",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.53125,
+            "colour": "#afafaf",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.5625,
+            "colour": "#aaaaaa",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.59375,
+            "colour": "#a5a5a5",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.625,
+            "colour": "#a0a0a0",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.65625,
+            "colour": "#9b9b9b",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.6875,
+            "colour": "#959695",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.71875,
+            "colour": "#929392",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.75,
+            "colour": "#8d8d8d",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.78125,
+            "colour": "#888888",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.8125,
+            "colour": "#838383",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.84375,
+            "colour": "#7e7e7e",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.875,
+            "colour": "#797979",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.90625,
+            "colour": "#767676",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.9375,
+            "colour": "#707070",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.96875,
+            "colour": "#6b6c6b",
+            "opacity": 1.0
+          },
+          {
+            "offset": 1.0,
+            "colour": "#666666",
+            "opacity": 1.0
+          }
+        ],
+        "runtimeEnabled": false
+      },
+      {
+        "id": "paint_d4a75c7c0c33000db3bd2a7884e01e73",
+        "status": "source_colour_stops_extracted_role_requires_review",
+        "type": "linear_gradient_samples",
+        "direction": "vertical",
+        "stops": [
+          {
+            "offset": 0.0,
+            "colour": "#b61c1c",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.03125,
+            "colour": "#b81e1e",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.0625,
+            "colour": "#b92020",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.09375,
+            "colour": "#ba2323",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.125,
+            "colour": "#bc2525",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.15625,
+            "colour": "#bd2828",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.1875,
+            "colour": "#bf2b2b",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.21875,
+            "colour": "#c02e2e",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.25,
+            "colour": "#c23131",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.28125,
+            "colour": "#c33333",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.3125,
+            "colour": "#c43535",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.34375,
+            "colour": "#c63838",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.375,
+            "colour": "#c73b3b",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.40625,
+            "colour": "#c93e3e",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.4375,
+            "colour": "#ca4141",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.46875,
+            "colour": "#cc4444",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.5,
+            "colour": "#cd4747",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.53125,
+            "colour": "#ce4949",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.5625,
+            "colour": "#d04c4c",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.59375,
+            "colour": "#d14e4e",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.625,
+            "colour": "#d35151",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.65625,
+            "colour": "#d45454",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.6875,
+            "colour": "#d65757",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.71875,
+            "colour": "#d75959",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.75,
+            "colour": "#d95c5c",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.78125,
+            "colour": "#da5f5f",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.8125,
+            "colour": "#dc6262",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.84375,
+            "colour": "#dd6565",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.875,
+            "colour": "#df6868",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.90625,
+            "colour": "#e06969",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.9375,
+            "colour": "#e16c6c",
+            "opacity": 1.0
+          },
+          {
+            "offset": 0.96875,
+            "colour": "#e36f6f",
+            "opacity": 1.0
+          },
+          {
+            "offset": 1.0,
+            "colour": "#e47272",
+            "opacity": 1.0
+          }
+        ],
+        "runtimeEnabled": false
+      }
+    ],
+    "assets": {
+      "runtimeImages": [],
+      "runtimeSourceFiles": []
+    },
+    "runtimeContract": {
+      "version2RendererRequired": true,
+      "loadDefinitionFrom": "database_json",
+      "useCurrentPatientAnswers": true,
+      "useSamplePatientValues": false,
+      "externalNetworkRequired": false,
+      "sourceArchiveRequired": false,
+      "unknownScoring": "withhold",
+      "unknownNorms": "withhold",
+      "unsupportedChart": "withhold_and_report_exception",
+      "unknownRepeatLayout": "withhold"
+    },
+    "validation": {
+      "jsonStructureValidated": true,
+      "sourceHashesVerified": true,
+      "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+      "fullPageLayoutCompared": false,
+      "scoreBindingsReviewed": false,
+      "tablesSemanticallyReviewed": false,
+      "rendererEquivalent": false,
+      "clinicalApproved": false,
+      "readyForApplicationImport": false
+    },
+    "exceptions": [
+      {
+        "code": "paint_style_roles_require_review",
+        "count": 2,
+        "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+      },
+      {
+        "code": "score_and_series_bindings_require_review",
+        "count": 1
+      },
+      {
+        "code": "table_cell_semantics_require_review",
+        "count": 4,
+        "unresolvedCells": 68
+      },
+      {
+        "code": "interpretation_and_variant_rules_require_review"
+      }
+    ]
+  },
+  "export_format": {
+    "schema_version": "standalone-combined-assessment-2.0",
+    "report_definition": "report_configuration uses assessment, administration, questionnaire and scoring from this file unless it supplies its own field. Its identity uses assessment_id, assessment.name and definition_version.",
+    "baseline_reporting": "reporting contains the initial report settings; report_configuration contains the dedicated report settings.",
+    "source_content": "Archived PDF text and extraction history were omitted in the compact export. Original verification refers to source definitions.",
+    "internal_references": "Metrics use rule_id; item history uses item_id; severity_bands_rule_id identifies the scoring rule containing the bands. Other internal references use section and field names within this JSON.",
+    "external_dependencies": "No external locations are included. Asset records retain descriptive metadata only; binary assets are not embedded.",
+    "verification_scope": "Original verification records describe the source definitions before this cleanup."
+  }
+}

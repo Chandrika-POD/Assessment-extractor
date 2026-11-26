@@ -1,0 +1,1575 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Threat Monitoring",
+   "minimum": 0.0,
+   "maximum": 20.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Threat Monitoring",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q4",
+     "Q6",
+     "Q8"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 20.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Threat Monitoring (sum of items 1, 2, 4, 6, 8):",
+     "y": 426.0,
+     "url": null,
+     "sha256": "89afd8a1a3e10ae56960a805e989c7fda91776c1db5387c10191d98d472f4bfd"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Camouflaging",
+   "minimum": 0.0,
+   "maximum": 8.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Camouflaging",
+    "method": "sum",
+    "item_ids": [
+     "Q5",
+     "Q9"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 8.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Camouflaging (sum of items 5, 9):",
+     "y": 447.8,
+     "url": null,
+     "sha256": "89afd8a1a3e10ae56960a805e989c7fda91776c1db5387c10191d98d472f4bfd"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Avoidance",
+   "minimum": 0.0,
+   "maximum": 12.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Avoidance",
+    "method": "sum",
+    "item_ids": [
+     "Q3",
+     "Q7",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 12.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Avoidance (sum of items 3, 7, 10):",
+     "y": 469.5,
+     "url": null,
+     "sha256": "89afd8a1a3e10ae56960a805e989c7fda91776c1db5387c10191d98d472f4bfd"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Total AAI score",
+   "minimum": 0.0,
+   "maximum": 40.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Total AAI score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total AAI score (sum of all 10 items)",
+     "y": 502.5,
+     "url": null,
+     "sha256": "89afd8a1a3e10ae56960a805e989c7fda91776c1db5387c10191d98d472f4bfd"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "311787a6046c40f2c11289e2f81d0dafd903ae88f7696ab94c58a910c0d4163b",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d311787a6046c_p1",
+   "documentSha256": "311787a6046c40f2c11289e2f81d0dafd903ae88f7696ab94c58a910c0d4163b",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d311787a6046c_p1_chart_1"
+   ],
+   "tableIds": [
+    "d311787a6046c_p1_table_1"
+   ],
+   "sectionIds": [
+    "d311787a6046c_p1_section_1",
+    "d311787a6046c_p1_section_2",
+    "d311787a6046c_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d311787a6046c_p2",
+   "documentSha256": "311787a6046c40f2c11289e2f81d0dafd903ae88f7696ab94c58a910c0d4163b",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d311787a6046c_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d311787a6046c_p2_section_1",
+    "d311787a6046c_p2_section_2",
+    "d311787a6046c_p2_section_3"
+   ]
+  },
+  {
+   "pageId": "d311787a6046c_p3",
+   "documentSha256": "311787a6046c40f2c11289e2f81d0dafd903ae88f7696ab94c58a910c0d4163b",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d311787a6046c_p3_table_1"
+   ],
+   "sectionIds": [
+    "d311787a6046c_p3_section_1",
+    "d311787a6046c_p3_section_2"
+   ]
+  },
+  {
+   "pageId": "d311787a6046c_p4",
+   "documentSha256": "311787a6046c40f2c11289e2f81d0dafd903ae88f7696ab94c58a910c0d4163b",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d311787a6046c_p4_table_1"
+   ],
+   "sectionIds": [
+    "d311787a6046c_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d311787a6046c_p1_section_1",
+   "pageId": "d311787a6046c_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p1_section_2",
+   "pageId": "d311787a6046c_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34636,
+    328.30023,
+    124.57638,
+    342.30023
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p1_section_3",
+   "pageId": "d311787a6046c_p1",
+   "title": "Average Scores",
+   "type": "results",
+   "bboxPt": [
+    257.99301,
+    432.72751,
+    348.70099,
+    444.72751
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p2_section_1",
+   "pageId": "d311787a6046c_p2",
+   "title": "AAI Total Score in Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    214.996,
+    153.38954,
+    391.69598,
+    165.38954
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p2_section_2",
+   "pageId": "d311787a6046c_p2",
+   "title": "to Normative and Clinical Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    192.6581,
+    165.38954,
+    414.03409,
+    177.38954
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p2_section_3",
+   "pageId": "d311787a6046c_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    364.04877,
+    290.26645,
+    378.04877
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p3_section_1",
+   "pageId": "d311787a6046c_p3",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    336.92838,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p3_section_2",
+   "pageId": "d311787a6046c_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3464,
+    505.33414,
+    151.8204,
+    519.33411
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d311787a6046c_p4_section_1",
+   "pageId": "d311787a6046c_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration an average score graph is presented that shows the overall average score and subscales scores.",
+   "When administered more than once, longitudinal graphs are presented showing change in symptoms over time, including scores presented as Average Scores, a BDD Percentile and a Percentile Rank Compared to Normative Sample."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "AAI Scoring & Interpretation",
+    "text": "Scores consist of a total raw score (0-40), where a higher score is indicative of more severe appearance anxiety, as well as three subscales.\n\nA symptom severity descriptor (e.g. mild, moderate, severe) is provided to describe the level of appearance anxiety. While it is common to experience mild appearance anxiety, moderate levels are of clinical significance and are likely to interfere with daily functioning.\nA cutoff score of 21 is indicative of high risk of clinical problems consistent with significant body image anxiety and/or Body Dysmorphic Disorder (Jacobson & Truax, 1991).\n\nAverage scores from 0 to 4 are presented, indicating the general level of agreement from “Not at all” to “All the time” on the Likert scale.\nThe three subscales are:\n1. Threat Monitoring (items 1, 2, 4, 6, 8): The degree to which an individual is vigilant about potential threats related to their appearance. Higher scores indicate heightened awareness and monitoring of perceived threats.\n2. Camouflaging (items 5, 9): The tendency to use strategies to hide or disguise perceived flaws in appearance. A higher score suggests a greater inclination toward adopting such camouflage techniques.\n3. Avoidance (items 3, 7, 10): The extent to which individuals avoid situations or activities due to appearance-related concerns. Elevated scores indicate a higher level of avoidance behaviour.\nTwo percentiles are presented to indicate how AAI scores compare to a body dysmorphic disorder (BDD) group and a community sample. A BDD percentile of 50 indicates average symptoms for someone with a BDD diagnosis (before receiving treatment), while the community percentile represents scores in comparison to a normal population. For example, a score of 27 represents a BDD percentile of 50 and a normative percentile of 97. This indicates that compared to the normal population the respondent scored higher than 97 percent of individuals, which corresponds to a typical presentation for someone with BDD.\n\nA comparison graph is presented showing where the respondent’s score sits in comparison to the normative and BDD samples, with shaded areas around the means indicating the two middle quartiles (between 25th and 75th percentile). This graph can help contextualise AAI scores in comparison to the distribution of responses among clinical and non-clinical groups. A cutoff score of 21 indicates the point at which symptoms are defined as clinically significant.\nSymptom descriptors are also presented for the total score and each of the subscale scores. These descriptors are determined by the distance from the normative mean:\nNormal Range – < 0.5 SD below mean (average score less than or equal to 1.7)\nMild – 0.5 to 1 SD above mean (average score above 1.7 and less than or equal to 2.1)\nModerate – 1 to 2 SD above mean (average score above 2.1 and less than or equal to 2.9)\nSevere – 2 to 3 SD above mean (average score above 2.9 and less than or equal to 3.7)\nExtremely Severe – > 3 SD above mean (average score above 3.7)\nOn first administration an average score graph is presented that shows the overall average score and subscales scores.\n\nWhen administered more than once, longitudinal graphs are presented showing change in symptoms over time, including scores presented as Average Scores, a BDD Percentile and a Percentile Rank Compared to Normative Sample.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "311787a6046c40f2c11289e2f81d0dafd903ae88f7696ab94c58a910c0d4163b",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the AAI, \nsee here\n.\nScores consist of a total raw score (0-40), where a higher score is indicative of more severe\nappearance anxiety, as well as three subscales.\nA symptom severity descriptor (e.g. mild, moderate, severe) is provided to describe the level of\nappearance anxiety. While it is common to experience mild appearance anxiety, moderate levels\nare of clinical significance and are likely to interfere with daily functioning.\nA cutoff score of 21 is indicative of high risk of clinical problems consistent with significant body\nimage anxiety and/or Body Dysmorphic Disorder (Jacobson & Truax, 1991).\nAverage scores from 0 to 4 are presented, indicating the general level of agreement from \"Not at\nall\" to \"All the time\" on the Likert scale.\nThe three subscales are:\n1. Threat Monitoring (items 1, 2, 4, 6, 8):\nThe degree to which an individual is vigilant about potential threats related to their appearance.\nHigher scores indicate heightened awareness and monitoring of perceived threats.\n2. Camouflaging (items 5, 9):\nThe tendency to use strategies to hide or disguise perceived flaws in appearance. A higher\nscore suggests a greater inclination toward adopting such camouflage techniques.\n3. Avoidance (items 3, 7, 10):\nThe extent to which individuals avoid situations or activities due to appearance-related concerns.\nElevated scores indicate a higher level of avoidance behaviour.\nTwo percentiles are presented to indicate how AAI scores compare to a body dysmorphic\ndisorder (BDD) group and a community sample. A BDD percentile of 50 indicates average",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "311787a6046c40f2c11289e2f81d0dafd903ae88f7696ab94c58a910c0d4163b",
+    "pageNumber": 3,
+    "text": "symptoms for someone with a BDD diagnosis (before receiving treatment), while the community\npercentile represents scores in comparison to a normal population. For example, a score of 27\nrepresents a BDD percentile of 50 and a normative percentile of 97. This indicates that\ncompared to the normal population the respondent scored higher than 97 percent of individuals,\nwhich corresponds to a typical presentation for someone with BDD.\nA comparison graph is presented showing where the respondent's score sits in comparison to\nthe normative and BDD samples, with shaded areas around the means indicating the two middle\nquartiles (between 25th and 75th percentile). This graph can help contextualise AAI scores in\ncomparison to the distribution of responses among clinical and non-clinical groups. A cutoff\nscore of 21 indicates the point at which symptoms are defined as clinically significant.\nSymptom descriptors are also presented for the total score and each of the subscale scores.\nThese descriptors are determined by the distance from the normative mean:\n- Normal Range -  - Mild - 0.5 to 1 SD above mean (average score above 1.7 and less than or\nequal to 2.1)\n- Moderate - 1 to 2 SD above mean (average score above 2.1 and less than or equal to 2.9)\n- Severe - 2 to 3 SD above mean (average score above 2.9 and less than or equal to 3.7)\n- Extremely Severe - > 3 SD above mean (average score above 3.7)\nOn first administration an average score graph is presented that shows the overall average\nscore and subscales scores.\nWhen administered more than once, longitudinal graphs are presented showing change in\nsymptoms over time, including scores presented as, Average Scores, a BDD Percentile and a\nPercentile Rank Compared to Normative Sample.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A symptom severity descriptor (e.g.",
+   "Two percentiles are presented to indicate how AAI scores compare to a body dysmorphic disorder (BDD) group and a community sample.",
+   "A BDD percentile of 50 indicates average symptoms for someone with a BDD diagnosis (before receiving treatment), while the community percentile represents scores in comparison to a normal population.",
+   "For example, a score of 27 represents a BDD percentile of 50 and a normative percentile of 97.",
+   "A comparison graph is presented showing where the respondent’s score sits in comparison to the normative and BDD samples, with shaded areas around the means indicating the two middle quartiles (between 25th and 75th percentile).",
+   "This graph can help contextualise AAI scores in comparison to the distribution of responses among clinical and non-clinical groups.",
+   "Symptom descriptors are also presented for the total score and each of the subscale scores.",
+   "These descriptors are determined by the distance from the normative mean:",
+   "On first administration an average score graph is presented that shows the overall average score and subscales scores.",
+   "When administered more than once, longitudinal graphs are presented showing change in symptoms over time, including scores presented as Average Scores, a BDD Percentile and a Percentile Rank Compared to Normative Sample."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_5a7f4eb933e4f4df43758dbaa3f6e4a3",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_597d1ba087eebbe1636a09e8ec56c929",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_981eedd0eb25c718e1a0dbc665b11f06",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_6979b263faf40cf5e37eb802dd768ee6",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#aa46bc",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_6ab852d94c5d969295f428103b68fa2c",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#66ba69",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_e01c5db144e98b7ae64c9518330f5d0b",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#42a5f4",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 6,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d311787a6046c_p2_chart_1"
+   ]
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 97
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,992 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "DID: Amnesia",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "DID: Amnesia",
+    "method": "mean",
+    "item_ids": [
+     "Q42",
+     "Q45",
+     "Q48",
+     "Q58"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID: Amnesia (Items 42, 45, 48, 58, mean of circled values × 10):",
+     "y": 199.5,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "DID / OSDD-1: Subjective awareness of alter personalities and self-states",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "DID / OSDD-1: Subjective awareness of alter personalities and self-states",
+    "method": "mean",
+    "item_ids": [
+     "Q3",
+     "Q36",
+     "Q39",
+     "Q49",
+     "Q57"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID / OSDD-1: Subjective awareness of alter personalities and self-states (Items 3, 36, 39, 49, 57, mean of circled values × 10):",
+     "y": 221.2,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "DID / OSDD-1: Angry intrusions",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "DID / OSDD-1: Angry intrusions",
+    "method": "mean",
+    "item_ids": [
+     "Q28",
+     "Q33",
+     "Q35",
+     "Q46",
+     "Q60"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID / OSDD-1: Angry intrusions (Items 28, 33, 35, 46, 60, mean of circled values × 10):",
+     "y": 243.0,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "DID / OSDD-1: Persecutory intrusions",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "DID / OSDD-1: Persecutory intrusions",
+    "method": "mean",
+    "item_ids": [
+     "Q22",
+     "Q37",
+     "Q44",
+     "Q56",
+     "Q59"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID / OSDD-1: Persecutory intrusions (Items 22, 37, 44, 56, 59, mean of circled values × 10):",
+     "y": 264.8,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_5",
+   "ruleId": "pdf_5",
+   "label": "Derealisation / Depersonalisation",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_5",
+    "label": "Derealisation / Depersonalisation",
+    "method": "mean",
+    "item_ids": [
+     "Q2",
+     "Q7",
+     "Q9",
+     "Q13",
+     "Q25",
+     "Q47",
+     "Q50",
+     "Q53"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Derealisation / Depersonalisation (Items 2, 7, 9, 13, 25, 47, 50, 53, mean of circled values × 10):",
+     "y": 286.5,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_6",
+   "ruleId": "pdf_6",
+   "label": "Dissociative Amnesia: Distress about severe memory problems",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_6",
+    "label": "Dissociative Amnesia: Distress about severe memory problems",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q8",
+     "Q20",
+     "Q38",
+     "Q43",
+     "Q52"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Dissociative Amnesia: Distress about severe memory problems (Items 1, 8, 20, 38, 43, 52, mean of circled values × 10):",
+     "y": 308.2,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_7",
+   "ruleId": "pdf_7",
+   "label": "Dissociative Amnesia: Loss of autobiographical memory",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_7",
+    "label": "Dissociative Amnesia: Loss of autobiographical memory",
+    "method": "mean",
+    "item_ids": [
+     "Q16",
+     "Q19",
+     "Q24",
+     "Q29",
+     "Q34"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Dissociative Amnesia: Loss of autobiographical memory (Items 16, 19, 24, 29, 34, mean of circled values × 10):",
+     "y": 330.0,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_8",
+   "ruleId": "pdf_8",
+   "label": "PTSD: Flashbacks",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_8",
+    "label": "PTSD: Flashbacks",
+    "method": "mean",
+    "item_ids": [
+     "Q4",
+     "Q15",
+     "Q31",
+     "Q40",
+     "Q54"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "PTSD: Flashbacks (Items 4, 15, 31, 40, 54, mean of circled values × 10):",
+     "y": 351.8,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_9",
+   "ruleId": "pdf_9",
+   "label": "Conversion Disorder: Body symptoms",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_9",
+    "label": "Conversion Disorder: Body symptoms",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q10",
+     "Q14",
+     "Q18"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Conversion Disorder: Body symptoms (Items 5, 10, 14, 18, mean of circled values × 10):",
+     "y": 373.5,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_10",
+   "ruleId": "pdf_10",
+   "label": "General: Trance",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_10",
+    "label": "General: Trance",
+    "method": "mean",
+    "item_ids": [
+     "Q21",
+     "Q27",
+     "Q30",
+     "Q32",
+     "Q41",
+     "Q51"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "General: Trance (Items 21, 27, 30, 32, 41, 51, mean of circled values × 10):",
+     "y": 417.0,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_11",
+   "ruleId": "pdf_11",
+   "label": "General: Self-confusion",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_11",
+    "label": "General: Self-confusion",
+    "method": "mean",
+    "item_ids": [
+     "Q6",
+     "Q11",
+     "Q12",
+     "Q17",
+     "Q23",
+     "Q55"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "General: Self-confusion (Items 6, 11, 12, 17, 23, 55, mean of circled values × 10):",
+     "y": 438.8,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageCount": 7,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d43c6be390bd4_p1",
+   "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d43c6be390bd4_p1_table_1",
+    "d43c6be390bd4_p1_table_2",
+    "d43c6be390bd4_p1_table_3",
+    "d43c6be390bd4_p1_table_4"
+   ],
+   "sectionIds": [
+    "d43c6be390bd4_p1_section_1",
+    "d43c6be390bd4_p1_section_2",
+    "d43c6be390bd4_p1_section_3",
+    "d43c6be390bd4_p1_section_4",
+    "d43c6be390bd4_p1_section_5",
+    "d43c6be390bd4_p1_section_6",
+    "d43c6be390bd4_p1_section_7"
+   ]
+  },
+  {
+   "pageId": "d43c6be390bd4_p2",
+   "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d43c6be390bd4_p2_chart_1"
+   ],
+   "tableIds": [
+    "d43c6be390bd4_p2_table_1"
+   ],
+   "sectionIds": [
+    "d43c6be390bd4_p2_section_1",
+    "d43c6be390bd4_p2_section_2",
+    "d43c6be390bd4_p2_section_3",
+    "d43c6be390bd4_p2_section_4"
+   ]
+  },
+  {
+   "pageId": "d43c6be390bd4_p3",
+   "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d43c6be390bd4_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "d43c6be390bd4_p4",
+   "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d43c6be390bd4_p4_table_1",
+    "d43c6be390bd4_p4_table_2"
+   ],
+   "sectionIds": [
+    "d43c6be390bd4_p4_section_1",
+    "d43c6be390bd4_p4_section_2"
+   ]
+  },
+  {
+   "pageId": "d43c6be390bd4_p5",
+   "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d43c6be390bd4_p5_table_1"
+   ],
+   "sectionIds": [
+    "d43c6be390bd4_p5_section_1"
+   ]
+  },
+  {
+   "pageId": "d43c6be390bd4_p6",
+   "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d43c6be390bd4_p6_table_1"
+   ],
+   "sectionIds": [
+    "d43c6be390bd4_p6_section_1"
+   ]
+  },
+  {
+   "pageId": "d43c6be390bd4_p7",
+   "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d43c6be390bd4_p7_table_1"
+   ],
+   "sectionIds": [
+    "d43c6be390bd4_p7_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d43c6be390bd4_p1_section_1",
+   "pageId": "d43c6be390bd4_p1",
+   "title": "Assessment Information",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    176.72569,
+    237.39752,
+    196.00369
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p1_section_2",
+   "pageId": "d43c6be390bd4_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    74.03149,
+    281.99808,
+    124.59951,
+    301.27609
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p1_section_3",
+   "pageId": "d43c6be390bd4_p1",
+   "title": "Interpretive Text",
+   "type": "interpretation",
+   "bboxPt": [
+    74.03149,
+    347.19495,
+    182.95149,
+    366.47296
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p1_section_4",
+   "pageId": "d43c6be390bd4_p1",
+   "title": "Dissociative Identity Disorder",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    442.28067,
+    270.87149,
+    461.55869
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p1_section_5",
+   "pageId": "d43c6be390bd4_p1",
+   "title": "DID and OSDD-1",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    507.47751,
+    183.7075,
+    526.75549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p1_section_6",
+   "pageId": "d43c6be390bd4_p1",
+   "title": "Depersonalisation / Derealisation Disorder",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    603.85553,
+    356.45343,
+    623.13348
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p1_section_7",
+   "pageId": "d43c6be390bd4_p1",
+   "title": "Dissociative Amnesia",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    669.05237,
+    217.97949,
+    688.33032
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p2_section_1",
+   "pageId": "d43c6be390bd4_p2",
+   "title": "Post-Traumatic Stress Disorder",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    284.08749,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p2_section_2",
+   "pageId": "d43c6be390bd4_p2",
+   "title": "Conversion Disorder",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    205.07213,
+    212.50549,
+    224.35013
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p2_section_3",
+   "pageId": "d43c6be390bd4_p2",
+   "title": "General Subscales",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    285.85953,
+    199.31749,
+    305.13754
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p2_section_4",
+   "pageId": "d43c6be390bd4_p2",
+   "title": "Mean Scores",
+   "type": "results",
+   "bboxPt": [
+    256.01749,
+    379.66391,
+    330.04547,
+    396.1879
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p3_section_1",
+   "pageId": "d43c6be390bd4_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    329.95145,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p4_section_1",
+   "pageId": "d43c6be390bd4_p4",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    376.61337,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p4_section_2",
+   "pageId": "d43c6be390bd4_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    573.76105,
+    191.50549,
+    593.039
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p5_section_1",
+   "pageId": "d43c6be390bd4_p5",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p6_section_1",
+   "pageId": "d43c6be390bd4_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43c6be390bd4_p7_section_1",
+   "pageId": "d43c6be390bd4_p7",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "MID-60-A Scoring & Interpretation",
+    "text": "A total mean score (range 0 to 100) is calculated by averaging all 60 responses and multiplying by 10. The mean score represents to total level of dissociative experiences, also interpreted as percentage of time the person self-reports having dissociative symptoms and experiences.\nTwo percentiles are presented for the total mean score, indicating how the respondent scored in comparison to normative and clinical populations.\nThe normative percentile provides a comparison against a sample of typical individuals (Kate et al., 2021). A percentile of 50 represents average (and healthy) levels of dissociative experiences. In contrast, a percentile of 90 indicates the respondent scored above 90 percent of typical individuals and is of clinical significance.\nThe clinical percentile compares the respondent’s score against people who have been diagnosed with a dissociative disorder (Kate, Jamieson & Middleton, 2021; 2022). A clinical percentile of 50 represents pathological levels of dissociation that is typical among those with a dissociative disorder.\nInterpretation for the MID-60-A mean scores is as follows:\n0–7: Does not have dissociative experiences\n7–14: Has few diagnostically significant dissociative experiences\n15–20: Mild dissociative symptoms and experiences. PTSD or a mild dissociative disorder (such as dissociative amnesia, depersonalisation / derealisation disorder) are possible\n21–30: May have dissociative disorder and/or PTSD\n31–40: May have a dissociative disorder (such as OSDD-1 or DID) and PTSD\n41–64: Probably has DID or a severe dissociative disorder and PTSD\n64 +: Severe dissociative and post-traumatic symptoms. High scores may also reflect neuroticism, attention seeking behaviour, exaggeration or malingering of symptoms, or psychosis\nSubscales The MID-60-A provides information on subscales relevant to different diagnoses. This enables the clinician to form an impression about the likely diagnosis. For example, a score of 27 is clinically significant, but does not indicate the most likely diagnosis. If the subscales of PTSD and depersonalisation/derealisation are both above the clinical threshold, this can indicate the person has the dissociative subtype of PTSD, whereas if the memory-related subscales are above the clinical threshold this can indicate dissociative amnesia. Another example is a person who has a total mean score of 45, which would seem to indicate dissociative identity disorder. Yet, if the subscale score for amnesia (for recent events) is not elevated, this points towards a more severe case of other specified dissociative disorder.\nThe subscales are:\nDID: Amnesia (for recent events) – items 42, 45, 48, 58. Clinical cutoff = 10\nDID / OSDD-1: Subjective awareness of alter personalities and self-states – items 3, 36, 39, 49, 57. Clinical cutoff = 20\nDID / OSDD-1: Angry intrusions – items 28, 33, 35, 46, 60. Clinical cutoff = 18\nDID / OSDD-1: Persecutory intrusions – items 22, 37, 44, 56, 59. Clinical cutoff = 18\nDerealisation/Depersonalisation – items 2, 7, 9, 13, 25, 47, 50, 53. Clinical cutoff = 20\nDissociative Amnesia: Distress about severe memory problems – items 1, 8, 20, 38, 43, 52. Clinical cutoff = 30\nDissociative Amnesia: Loss of autobiographical memory – items 16, 19, 24, 29, 34. Clinical cutoff = 34\nPTSD: Flashbacks – items 4, 15, 31, 40, 54. Clinical cutoff = 16\nConversion Disorder: Body symptoms – items 5, 10, 14, 18. Clinical cutoff = 10\nConversion Disorder: Pseudo-Seizures (Psychogenic non-epileptic seizures) – item 26. Clinical cutoff = 10\nGeneral Subscales: Trance – items 21, 27, 30, 32, 41, 51. Clinical cutoff = 11.7\nGeneral Subscales: Self-confusion – items 6, 11, 12, 17, 23, 55. Clinical cutoff = 33.3\nThe MID-60-A is for screening purposes, is not designed to be the sole determinant of a diagnosis and should always be used in conjunction with clinical expertise. Further evaluations can be conducted with the Structured Clinical Interview for DSM-5 Dissociative Disorders (SCID-D) or Dissociative Disorders Interview Schedule (DDIS).\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+    "pageNumber": 3,
+    "text": "A total mean score (range 0 to 100) is calculated by averaging all 60\nresponses and multiplying by 10. The mean score represents to total\nlevel of dissociative experiences, also interpreted as percentage of\ntime the person self-reports having dissociative symptoms and\nexperiences.\nTwo percentiles are presented for the total mean score, indicating\nhow the respondent scored in comparison to normative and clinical\npopulations.\nThe normative percentile provides a comparison against a sample of\ntypical individuals (Kate et al., 2021). A percentile of 50 represents\naverage (and healthy) levels of dissociative experiences. In contrast,\na percentile of 90 indicates the respondent scored above 90 percent\nof typical individuals and is of clinical significance.\nThe clinical percentile compares the respondent’s score against\npeople who have been diagnosed with a dissociative disorder (Kate,\nJamieson & Middleton, 2021; 2022). A clinical percentile of 50\nrepresents pathological levels of dissociation that is typical among\nthose with a dissociative disorder.\nInterpretation for the MID-60 mean scores is as follows:\n- 0–7: Does not have dissociative experiences\n- 7–14: Has few diagnostically significant dissociative experiences\n- 15–20: Mild dissociative symptoms and experiences. PTSD or a\nmild dissociative disorder (such as dissociative amnesia,\ndepersonalisation / derealisation disorder) are possible\n- 21–30: May have dissociative disorder and/or PTSD\n- 31–40: May have a dissociative disorder (such as OSDD-1 or DID)\nand PTSD\n- 41–64: Probably has DID or a severe dissociative disorder and\nPTSD\n- 64 +: Severe dissociative and post-traumatic symptoms. High\nscores may also reflect neuroticism, attention seeking behaviour,\nexaggeration or malingering of symptoms, or psychosis\nSubscales\nThe MID-60 provides information on subscales relevant to different\ndiagnoses. This enables the clinician to form an impression about\nthe likely diagnosis. For example, a score of 27 is clinically\nsignificant, but does not indicate the most likely diagnosis. If the\nsubscales of PTSD and depersonalisation/derealisation are both\nabove the clinical threshold, this can indicate the person has the\ndissociative subtype of PTSD, whereas if the memory-related\nsubscales are above the clinical threshold this can indicate\ndissociative amnesia. Another example is a person who has a total\nmean score of 45, which would seem to indicate dissociative identity\ndisorder. Yet, if the subscale score for amnesia (for recent events) is\nnot elevated, this points towards a more severe case of other",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+    "pageNumber": 4,
+    "text": "specified dissociative disorder.\nThe subscales are:\n- DID: Amnesia (for recent events) - items 42, 45, 48, 58. Clinical\ncutoff = 10\n- DID / OSDD-1: Subjective awareness of alter personalities and self-\nstates - items 3, 36, 39, 49, 57. Clinical cutoff = 20\n- DID / OSDD-1: Angry intrusions  - items 28, 33, 35, 46, 60. Clinical\ncutoff = 18\n- DID / OSDD-1: Persecutory intrusions  - items 22, 37, 44, 56, 59.\nClinical cutoff = 18\n- Derealisation/Depersonalisation - items 2, 7, 9, 13, 25, 47, 50, 53.\nClinical cutoff = 20\n- Dissociative Amnesia: Distress about severe memory problems -\nitems 1, 8, 20, 38, 43, 52. Clinical cutoff = 30\n- Dissociative Amnesia: Loss of autobiographical memory - items 16,\n19, 24, 29, 34. Clinical cutoff = 34\n- PTSD: Flashbacks - items 4, 15, 31, 40, 54. Clinical cutoff = 16\n- Conversion Disorder: Body symptoms - items 5, 10, 14, 18. Clinical\ncutoff = 10\n- Conversion Disorder: Pseudo-Seizures (Psychogenic non-epileptic\nseizures) - item 26. Clinical cutoff = 10\n- General Subscales: Trance - items 21, 27, 30, 32, 41, 51. Clinical\ncutoff = 11.7\n- General Subscales: Self-confusion - items 6, 11, 12, 17, 23, 55.\nClinical cutoff = 33.3\nThe MID-60 is for screening purposes, is not designed to be the sole\ndeterminant of a diagnosis and should always be used in\nconjunction with clinical expertise. Further evaluations can be\nconducted with the Structured Clinical Interview for DSM-5\nDissociative Disorders (SCID-D) or Dissociative Disorders Interview\nSchedule (DDIS).",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Two percentiles are presented for the total mean score, indicating how the respondent scored in comparison to normative and clinical populations.",
+   "The normative percentile provides a comparison against a sample of typical individuals (Kate et al., 2021).",
+   "A percentile of 50 represents average (and healthy) levels of dissociative experiences.",
+   "In contrast, a percentile of 90 indicates the respondent scored above 90 percent of typical individuals and is of clinical significance.",
+   "The clinical percentile compares the respondent’s score against people who have been diagnosed with a dissociative disorder (Kate, Jamieson & Middleton, 2021; 2022).",
+   "A clinical percentile of 50 represents pathological levels of dissociation that is typical among those with a dissociative disorder.",
+   "If the subscales of PTSD and depersonalisation/derealisation are both above the clinical threshold, this can indicate the person has the dissociative subtype of PTSD, whereas if the memory-related subscales are above the clinical threshold this can indicate dissociative amnesia.",
+   "Dissociative Amnesia: Loss of autobiographical memory – items 16, 19, 24, 29, 34."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": {
+  "$file": "assessment.report_configuration.paintStyles.json"
+ },
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 12,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 10,
+   "unresolvedCells": 835
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

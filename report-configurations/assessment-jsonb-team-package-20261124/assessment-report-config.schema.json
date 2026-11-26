@@ -1,0 +1,670 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Portable source-specific assessment report authoring draft",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "assessmentId",
+    "title",
+    "status",
+    "definitionVersion",
+    "assessment",
+    "administration",
+    "questionnaire",
+    "scoring",
+    "metricBindings",
+    "sources",
+    "page",
+    "theme",
+    "pages",
+    "sections",
+    "charts",
+    "tables",
+    "variants",
+    "interpretationRules",
+    "referenceTables",
+    "paintStyles",
+    "assets",
+    "runtimeContract",
+    "validation",
+    "exceptions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "assessment-report-config/2.0.0"
+    },
+    "assessmentId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "const": "source_specific_draft"
+    },
+    "definitionVersion": {
+      "type": "string"
+    },
+    "assessment": {
+      "type": "object"
+    },
+    "administration": {
+      "type": "object"
+    },
+    "questionnaire": {
+      "type": "object",
+      "required": [
+        "items",
+        "item_count"
+      ],
+      "properties": {
+        "item_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "scoring": {
+      "type": "object",
+      "required": [
+        "rules"
+      ],
+      "properties": {
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "metricBindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "ruleId",
+          "calculation",
+          "runtimeEnabled"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "ruleId": {
+            "type": "string"
+          },
+          "calculation": {
+            "type": "object"
+          },
+          "runtimeEnabled": {
+            "const": false
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sha256",
+          "usage"
+        ],
+        "properties": {
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "usage": {
+            "const": "reference_identity_only_no_runtime_fetch"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "page": {
+      "type": "object",
+      "required": [
+        "coordinateUnit",
+        "documentsAreAlternativesNotConcatenated"
+      ],
+      "properties": {
+        "coordinateUnit": {
+          "const": "pt"
+        },
+        "documentsAreAlternativesNotConcatenated": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "theme": {
+      "type": "object"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pageId",
+          "documentSha256",
+          "pageNumber",
+          "widthPt",
+          "heightPt",
+          "chartIds",
+          "tableIds",
+          "sectionIds"
+        ],
+        "properties": {
+          "pageId": {
+            "type": "string"
+          },
+          "documentSha256": {
+            "type": "string"
+          },
+          "pageNumber": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "widthPt": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "heightPt": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "chartIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tableIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sectionIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "pageId",
+          "title",
+          "bboxPt",
+          "style",
+          "runtimeEnabled"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "pageId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "bboxPt": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "style": {
+            "type": "object"
+          },
+          "runtimeEnabled": {
+            "const": false
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "charts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "pageId",
+          "sourceChartId",
+          "type",
+          "bboxPt",
+          "widthPt",
+          "heightPt",
+          "series",
+          "xAxis",
+          "yAxis",
+          "runtimeEnabled",
+          "runtimePolicy",
+          "typeReview"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "pageId": {
+            "type": "string"
+          },
+          "sourceChartId": {
+            "type": "string"
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": {
+            "enum": [
+              "vertical_bar",
+              "horizontal_bar",
+              "stacked_bar",
+              "horizontal_stacked_bar",
+              "multi_panel_horizontal_bar",
+              "line",
+              "multi_line",
+              "distribution",
+              "quadrant_scatter",
+              "horizontal_marker_profile",
+              "diverging_horizontal_bar",
+              "categorical_status_cards"
+            ]
+          },
+          "bboxPt": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "widthPt": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "heightPt": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "runtimeEnabled": {
+            "const": false
+          },
+          "panelCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "xAxis": {
+            "type": "object"
+          },
+          "yAxis": {
+            "type": "object"
+          },
+          "series": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "runtimeEnabled",
+                "metricId",
+                "bindingStatus"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "runtimeEnabled": {
+                  "const": false
+                },
+                "metricId": {
+                  "type": "null"
+                },
+                "ruleIdCandidate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "bindingStatus": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "runtimePolicy": {
+            "type": "object",
+            "required": [
+              "useSampleValues",
+              "missingBinding",
+              "missingNorm"
+            ],
+            "properties": {
+              "useSampleValues": {
+                "const": false
+              },
+              "missingBinding": {
+                "const": "withhold_chart"
+              },
+              "missingNorm": {
+                "const": "withhold_chart"
+              }
+            },
+            "additionalProperties": true
+          },
+          "typeReview": {
+            "type": "object",
+            "required": [
+              "reviewedType",
+              "method",
+              "scope"
+            ],
+            "properties": {
+              "reviewedType": {
+                "enum": [
+                  "vertical_bar",
+                  "horizontal_bar",
+                  "stacked_bar",
+                  "horizontal_stacked_bar",
+                  "multi_panel_horizontal_bar",
+                  "line",
+                  "multi_line",
+                  "distribution",
+                  "quadrant_scatter",
+                  "horizontal_marker_profile",
+                  "diverging_horizontal_bar",
+                  "categorical_status_cards"
+                ]
+              },
+              "method": {
+                "type": "string"
+              },
+              "scope": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "pageId",
+          "type",
+          "rowCount",
+          "columnCount",
+          "runtimeEnabled",
+          "columns",
+          "rowBindings",
+          "contentPolicy"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "pageId": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "patient_metadata",
+              "response_table",
+              "unresolved_table",
+              "score_table_candidate"
+            ]
+          },
+          "rowCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "columnCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "runtimeEnabled": {
+            "const": false
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "rowBindings": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "contentPolicy": {
+            "type": "object",
+            "required": [
+              "sampleCellValuesExcluded"
+            ],
+            "properties": {
+              "sampleCellValuesExcluded": {
+                "const": true
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "variants": {
+      "type": "object"
+    },
+    "interpretationRules": {
+      "type": "object"
+    },
+    "referenceTables": {
+      "type": "array",
+      "items": {}
+    },
+    "paintStyles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "stops",
+          "runtimeEnabled"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "const": "linear_gradient_samples"
+          },
+          "runtimeEnabled": {
+            "const": false
+          },
+          "stops": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "offset",
+                "colour",
+                "opacity"
+              ],
+              "properties": {
+                "offset": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "colour": {
+                  "type": "string",
+                  "pattern": "^#[0-9a-f]{6}$"
+                },
+                "opacity": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "assets": {
+      "type": "object",
+      "required": [
+        "runtimeImages",
+        "runtimeSourceFiles",
+        "runtimeSourceUrls"
+      ],
+      "properties": {
+        "runtimeImages": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "runtimeSourceFiles": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "runtimeSourceUrls": {
+          "type": "array",
+          "maxItems": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "runtimeContract": {
+      "type": "object",
+      "required": [
+        "useSamplePatientValues",
+        "externalNetworkRequired",
+        "sourceArchiveRequired",
+        "version2RendererRequired"
+      ],
+      "properties": {
+        "useSamplePatientValues": {
+          "const": false
+        },
+        "externalNetworkRequired": {
+          "const": false
+        },
+        "sourceArchiveRequired": {
+          "const": false
+        },
+        "version2RendererRequired": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "jsonStructureValidated",
+        "rendererEquivalent",
+        "clinicalApproved",
+        "readyForApplicationImport"
+      ],
+      "properties": {
+        "jsonStructureValidated": {
+          "const": true
+        },
+        "rendererEquivalent": {
+          "const": false
+        },
+        "clinicalApproved": {
+          "const": false
+        },
+        "readyForApplicationImport": {
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "existingDedicatedProfile": {
+      "type": "object"
+    },
+    "existingSourceImplementation": {
+      "type": "object"
+    },
+    "interactiveLayout": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

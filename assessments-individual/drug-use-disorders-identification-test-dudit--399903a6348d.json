@@ -1,0 +1,5214 @@
+{
+  "schema_version": "2.3.0-clean-export.4",
+  "assessment_id": "drug-use-disorders-identification-test-dudit--399903a6348d",
+  "definition_version": "1.0.0-draft.6",
+  "status": "draft",
+  "assessment": {
+    "name": "Drug Use Disorders Identification Test (DUDIT)",
+    "language": "en",
+    "description": "The Drug Use Disorders Identification Test (DUDIT) is designed to identify adults with drug use problems and assess the severity of their drug use.",
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [],
+      "status": "requires_review"
+    }
+  },
+  "administration": {
+    "instructions": "The next questions will help us to understand whether use of drugs other than alcohol is a problem for you. This includes illicit drugs & pharmaceutical medications (e.g. sleeping pills, pain killers). It does not include medication that you take as prescribed by your doctor. Please respond in a way that best describes your use of all drugs (other than alcohol). If you havenʼt been using any, then you donʼt need to answer the questions.",
+    "instructions_source": {
+      "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11"
+    ],
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 11,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "How often do you use drugs other than alcohol?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            207.0,
+            562.5,
+            237.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "MONTHLY OR LESS",
+            "source_label": "MONTHLY OR LESS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "2-4 TIMES A MONTH",
+            "source_label": "2-4 TIMES A MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "2-3 TIMES A WEEK",
+            "source_label": "2-3 TIMES A WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "4 OR MORE TIMES A WEEK",
+            "source_label": "4 OR MORE TIMES A WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "How often do you use more than one drug on the same occasion?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS2",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            272.25,
+            562.5,
+            302.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "LESS THAN MONTHLY",
+            "source_label": "LESS THAN MONTHLY",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MONTHLY",
+            "source_label": "MONTHLY",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "WEEKLY",
+            "source_label": "WEEKLY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "DAILY OR ALMOST DAILY",
+            "source_label": "DAILY OR ALMOST DAILY",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "How many times do you take drugs on a typical day when you use drugs?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS3",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            303.0,
+            562.5,
+            333.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "0",
+            "source_label": "0",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1-2",
+            "source_label": "1-2",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "3-4",
+            "source_label": "3-4",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "5-6",
+            "source_label": "5-6",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "7 OR MORE",
+            "source_label": "7 OR MORE",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "How often are you influenced heavily by drugs?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            333.75,
+            562.5,
+            363.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "LESS OFTEN THAN ONCE A MONTH",
+            "source_label": "LESS OFTEN THAN ONCE A MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "EVERY MONTH",
+            "source_label": "EVERY MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "EVERY WEEK",
+            "source_label": "EVERY WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "DAILY OR ALMOST EVERY DAY",
+            "source_label": "DAILY OR ALMOST EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "Over the past year, have you felt that your longing for drugs was so strong that you could not resist it?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            364.5,
+            562.5,
+            394.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "LESS OFTEN THAN ONCE A MONTH",
+            "source_label": "LESS OFTEN THAN ONCE A MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "EVERY MONTH",
+            "source_label": "EVERY MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "EVERY WEEK",
+            "source_label": "EVERY WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "DAILY OR ALMOST EVERY DAY",
+            "source_label": "DAILY OR ALMOST EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "Has it happened, over the past year, that you have not been able to stop taking drugs once you started?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            395.25,
+            562.5,
+            425.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "LESS OFTEN THAN ONCE A MONTH",
+            "source_label": "LESS OFTEN THAN ONCE A MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "EVERY MONTH",
+            "source_label": "EVERY MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "EVERY WEEK",
+            "source_label": "EVERY WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "DAILY OR ALMOST EVERY DAY",
+            "source_label": "DAILY OR ALMOST EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "How often over the past year have you taken drugs and then neglected to do something you should have done?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            426.0,
+            562.5,
+            456.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "LESS OFTEN THAN ONCE A MONTH",
+            "source_label": "LESS OFTEN THAN ONCE A MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "EVERY MONTH",
+            "source_label": "EVERY MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "EVERY WEEK",
+            "source_label": "EVERY WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "DAILY OR ALMOST EVERY DAY",
+            "source_label": "DAILY OR ALMOST EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q8",
+        "order": 8,
+        "source_label": "8",
+        "text": "How often over the past year have you needed to take a drug the morning after heavy drug use the day before?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            456.75,
+            562.5,
+            486.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "LESS OFTEN THAN ONCE A MONTH",
+            "source_label": "LESS OFTEN THAN ONCE A MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "EVERY MONTH",
+            "source_label": "EVERY MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "EVERY WEEK",
+            "source_label": "EVERY WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "DAILY OR ALMOST EVERY DAY",
+            "source_label": "DAILY OR ALMOST EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q9",
+        "order": 9,
+        "source_label": "9",
+        "text": "How often over the past year have you had guilt feelings or a bad conscience because you used drugs?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            487.5,
+            562.5,
+            517.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "LESS OFTEN THAN ONCE A MONTH",
+            "source_label": "LESS OFTEN THAN ONCE A MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "EVERY MONTH",
+            "source_label": "EVERY MONTH",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "EVERY WEEK",
+            "source_label": "EVERY WEEK",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "DAILY OR ALMOST EVERY DAY",
+            "source_label": "DAILY OR ALMOST EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10",
+        "order": 10,
+        "source_label": "10",
+        "text": "Have you or anyone else been hurt (mentally or physically) because you used drugs?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS5",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            518.25,
+            562.5,
+            548.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES, BUT NOT OVER THE PAST YEAR",
+            "source_label": "YES, BUT NOT OVER THE PAST YEAR",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "YES, OVER THE PAST YEAR",
+            "source_label": "YES, OVER THE PAST YEAR",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q11",
+        "order": 11,
+        "source_label": "11",
+        "text": "Has a relative or a friend, a doctor or a nurse, or anyone else, been worried about your drug use or said to you that you should stop using drugs?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS5",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+          "page": 1,
+          "bbox": [
+            33.75,
+            549.0,
+            562.5,
+            582.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES, BUT NOT OVER THE PAST YEAR",
+            "source_label": "YES, BUT NOT OVER THE PAST YEAR",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "YES, OVER THE PAST YEAR",
+            "source_label": "YES, OVER THE PAST YEAR",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ]
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NEVER",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NEVER",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "MONTHLY OR LESS",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "MONTHLY OR LESS",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "2-4 TIMES A MONTH",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "2-4 TIMES A MONTH",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "2-3 TIMES A WEEK",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "2-3 TIMES A WEEK",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "4 OR MORE TIMES A WEEK",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "4 OR MORE TIMES A WEEK",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS2",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NEVER",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NEVER",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "LESS THAN MONTHLY",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "LESS THAN MONTHLY",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "MONTHLY",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "MONTHLY",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "WEEKLY",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "WEEKLY",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "DAILY OR ALMOST DAILY",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "DAILY OR ALMOST DAILY",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS3",
+        "options": [
+          {
+            "id": "O1",
+            "label": "0",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "0",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "1-2",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1-2",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "3-4",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "3-4",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "5-6",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "5-6",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "7 OR MORE",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "7 OR MORE",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS4",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NEVER",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NEVER",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "LESS OFTEN THAN ONCE A MONTH",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "LESS OFTEN THAN ONCE A MONTH",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "EVERY MONTH",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "EVERY MONTH",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "EVERY WEEK",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "EVERY WEEK",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "DAILY OR ALMOST EVERY DAY",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "DAILY OR ALMOST EVERY DAY",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS5",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES, BUT NOT OVER THE PAST YEAR",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "YES, BUT NOT OVER THE PAST YEAR",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "YES, OVER THE PAST YEAR",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "YES, OVER THE PAST YEAR",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "pdf_1",
+        "label": "DUDIT Total Score",
+        "method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10",
+          "Q11"
+        ],
+        "multiplier": 1.0,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 44.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "page": 1,
+          "text": "DUDIT Total Score (sum of items 1–11)",
+          "y": 607.5,
+          "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f"
+        },
+        "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+      }
+    ],
+    "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+    "rules_provenance": null,
+    "source_rule_excerpts": [
+      "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems. For men, a score of 6 or more indicates probable drug-related problems, while a score of 25 or more suggests drug dependence. For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.",
+      "These scores provide valuable information for treatment planning. Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches. Those scoring in the dependence range typically require more intensive treatment, potentially including medically supervised withdrawal, structured treatment programmes, or ongoing psychological support. The DUDIT can be administered repeatedly throughout treatment to monitor progress and adjust interventions as needed.",
+      "If you or a loved one completes the DUDIT, it’s important to understand that the scores indicate probability of drug-related problems rather than providing a definitive diagnosis. A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial. However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably.",
+      "Cut-off scores for probable drug-related problems:",
+      "The higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.",
+      "Accuracy: For identifying DSM-IV drug dependence, a cut-off score of 25 yielded a sensitivity of 90% and a specificity of 88%, demonstrating strong discriminative ability (Berman et al., 2005). In criminal justice settings, the instrument maintained high diagnostic accuracy with an area under the curve (AUC) of 0.85 for drug dependence.",
+      "Normative data: The average score for individuals with drug use disorders (n = 160) from the Swedish validation sample was 33.2 (SD = 8.0), while control participants without drug problems showed significantly lower scores (M = 1.2, SD = 2.5). In detoxification settings, mean scores ranged from 28.5 to 35.7, reflecting the severity of substance use in these populations."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "DUDIT Scoring & Interpretation",
+        "text": "The DUDIT yields a total score ranging from 0 to 44, with higher scores indicating greater drug-related problems. The total score is calculated by summing all 11 items, where items 1-9 are scored 0-4 and items 10-11 are scored 0, 2, or 4.\n\nCut-off scores for probable drug-related problems:\nDrug dependence: A score of 25 or more indicates high probability of dependence on one or more drugs.\nMales: A score of 6 or more indicates probable drug-related problems (either harmful use or dependence).\nFemales: A score of 2 or more indicates probable drug-related problems (either harmful use or dependence).\nThe higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.\n\nScores should be considered as indicators for further comprehensive assessment rather than diagnostic.\n"
+      },
+      {
+        "title": "How are DUDIT scores interpreted and what do they mean for treatment planning?",
+        "text": "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems. For men, a score of 6 or more indicates probable drug-related problems, while a score of 25 or more suggests drug dependence. For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.\nThese scores provide valuable information for treatment planning. Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches. Those scoring in the dependence range typically require more intensive treatment, potentially including medically supervised withdrawal, structured treatment programmes, or ongoing psychological support. The DUDIT can be administered repeatedly throughout treatment to monitor progress and adjust interventions as needed.\n"
+      },
+      {
+        "title": "What should individuals and families know about DUDIT scores?",
+        "text": "If you or a loved one completes the DUDIT, it’s important to understand that the scores indicate probability of drug-related problems rather than providing a definitive diagnosis. A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial. However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably.\nThe DUDIT is a screening tool, not a judgment – it’s designed to identify when professional support might be helpful. Higher scores don’t mean someone is “bad” or “weak,” but rather indicate that drug use has likely become problematic enough to warrant attention. Many people are surprised by their scores, particularly if drug use has gradually increased over time. If concerning scores are identified, this represents an opportunity for early intervention. Speaking with a healthcare provider about the results can help determine appropriate next steps, whether that’s monitoring, brief intervention, or more structured treatment. Remember that drug-related problems exist on a continuum, and addressing them early typically leads to better outcomes than waiting until problems become severe.\n"
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+  },
+  "context_sections": [
+    {
+      "id": "C1",
+      "title": "Drug Use Disorders Identification Test (DUDIT)",
+      "text": "The Drug Use Disorders Identification Test (DUDIT) is designed to identify adults with drug use problems and assess the severity of their drug use.\n2 minutes\nAges 18+\nAddiction\nAdminister Now",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C2",
+      "title": "How are DUDIT scores interpreted and what do they mean for treatment planning?",
+      "text": "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems. For men, a score of 6 or more indicates probable drug-related problems, while a score of 25 or more suggests drug dependence. For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.\nThese scores provide valuable information for treatment planning. Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches. Those scoring in the dependence range typically require more intensive treatment, potentially including medically supervised withdrawal, structured treatment programmes, or ongoing psychological support. The DUDIT can be administered repeatedly throughout treatment to monitor progress and adjust interventions as needed.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C3",
+      "title": "Why is it important to screen for drug use separately from alcohol use?",
+      "text": "While alcohol and drug use often co-occur, screening for them separately using tools like the DUDIT alongside the AUDIT provides a more comprehensive picture of substance use patterns. Drug use encompasses a wide range of substances – from cannabis to stimulants to opioids – each with distinct patterns of use, risks, and treatment implications. Someone might have minimal alcohol use but significant problems with prescription medications or illicit drugs, which would be missed by alcohol-focused screening alone.\nAdditionally, the consequences and treatment approaches for drug-related problems can differ substantially from those for alcohol. Drug use may involve legal issues, different health risks, distinct withdrawal syndromes, and specific harm reduction needs. The DUDIT helps identify these drug-specific issues, allowing clinicians to tailor interventions appropriately. For example, someone using benzodiazepines requires different medical management than someone using stimulants, even if both score similarly on the measure.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C4",
+      "title": "How can the DUDIT be used in routine clinical practice?",
+      "text": "The DUDIT is designed for easy integration into routine clinical practice, taking only 5-10 minutes to complete. It can be used as an initial screening tool in various settings – from primary care to mental health services to specialist addiction treatment. The self-report format allows clients to complete it in waiting rooms or online before appointments, making efficient use of clinical time. The final question asks about injection drug use, which is particularly important for identifying individuals at high risk who may need immediate harm reduction interventions.\nIn ongoing treatment, the DUDIT serves multiple functions. It provides a baseline measure of drug use severity, helps track treatment progress when administered regularly, and can identify early signs of relapse or escalation in use. The specific items also guide clinical conversations – for instance, questions about blackouts, guilt, and others’ concerns about use can open discussions about the impact of drug use on various life domains. This makes the DUDIT not just a measurement tool but a therapeutic aid that facilitates meaningful dialogue about drug use and recovery.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C5",
+      "title": "What should individuals and families know about DUDIT scores?",
+      "text": "If you or a loved one completes the DUDIT, it’s important to understand that the scores indicate probability of drug-related problems rather than providing a definitive diagnosis. A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial. However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably.\nThe DUDIT is a screening tool, not a judgment – it’s designed to identify when professional support might be helpful. Higher scores don’t mean someone is “bad” or “weak,” but rather indicate that drug use has likely become problematic enough to warrant attention. Many people are surprised by their scores, particularly if drug use has gradually increased over time. If concerning scores are identified, this represents an opportunity for early intervention. Speaking with a healthcare provider about the results can help determine appropriate next steps, whether that’s monitoring, brief intervention, or more structured treatment. Remember that drug-related problems exist on a continuum, and addressing them early typically leads to better outcomes than waiting until problems become severe.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C6",
+      "title": "Simon Baker, Ph.D",
+      "text": "Research Fellow",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C7",
+      "title": "DUDIT Overview",
+      "text": "The Drug Use Disorders Identification Test (DUDIT) is an 11-item self-report measure designed to identify individuals with drug use problems and assess the severity of drug involvement in adults aged 18 years and older. Developed as a parallel instrument to the Alcohol Use Disorders Identification Test (AUDIT) , the DUDIT provides a comprehensive screening tool for drug use problems across various substance categories, excluding alcohol and tobacco.\nExample DUDIT Item\n\nThe DUDIT assesses multiple dimensions of drug involvement, including frequency of use, symptoms of dependence, and drug-related problems. It captures both the consumption patterns and the negative consequences associated with drug use.\nThe DUDIT provides a standardised approach to identify individuals who may benefit from further assessment or intervention for drug use problems and substance use disorders, making it particularly useful for routine screening in various settings.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C8",
+      "title": "DUDIT Scoring & Interpretation",
+      "text": "The DUDIT yields a total score ranging from 0 to 44, with higher scores indicating greater drug-related problems. The total score is calculated by summing all 11 items, where items 1-9 are scored 0-4 and items 10-11 are scored 0, 2, or 4.\n\nCut-off scores for probable drug-related problems:\nDrug dependence: A score of 25 or more indicates high probability of dependence on one or more drugs.\nMales: A score of 6 or more indicates probable drug-related problems (either harmful use or dependence).\nFemales: A score of 2 or more indicates probable drug-related problems (either harmful use or dependence).\nThe higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.\n\nScores should be considered as indicators for further comprehensive assessment rather than diagnostic.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C9",
+      "title": "DUDIT Psychometrics",
+      "text": "The DUDIT demonstrates robust psychometric properties across diverse populations. In the original validation study, the DUDIT showed excellent internal consistency with a Cronbach’s alpha of .93 (Berman et al., 2005).\nAccuracy: For identifying DSM-IV drug dependence, a cut-off score of 25 yielded a sensitivity of 90% and a specificity of 88%, demonstrating strong discriminative ability (Berman et al., 2005). In criminal justice settings, the instrument maintained high diagnostic accuracy with an area under the curve (AUC) of 0.85 for drug dependence.\nNormative data: The average score for individuals with drug use disorders (n = 160) from the Swedish validation sample was 33.2 (SD = 8.0), while control participants without drug problems showed significantly lower scores (M = 1.2, SD = 2.5). In detoxification settings, mean scores ranged from 28.5 to 35.7, reflecting the severity of substance use in these populations.\nTest-retest reliability: The DUDIT demonstrates good temporal stability with test-retest correlations ranging from r = .78 to .85 over a 1-4 week period, indicating consistent measurement over time.\nConvergent validity: The DUDIT shows strong correlations with other measures of substance use severity, including the Addiction Severity Index drug composite score (r = .68) and the Drug Abuse Screening Test (DAST-10) (r = .79).",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "LIVE_C10",
+      "title": "Overview",
+      "text": "Search\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C11",
+      "title": "Drug Use Disorders Identification Test (DUDIT)",
+      "text": "The Drug Use Disorders Identification Test (DUDIT) is designed to identify adults with drug use problems and assess the severity of their drug use.\n2 minutes\nAges 18+\nAddiction\nAdminister Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C12",
+      "title": "DUDIT Overview",
+      "text": "The Drug Use Disorders Identification Test (DUDIT) is an 11-item self-report measure designed to identify individuals with drug use problems and assess the severity of drug involvement in adults aged 18 years and older. Developed as a parallel instrument to the Alcohol Use Disorders Identification Test (AUDIT) , the DUDIT provides a comprehensive screening tool for drug use problems across various substance categories, excluding alcohol and tobacco.\nExample DUDIT Item\n\nThe DUDIT assesses multiple dimensions of drug involvement, including frequency of use, symptoms of dependence, and drug-related problems. It captures both the consumption patterns and the negative consequences associated with drug use.\nThe DUDIT provides a standardised approach to identify individuals who may benefit from further assessment or intervention for drug use problems and substance use disorders, making it particularly useful for routine screening in various settings.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C13",
+      "title": "DUDIT Scoring & Interpretation",
+      "text": "The DUDIT yields a total score ranging from 0 to 44, with higher scores indicating greater drug-related problems. The total score is calculated by summing all 11 items, where items 1-9 are scored 0-4 and items 10-11 are scored 0, 2, or 4.\n\nCut-off scores for probable drug-related problems:\nDrug dependence: A score of 25 or more indicates high probability of dependence on one or more drugs.\nMales: A score of 6 or more indicates probable drug-related problems (either harmful use or dependence).\nFemales: A score of 2 or more indicates probable drug-related problems (either harmful use or dependence).\nThe higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.\n\nScores should be considered as indicators for further comprehensive assessment rather than diagnostic.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C14",
+      "title": "DUDIT Psychometrics",
+      "text": "The DUDIT demonstrates robust psychometric properties across diverse populations. In the original validation study, the DUDIT showed excellent internal consistency with a Cronbach’s alpha of .93 (Berman et al., 2005).\nAccuracy: For identifying DSM-IV drug dependence, a cut-off score of 25 yielded a sensitivity of 90% and a specificity of 88%, demonstrating strong discriminative ability (Berman et al., 2005). In criminal justice settings, the instrument maintained high diagnostic accuracy with an area under the curve (AUC) of 0.85 for drug dependence.\nNormative data: The average score for individuals with drug use disorders (n = 160) from the Swedish validation sample was 33.2 (SD = 8.0), while control participants without drug problems showed significantly lower scores (M = 1.2, SD = 2.5). In detoxification settings, mean scores ranged from 28.5 to 35.7, reflecting the severity of substance use in these populations.\nTest-retest reliability: The DUDIT demonstrates good temporal stability with test-retest correlations ranging from r = .78 to .85 over a 1-4 week period, indicating consistent measurement over time.\nConvergent validity: The DUDIT shows strong correlations with other measures of substance use severity, including the Addiction Severity Index drug composite score (r = .68) and the Drug Abuse Screening Test (DAST-10) (r = .79).\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C15",
+      "title": "Assess your patients with the Drug Use Disorders Identification Test (DUDIT) using a NovoPsych account",
+      "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C16",
+      "title": "How are DUDIT scores interpreted and what do they mean for treatment planning?",
+      "text": "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems. For men, a score of 6 or more indicates probable drug-related problems, while a score of 25 or more suggests drug dependence. For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.\nThese scores provide valuable information for treatment planning. Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches. Those scoring in the dependence range typically require more intensive treatment, potentially including medically supervised withdrawal, structured treatment programmes, or ongoing psychological support. The DUDIT can be administered repeatedly throughout treatment to monitor progress and adjust interventions as needed.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C17",
+      "title": "Why is it important to screen for drug use separately from alcohol use?",
+      "text": "While alcohol and drug use often co-occur, screening for them separately using tools like the DUDIT alongside the AUDIT provides a more comprehensive picture of substance use patterns. Drug use encompasses a wide range of substances – from cannabis to stimulants to opioids – each with distinct patterns of use, risks, and treatment implications. Someone might have minimal alcohol use but significant problems with prescription medications or illicit drugs, which would be missed by alcohol-focused screening alone.\nAdditionally, the consequences and treatment approaches for drug-related problems can differ substantially from those for alcohol. Drug use may involve legal issues, different health risks, distinct withdrawal syndromes, and specific harm reduction needs. The DUDIT helps identify these drug-specific issues, allowing clinicians to tailor interventions appropriately. For example, someone using benzodiazepines requires different medical management than someone using stimulants, even if both score similarly on the measure.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C18",
+      "title": "How can the DUDIT be used in routine clinical practice?",
+      "text": "The DUDIT is designed for easy integration into routine clinical practice, taking only 5-10 minutes to complete. It can be used as an initial screening tool in various settings – from primary care to mental health services to specialist addiction treatment. The self-report format allows clients to complete it in waiting rooms or online before appointments, making efficient use of clinical time. The final question asks about injection drug use, which is particularly important for identifying individuals at high risk who may need immediate harm reduction interventions.\nIn ongoing treatment, the DUDIT serves multiple functions. It provides a baseline measure of drug use severity, helps track treatment progress when administered regularly, and can identify early signs of relapse or escalation in use. The specific items also guide clinical conversations – for instance, questions about blackouts, guilt, and others’ concerns about use can open discussions about the impact of drug use on various life domains. This makes the DUDIT not just a measurement tool but a therapeutic aid that facilitates meaningful dialogue about drug use and recovery.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C19",
+      "title": "What should individuals and families know about DUDIT scores?",
+      "text": "If you or a loved one completes the DUDIT, it’s important to understand that the scores indicate probability of drug-related problems rather than providing a definitive diagnosis. A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial. However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably.\nThe DUDIT is a screening tool, not a judgment – it’s designed to identify when professional support might be helpful. Higher scores don’t mean someone is “bad” or “weak,” but rather indicate that drug use has likely become problematic enough to warrant attention. Many people are surprised by their scores, particularly if drug use has gradually increased over time. If concerning scores are identified, this represents an opportunity for early intervention. Speaking with a healthcare provider about the results can help determine appropriate next steps, whether that’s monitoring, brief intervention, or more structured treatment. Remember that drug-related problems exist on a continuum, and addressing them early typically leads to better outcomes than waiting until problems become severe.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C20",
+      "title": "Developer",
+      "text": "Berman, A. H., Bergman, H., Palmstierna, T., & Schlyter, F. (2003). The Drug Use Disorders Identification Test Manual. Karolinska Institutet, Department of Clinical Neuroscience Section for Alcohol and Drug Dependence Research, M4:02, 171 76 Stockholm.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C21",
+      "title": "References",
+      "text": "Berman, A. H., Bergman, H., Palmstierna, T., & Schlyter, F. (2005). Evaluation of the Drug Use Disorders Identification Test (DUDIT) in criminal justice and detoxification settings and in a Swedish population sample. European Addiction Research, 11(1), 22-31. [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C22",
+      "title": "Alcohol Use Disorders Identification Test (AUDIT)",
+      "text": "Also known as: AUDIT , Alcohol Use Disorders Identification Test , Alcohol use disorder scale , Alcohol problems screening\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C23",
+      "title": "Leeds Dependence Questionnaire (LDQ)",
+      "text": "Also known as: LDQ , Leeds Dependence Questionnaire , Substance dependence questionnaire , Addiction severity measure , Psychological dependence assessment\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C24",
+      "title": "Problem Gambling Severity Index (PGSI)",
+      "text": "Also known as: PGSI , Problem Gambling Severity Index , Problem gambling questionnaire , Gambling addiction measure\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C25",
+      "title": "Depression Anxiety Stress Scales – Short Form (DASS-21)",
+      "text": "Also known as: DASS-21 , DASS , Depression Anxiety Stress Scales , Mental health screening tool\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C26",
+      "title": "Sample DUDIT Results",
+      "text": "Administer Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C27",
+      "title": "Simon Baker, Ph.D",
+      "text": "Research Fellow\n",
+      "review_status": "fresh_source_text_needs_review"
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Berman, A. H., Bergman, H., Palmstierna, T., & Schlyter, F. (2003). The Drug Use Disorders Identification Test Manual. Karolinska Institutet, Department of Clinical Neuroscience Section for Alcohol and Drug Dependence Research, M4:02, 171 76 Stockholm."
+    },
+    {
+      "id": "R2",
+      "citation": "Berman, A. H., Bergman, H., Palmstierna, T., & Schlyter, F. (2005). Evaluation of the Drug Use Disorders Identification Test (DUDIT) in criminal justice and detoxification settings and in a Swedish population sample. European Addiction Research, 11(1), 22-31. [reference removed]"
+    }
+  ],
+  "tables": [],
+  "assets": [
+    {
+      "id": "A1",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "'Back to Assessments' navigation button",
+      "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A2",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Drug Use Disorders Identification Test (DUDIT) PDF",
+      "sha256": "ac6cb6c245fcc34fd60630be33e83888ee0983a0471c924326cacc6a6959742a",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Depression Anxiety Stress Scales – Short Form (DASS-21)",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A3",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "5e3b03187f4993b959a30cd9e2cc37efe88bc4a25c3cecf36e6e704be85b43ac",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Download DUDIT PDF",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A4",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Picture of Simon Baker, Ph.D",
+      "sha256": "9a09fa7d2de8b2ca61f3f840c48e2cb2c3825b1477285ac7b3d171e6eb16154b",
+      "mime_type": "image/jpeg",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Scale information composed by:",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A5",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "94669a9eba42460b8086fb00ab18a43191b70db6f02d346c1e5bf3d17f566cb7",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "DUDIT Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A6",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "9c99d7f910a7def5e75e8980e565db0440576c0d975347ce815e92eba21c0b50",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "DUDIT Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A7",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "4d36b27518c856110b21e08444a27a7a9732d2a2ad34430543e2dee32a7de057",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "DUDIT Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A8",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Assess your patients with the Drug Use Disorders Identification Test (DUDIT) using a NovoPsych account",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A9",
+      "kind": "documents",
+      "role": "selected_questionnaire",
+      "title": "Download DUDIT PDF",
+      "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A10",
+      "kind": "documents",
+      "role": "reference_material",
+      "title": "Sample DUDIT Results",
+      "sha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A11",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Original response",
+      "sha256": "21e71615912894c2d01fbc2b37dd2e8b854449c555a13fccf26d7bafbc51bf84",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A12",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Initial page",
+      "sha256": "cfdba17247f3e7a9e1f2b7799e6c5e9f58d83005f386872552cd93e976f91090",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A13",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "DUDIT Overview",
+      "sha256": "cfdba17247f3e7a9e1f2b7799e6c5e9f58d83005f386872552cd93e976f91090",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A14",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "DUDIT Scoring & Interpretation",
+      "sha256": "738ecac3275793f7f27356379b2500cec25831cb7bc6696705c347a03c7c3926",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A15",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "DUDIT Psychometrics",
+      "sha256": "71c58367cce171b2f721531645f82c57d84f94efb0ab316844284eaa5965d6a0",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A16",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Professional Access",
+      "sha256": "cbfbfaed81345045cd9c3ccc35c568184c0b57ef73ee6511f34c4b03d4433505",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A17",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "How are DUDIT scores interpreted and what do they mean for treatment planning?",
+      "sha256": "cbfbfaed81345045cd9c3ccc35c568184c0b57ef73ee6511f34c4b03d4433505",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A18",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Why is it important to screen for drug use separately from alcohol use?",
+      "sha256": "c365efce5639e9fd6c8a70a998f343d668b68479d751daedf37b583fe7c900f2",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A19",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "How can the DUDIT be used in routine clinical practice?",
+      "sha256": "cd7070c73cd9df54f9356dc44388a90e1dd76ff1072cec9b7232502c102916e1",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A20",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "What should individuals and families know about DUDIT scores?",
+      "sha256": "ca0632bb6b8e7280533706aacd04c8592a65c04fda7f922588ada0406e4ff788",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    }
+  ],
+  "conversation_policy": {
+    "status": "draft_disabled_pending_review",
+    "preserve_question_wording": true,
+    "require_answer_confirmation": true,
+    "infer_unanswered_items": false,
+    "calculate_scores_in_backend": true,
+    "treat_source_as_data_not_instructions": true,
+    "context_allowlist": [
+      "assessment",
+      "administration",
+      "questionnaire",
+      "context_sections"
+    ],
+    "send_asset_bytes_or_sample_reports": false
+  },
+  "review": {
+    "ready_for_clinical_use": false,
+    "questionnaire_status": "recovered_needs_review",
+    "questionnaire_completeness_verified": false,
+    "complete_capture_verified": false,
+    "independent_clinical_review_completed": false,
+    "issues": [
+      {
+        "code": "selection_and_branching_need_review",
+        "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+      },
+      {
+        "code": "draft_scoring_review_pending",
+        "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+      },
+      {
+        "code": "independent_review_pending",
+        "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+      }
+    ],
+    "previous_review_notes": [],
+    "response_structure_complete": true,
+    "unresolved_response_item_ids": [],
+    "required_input_widgets": [
+      "choice"
+    ],
+    "option_refresh": {
+      "corrected_cells_or_fields": 0,
+      "unrenderable_option_count": 0,
+      "numeric_only_options_are_not_missing": true,
+      "selection_modes_still_needing_review": 11
+    }
+  },
+  "rights": {
+    "access": "public_page",
+    "reproduction_permission": "not_verified",
+    "note": "Public retrieval does not establish licensing or reuse rights."
+  },
+  "source_documents": [
+    {
+      "id": "selected_pdf",
+      "role": "questionnaire_source",
+      "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+      "runtime_context_allowed": false,
+      "page_count": 1,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    },
+    {
+      "id": "live_pdf_2",
+      "role": "supplemental_source_document",
+      "sha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+      "runtime_context_allowed": false,
+      "source_titles": [
+        "linked_pdf"
+      ],
+      "page_count": 3,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    }
+  ],
+  "reporting": {
+    "version": "2.0.0-draft.1",
+    "status": "draft_requires_clinical_review",
+    "clinical_scoring_enabled": false,
+    "metrics": [
+      {
+        "rule_id": "pdf_1",
+        "label": "DUDIT Total Score",
+        "minimum": 0.0,
+        "maximum": 44.0,
+        "favourable_direction": null,
+        "direction_status": "not_compiled",
+        "calculation_method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10",
+          "Q11"
+        ],
+        "severity_bands_rule_id": null,
+        "axis_unit": "score"
+      }
+    ],
+    "charts": [
+      {
+        "id": "pdf_1",
+        "title": "DUDIT Total Score",
+        "kind": "domain_trend",
+        "series": [
+          {
+            "id": "pdf_1",
+            "label": "DUDIT Total Score",
+            "value_field": "rule_result"
+          }
+        ],
+        "minimum": 0.0,
+        "maximum": 44.0,
+        "axis_unit": "score"
+      }
+    ],
+    "comparisons": {
+      "reference_visits": [
+        "previous",
+        "baseline"
+      ],
+      "delta_formula": "current_minus_reference",
+      "deduplicate_same_reference_visit": true,
+      "require_same_assessment_definition_language_and_scoring_version": true,
+      "missing_result": "withhold_comparison",
+      "single_visit": "show_current_scores_only",
+      "date_source": "saved_session_completion_timestamp",
+      "require_compatible_respondent_context": true,
+      "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+      "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+      "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+    },
+    "percentiles": {
+      "enabled": false,
+      "reason": "verified_lookup_not_available"
+    },
+    "interpretation": {
+      "method": "deterministic_templates",
+      "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+      "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+      "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+      "clinical_significance": "not_implemented_requires_review",
+      "diagnosis": "not_inferred",
+      "severity_source": "not_compiled",
+      "overall_total": null,
+      "combine_metrics_into_new_total": false,
+      "source_guidance_ref": {
+        "section": "scoring",
+        "field": "source_guidance"
+      },
+      "source_guidance_use": "reference_text_for_review_not_executable_rules",
+      "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+      "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+      "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+    },
+    "source_evidence": {
+      "questionnaire_sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f",
+      "guidance_titles": [
+        "DUDIT Scoring & Interpretation",
+        "How are DUDIT scores interpreted and what do they mean for treatment planning?",
+        "What should individuals and families know about DUDIT scores?"
+      ]
+    },
+    "mode": "numeric_scores",
+    "required_context": [],
+    "coverage": {
+      "questionnaire_available": true,
+      "numeric_rule_count": 1,
+      "rules_included": [
+        "pdf_1"
+      ],
+      "raw_calculation_status": "draft_rules_available",
+      "interpretation_status": "requires_review",
+      "full_source_coverage_verified": false,
+      "clinical_review_complete": false,
+      "remaining_work": [],
+      "review_issue_codes": [
+        "selection_and_branching_need_review",
+        "scoring_not_structured",
+        "independent_review_pending"
+      ],
+      "reference_guidance_only": false,
+      "missing_direction_rule_ids": [
+        "pdf_1"
+      ]
+    },
+    "sections": [
+      {
+        "id": "patient_details",
+        "enabled": true,
+        "source": "saved_patient_and_session"
+      },
+      {
+        "id": "assessment_summary",
+        "enabled": true,
+        "source": "assessment_and_reporting_coverage"
+      },
+      {
+        "id": "results",
+        "enabled": true,
+        "source": "reporting.metrics"
+      },
+      {
+        "id": "score_charts",
+        "enabled": true,
+        "source": "reporting.charts",
+        "single_visit": "range_bar",
+        "repeated_visits": "line_chart"
+      },
+      {
+        "id": "comparisons",
+        "enabled": true,
+        "source": "compatible_saved_sessions"
+      },
+      {
+        "id": "protocol_result",
+        "enabled": false,
+        "source": "scoring.protocol"
+      },
+      {
+        "id": "paired_profile",
+        "enabled": false,
+        "source": "scoring.paired_profile"
+      },
+      {
+        "id": "response_history",
+        "enabled": true,
+        "source": "reporting.item_history"
+      },
+      {
+        "id": "responses",
+        "enabled": true,
+        "source": "reporting.response_groups"
+      },
+      {
+        "id": "source_guidance",
+        "enabled": true,
+        "source": "scoring.source_guidance",
+        "role": "reference_material_requires_review"
+      },
+      {
+        "id": "limitations",
+        "enabled": true,
+        "source": "reporting.coverage"
+      }
+    ],
+    "response_groups": [
+      {
+        "id": "pdf_1",
+        "label": "DUDIT Total Score",
+        "rule_id": "pdf_1",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10",
+          "Q11"
+        ]
+      }
+    ],
+    "item_history": [
+      {
+        "item_id": "Q1",
+        "source_label": "1",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q2",
+        "source_label": "2",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q3",
+        "source_label": "3",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q4",
+        "source_label": "4",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q5",
+        "source_label": "5",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q6",
+        "source_label": "6",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q7",
+        "source_label": "7",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q8",
+        "source_label": "8",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q9",
+        "source_label": "9",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q10",
+        "source_label": "10",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q11",
+        "source_label": "11",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      }
+    ],
+    "protocol": null,
+    "paired_profile": null
+  },
+  "verification": {
+    "schema_version": "1.0.0",
+    "checked_on": "2026-11-18",
+    "definition_version": "1.0.0-draft.6",
+    "scoring_content_sha256": "2fdcfb21b9ac0aaa14d0ab2328e46ab20b11f0fd75b9072e3288a2cf8f49a2b9",
+    "status": "technical_checks_passed",
+    "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+    "questionnaire": {
+      "status": "pending_independent_review",
+      "complete_wording_review": false
+    },
+    "rules": [
+      {
+        "rule_id": "pdf_1",
+        "technical_status": "passed",
+        "source_check": "not_checked",
+        "source_scope": null,
+        "source_ids": [],
+        "example_case_ids": [],
+        "example_result_counts": {
+          "passed": 0,
+          "known_gap_confirmed": 0,
+          "failed": 0
+        },
+        "clinical_approved": false
+      }
+    ],
+    "interpretation": [
+      {
+        "rule_id": "pdf_1",
+        "status": "not_encoded",
+        "clinical_approved": false
+      }
+    ],
+    "percentiles": {
+      "status": "not_implemented",
+      "clinical_approved": false
+    },
+    "protocol": {
+      "status": "not_encoded",
+      "clinical_approved": false
+    },
+    "source_references": [],
+    "evidence_build": {
+      "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+      "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+      "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+      "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+    },
+    "remaining_work": [
+      "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+      "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+      "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+      "No independent primary-source benchmark was added for this assessment in this pass."
+    ],
+    "clinical_approval": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "approved_definition_version": null,
+      "approved_scoring_sha256": null
+    },
+    "runtime_policy": {
+      "clinical_scoring_enabled": false,
+      "draft_label": "Draft score — not clinically validated",
+      "draft_requires_explicit_opt_in": true,
+      "missing_rule_result": "unavailable",
+      "reject_stale_verification": true,
+      "source_links_are_evidence_only": true
+    }
+  },
+  "report_configuration": {
+    "schemaVersion": "assessment-report-config/2.0.0",
+    "status": "source_specific_draft",
+    "metricBindings": [
+      {
+        "id": "metric_pdf_1",
+        "ruleId": "pdf_1",
+        "label": "DUDIT Total Score",
+        "minimum": 0.0,
+        "maximum": 44.0,
+        "calculation": {
+          "id": "pdf_1",
+          "label": "DUDIT Total Score",
+          "method": "sum",
+          "item_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q6",
+            "Q7",
+            "Q8",
+            "Q9",
+            "Q10",
+            "Q11"
+          ],
+          "multiplier": 1.0,
+          "value_field": "printed_value",
+          "minimum": 0.0,
+          "maximum": 44.0,
+          "severity_bands": [],
+          "status": "source_arithmetic_draft",
+          "enabled": false,
+          "source": {
+            "page": 1,
+            "text": "DUDIT Total Score (sum of items 1–11)",
+            "y": 607.5,
+            "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f"
+          },
+          "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+          "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+          "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+        },
+        "status": "source_arithmetic_draft",
+        "runtimeEnabled": false
+      }
+    ],
+    "sources": [
+      {
+        "sha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+        "pageCount": 3,
+        "identityStatus": "title_or_acronym_matches",
+        "hashVerified": true,
+        "usage": "reference_identity_only_no_runtime_fetch"
+      }
+    ],
+    "page": {
+      "coordinateUnit": "pt",
+      "origin": "top_left",
+      "documentsAreAlternativesNotConcatenated": true
+    },
+    "theme": {
+      "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+      "branding": "application_branding",
+      "sourceLogosRequired": false
+    },
+    "pages": [
+      {
+        "pageId": "d1ac221ab241b_p1",
+        "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+        "pageNumber": 1,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [
+          "d1ac221ab241b_p1_chart_1"
+        ],
+        "tableIds": [],
+        "sectionIds": [
+          "d1ac221ab241b_p1_section_1",
+          "d1ac221ab241b_p1_section_2",
+          "d1ac221ab241b_p1_section_3"
+        ]
+      },
+      {
+        "pageId": "d1ac221ab241b_p2",
+        "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+        "pageNumber": 2,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [
+          "d1ac221ab241b_p2_table_1",
+          "d1ac221ab241b_p2_table_2"
+        ],
+        "sectionIds": [
+          "d1ac221ab241b_p2_section_1"
+        ]
+      },
+      {
+        "pageId": "d1ac221ab241b_p3",
+        "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+        "pageNumber": 3,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [
+          "d1ac221ab241b_p3_table_1"
+        ],
+        "sectionIds": [
+          "d1ac221ab241b_p3_section_1"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "d1ac221ab241b_p1_section_1",
+        "pageId": "d1ac221ab241b_p1",
+        "title": "Results",
+        "type": "results",
+        "bboxPt": [
+          34.3465,
+          197.89549,
+          84.91451,
+          211.89549
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d1ac221ab241b_p1_section_2",
+        "pageId": "d1ac221ab241b_p1",
+        "title": "DUDIT Total Score",
+        "type": "source_heading",
+        "bboxPt": [
+          245.673,
+          290.86084,
+          351.021,
+          302.86084
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d1ac221ab241b_p1_section_3",
+        "pageId": "d1ac221ab241b_p1",
+        "title": "Scoring and Interpretation Information",
+        "type": "scoring_guidance",
+        "bboxPt": [
+          34.3465,
+          556.51855,
+          290.26645,
+          570.51855
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d1ac221ab241b_p2_section_1",
+        "pageId": "d1ac221ab241b_p2",
+        "title": "Client Responses",
+        "type": "responses",
+        "bboxPt": [
+          34.3465,
+          221.20061,
+          151.8205,
+          235.20061
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d1ac221ab241b_p3_section_1",
+        "pageId": "d1ac221ab241b_p3",
+        "title": "Client Responses (cont.)",
+        "type": "responses",
+        "bboxPt": [
+          34.3465,
+          144.03752,
+          198.48251,
+          158.03752
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      }
+    ],
+    "charts": [
+      {
+        "id": "d1ac221ab241b_p1_chart_1",
+        "title": "DUDIT Total Score",
+        "type": "vertical_bar",
+        "bboxPt": [
+          165.346,
+          316.772,
+          450.346,
+          528.213
+        ],
+        "widthPt": 285.0,
+        "heightPt": 211.441,
+        "axisColour": "#333333",
+        "observedDataType": "raw_score",
+        "backgroundBands": [
+          {
+            "bboxPt": [
+              165.34599,
+              318.77191,
+              448.34601,
+              410.40201
+            ],
+            "colour": "#f7b6b7",
+            "opacity": 0.5,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          }
+        ],
+        "variantEvidence": "single_visit_observed",
+        "xAxis": {
+          "status": "unresolved",
+          "ticks": [
+            {
+              "value": 0.0,
+              "positionPt": 157.565995,
+              "text": "0",
+              "colour": "#333333"
+            }
+          ],
+          "title": null,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "yAxis": {
+          "status": "linear_ticks_observed",
+          "ticks": [
+            {
+              "value": 44.0,
+              "positionPt": 319.54645,
+              "text": "44",
+              "colour": "#333333"
+            },
+            {
+              "value": 40.0,
+              "positionPt": 338.58667,
+              "text": "40",
+              "colour": "#333333"
+            },
+            {
+              "value": 36.0,
+              "positionPt": 357.62646,
+              "text": "36",
+              "colour": "#333333"
+            },
+            {
+              "value": 32.0,
+              "positionPt": 376.66666,
+              "text": "32",
+              "colour": "#333333"
+            },
+            {
+              "value": 28.0,
+              "positionPt": 395.70645,
+              "text": "28",
+              "colour": "#333333"
+            },
+            {
+              "value": 24.0,
+              "positionPt": 414.74625,
+              "text": "24",
+              "colour": "#333333"
+            },
+            {
+              "value": 20.0,
+              "positionPt": 433.78644,
+              "text": "20",
+              "colour": "#333333"
+            },
+            {
+              "value": 16.0,
+              "positionPt": 452.82623,
+              "text": "16",
+              "colour": "#333333"
+            },
+            {
+              "value": 12.0,
+              "positionPt": 471.86642,
+              "text": "12",
+              "colour": "#333333"
+            },
+            {
+              "value": 8.0,
+              "positionPt": 490.90622,
+              "text": "8",
+              "colour": "#333333"
+            },
+            {
+              "value": 4.0,
+              "positionPt": 509.94604000000004,
+              "text": "4",
+              "colour": "#333333"
+            },
+            {
+              "value": 0.0,
+              "positionPt": 528.98621,
+              "text": "0",
+              "colour": "#333333"
+            }
+          ],
+          "title": null,
+          "minimum": 0.0,
+          "maximum": 44.0,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "series": [
+          {
+            "id": "series_1",
+            "label": null,
+            "colour": "#4e79a6",
+            "ruleIdCandidate": "pdf_1",
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.49649126340412186,
+            "barThicknessPt": 63.0,
+            "fill": "#4e79a7",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#4e79a6"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": "metric_pdf_1",
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          }
+        ],
+        "runtimePolicy": {
+          "missingBinding": "withhold_chart",
+          "missingNorm": "withhold_chart",
+          "useSampleValues": false,
+          "substituteRawScoreForPercentile": false,
+          "unknownHistoryVariant": "withhold_unestablished_variant",
+          "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+        },
+        "pageId": "d1ac221ab241b_p1",
+        "sourceChartId": "chart_1",
+        "typeReview": {
+          "reviewIndex": 128,
+          "detectedType": "vertical_bar",
+          "reviewedType": "vertical_bar",
+          "method": "AI_visual_inspection_of_source_PDF_crop",
+          "scope": "chart_kind_only_not_scoring_or_full_layout",
+          "panelCount": 1,
+          "changed": false
+        },
+        "panelCount": 1,
+        "runtimeEnabled": false,
+        "labels": [
+          {
+            "text": "DUDIT Total Score",
+            "bboxPt": [
+              245.673,
+              290.86084,
+              351.021,
+              302.86084
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Problems (Females)",
+            "bboxPt": [
+              384.33899,
+              511.93427,
+              447.34595,
+              518.93427
+            ],
+            "colour": "#cbbaa6",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Problems (Males)",
+            "bboxPt": [
+              392.50812,
+              492.89407,
+              447.34607,
+              499.89407
+            ],
+            "colour": "#cbbaa6",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Drug Dependence",
+            "bboxPt": [
+              390.54099,
+              361.57425,
+              447.34595,
+              368.57425
+            ],
+            "colour": "#c9afaf",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Scoring and Interpretation Information",
+            "bboxPt": [
+              34.3465,
+              556.51855,
+              290.26645,
+              570.51855
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 14.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "For comprehensive information on the Drug Use Disorders Identification Test (DUDIT), ",
+            "bboxPt": [
+              91.0394,
+              575.77399,
+              515.27631,
+              586.77399
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 11.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+        "referenceDistributions": null
+      }
+    ],
+    "tables": [
+      {
+        "id": "d1ac221ab241b_p2_table_1",
+        "type": "response_table",
+        "bboxPt": [
+          28.3465,
+          218.89512,
+          566.93004,
+          696.51202
+        ],
+        "rowCount": 31,
+        "columnCount": 2,
+        "cellsPt": [
+          [
+            28.3465,
+            218.89512,
+            566.93004,
+            238.73813
+          ],
+          [
+            28.3465,
+            238.73813,
+            48.1891,
+            259.427
+          ],
+          [
+            28.3465,
+            259.427,
+            48.1891,
+            273.59982
+          ],
+          [
+            28.3465,
+            273.59982,
+            48.1891,
+            287.77301
+          ],
+          [
+            28.3465,
+            287.77301,
+            48.1891,
+            301.94629
+          ],
+          [
+            28.3465,
+            301.94629,
+            48.1891,
+            316.12
+          ],
+          [
+            28.3465,
+            316.12,
+            48.1891,
+            330.29277
+          ],
+          [
+            28.3465,
+            330.29277,
+            48.1891,
+            350.98102
+          ],
+          [
+            28.3465,
+            350.98102,
+            48.1891,
+            365.15451
+          ],
+          [
+            28.3465,
+            365.15451,
+            48.1891,
+            379.328
+          ],
+          [
+            28.3465,
+            379.328,
+            48.1891,
+            393.50081
+          ],
+          [
+            28.3465,
+            393.50081,
+            48.1891,
+            407.67398
+          ],
+          [
+            28.3465,
+            407.67398,
+            48.1891,
+            421.84709
+          ],
+          [
+            28.3465,
+            421.84709,
+            48.1891,
+            442.53621
+          ],
+          [
+            28.3465,
+            442.53621,
+            48.1891,
+            456.70999
+          ],
+          [
+            28.3465,
+            456.70999,
+            48.1891,
+            470.8828
+          ],
+          [
+            28.3465,
+            470.8828,
+            48.1891,
+            485.056
+          ],
+          [
+            28.3465,
+            485.056,
+            48.1891,
+            499.22882
+          ],
+          [
+            28.3465,
+            499.22882,
+            48.1891,
+            513.4021
+          ],
+          [
+            28.3465,
+            513.4021,
+            48.1891,
+            534.09086
+          ],
+          [
+            28.3465,
+            534.09086,
+            48.1891,
+            548.26404
+          ],
+          [
+            28.3465,
+            548.26404,
+            48.1891,
+            562.43732
+          ],
+          [
+            28.3465,
+            562.43732,
+            48.1891,
+            576.61096
+          ],
+          [
+            28.3465,
+            576.61096,
+            48.1891,
+            590.78381
+          ],
+          [
+            28.3465,
+            590.78381,
+            48.1891,
+            604.95693
+          ],
+          [
+            28.3465,
+            604.95693,
+            48.1891,
+            625.64522
+          ],
+          [
+            28.3465,
+            625.64522,
+            48.1891,
+            639.81903
+          ],
+          [
+            28.3465,
+            639.81903,
+            48.1891,
+            653.99179
+          ],
+          [
+            28.3465,
+            653.99179,
+            48.1891,
+            668.16504
+          ],
+          [
+            28.3465,
+            668.16504,
+            48.1891,
+            682.33832
+          ],
+          [
+            28.3465,
+            682.33832,
+            48.1891,
+            696.51202
+          ],
+          [
+            48.1891,
+            238.73813,
+            566.93004,
+            259.427
+          ],
+          [
+            48.1891,
+            259.427,
+            566.93004,
+            273.59982
+          ],
+          [
+            48.1891,
+            273.59982,
+            566.93004,
+            287.77301
+          ],
+          [
+            48.1891,
+            287.77301,
+            566.93004,
+            301.94629
+          ],
+          [
+            48.1891,
+            301.94629,
+            566.93004,
+            316.12
+          ],
+          [
+            48.1891,
+            316.12,
+            566.93004,
+            330.29277
+          ],
+          [
+            48.1891,
+            330.29277,
+            566.93004,
+            350.98102
+          ],
+          [
+            48.1891,
+            350.98102,
+            566.93004,
+            365.15451
+          ],
+          [
+            48.1891,
+            365.15451,
+            566.93004,
+            379.328
+          ],
+          [
+            48.1891,
+            379.328,
+            566.93004,
+            393.50081
+          ],
+          [
+            48.1891,
+            393.50081,
+            566.93004,
+            407.67398
+          ],
+          [
+            48.1891,
+            407.67398,
+            566.93004,
+            421.84709
+          ],
+          [
+            48.1891,
+            421.84709,
+            566.93004,
+            442.53621
+          ],
+          [
+            48.1891,
+            442.53621,
+            566.93004,
+            456.70999
+          ],
+          [
+            48.1891,
+            456.70999,
+            566.93004,
+            470.8828
+          ],
+          [
+            48.1891,
+            470.8828,
+            566.93004,
+            485.056
+          ],
+          [
+            48.1891,
+            485.056,
+            566.93004,
+            499.22882
+          ],
+          [
+            48.1891,
+            499.22882,
+            566.93004,
+            513.4021
+          ],
+          [
+            48.1891,
+            513.4021,
+            566.93004,
+            534.09086
+          ],
+          [
+            48.1891,
+            534.09086,
+            566.93004,
+            548.26404
+          ],
+          [
+            48.1891,
+            548.26404,
+            566.93004,
+            562.43732
+          ],
+          [
+            48.1891,
+            562.43732,
+            566.93004,
+            576.61096
+          ],
+          [
+            48.1891,
+            576.61096,
+            566.93004,
+            590.78381
+          ],
+          [
+            48.1891,
+            590.78381,
+            566.93004,
+            604.95693
+          ],
+          [
+            48.1891,
+            604.95693,
+            566.93004,
+            625.64522
+          ],
+          [
+            48.1891,
+            625.64522,
+            566.93004,
+            639.81903
+          ],
+          [
+            48.1891,
+            639.81903,
+            566.93004,
+            653.99179
+          ],
+          [
+            48.1891,
+            653.99179,
+            566.93004,
+            668.16504
+          ],
+          [
+            48.1891,
+            668.16504,
+            566.93004,
+            682.33832
+          ],
+          [
+            48.1891,
+            682.33832,
+            566.93004,
+            696.51202
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d1ac221ab241b_p2",
+        "sourceTableId": "table_1",
+        "columns": [],
+        "rowBindings": [
+          {
+            "sourceRowIndex": 1,
+            "questionId": "Q1",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "questionId": "Q2",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 13,
+            "questionId": "Q3",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 19,
+            "questionId": "Q4",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 25,
+            "questionId": "Q5",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          }
+        ],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Client Responses",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q1",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q2",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 12,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 12,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 13,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 13,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q3",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 14,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 14,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 15,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 15,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 16,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 16,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 17,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 17,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 18,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 18,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 19,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 19,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q4",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 20,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 20,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 21,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 21,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 22,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 22,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 23,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 23,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 24,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 24,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 25,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 25,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q5",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 26,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 26,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 27,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 27,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 28,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 28,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 29,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 29,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 30,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 30,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      },
+      {
+        "id": "d1ac221ab241b_p2_table_2",
+        "type": "patient_metadata",
+        "bboxPt": [
+          66.3844,
+          116.69302,
+          544.0636,
+          190.36302
+        ],
+        "rowCount": 6,
+        "columnCount": 6,
+        "cellsPt": [
+          [
+            66.3844,
+            116.69302,
+            136.03198,
+            128.97601
+          ],
+          [
+            136.03198,
+            116.69302,
+            144.84598,
+            128.97601
+          ],
+          [
+            144.84598,
+            116.69302,
+            544.0636,
+            128.97601
+          ],
+          [
+            66.3844,
+            128.97601,
+            79.33951,
+            135.58
+          ],
+          [
+            79.33951,
+            128.97601,
+            85.03951,
+            135.58
+          ],
+          [
+            85.03951,
+            128.97601,
+            90.7395,
+            135.58
+          ],
+          [
+            90.7395,
+            128.97601,
+            136.03198,
+            135.58
+          ],
+          [
+            136.03198,
+            128.97601,
+            144.84598,
+            135.58
+          ],
+          [
+            144.84598,
+            128.97601,
+            544.0636,
+            135.58
+          ],
+          [
+            66.3844,
+            135.58,
+            79.33951,
+            141.73181
+          ],
+          [
+            79.33951,
+            135.58,
+            85.03951,
+            141.73181
+          ],
+          [
+            85.03951,
+            135.58,
+            90.7395,
+            141.73181
+          ],
+          [
+            90.7395,
+            135.58,
+            136.03198,
+            141.73181
+          ],
+          [
+            136.03198,
+            135.58,
+            144.84598,
+            141.73181
+          ],
+          [
+            144.84598,
+            135.58,
+            544.0636,
+            141.73181
+          ],
+          [
+            66.3844,
+            141.73181,
+            79.33951,
+            160.88855
+          ],
+          [
+            79.33951,
+            141.73181,
+            85.03951,
+            160.88855
+          ],
+          [
+            85.03951,
+            141.73181,
+            90.7395,
+            160.88855
+          ],
+          [
+            90.7395,
+            141.73181,
+            144.84598,
+            160.88855
+          ],
+          [
+            144.84598,
+            141.73181,
+            544.0636,
+            160.88855
+          ],
+          [
+            66.3844,
+            160.88855,
+            79.33951,
+            179.10454
+          ],
+          [
+            79.33951,
+            160.88855,
+            85.03951,
+            179.10454
+          ],
+          [
+            85.03951,
+            160.88855,
+            90.7395,
+            179.10454
+          ],
+          [
+            90.7395,
+            160.88855,
+            544.0636,
+            179.10454
+          ],
+          [
+            66.3844,
+            179.10454,
+            79.33951,
+            190.36302
+          ],
+          [
+            79.33951,
+            179.10454,
+            85.03951,
+            190.36302
+          ],
+          [
+            85.03951,
+            179.10454,
+            90.7395,
+            190.36302
+          ],
+          [
+            90.7395,
+            179.10454,
+            144.84598,
+            190.36302
+          ],
+          [
+            144.84598,
+            179.10454,
+            544.0636,
+            190.36302
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d1ac221ab241b_p2",
+        "sourceTableId": "table_2",
+        "columns": [],
+        "rowBindings": [],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_label",
+            "content": "Client Name",
+            "runtimeEnabled": false,
+            "followingCellBindingCandidate": "patient.displayName"
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      },
+      {
+        "id": "d1ac221ab241b_p3_table_1",
+        "type": "response_table",
+        "bboxPt": [
+          28.3465,
+          141.73214,
+          566.93007,
+          663.56
+        ],
+        "rowCount": 33,
+        "columnCount": 2,
+        "cellsPt": [
+          [
+            28.3465,
+            141.73214,
+            566.93007,
+            161.57465
+          ],
+          [
+            28.3465,
+            161.57465,
+            48.1891,
+            182.263
+          ],
+          [
+            28.3465,
+            182.263,
+            48.1891,
+            196.43631
+          ],
+          [
+            28.3465,
+            196.43631,
+            48.1891,
+            210.61005
+          ],
+          [
+            28.3465,
+            210.61005,
+            48.1891,
+            224.78284
+          ],
+          [
+            28.3465,
+            224.78284,
+            48.1891,
+            238.95599
+          ],
+          [
+            28.3465,
+            238.95599,
+            48.1891,
+            253.12911
+          ],
+          [
+            28.3465,
+            253.12911,
+            48.1891,
+            273.81799
+          ],
+          [
+            28.3465,
+            273.81799,
+            48.1891,
+            287.9913
+          ],
+          [
+            28.3465,
+            287.9913,
+            48.1891,
+            302.16498
+          ],
+          [
+            28.3465,
+            302.16498,
+            48.1891,
+            316.3378
+          ],
+          [
+            28.3465,
+            316.3378,
+            48.1891,
+            330.51102
+          ],
+          [
+            28.3465,
+            330.51102,
+            48.1891,
+            344.68409
+          ],
+          [
+            28.3465,
+            344.68409,
+            48.1891,
+            365.37302
+          ],
+          [
+            28.3465,
+            365.37302,
+            48.1891,
+            379.54582
+          ],
+          [
+            28.3465,
+            379.54582,
+            48.1891,
+            393.71902
+          ],
+          [
+            28.3465,
+            393.71902,
+            48.1891,
+            407.8923
+          ],
+          [
+            28.3465,
+            407.8923,
+            48.1891,
+            422.06598
+          ],
+          [
+            28.3465,
+            422.06598,
+            48.1891,
+            436.23878
+          ],
+          [
+            28.3465,
+            436.23878,
+            48.1891,
+            456.92724
+          ],
+          [
+            28.3465,
+            456.92724,
+            48.1891,
+            471.10101
+          ],
+          [
+            28.3465,
+            471.10101,
+            48.1891,
+            485.27382
+          ],
+          [
+            28.3465,
+            485.27382,
+            48.1891,
+            499.44702
+          ],
+          [
+            28.3465,
+            499.44702,
+            48.1891,
+            513.62048
+          ],
+          [
+            28.3465,
+            513.62048,
+            48.1891,
+            527.79378
+          ],
+          [
+            28.3465,
+            527.79378,
+            48.1891,
+            548.4822
+          ],
+          [
+            28.3465,
+            548.4822,
+            48.1891,
+            562.65601
+          ],
+          [
+            28.3465,
+            562.65601,
+            48.1891,
+            576.8288
+          ],
+          [
+            28.3465,
+            576.8288,
+            48.1891,
+            591.00191
+          ],
+          [
+            28.3465,
+            591.00191,
+            48.1891,
+            621.04024
+          ],
+          [
+            28.3465,
+            621.04024,
+            48.1891,
+            635.21399
+          ],
+          [
+            28.3465,
+            635.21399,
+            48.1891,
+            649.38681
+          ],
+          [
+            28.3465,
+            649.38681,
+            48.1891,
+            663.56
+          ],
+          [
+            48.1891,
+            161.57465,
+            566.93007,
+            182.263
+          ],
+          [
+            48.1891,
+            182.263,
+            566.93007,
+            196.43631
+          ],
+          [
+            48.1891,
+            196.43631,
+            566.93007,
+            210.61005
+          ],
+          [
+            48.1891,
+            210.61005,
+            566.93007,
+            224.78284
+          ],
+          [
+            48.1891,
+            224.78284,
+            566.93007,
+            238.95599
+          ],
+          [
+            48.1891,
+            238.95599,
+            566.93007,
+            253.12911
+          ],
+          [
+            48.1891,
+            253.12911,
+            566.93007,
+            273.81799
+          ],
+          [
+            48.1891,
+            273.81799,
+            566.93007,
+            287.9913
+          ],
+          [
+            48.1891,
+            287.9913,
+            566.93007,
+            302.16498
+          ],
+          [
+            48.1891,
+            302.16498,
+            566.93007,
+            316.3378
+          ],
+          [
+            48.1891,
+            316.3378,
+            566.93007,
+            330.51102
+          ],
+          [
+            48.1891,
+            330.51102,
+            566.93007,
+            344.68409
+          ],
+          [
+            48.1891,
+            344.68409,
+            566.93007,
+            365.37302
+          ],
+          [
+            48.1891,
+            365.37302,
+            566.93007,
+            379.54582
+          ],
+          [
+            48.1891,
+            379.54582,
+            566.93007,
+            393.71902
+          ],
+          [
+            48.1891,
+            393.71902,
+            566.93007,
+            407.8923
+          ],
+          [
+            48.1891,
+            407.8923,
+            566.93007,
+            422.06598
+          ],
+          [
+            48.1891,
+            422.06598,
+            566.93007,
+            436.23878
+          ],
+          [
+            48.1891,
+            436.23878,
+            566.93007,
+            456.92724
+          ],
+          [
+            48.1891,
+            456.92724,
+            566.93007,
+            471.10101
+          ],
+          [
+            48.1891,
+            471.10101,
+            566.93007,
+            485.27382
+          ],
+          [
+            48.1891,
+            485.27382,
+            566.93007,
+            499.44702
+          ],
+          [
+            48.1891,
+            499.44702,
+            566.93007,
+            513.62048
+          ],
+          [
+            48.1891,
+            513.62048,
+            566.93007,
+            527.79378
+          ],
+          [
+            48.1891,
+            527.79378,
+            566.93007,
+            548.4822
+          ],
+          [
+            48.1891,
+            548.4822,
+            566.93007,
+            562.65601
+          ],
+          [
+            48.1891,
+            562.65601,
+            566.93007,
+            576.8288
+          ],
+          [
+            48.1891,
+            576.8288,
+            566.93007,
+            591.00191
+          ],
+          [
+            48.1891,
+            591.00191,
+            566.93007,
+            621.04024
+          ],
+          [
+            48.1891,
+            621.04024,
+            566.93007,
+            635.21399
+          ],
+          [
+            48.1891,
+            635.21399,
+            566.93007,
+            649.38681
+          ],
+          [
+            48.1891,
+            649.38681,
+            566.93007,
+            663.56
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d1ac221ab241b_p3",
+        "sourceTableId": "table_1",
+        "columns": [],
+        "rowBindings": [
+          {
+            "sourceRowIndex": 1,
+            "questionId": "Q6",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "questionId": "Q7",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 13,
+            "questionId": "Q8",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 19,
+            "questionId": "Q9",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 25,
+            "questionId": "Q10",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 29,
+            "questionId": "Q11",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          }
+        ],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Client Responses (cont )\n.",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q6",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q7",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 12,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 12,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 13,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 13,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q8",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 14,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 14,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 15,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 15,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 16,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 16,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 17,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 17,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 18,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 18,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 19,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 19,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q9",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 20,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 20,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 21,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 21,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 22,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 22,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 23,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 23,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 24,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 24,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 25,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 25,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q10",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 26,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 26,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 27,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 27,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 28,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 28,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 29,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 29,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q11",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 30,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 30,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 31,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 31,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 32,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 32,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      }
+    ],
+    "variants": {
+      "sourceStatements": [],
+      "firstAdministration": {
+        "status": "requires_review"
+      },
+      "repeatAdministration": {
+        "status": "requires_review"
+      },
+      "policy": "Do not invent a repeat chart from an observed first-visit chart."
+    },
+    "interpretationRules": {
+      "encodedRules": [],
+      "sourceGuidance": [
+        {
+          "title": "DUDIT Scoring & Interpretation",
+          "text": "The DUDIT yields a total score ranging from 0 to 44, with higher scores indicating greater drug-related problems. The total score is calculated by summing all 11 items, where items 1-9 are scored 0-4 and items 10-11 are scored 0, 2, or 4.\n\nCut-off scores for probable drug-related problems:\nDrug dependence: A score of 25 or more indicates high probability of dependence on one or more drugs.\nMales: A score of 6 or more indicates probable drug-related problems (either harmful use or dependence).\nFemales: A score of 2 or more indicates probable drug-related problems (either harmful use or dependence).\nThe higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.\n\nScores should be considered as indicators for further comprehensive assessment rather than diagnostic.\n"
+        },
+        {
+          "title": "How are DUDIT scores interpreted and what do they mean for treatment planning?",
+          "text": "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems. For men, a score of 6 or more indicates probable drug-related problems, while a score of 25 or more suggests drug dependence. For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.\nThese scores provide valuable information for treatment planning. Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches. Those scoring in the dependence range typically require more intensive treatment, potentially including medically supervised withdrawal, structured treatment programmes, or ongoing psychological support. The DUDIT can be administered repeatedly throughout treatment to monitor progress and adjust interventions as needed.\n"
+        },
+        {
+          "title": "What should individuals and families know about DUDIT scores?",
+          "text": "If you or a loved one completes the DUDIT, it’s important to understand that the scores indicate probability of drug-related problems rather than providing a definitive diagnosis. A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial. However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably.\nThe DUDIT is a screening tool, not a judgment – it’s designed to identify when professional support might be helpful. Higher scores don’t mean someone is “bad” or “weak,” but rather indicate that drug use has likely become problematic enough to warrant attention. Many people are surprised by their scores, particularly if drug use has gradually increased over time. If concerning scores are identified, this represents an opportunity for early intervention. Speaking with a healthcare provider about the results can help determine appropriate next steps, whether that’s monitoring, brief intervention, or more structured treatment. Remember that drug-related problems exist on a continuum, and addressing them early typically leads to better outcomes than waiting until problems become severe.\n"
+        }
+      ],
+      "reportScoringGuidance": [
+        {
+          "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+          "pageNumber": 1,
+          "text": "For comprehensive information on the Drug Use Disorders Identification Test (DUDIT), \nsee here\n.\nThe DUDIT yields a total score ranging from 0 to 44, with higher scores indicating greater drug-\nrelated problems. The total score is calculated by summing all 11 items, where items 1-9 are\nscored 0-4 and items 10-11 are scored 0, 2, or 4.\nCut-off scores for probable drug-related problems:\n- Drug dependence: A score of 25 or more indicates high probability of dependence on one or\nmore drugs.\n- Males: A score of 6 or more indicates probable drug-related problems (either harmful use or\ndependence).\n- Females: A score of 2 or more indicates probable drug-related problems (either harmful use or\ndependence).\nThe higher threshold for males accounts for generally higher prevalence rates and different",
+          "usage": "source_guidance_for_review_not_executable_scoring",
+          "runtimeEnabled": false
+        }
+      ],
+      "sourceRequirements": [
+        "Cut-off scores for probable drug-related problems:",
+        "The higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.",
+        "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems.",
+        "For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.",
+        "Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches.",
+        "A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial.",
+        "However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably."
+      ],
+      "templates": [],
+      "sampleNarrativeReusable": false,
+      "runtimeEnabled": false
+    },
+    "referenceTables": [],
+    "paintStyles": [],
+    "assets": {
+      "runtimeImages": [],
+      "runtimeSourceFiles": []
+    },
+    "runtimeContract": {
+      "version2RendererRequired": true,
+      "loadDefinitionFrom": "database_json",
+      "useCurrentPatientAnswers": true,
+      "useSamplePatientValues": false,
+      "externalNetworkRequired": false,
+      "sourceArchiveRequired": false,
+      "unknownScoring": "withhold",
+      "unknownNorms": "withhold",
+      "unsupportedChart": "withhold_and_report_exception",
+      "unknownRepeatLayout": "withhold"
+    },
+    "validation": {
+      "jsonStructureValidated": true,
+      "sourceHashesVerified": true,
+      "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+      "fullPageLayoutCompared": false,
+      "scoreBindingsReviewed": false,
+      "tablesSemanticallyReviewed": false,
+      "rendererEquivalent": false,
+      "clinicalApproved": false,
+      "readyForApplicationImport": false
+    },
+    "exceptions": [
+      {
+        "code": "score_and_series_bindings_require_review",
+        "count": 1
+      },
+      {
+        "code": "table_cell_semantics_require_review",
+        "count": 3,
+        "unresolvedCells": 67
+      },
+      {
+        "code": "interpretation_and_variant_rules_require_review"
+      }
+    ]
+  },
+  "export_format": {
+    "schema_version": "standalone-combined-assessment-2.0",
+    "report_definition": "report_configuration uses assessment, administration, questionnaire and scoring from this file unless it supplies its own field. Its identity uses assessment_id, assessment.name and definition_version.",
+    "baseline_reporting": "reporting contains the initial report settings; report_configuration contains the dedicated report settings.",
+    "source_content": "Archived PDF text and extraction history were omitted in the compact export. Original verification refers to source definitions.",
+    "internal_references": "Metrics use rule_id; item history uses item_id; severity_bands_rule_id identifies the scoring rule containing the bands. Other internal references use section and field names within this JSON.",
+    "external_dependencies": "No external locations are included. Asset records retain descriptive metadata only; binary assets are not embedded.",
+    "verification_scope": "Original verification records describe the source definitions before this cleanup."
+  }
+}

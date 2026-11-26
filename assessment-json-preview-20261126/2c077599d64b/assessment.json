@@ -1,0 +1,889 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "brief-early-schema-questionnaire-besq--2c077599d64b",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Brief Early Schema Questionnaire (BESQ)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Brief Early Schema Questionnaire (BESQ) is a 24-item screening tool that helps clinicians rapidly assess maladaptive patterns of thoughts, behaviours and emotions.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Listed below are definitions for each Early Maladaptive Schema. Please read each definition and decide how well it describes you. When you are not sure, base your answer on what you emotionally feel, NOT on what you think to be true.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Disconnection and Rejection domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Disconnection and Rejection domain average (Items 1–7, average of circled values):",
+     "y": 158.2,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_2",
+    "label": "Impaired Autonomy and Performance domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Impaired Autonomy and Performance domain average (Items 8–12, average of circled values):",
+     "y": 183.0,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_3",
+    "label": "Impaired Limits domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Impaired Limits domain average (Items 13–15, average of circled values):",
+     "y": 207.8,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_4",
+    "label": "Other-Directedness domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Other-Directedness domain average (Items 16–18, average of circled values):",
+     "y": 232.5,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_5",
+    "label": "Over Vigilance and Inhibition domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Over Vigilance and Inhibition domain average (Items 19–24, average of circled values):",
+     "y": 257.2,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "BESQ Scoring & Interpretation",
+    "text": "BESQ scores are presented for each individual schema, with responses on a 6-point Likert scale describing how relatable an item is i.e., 1 (Completely unrelated to me) to 6 (Relates to me perfectly).\nHigher scores indicate a greater identification with a schema and suggest that it may be relevant to the individual’s cognitive and emotional patterns.\nScores are presented for each schema:\n\n\nScores of 1-2: Low Range – seems unrelated to the individual’s experience.\nScores of 3-4: Mid-Range – may be somewhat related to the individual’s experience.\nScores of 5-6: High Range – may be very much related to the individual’s experience.\nAdditionally, graphs are provided for the Unmet Needs categories:\n\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 3,
+    "text": "Note: Each item represents one Early Maladaptive Schema, and its circled value (1–6) is that schema's score. Each Unmet Need domain score is the average of the circled values",
+    "y": 279.8,
+    "url": null,
+    "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": [
+  {
+   "id": "C1",
+   "title": "Brief Early Schema Questionnaire (BESQ)",
+   "text": "The Brief Early Schema Questionnaire (BESQ) is a 24-item screening tool that helps clinicians rapidly assess maladaptive patterns of thoughts, behaviours and emotions.\n6 minutes\nAge 18+\nFormulation\nAdminister Now",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C2",
+   "title": "Emerson Bartholomew",
+   "text": "Psychometrician",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C3",
+   "title": "BESQ Overview",
+   "text": "The Brief Early Schema Questionnaire (BESQ) is a 24-item self-report instrument designed to identify early maladaptive schemas as conceptualised within the framework of Schema Therapy (Young et al., 2006; Brockman et al 2023).\nDeveloped by Brockman, Hayes, and Behary (2023), the BESQ is a condensed alternative to longer schema questionnaires such as the Maladaptive Schema Scale (MSS) or Young Schema Questionnaire (YSQ) and can be helpful in therapy to build shared understanding and begin inquiry into problematic cognitive and emotional patterns.\n\nThe BESQ groups schemas into the schema therapy model’s five domains, with each domain corresponding to groups of unmet emotional needs during childhood and adolescence (Young et al., 2006). Furthermore, several schemas are split into sub-domains, for example, Punitiveness is split into (a) Self, and (b) Others.\n1. Disconnection and Rejection Domain – Expectations of instability in relationships. Related to the unmet need for safe attachment, acceptance and care.\nIncludes schemas of: Abandonment/Instability Mistrust/Abuse Emotional Deprivation (x3 sub-domains) Defectiveness/Shame Social Isolation/Alienation\n2. Impaired Autonomy and Performance Domain – Feelings of helplessness, vulnerability and overreliance on others. Related to the unmet need for autonomy, competence and sense of identity.\nIncludes schemas of: Dependence/Incompetence Vulnerability to Harm or Illness Enmeshment/Underdeveloped Self (x2 sub-domains) Failure\n3. Impaired Limits Domain – A lack of clear boundaries and structured limitations. Related to the unmet need for realistic limits and self-control.\nIncludes schemas of: Entitlement/Grandiosity Insufficient Self-Control (x2 sub-domains)\n4. Other-Directedness Domain – Excessive attention to others’ needs, driven by fears of disapproval and a strong need for acceptance, often at the expense of one’s own well-being. Related to the unmet need for free expression of needs and emotions.\nIncludes schemas of: Subjugation Self-Sacrifice Approval/Recognition Seeking\n5. Over Vigilance and Inhibition Domain – An over-emphasis on potential negative outcomes, avoiding mistakes and strict self-control. Related to the unmet need for spontaneity and play.\nIncludes schemas of: Negativity/Pessimism Emotional Inhibition (x2 sub-domains) Unrelenting Standards Punitiveness (x2 sub-domains)\nSchemas have been shown to have important associations with many mental health diagnoses, including PTSD, borderline personality disorder, dissociative disorders, depression, and anxiety (Bär et al., 2023). Assessment of schemas have typically been assessed with lengthier assessment scales, which can be time-consuming to administer. The brief nature of the BESQ makes it a valuable tool for initial assessment, assisting in formulation and identification of treatment targets.\nThe BESQ can be used in clinical settings to identify potential areas of focus for therapy, particularly in approaches that emphasise early experiences and their impact on current functioning.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C4",
+   "title": "BESQ Scoring & Interpretation",
+   "text": "BESQ scores are presented for each individual schema, with responses on a 6-point Likert scale describing how relatable an item is i.e., 1 (Completely unrelated to me) to 6 (Relates to me perfectly).\nHigher scores indicate a greater identification with a schema and suggest that it may be relevant to the individual’s cognitive and emotional patterns.\nScores are presented for each schema:\n\n\nScores of 1-2: Low Range – seems unrelated to the individual’s experience.\nScores of 3-4: Mid-Range – may be somewhat related to the individual’s experience.\nScores of 5-6: High Range – may be very much related to the individual’s experience.\nAdditionally, graphs are provided for the Unmet Needs categories:",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C5",
+   "title": "BESQ Psychometric Properties",
+   "text": "Given the recent release of the BESQ, its psychometric properties have not yet been established. However, the scale was developed on the theoretical framework and principles of Schema Therapy (Brockman et al 2023; Young et al., 2006).\nThis framework includes core concepts such as early maladaptive schemas, coping styles, and schema modes. The scale draws directly from this model, and its items are closely aligned with its central constructs.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "LIVE_C6",
+   "title": "Overview",
+   "text": "Search\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C7",
+   "title": "Brief Early Schema Questionnaire (BESQ)",
+   "text": "The Brief Early Schema Questionnaire (BESQ) is a 24-item screening tool that helps clinicians rapidly assess maladaptive patterns of thoughts, behaviours and emotions.\n6 minutes\nAge 18+\nFormulation\nAdminister Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C8",
+   "title": "BESQ Psychometric Properties",
+   "text": "Professional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C9",
+   "title": "BESQ Overview",
+   "text": "The Brief Early Schema Questionnaire (BESQ) is a 24-item self-report instrument designed to identify early maladaptive schemas as conceptualised within the framework of Schema Therapy (Young et al., 2006; Brockman et al 2023).\nDeveloped by Brockman, Hayes, and Behary (2023), the BESQ is a condensed alternative to longer schema questionnaires such as the Maladaptive Schema Scale (MSS) or Young Schema Questionnaire (YSQ) and can be helpful in therapy to build shared understanding and begin inquiry into problematic cognitive and emotional patterns.\n\nThe BESQ groups schemas into the schema therapy model’s five domains, with each domain corresponding to groups of unmet emotional needs during childhood and adolescence (Young et al., 2006). Furthermore, several schemas are split into sub-domains, for example, Punitiveness is split into (a) Self, and (b) Others.\n1. Disconnection and Rejection Domain – Expectations of instability in relationships. Related to the unmet need for safe attachment, acceptance and care.\nIncludes schemas of: Abandonment/Instability Mistrust/Abuse Emotional Deprivation (x3 sub-domains) Defectiveness/Shame Social Isolation/Alienation\n2. Impaired Autonomy and Performance Domain – Feelings of helplessness, vulnerability and overreliance on others. Related to the unmet need for autonomy, competence and sense of identity.\nIncludes schemas of: Dependence/Incompetence Vulnerability to Harm or Illness Enmeshment/Underdeveloped Self (x2 sub-domains) Failure\n3. Impaired Limits Domain – A lack of clear boundaries and structured limitations. Related to the unmet need for realistic limits and self-control.\nIncludes schemas of: Entitlement/Grandiosity Insufficient Self-Control (x2 sub-domains)\n4. Other-Directedness Domain – Excessive attention to others’ needs, driven by fears of disapproval and a strong need for acceptance, often at the expense of one’s own well-being. Related to the unmet need for free expression of needs and emotions.\nIncludes schemas of: Subjugation Self-Sacrifice Approval/Recognition Seeking\n5. Over Vigilance and Inhibition Domain – An over-emphasis on potential negative outcomes, avoiding mistakes and strict self-control. Related to the unmet need for spontaneity and play.\nIncludes schemas of: Negativity/Pessimism Emotional Inhibition (x2 sub-domains) Unrelenting Standards Punitiveness (x2 sub-domains)\nSchemas have been shown to have important associations with many mental health diagnoses, including PTSD, borderline personality disorder, dissociative disorders, depression, and anxiety (Bär et al., 2023). Assessment of schemas have typically been assessed with lengthier assessment scales, which can be time-consuming to administer. The brief nature of the BESQ makes it a valuable tool for initial assessment, assisting in formulation and identification of treatment targets.\nThe BESQ can be used in clinical settings to identify potential areas of focus for therapy, particularly in approaches that emphasise early experiences and their impact on current functioning.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C10",
+   "title": "BESQ Scoring & Interpretation",
+   "text": "BESQ scores are presented for each individual schema, with responses on a 6-point Likert scale describing how relatable an item is i.e., 1 (Completely unrelated to me) to 6 (Relates to me perfectly).\nHigher scores indicate a greater identification with a schema and suggest that it may be relevant to the individual’s cognitive and emotional patterns.\nScores are presented for each schema:\n\n\nScores of 1-2: Low Range – seems unrelated to the individual’s experience.\nScores of 3-4: Mid-Range – may be somewhat related to the individual’s experience.\nScores of 5-6: High Range – may be very much related to the individual’s experience.\nAdditionally, graphs are provided for the Unmet Needs categories:\n\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C11",
+   "title": "BESQ Psychometric Properties",
+   "text": "Given the recent release of the BESQ, its psychometric properties have not yet been established. However, the scale was developed on the theoretical framework and principles of Schema Therapy (Brockman et al 2023; Young et al., 2006).\nThis framework includes core concepts such as early maladaptive schemas, coping styles, and schema modes. The scale draws directly from this model, and its items are closely aligned with its central constructs.\nProfessional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C12",
+   "title": "Assess your patients with the Brief Early Schema Questionnaire (BESQ) using a NovoPsych account",
+   "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C13",
+   "title": "Developer",
+   "text": "Brockman, R., Hayes, C., & Behary, W. (2023). Brief Early Schema Questionnaire (BESQ) .\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C14",
+   "title": "References",
+   "text": "Bär, A., Bär, H. E., Rijkeboer, M. M., & Lobbestael, J. (2023). Early Maladaptive Schemas and Schema Modes in clinical disorders: A systematic review. Psychology and Psychotherapy , 96 (3), 716-747. https://doi.org/10.1111/papt.12465\nBrockman, R. N., Simpson, S., Hayes, C., van der Wijngaart, R., & Smout, M. (2023). Cambridge guide to Schema therapy . Cambridge University Press.\nBrockman, R., Hayes, C., & Behary, W. (2023). Brief Early Schema Questionnaire (BESQ) .\nYoung, J. E., Klosko, J. S., & Weishaar, M. E. (2006). Schema therapy: A practitioner’s guide . Guilford Press.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C15",
+   "title": "Maladaptive Schema Scale (MSS)",
+   "text": "Also known as: MSS , Maladaptive Schema Scale , Early maladaptive schemas questionnaire , Schema therapy measure , Young Schema Questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C16",
+   "title": "Maladaptive Schema Scale – Young Schema Aligned (MSS-YSQ)",
+   "text": "Also known as: MSS-YSQ , Maladaptive Schema Scale , Young schema questionnaire , Schema therapy assessment , Early maladaptive schemas scale\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C17",
+   "title": "Personality Inventory for DSM-5 – Short Form (PID-5-SF)",
+   "text": "Also known as: PID-5-SF , PID-5 , DSM-5 personality inventory , Personality disorder assessment , Personality traits questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C18",
+   "title": "Attachment Style Questionnaire – Short Form (ASQ-SF)",
+   "text": "Also known as: ASQ-SF , ASQ , Adult attachment scale , Attachment style assessment\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C19",
+   "title": "Frost Multidimensional Perfectionism Scale (FMPS)",
+   "text": "Also known as: FMPS , Frost perfectionism scale , Multidimensional perfectionism measure , Perfectionism questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C20",
+   "title": "Sample Results",
+   "text": "Administer Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C21",
+   "title": "Emerson Bartholomew",
+   "text": "Psychometrician\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  }
+ ],
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Brockman, R., Hayes, C., & Behary, W. (2023). Brief Early Schema Questionnaire (BESQ) .",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Bär, A., Bär, H. E., Rijkeboer, M. M., & Lobbestael, J. (2023). Early Maladaptive Schemas and Schema Modes in clinical disorders: A systematic review. Psychology and Psychotherapy , 96 (3), 716-747. https://doi.org/10.1111/papt.12465\nBrockman, R. N., Simpson, S., Hayes, C., van der Wijngaart, R., & Smout, M. (2023). Cambridge guide to Schema therapy . Cambridge University Press.\nBrockman, R., Hayes, C., & Behary, W. (2023). Brief Early Schema Questionnaire (BESQ) .\nYoung, J. E., Klosko, J. S., & Weishaar, M. E. (2006). Schema therapy: A practitioner’s guide . Guilford Press.",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f207121eea6a2454930628613200224a820fbea193499783e3ec3b550921f08f",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f207121eea6a2454930628613200224a820fbea193499783e3ec3b550921f08f.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Developer",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Brief Early Schema Questionnaire (BESQ) PDF",
+   "source_url": null,
+   "sha256": "46a7acdcde61e5a1bda446a08db7a3465ac8336aa4f1f93db5de58dca0896ad9",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/46a7acdcde61e5a1bda446a08db7a3465ac8336aa4f1f93db5de58dca0896ad9.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Frost Multidimensional Perfectionism Scale (FMPS)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4bcd182fe3361f30eaa507e776be9ccc52607ea4413cc8440db6b27f79e7ba59",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4bcd182fe3361f30eaa507e776be9ccc52607ea4413cc8440db6b27f79e7ba59.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "10416b4d83ffa3689a46253c220779ecb0d63135b76820db2e99d6ab9f92d5e3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/10416b4d83ffa3689a46253c220779ecb0d63135b76820db2e99d6ab9f92d5e3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BESQ Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3c3e0f92844e268ddafc5aadc17280ae2afc7b681d0298e43091b19824109773",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3c3e0f92844e268ddafc5aadc17280ae2afc7b681d0298e43091b19824109773.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BESQ Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1984d38483a9f794da255540c03105c298b425cd54bd212ed3aa826b03ad3b00",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1984d38483a9f794da255540c03105c298b425cd54bd212ed3aa826b03ad3b00.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BESQ Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "588e2248f5d002390f4a4a738467668127ed20846e71b553613614d88a90bd97",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/588e2248f5d002390f4a4a738467668127ed20846e71b553613614d88a90bd97.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BESQ Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "17ad12d3a3c8fe117c47c86d4b0a5aaaebcf2d66fc2416e2478685778a2d7b53",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/17ad12d3a3c8fe117c47c86d4b0a5aaaebcf2d66fc2416e2478685778a2d7b53.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BESQ Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Brief Early Schema Questionnaire (BESQ) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 24
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "78e77885c5aa29e4544c194fd8cd2031380d69644dc7c59d9283b229a45fd136",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:49:43.199561+00:00",
+  "raw_extraction_sha256": "7fcdca841ae8f7bc6a0e0b96772cf4a5394274d57d950a8bb533ba32590659ff",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://www.schematherapytrainingonline.com/courses/?utm_source=nova&utm_medium=psych&utm_campaign=Ad",
+    "title": ""
+   },
+   {
+    "url": "https://doi.org/10.1111/papt.12465",
+    "title": "https://doi.org/10.1111/papt.12465"
+   },
+   {
+    "url": null,
+    "title": "Young Schema Questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Early maladaptive schemas scale"
+   },
+   {
+    "url": null,
+    "title": "Personality traits questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Attachment style assessment"
+   },
+   {
+    "url": null,
+    "title": "Perfectionism questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Schema Therapy (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

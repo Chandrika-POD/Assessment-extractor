@@ -1,0 +1,1043 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "pica-arfid-and-rumination-disorder-interview-arfid-questionnaire-informant-report-par--1bbd19da573d",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Pica, ARFID, and Rumination Disorder Interview – ARFID Questionnaire: Informant-report (PARDI-AR-Q-Informant)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Pica, ARFID, and Rumination Disorder Interview – ARFID Questionnaire (PARDI-AR-Q) Informant form is a 29-item measure for clinicians screening for avoidant/restrictive food intake disorder (ARFID) in children aged 4 and over. It is completed by a parent or carer reporting on their child.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "past month",
+    "past 3 months"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "The following questions are about your child's eating — some ask about how things currently are, others ask about things over the past month or the past 3 months. Please select the response that applies, or enter the information requested. Please read each question carefully. Please answer all the questions. Thank you.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q1_height_cm",
+   "Q1_height_feet",
+   "Q1_height_inches",
+   "Q2",
+   "Q2_weight",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Severity of impact",
+    "method": "mean",
+    "item_ids": [
+     "Q19",
+     "Q20"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Severity of impact (Items 19–20, average of circled values):",
+     "y": 489.0,
+     "url": null,
+     "sha256": "90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_2",
+    "label": "Sensory-based avoidance",
+    "method": "mean",
+    "item_ids": [
+     "Q21",
+     "Q22",
+     "Q23"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Sensory-based avoidance (Items 21–23, average of circled values):",
+     "y": 56.2,
+     "url": null,
+     "sha256": "90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_3",
+    "label": "Lack of interest in eating or food",
+    "method": "mean",
+    "item_ids": [
+     "Q24",
+     "Q25",
+     "Q26"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Lack of interest in eating or food (Items 24–26, average of circled values):",
+     "y": 247.5,
+     "url": null,
+     "sha256": "90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_4",
+    "label": "Concern about aversive consequences",
+    "method": "mean",
+    "item_ids": [
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Concern about aversive consequences (Items 27–29, average of circled values):",
+     "y": 531.0,
+     "url": null,
+     "sha256": "90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "The subscale scores and the severity-of-impact score are calculated as the average of their respective items, yielding scores that range from 0 to 6:"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "PARDI-AR-Q Scoring & Interpretation",
+    "text": "The PARDI-AR-Q is originally described as a 32-item scale, however items 1, 2 and 3 are date, date of birth and sex, which are recorded automatically in the NovoPsych platform, therefore, NovoPsych refers to the PARDI-AR-Q as being a 29-item scale, numbering these items 1 to 29 in the order they are answered, beginning with height and weight. Question numbers on this page match the 29-item formatting.\nThe 29 items fall into three blocks:\n1. Anthropometric items (items 1-2): the child’s height and weight (2 items). Together with age and sex, these produce BMI and growth status.\n2. Diagnostic items (items 3 to 18): twelve are scored Yes = 1 / No = 0 and drive the screen; the other four (items 7, 13, 15, 17) are conditionally displayed follow-ups that are not scored (item 7 is a numeric entry for how much weight has been lost; items 13, 15, and 17 are free text).\n3. Rating items scored 0 to 6 (items 19 to 29, 11 items): the severity-of-impact index (items 19 to 20) and the three subscale scores (items 21 to 29; 3 items each).\nRecall periods are not fixed and vary by item, spanning current, past-month, and past-3-month timeframes.\n",
+    "source_url": null
+   },
+   {
+    "title": "Why doesn't the PARDI-AR-Q give a total score?",
+    "text": "The three ARFID subscales are distinct and can occur in any combination, so combining them into a single score would obscure the distinction the measure exists to draw. A child can score high on sensory-based avoidance and low on the other two, and that subscale means something different from a child with the reverse pattern. For that reason the subscales are reported and read separately rather than combined.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [
+   {
+    "rows": [
+     [
+      "Score",
+      "0 (min)",
+      "6 (max)"
+     ],
+     [
+      "Sensory-based avoidance",
+      "no particular sensitivity",
+      "extremely negative effect on eating"
+     ],
+     [
+      "Lack of interest in eating or food",
+      "never",
+      "always"
+     ],
+     [
+      "Concern about aversive consequences",
+      "never",
+      "always"
+     ],
+     [
+      "Severity of impact",
+      "no difficulty",
+      "extreme difficulty"
+     ]
+    ],
+    "cells": [
+     [
+      {
+       "text": "Score",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "0 (min)",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "6 (max)",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "Sensory-based avoidance",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "no particular sensitivity",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "extremely negative effect on eating",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "Lack of interest in eating or food",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "never",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "always",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "Concern about aversive consequences",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "never",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "always",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "Severity of impact",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "no difficulty",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "extreme difficulty",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ]
+    ],
+    "caption": "",
+    "section": "Subscales and severity of impact",
+    "source_url": null
+   }
+  ],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "© Rachel Bryant-Waugh, Kamryn Eddy, Nadia Micali, Lucy Cooke, Jennifer J. Thomas\nBryant-Waugh R, Stern CM, Dreier MJ, Micali N, Cooke LJ, Kuhnle MC, Burton Murray H, Wang SB, Breithaupt L, Becker KR, Misra M, Lawson EA, Eddy KT, Thomas JJ. Preliminary validation of the pica, ARFID and rumination disorder interview ARFID questionnaire (PARDI-AR-Q). J Eat Disord. 2022 Nov 22;10(1):179. doi: 10.1186/s40337-022-00706-7. PMID: 36419081; PMCID: PMC9682666.\nReproduced with permission of the author, Dr Rachel Bryant-Waugh, under a CC BY 4.0 licence. Item wording is reproduced unaltered. The PARDI-AR-Q is included in the NovoPsych basic package at no additional cost.\nSource: https://mccaed.slam.nhs.uk/professionals/resources/featured-resources/",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "American Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425596\nAmerican Psychiatric Association. (2022). Diagnostic and statistical manual of mental disorders (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787\nBryant-Waugh, R., Stern, C. M., Dreier, M. J., Micali, N., Cooke, L. J., Kuhnle, M. C., Burton Murray, H., Wang, S. B., Breithaupt, L., Becker, K. R., Misra, M., Lawson, E. A., Eddy, K. T., & Thomas, J. J. (2022). Preliminary validation of the Pica, ARFID and Rumination Disorder Interview ARFID Questionnaire (PARDI-AR-Q). Journal of Eating Disorders, 10 (1), 179. https://doi.org/10.1186/s40337-022-00706-7\nBryant-Waugh, R., Micali, N., Cooke, L., Lawson, E. A., Eddy, K. T., & Thomas, J. J. (2019). Development of the Pica, ARFID, and Rumination Disorder Interview, a multi-informant, semi-structured interview of feeding disorders across the lifespan: A pilot study for ages 10-22. International Journal of Eating Disorders, 52 (4), 378-387. https://doi.org/10.1002/eat.22958\nCenters for Disease Control and Prevention. (2022). Extended BMI-for-age growth charts. National Center for Health Statistics. https://www.cdc.gov/growthcharts/extended-bmi-data-files.htm\nFlegal, K. M., & Cole, T. J. (2013). Construction of LMS parameters for the Centers for Disease Control and Prevention 2000 growth charts. National Health Statistics Reports, (63) .\nGoday, P. S., Huh, S. Y., Silverman, A., Lukens, C. T., Dodrill, P., Cohen, S. S., Delaney, A. L., Feuling, M. B., Noel, R. J., Gisel, E., Kenzer, A., Kessler, D. B., Kraus de Camargo, O., Browne, J., & Phalen, J. A. (2019). Pediatric feeding disorder: Consensus definition and conceptual framework. Journal of Pediatric Gastroenterology and Nutrition, 68 (1), 124-129. https://doi.org/10.1097/MPG.0000000000002188\nKuczmarski, R. J., Ogden, C. L., Guo, S. S., Grummer-Strawn, L. M., Flegal, K. M., Mei, Z., Wei, R., Curtin, L. R., Roche, A. F., & Johnson, C. L. (2002). 2000 CDC growth charts for the United States: Methods and development. Vital and Health Statistics, 11 (246).\nManwaring, J. L., Cass, K., Prostko, S., Buros Stein, A., Mehler, P. S., Joiner, T., & Rienecke, R. D. (2025). How do adult inpatients with ARFID or AN-R compare on self-report eating disorder assessments? Eating Disorders. Advance online publication. https://doi.org/10.1080/10640266.2025.2608345\nOrtiz, S. N., White, J. P., MacDermod, C. M., Dinkler, L., Thornton, L. M., Johnson, J., Guintivano, J. D., Baker, J. H., Bulik, C. M., Micali, N., & Pisetsky, E. M. (2025). Validating online parent- and self-report screening methods for avoidant/restrictive food intake disorder. International Journal of Eating Disorders, 58 (5), 878-889. https://doi.org/10.1002/eat.24376\nQi, B., Kalantzis, M. A., Thornton, L. M., White, J. P., MacDermod, C. M., Ortiz, S. N., Pisetsky, E. M., Dinkler, L., Guintivano, J. D., Johnson, J. S., Micali, N., & Bulik, C. M. (2025). Suicidal ideation and avoidant/restrictive food intake disorder: Findings from the ARFID-GEN study. Psychiatry Research, 348 , 116471. https://doi.org/10.1016/j.psychres.2025.116471",
+   "source_url": null
+  }
+ ],
+ "tables": [
+  {
+   "rows": [
+    [
+     "Score",
+     "0 (min)",
+     "6 (max)"
+    ],
+    [
+     "Sensory-based avoidance",
+     "no particular sensitivity",
+     "extremely negative effect on eating"
+    ],
+    [
+     "Lack of interest in eating or food",
+     "never",
+     "always"
+    ],
+    [
+     "Concern about aversive consequences",
+     "never",
+     "always"
+    ],
+    [
+     "Severity of impact",
+     "no difficulty",
+     "extreme difficulty"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "0 (min)",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "6 (max)",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Sensory-based avoidance",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "no particular sensitivity",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "extremely negative effect on eating",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Lack of interest in eating or food",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "never",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "always",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Concern about aversive consequences",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "never",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "always",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Severity of impact",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "no difficulty",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "extreme difficulty",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "Subscales and severity of impact",
+   "source_url": null
+  }
+ ],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant blank questionnaire first page",
+   "source_url": null,
+   "sha256": "5fa8aad8d55a3e4228f06c07250aab74d1dde39c3a9df9cadba7737f08c6620f",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5fa8aad8d55a3e4228f06c07250aab74d1dde39c3a9df9cadba7737f08c6620f.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Children's Eating Attitudes Test (ChEAT)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "sample_report_not_runtime_context",
+   "title": "PARDI-AR-Q informant sample report first page showing results, subscale profile and severity of impact",
+   "source_url": null,
+   "sha256": "4d56edcc09ad11c51c574fe121e4bdced25665804abd53ed697c437cf3bb80fc",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4d56edcc09ad11c51c574fe121e4bdced25665804abd53ed697c437cf3bb80fc.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PARDI-AR-Q Informant PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant example item asking whether the parent or carer thinks their child has a problem with eating involving avoidance or restriction of foods, answered Yes or No",
+   "source_url": null,
+   "sha256": "ad13ad172b6996fda2e3c86081caad461fa44741007d8bc06396152e5d6fe812",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ad13ad172b6996fda2e3c86081caad461fa44741007d8bc06396152e5d6fe812.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "PARDI-AR-Q Informant Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant results table showing a positive ARFID screen and body mass index reported as a centile for age and sex",
+   "source_url": null,
+   "sha256": "76bf0a41fa6d8d8470c6c0445a7675479aa4aecbda9d291cb067fc8fc3c691bb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/76bf0a41fa6d8d8470c6c0445a7675479aa4aecbda9d291cb067fc8fc3c691bb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Screening result",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant subscale profile table showing the three subscale scores on a 0 to 6 range",
+   "source_url": null,
+   "sha256": "5ef2bb97dc3ee9efaf92e4c5f73a014dc3d290944cf6c7f70946de9a9e847db1",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5ef2bb97dc3ee9efaf92e4c5f73a014dc3d290944cf6c7f70946de9a9e847db1.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Subscales and severity of impact",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant severity of impact table showing the score on a 0 to 6 range",
+   "source_url": null,
+   "sha256": "28149eeb1d535b8d28a4caa4154b864a5994fc73616a30bc404bc37d2df6f86c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28149eeb1d535b8d28a4caa4154b864a5994fc73616a30bc404bc37d2df6f86c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Subscales and severity of impact",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant horizontal bar graph showing the three ARFID subscale scores with their response anchors",
+   "source_url": null,
+   "sha256": "e52bca169a2ffc7d040cef19ef47f415d21325d00b39cd111fae0ca0d2bb17c7",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e52bca169a2ffc7d040cef19ef47f415d21325d00b39cd111fae0ca0d2bb17c7.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant severity of impact bar graph divided into five labelled descriptor bands",
+   "source_url": null,
+   "sha256": "85f9485a72b7be3bbfbc8c14cc7e9eaee0ef8219b5f89db01f1218c174c67504",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/85f9485a72b7be3bbfbc8c14cc7e9eaee0ef8219b5f89db01f1218c174c67504.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant line graph showing the three ARFID subscale scores across three administrations",
+   "source_url": null,
+   "sha256": "9169240a06f1d69443bfffb70d73633a602874d55ed8356ac7f0e6bc12075d36",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9169240a06f1d69443bfffb70d73633a602874d55ed8356ac7f0e6bc12075d36.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "PARDI-AR-Q informant line graph showing severity of impact across three administrations",
+   "source_url": null,
+   "sha256": "7d3244a4c00175ae3b5b2b20813ced9808fb76e30614a872d2b38d65441b9f8c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7d3244a4c00175ae3b5b2b20813ced9808fb76e30614a872d2b38d65441b9f8c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "NovoPsych professional access",
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Pica, ARFID, and Rumination Disorder Interview – ARFID Questionnaire: Informant (PARDI-AR-Q-Informant) u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PARDI-AR-Q Informant PDF",
+   "source_url": null,
+   "sha256": "90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A15",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "Sample PARDI-AR-Q Informant Results",
+   "source_url": null,
+   "sha256": "9dc10e566cafe883b215cefdffe65b9a6e65fb340d2568b9f49fc6b571d06359",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9dc10e566cafe883b215cefdffe65b9a6e65fb340d2568b9f49fc6b571d06359.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_format_review": {
+   "resolved_previously_untyped_fields": 4,
+   "basis": "Selected archived PDF edition checked against current public PDF and inspected for field controls.",
+   "clinical_scoring_review": false
+  },
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice",
+   "number",
+   "single_choice",
+   "text"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 11,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 23
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/90940293857358e81bc5a60f96869e78ae7e04eeb838c096f21a70db07f5911e.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "150ee144974316736c621f5b028b985985639a104acdca552db8042d47030de9",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T10:08:44.597922+00:00",
+  "raw_extraction_sha256": "a3d7b762a9b9fbcd7ca102bf12e272fa6a9be933f3a700eb2632686442188a9c",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "self-report version"
+   },
+   {
+    "url": null,
+    "title": "Body Image & Eating"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://mccaed.slam.nhs.uk/professionals/resources/featured-resources/",
+    "title": "https://mccaed.slam.nhs.uk/professionals/resources/featured-resources/"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.books.9780890425596",
+    "title": "https://doi.org/10.1176/appi.books.9780890425596"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.books.9780890425787",
+    "title": "https://doi.org/10.1176/appi.books.9780890425787"
+   },
+   {
+    "url": "https://doi.org/10.1186/s40337-022-00706-7",
+    "title": "https://doi.org/10.1186/s40337-022-00706-7"
+   },
+   {
+    "url": "https://doi.org/10.1002/eat.22958",
+    "title": "https://doi.org/10.1002/eat.22958"
+   },
+   {
+    "url": "https://www.cdc.gov/growthcharts/extended-bmi-data-files.htm",
+    "title": "https://www.cdc.gov/growthcharts/extended-bmi-data-files.htm"
+   },
+   {
+    "url": "https://doi.org/10.1097/MPG.0000000000002188",
+    "title": "https://doi.org/10.1097/MPG.0000000000002188"
+   },
+   {
+    "url": "https://doi.org/10.1080/10640266.2025.2608345",
+    "title": "https://doi.org/10.1080/10640266.2025.2608345"
+   },
+   {
+    "url": "https://doi.org/10.1002/eat.24376",
+    "title": "https://doi.org/10.1002/eat.24376"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.psychres.2025.116471",
+    "title": "https://doi.org/10.1016/j.psychres.2025.116471"
+   },
+   {
+    "url": null,
+    "title": "Eating behaviour assessment"
+   },
+   {
+    "url": null,
+    "title": "Eating problems severity measure"
+   },
+   {
+    "url": null,
+    "title": "Compulsive eating measure"
+   },
+   {
+    "url": null,
+    "title": "Eating disorder questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Youth eating behaviours questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download PARDI-AR-Q Informant PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample PARDI-AR-Q Informant Results"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Eating Disorder Session (Adult) (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Letter to Referrer Under EDP (Letter)"
+   },
+   {
+    "url": null,
+    "title": "self-report form"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,3285 @@
+{
+  "schemaVersion": "assessment-report-config/2.0.0",
+  "assessmentId": "adverse-childhood-experiences-questionnaire-ace-q--e0ab8a5b8f82",
+  "title": "Adverse Childhood Experiences Questionnaire (ACE-Q)",
+  "status": "source_specific_draft",
+  "definitionVersion": "1.0.0-draft.6",
+  "assessment": {
+    "name": "Adverse Childhood Experiences Questionnaire (ACE-Q)",
+    "short_name": null,
+    "language": "en",
+    "description": "The Adverse Childhood Experiences Questionnaire (ACE-Q) is a 10-item self-report measure designed to retrospectively assess exposure to potentially traumatic experiences from birth to age 18 years (Felitti et al., 1998). Developed within a public health framework, the ACE-Q evaluates two broad categories of adverse childhood experiences: abuse and neglect, and household dysfunction.",
+    "respondent_type": null,
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [],
+      "status": "requires_review"
+    },
+    "target_population": null,
+    "intended_uses": null,
+    "estimated_administration_minutes": null
+  },
+  "administration": {
+    "instructions": "While you were growing up, during your first 18 years of life: Abuse / Neglect· items 1–5",
+    "instructions_source": {
+      "url": null,
+      "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10"
+    ],
+    "selected_form_url": null,
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 10,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "Did a parent or other adult in the household often… Swear at you, insult you, put you down, or humiliate you? or Act in a way that made you afraid that you might be physically hurt?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            219.0,
+            562.5,
+            243.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "Did a parent or other adult in the household often… Push, grab, slap, or throw something at you? or Ever hit you so hard that you had marks or were injured?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            244.5,
+            562.5,
+            268.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "Did you experience unwanted sexual contact (such as fondling or oral/anal/vaginal intercourse/penetration)?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            269.25,
+            562.5,
+            291.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "Did you often feel that… No one in your family loved you or thought you were important or special? or Your family didnʼt look out for each other, feel close to each other, or support each other?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            291.75,
+            562.5,
+            316.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "Did you often feel that… You didnʼt have enough to eat, had to wear dirty clothes, and had no one to protect you? or Your parents were too drunk or high to take care of you or take you to the doctor if you needed it?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            317.25,
+            562.5,
+            342.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "Were your parents ever separated or divorced?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            394.5,
+            562.5,
+            416.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "Did your parents or adults in your home ever hit, punch, beat, or threaten to harm each other?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            417.0,
+            562.5,
+            438.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q8",
+        "order": 8,
+        "source_label": "8",
+        "text": "Did you live with anyone who was a problem drinker or alcoholic or who used street drugs?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            439.5,
+            562.5,
+            461.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q9",
+        "order": 9,
+        "source_label": "9",
+        "text": "Was a household member depressed or mentally ill or did a household member attempt suicide?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            462.0,
+            562.5,
+            483.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q10",
+        "order": 10,
+        "source_label": "10",
+        "text": "Did a household member go to prison?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+          "page": 1,
+          "bbox": [
+            33.75,
+            484.5,
+            562.5,
+            506.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "YES",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "total_raw",
+        "label": "Total adverse experiences",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 10,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "db731557e9321a5a6e82cf7745b9cda382c740f88d2a0a2d620f3f8049c1163c",
+          "retrieved_at": "2026-11-13T12:03:55.534323+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      }
+    ],
+    "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+    "rules_provenance": null,
+    "source_rule_excerpts": [
+      "Dose-response relationship: Research consistently demonstrates a dose-response relationship between ACE scores and health outcomes, with higher scores associated with increased risk across multiple domains (Merrick et al., 2017). However, more recent research has highlighted that not all ACEs contribute equally to risk outcomes (Briggs et al., 2021) with certain pairs of ACEs potentially interacting to significantly increase overall risk beyond the sum of their individual contributions. Sexual abuse (Item 3 in the ACE-Q) has been identified as the most reactive ACE, combining with other adverse experiences to potentially create disproportionate impacts (Briggs et al., 2021)",
+      "4+ ACEs (High Adversity): Represents a clinically significant threshold where risk for negative outcomes increases substantially. This category is associated with significantly elevated risk across multiple domains of functioning and should prompt thorough clinical attention.",
+      "Research suggests that not all ACEs contribute equally to risk outcomes, challenging the notion of a simple cumulative score. Briggs et al. (2021) found that certain pairs of ACEs interact to significantly increase overall risk beyond the sum of their individual contributions. In their research with both a general population adult sample and a mixed trauma youth sample, approximately 30-40% of the variance in outcomes was accounted for by additive interactions between specific pairs of ACEs. Sexual abuse was consistently identified as the most reactive ACE, combining with other adverse experiences to create disproportionate impacts.",
+      "The threshold of 4 or more ACEs is particularly meaningful in clinical contexts, as it represents a statistical inflection point at which risk for negative health outcomes increases substantially (Felitti et al., 1998; Hughes et al., 2017)."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "ACE-Q Scoring & Interpretation",
+        "text": "The ACE-Q uses a dichotomous (Yes/No) response format, with “Yes” responses summed to create a total score ranging from 0 to 10. Higher scores indicate exposure to a greater number of adverse childhood experiences, with each point representing a different type of adversity rather than the frequency or severity of any single experience.\n\nThe ACE-Q items can be conceptually grouped into two categories:\n1. Abuse / Neglect (Items 1-5): Emotional, physical, and sexual abuse and emotional and physical neglect;\n2. Household Dysfunction (Items 6-10): Household substance abuse, mental illness, incarceration, domestic violence, and parental separation/divorce\nClinicians may find it valuable to note patterns across these domains in addition to the total score. For example, a client with a score of 4 concentrated in the abuse/neglect domain may present differently than a client with a score of 4 distributed across both domains.\n\nFor clinical interpretation, ACE-Q scores are categorised as follows, with corresponding qualitative descriptors:\n0 ACEs (No Reported Adversity): Indicates no exposure to the measured adverse childhood experiences. Individuals in this category typically show the lowest risk for negative health outcomes.\n1-3 ACEs (Low to Moderate Adversity): Indicates exposure to one or more types of adversity. Research demonstrates a modest but statistically significant elevation in risk for various health and social problems compared to individuals with no ACEs.\n4+ ACEs (High Adversity): Represents a clinically significant threshold where risk for negative outcomes increases substantially. This category is associated with significantly elevated risk across multiple domains of functioning and should prompt thorough clinical attention.\n6+ ACEs (Very High Adversity): Although not a formal categorisation in all ACE literature, scores of 6 or higher represent exposure to multiple forms of serious adversity and are associated with the highest risk for severe and complex health problems.\nThe ACE-Q demonstrates a robust dose-response relationship with health outcomes, meaning that each incremental increase in ACE score is associated with progressively higher risk for negative health outcomes. This graded relationship holds across physical health, mental health, and social functioning domains.\nWhen interpreting ACE-Q scores in clinical settings, consider the following guidance:\nContext matters: ACE scores should be interpreted within the context of the individual’s current functioning, symptom presentation, and available protective factors. Some individuals with high ACE scores demonstrate remarkable resilience and may not exhibit significant impairment.\nTypes of adversity: Consider not only the number but also the types of adversities experienced. Different types of adversity may have different mechanisms of impact and may require different intervention approaches.\nTiming and chronicity: Although the ACE-Q does not capture information about the timing, duration, or severity of adverse experiences, these factors are relevant to clinical formulation. When appropriate, gathering additional information about these aspects can enhance understanding of their impact.\nCultural considerations: Cultural factors may influence both the prevalence of specific ACEs and their psychological impact. Interpretation should be sensitive to cultural context and should avoid pathologising cultural differences.\nResilience and protective factors: ACE scores provide information about risk but do not capture protective factors or resilience. Comprehensive assessment should include attention to strengths and resources that may buffer against the impact of adversity.\nWhen communicating ACE scores to clients, a trauma-informed approach is essential. This includes:\nNormalising the prevalence of ACEs in the general population\nEmphasising that ACEs are risk factors, not deterministic predictors\nHighlighting the role of protective factors and the potential for resilience\nFocusing on the relevance of ACEs to current symptoms and treatment rather than simply labelling the client as “traumatised”\nUsing psychoeducation about the neurobiology of trauma to reduce shame and self-blame\nChecking readiness and attention to stabilisation and pacing\nFor clients with clinically significant ACE-Q scores (4+), evidence-based trauma-focused interventions such as Trauma-Focused Cognitive Behavioural Therapy (TF-CBT), Eye Movement Desensitisation and Reprocessing (EMDR), or Sensorimotor Psychotherapy may be indicated. However, the selection of intervention should be guided by the client’s specific symptoms, needs, and preferences rather than by the ACE score alone.\nUpon the first administration of the ACE-Q a plot is presented showing the ACE-Q total score with the subscale contribution to this score visible. The descriptors are shaded in the background of the plot to aid in interpretation of the ACE-Q total score. In subsequent administrations, a plot of the total score over time is also presented.\n",
+        "source_url": null
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [
+      {
+        "page": 1,
+        "text": "Abuse / Neglect (Items 1–5):",
+        "y": 355.5,
+        "url": null,
+        "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      },
+      {
+        "page": 1,
+        "text": "Household Dysfunction (Items 6–10):",
+        "y": 519.8,
+        "url": null,
+        "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      },
+      {
+        "page": 1,
+        "text": "Total ACE Score (sum of all “Yes” responses)",
+        "y": 552.8,
+        "url": null,
+        "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      }
+    ],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+  },
+  "metricBindings": [
+    {
+      "id": "metric_total_raw",
+      "ruleId": "total_raw",
+      "label": "Total adverse experiences",
+      "minimum": 0,
+      "maximum": 10,
+      "calculation": {
+        "id": "total_raw",
+        "label": "Total adverse experiences",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 10,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "db731557e9321a5a6e82cf7745b9cda382c740f88d2a0a2d620f3f8049c1163c",
+          "retrieved_at": "2026-11-13T12:03:55.534323+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    }
+  ],
+  "sources": [
+    {
+      "sha256": "bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d",
+      "pageCount": 3,
+      "identityStatus": "title_or_acronym_matches",
+      "hashVerified": true,
+      "usage": "reference_identity_only_no_runtime_fetch"
+    }
+  ],
+  "page": {
+    "coordinateUnit": "pt",
+    "origin": "top_left",
+    "documentsAreAlternativesNotConcatenated": true
+  },
+  "theme": {
+    "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+    "branding": "application_branding",
+    "sourceLogosRequired": false
+  },
+  "pages": [
+    {
+      "pageId": "dbb8c1c6aedfd_p1",
+      "documentSha256": "bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d",
+      "pageNumber": 1,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "dbb8c1c6aedfd_p1_chart_1"
+      ],
+      "tableIds": [
+        "dbb8c1c6aedfd_p1_table_1",
+        "dbb8c1c6aedfd_p1_table_2"
+      ],
+      "sectionIds": [
+        "dbb8c1c6aedfd_p1_section_1",
+        "dbb8c1c6aedfd_p1_section_2",
+        "dbb8c1c6aedfd_p1_section_3"
+      ]
+    },
+    {
+      "pageId": "dbb8c1c6aedfd_p2",
+      "documentSha256": "bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d",
+      "pageNumber": 2,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "dbb8c1c6aedfd_p2_section_1",
+        "dbb8c1c6aedfd_p2_section_2",
+        "dbb8c1c6aedfd_p2_section_3",
+        "dbb8c1c6aedfd_p2_section_4",
+        "dbb8c1c6aedfd_p2_section_5",
+        "dbb8c1c6aedfd_p2_section_6",
+        "dbb8c1c6aedfd_p2_section_7"
+      ]
+    },
+    {
+      "pageId": "dbb8c1c6aedfd_p3",
+      "documentSha256": "bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d",
+      "pageNumber": 3,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [
+        "dbb8c1c6aedfd_p3_table_1"
+      ],
+      "sectionIds": [
+        "dbb8c1c6aedfd_p3_section_1",
+        "dbb8c1c6aedfd_p3_section_2"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "dbb8c1c6aedfd_p1_section_1",
+      "pageId": "dbb8c1c6aedfd_p1",
+      "title": "Results",
+      "type": "results",
+      "bboxPt": [
+        34.3465,
+        197.90677,
+        84.91451,
+        211.90677
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p1_section_2",
+      "pageId": "dbb8c1c6aedfd_p1",
+      "title": "Adverse Childhood Experiences (ACE-Q) Score",
+      "type": "source_heading",
+      "bboxPt": [
+        152.98,
+        303.62549,
+        423.71194,
+        315.62549
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p1_section_3",
+      "pageId": "dbb8c1c6aedfd_p1",
+      "title": "Interpretation",
+      "type": "interpretation",
+      "bboxPt": [
+        34.3465,
+        694.28577,
+        124.57652,
+        708.28577
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p2_section_1",
+      "pageId": "dbb8c1c6aedfd_p2",
+      "title": "Interpretation (cont.)",
+      "type": "interpretation",
+      "bboxPt": [
+        34.3465,
+        144.0488,
+        171.23853,
+        158.0488
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p2_section_2",
+      "pageId": "dbb8c1c6aedfd_p2",
+      "title": "Sexual Abuse Note:",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        429.65512,
+        194.34035,
+        440.65512
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p2_section_3",
+      "pageId": "dbb8c1c6aedfd_p2",
+      "title": "Even when the total ACE score falls",
+      "type": "source_heading",
+      "bboxPt": [
+        369.2294,
+        466.10944,
+        556.28455,
+        477.10944
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p2_section_4",
+      "pageId": "dbb8c1c6aedfd_p2",
+      "title": "below the traditional clinical threshold of 4, the presence of sexual abuse warrants",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        478.20944,
+        522.62451,
+        489.20944
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p2_section_5",
+      "pageId": "dbb8c1c6aedfd_p2",
+      "title": "significant clinical attention, particularly when combined with other adversities such as",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        490.30945,
+        547.68262,
+        501.30945
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p2_section_6",
+      "pageId": "dbb8c1c6aedfd_p2",
+      "title": "neglect or physical abuse.",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        502.40945,
+        228.59433,
+        513.40948
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p2_section_7",
+      "pageId": "dbb8c1c6aedfd_p2",
+      "title": "Treatment Considerations:",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        575.16345,
+        231.00333,
+        586.16345
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p3_section_1",
+      "pageId": "dbb8c1c6aedfd_p3",
+      "title": "Scoring and Interpretation Information",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        34.3465,
+        144.0488,
+        290.26645,
+        158.0488
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dbb8c1c6aedfd_p3_section_2",
+      "pageId": "dbb8c1c6aedfd_p3",
+      "title": "Client Responses",
+      "type": "responses",
+      "bboxPt": [
+        34.346,
+        360.13507,
+        151.82001,
+        374.13507
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    }
+  ],
+  "charts": [
+    {
+      "id": "dbb8c1c6aedfd_p1_chart_1",
+      "title": "Adverse Childhood Experiences (ACE-Q) Score",
+      "type": "stacked_bar",
+      "bboxPt": [
+        64.347,
+        329.528,
+        550.346,
+        604.969
+      ],
+      "widthPt": 486.0,
+      "heightPt": 275.441,
+      "axisColour": "#333333",
+      "observedDataType": "unresolved",
+      "backgroundBands": [],
+      "variantEvidence": "single_visit_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [
+          {
+            "value": 0.0,
+            "positionPt": 56.5663,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 10.0,
+            "positionPt": 332.30212,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 9.0,
+            "positionPt": 359.64233,
+            "text": "9",
+            "colour": "#333333"
+          },
+          {
+            "value": 8.0,
+            "positionPt": 386.99234,
+            "text": "8",
+            "colour": "#333333"
+          },
+          {
+            "value": 7.0,
+            "positionPt": 414.33215,
+            "text": "7",
+            "colour": "#333333"
+          },
+          {
+            "value": 6.0,
+            "positionPt": 441.68216,
+            "text": "6",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 469.02237,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 4.0,
+            "positionPt": 496.36218,
+            "text": "4",
+            "colour": "#333333"
+          },
+          {
+            "value": 3.0,
+            "positionPt": 523.71216,
+            "text": "3",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.0,
+            "positionPt": 551.052,
+            "text": "2",
+            "colour": "#333333"
+          },
+          {
+            "value": 1.0,
+            "positionPt": 578.4024,
+            "text": "1",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 605.74219,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 10.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": "Total ACE-Q Abuse and Neglect",
+          "colour": "#ef524f",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.46707763141571895,
+          "barThicknessPt": 74.00001999999998,
+          "fill": null,
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#ef524f"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#ef524f"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#ef524f"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#ef524f"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#ef524f"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        },
+        {
+          "id": "series_2",
+          "label": "Total ACE-Q Abuse and Neglect",
+          "colour": "#42a5f4",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.46707763141571895,
+          "barThicknessPt": 74.00001999999998,
+          "fill": null,
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#42a5f4"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#42a5f4"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#42a5f4"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#42a5f4"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#42a5f4"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "dbb8c1c6aedfd_p1",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 14,
+        "detectedType": "stacked_bar",
+        "reviewedType": "stacked_bar",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Adverse Childhood Experiences (ACE-Q) Score",
+          "bboxPt": [
+            152.98,
+            303.62549,
+            423.71194,
+            315.62549
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "No Reported Adversity",
+          "bboxPt": [
+            467.93399,
+            590.17926,
+            538.34705,
+            597.17926
+          ],
+          "colour": "#008000",
+          "font": "Helvetica",
+          "fontSizePt": 7.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Low to Moderate Adversity",
+          "bboxPt": [
+            455.48001,
+            535.49927,
+            538.34607,
+            542.49927
+          ],
+          "colour": "#808080",
+          "font": "Helvetica",
+          "fontSizePt": 7.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "High Adversity",
+          "bboxPt": [
+            493.22501,
+            467.14026,
+            538.34705,
+            474.14026
+          ],
+          "colour": "#ff0000",
+          "font": "Helvetica",
+          "fontSizePt": 7.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Very High Adversity",
+          "bboxPt": [
+            476.88599,
+            385.09927,
+            538.34601,
+            392.09927
+          ],
+          "colour": "#ff0000",
+          "font": "Helvetica",
+          "fontSizePt": 7.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Total ACE-Q",
+          "bboxPt": [
+            263.00699,
+            611.4422,
+            319.68698,
+            621.4422
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Abuse and Neglect",
+          "bboxPt": [
+            214.34599,
+            637.62653,
+            281.93796,
+            645.62653
+          ],
+          "colour": "#000000",
+          "font": "Helvetica",
+          "fontSizePt": 8.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Dimension",
+          "bboxPt": [
+            214.34599,
+            645.62653,
+            252.12999,
+            653.62653
+          ],
+          "colour": "#000000",
+          "font": "Helvetica",
+          "fontSizePt": 8.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Household Dysfunction",
+          "bboxPt": [
+            326.62598,
+            637.62653,
+            408.88196,
+            645.62653
+          ],
+          "colour": "#000000",
+          "font": "Helvetica",
+          "fontSizePt": 8.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Dimension",
+          "bboxPt": [
+            326.62598,
+            645.62653,
+            364.40997,
+            653.62653
+          ],
+          "colour": "#000000",
+          "font": "Helvetica",
+          "fontSizePt": 8.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    }
+  ],
+  "tables": [
+    {
+      "id": "dbb8c1c6aedfd_p1_table_1",
+      "type": "patient_metadata",
+      "bboxPt": [
+        28.3465,
+        113.38562,
+        566.92934,
+        180.0
+      ],
+      "rowCount": 4,
+      "columnCount": 4,
+      "cellsPt": [
+        [
+          28.3465,
+          113.38562,
+          566.92934,
+          133.22818
+        ],
+        [
+          28.3465,
+          133.22818,
+          141.73212,
+          148.81921
+        ],
+        [
+          28.3465,
+          148.81921,
+          141.73212,
+          164.40973
+        ],
+        [
+          28.3465,
+          164.40973,
+          141.73212,
+          180.0
+        ],
+        [
+          141.73212,
+          133.22818,
+          354.33051,
+          148.81921
+        ],
+        [
+          141.73212,
+          148.81921,
+          354.33051,
+          164.40973
+        ],
+        [
+          141.73212,
+          164.40973,
+          354.33051,
+          180.0
+        ],
+        [
+          354.33051,
+          133.22818,
+          467.7164,
+          148.81921
+        ],
+        [
+          354.33051,
+          148.81921,
+          467.7164,
+          164.40973
+        ],
+        [
+          354.33051,
+          164.40973,
+          467.7164,
+          180.0
+        ],
+        [
+          467.7164,
+          133.22818,
+          566.92934,
+          148.81921
+        ],
+        [
+          467.7164,
+          148.81921,
+          566.92934,
+          164.40973
+        ],
+        [
+          467.7164,
+          164.40973,
+          566.92934,
+          180.0
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "dbb8c1c6aedfd_p1",
+      "sourceTableId": "table_1",
+      "columns": [],
+      "rowBindings": [],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "static_heading",
+          "content": "Adverse Childhood Experiences Questionnaire (ACE -Q)",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Client Name",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "patient.displayName"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "patient.displayName"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "static_label",
+          "content": "Date administered",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.completedAt"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.completedAt"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Date of birth (age)",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "patient.dateOfBirthAndAgeAtAdministration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "patient.dateOfBirthAndAgeAtAdministration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "static_label",
+          "content": "Time taken",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.duration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.duration"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Assessor",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.assessorName"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.assessorName"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "dbb8c1c6aedfd_p1_table_2",
+      "type": "unresolved_table",
+      "bboxPt": [
+        28.3465,
+        195.59017,
+        566.92934,
+        277.79498
+      ],
+      "rowCount": 5,
+      "columnCount": 4,
+      "cellsPt": [
+        [
+          28.3465,
+          195.59017,
+          566.92934,
+          215.43322
+        ],
+        [
+          28.3465,
+          215.43322,
+          85.03951,
+          231.02376
+        ],
+        [
+          28.3465,
+          231.02376,
+          85.03951,
+          246.61414
+        ],
+        [
+          28.3465,
+          246.61414,
+          85.03951,
+          262.20495
+        ],
+        [
+          28.3465,
+          262.20495,
+          85.03951,
+          277.79498
+        ],
+        [
+          85.03951,
+          215.43322,
+          340.15726,
+          231.02376
+        ],
+        [
+          85.03951,
+          231.02376,
+          340.15726,
+          246.61414
+        ],
+        [
+          85.03951,
+          246.61414,
+          340.15726,
+          262.20495
+        ],
+        [
+          85.03951,
+          262.20495,
+          340.15726,
+          277.79498
+        ],
+        [
+          340.15726,
+          215.43322,
+          396.85001,
+          231.02376
+        ],
+        [
+          340.15726,
+          231.02376,
+          396.85001,
+          246.61414
+        ],
+        [
+          340.15726,
+          246.61414,
+          396.85001,
+          262.20495
+        ],
+        [
+          340.15726,
+          262.20495,
+          396.85001,
+          277.79498
+        ],
+        [
+          396.85001,
+          215.43322,
+          566.92934,
+          231.02376
+        ],
+        [
+          396.85001,
+          231.02376,
+          566.92934,
+          246.61414
+        ],
+        [
+          396.85001,
+          246.61414,
+          566.92934,
+          262.20495
+        ],
+        [
+          396.85001,
+          262.20495,
+          566.92934,
+          277.79498
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "dbb8c1c6aedfd_p1",
+      "sourceTableId": "table_2",
+      "columns": [
+        {
+          "sourceColumnIndex": 3,
+          "label": "Descriptor",
+          "binding": null
+        }
+      ],
+      "rowBindings": [],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "static_heading",
+          "content": "Results",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "static_column_header",
+          "content": "Descriptor",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "dbb8c1c6aedfd_p3_table_1",
+      "type": "response_table",
+      "bboxPt": [
+        28.3465,
+        357.81814,
+        566.92959,
+        689.47198
+      ],
+      "rowCount": 12,
+      "columnCount": 5,
+      "cellsPt": [
+        [
+          28.3465,
+          357.81814,
+          566.92959,
+          377.66073
+        ],
+        [
+          28.3465,
+          377.66073,
+          51.02344,
+          406.00684
+        ],
+        [
+          28.3465,
+          406.00684,
+          51.02344,
+          434.35315
+        ],
+        [
+          28.3465,
+          434.35315,
+          51.02344,
+          462.69986
+        ],
+        [
+          28.3465,
+          462.69986,
+          51.02344,
+          491.04616
+        ],
+        [
+          28.3465,
+          491.04616,
+          51.02344,
+          519.39285
+        ],
+        [
+          28.3465,
+          519.39285,
+          51.02344,
+          547.73915
+        ],
+        [
+          28.3465,
+          547.73915,
+          51.02344,
+          576.08584
+        ],
+        [
+          28.3465,
+          576.08584,
+          51.02344,
+          604.43215
+        ],
+        [
+          28.3465,
+          604.43215,
+          51.02344,
+          632.77885
+        ],
+        [
+          28.3465,
+          632.77885,
+          51.02344,
+          661.12514
+        ],
+        [
+          28.3465,
+          661.12514,
+          51.02344,
+          689.47198
+        ],
+        [
+          51.02344,
+          377.66073,
+          257.9528,
+          406.00684
+        ],
+        [
+          51.02344,
+          406.00684,
+          257.9528,
+          434.35315
+        ],
+        [
+          51.02344,
+          434.35315,
+          257.9528,
+          462.69986
+        ],
+        [
+          51.02344,
+          462.69986,
+          257.9528,
+          491.04616
+        ],
+        [
+          51.02344,
+          491.04616,
+          257.9528,
+          519.39285
+        ],
+        [
+          51.02344,
+          519.39285,
+          257.9528,
+          547.73915
+        ],
+        [
+          51.02344,
+          547.73915,
+          257.9528,
+          576.08584
+        ],
+        [
+          51.02344,
+          576.08584,
+          257.9528,
+          604.43215
+        ],
+        [
+          51.02344,
+          604.43215,
+          257.9528,
+          632.77885
+        ],
+        [
+          51.02344,
+          632.77885,
+          257.9528,
+          661.12514
+        ],
+        [
+          51.02344,
+          661.12514,
+          257.9528,
+          689.47198
+        ],
+        [
+          257.9528,
+          377.66073,
+          406.772,
+          406.00684
+        ],
+        [
+          257.9528,
+          406.00684,
+          406.772,
+          434.35315
+        ],
+        [
+          257.9528,
+          434.35315,
+          406.772,
+          462.69986
+        ],
+        [
+          257.9528,
+          462.69986,
+          406.772,
+          491.04616
+        ],
+        [
+          257.9528,
+          491.04616,
+          406.772,
+          519.39285
+        ],
+        [
+          257.9528,
+          519.39285,
+          406.772,
+          547.73915
+        ],
+        [
+          257.9528,
+          547.73915,
+          406.772,
+          576.08584
+        ],
+        [
+          257.9528,
+          576.08584,
+          406.772,
+          604.43215
+        ],
+        [
+          257.9528,
+          604.43215,
+          406.772,
+          632.77885
+        ],
+        [
+          257.9528,
+          632.77885,
+          406.772,
+          661.12514
+        ],
+        [
+          257.9528,
+          661.12514,
+          406.772,
+          689.47198
+        ],
+        [
+          406.772,
+          377.66073,
+          555.591,
+          406.00684
+        ],
+        [
+          406.772,
+          406.00684,
+          555.591,
+          434.35315
+        ],
+        [
+          406.772,
+          434.35315,
+          555.591,
+          462.69986
+        ],
+        [
+          406.772,
+          462.69986,
+          555.591,
+          491.04616
+        ],
+        [
+          406.772,
+          491.04616,
+          555.591,
+          519.39285
+        ],
+        [
+          406.772,
+          519.39285,
+          555.591,
+          547.73915
+        ],
+        [
+          406.772,
+          547.73915,
+          555.591,
+          576.08584
+        ],
+        [
+          406.772,
+          576.08584,
+          555.591,
+          604.43215
+        ],
+        [
+          406.772,
+          604.43215,
+          555.591,
+          632.77885
+        ],
+        [
+          406.772,
+          632.77885,
+          555.591,
+          661.12514
+        ],
+        [
+          406.772,
+          661.12514,
+          555.591,
+          689.47198
+        ],
+        [
+          555.591,
+          377.66073,
+          566.92959,
+          689.47198
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "dbb8c1c6aedfd_p3",
+      "sourceTableId": "table_1",
+      "columns": [
+        {
+          "sourceColumnIndex": 2,
+          "label": "No",
+          "binding": null
+        },
+        {
+          "sourceColumnIndex": 3,
+          "label": "Yes",
+          "binding": null
+        }
+      ],
+      "rowBindings": [
+        {
+          "sourceRowIndex": 7,
+          "questionId": "Q6",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "questionId": "Q8",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "questionId": "Q9",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "questionId": "Q10",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        }
+      ],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "static_heading",
+          "content": "Client Responses",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "response_option_header",
+          "content": "No",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "response_option_header",
+          "content": "Yes",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q6",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q8",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q9",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q10",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    }
+  ],
+  "variants": {
+    "sourceStatements": [
+      "Upon the first administration of the ACE-Q a plot is presented showing the ACE-Q total score with the subscale contribution to this score visible.",
+      "In subsequent administrations, a plot of the total score over time is also presented."
+    ],
+    "firstAdministration": {
+      "status": "requires_review"
+    },
+    "repeatAdministration": {
+      "status": "requires_review"
+    },
+    "policy": "Do not invent a repeat chart from an observed first-visit chart."
+  },
+  "interpretationRules": {
+    "encodedRules": [],
+    "sourceGuidance": [
+      {
+        "title": "ACE-Q Scoring & Interpretation",
+        "text": "The ACE-Q uses a dichotomous (Yes/No) response format, with “Yes” responses summed to create a total score ranging from 0 to 10. Higher scores indicate exposure to a greater number of adverse childhood experiences, with each point representing a different type of adversity rather than the frequency or severity of any single experience.\n\nThe ACE-Q items can be conceptually grouped into two categories:\n1. Abuse / Neglect (Items 1-5): Emotional, physical, and sexual abuse and emotional and physical neglect;\n2. Household Dysfunction (Items 6-10): Household substance abuse, mental illness, incarceration, domestic violence, and parental separation/divorce\nClinicians may find it valuable to note patterns across these domains in addition to the total score. For example, a client with a score of 4 concentrated in the abuse/neglect domain may present differently than a client with a score of 4 distributed across both domains.\n\nFor clinical interpretation, ACE-Q scores are categorised as follows, with corresponding qualitative descriptors:\n0 ACEs (No Reported Adversity): Indicates no exposure to the measured adverse childhood experiences. Individuals in this category typically show the lowest risk for negative health outcomes.\n1-3 ACEs (Low to Moderate Adversity): Indicates exposure to one or more types of adversity. Research demonstrates a modest but statistically significant elevation in risk for various health and social problems compared to individuals with no ACEs.\n4+ ACEs (High Adversity): Represents a clinically significant threshold where risk for negative outcomes increases substantially. This category is associated with significantly elevated risk across multiple domains of functioning and should prompt thorough clinical attention.\n6+ ACEs (Very High Adversity): Although not a formal categorisation in all ACE literature, scores of 6 or higher represent exposure to multiple forms of serious adversity and are associated with the highest risk for severe and complex health problems.\nThe ACE-Q demonstrates a robust dose-response relationship with health outcomes, meaning that each incremental increase in ACE score is associated with progressively higher risk for negative health outcomes. This graded relationship holds across physical health, mental health, and social functioning domains.\nWhen interpreting ACE-Q scores in clinical settings, consider the following guidance:\nContext matters: ACE scores should be interpreted within the context of the individual’s current functioning, symptom presentation, and available protective factors. Some individuals with high ACE scores demonstrate remarkable resilience and may not exhibit significant impairment.\nTypes of adversity: Consider not only the number but also the types of adversities experienced. Different types of adversity may have different mechanisms of impact and may require different intervention approaches.\nTiming and chronicity: Although the ACE-Q does not capture information about the timing, duration, or severity of adverse experiences, these factors are relevant to clinical formulation. When appropriate, gathering additional information about these aspects can enhance understanding of their impact.\nCultural considerations: Cultural factors may influence both the prevalence of specific ACEs and their psychological impact. Interpretation should be sensitive to cultural context and should avoid pathologising cultural differences.\nResilience and protective factors: ACE scores provide information about risk but do not capture protective factors or resilience. Comprehensive assessment should include attention to strengths and resources that may buffer against the impact of adversity.\nWhen communicating ACE scores to clients, a trauma-informed approach is essential. This includes:\nNormalising the prevalence of ACEs in the general population\nEmphasising that ACEs are risk factors, not deterministic predictors\nHighlighting the role of protective factors and the potential for resilience\nFocusing on the relevance of ACEs to current symptoms and treatment rather than simply labelling the client as “traumatised”\nUsing psychoeducation about the neurobiology of trauma to reduce shame and self-blame\nChecking readiness and attention to stabilisation and pacing\nFor clients with clinically significant ACE-Q scores (4+), evidence-based trauma-focused interventions such as Trauma-Focused Cognitive Behavioural Therapy (TF-CBT), Eye Movement Desensitisation and Reprocessing (EMDR), or Sensorimotor Psychotherapy may be indicated. However, the selection of intervention should be guided by the client’s specific symptoms, needs, and preferences rather than by the ACE score alone.\nUpon the first administration of the ACE-Q a plot is presented showing the ACE-Q total score with the subscale contribution to this score visible. The descriptors are shaded in the background of the plot to aid in interpretation of the ACE-Q total score. In subsequent administrations, a plot of the total score over time is also presented.\n",
+        "source_url": null
+      }
+    ],
+    "reportScoringGuidance": [
+      {
+        "documentSha256": "bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d",
+        "pageNumber": 3,
+        "text": "For comprehensive information on the ACE-Q, \nsee here\n.\nA response of Yes for each question is summed to provide an overall ACE-Q score (out of 10).\nThe higher the score, the more adverse childhood experiences the client has had and the higher\nthe risk for social, mental, or other wellbeing problems. The majority of all adults (52%–75%)\nscore one or higher on the ACE-Q (CDC, 2010; Edwards et al., 2007; Ford et al., 2011; Ramiro\net al., 2010; Rothman, Bernstein, & Strunin, 2010).\nScores of 4 or more are considered clinically significant. A minority (5%–10%) of the general\npopulation score 4 or more, where the general long-term health consequences become most\npronounced (Hughes et al., 2017).\nCompared with people who have an ACE-Q score of 0, people with an ACE-Q score of 4 are\ntwice as likely to be smokers, 5 times more likely to have depression, 7 times more likely to be\nalcoholic, 10 times more likely to take illicit drugs, and 12 times more likely to attempt suicide.",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      }
+    ],
+    "sourceRequirements": [
+      "For clinical interpretation, ACE-Q scores are categorised as follows, with corresponding qualitative descriptors:",
+      "4+ ACEs (High Adversity): Represents a clinically significant threshold where risk for negative outcomes increases substantially.",
+      "Upon the first administration of the ACE-Q a plot is presented showing the ACE-Q total score with the subscale contribution to this score visible.",
+      "The descriptors are shaded in the background of the plot to aid in interpretation of the ACE-Q total score.",
+      "In subsequent administrations, a plot of the total score over time is also presented."
+    ],
+    "templates": [],
+    "sampleNarrativeReusable": false,
+    "runtimeEnabled": false
+  },
+  "referenceTables": [],
+  "paintStyles": [
+    {
+      "id": "paint_41b03625fced34e9f44bbfa62ea3ebb8",
+      "status": "source_colour_stops_extracted_role_requires_review",
+      "type": "linear_gradient_samples",
+      "direction": "vertical",
+      "stops": [
+        {
+          "offset": 0.0,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.03125,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.0625,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.09375,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.125,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.15625,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.1875,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.21875,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.25,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.28125,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.3125,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.34375,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.375,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.40625,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.4375,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.46875,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.53125,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5625,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.59375,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.625,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.65625,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.6875,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.71875,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.75,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.78125,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.8125,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.84375,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.875,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.90625,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.9375,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.96875,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 1.0,
+          "colour": "#ef524f",
+          "opacity": 1.0
+        }
+      ],
+      "runtimeEnabled": false
+    },
+    {
+      "id": "paint_214b6463b66cb234018e8112c238327d",
+      "status": "source_colour_stops_extracted_role_requires_review",
+      "type": "linear_gradient_samples",
+      "direction": "vertical",
+      "stops": [
+        {
+          "offset": 0.0,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.03125,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.0625,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.09375,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.125,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.15625,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.1875,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.21875,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.25,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.28125,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.3125,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.34375,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.375,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.40625,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.4375,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.46875,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.53125,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5625,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.59375,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.625,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.65625,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.6875,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.71875,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.75,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.78125,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.8125,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.84375,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.875,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.90625,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.9375,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.96875,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        },
+        {
+          "offset": 1.0,
+          "colour": "#42a5f4",
+          "opacity": 1.0
+        }
+      ],
+      "runtimeEnabled": false
+    }
+  ],
+  "assets": {
+    "runtimeImages": [],
+    "runtimeSourceFiles": [],
+    "runtimeSourceUrls": []
+  },
+  "runtimeContract": {
+    "version2RendererRequired": true,
+    "loadDefinitionFrom": "database_json",
+    "useCurrentPatientAnswers": true,
+    "useSamplePatientValues": false,
+    "externalNetworkRequired": false,
+    "sourceArchiveRequired": false,
+    "unknownScoring": "withhold",
+    "unknownNorms": "withhold",
+    "unsupportedChart": "withhold_and_report_exception",
+    "unknownRepeatLayout": "withhold"
+  },
+  "validation": {
+    "jsonStructureValidated": true,
+    "sourceHashesVerified": true,
+    "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+    "fullPageLayoutCompared": false,
+    "scoreBindingsReviewed": false,
+    "tablesSemanticallyReviewed": false,
+    "rendererEquivalent": false,
+    "clinicalApproved": false,
+    "readyForApplicationImport": false
+  },
+  "exceptions": [
+    {
+      "code": "paint_style_roles_require_review",
+      "count": 2,
+      "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+    },
+    {
+      "code": "score_and_series_bindings_require_review",
+      "count": 1
+    },
+    {
+      "code": "table_cell_semantics_require_review",
+      "count": 3,
+      "unresolvedCells": 46
+    },
+    {
+      "code": "interpretation_and_variant_rules_require_review"
+    }
+  ]
+}

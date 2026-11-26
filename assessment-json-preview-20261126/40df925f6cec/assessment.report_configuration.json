@@ -1,0 +1,1393 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Total raw score",
+   "minimum": 0.0,
+   "maximum": 136.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [
+     {
+      "label": "Healthy",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 20
+     },
+     {
+      "label": "Low",
+      "minimum_inclusive": 21,
+      "maximum_inclusive": 33
+     },
+     {
+      "label": "Mild",
+      "minimum_inclusive": 34,
+      "maximum_inclusive": 50
+     },
+     {
+      "label": "Moderate",
+      "minimum_inclusive": 51,
+      "maximum_inclusive": 67
+     },
+     {
+      "label": "Moderate-to-Severe",
+      "minimum_inclusive": 68,
+      "maximum_inclusive": 84
+     },
+     {
+      "label": "Severe",
+      "minimum_inclusive": 85,
+      "maximum_inclusive": 136
+     }
+    ],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 136.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_2",
+   "ruleId": "source_draft_2",
+   "label": "Subjective wellbeing deficits",
+   "minimum": 0.0,
+   "maximum": 16.0,
+   "calculation": {
+    "id": "source_draft_2",
+    "label": "Subjective wellbeing deficits",
+    "item_ids": [
+     "Q4",
+     "Q14",
+     "Q17",
+     "Q31"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 16.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_3",
+   "ruleId": "source_draft_3",
+   "label": "Problems symptoms",
+   "minimum": 0.0,
+   "maximum": 48.0,
+   "calculation": {
+    "id": "source_draft_3",
+    "label": "Problems symptoms",
+    "item_ids": [
+     "Q2",
+     "Q5",
+     "Q8",
+     "Q11",
+     "Q13",
+     "Q15",
+     "Q18",
+     "Q20",
+     "Q23",
+     "Q27",
+     "Q28",
+     "Q30"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 48.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_4",
+   "ruleId": "source_draft_4",
+   "label": "Life functioning difficulties",
+   "minimum": 0.0,
+   "maximum": 48.0,
+   "calculation": {
+    "id": "source_draft_4",
+    "label": "Life functioning difficulties",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q7",
+     "Q12",
+     "Q10",
+     "Q19",
+     "Q21",
+     "Q25",
+     "Q26",
+     "Q29",
+     "Q32",
+     "Q33"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 48.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_5",
+   "ruleId": "source_draft_5",
+   "label": "Risk harm",
+   "minimum": 0.0,
+   "maximum": 24.0,
+   "calculation": {
+    "id": "source_draft_5",
+    "label": "Risk harm",
+    "item_ids": [
+     "Q9",
+     "Q6",
+     "Q16",
+     "Q22",
+     "Q24",
+     "Q34"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 24.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "pageCount": 6,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d1235a3b3346a_p1",
+   "documentSha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d1235a3b3346a_p1_chart_1"
+   ],
+   "tableIds": [
+    "d1235a3b3346a_p1_table_1",
+    "d1235a3b3346a_p1_table_2"
+   ],
+   "sectionIds": [
+    "d1235a3b3346a_p1_section_1",
+    "d1235a3b3346a_p1_section_2"
+   ]
+  },
+  {
+   "pageId": "d1235a3b3346a_p2",
+   "documentSha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d1235a3b3346a_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d1235a3b3346a_p2_section_1",
+    "d1235a3b3346a_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "d1235a3b3346a_p3",
+   "documentSha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d1235a3b3346a_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "d1235a3b3346a_p4",
+   "documentSha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d1235a3b3346a_p4_table_1"
+   ],
+   "sectionIds": [
+    "d1235a3b3346a_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "d1235a3b3346a_p5",
+   "documentSha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d1235a3b3346a_p5_table_1"
+   ],
+   "sectionIds": [
+    "d1235a3b3346a_p5_section_1"
+   ]
+  },
+  {
+   "pageId": "d1235a3b3346a_p6",
+   "documentSha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d1235a3b3346a_p6_table_1"
+   ],
+   "sectionIds": [
+    "d1235a3b3346a_p6_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d1235a3b3346a_p1_section_1",
+   "pageId": "d1235a3b3346a_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1235a3b3346a_p1_section_2",
+   "pageId": "d1235a3b3346a_p1",
+   "title": "CORE-OM Total Clinical Percentile",
+   "type": "results",
+   "bboxPt": [
+    182.90245,
+    371.22958,
+    379.61844,
+    387.75357
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1235a3b3346a_p2_section_1",
+   "pageId": "d1235a3b3346a_p2",
+   "title": "CORE-OM Subscale Clinical Percentiles",
+   "type": "results",
+   "bboxPt": [
+    174.64046,
+    149.81235,
+    402.05243,
+    166.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1235a3b3346a_p2_section_2",
+   "pageId": "d1235a3b3346a_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    539.87531,
+    124.57648,
+    559.15326
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1235a3b3346a_p3_section_1",
+   "pageId": "d1235a3b3346a_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    319.99231,
+    290.26642,
+    339.27032
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1235a3b3346a_p4_section_1",
+   "pageId": "d1235a3b3346a_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    523.36737,
+    151.82047,
+    542.64532
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1235a3b3346a_p5_section_1",
+   "pageId": "d1235a3b3346a_p5",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1235a3b3346a_p6_section_1",
+   "pageId": "d1235a3b3346a_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "When administered more than once, two graphs are produced.",
+   "The first shows the total percentile over time, which compares respondents’ total score to others seeking mental health support.",
+   "The second graph represents subscale percentiles over time and is helpful for understanding the areas of improvement or deterioration and therefore targets for treatment."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [
+   {
+    "ruleId": "source_draft_1",
+    "severityBands": [
+     {
+      "label": "Healthy",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 20
+     },
+     {
+      "label": "Low",
+      "minimum_inclusive": 21,
+      "maximum_inclusive": 33
+     },
+     {
+      "label": "Mild",
+      "minimum_inclusive": 34,
+      "maximum_inclusive": 50
+     },
+     {
+      "label": "Moderate",
+      "minimum_inclusive": 51,
+      "maximum_inclusive": 67
+     },
+     {
+      "label": "Moderate-to-Severe",
+      "minimum_inclusive": 68,
+      "maximum_inclusive": 84
+     },
+     {
+      "label": "Severe",
+      "minimum_inclusive": 85,
+      "maximum_inclusive": 136
+     }
+    ]
+   }
+  ],
+  "sourceGuidance": [
+   {
+    "title": "CORE-OM Scoring & Interpretation",
+    "text": "Both a raw score and a clinical percentile are given for the total scale and each of the four subscales. Higher scores indicate poorer well-being, greater distress, more functional impairment, and higher risk across the past week.\n\nSubjective well-being deficits (items 4, 14, 17, 31)\nProblems/symptoms (items 2, 5, 8, 11, 13, 15, 18, 20, 23, 27, 28, 30)\nLife functioning difficulties (1, 3, 7, 12, 10, 19, 21, 25, 26, 29, 32, 33)\nRisk/harm (9, 6, 16, 22, 24, 34)\nScores are presented as a percentile compared to a clinical sample, where a percentile of 50 represents the average psychological distress of someone seeking intervention.\n\nWhen administered more than once, two graphs are produced. The first shows the total percentile over time, which compares respondents’ total score to others seeking mental health support. The second graph represents subscale percentiles over time and is helpful for understanding the areas of improvement or deterioration and therefore targets for treatment. Both graphs can be useful in providing feedback to clients and assessing treatment response.\n\nSeverity ranges are reported for the CORE-OM, ranging from Healthy to Severe:\n0-20 Healthy: Minimal psychological distress; typical of a non-distressed population without mental health concerns.\n21-33 Low: Some distress related to everyday challenges or temporary situations, within the general population range.\n34-50 Mild: Noticeable psychological discomfort, early signal of a trend towards mental health concerns.\n51-67 Moderate: Emerging psychological distress\n68-84 Moderate-to-Severe: noticeable distress that is likely to be interfering with daily functioning\n85-136 Severe: Significant distress impacting several life domains, substantially impacting well-being and daily functioning.\nThe severity ranges above are based on raw scores for the total score. These total raw score ranges correspond to specific clinical percentile ranges as follows:\nHealthy: 1st-3rd percentile\nLow-level: 4th-11th percentile\nMild: 12th-31st percentile\nModerate: 32nd-60th percentile\nModerate-to-Severe: 61st-84th percentile\nSevere: 85th-100th percentile\nFor the four subscales (Well-being deficits, Problems/symptoms, Life functioning difficulties, and Risk/harm), severity descriptors are assigned based on the percentile ranges derived from the total score. Note, the Risk/harm subscale uses a binary classification where a raw score of 0 indicates “No Risk Identified” and any score above 0 indicates “Risk Identified.”\nA total raw score of 33 is the established cut-off for distinguishing between clinical and non-clinical populations (Barkham et al., 2006; Connell et al., 2007).\n\nA change of 17 raw score points or more is considered to exceed the reliable change index (RCI) threshold for changes that may be due to measurement error or chance acting alone, indicating meaningful improvement or deterioration (Barkham et al., 2006).\nTherefore, to be sure that a client has made a reliable change, a score difference of 17 or more should be observed. Given that most of the severity ranges are approximately 17 points in size, a person scoring at the higher end of moderate (65) will move to the ‘mild’ range if their score exceeds the RCI. Typically, a score that exceeds the RCI corresponds with a change in severity level, with the exception being the severe category (Barkham et al., 2006).\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+    "pageNumber": 3,
+    "text": "For comprehensive information on the CORE-OM, \nsee here\n.\nBoth a raw score and a clinical percentile are given for the total scale and each of the four\nsubscales. Higher scores indicate poorer well-being, greater distress, more functional\nimpairment, and higher risk across the past week.\n· Subjective well-being deficits (items 4, 14, 17, 31)\n· Problems/symptoms (items 2, 5, 8, 11, 13, 15, 18, 20, 23, 27, 28, 30)\n· Life functioning difficulties (1, 3, 7, 12, 10, 19, 21, 25, 26, 29, 32, 33)\n· Risk/harm (9, 6, 16, 22, 24, 34)\nScores are presented as a percentile compared to a clinical sample, where a percentile of 50\nrepresents the average psychological distress of someone seeking intervention.\nWhen administered more than once, two graphs are produced. The first shows the total\npercentile over time, which compares respondents' total score to others seeking mental health\nsupport. The second graph represents subscale percentiles over time and is helpful for\nunderstanding the areas of improvement or deterioration and therefore targets for treatment.\nBoth graphs can be useful in providing feedback to clients and assessing treatment response.\nSeverity ranges are reported for the CORE-OM, ranging from Healthy to Severe:\n· 0-20 Healthy: Minimal psychological distress; typical of a non-distressed population without\nmental health concerns.\n· 21-33 Low: Some distress related to everyday challenges or temporary situations, within the\ngeneral population range.\n· 34-50 Mild: Noticeable psychological discomfort, early signal of a trend towards mental health\nconcerns.\n· 51-67 Moderate: Emerging psychological distress\n· 68-84 Moderate-to-Severe: noticeable distress that is likely to be interfering with daily\nfunctioning\n· 85-136 Severe: Significant distress impacting several life domains, substantially impacting well-\nbeing and daily functioning.\nA total raw score of 33 is the established cut-off for distinguishing between clinical and non-",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Both a raw score and a clinical percentile are given for the total scale and each of the four subscales.",
+   "Scores are presented as a percentile compared to a clinical sample, where a percentile of 50 represents the average psychological distress of someone seeking intervention.",
+   "When administered more than once, two graphs are produced.",
+   "The first shows the total percentile over time, which compares respondents’ total score to others seeking mental health support.",
+   "The second graph represents subscale percentiles over time and is helpful for understanding the areas of improvement or deterioration and therefore targets for treatment.",
+   "Both graphs can be useful in providing feedback to clients and assessing treatment response.",
+   "These total raw score ranges correspond to specific clinical percentile ranges as follows:",
+   "Healthy: 1st-3rd percentile",
+   "Low-level: 4th-11th percentile",
+   "Mild: 12th-31st percentile",
+   "Moderate: 32nd-60th percentile",
+   "Moderate-to-Severe: 61st-84th percentile",
+   "Severe: 85th-100th percentile",
+   "For the four subscales (Well-being deficits, Problems/symptoms, Life functioning difficulties, and Risk/harm), severity descriptors are assigned based on the percentile ranges derived from the total score.",
+   "A total raw score of 33 is the established cut-off for distinguishing between clinical and non-clinical populations (Barkham et al., 2006; Connell et al., 2007).",
+   "A change of 17 raw score points or more is considered to exceed the reliable change index (RCI) threshold for changes that may be due to measurement error or chance acting alone, indicating meaningful improvement or deterioration (Barkham et al., 2006).",
+   "Therefore, to be sure that a client has made a reliable change, a score difference of 17 or more should be observed."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_f7c3e569c0f9c016b2313552fd0a4a55",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ffffff",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#fdfdfd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#f5f6f5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#f2f2f2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#eeeeee",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e7e7e7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#e3e4e3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#e0e0e0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#dcdcdc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#d5d5d5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#d1d2d1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#cecece",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#c7c7c7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#c3c3c3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#bfc0bf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#b8b8b8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#b5b5b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#b1b1b1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#aaaaaa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#a6a6a6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#a3a3a3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#9b9c9b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#989898",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#949494",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#8d8d8d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#898a89",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#868686",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#828282",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#7b7b7b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#777877",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#747474",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#6d6d6d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#696969",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_c90121d9af0112d4ac953e954fdbd2ab",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#b61c1c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#b71d1d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#b92121",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#ba2323",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#bb2525",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#be2929",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#bf2b2b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#c02d2d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#c12f2f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#c33333",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#c43535",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#c53737",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#c73b3b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#c83d3d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#c93f3f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#cc4343",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#cd4545",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#ce4848",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#d04c4c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#d14e4e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#d25050",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#d45454",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#d55656",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#d65858",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#d95c5c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#da5e5e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#db6060",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#dc6262",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#de6666",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#df6868",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#e06a6a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#e26e6e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#e37070",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_f519716d59b75b741769f62e389ef56b",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ffffff",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#fcfcfc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#f5f5f5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#f1f1f1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#ededed",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e9eae9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#e2e2e2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#dedede",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#dadbda",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#d3d3d3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#cfcfcf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#cbcccb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#c8c8c8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#c0c0c0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#bcbdbc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#b9b9b9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#b5b5b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#adaead",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#aaaaaa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#a6a6a6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#9e9f9e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#9b9b9b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#979797",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#939393",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#8c8c8c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#888888",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#848484",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#7d7d7d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#797979",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#757575",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#717271",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#6a6a6a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#676767",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_a0a62c8687bbe9caacee459b540f4cc5",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#b61c1c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#b71d1d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#b92121",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#bb2323",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#bc2525",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#bd2727",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#bf2c2c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#c02e2e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#c13030",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#c43434",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#c53636",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#c63838",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#c73b3b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#c93f3f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#ca4141",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#cb4343",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#cd4545",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#cf4a4a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#d04c4c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#d14e4e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#d35252",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#d45454",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#d65656",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#d75959",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#d95d5d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#da5f5f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#db6161",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#dd6565",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#df6767",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#e06a6a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#e16c6c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#e37070",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#e47272",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 4,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 5,
+   "unresolvedCells": 227
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

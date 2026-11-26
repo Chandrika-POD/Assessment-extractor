@@ -1,0 +1,1071 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "multidimensional-inventory-of-dissociation-60-item-adolescent-version-mid-60-a--67327718a38d",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Multidimensional Inventory of Dissociation – 60-item Adolescent version (MID-60-A)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Multidimensional Inventory of Dissociation 60-item – Adolescent version (MID-60-A) is a screening tool for adolescents (16-19 years) that assesses dissociative symptoms and experiences specific to DSM-5-TR dissociative disorders. It also captures dissociative experiences, PTSD and somatic symptoms, and phenomena closely related to dissociation such as trance and self-confusion. The MID-60-A is the adolescent version of the MID-60 used in adults, with minor changes to two questions (50 and 52).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "How often do you have the following experiences when you are not under the influence of alcohol or drugs? Please select the number that best describes you. Select a “0” if the experience never happens to you; select a “10” if it is always happening to you. If it happens sometimes, but not all the time, choose a number between 1 and 9 that best describes how often it happens to you.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34",
+   "Q35",
+   "Q36",
+   "Q37",
+   "Q38",
+   "Q39",
+   "Q40",
+   "Q41",
+   "Q42",
+   "Q43",
+   "Q44",
+   "Q45",
+   "Q46",
+   "Q47",
+   "Q48",
+   "Q49",
+   "Q50",
+   "Q51",
+   "Q52",
+   "Q53",
+   "Q54",
+   "Q55",
+   "Q56",
+   "Q57",
+   "Q58",
+   "Q59",
+   "Q60"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "DID: Amnesia",
+    "method": "mean",
+    "item_ids": [
+     "Q42",
+     "Q45",
+     "Q48",
+     "Q58"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID: Amnesia (Items 42, 45, 48, 58, mean of circled values × 10):",
+     "y": 199.5,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_2",
+    "label": "DID / OSDD-1: Subjective awareness of alter personalities and self-states",
+    "method": "mean",
+    "item_ids": [
+     "Q3",
+     "Q36",
+     "Q39",
+     "Q49",
+     "Q57"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID / OSDD-1: Subjective awareness of alter personalities and self-states (Items 3, 36, 39, 49, 57, mean of circled values × 10):",
+     "y": 221.2,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_3",
+    "label": "DID / OSDD-1: Angry intrusions",
+    "method": "mean",
+    "item_ids": [
+     "Q28",
+     "Q33",
+     "Q35",
+     "Q46",
+     "Q60"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID / OSDD-1: Angry intrusions (Items 28, 33, 35, 46, 60, mean of circled values × 10):",
+     "y": 243.0,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_4",
+    "label": "DID / OSDD-1: Persecutory intrusions",
+    "method": "mean",
+    "item_ids": [
+     "Q22",
+     "Q37",
+     "Q44",
+     "Q56",
+     "Q59"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "DID / OSDD-1: Persecutory intrusions (Items 22, 37, 44, 56, 59, mean of circled values × 10):",
+     "y": 264.8,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_5",
+    "label": "Derealisation / Depersonalisation",
+    "method": "mean",
+    "item_ids": [
+     "Q2",
+     "Q7",
+     "Q9",
+     "Q13",
+     "Q25",
+     "Q47",
+     "Q50",
+     "Q53"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Derealisation / Depersonalisation (Items 2, 7, 9, 13, 25, 47, 50, 53, mean of circled values × 10):",
+     "y": 286.5,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_6",
+    "label": "Dissociative Amnesia: Distress about severe memory problems",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q8",
+     "Q20",
+     "Q38",
+     "Q43",
+     "Q52"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Dissociative Amnesia: Distress about severe memory problems (Items 1, 8, 20, 38, 43, 52, mean of circled values × 10):",
+     "y": 308.2,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_7",
+    "label": "Dissociative Amnesia: Loss of autobiographical memory",
+    "method": "mean",
+    "item_ids": [
+     "Q16",
+     "Q19",
+     "Q24",
+     "Q29",
+     "Q34"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Dissociative Amnesia: Loss of autobiographical memory (Items 16, 19, 24, 29, 34, mean of circled values × 10):",
+     "y": 330.0,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_8",
+    "label": "PTSD: Flashbacks",
+    "method": "mean",
+    "item_ids": [
+     "Q4",
+     "Q15",
+     "Q31",
+     "Q40",
+     "Q54"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "PTSD: Flashbacks (Items 4, 15, 31, 40, 54, mean of circled values × 10):",
+     "y": 351.8,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_9",
+    "label": "Conversion Disorder: Body symptoms",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q10",
+     "Q14",
+     "Q18"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Conversion Disorder: Body symptoms (Items 5, 10, 14, 18, mean of circled values × 10):",
+     "y": 373.5,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_10",
+    "label": "General: Trance",
+    "method": "mean",
+    "item_ids": [
+     "Q21",
+     "Q27",
+     "Q30",
+     "Q32",
+     "Q41",
+     "Q51"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "General: Trance (Items 21, 27, 30, 32, 41, 51, mean of circled values × 10):",
+     "y": 417.0,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_11",
+    "label": "General: Self-confusion",
+    "method": "mean",
+    "item_ids": [
+     "Q6",
+     "Q11",
+     "Q12",
+     "Q17",
+     "Q23",
+     "Q55"
+    ],
+    "multiplier": 10.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "General: Self-confusion (Items 6, 11, 12, 17, 23, 55, mean of circled values × 10):",
+     "y": 438.8,
+     "url": null,
+     "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "The normative percentile provides a comparison against a sample of typical individuals (Kate et al., 2021). A percentile of 50 represents average (and healthy) levels of dissociative experiences. In contrast, a percentile of 90 indicates the respondent scored above 90 percent of typical individuals and is of clinical significance.",
+   "Subscales The MID-60-A provides information on subscales relevant to different diagnoses. This enables the clinician to form an impression about the likely diagnosis. For example, a score of 27 is clinically significant, but does not indicate the most likely diagnosis. If the subscales of PTSD and depersonalisation/derealisation are both above the clinical threshold, this can indicate the person has the dissociative subtype of PTSD, whereas if the memory-related subscales are above the clinical threshold this can indicate dissociative amnesia. Another example is a person who has a total mean score of 45, which would seem to indicate dissociative identity disorder. Yet, if the subscale score for amnesia (for recent events) is not elevated, this points towards a more severe case of other specified dissociative disorder.",
+   "DID: Amnesia (for recent events) – items 42, 45, 48, 58. Clinical cutoff = 10",
+   "DID / OSDD-1: Subjective awareness of alter personalities and self-states – items 3, 36, 39, 49, 57. Clinical cutoff = 20",
+   "DID / OSDD-1: Angry intrusions – items 28, 33, 35, 46, 60. Clinical cutoff = 18",
+   "DID / OSDD-1: Persecutory intrusions – items 22, 37, 44, 56, 59. Clinical cutoff = 18",
+   "Derealisation/Depersonalisation – items 2, 7, 9, 13, 25, 47, 50, 53. Clinical cutoff = 20",
+   "Dissociative Amnesia: Distress about severe memory problems – items 1, 8, 20, 38, 43, 52. Clinical cutoff = 30",
+   "Dissociative Amnesia: Loss of autobiographical memory – items 16, 19, 24, 29, 34. Clinical cutoff = 34",
+   "PTSD: Flashbacks – items 4, 15, 31, 40, 54. Clinical cutoff = 16",
+   "Conversion Disorder: Body symptoms – items 5, 10, 14, 18. Clinical cutoff = 10",
+   "Conversion Disorder: Pseudo-Seizures (Psychogenic non-epileptic seizures) – item 26. Clinical cutoff = 10",
+   "General Subscales: Trance – items 21, 27, 30, 32, 41, 51. Clinical cutoff = 11.7",
+   "General Subscales: Self-confusion – items 6, 11, 12, 17, 23, 55. Clinical cutoff = 33.3"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "MID-60-A Scoring & Interpretation",
+    "text": "A total mean score (range 0 to 100) is calculated by averaging all 60 responses and multiplying by 10. The mean score represents to total level of dissociative experiences, also interpreted as percentage of time the person self-reports having dissociative symptoms and experiences.\nTwo percentiles are presented for the total mean score, indicating how the respondent scored in comparison to normative and clinical populations.\nThe normative percentile provides a comparison against a sample of typical individuals (Kate et al., 2021). A percentile of 50 represents average (and healthy) levels of dissociative experiences. In contrast, a percentile of 90 indicates the respondent scored above 90 percent of typical individuals and is of clinical significance.\nThe clinical percentile compares the respondent’s score against people who have been diagnosed with a dissociative disorder (Kate, Jamieson & Middleton, 2021; 2022). A clinical percentile of 50 represents pathological levels of dissociation that is typical among those with a dissociative disorder.\nInterpretation for the MID-60-A mean scores is as follows:\n0–7: Does not have dissociative experiences\n7–14: Has few diagnostically significant dissociative experiences\n15–20: Mild dissociative symptoms and experiences. PTSD or a mild dissociative disorder (such as dissociative amnesia, depersonalisation / derealisation disorder) are possible\n21–30: May have dissociative disorder and/or PTSD\n31–40: May have a dissociative disorder (such as OSDD-1 or DID) and PTSD\n41–64: Probably has DID or a severe dissociative disorder and PTSD\n64 +: Severe dissociative and post-traumatic symptoms. High scores may also reflect neuroticism, attention seeking behaviour, exaggeration or malingering of symptoms, or psychosis\nSubscales The MID-60-A provides information on subscales relevant to different diagnoses. This enables the clinician to form an impression about the likely diagnosis. For example, a score of 27 is clinically significant, but does not indicate the most likely diagnosis. If the subscales of PTSD and depersonalisation/derealisation are both above the clinical threshold, this can indicate the person has the dissociative subtype of PTSD, whereas if the memory-related subscales are above the clinical threshold this can indicate dissociative amnesia. Another example is a person who has a total mean score of 45, which would seem to indicate dissociative identity disorder. Yet, if the subscale score for amnesia (for recent events) is not elevated, this points towards a more severe case of other specified dissociative disorder.\nThe subscales are:\nDID: Amnesia (for recent events) – items 42, 45, 48, 58. Clinical cutoff = 10\nDID / OSDD-1: Subjective awareness of alter personalities and self-states – items 3, 36, 39, 49, 57. Clinical cutoff = 20\nDID / OSDD-1: Angry intrusions – items 28, 33, 35, 46, 60. Clinical cutoff = 18\nDID / OSDD-1: Persecutory intrusions – items 22, 37, 44, 56, 59. Clinical cutoff = 18\nDerealisation/Depersonalisation – items 2, 7, 9, 13, 25, 47, 50, 53. Clinical cutoff = 20\nDissociative Amnesia: Distress about severe memory problems – items 1, 8, 20, 38, 43, 52. Clinical cutoff = 30\nDissociative Amnesia: Loss of autobiographical memory – items 16, 19, 24, 29, 34. Clinical cutoff = 34\nPTSD: Flashbacks – items 4, 15, 31, 40, 54. Clinical cutoff = 16\nConversion Disorder: Body symptoms – items 5, 10, 14, 18. Clinical cutoff = 10\nConversion Disorder: Pseudo-Seizures (Psychogenic non-epileptic seizures) – item 26. Clinical cutoff = 10\nGeneral Subscales: Trance – items 21, 27, 30, 32, 41, 51. Clinical cutoff = 11.7\nGeneral Subscales: Self-confusion – items 6, 11, 12, 17, 23, 55. Clinical cutoff = 33.3\nThe MID-60-A is for screening purposes, is not designed to be the sole determinant of a diagnosis and should always be used in conjunction with clinical expertise. Further evaluations can be conducted with the Structured Clinical Interview for DSM-5 Dissociative Disorders (SCID-D) or Dissociative Disorders Interview Schedule (DDIS).\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 3,
+    "text": "Conversion Disorder: Pseudo-seizures (Item 26, circled value × 10):",
+    "y": 395.2,
+    "url": null,
+    "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Total Mean Score (add all 60 responses, divide by 60, then multiply by 10)",
+    "y": 471.8,
+    "url": null,
+    "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Kate, M.-A. (2022). The Adolescent Multidimensional Inventory of Dissociation 60 item version (A-MID-60). [Unpublished measurement instrument]. Psychological",
+    "y": 516.8,
+    "url": null,
+    "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Kate, M.-A. (2022). The Adolescent Multidimensional Inventory of Dissociation 60 item version (A-MID-60). [Unpublished measurement instrument]. Psychological Sciences, Southern Cross University.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Dell, P. F. (2006). The Multidimensional Inventory of Dissociation (MID): A Comprehensive measure of pathological dissociation. Journal of Trauma & Dissociation, 7(2), 77-106.\nDell, P. F., Coy, D. M., & Madere, J. (2017). An Interpretive Manual for the Multidimensional Inventory of Dissociation (MID). In (2nd ed.). https://www.mid-assessment.com/request-mid-analysis/\nKate, M.-A., Jamieson, G., & Middleton, W. (2021). Childhood Sexual, Emotional, and Physical Abuse as Predictors of Dissociation in Adulthood. Journal of Child Sexual Abuse, 1-24. https://doi.org/10.1080/10538712.2021.1955789\nKate, M.-A., Jamieson, G., & Middleton, W. (2022). Parent-child dynamics as predictors of dissociation in adulthood. [Manuscript submitted for publication]. Psychological Sciences, Southern Cross University.\nKate, M.-A., Jamieson, G., Dorahy, M. J., & Middleton, W. (2021). Measuring Dissociative Symptoms and Experiences in an Australian College Sample Using a Short Version of the Multidimensional Inventory of Dissociation. Journal of Trauma & Dissociation, 22(3), 265-287. https://doi.org/10.1080/15299732.2020.1792024\nKate, M.-A., Hopwood, T., & Jamieson, G. (2020). The prevalence of Dissociative Disorders and dissociative experiences in college populations: a meta-analysis of 98 studies. Journal of Trauma & Dissociation, 21(1), 16-61. https://doi.org/10.1080/15299732.2019.1647915\nKorzekwa, M. I., Dell, P. F., Links, P. S., Thabane, L., & Fougere, P. (2009). Dissociation in Borderline Personality Disorder: A Detailed Look. Journal of Trauma & Dissociation, 10(3), 346-367. https://doi.org/10.1080/15299730902956838\nLaddis, A., & Dell, P. F. (2012). Dissociation and Psychosis in Dissociative Identity Disorder and Schizophrenia. Journal of Trauma & Dissociation, 13(4), 397-413. https://doi.org/10.1080/15299732.2012.664967",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Multidimensional Inventory of Dissociation – 60-item Adolescent version (MID-60-A) PDF",
+   "source_url": null,
+   "sha256": "47e3cc55cd8a271e2aacb73655bce6d24c76e80ef197891c67cafcf408902735",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/47e3cc55cd8a271e2aacb73655bce6d24c76e80ef197891c67cafcf408902735.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Positive Childhood Experiences (PCEs) scale",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f49999940e0e4841df12323896f5a78dabcd01177715a7cbf7e26268d900314b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f49999940e0e4841df12323896f5a78dabcd01177715a7cbf7e26268d900314b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Multidimensional Inventory of Dissociation – 60-item Adolescent version questions",
+   "source_url": null,
+   "sha256": "6768e13c7078ba36373ba336c50357f3f77cfdfa56ec522f52cbd7954850a9f1",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6768e13c7078ba36373ba336c50357f3f77cfdfa56ec522f52cbd7954850a9f1.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MID-60-A Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Multidimensional Inventory of Dissociation – 60-item Adolescent version using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "instructions available here",
+   "source_url": null,
+   "sha256": "74ae04fda1ea7eb5673435d08a22b7a334394d938410584cea3a20e8686e39ae",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/74ae04fda1ea7eb5673435d08a22b7a334394d938410584cea3a20e8686e39ae.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/43c6be390bd47bfa1d8066800e2515e8efb453f0f2f1401cd9229a2fd98acdc8.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 60
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/78a7134eb2fdc94bd15c8e0c772a6812cc004b2c5a710bdd5199170b690f65d3.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "b1478f9137c8854e72906adf7d08b844b96f83123423b259f9c752b5e80964e7",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_7",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_8",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_9",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_10",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_11",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_7",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_8",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_9",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_10",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_11",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:14:39.818387+00:00",
+  "raw_extraction_sha256": "08256095feb564e1d5cbf4174c122dde559a3a381c6b7fd95432195b23851b01",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Complex dissociation scale"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": null,
+    "title": "Adolescent"
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Trauma"
+   },
+   {
+    "url": "https://www.mid-assessment.com/request-mid-analysis/",
+    "title": "https://www.mid-assessment.com/request-mid-analysis/"
+   },
+   {
+    "url": "https://doi.org/10.1080/10538712.2021.1955789",
+    "title": "https://doi.org/10.1080/10538712.2021.1955789"
+   },
+   {
+    "url": "https://doi.org/10.1080/15299732.2020.1792024",
+    "title": "https://doi.org/10.1080/15299732.2020.1792024"
+   },
+   {
+    "url": "https://doi.org/10.1080/15299732.2019.1647915",
+    "title": "https://doi.org/10.1080/15299732.2019.1647915"
+   },
+   {
+    "url": "https://doi.org/10.1080/15299730902956838",
+    "title": "https://doi.org/10.1080/15299730902956838"
+   },
+   {
+    "url": "https://doi.org/10.1080/15299732.2012.664967",
+    "title": "https://doi.org/10.1080/15299732.2012.664967"
+   },
+   {
+    "url": null,
+    "title": "Adolescent dissociation questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Dissociative Symptoms Scale"
+   },
+   {
+    "url": null,
+    "title": "Parent-report dissociation questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Paediatric complex trauma scale"
+   },
+   {
+    "url": null,
+    "title": "Positive family experiences measure"
+   },
+   {
+    "url": null,
+    "title": "Childhood resilience measure"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "instructions available here"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

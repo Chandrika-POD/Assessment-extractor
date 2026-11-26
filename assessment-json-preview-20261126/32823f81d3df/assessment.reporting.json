@@ -1,0 +1,1365 @@
+{
+ "version": "2.0.0-draft.1",
+ "status": "draft_requires_clinical_review",
+ "clinical_scoring_enabled": false,
+ "metrics": [
+  {
+   "rule_id": "inattentive_raw",
+   "label": "Inattentive raw score",
+   "minimum": 0,
+   "maximum": 27,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/0",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "inattentive_symptom_count",
+   "label": "Inattentive symptom count",
+   "minimum": 0,
+   "maximum": 9,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "count_threshold",
+   "calculation_ref": "/scoring/rules/1",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "item count"
+  },
+  {
+   "rule_id": "hyperactive_impulsive_raw",
+   "label": "Hyperactive Impulsive raw score",
+   "minimum": 0,
+   "maximum": 27,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/2",
+   "item_ids": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "hyperactive_impulsive_symptom_count",
+   "label": "Hyperactive Impulsive symptom count",
+   "minimum": 0,
+   "maximum": 9,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "count_threshold",
+   "calculation_ref": "/scoring/rules/3",
+   "item_ids": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "item count"
+  },
+  {
+   "rule_id": "combined_raw",
+   "label": "Combined raw score",
+   "minimum": 0,
+   "maximum": 54,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/4",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "combined_symptom_count",
+   "label": "Combined symptom count",
+   "minimum": 0,
+   "maximum": 18,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "count_threshold",
+   "calculation_ref": "/scoring/rules/5",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "item count"
+  },
+  {
+   "rule_id": "oppositional_conduct_raw",
+   "label": "Oppositional Conduct raw score",
+   "minimum": 0,
+   "maximum": 30,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/6",
+   "item_ids": [
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "oppositional_conduct_symptom_count",
+   "label": "Oppositional Conduct symptom count",
+   "minimum": 0,
+   "maximum": 10,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "count_threshold",
+   "calculation_ref": "/scoring/rules/7",
+   "item_ids": [
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "item count"
+  },
+  {
+   "rule_id": "anxiety_depression_raw",
+   "label": "Anxiety Depression raw score",
+   "minimum": 0,
+   "maximum": 21,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/8",
+   "item_ids": [
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "anxiety_depression_symptom_count",
+   "label": "Anxiety Depression symptom count",
+   "minimum": 0,
+   "maximum": 7,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "count_threshold",
+   "calculation_ref": "/scoring/rules/9",
+   "item_ids": [
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "item count"
+  },
+  {
+   "rule_id": "impaired_performance_domains",
+   "label": "Number of performance domains rated problematic",
+   "minimum": 0,
+   "maximum": 8,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "count_threshold",
+   "calculation_ref": "/scoring/rules/10",
+   "item_ids": [
+    "Q36",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q40",
+    "Q41",
+    "Q42",
+    "Q43"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "item count"
+  }
+ ],
+ "charts": [
+  {
+   "id": "inattentive_raw",
+   "title": "Inattentive raw score",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "inattentive_raw",
+     "label": "Inattentive raw score",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 27,
+   "axis_unit": "score"
+  },
+  {
+   "id": "inattentive_symptom_count",
+   "title": "Inattentive symptom count",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "inattentive_symptom_count",
+     "label": "Inattentive symptom count",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 9,
+   "axis_unit": "item count"
+  },
+  {
+   "id": "hyperactive_impulsive_raw",
+   "title": "Hyperactive Impulsive raw score",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "hyperactive_impulsive_raw",
+     "label": "Hyperactive Impulsive raw score",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 27,
+   "axis_unit": "score"
+  },
+  {
+   "id": "hyperactive_impulsive_symptom_count",
+   "title": "Hyperactive Impulsive symptom count",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "hyperactive_impulsive_symptom_count",
+     "label": "Hyperactive Impulsive symptom count",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 9,
+   "axis_unit": "item count"
+  },
+  {
+   "id": "combined_raw",
+   "title": "Combined raw score",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "combined_raw",
+     "label": "Combined raw score",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 54,
+   "axis_unit": "score"
+  },
+  {
+   "id": "combined_symptom_count",
+   "title": "Combined symptom count",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "combined_symptom_count",
+     "label": "Combined symptom count",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 18,
+   "axis_unit": "item count"
+  },
+  {
+   "id": "oppositional_conduct_raw",
+   "title": "Oppositional Conduct raw score",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "oppositional_conduct_raw",
+     "label": "Oppositional Conduct raw score",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "score"
+  },
+  {
+   "id": "oppositional_conduct_symptom_count",
+   "title": "Oppositional Conduct symptom count",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "oppositional_conduct_symptom_count",
+     "label": "Oppositional Conduct symptom count",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 10,
+   "axis_unit": "item count"
+  },
+  {
+   "id": "anxiety_depression_raw",
+   "title": "Anxiety Depression raw score",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "anxiety_depression_raw",
+     "label": "Anxiety Depression raw score",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 21,
+   "axis_unit": "score"
+  },
+  {
+   "id": "anxiety_depression_symptom_count",
+   "title": "Anxiety Depression symptom count",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "anxiety_depression_symptom_count",
+     "label": "Anxiety Depression symptom count",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 7,
+   "axis_unit": "item count"
+  },
+  {
+   "id": "impaired_performance_domains",
+   "title": "Number of performance domains rated problematic",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "impaired_performance_domains",
+     "label": "Number of performance domains rated problematic",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 8,
+   "axis_unit": "item count"
+  }
+ ],
+ "comparisons": {
+  "reference_visits": [
+   "previous",
+   "baseline"
+  ],
+  "delta_formula": "current_minus_reference",
+  "deduplicate_same_reference_visit": true,
+  "require_same_assessment_definition_language_and_scoring_version": true,
+  "missing_result": "withhold_comparison",
+  "single_visit": "show_current_scores_only",
+  "date_source": "saved_session_completion_timestamp",
+  "require_compatible_respondent_context": true,
+  "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+  "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+  "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+ },
+ "percentiles": {
+  "enabled": false,
+  "reason": "verified_lookup_not_available"
+ },
+ "interpretation": {
+  "method": "deterministic_templates",
+  "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+  "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+  "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+  "clinical_significance": "not_implemented_requires_review",
+  "diagnosis": "not_inferred",
+  "severity_source": "not_compiled",
+  "overall_total": null,
+  "combine_metrics_into_new_total": false,
+  "source_guidance_ref": "/scoring/source_guidance",
+  "source_guidance_use": "reference_text_for_review_not_executable_rules",
+  "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+  "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+  "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+ },
+ "source_evidence": {
+  "questionnaire_sha256": "f4c966f9ae9a62d5e884c1214f2f9cfeb8dd374c631d398c1623d9a3c70e02cb",
+  "guidance_titles": [
+   "VADTRS Scoring & Interpretation"
+  ]
+ },
+ "mode": "numeric_scores",
+ "required_context": [],
+ "coverage": {
+  "questionnaire_available": true,
+  "numeric_rule_count": 11,
+  "rules_included": [
+   "inattentive_raw",
+   "inattentive_symptom_count",
+   "hyperactive_impulsive_raw",
+   "hyperactive_impulsive_symptom_count",
+   "combined_raw",
+   "combined_symptom_count",
+   "oppositional_conduct_raw",
+   "oppositional_conduct_symptom_count",
+   "anxiety_depression_raw",
+   "anxiety_depression_symptom_count",
+   "impaired_performance_domains"
+  ],
+  "raw_calculation_status": "draft_rules_available",
+  "interpretation_status": "requires_review",
+  "full_source_coverage_verified": false,
+  "clinical_review_complete": false,
+  "remaining_work": [],
+  "review_issue_codes": [
+   "selection_and_branching_need_review",
+   "scoring_not_structured",
+   "independent_review_pending",
+   "source_item_count_differs"
+  ],
+  "reference_guidance_only": false,
+  "missing_direction_rule_ids": [
+   "inattentive_raw",
+   "inattentive_symptom_count",
+   "hyperactive_impulsive_raw",
+   "hyperactive_impulsive_symptom_count",
+   "combined_raw",
+   "combined_symptom_count",
+   "oppositional_conduct_raw",
+   "oppositional_conduct_symptom_count",
+   "anxiety_depression_raw",
+   "anxiety_depression_symptom_count",
+   "impaired_performance_domains"
+  ]
+ },
+ "sections": [
+  {
+   "id": "patient_details",
+   "enabled": true,
+   "source": "saved_patient_and_session"
+  },
+  {
+   "id": "assessment_summary",
+   "enabled": true,
+   "source": "assessment_and_reporting_coverage"
+  },
+  {
+   "id": "results",
+   "enabled": true,
+   "source": "reporting.metrics"
+  },
+  {
+   "id": "score_charts",
+   "enabled": true,
+   "source": "reporting.charts",
+   "single_visit": "range_bar",
+   "repeated_visits": "line_chart"
+  },
+  {
+   "id": "comparisons",
+   "enabled": true,
+   "source": "compatible_saved_sessions"
+  },
+  {
+   "id": "protocol_result",
+   "enabled": false,
+   "source": "scoring.protocol"
+  },
+  {
+   "id": "paired_profile",
+   "enabled": false,
+   "source": "scoring.paired_profile"
+  },
+  {
+   "id": "response_history",
+   "enabled": true,
+   "source": "reporting.item_history"
+  },
+  {
+   "id": "responses",
+   "enabled": true,
+   "source": "reporting.response_groups"
+  },
+  {
+   "id": "source_guidance",
+   "enabled": true,
+   "source": "scoring.source_guidance",
+   "role": "reference_material_requires_review"
+  },
+  {
+   "id": "limitations",
+   "enabled": true,
+   "source": "reporting.coverage"
+  }
+ ],
+ "response_groups": [
+  {
+   "id": "inattentive_raw",
+   "label": "Inattentive raw score",
+   "rule_id": "inattentive_raw",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+   ]
+  },
+  {
+   "id": "inattentive_symptom_count",
+   "label": "Inattentive symptom count",
+   "rule_id": "inattentive_symptom_count",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+   ]
+  },
+  {
+   "id": "hyperactive_impulsive_raw",
+   "label": "Hyperactive Impulsive raw score",
+   "rule_id": "hyperactive_impulsive_raw",
+   "item_ids": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ]
+  },
+  {
+   "id": "hyperactive_impulsive_symptom_count",
+   "label": "Hyperactive Impulsive symptom count",
+   "rule_id": "hyperactive_impulsive_symptom_count",
+   "item_ids": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ]
+  },
+  {
+   "id": "combined_raw",
+   "label": "Combined raw score",
+   "rule_id": "combined_raw",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ]
+  },
+  {
+   "id": "combined_symptom_count",
+   "label": "Combined symptom count",
+   "rule_id": "combined_symptom_count",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ]
+  },
+  {
+   "id": "oppositional_conduct_raw",
+   "label": "Oppositional Conduct raw score",
+   "rule_id": "oppositional_conduct_raw",
+   "item_ids": [
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28"
+   ]
+  },
+  {
+   "id": "oppositional_conduct_symptom_count",
+   "label": "Oppositional Conduct symptom count",
+   "rule_id": "oppositional_conduct_symptom_count",
+   "item_ids": [
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28"
+   ]
+  },
+  {
+   "id": "anxiety_depression_raw",
+   "label": "Anxiety Depression raw score",
+   "rule_id": "anxiety_depression_raw",
+   "item_ids": [
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35"
+   ]
+  },
+  {
+   "id": "anxiety_depression_symptom_count",
+   "label": "Anxiety Depression symptom count",
+   "rule_id": "anxiety_depression_symptom_count",
+   "item_ids": [
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35"
+   ]
+  },
+  {
+   "id": "impaired_performance_domains",
+   "label": "Number of performance domains rated problematic",
+   "rule_id": "impaired_performance_domains",
+   "item_ids": [
+    "Q36",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q40",
+    "Q41",
+    "Q42",
+    "Q43"
+   ]
+  },
+  {
+   "id": "recorded_responses",
+   "label": "Additional recorded responses",
+   "rule_id": null,
+   "item_ids": [
+    "Q44"
+   ]
+  }
+ ],
+ "item_history": [
+  {
+   "item_id": "Q1",
+   "question_ref": "/questionnaire/items/0",
+   "source_label": "1",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q2",
+   "question_ref": "/questionnaire/items/1",
+   "source_label": "2",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q3",
+   "question_ref": "/questionnaire/items/2",
+   "source_label": "3",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q4",
+   "question_ref": "/questionnaire/items/3",
+   "source_label": "4",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q5",
+   "question_ref": "/questionnaire/items/4",
+   "source_label": "5",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q6",
+   "question_ref": "/questionnaire/items/5",
+   "source_label": "6",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q7",
+   "question_ref": "/questionnaire/items/6",
+   "source_label": "7",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q8",
+   "question_ref": "/questionnaire/items/7",
+   "source_label": "8",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q9",
+   "question_ref": "/questionnaire/items/8",
+   "source_label": "9",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q10",
+   "question_ref": "/questionnaire/items/9",
+   "source_label": "10",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q11",
+   "question_ref": "/questionnaire/items/10",
+   "source_label": "11",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q12",
+   "question_ref": "/questionnaire/items/11",
+   "source_label": "12",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q13",
+   "question_ref": "/questionnaire/items/12",
+   "source_label": "13",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q14",
+   "question_ref": "/questionnaire/items/13",
+   "source_label": "14",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q15",
+   "question_ref": "/questionnaire/items/14",
+   "source_label": "15",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q16",
+   "question_ref": "/questionnaire/items/15",
+   "source_label": "16",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q17",
+   "question_ref": "/questionnaire/items/16",
+   "source_label": "17",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q18",
+   "question_ref": "/questionnaire/items/17",
+   "source_label": "18",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q19",
+   "question_ref": "/questionnaire/items/18",
+   "source_label": "19",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q20",
+   "question_ref": "/questionnaire/items/19",
+   "source_label": "20",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q21",
+   "question_ref": "/questionnaire/items/20",
+   "source_label": "21",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q22",
+   "question_ref": "/questionnaire/items/21",
+   "source_label": "22",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q23",
+   "question_ref": "/questionnaire/items/22",
+   "source_label": "23",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q24",
+   "question_ref": "/questionnaire/items/23",
+   "source_label": "24",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q25",
+   "question_ref": "/questionnaire/items/24",
+   "source_label": "25",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q26",
+   "question_ref": "/questionnaire/items/25",
+   "source_label": "26",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q27",
+   "question_ref": "/questionnaire/items/26",
+   "source_label": "27",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q28",
+   "question_ref": "/questionnaire/items/27",
+   "source_label": "28",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q29",
+   "question_ref": "/questionnaire/items/28",
+   "source_label": "29",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q30",
+   "question_ref": "/questionnaire/items/29",
+   "source_label": "30",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q31",
+   "question_ref": "/questionnaire/items/30",
+   "source_label": "31",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q32",
+   "question_ref": "/questionnaire/items/31",
+   "source_label": "32",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q33",
+   "question_ref": "/questionnaire/items/32",
+   "source_label": "33",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q34",
+   "question_ref": "/questionnaire/items/33",
+   "source_label": "34",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q35",
+   "question_ref": "/questionnaire/items/34",
+   "source_label": "35",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q36",
+   "question_ref": "/questionnaire/items/35",
+   "source_label": "36",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q37",
+   "question_ref": "/questionnaire/items/36",
+   "source_label": "37",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q38",
+   "question_ref": "/questionnaire/items/37",
+   "source_label": "38",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q39",
+   "question_ref": "/questionnaire/items/38",
+   "source_label": "39",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q40",
+   "question_ref": "/questionnaire/items/39",
+   "source_label": "40",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q41",
+   "question_ref": "/questionnaire/items/40",
+   "source_label": "41",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q42",
+   "question_ref": "/questionnaire/items/41",
+   "source_label": "42",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q43",
+   "question_ref": "/questionnaire/items/42",
+   "source_label": "43",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q44",
+   "question_ref": "/questionnaire/items/43",
+   "source_label": "44",
+   "response_type": "text",
+   "presentation": "text_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  }
+ ],
+ "protocol": null,
+ "paired_profile": null
+}

@@ -1,0 +1,1281 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total PCI Score",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total PCI Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total PCI Score (sum of items 1–25)",
+     "y": 450.0,
+     "url": null,
+     "sha256": "f6c3047152658e1d326c0c7e740ee2a47af986e17de21179b34f7e233d97e1aa"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "d1c03e34e13e77c1302af2eb65781f15d750ec1cc719579db8572434d56bddc4",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "dd1c03e34e13e_p1",
+   "documentSha256": "d1c03e34e13e77c1302af2eb65781f15d750ec1cc719579db8572434d56bddc4",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "dd1c03e34e13e_p1_chart_1"
+   ],
+   "tableIds": [
+    "dd1c03e34e13e_p1_table_1",
+    "dd1c03e34e13e_p1_table_2"
+   ],
+   "sectionIds": [
+    "dd1c03e34e13e_p1_section_1",
+    "dd1c03e34e13e_p1_section_2",
+    "dd1c03e34e13e_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "dd1c03e34e13e_p2",
+   "documentSha256": "d1c03e34e13e77c1302af2eb65781f15d750ec1cc719579db8572434d56bddc4",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dd1c03e34e13e_p2_table_1"
+   ],
+   "sectionIds": [
+    "dd1c03e34e13e_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "dd1c03e34e13e_p3",
+   "documentSha256": "d1c03e34e13e77c1302af2eb65781f15d750ec1cc719579db8572434d56bddc4",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dd1c03e34e13e_p3_table_1"
+   ],
+   "sectionIds": [
+    "dd1c03e34e13e_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "dd1c03e34e13e_p1_section_1",
+   "pageId": "dd1c03e34e13e_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd1c03e34e13e_p1_section_2",
+   "pageId": "dd1c03e34e13e_p1",
+   "title": "Total PCI Score",
+   "type": "source_heading",
+   "bboxPt": [
+    254.0,
+    300.87048,
+    342.69199,
+    312.87048
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd1c03e34e13e_p1_section_3",
+   "pageId": "dd1c03e34e13e_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    601.52972,
+    290.26645,
+    615.52972
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd1c03e34e13e_p2_section_1",
+   "pageId": "dd1c03e34e13e_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    266.21176,
+    151.8205,
+    280.21176
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd1c03e34e13e_p3_section_1",
+   "pageId": "dd1c03e34e13e_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "dd1c03e34e13e_p1_chart_1",
+   "title": "Total PCI Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    127.346,
+    316.772,
+    410.346,
+    554.213
+   ],
+   "widthPt": 283.0,
+   "heightPt": 237.441,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 120.122,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 319.39163,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 95.0,
+      "positionPt": 331.16196,
+      "text": "95",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 342.93185,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 85.0,
+      "positionPt": 354.71194,
+      "text": "85",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 366.48184,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 75.0,
+      "positionPt": 378.25174,
+      "text": "75",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 390.02164,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 65.0,
+      "positionPt": 401.79153,
+      "text": "65",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 413.57162,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 55.0,
+      "positionPt": 425.34152,
+      "text": "55",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 437.11182,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 45.0,
+      "positionPt": 448.88171,
+      "text": "45",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 460.65161,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 35.0,
+      "positionPt": 472.4317,
+      "text": "35",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 484.2016,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 25.0,
+      "positionPt": 495.9715,
+      "text": "25",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 507.74139,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 15.0,
+      "positionPt": 519.51166,
+      "text": "15",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 531.29132,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 543.06165,
+      "text": "5",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 554.83154,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#4e79a6",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4964664135524236,
+     "barThicknessPt": 81.00001999999998,
+     "fill": "#4e79a7",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4e79a6"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "dd1c03e34e13e_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 319,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Total PCI Score",
+     "bboxPt": [
+      254.0,
+      300.87048,
+      342.69199,
+      312.87048
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Community",
+     "bboxPt": [
+      414.64999,
+      297.00427,
+      450.04196,
+      304.00427
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      415.03516,
+      304.00427,
+      449.65714,
+      311.00427
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "(Age 26-45)",
+     "bboxPt": [
+      413.86603,
+      311.00427,
+      450.82602,
+      318.00427
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "5th",
+     "bboxPt": [
+      427.48123,
+      536.95428,
+      437.21124,
+      543.95428
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "10th",
+     "bboxPt": [
+      425.53516,
+      521.22418,
+      439.15717,
+      528.22418
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th",
+     "bboxPt": [
+      425.53516,
+      494.94409,
+      439.15717,
+      501.94409
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th",
+     "bboxPt": [
+      425.53516,
+      465.7543,
+      439.15717,
+      472.7543
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      425.53516,
+      436.56409,
+      439.15717,
+      443.56409
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "90th",
+     "bboxPt": [
+      425.53516,
+      410.28439,
+      439.15717,
+      417.28439
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "95th",
+     "bboxPt": [
+      425.53516,
+      394.55429,
+      439.15717,
+      401.55429
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "99th",
+     "bboxPt": [
+      425.53516,
+      365.08438,
+      439.15717,
+      372.08438
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Clinical",
+     "bboxPt": [
+      466.07001,
+      300.50427,
+      488.62393,
+      307.50427
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      460.03604,
+      307.50427,
+      494.65802,
+      314.50427
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "5th",
+     "bboxPt": [
+      472.48215,
+      537.35431,
+      482.21216,
+      544.35431
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "10th",
+     "bboxPt": [
+      470.53607,
+      517.08441,
+      484.15808,
+      524.08441
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th",
+     "bboxPt": [
+      470.53607,
+      483.17419,
+      484.15808,
+      490.17419
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th",
+     "bboxPt": [
+      470.53607,
+      445.53439,
+      484.15808,
+      452.53439
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      470.53607,
+      407.8844,
+      484.15808,
+      414.8844
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "90th",
+     "bboxPt": [
+      470.53607,
+      373.98441,
+      484.15808,
+      380.98441
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "95th",
+     "bboxPt": [
+      470.53607,
+      353.70432,
+      484.15808,
+      360.70432
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "99th",
+     "bboxPt": [
+      470.53607,
+      315.78442,
+      484.15808,
+      322.78442
+     ],
+     "colour": "#1111ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Scoring and Interpretation Information",
+     "bboxPt": [
+      34.3465,
+      601.52972,
+      290.26645,
+      615.52972
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "PCI Scoring & Interpretation",
+    "text": "The Perfectionistic Cognitions Inventory (PCI) yields a total score ranging from 0 to 100, with higher scores indicating greater frequency of perfectionistic cognitions.\n\nPercentiles are provided based on normative data from community and clinical samples to contextualise the respondent’s score. A score on the 50th percentile relative to the community sample represents typical levels of perfectionistic thinking. Scores on or above the 85th percentile suggest clinically elevated perfectionistic cognitions.\n\nThe clinical percentile indicates how the respondent’s score compares to people in psychiatric care, who typically report more frequent perfectionistic thoughts, and thus clinical percentiles will generally be lower than community percentiles for the same raw score.\nWhen interpreting results, it is important to consider that perfectionistic cognitions represent one component of the broader perfectionism construct. Elevated scores suggest the respondent is experiencing frequent automatic thoughts about perfection that may contribute to or maintain psychological distress. These cognitive patterns may be addressed through interventions targeting perfectionistic thinking patterns and the underlying beliefs that maintain them, such as cognitive-behavioural therapy (CBT).\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "d1c03e34e13e77c1302af2eb65781f15d750ec1cc719579db8572434d56bddc4",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the Perfectionistic Cognitions Inventory (PCI), \nsee here\n.\nThe Perfectionistic Cognitions Inventory (PCI) yields a total score ranging from 0 to 100, with\nhigher scores indicating greater frequency of perfectionistic cognitions.\nPercentiles are provided based on normative data from community and clinical samples to\ncontextualise the respondent’s score. A score on the 50th percentile relative to the community\nsample represents typical levels of perfectionistic thinking. Scores on or above the 85th\npercentile suggest clinically elevated perfectionistic cognitions.\nThe clinical percentile indicates how the respondent’s score compares to people in psychiatric\ncare, who typically report more frequent perfectionistic thoughts, and thus clinical percentiles will",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Percentiles are provided based on normative data from community and clinical samples to contextualise the respondent’s score.",
+   "A score on the 50th percentile relative to the community sample represents typical levels of perfectionistic thinking.",
+   "Scores on or above the 85th percentile suggest clinically elevated perfectionistic cognitions.",
+   "The clinical percentile indicates how the respondent’s score compares to people in psychiatric care, who typically report more frequent perfectionistic thoughts, and thus clinical percentiles will generally be lower than community percentiles for the same raw score."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_7ed994d743c236869956790fa63c57b7",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#333332",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#363736",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#3e3e3e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#434343",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#4b4b4b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#515151",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#565756",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#5e5f5e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#646464",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#6a6a6a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#717171",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#767776",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#7d7d7d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#848484",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#8a8a8a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#929292",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#979797",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#9d9d9d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#a4a4a4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#aaabaa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#b2b2b2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#b7b7b7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#bdbdbd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#c5c5c5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#cacbca",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#d0d0d0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#d8d8d8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#dedede",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#e3e3e3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#eaebea",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#f0f0f0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#f8f8f8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fefefe",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_8f011fe33b03adb6b94758ecd4b2dadd",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ef8080",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#f08282",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#f08686",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#f18a8a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#f18f8f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#f29292",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#f29696",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#f39b9b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#f39e9e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#f4a2a2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#f4a6a6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#f4aaaa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#f5aeae",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#f5b2b2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#f6b6b6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#f6bbbb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#f7bebe",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#f7c2c2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#f8c6c6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#f8caca",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#f9cfcf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#f9d2d2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#fad6d6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#fadbdb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#fbdede",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#fbe2e2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#fce7e7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#fceaea",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#fceeee",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#fdf2f2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#fdf6f6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fefbfb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fefefe",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 2,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 157
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": {
+  "$file": "assessment.scoring.rules.json"
+ },
+ "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+ "rules_provenance": {
+  "questionnaire_url": null,
+  "questionnaire_sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+  "page_url": null,
+  "page_sha256": "406e4380d38cf5d9454a0e23c78cf91e4dc7a1d97b062c80f89799d13ca8c8eb",
+  "method": "reviewed_saved_source_membership_and_arithmetic"
+ },
+ "source_rule_excerpts": [
+  "The percentage of symptoms rated as “Moderate” or “Severe” within each cluster of symptoms and the average rating (range: 0-3) of symptoms within each cluster are provided. This highlights the level of difficulty associated with each cluster of symptoms relative to other clusters.",
+  "A descriptor is provided for each symptom cluster based on the average rating of symptoms within each cluster. The descriptors and average rating value ranges are as follows."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "WSR-II Scoring & Interpretation",
+   "text": "Scoring of the WSR-II involves looking at the pattern of responses within and across different clusters of symptoms (i.e., subscales). Items rated on the Likert scale as “Moderate” or “Severe” are defined as “problematic” or “clinically significant”.\n\nThe percentage of symptoms rated as “Moderate” or “Severe” within each cluster of symptoms and the average rating (range: 0-3) of symptoms within each cluster are provided. This highlights the level of difficulty associated with each cluster of symptoms relative to other clusters.\nA descriptor is provided for each symptom cluster based on the average rating of symptoms within each cluster. The descriptors and average rating value ranges are as follows.\nMild: 0.50-1.49\nModerate: 1.50-2.49\nSevere: 2.50-3\n\nSymptom clusters classified as “Moderate” or “Severe” are considered clinically significant, indicating that further investigation and diagnostic assessment are required. The WSR-II results cannot be used for diagnostic purposes. NovoPsych highlights symptom clusters associated with clinically significant difficulties and recommends relevant questionnaires for further assessment.\nIf administered more than once, a graph showing the changes in clinically significant symptom clusters is presented, providing a useful visual tool for monitoring treatment progress and outcomes.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [
+  {
+   "page": 1,
+   "text": "Attention symptom count (items 1–9, count items rated 2 or 3, range 0 to 9):",
+   "y": 427.5,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Hyperactivity and Impulsivity symptom count (items 10–18, count items rated 2 or 3, range 0 to 9):",
+   "y": 675.8,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Oppositional symptom count (items 19–26, count items rated 2 or 3, range 0 to 8):",
+   "y": 258.8,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Development and Learning symptom count (items 27–32, count items rated 2 or 3, range 0 to 6):",
+   "y": 441.8,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Autism Spectrum symptom count (items 33–38, count items rated 2 or 3, range 0 to 6):",
+   "y": 624.0,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Motor Disorders symptom count (items 39–41, count items rated 2 or 3, range 0 to 3):",
+   "y": 741.8,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 3,
+   "text": "Psychosis symptom count (items 42–45, count items rated 2 or 3, range 0 to 4):",
+   "y": 171.8,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 3,
+   "text": "Depression symptom count (items 46–56, count items rated 2 or 3, range 0 to 11):",
+   "y": 463.5,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 3,
+   "text": "Mood Regulation symptom count (items 57–63, count items rated 2 or 3, range 0 to 7):",
+   "y": 667.5,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 3,
+   "text": "Suicide symptom count (items 64–65, count items rated 2 or 3, range 0 to 2):",
+   "y": 763.5,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 4,
+   "text": "Anxiety symptom count (items 66–76, count items rated 2 or 3, range 0 to 11):",
+   "y": 324.0,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 4,
+   "text": "Stress Related Disorders symptom count (items 77–80, count items rated 2 or 3, range 0 to 4):",
+   "y": 463.5,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 4,
+   "text": "PTSD symptom count (items 81–83, count items rated 2 or 3, range 0 to 3):",
+   "y": 580.5,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 4,
+   "text": "Sleep symptom count (items 84–86, count items rated 2 or 3, range 0 to 3):",
+   "y": 698.2,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 5,
+   "text": "Eating symptom count (items 87–91, count items rated 2 or 3, range 0 to 5):",
+   "y": 193.5,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 5,
+   "text": "Conduct symptom count (items 92–102, count items rated 2 or 3, range 0 to 11):",
+   "y": 485.2,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 5,
+   "text": "Substance Use symptom count (items 103–109, count items rated 2 or 3, range 0 to 7):",
+   "y": 689.2,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 6,
+   "text": "Addictions symptom count (items 110–112, count items rated 2 or 3, range 0 to 3):",
+   "y": 150.0,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 6,
+   "text": "Personality symptom count (items 113–123, count items rated 2 or 3, range 0 to 11):",
+   "y": 441.8,
+   "url": null,
+   "sha256": "7745b8b95fec7b1f81030e5903e72cb705af48c66538830b3c022fa80112076e",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  }
+ ],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+ "remaining_work": [
+  "Normative conversions and clinical publication require separate source-specific review.",
+  "NA responses withhold the affected domain; source-specific NA denominator handling needs verification."
+ ],
+ "implementation_status": {
+  "raw_calculation": "draft_implemented",
+  "interpretation": "not_compiled",
+  "normative_conversion": "not_implemented",
+  "clinical_use": "not_approved"
+ },
+ "runtime_module": "definition_runtime.py"
+}

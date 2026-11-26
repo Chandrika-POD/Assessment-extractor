@@ -1,0 +1,891 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total FAS Score",
+   "minimum": 10.0,
+   "maximum": 50.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total FAS Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total FAS Score (sum of all 10 items)",
+     "y": 559.5,
+     "url": null,
+     "sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "dc716d7cb50b4_p1",
+   "documentSha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "dc716d7cb50b4_p1_chart_1"
+   ],
+   "tableIds": [
+    "dc716d7cb50b4_p1_table_1"
+   ],
+   "sectionIds": [
+    "dc716d7cb50b4_p1_section_1",
+    "dc716d7cb50b4_p1_section_2",
+    "dc716d7cb50b4_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "dc716d7cb50b4_p2",
+   "documentSha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "dc716d7cb50b4_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "dc716d7cb50b4_p3",
+   "documentSha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dc716d7cb50b4_p3_table_1"
+   ],
+   "sectionIds": [
+    "dc716d7cb50b4_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "dc716d7cb50b4_p4",
+   "documentSha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dc716d7cb50b4_p4_table_1"
+   ],
+   "sectionIds": [
+    "dc716d7cb50b4_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "dc716d7cb50b4_p1_section_1",
+   "pageId": "dc716d7cb50b4_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dc716d7cb50b4_p1_section_2",
+   "pageId": "dc716d7cb50b4_p1",
+   "title": "Fatigue Assessment Scale (FAS) Score",
+   "type": "source_heading",
+   "bboxPt": [
+    186.645,
+    332.04187,
+    410.04898,
+    344.04187
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dc716d7cb50b4_p1_section_3",
+   "pageId": "dc716d7cb50b4_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    652.69952,
+    124.57652,
+    666.69952
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dc716d7cb50b4_p2_section_1",
+   "pageId": "dc716d7cb50b4_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    304.5556,
+    290.26645,
+    318.5556
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dc716d7cb50b4_p3_section_1",
+   "pageId": "dc716d7cb50b4_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    520.75696,
+    151.8205,
+    534.75696
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dc716d7cb50b4_p4_section_1",
+   "pageId": "dc716d7cb50b4_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "dc716d7cb50b4_p1_chart_1",
+   "title": "Fatigue Assessment Scale (FAS) Score",
+   "type": "stacked_bar",
+   "bboxPt": [
+    163.346,
+    351.954,
+    450.346,
+    585.394
+   ],
+   "widthPt": 287.0,
+   "heightPt": 233.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      163.34599,
+      518.85382,
+      448.34601,
+      585.39404
+     ],
+     "colour": "#ffffff",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      163.34599,
+      484.14371,
+      448.34601,
+      518.86401
+     ],
+     "colour": "#fceaa1",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      163.34599,
+      443.634,
+      448.34601,
+      484.134
+     ],
+     "colour": "#fdc689",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      163.34599,
+      353.95389,
+      448.34601,
+      443.634
+     ],
+     "colour": "#f7b6b7",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 50.0,
+      "positionPt": 354.57254,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 45.0,
+      "positionPt": 383.50266,
+      "text": "45",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 412.43277,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 35.0,
+      "positionPt": 441.36246,
+      "text": "35",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 470.29257,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 25.0,
+      "positionPt": 499.22269,
+      "text": "25",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 528.15277,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 15.0,
+      "positionPt": 557.08282,
+      "text": "15",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 586.01257,
+      "text": "10",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Physical Fatigue",
+     "colour": "#b203b2",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49651571452852167,
+     "barThicknessPt": 65.0,
+     "fill": "#b303b3",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#b203b2"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Physical Fatigue",
+     "colour": "#8d0303",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49651571452852167,
+     "barThicknessPt": 65.0,
+     "fill": "#8e0404",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#8d0303"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "dc716d7cb50b4_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 146,
+    "detectedType": "stacked_bar",
+    "reviewedType": "stacked_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Fatigue Assessment Scale (FAS) Score",
+     "bboxPt": [
+      186.645,
+      332.04187,
+      410.04898,
+      344.04187
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Minimal",
+     "bboxPt": [
+      423.23901,
+      549.13525,
+      447.34695,
+      556.13525
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild",
+     "bboxPt": [
+      434.51599,
+      498.50525,
+      447.34695,
+      505.50525
+     ],
+     "colour": "#cbc6ae",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      417.77899,
+      460.89526,
+      447.34698,
+      467.89526
+     ],
+     "colour": "#cbbaa6",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      425.17001,
+      395.80527,
+      447.34601,
+      402.80527
+     ],
+     "colour": "#c9afaf",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Community",
+     "bboxPt": [
+      451.95401,
+      353.24527,
+      487.34598,
+      360.24527
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      452.72433,
+      360.24527,
+      487.34631,
+      367.24527
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th",
+     "bboxPt": [
+      453.72433,
+      554.28528,
+      467.34634,
+      561.28528
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th",
+     "bboxPt": [
+      453.72433,
+      528.8255,
+      467.34634,
+      535.8255
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "65th",
+     "bboxPt": [
+      453.72433,
+      514.24536,
+      467.34634,
+      521.24536
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      453.72433,
+      503.30557,
+      467.34634,
+      510.30557
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "90th",
+     "bboxPt": [
+      453.72433,
+      480.33527,
+      467.34634,
+      487.33527
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "95th",
+     "bboxPt": [
+      453.72433,
+      466.73526,
+      467.34634,
+      473.73526
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "99th",
+     "bboxPt": [
+      453.72433,
+      440.81537,
+      467.34634,
+      447.81537
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Cut-off",
+     "bboxPt": [
+      427.27701,
+      516.2879,
+      445.28299,
+      522.2879
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Physical Fatigue",
+     "bboxPt": [
+      248.34599,
+      604.4726,
+      307.034,
+      612.4726
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mental Fatigue",
+     "bboxPt": [
+      332.05615,
+      604.4726,
+      384.96814,
+      612.4726
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "The FAS is particularly valuable for tracking changes in fatigue over time and for facilitating discussion about how fatigue is affecting a person’s daily life, regardless of whether their score falls above or below a particular threshold."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Scoring the Fatigue Assessment Scale (FAS)",
+    "text": "The FAS yields a total score between 10 and 50, with higher scores indicating more severe fatigue. Each item is rated on a 5-point Likert-type scale from 1 to 5 reflecting the frequency with which the respondent usually experiences a specific physical or mental symptom of fatigue. Items 4 and 10 are reverse-scored.\n",
+    "source_url": null
+   },
+   {
+    "title": "FAS Normative Data",
+    "text": "The respondent’s total FAS score is expressed as a percentile based on normative data for working adults in the general Dutch population (De Vries et al., 2003; Michielsen et al., 2003), contextualising their score relative to the typical scores of working adults. For example, the 50th percentile represents the typical level of general fatigue among working adults in the general population, while scores on the 90th percentile fall within the top 10% and are considered “Moderate”, and scores on the 99th percentile fall within the top 1% and are considered “Severe”.\n",
+    "source_url": null
+   },
+   {
+    "title": "FAS Cut-off Score",
+    "text": "Total FAS scores of 22 or above are commonly cited as indicating the presence of significant fatigue. This threshold corresponds approximately to the 65th percentile of the normative sample of working adults and was originally based on the observation that scores at this level differentiated the majority of patients with sarcoidosis from the general population (De Vries et al., 2004). It is important to note that this cut-off score is not a formally validated threshold for identifying people with clinically significant fatigue.\n",
+    "source_url": null
+   },
+   {
+    "title": "Normative Data",
+    "text": "Normative data for the FAS are based on a general population sample of 351 Dutch adults aged 21 to 65 years who were working 20 or more hours per week. In this sample, the mean total FAS score was 19.26 (SD = 6.52), with scores approximately normally distributed (De Vries et al., 2003; Michielsen et al., 2003). These data are used to convert the respondent’s total FAS score to a percentile, providing useful information about the severity of their general fatigue relative to working adults in the general population.\n",
+    "source_url": null
+   },
+   {
+    "title": "What is the difference between fatigue and normal tiredness?",
+    "text": "Fatigue, as measured by the FAS, is distinct from the everyday tiredness that most people experience after exertion or inadequate sleep. Whilst normal tiredness typically resolves with rest and is proportionate to activity levels, clinically significant fatigue is persistent, often disproportionate to recent activity, and may not improve substantially with rest or sleep. It can affect a person’s capacity to engage in work, social activities, and self-care, and frequently influences overall quality of life.\nFatigue becomes a clinical concern when it is persistent, causes distress, and interferes with daily functioning. Because it is not always apparent to others or detectable with objective clinical markers, it is important to ask a person about their subjective experience of fatigue.\nThe FAS captures this subjective experience by asking about physical exhaustion, mental exhaustion, energy levels, motivation, and concentration. Higher scores indicate that a person is experiencing more frequent and intense fatigue that is likely affecting their daily functioning, rather than transient tiredness that most people would consider unremarkable.\n",
+    "source_url": null
+   },
+   {
+    "title": "How should clinicians interpret FAS cut-off scores and severity classifications?",
+    "text": "The commonly cited FAS cut-off scores and severity classifications were derived primarily from research with sarcoidosis patient populations. Scores below 22 are typically interpreted as indicating no substantial fatigue, scores between 22 and 34 as mild-to-moderate fatigue, and scores of 35 or above as severe fatigue. Whilst these thresholds have been widely cited, their validity has not been systematically established across the diverse range of conditions in which the FAS is now used.\nFor example, a study examining poststroke fatigue suggested that a cut-off of 24, rather than 22, may be more appropriate for defining clinically significant fatigue in that population. This highlights that optimal thresholds may vary depending on the clinical context and the characteristics of the population being assessed.\nTo provide additional granularity for clinical interpretation, NovoPsych separates the mild-to-moderate range (scores between 22 and 34) into mild fatigue (scores between 22 and 27) and moderate fatigue (scores between 28 and 34). These categories correspond to logical and progressively higher percentile ranges in a normative sample of working adults, though, like the original classifications, they should be used as clinical interpretation guidelines rather than formally validated severity classification thresholds.\nRather than applying cut-off scores and severity classifications rigidly, clinicians may find it more informative to use the FAS as a dimensional measure, interpreting scores along a continuum. The FAS is particularly valuable for tracking changes in fatigue over time and for facilitating discussion about how fatigue is affecting a person’s daily life, regardless of whether their score falls above or below a particular threshold. When cut-off scores are used, clinicians should be mindful of the limitations of these thresholds and avoid over-interpreting categorical classifications.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the Fatigue Assessment Scale (FAS), \nsee here\n.\nThe FAS yields a total score between 10 and 50, with higher scores indicating more severe\nfatigue. Each item is rated on a 5-point Likert-type scale from 1 to 5 reflecting the frequency with\nwhich the respondent usually experiences a specific physical or mental symptom of fatigue.\nItems 4 and 10 are reverse-scored.\nScores are also provided for the scale’s two subscales (Drent et al., 2012):\n- Physical Fatigue (Items 1, 2, 4, 5, and 10), which assesses general and physical\nmanifestations of fatigue, including being bothered by fatigue, tiring quickly, physical exhaustion,\nand lack of energy.\n- Mental Fatigue (Items 3, 6, 7, 8, and 9), which assesses motivational and cognitive aspects of\nfatigue, including reduced activity, difficulty initiating tasks, problems thinking clearly, and lack of\nmotivation.\nThe respondent’s total FAS score is expressed as a percentile based on normative data for\nworking adults in the general Dutch population (De Vries et al., 2003; Michielsen et al., 2003),\ncontextualising their score relative to the typical scores of working adults. For example, the 50th\npercentile represents the typical level of general fatigue among working adults in the general\npopulation, while scores on the 90th percentile fall within the top 10% and are considered\n“Moderate”, and scores on the 99th percentile fall within the top 1% and are considered\n“Severe”.\nTotal FAS scores of 22 or above are commonly cited as indicating the presence of significant\nfatigue. This threshold corresponds approximately to the 65th percentile of the normative sample\nof working adults and was originally based on the observation that scores at this level\ndifferentiated the majority of patients with sarcoidosis from the general population (De Vries et\nal., 2004). It is important to note that this cut-off score is not a formally validated threshold for\nidentifying people with clinically significant fatigue.\nHendriks and colleagues (2018) reported that total FAS scores of less than 22 indicate no\nsubstantial fatigue, scores between 22 and 34 indicate mild-to-moderate fatigue, and scores of\n35 or above indicate severe fatigue. To further aid in clinical interpretation, NovoPsych\ndistinguishes between mild fatigue (scores between 22 and 27) and moderate fatigue (scores",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The respondent’s total FAS score is expressed as a percentile based on normative data for working adults in the general Dutch population (De Vries et al., 2003; Michielsen et al., 2003), contextualising their score relative to the typical scores of working adults.",
+   "For example, the 50th percentile represents the typical level of general fatigue among working adults in the general population, while scores on the 90th percentile fall within the top 10% and are considered “Moderate”, and scores on the 99th percentile fall within the top 1% and are considered “Severe”.",
+   "This threshold corresponds approximately to the 65th percentile of the normative sample of working adults and was originally based on the observation that scores at this level differentiated the majority of patients with sarcoidosis from the general population (De Vries et al., 2004).",
+   "It is important to note that this cut-off score is not a formally validated threshold for identifying people with clinically significant fatigue.",
+   "These data are used to convert the respondent’s total FAS score to a percentile, providing useful information about the severity of their general fatigue relative to working adults in the general population.",
+   "The commonly cited FAS cut-off scores and severity classifications were derived primarily from research with sarcoidosis patient populations.",
+   "Whilst these thresholds have been widely cited, their validity has not been systematically established across the diverse range of conditions in which the FAS is now used.",
+   "For example, a study examining poststroke fatigue suggested that a cut-off of 24, rather than 22, may be more appropriate for defining clinically significant fatigue in that population.",
+   "This highlights that optimal thresholds may vary depending on the clinical context and the characteristics of the population being assessed.",
+   "These categories correspond to logical and progressively higher percentile ranges in a normative sample of working adults, though, like the original classifications, they should be used as clinical interpretation guidelines rather than formally validated severity classification thresholds.",
+   "Rather than applying cut-off scores and severity classifications rigidly, clinicians may find it more informative to use the FAS as a dimensional measure, interpreting scores along a continuum.",
+   "The FAS is particularly valuable for tracking changes in fatigue over time and for facilitating discussion about how fatigue is affecting a person’s daily life, regardless of whether their score falls above or below a particular threshold.",
+   "When cut-off scores are used, clinicians should be mindful of the limitations of these thresholds and avoid over-interpreting categorical classifications."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 83
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

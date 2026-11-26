@@ -1,0 +1,778 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "multilevel-assessment-of-psychopathology-mapsy--b575b63dbe1c",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Multilevel Assessment of Psychopathology (MAPsy)",
+  "short_name": null,
+  "language": "en",
+  "description": "The MAPsy is a 154-item self-report questionnaire that screens for the symptoms of DSM-5 disorders and shows which symptoms are elevated through two lenses: 33 disorder scales, and 127 dimensions of an empirically derived hierarchy of psychopathology. Designed as a broad initial assessment, it helps clinicians identify which areas warrant further assessment.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "past year"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Please respond to the following statements about your thoughts, feelings, behaviour, and experiences by selecting how true or common each statement was for you in the past year. Try to think about the full variety of your experiences, and select the response that you feel is the best fit.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34",
+   "Q35",
+   "Q36",
+   "Q37",
+   "Q38",
+   "Q39",
+   "Q40",
+   "Q41",
+   "Q42",
+   "Q43",
+   "Q44",
+   "Q45",
+   "Q46",
+   "Q47",
+   "Q48",
+   "Q49",
+   "Q50",
+   "Q51",
+   "Q52",
+   "Q53",
+   "Q54",
+   "Q55",
+   "Q56",
+   "Q57",
+   "Q58",
+   "Q59",
+   "Q60",
+   "Q61",
+   "Q62",
+   "Q63",
+   "Q64",
+   "Q65",
+   "Q66",
+   "Q67",
+   "Q68",
+   "Q69",
+   "Q70",
+   "Q71",
+   "Q72",
+   "Q73",
+   "Q74",
+   "Q75",
+   "Q76",
+   "Q77",
+   "Q78",
+   "Q79",
+   "Q80",
+   "Q81",
+   "Q82",
+   "Q83",
+   "Q84",
+   "Q85",
+   "Q86",
+   "Q87",
+   "Q88",
+   "Q89",
+   "Q90",
+   "Q91",
+   "Q92",
+   "Q93",
+   "Q94",
+   "Q95",
+   "Q96",
+   "Q97",
+   "Q98",
+   "Q99",
+   "Q100",
+   "Q101",
+   "Q102",
+   "Q103",
+   "Q104",
+   "Q105",
+   "Q106",
+   "Q107",
+   "Q108",
+   "Q109",
+   "Q110",
+   "Q111",
+   "Q112",
+   "Q113",
+   "Q114",
+   "Q115",
+   "Q116",
+   "Q117",
+   "Q118",
+   "Q119",
+   "Q120",
+   "Q121",
+   "Q122",
+   "Q123",
+   "Q124",
+   "Q125",
+   "Q126",
+   "Q127",
+   "Q128",
+   "Q129",
+   "Q130",
+   "Q131",
+   "Q132",
+   "Q133",
+   "Q134",
+   "Q135",
+   "Q136",
+   "Q137",
+   "Q138",
+   "Q139",
+   "Q140",
+   "Q141",
+   "Q142",
+   "Q143",
+   "Q144",
+   "Q145",
+   "Q146",
+   "Q147",
+   "Q148",
+   "Q149",
+   "Q150",
+   "Q151",
+   "Q152",
+   "Q153",
+   "Q154",
+   "Q155"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Harmful Substance Use raw spectrum score",
+    "item_ids": [
+     "Q75",
+     "Q76",
+     "Q77",
+     "Q78",
+     "Q79",
+     "Q80",
+     "Q81",
+     "Q82",
+     "Q83"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be",
+     "page_url": null,
+     "page_sha256": "7b4796d77cf688dab90bdb9928a596df844cc3b8ec5546e48f6363c061b27880",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C8",
+      "C27",
+      "LIVE_C57",
+      "LIVE_C75"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "applies_if": {
+     "item_id": "Q74",
+     "operator": "contains_any",
+     "value": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7"
+     ],
+     "value_field": "answer_id"
+    },
+    "minimum": 9.0,
+    "maximum": 45.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be",
+   "page_url": null,
+   "page_sha256": "7b4796d77cf688dab90bdb9928a596df844cc3b8ec5546e48f6363c061b27880",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [
+   "This means a percentile compares the client with people who may have been experiencing mental health difficulties, rather than with the general population. A percentile around 50 means a typical level of psychopathology for that group, not an average level for the community.",
+   "This follows from how the thresholds are set. For the constructs of the hierarchy, a construct’s thresholds are the sums of its items’ thresholds, so a broad construct with many items needs more of its items at or above threshold before its score reaches the Elevated or Clinically Significant band than a narrow construct with few items does. This is by design: for a spectrum’s score to reach the Elevated or Clinically Significant band, the client must report symptoms at threshold level across a substantial share of the spectrum’s content, which is what an elevation on a broad dimension of psychopathology means. The hierarchy therefore registers severity at the level at which it is present, narrow problems on clusters and pervasive difficulties on subfactors and spectra.",
+   "For some disorders, correct identification comes only after a long delay, even among people who have sought professional help. In a survey of 600 people with bipolar disorder, 69 percent reported having been misdiagnosed; those misdiagnosed had consulted an average of four clinicians before receiving the correct diagnosis, and more than a third waited 10 years or more for an accurate diagnosis (Hirschfeld et al., 2003). An average of about three years between first professional contact and diagnosis has been reported for obsessive-compulsive disorder (Stengler et al., 2013) and attention-deficit/hyperactivity disorder (Nylander et al., 2013), and a median of 11 years or more between first clinical evaluation and diagnosis for adults with autism spectrum disorder (Fusar-Poli et al., 2022). A broad assessment early in a person’s contact with mental health services or professionals is one way to bring such presentations to attention sooner.",
+   "The MAPsy yields scores for nine spectra, two subspectra, 21 subfactors, and 95 clusters of the empirical hierarchy, and for 23 personality facets, six neurocognitive domains, and 33 DSM-5 disorder scales. A construct’s score is the sum of its constituent item scores. Higher scores indicate that the construct’s items were rated as more true, or more common, over the past year.",
+   "The reference sample is best described as a distress-enriched sample: most of its members were receiving mental health treatment and more than half reported very high psychological distress. Percentiles therefore describe the client’s standing relative to that population rather than the general community. A score at the 50th percentile is typical of that population and does not indicate an average level of psychopathology relative to the general community. A distress-enriched sample has the advantage that its percentiles discriminate among individuals across the full range of severity, including the high levels seen in clinical settings.",
+   "Item-level thresholds. The thresholds of the constructs of the empirical hierarchy, the personality facets, and the neurocognitive domains are sums of item-level thresholds set by clinical review. Each of the 154 items was assigned a first threshold, the lowest item score indicating a level of psychopathology that is of clinical interest, and a second threshold, the lowest item score indicating a clinically significant level. The thresholds were set in three stages. First, three raters independently selected thresholds for every item. The consensus for each item was then taken as the median of the three selections, or agreed through discussion with a fourth rater where selections were widely split. Finally, the consensus thresholds were reviewed against each item’s content, considering the DSM-5 criterion the item describes, where it describes one, and the raters’ judgement of how common the experience is in everyday life. The rationale for each item’s thresholds was recorded. Items describing experiences judged common in everyday life were given higher thresholds, and items describing safety-critical or under-reported experiences, such as suicidal behaviour and antagonistic conduct, lower thresholds. The reference sample did not determine the item thresholds; the proportion of the sample at or above each threshold was consulted only as context.",
+   "Disorder scale thresholds. The thresholds for the 33 DSM-5 disorder scales were instead anchored to the prevalence of each disorder in the general population, taken from the DSM-5 and DSM-5-TR (American Psychiatric Association, 2013, 2022), the National Comorbidity Survey Replication (Kessler et al., 2005), and, for disorders these do not cover, other national surveys and published epidemiological studies, using 12-month prevalence where available and point or lifetime prevalence otherwise. Summed item thresholds would have made the proportion of respondents reaching a disorder scale’s thresholds depend on the number of items describing the disorder’s criteria, from two to 53, rather than on how common the disorder is. For each scale, the Elevated threshold was set at the score at or above which the proportion of the reference sample is closest to six times the disorder’s prevalence, and the Clinically Significant threshold at the score closest to four times, the multipliers allowing for the reference sample’s enrichment for psychological distress relative to the general population."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "MAPsy Scoring",
+    "text": "The MAPsy yields scores for nine spectra, two subspectra, 21 subfactors, and 95 clusters of the empirical hierarchy, and for 23 personality facets, six neurocognitive domains, and 33 DSM-5 disorder scales. A construct’s score is the sum of its constituent item scores. Higher scores indicate that the construct’s items were rated as more true, or more common, over the past year.\nThe score itself is not displayed in the report: it is converted to a percentile and assigned a severity band, and the report presents those.\n\nFor the Antisocial Personality Disorder with Psychopathic Features scale, the items measuring Anxiousness and Withdrawal are reverse scored before summing, so that low anxiousness and low withdrawal contribute to the scale in the direction that defines the disorder.\n",
+    "source_url": null
+   },
+   {
+    "title": "MAPsy Percentiles",
+    "text": "Percentiles are the primary metric for presenting scores because they are comparable across constructs, regardless of the number of items, and are readily communicated to clients and other professionals. Each score is converted to a percentile against the distribution of scores on that construct in a reference sample drawn from Forbes et al.’s (2025) study. Percentiles can be based on the whole reference sample, All (respondents aged 16 years and over), or on one of two subsets of it, Youth (16 to 24 years) and Adult (25 years and over). The Youth or Adult sample is selected by default from the client’s age at administration, calculated from their date of birth, and the Adult sample is used when no date of birth is entered.\nThe reference sample is best described as a distress-enriched sample: most of its members were receiving mental health treatment and more than half reported very high psychological distress. Percentiles therefore describe the client’s standing relative to that population rather than the general community. A score at the 50th percentile is typical of that population and does not indicate an average level of psychopathology relative to the general community. A distress-enriched sample has the advantage that its percentiles discriminate among individuals across the full range of severity, including the high levels seen in clinical settings.\nThe percentile does not itself say whether a level of psychopathology is clinically significant; that judgement is carried by the severity band. The percentile instead shows how far the client’s level of psychopathology is from what is typical of the reference sample.\n",
+    "source_url": null
+   },
+   {
+    "title": "Why are the percentiles based on a mental health sample rather than the general community?",
+    "text": "The reference sample was recruited for research on mental health; most of its members were receiving treatment and more than half reported very high psychological distress. This composition suits the measure’s purpose. A measure used to decide whether a presentation warrants further assessment needs to discriminate among individuals across the full range of severity, and a sample in which high levels of distress are common represents that range more fully than a general community sample, in which most respondents score near the floor and few score in the range where clinical decisions are made.\nThis means a percentile compares the client with people who may have been experiencing mental health difficulties, rather than with the general population. A percentile around 50 means a typical level of psychopathology for that group, not an average level for the community.\nThis is why the severity bands, which are fixed to the score and do not change with the reference sample selected, carry the judgement of whether a level of psychopathology is of clinical interest or clinically significant. The percentile shows where the client sits among people who were, for the most part, receiving mental health treatment.\n",
+    "source_url": null
+   },
+   {
+    "title": "Why does the Harmful Substance Use spectrum sometimes show no score?",
+    "text": "Because it is scored only for clients who report using a substance in the past year. Part-way through the questionnaire, the client is asked which substances they have used in the past year, from a checklist of seven classes. A client who selects one or more is then asked nine further items about substance use disorder symptoms and use in dangerous situations, and the Harmful Substance Use spectrum is scored from those items. A client who selects “None of the above” is not asked these items, so the spectrum and its clusters are shown in the report without a score, and the three checklist clusters (Alcohol use, Cannabis use, and Illicit and prescription substance use) are marked No.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "MAPsy other spectra, clusters, facets and disorder-scale mappings have not been recovered as a verified executable key. Only Harmful Substance Use raw arithmetic is implemented; this is partial coverage."
+  ],
+  "implementation_status": {
+   "raw_calculation": "partial",
+   "interpretation": "not_compiled",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "NovoPsych Psychometrics",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "American Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). https://doi.org/10.1176/appi.books.9780890425596\nAmerican Psychiatric Association. (2022). Diagnostic and statistical manual of mental disorders (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787\nAndrews, G., & Slade, T. (2001). Interpreting scores on the Kessler Psychological Distress Scale (K10). Australian and New Zealand Journal of Public Health, 25 (6), 494–497. https://doi.org/10.1111/j.1467-842X.2001.tb00310.x\nForbes, M. K., Baillie, A., Batterham, P. J., Calear, A., Kotov, R., Krueger, R. F., Markon, K. E., Mewton, L., Pellicano, E., Roberts, M., Rodriguez-Seijas, C., Sunderland, M., Watson, D., Watts, A. L., Wright, A. G. C., & Clark, L. A. (2025). Reconstructing psychopathology: A data-driven reorganization of the symptoms in the Diagnostic and Statistical Manual of Mental Disorders. Clinical Psychological Science, 13 (3), 462–488. https://doi.org/10.1177/21677026241268345\nFusar-Poli, L., Brondino, N., Politi, P., & Aguglia, E. (2022). Missed diagnoses and misdiagnoses of adults with autism spectrum disorder. European Archives of Psychiatry and Clinical Neuroscience, 272 (2), 187–198. https://doi.org/10.1007/s00406-020-01189-w\nHirschfeld, R. M. A., Lewis, L., & Vornik, L. A. (2003). Perceptions and impact of bipolar disorder: How far have we really come? Results of the National Depressive and Manic-Depressive Association 2000 survey of individuals with bipolar disorder. Journal of Clinical Psychiatry, 64 (2), 161–174. https://doi.org/10.4088/JCP.v64n0209\nKessler, R. C., Andrews, G., Colpe, L. J., Hiripi, E., Mroczek, D. K., Normand, S.-L. T., Walters, E. E., & Zaslavsky, A. M. (2002). Short screening scales to monitor population prevalences and trends in non-specific psychological distress. Psychological Medicine, 32 (6), 959–976. https://doi.org/10.1017/S0033291702006074\nKessler, R. C., Chiu, W. T., Demler, O., & Walters, E. E. (2005). Prevalence, severity, and comorbidity of 12-month DSM-IV disorders in the National Comorbidity Survey Replication. Archives of General Psychiatry, 62 (6), 617–627. https://doi.org/10.1001/archpsyc.62.6.617\nKotov, R., Krueger, R. F., Watson, D., Achenbach, T. M., Althoff, R. R., Bagby, R. M., Brown, T. A., Carpenter, W. T., Caspi, A., Clark, L. A., Eaton, N. R., Forbes, M. K., Forbush, K. T., Goldberg, D., Hasin, D., Hyman, S. E., Ivanova, M. Y., Lynam, D. R., Markon, K., … Zimmerman, M. (2017). The Hierarchical Taxonomy of Psychopathology (HiTOP): A dimensional alternative to traditional nosologies. Journal of Abnormal Psychology, 126 (4), 454–477. https://doi.org/10.1037/abn0000258\nNylander, L., Holmqvist, M., Gustafson, L., & Gillberg, C. (2013). Attention-deficit/hyperactivity disorder (ADHD) and autism spectrum disorder (ASD) in adult psychiatry. A 20-year register study. Nordic Journal of Psychiatry, 67 (5), 344–350. https://doi.org/10.3109/08039488.2012.748824\nStengler, K., Olbrich, S., Heider, D., Dietrich, S., Riedel-Heller, S., & Jahn, I. (2013). Mental health treatment seeking among patients with OCD: Impact of age of onset. Social Psychiatry and Psychiatric Epidemiology, 48 (5), 813–819. https://doi.org/10.1007/s00127-012-0544-3",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "First page of the Multilevel Assessment of Psychopathology (MAPsy) questionnaire PDF: fields for the respondent's name, the date, and the clinician; the instructions; and items 1 to 17, each with five response options from Not at all true (Never) to Perfectly true (Always)",
+   "source_url": null,
+   "sha256": "3ebfb2c24718edc421be7af7c3b574b0719d98dd1f3521df08269682781d674c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3ebfb2c24718edc421be7af7c3b574b0719d98dd1f3521df08269682781d674c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Coping Orientation to Problems Experienced Inventory (Brief-COPE)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "The interactive Multilevel Assessment of Psychopathology (MAPsy) report for a sample client, from the top: respondent details, the Risk of Self-harm or Suicide panel, the Empirical Hierarchy and DSM Disorders panels with severity-band bars and percentiles, and the heading of the Interpretation panel",
+   "source_url": null,
+   "sha256": "ac5f93ede0ab43f6e087099525e4dd94946f807aa4d4f5fa35ca6bc64f17d01c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ac5f93ede0ab43f6e087099525e4dd94946f807aa4d4f5fa35ca6bc64f17d01c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download MAPsy PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Simon Baker, Ph.D",
+   "source_url": null,
+   "sha256": "99e952e9de44f6b3c69ae037a02f45a8199524f5c4c00416dce95aaeab20288f",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/99e952e9de44f6b3c69ae037a02f45a8199524f5c4c00416dce95aaeab20288f.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Structure of the Multilevel Assessment of Psychopathology (MAPsy): 154 items scored on an empirical hierarchy of 9 spectra, 2 subspectra, 21 subfactors, and 95 clusters, and on 33 DSM-5 disorder scales",
+   "source_url": null,
+   "sha256": "3f49473d5f27d40b2b3c28b10ed6e2d3059dfbce7ceac247873cdb2b1ba90f8d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3f49473d5f27d40b2b3c28b10ed6e2d3059dfbce7ceac247873cdb2b1ba90f8d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Structure of the MAPsy",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Example Multilevel Assessment of Psychopathology (MAPsy) item, 'I was easily irritated', with five response options from Not at all true (Never) to Perfectly true (Always)",
+   "source_url": null,
+   "sha256": "cceef0bd416df57c913b95b52cc05f2de019d8a2a16fad11332755767de35079",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/cceef0bd416df57c913b95b52cc05f2de019d8a2a16fad11332755767de35079.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Structure of the MAPsy",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Empirical Hierarchy and DSM Disorders panels of the Multilevel Assessment of Psychopathology (MAPsy) report: the nine spectra, from Externalising at the 96th percentile to Neurodevelopmental and Cognitive Difficulties at the 9th, and the disorder scales grouped by severity band, with Borderline Personality Disorder, Posttraumatic Stress Disorder, and Major Depressive Disorder under Clinically Significant and Generalised Anxiety Disorder under Elevated, each with a severity-band bar and percentile",
+   "source_url": null,
+   "sha256": "e8afe698affef8dacd855fc40fdbb2800082b35102c7dd00e05b19f6f248c684",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e8afe698affef8dacd855fc40fdbb2800082b35102c7dd00e05b19f6f248c684.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MAPsy Scoring",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Empirical Hierarchy panel of the Multilevel Assessment of Psychopathology (MAPsy) report, with its Collapse All, Focused, Elevated+, and Expand All buttons, listing the nine spectra, each with a severity-band bar and a marker at the client's percentile, from Externalising at the 96th percentile to Neurodevelopmental and Cognitive Difficulties at the 9th",
+   "source_url": null,
+   "sha256": "f3f0729d406c595e71065b9b2d93efcb81bacae4f81a8ced4dad8e27484f259e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f3f0729d406c595e71065b9b2d93efcb81bacae4f81a8ced4dad8e27484f259e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MAPsy Report",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "DSM Disorders panel of the Multilevel Assessment of Psychopathology (MAPsy) report, grouping the disorder scales by severity band, each with a severity-band bar and percentile: Borderline Personality Disorder, Posttraumatic Stress Disorder, and Major Depressive Disorder under Clinically Significant; Generalised Anxiety Disorder under Elevated; and, under Not Elevated, the first three scales and a Show More button for the rest",
+   "source_url": null,
+   "sha256": "2b2113219a4c115a9af8322e3e0411d5a300dcfbe690907ac8bcc8e4e9377b1f",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2b2113219a4c115a9af8322e3e0411d5a300dcfbe690907ac8bcc8e4e9377b1f.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MAPsy Report",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Risk of Self-harm or Suicide panel at the top of the Multilevel Assessment of Psychopathology (MAPsy) report, listing the two suicidality items the respondent endorsed with the response selected, and recommending that suicide risk assessment protocols be followed",
+   "source_url": null,
+   "sha256": "8636e2c63ee868271fe271a94c0f1ef3869af4dca194e02bd44afe5abd52e04d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8636e2c63ee868271fe271a94c0f1ef3869af4dca194e02bd44afe5abd52e04d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MAPsy Report",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Multilevel Assessment of Psychopathology (MAPsy) u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download MAPsy PDF",
+   "source_url": null,
+   "sha256": "5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "source_item_count_differs",
+    "detail": "Page description mentions [154] items; selected PDF has 155 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_format_review": {
+   "resolved_previously_untyped_fields": 1,
+   "basis": "Selected archived PDF edition checked against current public PDF and inspected for field controls.",
+   "clinical_scoring_review": false
+  },
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice",
+   "multiple_choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 154
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [
+    "Added checklist-dependent substance follow-up eligibility and a source-defined raw spectrum sum."
+   ],
+   "scoring_rule_count": 1,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review.",
+    "MAPsy other spectra, clusters, facets and disorder-scale mappings have not been recovered as a verified executable key. Only Harmful Substance Use raw arithmetic is implemented; this is partial coverage."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 8,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "bcaeb5d59aac712f7edb15fab537abec13c922967bfbc1a4191402b5e39eed4e",
+  "status": "technical_checks_with_limits",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "conditional_review_required",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "MAPsy other spectra, clusters, facets and disorder-scale mappings have not been recovered as a verified executable key. Only Harmful Substance Use raw arithmetic is implemented; this is partial coverage.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Page description mentions [154] items; selected PDF has 155 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T07:47:59.015345+00:00",
+  "raw_extraction_sha256": "b41145adc8d21ec1452c38ae3f879f56a67994247c039de2b5f657bda98212aa",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.books.9780890425596",
+    "title": "https://doi.org/10.1176/appi.books.9780890425596"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.books.9780890425787",
+    "title": "https://doi.org/10.1176/appi.books.9780890425787"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1467-842X.2001.tb00310.x",
+    "title": "https://doi.org/10.1111/j.1467-842X.2001.tb00310.x"
+   },
+   {
+    "url": "https://doi.org/10.1177/21677026241268345",
+    "title": "https://doi.org/10.1177/21677026241268345"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00406-020-01189-w",
+    "title": "https://doi.org/10.1007/s00406-020-01189-w"
+   },
+   {
+    "url": "https://doi.org/10.4088/JCP.v64n0209",
+    "title": "https://doi.org/10.4088/JCP.v64n0209"
+   },
+   {
+    "url": "https://doi.org/10.1017/S0033291702006074",
+    "title": "https://doi.org/10.1017/S0033291702006074"
+   },
+   {
+    "url": "https://doi.org/10.1001/archpsyc.62.6.617",
+    "title": "https://doi.org/10.1001/archpsyc.62.6.617"
+   },
+   {
+    "url": "https://doi.org/10.1037/abn0000258",
+    "title": "https://doi.org/10.1037/abn0000258"
+   },
+   {
+    "url": "https://doi.org/10.3109/08039488.2012.748824",
+    "title": "https://doi.org/10.3109/08039488.2012.748824"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00127-012-0544-3",
+    "title": "https://doi.org/10.1007/s00127-012-0544-3"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Download MAPsy PDF"
+   },
+   {
+    "url": null,
+    "title": "MAPsy Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Simon Baker, Ph.D"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

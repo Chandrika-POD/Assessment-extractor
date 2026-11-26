@@ -1,0 +1,1076 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Re-experiencing",
+   "minimum": 0.0,
+   "maximum": 8.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Re-experiencing",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 8.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Re-experiencing (sum of items 1 & 2):",
+     "y": 601.2,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Avoidance",
+   "minimum": 0.0,
+   "maximum": 8.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Avoidance",
+    "method": "sum",
+    "item_ids": [
+     "Q3",
+     "Q4"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 8.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Avoidance (sum of items 3 & 4):",
+     "y": 622.5,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Sense of threat",
+   "minimum": 0.0,
+   "maximum": 8.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Sense of threat",
+    "method": "sum",
+    "item_ids": [
+     "Q5",
+     "Q6"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 8.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Sense of threat (sum of items 5 & 6):",
+     "y": 643.9,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "PTSD related functional impairment",
+   "minimum": 0.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "PTSD related functional impairment",
+    "method": "sum",
+    "item_ids": [
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "PTSD related functional impairment (sum of items 7–11):",
+     "y": 665.2,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_5",
+   "ruleId": "pdf_5",
+   "label": "PTSD Symptom Severity",
+   "minimum": 0.0,
+   "maximum": 24.0,
+   "calculation": {
+    "id": "pdf_5",
+    "label": "PTSD Symptom Severity",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 24.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "PTSD Symptom Severity (sum of items 1–6)",
+     "y": 697.6,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_6",
+   "ruleId": "pdf_6",
+   "label": "Affective dysregulation",
+   "minimum": 0.0,
+   "maximum": 8.0,
+   "calculation": {
+    "id": "pdf_6",
+    "label": "Affective dysregulation",
+    "method": "sum",
+    "item_ids": [
+     "Q12",
+     "Q13"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 8.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Affective dysregulation (sum of items 12 & 13):",
+     "y": 497.5,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_7",
+   "ruleId": "pdf_7",
+   "label": "Negative self-concept",
+   "minimum": 0.0,
+   "maximum": 8.0,
+   "calculation": {
+    "id": "pdf_7",
+    "label": "Negative self-concept",
+    "method": "sum",
+    "item_ids": [
+     "Q14",
+     "Q15"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 8.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Negative self-concept (sum of items 14 & 15):",
+     "y": 518.8,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_8",
+   "ruleId": "pdf_8",
+   "label": "Disturbances in relationships",
+   "minimum": 0.0,
+   "maximum": 8.0,
+   "calculation": {
+    "id": "pdf_8",
+    "label": "Disturbances in relationships",
+    "method": "sum",
+    "item_ids": [
+     "Q16",
+     "Q17"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 8.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Disturbances in relationships (sum of items 16 & 17):",
+     "y": 540.1,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_9",
+   "ruleId": "pdf_9",
+   "label": "DSO related functional impairment",
+   "minimum": 0.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_9",
+    "label": "DSO related functional impairment",
+    "method": "sum",
+    "item_ids": [
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "DSO related functional impairment (sum of items 18–22):",
+     "y": 561.5,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_10",
+   "ruleId": "pdf_10",
+   "label": "DSO Symptom Severity",
+   "minimum": 0.0,
+   "maximum": 24.0,
+   "calculation": {
+    "id": "pdf_10",
+    "label": "DSO Symptom Severity",
+    "method": "sum",
+    "item_ids": [
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 24.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "DSO Symptom Severity (sum of items 12–17)",
+     "y": 593.8,
+     "url": null,
+     "sha256": "ca821b9d79744f603e8184219f2a1ff3d0565523cb1339c802d91496bea777e4"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageCount": 9,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d9e27e02b3ef2_p1",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d9e27e02b3ef2_p1_chart_1"
+   ],
+   "tableIds": [
+    "d9e27e02b3ef2_p1_table_1",
+    "d9e27e02b3ef2_p1_table_2"
+   ],
+   "sectionIds": [
+    "d9e27e02b3ef2_p1_section_1",
+    "d9e27e02b3ef2_p1_section_2"
+   ]
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p2",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d9e27e02b3ef2_p2_chart_1",
+    "d9e27e02b3ef2_p2_chart_2"
+   ],
+   "tableIds": [
+    "d9e27e02b3ef2_p2_table_1",
+    "d9e27e02b3ef2_p2_table_2"
+   ],
+   "sectionIds": [
+    "d9e27e02b3ef2_p2_section_1",
+    "d9e27e02b3ef2_p2_section_2",
+    "d9e27e02b3ef2_p2_section_3",
+    "d9e27e02b3ef2_p2_section_4"
+   ]
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p3",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d9e27e02b3ef2_p3_section_1",
+    "d9e27e02b3ef2_p3_section_2",
+    "d9e27e02b3ef2_p3_section_3",
+    "d9e27e02b3ef2_p3_section_4",
+    "d9e27e02b3ef2_p3_section_5",
+    "d9e27e02b3ef2_p3_section_6"
+   ]
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p4",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d9e27e02b3ef2_p4_section_1",
+    "d9e27e02b3ef2_p4_section_2",
+    "d9e27e02b3ef2_p4_section_3",
+    "d9e27e02b3ef2_p4_section_4",
+    "d9e27e02b3ef2_p4_section_5"
+   ]
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p5",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d9e27e02b3ef2_p5_section_1"
+   ]
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p6",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d9e27e02b3ef2_p6_section_1"
+   ]
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p7",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9e27e02b3ef2_p7_table_1"
+   ],
+   "sectionIds": [
+    "d9e27e02b3ef2_p7_section_1",
+    "d9e27e02b3ef2_p7_section_2"
+   ]
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p8",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 8,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9e27e02b3ef2_p8_table_1"
+   ],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d9e27e02b3ef2_p9",
+   "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+   "pageNumber": 9,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9e27e02b3ef2_p9_table_1"
+   ],
+   "sectionIds": [
+    "d9e27e02b3ef2_p9_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d9e27e02b3ef2_p1_section_1",
+   "pageId": "d9e27e02b3ef2_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p1_section_2",
+   "pageId": "d9e27e02b3ef2_p1",
+   "title": "ITQ-CA Subscale Scores Compared to Trauma-Exposed Normative and Diagnostic Samples",
+   "type": "results",
+   "bboxPt": [
+    36.94446,
+    354.45798,
+    559.74835,
+    370.98196
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p2_section_1",
+   "pageId": "d9e27e02b3ef2_p2",
+   "title": "PTSD Symptoms and Functioning",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    259.92847,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p2_section_2",
+   "pageId": "d9e27e02b3ef2_p2",
+   "title": "ITQ-CA PTSD Normative Percentiles",
+   "type": "results",
+   "bboxPt": [
+    195.32045,
+    252.78085,
+    401.37244,
+    269.30484
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p2_section_3",
+   "pageId": "d9e27e02b3ef2_p2",
+   "title": "DSO Symptoms and Functioning",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    451.84378,
+    252.92847,
+    471.1218
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p2_section_4",
+   "pageId": "d9e27e02b3ef2_p2",
+   "title": "ITQ-CA DSO Normative Percentiles",
+   "type": "results",
+   "bboxPt": [
+    198.32045,
+    564.74933,
+    398.37244,
+    581.27338
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p3_section_1",
+   "pageId": "d9e27e02b3ef2_p3",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    124.57648,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p3_section_2",
+   "pageId": "d9e27e02b3ef2_p3",
+   "title": "PTSD Symptoms and Functioning:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    329.57681,
+    271.94528,
+    344.72382
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p3_section_3",
+   "pageId": "d9e27e02b3ef2_p3",
+   "title": "Re-experiencing",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    353.93082,
+    264.32236,
+    369.07782
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p3_section_4",
+   "pageId": "d9e27e02b3ef2_p3",
+   "title": "Sense of Threat",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    475.08481,
+    261.26434,
+    490.23181
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p3_section_5",
+   "pageId": "d9e27e02b3ef2_p3",
+   "title": "Avoidance",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    608.33875,
+    234.36934,
+    623.48578
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p3_section_6",
+   "pageId": "d9e27e02b3ef2_p3",
+   "title": "DSO Symptoms and Functioning:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    753.69275,
+    266.44528,
+    768.83978
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p4_section_1",
+   "pageId": "d9e27e02b3ef2_p4",
+   "title": "Interpretation (cont.)",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    171.23848,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p4_section_2",
+   "pageId": "d9e27e02b3ef2_p4",
+   "title": "Affective Dysregulation",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    160.17683,
+    301.60141,
+    175.32384
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p4_section_3",
+   "pageId": "d9e27e02b3ef2_p4",
+   "title": "Disturbances in Relationships",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    293.43082,
+    336.4494,
+    308.57782
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p4_section_4",
+   "pageId": "d9e27e02b3ef2_p4",
+   "title": "Negative Self-Concept",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    426.68481,
+    295.48535,
+    441.83182
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p4_section_5",
+   "pageId": "d9e27e02b3ef2_p4",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    550.02307,
+    290.26642,
+    569.30103
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p5_section_1",
+   "pageId": "d9e27e02b3ef2_p5",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p6_section_1",
+   "pageId": "d9e27e02b3ef2_p6",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p7_section_1",
+   "pageId": "d9e27e02b3ef2_p7",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p7_section_2",
+   "pageId": "d9e27e02b3ef2_p7",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    343.86102,
+    151.82047,
+    363.13904
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9e27e02b3ef2_p9_section_1",
+   "pageId": "d9e27e02b3ef2_p9",
+   "title": "Full Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    113.69848,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration, graphs are presented showing the respondent’s scores as percentiles based on normative data for trauma-exposed children and adolescents (Baker et al., 2025).",
+   "If administered more than once, longitudinal graphs are presented for the respondent’s raw PTSD and DSO symptom severity scores, which is useful for monitoring any changes in symptom severity over time and treatment progress and outcomes."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "ITQ-CA Scoring & Interpretation",
+    "text": "The International Trauma Questionnaire – Child and Adolescent Version (ITQ-CA) has two subscales:\nPost Traumatic Stress Disorder (PTSD) – assesses the core symptoms of PTSD according to the ICD-11, focusing on intrusive re-experiencing, deliberate avoidance, and persistent sense of threat.\nDisturbances in Self Organization (DSO) – assesses the additional symptom clusters that, together with PTSD symptoms, constitute Complex PTSD (CPTSD), and which reflect pervasive psychological disturbances that typically arise following prolonged or repeated traumatic experiences\nIt includes six items measuring PTSD symptoms from three symptom clusters:\nRe-experiencing (Items 1 and 2) – assesses intrusive memories, flashbacks, or nightmares where the traumatic event feels as though it is happening again in the present moment, rather than being remembered as a past event\nAvoidance (Items 3 and 4) – measures deliberate efforts to avoid internal reminders (thoughts, feelings, physical sensations) and external reminders (people, places, conversations, objects, activities, situations) that evoke memories of the traumatic event\nSense of threat (Items 5 and 6) – evaluates persistent feelings of current danger, manifesting as hypervigilance (being “on guard” or watchful) and heightened startle response (being jumpy or easily startled)\nIt also includes six items measuring DSO symptoms from three symptom clusters:\nAffective dysregulation (Items 12 and 13) – measures difficulties managing emotions, including heightened emotional reactivity (difficulty calming down when upset) and emotional numbing (feeling emotionally shut down or disconnected from feelings)\nNegative self-concept (Items 14 and 15) – assesses persistent negative beliefs about oneself, including feelings of worthlessness and viewing oneself as a failure, reflecting a diminished sense of value or identity\nDisturbances in relationships (Items 16 and 17) – evaluates difficulties in forming and maintaining close relationships, feeling distant or cut off from others, and finding it challenging to stay emotionally close to people\nThe PTSD and DSO subscales are each accompanied by three items measuring associated functional impairments in relation to friends, family, school, other important areas (e.g., hobbies, other relationships), and general happiness.\nPTSD related functional impairment (Items 7, 8, 9, 10, and 11) – measures the impact of PTSD symptoms on relationships with friends and family, schoolwork, other important areas (e.g., hobbies, other relationships), and general happiness, indicating how significantly these symptoms disrupt daily functioning\nDSO related functional impairment (Items 18, 19, 20, 21, and 22) – measures the impact of DSO symptoms on relationships with friends and family, schoolwork, other important areas (e.g., hobbies, other relationships), and general happiness, indicating how significantly these disturbances disrupt daily functioning\nEach symptom item is rated on a 5-point Likert-type scale from 0 to 4 and each functional impairment item is answered in a binary Yes (1) or No (0) format.\nThe scoring approach uses dichotomous scoring for diagnostic purposes and dimensional scoring for symptom severity.\nDichotomous Scoring\nA score of 2 (Likert = “Moderately”) or higher on a symptom item and a score of 1 (“Yes”) on a functional impairment item indicates the presence (i.e., endorsement) of that symptom or impairment.\nPTSD is indicated if:\nat least one symptom is present from each PTSD symptom cluster, and\nthere is at least one functional impairment associated with these PTSD symptoms.\nComplex PTSD (CPTSD) is indicated if:\nat least one symptom is present from each PTSD symptom cluster,\nthere is at least one functional impairment associated with these PTSD symptoms,\nat least one symptom is present from each DSO symptom cluster, and\nthere is at least one functional impairment associated with these DSO symptoms.\nA person may receive a diagnosis of PTSD or CPTSD, but not both.\nDimensional Scoring\nThe PTSD symptom severity score is the sum of items 1 to 6 and ranges from 0 to 24.\nThe DSO symptom severity score is the sum of items 12 to 17 and ranges from 0 to 24.\nThe respondent’s scores are presented as raw scores and as percentiles based on normative data for trauma-exposed children and adolescents, contextualising their scores relative to the typical scores of children and adolescents in this normative sample. For example, the 50th percentile represents the typical level of symptom severity for a child or adolescent who has been exposed to trauma (i.e., “Mild”), while scores on the 90th percentile fall within the top 10% and are considered “Severe”.\nQualitative descriptors categorise the respondent’s scores based on specific ranges of percentiles.\n“Minimal” – Below the 25th percentile (subscale score between 0 and 3)\n“Mild” – 25th to 50th percentile (subscale score between 4 and 7)\n“Moderate” – 51st to 75th percentile (subscale score between 8 and 11)\n“Severe” – 76th to 95th percentile (subscale score between 12 and 17)\n“Very Severe” – Above the 95th percentile (subscale score between 18 and 24)\nA diagnostic criteria descriptor also accompanies each score, indicating whether diagnostic criteria for PTSD and DSO symptoms are met, and whether specific symptom clusters and functional impairments are present, according to the dichotomous scoring threshold. CPTSD is indicated if the diagnostic criteria descriptor says “Criteria met” for both the PTSD subscale and the DSO subscale.\n\n\n\nOn first administration, graphs are presented showing the respondent’s scores as percentiles based on normative data for trauma-exposed children and adolescents (Baker et al., 2025). A graph is also presented comparing the respondent’s PTSD and DSO symptom severity scores to two samples: (1) the normative sample of trauma-exposed children and adolescents; and (2) a diagnostic sample. For the PTSD symptom severity score, this diagnostic sample consists of children and adolescents meeting the ITQ-CA’s criteria for PTSD. For DSO symptom severity scores, the diagnostic sample consists of children and adolescents meeting the ITQ-CA’s criteria for CPTSD. Shaded areas correspond to scores between the 25th and 75th percentile. This graph contextualises the respondent’s scores relative to typical symptom severity levels in these samples.\n\n\n\nIf administered more than once, longitudinal graphs are presented for the respondent’s raw PTSD and DSO symptom severity scores, which is useful for monitoring any changes in symptom severity over time and treatment progress and outcomes. A meaningful change in PTSD symptom severity is defined as a change of 7 or more points in the PTSD symptom severity score, and a meaningful change in DSO symptom severity is defined as a change of 6 or more points in the DSO symptom severity score, based on Reliable Change Index (RCI) calculations (i.e., a 6-7 or more point decrease indicates significant improvement; a 6-7 or more point increase indicates significant deterioration; and less than a 6-7 point change indicates no significant change).\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+    "pageNumber": 4,
+    "text": "The International Trauma Questionnaire - Child and Adolescent Version (ITQ-CA) has two\nsubscales:\n- Post Traumatic Stress Disorder (PTSD) - assesses the core symptoms of PTSD according to\nthe ICD-11, focusing on intrusive re-experiencing, deliberate avoidance, and persistent sense of\nthreat.\n- Disturbances in Self Organization (DSO) - assesses the additional symptom clusters that,\ntogether with PTSD symptoms, constitute Complex PTSD (CPTSD), and which reflect pervasive\npsychological disturbances that typically arise following prolonged or repeated traumatic\nexperiences\nIt includes six items measuring PTSD symptoms from three symptom clusters:\n- Re-experiencing (Items 1 and 2) - assesses intrusive memories, flashbacks, or nightmares\nwhere the traumatic event feels as though it is happening again in the present moment, rather",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+    "pageNumber": 5,
+    "text": "than being remembered as a past event\n- Avoidance (Items 3 and 4) - measures deliberate efforts to avoid internal reminders (thoughts,\nfeelings, physical sensations) and external reminders (people, places, conversations, objects,\nactivities, situations) that evoke memories of the traumatic event\n- Sense of threat (Items 5 and 6) - evaluates persistent feelings of current danger, manifesting\nas hypervigilance (being “on guard” or watchful) and heightened startle response (being jumpy\nor easily startled)\nIt also includes six items measuring DSO symptoms from three symptom clusters:\n- Affective dysregulation (Items 12 and 13) - measures difficulties managing emotions, including\nheightened emotional reactivity (difficulty calming down when upset) and emotional numbing\n(feeling emotionally shut down or disconnected from feelings)\n- Negative self-concept (Items 14 and 15) - assesses persistent negative beliefs about oneself,\nincluding feelings of worthlessness and viewing oneself as a failure, reflecting a diminished\nsense of value or identity\n- Disturbances in relationships (Items 16 and 17) - evaluates difficulties in forming and\nmaintaining close relationships, feeling distant or cut off from others, and finding it challenging to\nstay emotionally close to people\nThe PTSD and DSO subscales are each accompanied by three items measuring associated\nfunctional impairments in relation to friends, family, school, other important areas (e.g., hobbies,\nother relationships), and general happiness.\n- PTSD related functional impairment (Items 7, 8, 9, 10, and 11) - measures the impact of PTSD\nsymptoms on relationships with friends and family, schoolwork, other important areas (e.g.,\nhobbies, other relationships), and general happiness, indicating how significantly these\nsymptoms disrupt daily functioning\n- DSO related functional impairment (Items 18, 19, 20, 21, and 22) - measures the impact of\nDSO symptoms on relationships with friends and family, schoolwork, other important areas (e.g.,\nhobbies, other relationships), and general happiness, indicating how significantly these\ndisturbances disrupt daily functioning\nEach symptom item is rated on a 5-point Likert-type scale from 0 to 4 and each functional\nimpairment item is answered in a binary Yes (1) or No (0) format.\nThe scoring approach uses dichotomous scoring for diagnostic purposes and dimensional\nscoring for symptom severity.\n*** Dichotomous Scoring ***\nA score of 2 (Likert = “Moderately”) or higher on a symptom item and a score of 1 (“Yes”) on a\nfunctional impairment item indicates the presence (i.e., endorsement) of that symptom or\nimpairment.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+    "pageNumber": 6,
+    "text": "PTSD is indicated if:\n- at least one symptom is present from each PTSD symptom cluster, and\n- there is at least one functional impairment associated with these PTSD symptoms.\nComplex PTSD (CPTSD) is indicated if:\n- at least one symptom is present from each PTSD symptom cluster,\nthere is at least one functional impairment associated with these PTSD symptoms,\n- at least one symptom is present from each DSO symptom cluster, and\n- there is at least one functional impairment associated with these DSO symptoms.\nA person may receive a diagnosis of PTSD or CPTSD, but not both.\n*** Dimensional Scoring ***\n- The PTSD symptom severity score is the sum of items 1 to 6 and ranges from 0 to 24.\n- The DSO symptom severity score is the sum of items 12 to 17 and ranges from 0 to 24.\nThe respondent’s scores are presented as raw scores and as percentiles based on normative\ndata for trauma-exposed children and adolescents, contextualising their scores relative to the\ntypical scores of children and adolescents in this normative sample. For example, the 50th\npercentile represents the typical level of symptom severity for a child or adolescent who has\nbeen exposed to trauma (i.e., “Mild”), while scores on the 90th percentile fall within the top 10%\nand are considered “Severe”.\nQualitative descriptors categorise the respondent’s scores based on specific ranges of\npercentiles.\n- “Minimal” - Below the 25th percentile (subscale score between 0 and 3)\n- “Mild” - 25th to 50th percentile (subscale score between 4 and 7)\n- “Moderate” - 51st to 75th percentile (subscale score between 8 and 11)\n- “Severe” - 76th to 95th percentile (subscale score between 12 and 17)\n- “Very Severe” - Above the 95th percentile (subscale score between 18 and 24)\nA diagnostic criteria descriptor also accompanies each score, indicating whether diagnostic\ncriteria for PTSD and DSO symptoms are met, and whether specific symptom clusters and\nfunctional impairments are present, according to the dichotomous scoring threshold. CPTSD is\nindicated if the diagnostic criteria descriptor says “Criteria met” for both the PTSD subscale and\nthe DSO subscale.\nOn first administration, graphs are presented showing the respondent’s scores as percentiles\nbased on normative data for trauma-exposed children and adolescents (Baker et al., 2025). A\ngraph is also presented comparing the respondent’s PTSD and DSO symptom severity scores\nto two samples: (1) the normative sample of trauma-exposed children and adolescents; and (2)\na diagnostic sample. For the PTSD symptom severity score, this diagnostic sample consists of\nchildren and adolescents meeting the ITQ-CA’s criteria for PTSD. For DSO symptom severity",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "9e27e02b3ef22cbe9781c71e8d4e76807efdc6a659ef3158250a542d289e4051",
+    "pageNumber": 7,
+    "text": "scores, the diagnostic sample consists of children and adolescents meeting the ITQ-CA’s\ncriteria for CPTSD. Shaded areas correspond to scores between the 25th and 75th percentile.\nThis graph contextualises the respondent’s scores relative to typical symptom severity levels in\nthese samples.\nIf administered more than once, longitudinal graphs are presented for the respondent’s raw\nPTSD and DSO symptom severity scores, which is useful for monitoring any changes in\nsymptom severity over time and treatment progress and outcomes. A meaningful change in\nPTSD symptom severity is defined as a change of 7 or more points in the PTSD symptom\nseverity score, and a meaningful change in DSO symptom severity is defined as a change of 6\nor more points in the DSO symptom severity score, based on Reliable Change Index (RCI)\ncalculations (i.e., a 6-7 or more point decrease indicates significant improvement; a 6-7 or more\npoint increase indicates significant deterioration; and less than a 6-7 point change indicates no\nsignificant change).",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Disturbances in relationships (Items 16 and 17) – evaluates difficulties in forming and maintaining close relationships, feeling distant or cut off from others, and finding it challenging to stay emotionally close to people",
+   "The respondent’s scores are presented as raw scores and as percentiles based on normative data for trauma-exposed children and adolescents, contextualising their scores relative to the typical scores of children and adolescents in this normative sample.",
+   "For example, the 50th percentile represents the typical level of symptom severity for a child or adolescent who has been exposed to trauma (i.e., “Mild”), while scores on the 90th percentile fall within the top 10% and are considered “Severe”.",
+   "Qualitative descriptors categorise the respondent’s scores based on specific ranges of percentiles.",
+   "“Minimal” – Below the 25th percentile (subscale score between 0 and 3)",
+   "“Mild” – 25th to 50th percentile (subscale score between 4 and 7)",
+   "“Moderate” – 51st to 75th percentile (subscale score between 8 and 11)",
+   "“Severe” – 76th to 95th percentile (subscale score between 12 and 17)",
+   "“Very Severe” – Above the 95th percentile (subscale score between 18 and 24)",
+   "A diagnostic criteria descriptor also accompanies each score, indicating whether diagnostic criteria for PTSD and DSO symptoms are met, and whether specific symptom clusters and functional impairments are present, according to the dichotomous scoring threshold.",
+   "CPTSD is indicated if the diagnostic criteria descriptor says “Criteria met” for both the PTSD subscale and the DSO subscale.",
+   "On first administration, graphs are presented showing the respondent’s scores as percentiles based on normative data for trauma-exposed children and adolescents (Baker et al., 2025).",
+   "A graph is also presented comparing the respondent’s PTSD and DSO symptom severity scores to two samples: (1) the normative sample of trauma-exposed children and adolescents; and (2) a diagnostic sample.",
+   "Shaded areas correspond to scores between the 25th and 75th percentile.",
+   "This graph contextualises the respondent’s scores relative to typical symptom severity levels in these samples.",
+   "If administered more than once, longitudinal graphs are presented for the respondent’s raw PTSD and DSO symptom severity scores, which is useful for monitoring any changes in symptom severity over time and treatment progress and outcomes.",
+   "A meaningful change in PTSD symptom severity is defined as a change of 7 or more points in the PTSD symptom severity score, and a meaningful change in DSO symptom severity is defined as a change of 6 or more points in the DSO symptom severity score, based on Reliable Change Index (RCI) calculations (i.e., a 6-7 or more point decrease indicates significant improvement; a 6-7 or more point increase indicates significant deterioration; and less than a 6-7 point change indicates no significant change)."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 3
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 7,
+   "unresolvedCells": 250
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

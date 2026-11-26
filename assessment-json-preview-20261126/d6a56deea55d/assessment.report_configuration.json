@@ -1,0 +1,807 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Overt Aggression cluster",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Overt Aggression cluster",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ],
+    "multiplier": 0.08333333333333333,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Overt Aggression cluster (Items 1–4, 9–16, sum of the 12 item scores ÷ 12):",
+     "y": 436.5,
+     "url": null,
+     "sha256": "f50b15ad556264c93ff38e9a466d37418fd8e2fa71287c176a937cdd5e4e713d"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Self-Destructive cluster",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Self-Destructive cluster",
+    "method": "sum",
+    "item_ids": [
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ],
+    "multiplier": 0.125,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Self-Destructive cluster (Items 5–8, 17–20, sum of the 8 item scores ÷ 8):",
+     "y": 461.2,
+     "url": null,
+     "sha256": "f50b15ad556264c93ff38e9a466d37418fd8e2fa71287c176a937cdd5e4e713d"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "f4662532bcd5bc4fc9768a79c0008e31c449af101a56bcc733f388b4976d8179",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "df4662532bcd5_p1",
+   "documentSha256": "f4662532bcd5bc4fc9768a79c0008e31c449af101a56bcc733f388b4976d8179",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "df4662532bcd5_p1_chart_1"
+   ],
+   "tableIds": [
+    "df4662532bcd5_p1_table_1",
+    "df4662532bcd5_p1_table_2",
+    "df4662532bcd5_p1_table_3"
+   ],
+   "sectionIds": [
+    "df4662532bcd5_p1_section_1",
+    "df4662532bcd5_p1_section_2",
+    "df4662532bcd5_p1_section_3",
+    "df4662532bcd5_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "df4662532bcd5_p2",
+   "documentSha256": "f4662532bcd5bc4fc9768a79c0008e31c449af101a56bcc733f388b4976d8179",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df4662532bcd5_p2_table_1",
+    "df4662532bcd5_p2_table_2"
+   ],
+   "sectionIds": [
+    "df4662532bcd5_p2_section_1",
+    "df4662532bcd5_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "df4662532bcd5_p3",
+   "documentSha256": "f4662532bcd5bc4fc9768a79c0008e31c449af101a56bcc733f388b4976d8179",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df4662532bcd5_p3_table_1"
+   ],
+   "sectionIds": [
+    "df4662532bcd5_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "df4662532bcd5_p1_section_1",
+   "pageId": "df4662532bcd5_p1",
+   "title": "Assessment Information",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    176.72569,
+    237.39752,
+    196.00369
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df4662532bcd5_p1_section_2",
+   "pageId": "df4662532bcd5_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    74.03149,
+    281.99808,
+    124.59951,
+    301.27609
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df4662532bcd5_p1_section_3",
+   "pageId": "df4662532bcd5_p1",
+   "title": "Clusters",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    409.55713,
+    130.0455,
+    428.83514
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df4662532bcd5_p1_section_4",
+   "pageId": "df4662532bcd5_p1",
+   "title": "Subscale Scores",
+   "type": "results",
+   "bboxPt": [
+    250.00749,
+    501.36154,
+    346.05545,
+    517.88556
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df4662532bcd5_p2_section_1",
+   "pageId": "df4662532bcd5_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    329.95145,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df4662532bcd5_p2_section_2",
+   "pageId": "df4662532bcd5_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    561.66107,
+    191.50549,
+    580.93903
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df4662532bcd5_p3_section_1",
+   "pageId": "df4662532bcd5_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "df4662532bcd5_p1_chart_1",
+   "title": "Subscale Scores",
+   "type": "vertical_bar",
+   "bboxPt": [
+    131.031,
+    529.202,
+    510.031,
+    619.202
+   ],
+   "widthPt": 379.0,
+   "heightPt": 90.0,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 12.0,
+      "positionPt": 530.321535,
+      "text": "12",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 544.988525,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 8.0,
+      "positionPt": 559.654545,
+      "text": "8",
+      "colour": "#333333"
+     },
+     {
+      "value": 6.0,
+      "positionPt": 574.321535,
+      "text": "6",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 588.991575,
+      "text": "4",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 603.651555,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 618.321535,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 12.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Verb. Aggression (Others)",
+     "colour": "#42a5f4",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.09947229551451192,
+     "barThicknessPt": 35.400000000000006,
+     "fill": "#42a5f5",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#42a5f4"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#42a5f4"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#42a5f4"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#42a5f4"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#42a5f4"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Verb. Aggression (Self)",
+     "colour": "#ef6291",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.2984168733509235,
+     "barThicknessPt": 35.39999,
+     "fill": "#f06292",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ef6291"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ef6291"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ef6291"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ef6291"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#48353b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "Phys. Aggression (Others)",
+     "colour": "#ffaa90",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49736149076517155,
+     "barThicknessPt": 35.400030000000015,
+     "fill": "#ffab91",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffaa90"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffaa90"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffaa90"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffaa90"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4a3f3b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": "Phys. Aggression (Objects)",
+     "colour": "#4db5ac",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6963061081794196,
+     "barThicknessPt": 35.39999,
+     "fill": "#4db6ac",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4db5ac"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4db5ac"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4db5ac"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4db5ac"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4db5ac"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_5",
+     "label": "Phys. Aggression (Self)",
+     "colour": "#8c6e62",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8952506728232191,
+     "barThicknessPt": 35.39999,
+     "fill": "#8d6e63",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#8c6e62"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#8c6e62"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#8c6e62"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#8c6e62"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#8c6e62"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "df4662532bcd5_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 15,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Subscale Scores",
+     "bboxPt": [
+      250.00749,
+      501.36154,
+      346.05545,
+      517.88556
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Verb. Aggression (Others)",
+     "bboxPt": [
+      105.44518,
+      621.72858,
+      175.41933,
+      729.18738
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.999996185302734,
+     "direction": [
+      0.5,
+      -0.86603
+     ]
+    },
+    {
+     "text": "Verb. Aggression (Self)",
+     "bboxPt": [
+      187.23509,
+      621.72852,
+      250.81929,
+      718.11951
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.999996185302734,
+     "direction": [
+      0.5,
+      -0.86603
+     ]
+    },
+    {
+     "text": "Phys. Aggression (Others)",
+     "bboxPt": [
+      255.69011,
+      621.72858,
+      326.2193,
+      730.14862
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.999996185302734,
+     "direction": [
+      0.5,
+      -0.86603
+     ]
+    },
+    {
+     "text": "Phys. Aggression (Objects)",
+     "bboxPt": [
+      329.14514,
+      621.7287,
+      401.61929,
+      733.51752
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.999996185302734,
+     "direction": [
+      0.5,
+      -0.86603
+     ]
+    },
+    {
+     "text": "Phys. Aggression (Self)",
+     "bboxPt": [
+      412.88013,
+      621.7287,
+      477.01932,
+      719.08093
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.999996185302734,
+     "direction": [
+      0.5,
+      -0.86603
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "A graph is presented to compare the five areas when first administered and when administered more than once a graph is presented to easily demonstrate change over time.",
+   "If administered more than once, a graph will be presented to visualise change in these clusters over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "IBR-MOAS Scoring & Interpretation",
+    "text": "Scores for the five areas of aggression measured are presented. Scores range from 0 – 12. Higher scores are indicative of more frequent and/or severe aggressive behaviours. The five areas of aggression are:\n1. Verbal aggression towards others (Items 1-4)\n2. Verbal aggression towards self (Items 5-8)\n3. Physical aggression against other people (Items 9-12)\n4. Physical aggression against objects (Items 13-16)\n5. Physical aggression against self (Items 17-20)\n\nA graph is presented to compare the five areas when first administered and when administered more than once a graph is presented to easily demonstrate change over time.\n\nAdditionally, Cohen et al. (2010) identified two clusters that are made up of the five areas of aggression:\n1. Overt Aggression cluster (composed of Physical aggression against objects, Physical aggression against other people, and Verbal Aggression Toward Others areas of aggression)\n2. Self Destructive cluster (composed of Physical aggression against self and Verbal aggression toward self)\nThese are presented as an average score between 0 – 3, calculated by the sum of the items in each cluster divided by the number it items. Average scores allow for comparison between the two clusters to determine if aggression is more overt or self-destructive in nature and to tailor treatment appropriately.\n\nIf administered more than once, a graph will be presented to visualise change in these clusters over time.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "f4662532bcd5bc4fc9768a79c0008e31c449af101a56bcc733f388b4976d8179",
+    "pageNumber": 2,
+    "text": "Scores for the five areas of aggression measured are presented.\nScores range from 0 - 12. Higher scores are indicative of more\nfrequent and/or severe aggressive behaviours. The five areas of\naggression are:\n1. Verbal aggression towards others (Items 1-4)\n2. Verbal aggression towards self (Items 5-8)\n3. Physical aggression against other people (Items 9-12)\n4. Physical aggression against objects (Items 13-16)\n5. Physical aggression against self (Items 17-20)\nA graph is presented to compare the five areas when first\nadministered and when administered more than once a graph is\npresented to easily demonstrate change over time.\nAdditionally, Cohen et al. (2010) identified two clusters that are\nmade up of the five areas of aggression:\n1. Overt Aggression cluster (composed of Physical aggression\nagainst objects, Physical aggression against other people, and\nVerbal Aggression Toward Others areas of aggression)\n2. Self Destructive cluster (composed of Physical aggression against\nself and Verbal aggression toward self)\nThese are presented as an average score between 0 - 3, calculated\nby the sum of the items in each cluster divided by the number it\nitems. Average scores allow for comparison between the two\nclusters to determine if aggression is more overt or self-destructive\nin nature and to tailor treatment appropriately.\nIf administered more than once, a graph will be presented to\nvisualise change in these clusters over time.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A graph is presented to compare the five areas when first administered and when administered more than once a graph is presented to easily demonstrate change over time.",
+   "If administered more than once, a graph will be presented to visualise change in these clusters over time."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 6,
+   "unresolvedCells": 117
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

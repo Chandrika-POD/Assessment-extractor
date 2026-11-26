@@ -1,0 +1,2788 @@
+[
+ {
+  "id": "d6d4371d54b9f_p1_table_1",
+  "type": "patient_metadata",
+  "bboxPt": [
+   28.3465,
+   113.38562,
+   566.92948,
+   180.0
+  ],
+  "rowCount": 4,
+  "columnCount": 4,
+  "cellsPt": [
+   [
+    28.3465,
+    113.38562,
+    566.92948,
+    133.22818
+   ],
+   [
+    28.3465,
+    133.22818,
+    141.73215,
+    148.81921
+   ],
+   [
+    28.3465,
+    148.81921,
+    141.73215,
+    164.40973
+   ],
+   [
+    28.3465,
+    164.40973,
+    141.73215,
+    180.0
+   ],
+   [
+    141.73215,
+    133.22818,
+    354.33051,
+    148.81921
+   ],
+   [
+    141.73215,
+    148.81921,
+    354.33051,
+    164.40973
+   ],
+   [
+    141.73215,
+    164.40973,
+    354.33051,
+    180.0
+   ],
+   [
+    354.33051,
+    133.22818,
+    467.7164,
+    148.81921
+   ],
+   [
+    354.33051,
+    148.81921,
+    467.7164,
+    164.40973
+   ],
+   [
+    354.33051,
+    164.40973,
+    467.7164,
+    180.0
+   ],
+   [
+    467.7164,
+    133.22818,
+    566.92948,
+    148.81921
+   ],
+   [
+    467.7164,
+    148.81921,
+    566.92948,
+    164.40973
+   ],
+   [
+    467.7164,
+    164.40973,
+    566.92948,
+    180.0
+   ]
+  ],
+  "dataBinding": null,
+  "runtimeEnabled": false,
+  "reviewStatus": "cell_semantics_require_review",
+  "pageId": "d6d4371d54b9f_p1",
+  "sourceTableId": "table_1",
+  "columns": [],
+  "rowBindings": [],
+  "cellTemplates": [
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 0,
+    "kind": "static_heading",
+    "content": "Depression Anxiety Stress Scales Long Form (DASS -42)\n-",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 0,
+    "kind": "static_label",
+    "content": "Client Name",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "patient.displayName"
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 1,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "patient.displayName"
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 2,
+    "kind": "static_label",
+    "content": "Date administered",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "session.completedAt"
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 3,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "session.completedAt"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 0,
+    "kind": "static_label",
+    "content": "Date of birth (age)",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "patient.dateOfBirthAndAgeAtAdministration"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 1,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "patient.dateOfBirthAndAgeAtAdministration"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 2,
+    "kind": "static_label",
+    "content": "Time taken",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "session.duration"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 3,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "session.duration"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 0,
+    "kind": "static_label",
+    "content": "Assessor",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "session.assessorName"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 1,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "session.assessorName"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   }
+  ],
+  "contentPolicy": {
+   "sampleCellValuesExcluded": true,
+   "patientCells": "bind_current_patient_session",
+   "responseCells": "bind_questionnaire_items_and_session_answers",
+   "unresolvedCells": "withhold",
+   "referenceCellsRequireReview": true
+  }
+ },
+ {
+  "id": "d6d4371d54b9f_p1_table_2",
+  "type": "score_table_candidate",
+  "bboxPt": [
+   193.15552,
+   228.31506,
+   549.46771,
+   308.15094
+  ],
+  "rowCount": 6,
+  "columnCount": 10,
+  "cellsPt": [
+   [
+    193.15552,
+    228.31506,
+    306.11105,
+    243.74899
+   ],
+   [
+    306.11105,
+    228.31506,
+    311.811,
+    243.74899
+   ],
+   [
+    311.811,
+    228.31506,
+    317.51105,
+    243.74899
+   ],
+   [
+    317.51105,
+    228.31506,
+    391.14993,
+    243.74899
+   ],
+   [
+    391.14993,
+    228.31506,
+    396.85031,
+    243.74899
+   ],
+   [
+    396.85031,
+    228.31506,
+    402.54999,
+    243.74899
+   ],
+   [
+    402.54999,
+    228.31506,
+    476.18997,
+    243.74899
+   ],
+   [
+    476.18997,
+    228.31506,
+    481.88971,
+    243.74899
+   ],
+   [
+    481.88971,
+    228.31506,
+    487.58994,
+    243.74899
+   ],
+   [
+    487.58994,
+    228.31506,
+    549.46771,
+    243.74899
+   ],
+   [
+    193.15552,
+    243.74899,
+    306.11105,
+    249.44891
+   ],
+   [
+    306.11105,
+    243.74899,
+    311.811,
+    249.44891
+   ],
+   [
+    311.811,
+    243.74899,
+    317.51105,
+    249.44891
+   ],
+   [
+    317.51105,
+    243.74899,
+    391.14993,
+    249.44891
+   ],
+   [
+    391.14993,
+    243.74899,
+    396.85031,
+    249.44891
+   ],
+   [
+    396.85031,
+    243.74899,
+    402.54999,
+    249.44891
+   ],
+   [
+    402.54999,
+    243.74899,
+    476.18997,
+    249.44891
+   ],
+   [
+    476.18997,
+    243.74899,
+    481.88971,
+    249.44891
+   ],
+   [
+    481.88971,
+    243.74899,
+    487.58994,
+    249.44891
+   ],
+   [
+    487.58994,
+    243.74899,
+    549.46771,
+    249.44891
+   ],
+   [
+    193.15552,
+    249.44891,
+    306.11105,
+    265.03922
+   ],
+   [
+    306.11105,
+    249.44891,
+    311.811,
+    265.03922
+   ],
+   [
+    311.811,
+    249.44891,
+    317.51105,
+    265.03922
+   ],
+   [
+    317.51105,
+    249.44891,
+    391.14993,
+    265.03922
+   ],
+   [
+    391.14993,
+    249.44891,
+    396.85031,
+    265.03922
+   ],
+   [
+    396.85031,
+    249.44891,
+    402.54999,
+    265.03922
+   ],
+   [
+    402.54999,
+    249.44891,
+    476.18997,
+    265.03922
+   ],
+   [
+    476.18997,
+    249.44891,
+    481.88971,
+    265.03922
+   ],
+   [
+    481.88971,
+    249.44891,
+    487.58994,
+    265.03922
+   ],
+   [
+    487.58994,
+    249.44891,
+    549.46771,
+    265.03922
+   ],
+   [
+    193.15552,
+    265.03922,
+    306.11105,
+    280.62967
+   ],
+   [
+    306.11105,
+    265.03922,
+    311.811,
+    280.62967
+   ],
+   [
+    311.811,
+    265.03922,
+    317.51105,
+    280.62967
+   ],
+   [
+    317.51105,
+    265.03922,
+    391.14993,
+    280.62967
+   ],
+   [
+    391.14993,
+    265.03922,
+    396.85031,
+    280.62967
+   ],
+   [
+    396.85031,
+    265.03922,
+    402.54999,
+    280.62967
+   ],
+   [
+    402.54999,
+    265.03922,
+    476.18997,
+    280.62967
+   ],
+   [
+    476.18997,
+    265.03922,
+    481.88971,
+    280.62967
+   ],
+   [
+    481.88971,
+    265.03922,
+    487.58994,
+    280.62967
+   ],
+   [
+    487.58994,
+    265.03922,
+    549.46771,
+    280.62967
+   ],
+   [
+    193.15552,
+    280.62967,
+    306.11105,
+    296.22021
+   ],
+   [
+    306.11105,
+    280.62967,
+    311.811,
+    296.22021
+   ],
+   [
+    311.811,
+    280.62967,
+    317.51105,
+    296.22021
+   ],
+   [
+    317.51105,
+    280.62967,
+    391.14993,
+    296.22021
+   ],
+   [
+    391.14993,
+    280.62967,
+    396.85031,
+    296.22021
+   ],
+   [
+    396.85031,
+    280.62967,
+    402.54999,
+    296.22021
+   ],
+   [
+    402.54999,
+    280.62967,
+    476.18997,
+    296.22021
+   ],
+   [
+    476.18997,
+    280.62967,
+    481.88971,
+    296.22021
+   ],
+   [
+    481.88971,
+    280.62967,
+    487.58994,
+    296.22021
+   ],
+   [
+    487.58994,
+    280.62967,
+    549.46771,
+    296.22021
+   ],
+   [
+    193.15552,
+    296.22021,
+    306.11105,
+    308.15094
+   ],
+   [
+    306.11105,
+    296.22021,
+    311.811,
+    308.15094
+   ],
+   [
+    311.811,
+    296.22021,
+    317.51105,
+    308.15094
+   ],
+   [
+    317.51105,
+    296.22021,
+    391.14993,
+    308.15094
+   ],
+   [
+    391.14993,
+    296.22021,
+    396.85031,
+    308.15094
+   ],
+   [
+    396.85031,
+    296.22021,
+    402.54999,
+    308.15094
+   ],
+   [
+    402.54999,
+    296.22021,
+    476.18997,
+    308.15094
+   ],
+   [
+    476.18997,
+    296.22021,
+    481.88971,
+    308.15094
+   ],
+   [
+    481.88971,
+    296.22021,
+    487.58994,
+    308.15094
+   ],
+   [
+    487.58994,
+    296.22021,
+    549.46771,
+    308.15094
+   ]
+  ],
+  "dataBinding": null,
+  "runtimeEnabled": false,
+  "reviewStatus": "cell_semantics_require_review",
+  "pageId": "d6d4371d54b9f_p1",
+  "sourceTableId": "table_2",
+  "columns": [
+   {
+    "sourceColumnIndex": 3,
+    "label": "Raw Score",
+    "binding": null
+   },
+   {
+    "sourceColumnIndex": 6,
+    "label": "Percentile",
+    "binding": null
+   },
+   {
+    "sourceColumnIndex": 9,
+    "label": "Descriptor",
+    "binding": null
+   }
+  ],
+  "rowBindings": [
+   {
+    "sourceRowIndex": 3,
+    "label": "Depression",
+    "ruleIdCandidate": "depression_raw",
+    "status": "candidate_only",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "label": "Anxiety",
+    "ruleIdCandidate": "anxiety_raw",
+    "status": "candidate_only",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "label": "Stress",
+    "ruleIdCandidate": "stress_raw",
+    "status": "candidate_only",
+    "runtimeEnabled": false
+   }
+  ],
+  "cellTemplates": [
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 3,
+    "kind": "static_column_header",
+    "content": "Raw Score",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 6,
+    "kind": "static_column_header",
+    "content": "Percentile",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 8,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 9,
+    "kind": "static_column_header",
+    "content": "Descriptor",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 8,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 9,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 8,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 9,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 8,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 9,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 8,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 9,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 8,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 9,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   }
+  ],
+  "contentPolicy": {
+   "sampleCellValuesExcluded": true,
+   "patientCells": "bind_current_patient_session",
+   "responseCells": "bind_questionnaire_items_and_session_answers",
+   "unresolvedCells": "withhold",
+   "referenceCellsRequireReview": true
+  }
+ },
+ {
+  "id": "d6d4371d54b9f_p3_table_1",
+  "type": "response_table",
+  "bboxPt": [
+   28.3465,
+   224.71812,
+   566.92964,
+   726.45001
+  ],
+  "rowCount": 18,
+  "columnCount": 7,
+  "cellsPt": [
+   [
+    28.3465,
+    224.71812,
+    566.92964,
+    244.56035
+   ],
+   [
+    28.3465,
+    244.56035,
+    48.1891,
+    272.90714
+   ],
+   [
+    28.3465,
+    272.90714,
+    48.1891,
+    301.25342
+   ],
+   [
+    28.3465,
+    301.25342,
+    48.1891,
+    329.5999
+   ],
+   [
+    28.3465,
+    329.5999,
+    48.1891,
+    357.94615
+   ],
+   [
+    28.3465,
+    357.94615,
+    48.1891,
+    386.29287
+   ],
+   [
+    28.3465,
+    386.29287,
+    48.1891,
+    414.63917
+   ],
+   [
+    28.3465,
+    414.63917,
+    48.1891,
+    442.98586
+   ],
+   [
+    28.3465,
+    442.98586,
+    48.1891,
+    471.33213
+   ],
+   [
+    28.3465,
+    471.33213,
+    48.1891,
+    499.67885
+   ],
+   [
+    28.3465,
+    499.67885,
+    48.1891,
+    528.02516
+   ],
+   [
+    28.3465,
+    528.02516,
+    48.1891,
+    556.37186
+   ],
+   [
+    28.3465,
+    556.37186,
+    48.1891,
+    584.71815
+   ],
+   [
+    28.3465,
+    584.71815,
+    48.1891,
+    613.06487
+   ],
+   [
+    28.3465,
+    613.06487,
+    48.1891,
+    641.41114
+   ],
+   [
+    28.3465,
+    641.41114,
+    48.1891,
+    669.75798
+   ],
+   [
+    28.3465,
+    669.75798,
+    48.1891,
+    698.10387
+   ],
+   [
+    28.3465,
+    698.10387,
+    48.1891,
+    726.45001
+   ],
+   [
+    48.1891,
+    244.56035,
+    255.11804,
+    272.90714
+   ],
+   [
+    48.1891,
+    272.90714,
+    255.11804,
+    301.25342
+   ],
+   [
+    48.1891,
+    301.25342,
+    255.11804,
+    329.5999
+   ],
+   [
+    48.1891,
+    329.5999,
+    255.11804,
+    357.94615
+   ],
+   [
+    48.1891,
+    357.94615,
+    255.11804,
+    386.29287
+   ],
+   [
+    48.1891,
+    386.29287,
+    255.11804,
+    414.63917
+   ],
+   [
+    48.1891,
+    414.63917,
+    255.11804,
+    442.98586
+   ],
+   [
+    48.1891,
+    442.98586,
+    255.11804,
+    471.33213
+   ],
+   [
+    48.1891,
+    471.33213,
+    255.11804,
+    499.67885
+   ],
+   [
+    48.1891,
+    499.67885,
+    255.11804,
+    528.02516
+   ],
+   [
+    48.1891,
+    528.02516,
+    255.11804,
+    556.37186
+   ],
+   [
+    48.1891,
+    556.37186,
+    255.11804,
+    584.71815
+   ],
+   [
+    48.1891,
+    584.71815,
+    255.11804,
+    613.06487
+   ],
+   [
+    48.1891,
+    613.06487,
+    255.11804,
+    641.41114
+   ],
+   [
+    48.1891,
+    641.41114,
+    255.11804,
+    669.75798
+   ],
+   [
+    48.1891,
+    669.75798,
+    255.11804,
+    698.10387
+   ],
+   [
+    48.1891,
+    698.10387,
+    255.11804,
+    726.45001
+   ],
+   [
+    255.11804,
+    244.56035,
+    329.52794,
+    272.90714
+   ],
+   [
+    255.11804,
+    272.90714,
+    329.52794,
+    301.25342
+   ],
+   [
+    255.11804,
+    301.25342,
+    329.52794,
+    329.5999
+   ],
+   [
+    255.11804,
+    329.5999,
+    329.52794,
+    357.94615
+   ],
+   [
+    255.11804,
+    357.94615,
+    329.52794,
+    386.29287
+   ],
+   [
+    255.11804,
+    386.29287,
+    329.52794,
+    414.63917
+   ],
+   [
+    255.11804,
+    414.63917,
+    329.52794,
+    442.98586
+   ],
+   [
+    255.11804,
+    442.98586,
+    329.52794,
+    471.33213
+   ],
+   [
+    255.11804,
+    471.33213,
+    329.52794,
+    499.67885
+   ],
+   [
+    255.11804,
+    499.67885,
+    329.52794,
+    528.02516
+   ],
+   [
+    255.11804,
+    528.02516,
+    329.52794,
+    556.37186
+   ],
+   [
+    255.11804,
+    556.37186,
+    329.52794,
+    584.71815
+   ],
+   [
+    255.11804,
+    584.71815,
+    329.52794,
+    613.06487
+   ],
+   [
+    255.11804,
+    613.06487,
+    329.52794,
+    641.41114
+   ],
+   [
+    255.11804,
+    641.41114,
+    329.52794,
+    669.75798
+   ],
+   [
+    255.11804,
+    669.75798,
+    329.52794,
+    698.10387
+   ],
+   [
+    255.11804,
+    698.10387,
+    329.52794,
+    726.45001
+   ],
+   [
+    329.52794,
+    244.56035,
+    403.93714,
+    272.90714
+   ],
+   [
+    329.52794,
+    272.90714,
+    403.93714,
+    301.25342
+   ],
+   [
+    329.52794,
+    301.25342,
+    403.93714,
+    329.5999
+   ],
+   [
+    329.52794,
+    329.5999,
+    403.93714,
+    357.94615
+   ],
+   [
+    329.52794,
+    357.94615,
+    403.93714,
+    386.29287
+   ],
+   [
+    329.52794,
+    386.29287,
+    403.93714,
+    414.63917
+   ],
+   [
+    329.52794,
+    414.63917,
+    403.93714,
+    442.98586
+   ],
+   [
+    329.52794,
+    442.98586,
+    403.93714,
+    471.33213
+   ],
+   [
+    329.52794,
+    471.33213,
+    403.93714,
+    499.67885
+   ],
+   [
+    329.52794,
+    499.67885,
+    403.93714,
+    528.02516
+   ],
+   [
+    329.52794,
+    528.02516,
+    403.93714,
+    556.37186
+   ],
+   [
+    329.52794,
+    556.37186,
+    403.93714,
+    584.71815
+   ],
+   [
+    329.52794,
+    584.71815,
+    403.93714,
+    613.06487
+   ],
+   [
+    329.52794,
+    613.06487,
+    403.93714,
+    641.41114
+   ],
+   [
+    329.52794,
+    641.41114,
+    403.93714,
+    669.75798
+   ],
+   [
+    329.52794,
+    669.75798,
+    403.93714,
+    698.10387
+   ],
+   [
+    329.52794,
+    698.10387,
+    403.93714,
+    726.45001
+   ],
+   [
+    403.93714,
+    244.56035,
+    478.34614,
+    272.90714
+   ],
+   [
+    403.93714,
+    272.90714,
+    478.34614,
+    301.25342
+   ],
+   [
+    403.93714,
+    301.25342,
+    478.34614,
+    329.5999
+   ],
+   [
+    403.93714,
+    329.5999,
+    478.34614,
+    357.94615
+   ],
+   [
+    403.93714,
+    357.94615,
+    478.34614,
+    386.29287
+   ],
+   [
+    403.93714,
+    386.29287,
+    478.34614,
+    414.63917
+   ],
+   [
+    403.93714,
+    414.63917,
+    478.34614,
+    442.98586
+   ],
+   [
+    403.93714,
+    442.98586,
+    478.34614,
+    471.33213
+   ],
+   [
+    403.93714,
+    471.33213,
+    478.34614,
+    499.67885
+   ],
+   [
+    403.93714,
+    499.67885,
+    478.34614,
+    528.02516
+   ],
+   [
+    403.93714,
+    528.02516,
+    478.34614,
+    556.37186
+   ],
+   [
+    403.93714,
+    556.37186,
+    478.34614,
+    584.71815
+   ],
+   [
+    403.93714,
+    584.71815,
+    478.34614,
+    613.06487
+   ],
+   [
+    403.93714,
+    613.06487,
+    478.34614,
+    641.41114
+   ],
+   [
+    403.93714,
+    641.41114,
+    478.34614,
+    669.75798
+   ],
+   [
+    403.93714,
+    669.75798,
+    478.34614,
+    698.10387
+   ],
+   [
+    403.93714,
+    698.10387,
+    478.34614,
+    726.45001
+   ],
+   [
+    478.34614,
+    244.56035,
+    552.75537,
+    272.90714
+   ],
+   [
+    478.34614,
+    272.90714,
+    552.75537,
+    301.25342
+   ],
+   [
+    478.34614,
+    301.25342,
+    552.75537,
+    329.5999
+   ],
+   [
+    478.34614,
+    329.5999,
+    552.75537,
+    357.94615
+   ],
+   [
+    478.34614,
+    357.94615,
+    552.75537,
+    386.29287
+   ],
+   [
+    478.34614,
+    386.29287,
+    552.75537,
+    414.63917
+   ],
+   [
+    478.34614,
+    414.63917,
+    552.75537,
+    442.98586
+   ],
+   [
+    478.34614,
+    442.98586,
+    552.75537,
+    471.33213
+   ],
+   [
+    478.34614,
+    471.33213,
+    552.75537,
+    499.67885
+   ],
+   [
+    478.34614,
+    499.67885,
+    552.75537,
+    528.02516
+   ],
+   [
+    478.34614,
+    528.02516,
+    552.75537,
+    556.37186
+   ],
+   [
+    478.34614,
+    556.37186,
+    552.75537,
+    584.71815
+   ],
+   [
+    478.34614,
+    584.71815,
+    552.75537,
+    613.06487
+   ],
+   [
+    478.34614,
+    613.06487,
+    552.75537,
+    641.41114
+   ],
+   [
+    478.34614,
+    641.41114,
+    552.75537,
+    669.75798
+   ],
+   [
+    478.34614,
+    669.75798,
+    552.75537,
+    698.10387
+   ],
+   [
+    478.34614,
+    698.10387,
+    552.75537,
+    726.45001
+   ],
+   [
+    552.75537,
+    244.56035,
+    566.92964,
+    726.45001
+   ]
+  ],
+  "dataBinding": null,
+  "runtimeEnabled": false,
+  "reviewStatus": "cell_semantics_require_review",
+  "pageId": "d6d4371d54b9f_p3",
+  "sourceTableId": "table_1",
+  "columns": [
+   {
+    "sourceColumnIndex": 2,
+    "label": "Never",
+    "binding": null
+   },
+   {
+    "sourceColumnIndex": 3,
+    "label": "Sometimes",
+    "binding": null
+   }
+  ],
+  "rowBindings": [
+   {
+    "sourceRowIndex": 2,
+    "questionId": "Q1",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "questionId": "Q2",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "questionId": "Q3",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "questionId": "Q4",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "questionId": "Q5",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "questionId": "Q6",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "questionId": "Q7",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "questionId": "Q8",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "questionId": "Q9",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 11,
+    "questionId": "Q10",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 12,
+    "questionId": "Q11",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 13,
+    "questionId": "Q12",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 14,
+    "questionId": "Q13",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 15,
+    "questionId": "Q14",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 16,
+    "questionId": "Q15",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 17,
+    "questionId": "Q16",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   }
+  ],
+  "cellTemplates": [
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 0,
+    "kind": "static_heading",
+    "content": "Client Responses",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 2,
+    "kind": "response_option_header",
+    "content": "Never",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 3,
+    "kind": "response_option_header",
+    "content": "Sometimes",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 4,
+    "kind": "response_option_header",
+    "content": "Often",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 5,
+    "kind": "response_option_header",
+    "content": "AlmostAlways",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q1",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q2",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q3",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q4",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q5",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q6",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q7",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q8",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q9",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 11,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 11,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q10",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 11,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 11,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 11,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 11,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 11,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 12,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 12,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q11",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 12,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 12,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 12,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 12,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 12,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 13,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 13,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q12",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 13,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 13,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 13,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 13,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 13,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 14,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 14,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q13",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 14,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 14,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 14,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 14,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 14,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 15,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 15,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q14",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 15,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 15,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 15,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 15,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 15,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 16,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 16,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q15",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 16,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 16,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 16,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 16,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 16,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 17,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 17,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q16",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 17,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 17,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 17,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 17,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 17,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   }
+  ],
+  "contentPolicy": {
+   "sampleCellValuesExcluded": true,
+   "patientCells": "bind_current_patient_session",
+   "responseCells": "bind_questionnaire_items_and_session_answers",
+   "unresolvedCells": "withhold",
+   "referenceCellsRequireReview": true
+  }
+ }
+]

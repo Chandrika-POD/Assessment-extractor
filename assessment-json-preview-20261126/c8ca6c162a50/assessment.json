@@ -1,0 +1,1001 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "eating-disorder-15ed-15--c8ca6c162a50",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Eating Disorder-15 (ED-15)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Eating Disorder-15 is a 15-item scale to measure session-by-session change for eating disorder attitudes and behaviours. The scale measures the frequency of eating-disordered behaviours and has two factors:",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "last week",
+    "past week"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "This questionnaire considers your eating attitudes and behaviors over the last week. Please complete this measure by selecting the appropriate answers for all items. Over the past week, how often have I:",
+  "instructions_source": {
+   "url": null,
+   "sha256": "69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (mean of items 1 to 10)",
+     "y": 120.0,
+     "url": null,
+     "sha256": "69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Scores for the two factors (Weight & Shape Concerns and Eating Concerns) and the total score are presented as an average score (between 0 to 6) with a higher score indicating more eating-disordered cognitions and behaviours.",
+   "The ED-15 total score has a good discriminant power with a patient randomly selected having an 80% probability of being correctly classified based on a higher global score than a non-case (Rodrigues et al., 2019). In a Portuguese sample (Rodrigues et al., 2019) an ED-15 total score cutoff of 2.1 was selected. This cut point maximises the value of sensitivity (Se=.73) and specificity (Sp=.73). The median total score from this sample was 1.30 (50th percentile) and the cut point of 2.1 corresponds to a percentile of 75.",
+   "According to a study by Rodrigues et al. (2019), an RCI of 0.97 denotes a significant improvement or deterioration in ED-15 total scores. Considering that the smallest possible score interval for the total score is 0.1, NovoPsych adopts an RCI threshold of 1 to represent meaningful improvement or deterioration."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "ED-15 Scoring & Interpretation",
+    "text": "Scores for the two factors (Weight & Shape Concerns and Eating Concerns) and the total score are presented as an average score (between 0 to 6) with a higher score indicating more eating-disordered cognitions and behaviours.\nIn addition, normative community percentiles are presented allowing comparisons between the respondent’s score and a non-clinical female normative sample (Rodrigues et al. 2019). A percentile of 50 represents typical (and relatively healthy) responses, whereas percentiles above 75 are indicative of clinically significant symptoms. These percentile scores are graphed, showing the relative severity of each subscales in percentile terms.\nAs well as a normative percentile, a clinical percentile is presented to facilitate a detailed comparison of a respondent’s score relative to typical patterns of responding for people diagnosed with an eating disorder, such as anorexia nervosa, bulimia, binge eating disorder or other eating disorder (Rodrigues et al., 2019).\nThis dual percentile presentation allows for a comprehensive assessment of where the respondent stands in relation to normative (general population) and clinical (eating disorder population) benchmarks. A percentile of 50 on the clinical percentile corresponds to a community percentile of 91.\nA comparison graph is presented showing the typical pattern distributions of responses for the community and clinical sample, with areas around the median defining the range between the 25th and 75th percentiles. Scores of 2.1 or above are considered to be clinically significant and indicate a likely eating disorder with a sensitivity of .73 and specificity of =.73.\nSubscales are presented:\nWeight & Shape Concern s (score between 0 to 6) (Mean of items 2, 4, 5, 6, 9, 10). Difficulty experienced with thoughts about appearance, weight, shape, and perceived judgment by others.\nEating Concerns (score between 0 to 6) (Mean of items 1, 3, 7, 8). Difficulty experienced around food, including intrusive thoughts, restrictive practices, or worry about losing control over eating.\nIf administered more than once the change in scores will be evaluated against the the Reliable Change Index (RCI; Rodrigues et al., 2019)), which defines clinically meaningful change in scores as a total score of 1 or more.\nThe behavioural items (items 11 to 15) are represented by the frequency they have occurred in the past week.\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "Weight & Shape Concerns (mean of items 2, 4, 5, 6, 9, 10, score between 0 and 6):",
+    "y": 56.2,
+    "url": null,
+    "sha256": "69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Eating Concerns (mean of items 1, 3, 7, 8, score between 0 and 6):",
+    "y": 81.0,
+    "url": null,
+    "sha256": "69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Tatham, M., Turner, H., Mountford, V. A., Tritt, A., Dyas, R., & Waller, G. (2015). Development, psychometric properties and preliminary clinical validation of a brief, session-by-session measure of eating disorder cognitions and behaviors: The ED-15. The International Journal of Eating Disorders, 48(7), 1005–1015. https://doi.org/10.1002/eat.22430",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "University of Sheffield resources for c ognitive behavioural therapy in ten sessions for patients with non-underweight eating disorders. https://cbt-t.sites.sheffield.ac.uk/resources\nAccurso, E. C., & Waller, G. (2021). A brief session-by-session measure of eating disorder psychopathology for children and adolescents: Development and psychometric properties of the Eating Disorder-15 for Youth (ED-15-Y). The International journal of eating disorders, 54(4), 569–577. https://doi.org/10.1002/eat.23449\nAccurso, E. C., & Waller, G. (2021). Concordance between youth and caregiver report of eating disorder psychopathology: Development and psychometric properties of the Eating Disorder‐15 for Parents/Caregivers (ED‐15‐P). International Journal of Eating Disorders, 54(7), 1302-1306.\nhttps://doi.org/10.1002/eat.23557\nMurray, S. B., Levinson, C. A., Farrell, N. R., Nagata, J. M., Compte, E. J., & Le Grange, D. (2020). The open versus blind weight conundrum: A multisite randomised controlled trial across multiple levels of patient care for anorexia nervosa. The International journal of eating disorders, 53(12), 2079–2085.\nhttps://doi.org/10.1002/eat.23397\nPellizzer, M. L., Waller, G., & Wade, T. D. (2019). A pragmatic effectiveness study of 10‐session cognitive behavioural therapy (CBT‐T) for eating disorders: Targeting barriers to treatment provision. European Eating Disorders Review, 27(5), 557-570.\nhttps://doi.org/10.1002/erv.2684\nRodrigues, T., Vaz, A. R., Silva, C., Conceição, E., & Machado, P. P. P. (2019). Eating Disorder-15 (ED-15): Factor structure, psychometric properties, and clinical validation. European Eating Disorders Review: The Journal of the Eating Disorders Association, 27(6), 682–691.\nhttps://doi.org/10.1002/erv.2694\nTatham, M., Turner, H., Mountford, V. A., Tritt, A., Dyas, R., & Waller, G. (2015). Development, psychometric properties and preliminary clinical validation of a brief, session-by-session measure of eating disorder cognitions and behaviors: The ED-15. The International Journal of Eating Disorders, 48(7), 1005–1015.\nhttps://doi.org/10.1002/eat.22430\nYilmaz, H. Ö., Polat, A., Köse, G., Balci, S., & Günal, A. M. (2023). Eating Disorder-15: Factor Structure, Psychometric Properties, Validity, and Reliability of the Turkish Version for Clinical and Non-Clinical Samples. Turkish journal of psychiatry, 34(1), 31–38.\nhttps://pubmed.ncbi.nlm.nih.gov/36970960/",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Eating Disorder-15 (ED-15) questionnaire PDF",
+   "source_url": null,
+   "sha256": "f9fdf415351862eaf3380d7dd334a1f5d0f689d40b27a25c01f4bd4eed2bb421",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f9fdf415351862eaf3380d7dd334a1f5d0f689d40b27a25c01f4bd4eed2bb421.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Appearance Anxiety Inventory (AAI)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "9a11b697a822523954323627dc474d486c6d43640afadca57212e7d3ac84e667",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9a11b697a822523954323627dc474d486c6d43640afadca57212e7d3ac84e667.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "92317d8caf01dd5711170feb69e05a92c369551af9c46d46fe7f0ac14d132333",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/92317d8caf01dd5711170feb69e05a92c369551af9c46d46fe7f0ac14d132333.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ED-15 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "7b163445d1f6c2a69667b03683ae152e5d395e6eb227b9bd890c216ee56b663f",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7b163445d1f6c2a69667b03683ae152e5d395e6eb227b9bd890c216ee56b663f.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ED-15 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "ad2ca3be273abdac213af7600bdc2234366aa522046edccf28388599c50aa174",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ad2ca3be273abdac213af7600bdc2234366aa522046edccf28388599c50aa174.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ED-15 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "2a208e6f2c4d55b0706f8529f7b77cf306ba8fd864636c51dcba581ae1433a61",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2a208e6f2c4d55b0706f8529f7b77cf306ba8fd864636c51dcba581ae1433a61.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ED-15 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "14d3afdde55bd6a1dd42cec9737eccd5457350823d8fcdadae2b240b6a7ed457",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/14d3afdde55bd6a1dd42cec9737eccd5457350823d8fcdadae2b240b6a7ed457.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ED-15 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f7d10dcdbc5906cf7c292fd67de0ec1bbe794c9bc5e4bc5daf7533132f4f6f7a",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f7d10dcdbc5906cf7c292fd67de0ec1bbe794c9bc5e4bc5daf7533132f4f6f7a.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ED-15 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Eating Disorder-15 (ED-15) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "9df4d90d0bef68c2a8a01435c2f148aef0bc79aa4f9164f2c6aa43761c0c1fb5",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9df4d90d0bef68c2a8a01435c2f148aef0bc79aa4f9164f2c6aa43761c0c1fb5.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_format_review": {
+   "resolved_previously_untyped_fields": 5,
+   "basis": "Selected archived PDF edition checked against current public PDF and inspected for field controls.",
+   "clinical_scoring_review": false
+  },
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice",
+   "integer"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 10
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total Score",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "axis_unit": "mean score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "69a8a74a8790d0695661809ffc5687087f93a5ec5f4b32e3ebdf8daf2a7cd6eb",
+   "guidance_titles": [
+    "ED-15 Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   },
+   {
+    "id": "recorded_responses",
+    "label": "Additional recorded responses",
+    "rule_id": null,
+    "item_ids": [
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "integer",
+    "presentation": "numeric_history",
+    "value_field": "saved_answer",
+    "unit": "times",
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "integer",
+    "presentation": "numeric_history",
+    "value_field": "saved_answer",
+    "unit": "times",
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "integer",
+    "presentation": "numeric_history",
+    "value_field": "saved_answer",
+    "unit": "days",
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "integer",
+    "presentation": "numeric_history",
+    "value_field": "saved_answer",
+    "unit": "days",
+    "minimum": 0,
+    "maximum": 7,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "integer",
+    "presentation": "numeric_history",
+    "value_field": "saved_answer",
+    "unit": "days",
+    "minimum": 0,
+    "maximum": 7,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "b4208a426f0ac0c0f6bc67ddc1871d6da1cce53698f6d675f0974b68289111fb",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:00:02.892302+00:00",
+  "raw_extraction_sha256": "ca56648f94d91a352823a41bb9d36e1344cbdd8fc4d0d84d03d186ce75aca19a",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Body Image & Eating"
+   },
+   {
+    "url": null,
+    "title": "Outcome Monitoring"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1002/eat.22430",
+    "title": "https://doi.org/10.1002/eat.22430"
+   },
+   {
+    "url": "https://cbt-t.sites.sheffield.ac.uk/resources",
+    "title": "https://cbt-t.sites.sheffield.ac.uk/resources"
+   },
+   {
+    "url": "https://doi.org/10.1002/eat.23449",
+    "title": "https://doi.org/10.1002/eat.23449"
+   },
+   {
+    "url": "https://doi.org/10.1002/eat.23557",
+    "title": "https://doi.org/10.1002/eat.23557"
+   },
+   {
+    "url": "https://doi.org/10.1002/eat.23397",
+    "title": "https://doi.org/10.1002/eat.23397"
+   },
+   {
+    "url": "https://doi.org/10.1002/erv.2684",
+    "title": "https://doi.org/10.1002/erv.2684"
+   },
+   {
+    "url": "https://doi.org/10.1002/erv.2694",
+    "title": "https://doi.org/10.1002/erv.2694"
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36970960/",
+    "title": "https://pubmed.ncbi.nlm.nih.gov/36970960/"
+   },
+   {
+    "url": null,
+    "title": "Eating behaviour assessment"
+   },
+   {
+    "url": null,
+    "title": "Compulsive eating measure"
+   },
+   {
+    "url": null,
+    "title": "Eating problems severity measure"
+   },
+   {
+    "url": null,
+    "title": "Youth eating behaviours questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Body dysmorphia screening"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Eating Disorder Session (Adult) (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Letter to Referrer Under EDP (Letter Template)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

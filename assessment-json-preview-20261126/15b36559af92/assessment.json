@@ -1,0 +1,977 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "multidimensional-assessment-of-interoceptive-awareness-youth-version-maia-y--15b36559af92",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Multidimensional Assessment of Interoceptive Awareness – Youth Version (MAIA-Y)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Multidimensional Assessment of Interoceptive Awareness – Youth Version (MAIA-Y) is an 8-scale state-trait questionnaire with 32 items to measure multiple dimensions of interoception (body awareness). The MAIA-Y is suitable for use with youths between 7 – 17 years of age. There is a parallel adult version (MAIA-2) for use with individuals 18+ years of age.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Below there are a list of sentences. How often do you do what the sentence says? Never? Always? Or somewhere in between? Choose a description to tell us how often you do what the sentence says. DOMAIN 1Noticing",
+  "instructions_source": {
+   "url": null,
+   "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Subscale score (Items 1–4, average of circled values):",
+     "y": 374.2,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_2",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q6",
+     "Q7"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Subscale score (Items 5–7, average of circled values):",
+     "y": 514.5,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_3",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Subscale score (Items 8–10, average of circled values):",
+     "y": 654.0,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_4",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Subscale score (Items 11–17, average of circled values):",
+     "y": 171.8,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_5",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Subscale score (Items 18–22, average of circled values):",
+     "y": 370.5,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_6",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Subscale score (Items 23–26, average of circled values):",
+     "y": 539.2,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_7",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Subscale score (Items 27–29, average of circled values):",
+     "y": 679.5,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_8",
+    "label": "Subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q30",
+     "Q31",
+     "Q32"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Subscale score (Items 30–32, average of circled values):",
+     "y": 172.5,
+     "url": null,
+     "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "MAIA-Y Scoring & Interpretation",
+    "text": "The results from the MAIA-Y focuses upon the individual scale scores (between 0 and 5), where higher score equates to more awareness of bodily sensation. A percentile is also calculated, indicating how the responded scored in comparison to an age related normative sample. Interpretation using percentiles helps contextualise scores. For example, percentile below 50 indicate that the individual scored below what is typical. Extreme percentile scores (below 10 or above 90) are of particular clinical significance.\nThe MAIA consists of eight scales:\n1. Noticing (Items 1-4): Awareness of uncomfortable, comfortable, and neutral body sensations\n2. Not-Distracting (Items 5-7): Higher scores suggest a more tuned in relationship to unpleasant sensations, and is typically considered to be adaptive. Lower scores indicate the tendency to ignore or distract oneself from sensations of pain or discomfort\n3. Not-Worrying (Items 8-10): Higher scores indicate less rumination about discomfort. Low scores indicate emotional distress or worry with sensations of pain or discomfort\n4. Attention Regulation (Items 11-17): Ability to sustain and control attention to body sensation\n5. Emotional Awareness (Items 18-22): Awareness of the connection between body sensations and emotional states\n6. Self-Regulation (Items 23-26): Ability to regulate psychological distress by attention to body sensations\n7. Body Listening (Items 27-29): Actively listens to the body for insight\n8. Trust (Items 30-32): Experiences one’s body as safe and trustworthy\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": [
+  {
+   "id": "C1",
+   "title": "Multidimensional Assessment of Interoceptive Awareness – Youth Version (MAIA-Y)",
+   "text": "The Multidimensional Assessment of Interoceptive Awareness – Youth Version (MAIA-Y) is an 8-scale state-trait questionnaire with 32 items to measure multiple dimensions of interoception (body awareness). The MAIA-Y is suitable for use with youths between 7 – 17 years of age. There is a parallel adult version (MAIA-2) for use with individuals 18+ years of age.\n5 minutes\nAges 7 to 17 years\nAdolescent , Autism , Child\nAdminister Now",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C2",
+   "title": "MAIA-Y Overview",
+   "text": "Interoception refers to the sensation, interpretation, and integration of internal somatic signals (Eggart et al., 2021). There is compelling evidence demonstrating links between poor interoceptive awareness and difficulties with emotion regulation (Price & Hooven, 2018). Therefore, it can be beneficial to measure interoception in a therapeutic setting because effective emotion regulation involves the ability to accurately detect and evaluate cues related to physiological reactions to stressful events. The therapist and client can then work together on appropriate regulation strategies that temper and influence the emotional response.\nThe MAIA consists of 8 scales (addressing 5 dimensions of body awareness):\n1. Noticing (Awareness of Body Sensations)\n2. Not-Distracting (Emotional Reaction and Attentional Response to Sensations)\n3. Not-Worrying (Emotional Reaction and Attentional Response to Sensations)\n4. Attention Regulation (Capacity to Regulate Attention)\n5. Emotional Awareness (Awareness of Mind-Body Integration)\n6. Self-Regulation (Awareness of Mind-Body Integration)\n7. Body Listening (Awareness of Mind-Body Integration)\n8. Trust (Trusting Body Sensations)",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C3",
+   "title": "MAIA-Y Scoring & Interpretation",
+   "text": "The results from the MAIA-Y focuses upon the individual scale scores (between 0 and 5), where higher score equates to more awareness of bodily sensation. A percentile is also calculated, indicating how the responded scored in comparison to an age related normative sample. Interpretation using percentiles helps contextualise scores. For example, percentile below 50 indicate that the individual scored below what is typical. Extreme percentile scores (below 10 or above 90) are of particular clinical significance.\nThe MAIA consists of eight scales:\n1. Noticing (Items 1-4): Awareness of uncomfortable, comfortable, and neutral body sensations\n2. Not-Distracting (Items 5-7): Higher scores suggest a more tuned in relationship to unpleasant sensations, and is typically considered to be adaptive. Lower scores indicate the tendency to ignore or distract oneself from sensations of pain or discomfort\n3. Not-Worrying (Items 8-10): Higher scores indicate less rumination about discomfort. Low scores indicate emotional distress or worry with sensations of pain or discomfort\n4. Attention Regulation (Items 11-17): Ability to sustain and control attention to body sensation\n5. Emotional Awareness (Items 18-22): Awareness of the connection between body sensations and emotional states\n6. Self-Regulation (Items 23-26): Ability to regulate psychological distress by attention to body sensations\n7. Body Listening (Items 27-29): Actively listens to the body for insight\n8. Trust (Items 30-32): Experiences one’s body as safe and trustworthy",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C4",
+   "title": "MAIA-Y Psychometric Properties",
+   "text": "The MAIA-Y (Jones et al., 2020) is based on the original MAIA (Mehling et al., 2012), with modifications made to simplify the language of each statement. Cronbach’s alpha ranged from 0.36 – 0.78, with the Not-Distracting (0.36), Noticing (0.43), Not-Worrying (0.47), and Body Listening (0.69) scales being below 0.70 (Jones et al., 2020).\nA validation study by Jones et al. (2020), based upon a convenience sample of children aged 7–10 years (n= 212) and adolescents aged 11–17 years (n= 217), provided means and standard deviations for all 8 scales for each age (7 – 15+). Age is an important component in the MAIA-Y as results from Jones et al. (2020) found a negative linear relationship between the trusting scale and age, suggesting that youths may lose trust in their body as they age.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "LIVE_C5",
+   "title": "Overview",
+   "text": "Search\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C6",
+   "title": "Multidimensional Assessment of Interoceptive Awareness – Youth Version (MAIA-Y)",
+   "text": "The Multidimensional Assessment of Interoceptive Awareness – Youth Version (MAIA-Y) is an 8-scale state-trait questionnaire with 32 items to measure multiple dimensions of interoception (body awareness). The MAIA-Y is suitable for use with youths between 7 – 17 years of age. There is a parallel adult version (MAIA-2) for use with individuals 18+ years of age.\n5 minutes\nAges 7 to 17 years\nAdolescent , Autism , Child\nAdminister Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C7",
+   "title": "MAIA-Y Psychometric Properties",
+   "text": "Professional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C8",
+   "title": "MAIA-Y Overview",
+   "text": "Interoception refers to the sensation, interpretation, and integration of internal somatic signals (Eggart et al., 2021). There is compelling evidence demonstrating links between poor interoceptive awareness and difficulties with emotion regulation (Price & Hooven, 2018). Therefore, it can be beneficial to measure interoception in a therapeutic setting because effective emotion regulation involves the ability to accurately detect and evaluate cues related to physiological reactions to stressful events. The therapist and client can then work together on appropriate regulation strategies that temper and influence the emotional response.\nThe MAIA consists of 8 scales (addressing 5 dimensions of body awareness):\n1. Noticing (Awareness of Body Sensations)\n2. Not-Distracting (Emotional Reaction and Attentional Response to Sensations)\n3. Not-Worrying (Emotional Reaction and Attentional Response to Sensations)\n4. Attention Regulation (Capacity to Regulate Attention)\n5. Emotional Awareness (Awareness of Mind-Body Integration)\n6. Self-Regulation (Awareness of Mind-Body Integration)\n7. Body Listening (Awareness of Mind-Body Integration)\n8. Trust (Trusting Body Sensations)\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C9",
+   "title": "MAIA-Y Scoring & Interpretation",
+   "text": "The results from the MAIA-Y focuses upon the individual scale scores (between 0 and 5), where higher score equates to more awareness of bodily sensation. A percentile is also calculated, indicating how the responded scored in comparison to an age related normative sample. Interpretation using percentiles helps contextualise scores. For example, percentile below 50 indicate that the individual scored below what is typical. Extreme percentile scores (below 10 or above 90) are of particular clinical significance.\nThe MAIA consists of eight scales:\n1. Noticing (Items 1-4): Awareness of uncomfortable, comfortable, and neutral body sensations\n2. Not-Distracting (Items 5-7): Higher scores suggest a more tuned in relationship to unpleasant sensations, and is typically considered to be adaptive. Lower scores indicate the tendency to ignore or distract oneself from sensations of pain or discomfort\n3. Not-Worrying (Items 8-10): Higher scores indicate less rumination about discomfort. Low scores indicate emotional distress or worry with sensations of pain or discomfort\n4. Attention Regulation (Items 11-17): Ability to sustain and control attention to body sensation\n5. Emotional Awareness (Items 18-22): Awareness of the connection between body sensations and emotional states\n6. Self-Regulation (Items 23-26): Ability to regulate psychological distress by attention to body sensations\n7. Body Listening (Items 27-29): Actively listens to the body for insight\n8. Trust (Items 30-32): Experiences one’s body as safe and trustworthy\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C10",
+   "title": "MAIA-Y Psychometric Properties",
+   "text": "The MAIA-Y (Jones et al., 2020) is based on the original MAIA (Mehling et al., 2012), with modifications made to simplify the language of each statement. Cronbach’s alpha ranged from 0.36 – 0.78, with the Not-Distracting (0.36), Noticing (0.43), Not-Worrying (0.47), and Body Listening (0.69) scales being below 0.70 (Jones et al., 2020).\nA validation study by Jones et al. (2020), based upon a convenience sample of children aged 7–10 years (n= 212) and adolescents aged 11–17 years (n= 217), provided means and standard deviations for all 8 scales for each age (7 – 15+). Age is an important component in the MAIA-Y as results from Jones et al. (2020) found a negative linear relationship between the trusting scale and age, suggesting that youths may lose trust in their body as they age.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C11",
+   "title": "",
+   "text": "Professional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C12",
+   "title": "Assess your patients with the Multidimensional Assessment of Interoceptive Awareness – Youth Version using a NovoPsych account",
+   "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C13",
+   "title": "Developer",
+   "text": "Jones, A., Silas, J., Todd, J., Stewart, A., Acree, M., Coulson, M., & Mehling, W. E. (2021). Exploring the Multidimensional Assessment of Interoceptive Awareness in youth aged 7-17 years. Journal of Clinical Psychology, 77(3), 661–682. https://doi.org/10.1002/jclp.23067\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C14",
+   "title": "References",
+   "text": "Eggart, M., Todd, J., & Valdés-Stauber, J. (2021). Validation of the Multidimensional Assessment of Interoceptive Awareness (MAIA-2) questionnaire in hospitalized patients with major depressive disorder. PloS One, 16(6), e0253913. https://doi.org/10.1371/journal.pone.0253913\nMehling, W. E., Price, C., Daubenmier, J. J., Acree, M., Bartmess, E., & Stewart, A. (2012). The Multidimensional Assessment of Interoceptive Awareness (MAIA). PloS One, 7(11), e48230. https://doi.org/10.1371/journal.pone.0048230\nPrice, C. J., & Hooven, C. (2018). Interoceptive Awareness Skills for Emotion Regulation: Theory and Approach of Mindful Awareness in Body-Oriented Therapy (MABT). Frontiers in psychology, 9, 798. https://doi.org/10.3389/fpsyg.2018.00798\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C15",
+   "title": "Multidimensional Assessment of Interoceptive Awareness – Version 2 (MAIA-2)",
+   "text": "Also known as: MAIA-2 , MAIA , Multidimensional Assessment of Interoceptive Awareness , Interoception questionnaire , Body awareness scale\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C16",
+   "title": "Five Facet Mindfulness Questionnaire (FFMQ-15)",
+   "text": "Also known as: FFMQ-15 , FFMQ , Five Facet Mindfulness Questionnaire , Short mindfulness measure\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C17",
+   "title": "Toronto Alexithymia Scale (TAS)",
+   "text": "Also known as: TAS , TAS-20 , Toronto Alexithymia scale , Emotional awareness questionnaire , Emotion identification scale\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C18",
+   "title": "Depression Anxiety Stress Scales – Youth Version (DASS-Y)",
+   "text": "Also known as: DASS-Y , DASS Youth , Depression Anxiety Stress Scales , Youth depression anxiety scale , Adolescent mental health screening\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C19",
+   "title": "Sample Results",
+   "text": "Administer Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C20",
+   "title": "Dr David Hegarty",
+   "text": "Head of Psychometrics & Psychologist\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  }
+ ],
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Jones, A., Silas, J., Todd, J., Stewart, A., Acree, M., Coulson, M., & Mehling, W. E. (2021). Exploring the Multidimensional Assessment of Interoceptive Awareness in youth aged 7-17 years. Journal of Clinical Psychology, 77(3), 661–682. https://doi.org/10.1002/jclp.23067",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Eggart, M., Todd, J., & Valdés-Stauber, J. (2021). Validation of the Multidimensional Assessment of Interoceptive Awareness (MAIA-2) questionnaire in hospitalized patients with major depressive disorder. PloS One, 16(6), e0253913. https://doi.org/10.1371/journal.pone.0253913\nMehling, W. E., Price, C., Daubenmier, J. J., Acree, M., Bartmess, E., & Stewart, A. (2012). The Multidimensional Assessment of Interoceptive Awareness (MAIA). PloS One, 7(11), e48230. https://doi.org/10.1371/journal.pone.0048230\nPrice, C. J., & Hooven, C. (2018). Interoceptive Awareness Skills for Emotion Regulation: Theory and Approach of Mindful Awareness in Body-Oriented Therapy (MABT). Frontiers in psychology, 9, 798. https://doi.org/10.3389/fpsyg.2018.00798",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Multidimensional Assessment of Interoceptive Awareness – Youth Version (MAIA-Y) PDF",
+   "source_url": null,
+   "sha256": "69bee28480fd5bedb067fce8dc57bae6678613f01497c20e0a9f5d13fb42c9c3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/69bee28480fd5bedb067fce8dc57bae6678613f01497c20e0a9f5d13fb42c9c3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Depression Anxiety Stress Scales – Youth Version (DASS-Y)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "917bf136bc64dec291351fa4ec54c73f7487a04723fc30e0a4a89dabb8fd2242",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/917bf136bc64dec291351fa4ec54c73f7487a04723fc30e0a4a89dabb8fd2242.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "ecab981d8284fd1dd9140b0476ed09fa8bc65a8dc7473ebf1c15013dc1e52348",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ecab981d8284fd1dd9140b0476ed09fa8bc65a8dc7473ebf1c15013dc1e52348.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Multidimensional Assessment of Interoceptive Awareness – Youth Version using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "6a3727e0b689a88dbfe1e264f00c44a9f2da1f36ae53443d9d39c205fa543091",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6a3727e0b689a88dbfe1e264f00c44a9f2da1f36ae53443d9d39c205fa543091.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 32
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ae0e1b0ea2076b14c712ab7cca7d390758c82ed791e7718a7b08d26c83d36f49.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "6a3727e0b689a88dbfe1e264f00c44a9f2da1f36ae53443d9d39c205fa543091",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/6a3727e0b689a88dbfe1e264f00c44a9f2da1f36ae53443d9d39c205fa543091.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 4,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "635a9e721a5ce465f26afdc888904522d028ed18fda97a352e40931e2381854b",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_7",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_8",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_7",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_8",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:28:12.055551+00:00",
+  "raw_extraction_sha256": "104af1bb32df5a583674fc94d9b463afcbd8d98b61b7a715eb02ffdf6f414839",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Body awareness scale"
+   },
+   {
+    "url": null,
+    "title": "Adolescent"
+   },
+   {
+    "url": null,
+    "title": "Autism"
+   },
+   {
+    "url": null,
+    "title": "Child"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1002/jclp.23067",
+    "title": "https://doi.org/10.1002/jclp.23067"
+   },
+   {
+    "url": "https://doi.org/10.1371/journal.pone.0253913",
+    "title": "https://doi.org/10.1371/journal.pone.0253913"
+   },
+   {
+    "url": "https://doi.org/10.1371/journal.pone.0048230",
+    "title": "https://doi.org/10.1371/journal.pone.0048230"
+   },
+   {
+    "url": "https://doi.org/10.3389/fpsyg.2018.00798",
+    "title": "https://doi.org/10.3389/fpsyg.2018.00798"
+   },
+   {
+    "url": null,
+    "title": "Short mindfulness measure"
+   },
+   {
+    "url": null,
+    "title": "Emotion identification scale"
+   },
+   {
+    "url": null,
+    "title": "Adolescent mental health screening"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Schools - Therapy Session (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

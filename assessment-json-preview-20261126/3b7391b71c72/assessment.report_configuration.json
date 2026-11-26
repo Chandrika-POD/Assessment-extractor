@@ -1,0 +1,1125 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_total_raw",
+   "ruleId": "total_raw",
+   "label": "Total",
+   "minimum": 0,
+   "maximum": 30,
+   "calculation": {
+    "id": "total_raw",
+    "label": "Total",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 30,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_total_mean",
+   "ruleId": "total_mean",
+   "label": "Total mean",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "total_mean",
+    "label": "Total mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_anxiety_stress_raw",
+   "ruleId": "anxiety_stress_raw",
+   "label": "Anxiety Stress",
+   "minimum": 0,
+   "maximum": 18,
+   "calculation": {
+    "id": "anxiety_stress_raw",
+    "label": "Anxiety Stress",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 18,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_anxiety_stress_mean",
+   "ruleId": "anxiety_stress_mean",
+   "label": "Anxiety Stress mean",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "anxiety_stress_mean",
+    "label": "Anxiety Stress mean",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_depression_raw",
+   "ruleId": "depression_raw",
+   "label": "Depression",
+   "minimum": 0,
+   "maximum": 12,
+   "calculation": {
+    "id": "depression_raw",
+    "label": "Depression",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 12,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_depression_mean",
+   "ruleId": "depression_mean",
+   "label": "Depression mean",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "depression_mean",
+    "label": "Depression mean",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  },
+  {
+   "sha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d3e8c51d2ff7e_p1",
+   "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d3e8c51d2ff7e_p1_chart_1"
+   ],
+   "tableIds": [
+    "d3e8c51d2ff7e_p1_table_1",
+    "d3e8c51d2ff7e_p1_table_2"
+   ],
+   "sectionIds": [
+    "d3e8c51d2ff7e_p1_section_1",
+    "d3e8c51d2ff7e_p1_section_2"
+   ]
+  },
+  {
+   "pageId": "d3e8c51d2ff7e_p2",
+   "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d3e8c51d2ff7e_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d3e8c51d2ff7e_p2_section_1",
+    "d3e8c51d2ff7e_p2_section_2",
+    "d3e8c51d2ff7e_p2_section_3"
+   ]
+  },
+  {
+   "pageId": "d3e8c51d2ff7e_p3",
+   "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d3e8c51d2ff7e_p3_section_1",
+    "d3e8c51d2ff7e_p3_section_2"
+   ]
+  },
+  {
+   "pageId": "d3e8c51d2ff7e_p4",
+   "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d3e8c51d2ff7e_p4_table_1"
+   ],
+   "sectionIds": []
+  },
+  {
+   "pageId": "dddd74404c2d1_p1",
+   "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "dddd74404c2d1_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "dddd74404c2d1_p1_section_1",
+    "dddd74404c2d1_p1_section_2",
+    "dddd74404c2d1_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "dddd74404c2d1_p2",
+   "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "dddd74404c2d1_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "dddd74404c2d1_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "dddd74404c2d1_p3",
+   "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dddd74404c2d1_p3_table_1",
+    "dddd74404c2d1_p3_table_2"
+   ],
+   "sectionIds": [
+    "dddd74404c2d1_p3_section_1",
+    "dddd74404c2d1_p3_section_2"
+   ]
+  },
+  {
+   "pageId": "dddd74404c2d1_p4",
+   "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dddd74404c2d1_p4_table_1"
+   ],
+   "sectionIds": [
+    "dddd74404c2d1_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d3e8c51d2ff7e_p1_section_1",
+   "pageId": "d3e8c51d2ff7e_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3e8c51d2ff7e_p1_section_2",
+   "pageId": "d3e8c51d2ff7e_p1",
+   "title": "DASS-10 Score",
+   "type": "source_heading",
+   "bboxPt": [
+    264.66599,
+    290.87048,
+    352.02597,
+    302.87048
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3e8c51d2ff7e_p2_section_1",
+   "pageId": "d3e8c51d2ff7e_p2",
+   "title": "DASS-10 Symptom Average Scores",
+   "type": "results",
+   "bboxPt": [
+    191.98199,
+    153.38954,
+    394.70996,
+    165.38954
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3e8c51d2ff7e_p2_section_2",
+   "pageId": "d3e8c51d2ff7e_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    544.04871,
+    124.57652,
+    558.04871
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3e8c51d2ff7e_p2_section_3",
+   "pageId": "d3e8c51d2ff7e_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3461,
+    699.63513,
+    290.26605,
+    713.63513
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3e8c51d2ff7e_p3_section_1",
+   "pageId": "d3e8c51d2ff7e_p3",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    336.92838,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3e8c51d2ff7e_p3_section_2",
+   "pageId": "d3e8c51d2ff7e_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3464,
+    686.83417,
+    151.8204,
+    700.83417
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dddd74404c2d1_p1_section_1",
+   "pageId": "dddd74404c2d1_p1",
+   "title": "Assessment Information",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    176.72569,
+    237.39752,
+    196.00369
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dddd74404c2d1_p1_section_2",
+   "pageId": "dddd74404c2d1_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    74.03149,
+    273.10361,
+    124.59951,
+    292.38162
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dddd74404c2d1_p1_section_3",
+   "pageId": "dddd74404c2d1_p1",
+   "title": "Interpretive Text",
+   "type": "interpretation",
+   "bboxPt": [
+    74.03149,
+    338.30048,
+    182.95149,
+    357.57849
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dddd74404c2d1_p2_section_1",
+   "pageId": "dddd74404c2d1_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    429.87527,
+    329.95145,
+    449.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dddd74404c2d1_p3_section_1",
+   "pageId": "dddd74404c2d1_p3",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    376.61337,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dddd74404c2d1_p3_section_2",
+   "pageId": "dddd74404c2d1_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    440.66104,
+    191.50549,
+    459.93906
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dddd74404c2d1_p4_section_1",
+   "pageId": "dddd74404c2d1_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "When administered more than once, average scores are graphed, showing the change in symptoms over time.",
+   "Based on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:"
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "DASS-10 Scoring & Interpretation",
+    "text": "The total score for questions 1-10 represents overall distress (0 to 30), with higher scores indicating more severe or greater number of symptoms. Two subscales are presented:\nAnxiety-Stress : Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\nDepression : Items 2, 3, 5, 10 (raw score range = 0 to 12)\n\nIn addition to the raw score being computed, average scores are calculated by dividing the raw score by the number of items, giving a sense of the general pattern of responding at the subscale level. Average scores are helpful for interpretation as they allow comparisons between total score and subscales.\n\nOverall scores can be classified into three severity groups:\nsubclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)\nmild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )\nmoderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)\nsevere (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)\nextremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)\nA normative percentile is computed based on a community sample (Halford & Frost, 2021), indicating how the respondent scored in relation to a typical pattern of responding for adults. For example, a percentile of 83 or less indicates the individual has more distress than 83 percent of the normal population, but this puts them in the mild category. In mental health settings it is typical to see people with percentiles in the 90s.\n\nWhen administered more than once, average scores are graphed, showing the change in symptoms over time.\n\nBased on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:\nintensified significantly (increase in score by 5 or more)\nintensified slightly (score increased by between 2 to 4)\nnot significantly changed (score increased by 1, reduced by 1 or did not change at all)\nimproved slightly (score reduced by between 2 to 4)\nimproved significantly (score reduced by 5 or more)\nThe last two questions are used by clinicians to determine whether the client has a potential substance use issue (Question 11) or whether the client has had suicidal ideation (Question 12). Both these items do not contribute towards the overall score or subscale scores, but are highlighted in the the Interpretive Text section if any problems are reported.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the DASS-21, \nsee here\n.\nThe total score for questions 1-10 represents overall distress (0 to 30), with higher scores\nindicating more severe or greater number of symptoms. Two subscales are presented:",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+    "pageNumber": 3,
+    "text": "- Anxiety-Stress: Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\n- Depression: Items 2, 3, 5, 10 (raw score range = 0 to 12)\nIn addition to the raw score being computed, average scores are calculated by dividing the raw\nscore by the number of items, giving a sense of the general pattern of responding at the\nsubscale level.\nAverage scores are helpful for interpretation as they allow comparisons between total score and\nsubscales.\n0 = Not at all\n1 = Some of the time\n2 = Considerable degree\n3= Very much\nOverall scores can be classified into three severity groups:\n- subclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)\n- mild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )\n- moderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)\n- severe (raw score 13-20, average score 1.3-2.0; percentile of 97 - 99.6)\n- extremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)\nA normative percentile is computed based on a community sample (Halford & Frost, 2021),\nindicating how the respondent scored in relation to a typical pattern of responding for adults. For\nexample, a percentile of 83 or less indicates the individual has more distress than 83 percent of\nthe normal population, but this puts them in the mild category. In mental health settings it is\ntypical to see people with percentiles in the 90s.\nWhen administered more than once, average scores are graphed, showing the change in\nsymptoms over time.\nBased on reliable change calculations, interpretive text is provided describing the respondent's\nchange in symptoms from first to last administrations, as either having experienced:\n- deterioration (increase in scores by 5 or more)\n- no reliable change (scores changed by 4 or less)\n- reliable improvement (scores reduced by 5 or more)\n- recovery (scored reduced by 5 or more and most recent score is 6 or less, putting the in the\nMild/Subclinical range)\nThe last two questions are used by clinicians to determine whether the client has a potential\nsubstance use issue (Question 11) or whether the client has had suicidal ideation (Question 12).\nBoth these items do not contribute towards the overall score or subscale scores, but are\nhighlighted in the the Interpretive Text section if any problems are reported.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+    "pageNumber": 2,
+    "text": "The total score represents overall distress (0 to 30), with higher\nscores indicating more severe or greater number of symptoms.  Two\nsubscales are presented:\n- Anxiety-Stress: Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\n- Depression: Items  2, 3, 5, 10 (raw score range = 0 to 12)\nIn addition to the raw score being computed, average scores are\ncalculated by dividing the raw score by the number of items, giving a\nsense of the general pattern of responding at the subscale level.\nAverage scores are helpful for interpretation as they allow\ncomparisons between total score and subscales. \n0 = Not at all\n1 = Some of the time\n2 = Considerable degree\n3=  Very much\nOverall scores can be classified into three severity groups: \n- Mild/subclinical (raw score = 6 or less, average score 0.6 or less;\nwhich is equivalent to a percentile of 83 or less)\n- Moderate (raw score between 7 and 12, average between 0.7 and\n1.2; which is equivalent to a percentile of between 84 and 99.8)\n- Severe (raw score 13 or more, average between 1.3 and 3; which\nis equivalent to a percentile of between of 99.9 or",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+    "pageNumber": 3,
+    "text": "greater)\nA normative percentile is computed based on a community sample\n(Halford & Frost, 2021), indicating how the respondent scored in\nrelation to a typical pattern of responding for adults. For example, a\npercentile of 83 or less indicates the individual has less distress than\n83 percent of the normal population, and puts them in the\nmild/subclinical category. In mental health settings it is typical to see\npeople with percentiles in the 90s.\nWhen administered more than once, average scores are graphed,\nshowing the change in symptoms over time. \nBased on reliable change calculations, interpretive text is provided\ndescribing the respondent's change in symptoms from first to last\nadministrations, as either having experinced:\n- deterioration (increase in scores by 5 or more)\n- no reliable change (scores changed by 4 or less)\n- reliable improvement (scores reduced by 5 or more)\n- recovery (scored reduced by 5 or more and most recent score is 6\nor less, putting the in the Mild/Subclinical range)",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "subclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)",
+   "mild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )",
+   "moderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)",
+   "severe (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)",
+   "extremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)",
+   "A normative percentile is computed based on a community sample (Halford & Frost, 2021), indicating how the respondent scored in relation to a typical pattern of responding for adults.",
+   "For example, a percentile of 83 or less indicates the individual has more distress than 83 percent of the normal population, but this puts them in the mild category.",
+   "In mental health settings it is typical to see people with percentiles in the 90s.",
+   "When administered more than once, average scores are graphed, showing the change in symptoms over time.",
+   "Based on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:"
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_e0ec5dc1c2a963e2191f5dc093070c95",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#989998",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_fb396d8f4cc3438c4b8423c46bcb644b",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#e47272",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#e57674",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#e67b75",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#e77e76",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#e88278",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e88679",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#e98a7a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#ea8f7c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#eb937d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#ec977e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#ed9b80",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#ed9e81",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#eea382",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#efa783",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#f0ab85",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#f1af86",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#f1b387",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#f2b789",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#f3bb8a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#f4bf8b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#f5c38d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#f6c88e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#f6cb8f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#f7cf90",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#f8d392",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#f9d793",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#fadc95",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#fae096",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#fbe497",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#fce898",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#fdeb9a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fef09b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fef49c",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 2,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 4
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 6,
+   "unresolvedCells": 120
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

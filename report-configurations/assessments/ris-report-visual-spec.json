@@ -1,0 +1,748 @@
+{
+  "schemaVersion": "report-visual-spec/1.0.0",
+  "assessmentId": "regensburg-insomnia-scale-ris--3e3ecac36f30",
+  "title": "Regensburg Insomnia Scale (RIS)",
+  "status": "draft_extracted",
+  "layoutTemplate": "ris_source_layout",
+  "definitionRef": {
+    "assessmentId": "regensburg-insomnia-scale-ris--3e3ecac36f30",
+    "definitionVersion": "1.0.0-draft.6",
+    "questionnaireItemCount": 10,
+    "requiredRuleIds": [
+      "pdf_1",
+      "pdf_2",
+      "pdf_3",
+      "pdf_4"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source_report_1",
+      "role": "sample_report_not_runtime_context",
+      "sha256": "7d8827b1e631be7b9b5aaddfeea31d7c39a29d939fc5e2807e74fc31fa1090ef",
+      "pageCount": 4,
+      "usage": "Layout evidence only; sample values are never reused."
+    }
+  ],
+  "page": {
+    "size": "A4",
+    "orientation": "portrait",
+    "widthPt": 595.276,
+    "heightPt": 841.89,
+    "marginsPt": {
+      "top": 28,
+      "right": 28,
+      "bottom": 34,
+      "left": 28
+    }
+  },
+  "theme": {
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "baseFontSizePt": 10,
+    "textColor": "#172338",
+    "headingColor": "#172338",
+    "sectionHeader": {
+      "fontSizePt": 13,
+      "fontWeight": "bold",
+      "textColor": "#172338",
+      "backgroundColor": "#EDF7FC",
+      "borderColor": "#333333"
+    },
+    "table": {
+      "fontSizePt": 9,
+      "textColor": "#172338",
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#C5CED8"
+    },
+    "chartPalette": [
+      "#4E79A7",
+      "#F28E2B",
+      "#E15759",
+      "#76B7B2",
+      "#59A14F",
+      "#EDC948",
+      "#B07AA1"
+    ]
+  },
+  "metricBindings": [
+    {
+      "id": "metric_poor_sleep_depth",
+      "ruleId": "pdf_1",
+      "label": "Poor Sleep Depth",
+      "calculation": "mean(Q3,Q4,Q5)",
+      "minimum": 0,
+      "maximum": 4,
+      "unit": "average score",
+      "precision": 2,
+      "missingPolicy": "withhold"
+    },
+    {
+      "id": "metric_poor_sleep_quantity",
+      "ruleId": "pdf_2",
+      "label": "Poor Sleep Quantity",
+      "calculation": "mean(Q1,Q2,Q6)",
+      "minimum": 0,
+      "maximum": 4,
+      "unit": "average score",
+      "precision": 2,
+      "missingPolicy": "withhold"
+    },
+    {
+      "id": "metric_fearful_focus",
+      "ruleId": "pdf_3",
+      "label": "Fearful Focus on Insomnia",
+      "calculation": "mean(Q7,Q8)",
+      "minimum": 0,
+      "maximum": 4,
+      "unit": "average score",
+      "precision": 2,
+      "missingPolicy": "withhold"
+    },
+    {
+      "id": "metric_poor_functioning",
+      "ruleId": "pdf_4",
+      "label": "Hypnotics & Poor Daytime Functioning",
+      "calculation": "mean(Q9,Q10)",
+      "minimum": 0,
+      "maximum": 4,
+      "unit": "average score",
+      "precision": 2,
+      "missingPolicy": "withhold"
+    },
+    {
+      "id": "metric_total",
+      "ruleId": null,
+      "label": "Total Score",
+      "calculation": "sum(Q1..Q10)",
+      "minimum": 0,
+      "maximum": 40,
+      "unit": "raw score",
+      "precision": 0,
+      "missingPolicy": "withhold",
+      "derive": {
+        "type": "weighted_sum",
+        "terms": [
+          {
+            "metricId": "metric_poor_sleep_depth",
+            "weight": 3
+          },
+          {
+            "metricId": "metric_poor_sleep_quantity",
+            "weight": 3
+          },
+          {
+            "metricId": "metric_fearful_focus",
+            "weight": 2
+          },
+          {
+            "metricId": "metric_poor_functioning",
+            "weight": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "metric_total_average",
+      "ruleId": null,
+      "label": "Total Score",
+      "calculation": "total_raw / 10",
+      "minimum": 0,
+      "maximum": 4,
+      "unit": "average item score",
+      "precision": 2,
+      "missingPolicy": "withhold",
+      "derive": {
+        "type": "divide",
+        "metricId": "metric_total",
+        "divisor": 10
+      }
+    },
+    {
+      "id": "metric_clinical_percentile",
+      "ruleId": null,
+      "label": "Clinical Percentile",
+      "calculation": "normal_cdf(total_raw; mean=22.6, sd=5.19)",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "clinical percentile",
+      "precision": 1,
+      "missingPolicy": "withhold",
+      "derive": {
+        "type": "normal_cdf",
+        "metricId": "metric_total",
+        "mean": 22.6,
+        "standardDeviation": 5.19,
+        "referenceSampleSize": 218
+      }
+    }
+  ],
+  "variants": [
+    {
+      "id": "first_administration",
+      "when": {
+        "expression": "administrationCount == 1"
+      },
+      "chartIds": [
+        "chart_clinical_percentile",
+        "chart_average_scores"
+      ],
+      "sectionIds": [
+        "section_clinical_percentile",
+        "section_average_scores"
+      ],
+      "changePolicy": {
+        "method": "none",
+        "reliableChange": null,
+        "highlightThresholdCrossing": false
+      }
+    },
+    {
+      "id": "repeat_administration",
+      "when": {
+        "expression": "administrationCount >= 2"
+      },
+      "chartIds": [
+        "chart_total_history",
+        "chart_factor_history"
+      ],
+      "sectionIds": [
+        "section_total_history",
+        "section_factor_history"
+      ],
+      "changePolicy": {
+        "method": "raw_difference",
+        "reliableChange": null,
+        "highlightThresholdCrossing": true
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "section_client_information",
+      "type": "patient_metadata",
+      "order": 1,
+      "title": "Client Information"
+    },
+    {
+      "id": "section_assessment_information",
+      "type": "assessment_metadata",
+      "order": 2,
+      "title": "Assessment Information"
+    },
+    {
+      "id": "section_results",
+      "type": "score_summary",
+      "order": 3,
+      "title": "Results",
+      "tableId": "table_results"
+    },
+    {
+      "id": "section_interpretation",
+      "type": "interpretation",
+      "order": 4,
+      "title": "Interpretive Text"
+    },
+    {
+      "id": "section_sleep_factors",
+      "type": "score_summary",
+      "order": 5,
+      "title": "Sleep Factors",
+      "tableId": "table_factors"
+    },
+    {
+      "id": "section_clinical_percentile",
+      "type": "chart",
+      "order": 6,
+      "chartId": "chart_clinical_percentile"
+    },
+    {
+      "id": "section_average_scores",
+      "type": "chart",
+      "order": 7,
+      "chartId": "chart_average_scores"
+    },
+    {
+      "id": "section_scoring",
+      "type": "scoring_information",
+      "order": 8,
+      "title": "Scoring and Interpretation Information"
+    },
+    {
+      "id": "section_responses",
+      "type": "response_table",
+      "order": 9,
+      "title": "Client Responses",
+      "tableId": "table_client_responses"
+    }
+  ],
+  "charts": [
+    {
+      "id": "chart_clinical_percentile",
+      "title": "Clinical Percentile",
+      "variantId": "first_administration",
+      "type": "vertical_bar",
+      "sourceRef": "source_sample_report",
+      "sourceBBoxPt": null,
+      "widthPt": 500,
+      "heightPt": 235,
+      "xAxis": {
+        "minimum": 0,
+        "maximum": 1,
+        "tickInterval": null,
+        "title": null,
+        "scale": "category",
+        "grid": false,
+        "labels": [
+          "Total"
+        ]
+      },
+      "yAxis": {
+        "minimum": 0,
+        "maximum": 100,
+        "tickInterval": 10,
+        "title": null,
+        "scale": "linear",
+        "grid": false,
+        "labels": []
+      },
+      "series": [
+        {
+          "id": "series_clinical_percentile",
+          "label": "Total",
+          "metricId": "metric_clinical_percentile",
+          "mark": "bar",
+          "color": "#4E79A7",
+          "lineWidthPt": 1,
+          "marker": "none",
+          "valueLabel": true
+        }
+      ],
+      "bands": [],
+      "gradient": null,
+      "annotations": [],
+      "legend": {
+        "show": false,
+        "position": "top_right"
+      },
+      "background": "#FFFFFF",
+      "dataPolicy": {
+        "xBinding": "category",
+        "missingValue": "withhold_chart",
+        "sampleValuesReusable": false
+      }
+    },
+    {
+      "id": "chart_average_scores",
+      "title": "Average Scores",
+      "variantId": "first_administration",
+      "type": "vertical_bar",
+      "sourceRef": "source_sample_report",
+      "sourceBBoxPt": null,
+      "widthPt": 500,
+      "heightPt": 235,
+      "xAxis": {
+        "minimum": 0,
+        "maximum": 5,
+        "tickInterval": null,
+        "title": null,
+        "scale": "category",
+        "grid": false,
+        "labels": [
+          "Total Score",
+          "Poor Depth",
+          "Poor Quantity",
+          "Fearful Focus",
+          "Poor Functioning"
+        ]
+      },
+      "yAxis": {
+        "minimum": 0,
+        "maximum": 4,
+        "tickInterval": 1,
+        "title": null,
+        "scale": "linear",
+        "grid": false,
+        "labels": []
+      },
+      "series": [
+        {
+          "id": "series_total_average",
+          "label": "Total Score",
+          "metricId": "metric_total_average",
+          "mark": "bar",
+          "color": "#4E79A7",
+          "lineWidthPt": 1,
+          "marker": "none",
+          "valueLabel": true
+        },
+        {
+          "id": "series_depth",
+          "label": "Poor Depth",
+          "metricId": "metric_poor_sleep_depth",
+          "mark": "bar",
+          "color": "#F28E2B",
+          "lineWidthPt": 1,
+          "marker": "none",
+          "valueLabel": true
+        },
+        {
+          "id": "series_quantity",
+          "label": "Poor Quantity",
+          "metricId": "metric_poor_sleep_quantity",
+          "mark": "bar",
+          "color": "#E15759",
+          "lineWidthPt": 1,
+          "marker": "none",
+          "valueLabel": true
+        },
+        {
+          "id": "series_focus",
+          "label": "Fearful Focus",
+          "metricId": "metric_fearful_focus",
+          "mark": "bar",
+          "color": "#76B7B2",
+          "lineWidthPt": 1,
+          "marker": "none",
+          "valueLabel": true
+        },
+        {
+          "id": "series_functioning",
+          "label": "Poor Functioning",
+          "metricId": "metric_poor_functioning",
+          "mark": "bar",
+          "color": "#59A14F",
+          "lineWidthPt": 1,
+          "marker": "none",
+          "valueLabel": true
+        }
+      ],
+      "bands": [],
+      "gradient": null,
+      "annotations": [],
+      "legend": {
+        "show": false,
+        "position": "top_right"
+      },
+      "background": "#FFFFFF",
+      "dataPolicy": {
+        "xBinding": "category",
+        "missingValue": "withhold_chart",
+        "sampleValuesReusable": false
+      }
+    },
+    {
+      "id": "chart_total_history",
+      "title": "RIS Total Score across administrations",
+      "variantId": "repeat_administration",
+      "type": "line",
+      "sourceRef": "source_sample_report",
+      "sourceBBoxPt": null,
+      "widthPt": 500,
+      "heightPt": 235,
+      "xAxis": {
+        "minimum": 0,
+        "maximum": 1,
+        "tickInterval": null,
+        "title": null,
+        "scale": "date",
+        "grid": false,
+        "labels": []
+      },
+      "yAxis": {
+        "minimum": 0,
+        "maximum": 40,
+        "tickInterval": 5,
+        "title": null,
+        "scale": "linear",
+        "grid": false,
+        "labels": []
+      },
+      "series": [
+        {
+          "id": "series_total_history",
+          "label": "Total Score",
+          "metricId": "metric_total",
+          "mark": "line",
+          "color": "#4E79A7",
+          "lineWidthPt": 2.5,
+          "marker": "circle",
+          "valueLabel": true
+        }
+      ],
+      "bands": [],
+      "gradient": null,
+      "annotations": [],
+      "legend": {
+        "show": false,
+        "position": "top_right"
+      },
+      "background": "#FFFFFF",
+      "dataPolicy": {
+        "xBinding": "administration_date",
+        "missingValue": "gap",
+        "sampleValuesReusable": false
+      }
+    },
+    {
+      "id": "chart_factor_history",
+      "title": "RIS Factor Average Scores across administrations",
+      "variantId": "repeat_administration",
+      "type": "multi_line",
+      "sourceRef": "source_sample_report",
+      "sourceBBoxPt": null,
+      "widthPt": 500,
+      "heightPt": 235,
+      "xAxis": {
+        "minimum": 0,
+        "maximum": 4,
+        "tickInterval": null,
+        "title": null,
+        "scale": "date",
+        "grid": false,
+        "labels": []
+      },
+      "yAxis": {
+        "minimum": 0,
+        "maximum": 4,
+        "tickInterval": 1,
+        "title": null,
+        "scale": "linear",
+        "grid": false,
+        "labels": []
+      },
+      "series": [
+        {
+          "id": "series_depth_history",
+          "label": "Poor Sleep Depth",
+          "metricId": "metric_poor_sleep_depth",
+          "mark": "line",
+          "color": "#F28E2B",
+          "lineWidthPt": 2.5,
+          "marker": "circle",
+          "valueLabel": true
+        },
+        {
+          "id": "series_quantity_history",
+          "label": "Poor Sleep Quantity",
+          "metricId": "metric_poor_sleep_quantity",
+          "mark": "line",
+          "color": "#E15759",
+          "lineWidthPt": 2.5,
+          "marker": "square",
+          "valueLabel": true
+        },
+        {
+          "id": "series_focus_history",
+          "label": "Fearful Focus",
+          "metricId": "metric_fearful_focus",
+          "mark": "line",
+          "color": "#76B7B2",
+          "lineWidthPt": 2.5,
+          "marker": "circle",
+          "valueLabel": true
+        },
+        {
+          "id": "series_functioning_history",
+          "label": "Poor Functioning",
+          "metricId": "metric_poor_functioning",
+          "mark": "line",
+          "color": "#59A14F",
+          "lineWidthPt": 2.5,
+          "marker": "square",
+          "valueLabel": true
+        }
+      ],
+      "bands": [],
+      "gradient": null,
+      "annotations": [],
+      "legend": {
+        "show": true,
+        "position": "top_right"
+      },
+      "background": "#FFFFFF",
+      "dataPolicy": {
+        "xBinding": "administration_date",
+        "missingValue": "gap",
+        "sampleValuesReusable": false
+      }
+    }
+  ],
+  "tables": [
+    {
+      "id": "table_results",
+      "type": "metric_summary",
+      "title": "Results",
+      "columns": [
+        "Measure",
+        "Raw Score (0–40)",
+        "Clinical Percentile",
+        "Insomnia Cutoff?"
+      ],
+      "rowBinding": "metric_total",
+      "staticRows": [],
+      "imageAssetId": null,
+      "ocrStatus": "not_applicable",
+      "style": {}
+    },
+    {
+      "id": "table_factors",
+      "type": "metric_summary",
+      "title": "Sleep Factors",
+      "columns": [
+        "Factor",
+        "Raw Score",
+        "Average Score"
+      ],
+      "rowBinding": "factor_metrics",
+      "staticRows": [],
+      "imageAssetId": null,
+      "ocrStatus": "not_applicable",
+      "style": {}
+    },
+    {
+      "id": "table_client_responses",
+      "type": "response_table",
+      "title": "Client Responses",
+      "columns": [
+        "Item",
+        "Question",
+        "Selected Response",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rowBinding": "questionnaire.responses",
+      "staticRows": [],
+      "imageAssetId": null,
+      "ocrStatus": "not_applicable",
+      "style": {}
+    }
+  ],
+  "interpretationRules": {
+    "totalScore": {
+      "minimum": 0,
+      "maximum": 40
+    },
+    "cutoff": {
+      "operator": "greater_than",
+      "value": 12,
+      "positiveFrom": 13
+    },
+    "clinicalPercentile": {
+      "method": "normal_cdf",
+      "mean": 22.6,
+      "standardDeviation": 5.19,
+      "referenceSampleSize": 218
+    },
+    "diagnosis": "not_inferred",
+    "reliableChange": "not_inferred"
+  },
+  "assets": [],
+  "observedLayout": {
+    "pageCount": 4,
+    "chartCount": 0,
+    "tableCount": 4,
+    "sampleReportCount": 1,
+    "imageOnlyEvidence": false,
+    "numericTemplateVerified": false,
+    "charts": [],
+    "tables": [
+      {
+        "page": 1,
+        "rowCount": 5,
+        "columnCount": 3,
+        "bboxPt": [
+          187.41733,
+          452.98074,
+          521.10144,
+          524.93079
+        ],
+        "status": "geometry_extracted_column_semantics_require_review"
+      },
+      {
+        "page": 3,
+        "rowCount": 2,
+        "columnCount": 2,
+        "bboxPt": [
+          68.03149,
+          141.7323,
+          527.24425,
+          392.04483
+        ],
+        "status": "geometry_extracted_column_semantics_require_review"
+      },
+      {
+        "page": 3,
+        "rowCount": 12,
+        "columnCount": 7,
+        "bboxPt": [
+          68.03149,
+          406.21805,
+          527.24425,
+          737.87158
+        ],
+        "status": "geometry_extracted_column_semantics_require_review"
+      },
+      {
+        "page": 4,
+        "rowCount": 4,
+        "columnCount": 7,
+        "bboxPt": [
+          68.03149,
+          141.7323,
+          527.24425,
+          246.6142
+        ],
+        "status": "geometry_extracted_column_semantics_require_review"
+      }
+    ]
+  },
+  "validation": {
+    "expectedPageCount": 4,
+    "expectedFirstVisitChartCount": 2,
+    "expectedRepeatVisitChartCount": 2,
+    "scoreChecks": [
+      {
+        "id": "sample_total_27",
+        "status": "pass",
+        "expected": 27,
+        "observed": 27,
+        "sourceRef": "source_sample_report#page=1"
+      },
+      {
+        "id": "sample_percentile_80_2",
+        "status": "pass",
+        "expected": 80.2,
+        "observed": 80.2,
+        "sourceRef": "source_sample_report#page=1"
+      }
+    ],
+    "visualChecks": [
+      {
+        "id": "source_page_count",
+        "status": "pass",
+        "expected": 4,
+        "observed": 4,
+        "sourceRef": "source_sample_report"
+      },
+      {
+        "id": "source_section_order",
+        "status": "pass",
+        "expected": "results, factors, clinical percentile, averages, scoring, responses",
+        "observed": "results, factors, clinical percentile, averages, scoring, responses",
+        "sourceRef": "source_sample_report"
+      }
+    ],
+    "sourceLayoutObserved": true,
+    "numericTemplateVerified": true,
+    "fullSourceCoverage": false,
+    "rendererEquivalent": false,
+    "clinicalApproved": false
+  },
+  "exceptions": [
+    "pixel_geometry_comparison_pending",
+    "independent_clinical_review_pending"
+  ]
+}

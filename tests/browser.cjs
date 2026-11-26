@@ -2,8 +2,8 @@
 let chromium;
 try { ({ chromium } = require('playwright')); }
 catch {
-  try { ({ chromium } = require('../../assessment-database/node_modules/playwright')); }
-  catch { ({ chromium } = require(require('node:path').join(require('node:os').homedir(), 'POD/assessment-database/node_modules/playwright'))); }
+  try { ({ chromium } = require('../../pod-assessment-platform/node_modules/playwright')); }
+  catch { ({ chromium } = require(require('node:path').join(require('node:os').homedir(), 'Pod_Dev/pod-assessment-platform/node_modules/playwright'))); }
 }
 const fs = require('node:fs/promises');
 const path = require('node:path');

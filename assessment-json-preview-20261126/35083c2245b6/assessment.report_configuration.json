@@ -1,0 +1,507 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Total raw score",
+   "minimum": 0.0,
+   "maximum": 40.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+     "page_url": null,
+     "page_sha256": "63ee77e88d8b23123fb3965979a2785a0702c719c3683b6c038d682af3064c75",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C5",
+      "C12",
+      "C15",
+      "LIVE_C30",
+      "LIVE_C33",
+      "LIVE_C46"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "option_value_overrides": {
+     "Q1": {
+      "O10": 0
+     }
+    },
+    "minimum": 0.0,
+    "maximum": 40.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "fab9da1be1dc45fc05fef506020c2c6a0cd0801f7876e1f8daf038d918a1f2f5",
+   "pageCount": 2,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  },
+  {
+   "sha256": "af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "dfab9da1be1dc_p1",
+   "documentSha256": "fab9da1be1dc45fc05fef506020c2c6a0cd0801f7876e1f8daf038d918a1f2f5",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "dfab9da1be1dc_p1_chart_1",
+    "dfab9da1be1dc_p1_chart_2"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "dfab9da1be1dc_p1_section_1",
+    "dfab9da1be1dc_p1_section_2",
+    "dfab9da1be1dc_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "dfab9da1be1dc_p2",
+   "documentSha256": "fab9da1be1dc45fc05fef506020c2c6a0cd0801f7876e1f8daf038d918a1f2f5",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dfab9da1be1dc_p2_table_1"
+   ],
+   "sectionIds": [
+    "dfab9da1be1dc_p2_section_1",
+    "dfab9da1be1dc_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "daf0afa7f57cf_p1",
+   "documentSha256": "af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "daf0afa7f57cf_p1_chart_1",
+    "daf0afa7f57cf_p1_chart_2"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "daf0afa7f57cf_p1_section_1",
+    "daf0afa7f57cf_p1_section_2",
+    "daf0afa7f57cf_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "daf0afa7f57cf_p2",
+   "documentSha256": "af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "daf0afa7f57cf_p2_section_1",
+    "daf0afa7f57cf_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "daf0afa7f57cf_p3",
+   "documentSha256": "af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "daf0afa7f57cf_p3_table_1"
+   ],
+   "sectionIds": [
+    "daf0afa7f57cf_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "daf0afa7f57cf_p4",
+   "documentSha256": "af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "daf0afa7f57cf_p4_table_1"
+   ],
+   "sectionIds": [
+    "daf0afa7f57cf_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "dfab9da1be1dc_p1_section_1",
+   "pageId": "dfab9da1be1dc_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dfab9da1be1dc_p1_section_2",
+   "pageId": "dfab9da1be1dc_p1",
+   "title": "WSAS Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    245.29401,
+    290.86084,
+    349.98199,
+    302.86084
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dfab9da1be1dc_p1_section_3",
+   "pageId": "dfab9da1be1dc_p1",
+   "title": "WSAS Item Responses",
+   "type": "responses",
+   "bboxPt": [
+    231.95599,
+    550.8609,
+    363.31998,
+    562.8609
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dfab9da1be1dc_p2_section_1",
+   "pageId": "dfab9da1be1dc_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    124.57652,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dfab9da1be1dc_p2_section_2",
+   "pageId": "dfab9da1be1dc_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3464,
+    396.69995,
+    151.8204,
+    410.69995
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf0afa7f57cf_p1_section_1",
+   "pageId": "daf0afa7f57cf_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf0afa7f57cf_p1_section_2",
+   "pageId": "daf0afa7f57cf_p1",
+   "title": "WSAS Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    245.29401,
+    290.86084,
+    349.98199,
+    302.86084
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf0afa7f57cf_p1_section_3",
+   "pageId": "daf0afa7f57cf_p1",
+   "title": "WSAS Item Responses",
+   "type": "responses",
+   "bboxPt": [
+    231.95599,
+    550.8609,
+    363.31998,
+    562.8609
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf0afa7f57cf_p2_section_1",
+   "pageId": "daf0afa7f57cf_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    124.57652,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf0afa7f57cf_p2_section_2",
+   "pageId": "daf0afa7f57cf_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    396.69995,
+    290.26636,
+    410.69995
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf0afa7f57cf_p3_section_1",
+   "pageId": "daf0afa7f57cf_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    600.07434,
+    151.8205,
+    614.07434
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf0afa7f57cf_p4_section_1",
+   "pageId": "daf0afa7f57cf_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Work and Social Adjustment Scale (WSAS) Scoring",
+    "text": "Each WSAS item rates the degree of impairment in a specific life domain (work, home management, social leisure, private leisure, or close relationships) on a nine-point scale, ranging from 0 (not at all impaired) to 8 (very severely impaired).\nItem 1 (Work) includes an additional response option: “I am not working for reasons unrelated to my difficulties.” This accommodates respondents who are not currently in paid work (e.g., retired individuals, students, or full-time caregivers) where rating impairment in “ability to work” does not apply meaningfully. When selected, item 1 is scored as 0, and the total is calculated normally.\nThe WSAS total score is calculated as the sum of the five item ratings and ranges from 0 to 40, with higher scores indicating greater overall functional impairment. Both the total score and item-level responses are clinically informative: the total provides an overall index of functional impairment, while item-level responses identify which specific life domains are affected.\n",
+    "source_url": null
+   },
+   {
+    "title": "WSAS Percentile Context",
+    "text": "To provide additional interpretive context, percentile rankings are derived from a reference sample of adults at intake for primary-care psychological therapy (Zahra et al., 2014). These percentiles indicate a respondent’s position relative to others entering outpatient therapy, not relative to the general population. For example, a total score of 10 corresponds to approximately the 17th percentile in this reference sample, indicating that roughly one in six adults entering primary-care therapy scored at or below this level. A score of 19 corresponds to approximately the 50th percentile (close to the reference sample average), and a score of 30 corresponds to approximately the 89th percentile.\n",
+    "source_url": null
+   },
+   {
+    "title": "WSAS Change Score Interpretation",
+    "text": "When WSAS scores are available from multiple timepoints, changes in scores can provide valuable information about the effectiveness of interventions or changes in functional impairment. Changes of at least 0.5 standard deviations are considered clinically meaningful (Norman et al., 2003; Turner et al., 2010). Based on Zahra et al. (2014), the minimally important difference (MID) = 5 points. These changes are categorised as:\nSignificant reduction : equal to or greater than 5-point reduction in score.\nSignificant increase : equal to or greater than 5-point increase in score.\nMinimal change : less than 5 points or no change in score.\nOf note, Zahra et al. (2014) proposed an 8-point change as clinically meaningful, derived from the measurement error of the WSAS. NovoPsych instead uses a 5-point change, consistent with what patients typically perceive as a meaningful change in functioning.\n",
+    "source_url": null
+   },
+   {
+    "title": "What does it mean if a client's symptom scores and WSAS scores don't align?",
+    "text": "This pattern is clinically informative rather than a problem with the measure. The WSAS captures a distinct construct from symptom severity, and research has shown that WSAS scores load on a factor separate from depression and anxiety symptoms even when correlations between them are moderate to strong. A discrepancy can indicate several things.\nElevated symptoms with relatively preserved functioning may reflect strong external supports, an early or acute stage of presentation, or specific resilience factors that warrant exploration.\nLow symptoms with persistent functional impairment may indicate residual disability after partial symptom remission, a different difficulty driving the impairment (for example, a chronic physical condition or relational issue), or entrenched avoidance patterns that have not yet shifted.\nThese mismatches are particularly useful at treatment review: symptom reduction without functional gain is a common signal to revisit the case formulation and consider whether the most clinically meaningful treatment targets have been identified.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b",
+    "pageNumber": 2,
+    "text": "WSAS Scoring\nEach WSAS item rates the degree of impairment in a specific life domain (work, home\nmanagement, social leisure, private leisure, or close relationships) on a nine-point scale, ranging\nfrom 0 (not at all impaired) to 8 (very severely impaired).\nItem 1 (work) includes an additional response option: \"I am not working for reasons unrelated to\nmy difficulties.\" This accommodates respondents who are not currently in paid work (e.g., retired\nindividuals, students, or full-time caregivers), where rating impairment in \"ability to work\" does\nnot apply meaningfully. When selected, item 1 is scored as 0, and the total is calculated\nnormally. Because the total then reflects only four scorable items, the descriptor and percentile\nmay underestimate overall functional impairment if the respondent is impaired in the remaining\ndomains.\nThe WSAS total score is calculated as the sum of the five item ratings and ranges from 0 to 40,\nwith higher scores indicating greater overall functional impairment. Both the total score and item-\nlevel responses are clinically informative: the total provides an overall index of functional\nimpairment, while item-level responses identify which specific life domains are affected.\nWSAS Severity Categories\nThe following descriptors are applied to the WSAS total score, based on the original severity\nbands proposed by Mundt et al. (2002):\n- 0 to 9 (Subclinical): functional impairment is absent or minimal. The respondent may be\nexperiencing distress, but day-to-day functioning is relatively preserved.\n- 10 to 20 (Significant functional impairment): the respondent's difficulties are meaningfully\naffecting day-to-day functioning, typically across one or more life domains.\n- 21 to 40 (Moderately severe or worse): difficulties are substantially affecting day-to-day\nfunctioning, often across multiple life domains.\nWSAS Percentile Context\nTo provide additional interpretive context, percentile rankings are derived from a reference",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "To provide additional interpretive context, percentile rankings are derived from a reference sample of adults at intake for primary-care psychological therapy (Zahra et al., 2014).",
+   "These percentiles indicate a respondent’s position relative to others entering outpatient therapy, not relative to the general population.",
+   "For example, a total score of 10 corresponds to approximately the 17th percentile in this reference sample, indicating that roughly one in six adults entering primary-care therapy scored at or below this level.",
+   "A score of 19 corresponds to approximately the 50th percentile (close to the reference sample average), and a score of 30 corresponds to approximately the 89th percentile."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 4
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 149
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

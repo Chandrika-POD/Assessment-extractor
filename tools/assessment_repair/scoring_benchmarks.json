@@ -1,0 +1,3000 @@
+{
+  "schema_version": "1.0.0",
+  "created_on": "2026-11-18",
+  "authorship": "AI-assisted source comparison and independently specified arithmetic examples; not a human clinical sign-off.",
+  "expected_value_policy": "Expected outputs and source item memberships are specified without invoking the runtime evaluator or deriving formulas from the assessed JSON.",
+  "sources": {
+    "phq_gad_manual": {
+      "url": "https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf",
+      "retrieved_on": "2026-11-18",
+      "archive_path": "artifacts/scoring-verification-20261118/phq_gad_manual.pdf",
+      "sha256": "6ed2f00f97e438c1168cd702d38d31fc923031445c720653005f138aa424228a",
+      "access": "archived_pdf",
+      "runtime_fetch_required": false
+    },
+    "bam_va": {
+      "url": "https://www.mentalhealth.va.gov/MENTALHEALTH/healthcare-providers/docs/VA_OMH_The_Brief_Addiction-Monitor_Instuctions_508.pdf",
+      "retrieved_on": "2026-11-18",
+      "archive_path": "artifacts/scoring-verification-20261118/bam_va.pdf",
+      "sha256": "9433e66c9759ae44b2858a406a10d041770f0a1d3ba5d6dd802eeff5858a3e6d",
+      "access": "archived_pdf",
+      "runtime_fetch_required": false
+    },
+    "crafft_manual": {
+      "url": "https://crafft.org/wp-content/uploads/2019/12/CRAFFT-2-1-manualN-2019-12-24.pdf",
+      "retrieved_on": "2026-11-18",
+      "archive_path": "artifacts/scoring-verification-20261118/crafft_manual.pdf",
+      "sha256": "b8027224e9f6a14813cfc25dfad55bebbdff0323adf1481c8283f0454086ac63",
+      "access": "archived_pdf",
+      "runtime_fetch_required": false
+    },
+    "dass_template": {
+      "url": "https://dass.psy.unsw.edu.au/Download%20files/Dass_template.pdf",
+      "retrieved_on": "2026-11-18",
+      "archive_path": "artifacts/scoring-verification-20261118/dass_template.pdf",
+      "sha256": "5ceafc6731340b382bdd6eea256ea5f394dfe9897440615911f2cef84a977892",
+      "access": "archived_pdf",
+      "runtime_fetch_required": false
+    },
+    "spane_author": {
+      "url": "https://eddiener.com/wp-content/uploads/2024/10/SPANE-Scale.pdf",
+      "retrieved_on": "2026-11-18",
+      "archive_path": "artifacts/scoring-verification-20261118/spane_author.pdf",
+      "sha256": "53ff18d900d74014e7b303e69ef983d7d823e6c7e647d72d161c72e3c6cea9cc",
+      "access": "archived_pdf",
+      "runtime_fetch_required": false
+    },
+    "core10_author": {
+      "url": "https://www.coresystemtrust.org.uk/wp-content/uploads/2020/07/CORE-10-English.pdf",
+      "retrieved_on": "2026-11-18",
+      "archive_path": "artifacts/scoring-verification-20261118/core10_author.pdf",
+      "sha256": "7d3136755a0ef9718e0b10406be6fc615670f15d831d2da0ac97de2ca88ba8af",
+      "access": "archived_pdf",
+      "runtime_fetch_required": false
+    },
+    "yes_guidance": {
+      "url": "https://www.amhocn.org/__data/assets/pdf_file/0008/700397/yes_guidance_for_orgs_ver_1.2_170703.pdf",
+      "retrieved_on": "2026-11-18",
+      "archive_path": null,
+      "sha256": null,
+      "access": "web_text_review_only_direct_download_http_403",
+      "runtime_fetch_required": false
+    }
+  },
+  "assessments": [
+    {
+      "assessment_id": "patient-health-questionnaire-depression-phq-9--8f81b7b3270c",
+      "source_id": "phq_gad_manual",
+      "source_location": "pp. 3, 5–7",
+      "review_scope": "Complete-response total and severity boundaries only; questionnaire wording, diagnosis, risk workflow and partial responses are not approved.",
+      "rule_assertions": [
+        {
+          "rule_id": "total_raw",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6",
+              "Q7",
+              "Q8",
+              "Q9"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 27,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        }
+      ],
+      "response_assertions": [
+        {
+          "item_id": "Q1",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q2",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q3",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q4",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q5",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q6",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q7",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q8",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q9",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        }
+      ],
+      "cases": [
+        {
+          "id": "8f81b7b3270c:total_0",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O1",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 0
+          },
+          "expected_bands": {
+            "total_raw": "No or minimal depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_1",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O2",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 1
+          },
+          "expected_bands": {
+            "total_raw": "No or minimal depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_2",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O3",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 2
+          },
+          "expected_bands": {
+            "total_raw": "No or minimal depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_3",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 3
+          },
+          "expected_bands": {
+            "total_raw": "No or minimal depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_4",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O2",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 4
+          },
+          "expected_bands": {
+            "total_raw": "No or minimal depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_5",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O3",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 5
+          },
+          "expected_bands": {
+            "total_raw": "Mild depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_6",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 6
+          },
+          "expected_bands": {
+            "total_raw": "Mild depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_7",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O2",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 7
+          },
+          "expected_bands": {
+            "total_raw": "Mild depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_8",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O3",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 8
+          },
+          "expected_bands": {
+            "total_raw": "Mild depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_9",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 9
+          },
+          "expected_bands": {
+            "total_raw": "Mild depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_10",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O2",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 10
+          },
+          "expected_bands": {
+            "total_raw": "Moderate depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_11",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O3",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 11
+          },
+          "expected_bands": {
+            "total_raw": "Moderate depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_12",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 12
+          },
+          "expected_bands": {
+            "total_raw": "Moderate depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_13",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O2",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 13
+          },
+          "expected_bands": {
+            "total_raw": "Moderate depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_14",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O3",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 14
+          },
+          "expected_bands": {
+            "total_raw": "Moderate depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_15",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 15
+          },
+          "expected_bands": {
+            "total_raw": "Moderate-severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_16",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O2",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 16
+          },
+          "expected_bands": {
+            "total_raw": "Moderate-severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_17",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O3",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 17
+          },
+          "expected_bands": {
+            "total_raw": "Moderate-severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_18",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 18
+          },
+          "expected_bands": {
+            "total_raw": "Moderate-severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_19",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O2",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 19
+          },
+          "expected_bands": {
+            "total_raw": "Moderate-severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_20",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O3",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 20
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_21",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 21
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_22",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O2",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 22
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_23",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O3",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 23
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_24",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O4",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 24
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_25",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O4",
+            "Q9": "O2"
+          },
+          "expected_scores": {
+            "total_raw": 25
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_26",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O4",
+            "Q9": "O3"
+          },
+          "expected_scores": {
+            "total_raw": 26
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:total_27",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O4",
+            "Q9": "O4"
+          },
+          "expected_scores": {
+            "total_raw": 27
+          },
+          "expected_bands": {
+            "total_raw": "Severe depression"
+          }
+        },
+        {
+          "id": "8f81b7b3270c:missing_required",
+          "kind": "conservative_application_policy",
+          "answers": {
+            "Q1": "O2",
+            "Q2": "O2",
+            "Q3": "O2",
+            "Q4": "O2",
+            "Q5": "O2",
+            "Q6": "O2",
+            "Q7": "O2",
+            "Q8": "O2"
+          },
+          "expected_scores": {
+            "total_raw": null
+          }
+        },
+        {
+          "id": "8f81b7b3270c:invalid_answer",
+          "kind": "input_validation",
+          "answers": {
+            "Q1": "INVALID",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1"
+          },
+          "expected_scores": {
+            "total_raw": null
+          },
+          "expected_error": "ValidationError"
+        }
+      ],
+      "additional_gaps": []
+    },
+    {
+      "assessment_id": "generalised-anxiety-disorder-assessment-gad-7--265a24c61d94",
+      "source_id": "phq_gad_manual",
+      "source_location": "pp. 3, 5–7",
+      "review_scope": "Complete-response total and severity boundaries only; questionnaire wording, diagnosis, risk workflow and partial responses are not approved.",
+      "rule_assertions": [
+        {
+          "rule_id": "total_raw",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6",
+              "Q7"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 21,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        }
+      ],
+      "response_assertions": [
+        {
+          "item_id": "Q1",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q2",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q3",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q4",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q5",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q6",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        },
+        {
+          "item_id": "Q7",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3
+          }
+        }
+      ],
+      "cases": [
+        {
+          "id": "265a24c61d94:total_0",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O1",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 0
+          },
+          "expected_bands": {
+            "total_raw": "None-Minimal"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_1",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O2",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 1
+          },
+          "expected_bands": {
+            "total_raw": "None-Minimal"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_2",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O3",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 2
+          },
+          "expected_bands": {
+            "total_raw": "None-Minimal"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_3",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 3
+          },
+          "expected_bands": {
+            "total_raw": "None-Minimal"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_4",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O2",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 4
+          },
+          "expected_bands": {
+            "total_raw": "None-Minimal"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_5",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O3",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 5
+          },
+          "expected_bands": {
+            "total_raw": "Mild"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_6",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 6
+          },
+          "expected_bands": {
+            "total_raw": "Mild"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_7",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O2",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 7
+          },
+          "expected_bands": {
+            "total_raw": "Mild"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_8",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O3",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 8
+          },
+          "expected_bands": {
+            "total_raw": "Mild"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_9",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 9
+          },
+          "expected_bands": {
+            "total_raw": "Mild"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_10",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O2",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 10
+          },
+          "expected_bands": {
+            "total_raw": "Moderate"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_11",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O3",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 11
+          },
+          "expected_bands": {
+            "total_raw": "Moderate"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_12",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 12
+          },
+          "expected_bands": {
+            "total_raw": "Moderate"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_13",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O2",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 13
+          },
+          "expected_bands": {
+            "total_raw": "Moderate"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_14",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O3",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 14
+          },
+          "expected_bands": {
+            "total_raw": "Moderate"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_15",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 15
+          },
+          "expected_bands": {
+            "total_raw": "Severe"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_16",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O2",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 16
+          },
+          "expected_bands": {
+            "total_raw": "Severe"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_17",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O3",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 17
+          },
+          "expected_bands": {
+            "total_raw": "Severe"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_18",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 18
+          },
+          "expected_bands": {
+            "total_raw": "Severe"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_19",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O2"
+          },
+          "expected_scores": {
+            "total_raw": 19
+          },
+          "expected_bands": {
+            "total_raw": "Severe"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_20",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O3"
+          },
+          "expected_scores": {
+            "total_raw": 20
+          },
+          "expected_bands": {
+            "total_raw": "Severe"
+          }
+        },
+        {
+          "id": "265a24c61d94:total_21",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4"
+          },
+          "expected_scores": {
+            "total_raw": 21
+          },
+          "expected_bands": {
+            "total_raw": "Severe"
+          }
+        },
+        {
+          "id": "265a24c61d94:missing_required",
+          "kind": "conservative_application_policy",
+          "answers": {
+            "Q1": "O2",
+            "Q2": "O2",
+            "Q3": "O2",
+            "Q4": "O2",
+            "Q5": "O2",
+            "Q6": "O2"
+          },
+          "expected_scores": {
+            "total_raw": null
+          }
+        },
+        {
+          "id": "265a24c61d94:invalid_answer",
+          "kind": "input_validation",
+          "answers": {
+            "Q1": "INVALID",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1"
+          },
+          "expected_scores": {
+            "total_raw": null
+          },
+          "expected_error": "ValidationError"
+        }
+      ],
+      "additional_gaps": []
+    },
+    {
+      "assessment_id": "depression-anxiety-stress-scales-short-form-dass-21--acf13d5bf87b",
+      "source_id": "dass_template",
+      "source_location": "p. 1; rows 1–21 and scoring footer",
+      "review_scope": "Six raw/doubled subscale formulas. Combined total, response wording, norms and interpretation not source-verified.",
+      "rule_assertions": [
+        {
+          "rule_id": "depression_raw",
+          "expected": {
+            "item_ids": [
+              "Q3",
+              "Q5",
+              "Q10",
+              "Q13",
+              "Q16",
+              "Q17",
+              "Q21"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 21,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "depression_doubled",
+          "expected": {
+            "item_ids": [
+              "Q3",
+              "Q5",
+              "Q10",
+              "Q13",
+              "Q16",
+              "Q17",
+              "Q21"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 42,
+            "multiplier": 2,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "anxiety_raw",
+          "expected": {
+            "item_ids": [
+              "Q2",
+              "Q4",
+              "Q7",
+              "Q9",
+              "Q15",
+              "Q19",
+              "Q20"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 21,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "anxiety_doubled",
+          "expected": {
+            "item_ids": [
+              "Q2",
+              "Q4",
+              "Q7",
+              "Q9",
+              "Q15",
+              "Q19",
+              "Q20"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 42,
+            "multiplier": 2,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "stress_raw",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q6",
+              "Q8",
+              "Q11",
+              "Q12",
+              "Q14",
+              "Q18"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 21,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "stress_doubled",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q6",
+              "Q8",
+              "Q11",
+              "Q12",
+              "Q14",
+              "Q18"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 42,
+            "multiplier": 2,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        }
+      ],
+      "response_assertions": [],
+      "cases": [
+        {
+          "id": "acf13d5bf87b:uniform_O1",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O1",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1",
+            "Q10": "O1",
+            "Q11": "O1",
+            "Q12": "O1",
+            "Q13": "O1",
+            "Q14": "O1",
+            "Q15": "O1",
+            "Q16": "O1",
+            "Q17": "O1",
+            "Q18": "O1",
+            "Q19": "O1",
+            "Q20": "O1",
+            "Q21": "O1"
+          },
+          "expected_scores": {
+            "depression_raw": 0,
+            "depression_doubled": 0,
+            "anxiety_raw": 0,
+            "anxiety_doubled": 0,
+            "stress_raw": 0,
+            "stress_doubled": 0
+          }
+        },
+        {
+          "id": "acf13d5bf87b:uniform_O2",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O2",
+            "Q2": "O2",
+            "Q3": "O2",
+            "Q4": "O2",
+            "Q5": "O2",
+            "Q6": "O2",
+            "Q7": "O2",
+            "Q8": "O2",
+            "Q9": "O2",
+            "Q10": "O2",
+            "Q11": "O2",
+            "Q12": "O2",
+            "Q13": "O2",
+            "Q14": "O2",
+            "Q15": "O2",
+            "Q16": "O2",
+            "Q17": "O2",
+            "Q18": "O2",
+            "Q19": "O2",
+            "Q20": "O2",
+            "Q21": "O2"
+          },
+          "expected_scores": {
+            "depression_raw": 7,
+            "depression_doubled": 14,
+            "anxiety_raw": 7,
+            "anxiety_doubled": 14,
+            "stress_raw": 7,
+            "stress_doubled": 14
+          }
+        },
+        {
+          "id": "acf13d5bf87b:uniform_O4",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q2": "O4",
+            "Q3": "O4",
+            "Q4": "O4",
+            "Q5": "O4",
+            "Q6": "O4",
+            "Q7": "O4",
+            "Q8": "O4",
+            "Q9": "O4",
+            "Q10": "O4",
+            "Q11": "O4",
+            "Q12": "O4",
+            "Q13": "O4",
+            "Q14": "O4",
+            "Q15": "O4",
+            "Q16": "O4",
+            "Q17": "O4",
+            "Q18": "O4",
+            "Q19": "O4",
+            "Q20": "O4",
+            "Q21": "O4"
+          },
+          "expected_scores": {
+            "depression_raw": 21,
+            "depression_doubled": 42,
+            "anxiety_raw": 21,
+            "anxiety_doubled": 42,
+            "stress_raw": 21,
+            "stress_doubled": 42
+          }
+        },
+        {
+          "id": "acf13d5bf87b:distinct_subscales",
+          "kind": "source_formula",
+          "answers": {
+            "Q3": "O2",
+            "Q5": "O2",
+            "Q10": "O2",
+            "Q13": "O2",
+            "Q16": "O2",
+            "Q17": "O2",
+            "Q21": "O2",
+            "Q2": "O3",
+            "Q4": "O3",
+            "Q7": "O3",
+            "Q9": "O3",
+            "Q15": "O3",
+            "Q19": "O3",
+            "Q20": "O3",
+            "Q1": "O4",
+            "Q6": "O4",
+            "Q8": "O4",
+            "Q11": "O4",
+            "Q12": "O4",
+            "Q14": "O4",
+            "Q18": "O4"
+          },
+          "expected_scores": {
+            "depression_raw": 7,
+            "depression_doubled": 14,
+            "anxiety_raw": 14,
+            "anxiety_doubled": 28,
+            "stress_raw": 21,
+            "stress_doubled": 42
+          }
+        }
+      ],
+      "additional_gaps": []
+    },
+    {
+      "assessment_id": "brief-addiction-monitor-bam--dce6e8665d04",
+      "source_id": "bam_va",
+      "source_location": "p. 2, formulas and categorical response weights",
+      "review_scope": "Three continuous-version domain formulas and item weights; missing/skip scenarios additionally test current explicit application policy.",
+      "rule_assertions": [
+        {
+          "rule_id": "source_draft_1",
+          "expected": {
+            "item_ids": [
+              "Q4",
+              "Q5",
+              "Q6"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 90,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "source_draft_2",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q14",
+              "Q17",
+              "Q21"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 180,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "source_draft_3",
+          "expected": {
+            "item_ids": [
+              "Q15",
+              "Q16",
+              "Q18",
+              "Q19",
+              "Q20",
+              "Q22"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 180,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        }
+      ],
+      "response_assertions": [
+        {
+          "item_id": "Q1",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 8,
+            "O3": 15,
+            "O4": 22,
+            "O5": 30
+          }
+        },
+        {
+          "item_id": "Q14",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 8,
+            "O3": 15,
+            "O4": 22,
+            "O5": 30
+          }
+        },
+        {
+          "item_id": "Q15",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 8,
+            "O3": 15,
+            "O4": 22,
+            "O5": 30
+          }
+        },
+        {
+          "item_id": "Q18",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 8,
+            "O3": 15,
+            "O4": 22,
+            "O5": 30
+          }
+        },
+        {
+          "item_id": "Q21",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 8,
+            "O3": 15,
+            "O4": 22,
+            "O5": 30
+          }
+        },
+        {
+          "item_id": "Q23",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 8,
+            "O3": 15,
+            "O4": 22,
+            "O5": 30
+          }
+        },
+        {
+          "item_id": "Q20",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 30
+          }
+        }
+      ],
+      "cases": [
+        {
+          "id": "dce6e8665d04:mixed_domains",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O3",
+            "Q2": 7,
+            "Q3": 6,
+            "Q4": 4,
+            "Q5": 1,
+            "Q6": 2,
+            "Q14": "O2",
+            "Q17": 3,
+            "Q21": "O2",
+            "Q15": "O4",
+            "Q16": 8,
+            "Q18": "O2",
+            "Q19": 17,
+            "Q20": "O2",
+            "Q22": 16
+          },
+          "expected_scores": {
+            "source_draft_1": 7,
+            "source_draft_2": 47,
+            "source_draft_3": 101
+          }
+        },
+        {
+          "id": "dce6e8665d04:unscored_items_do_not_change_domains",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O3",
+            "Q2": 7,
+            "Q3": 6,
+            "Q4": 4,
+            "Q5": 1,
+            "Q6": 2,
+            "Q14": "O2",
+            "Q17": 3,
+            "Q21": "O2",
+            "Q15": "O4",
+            "Q16": 8,
+            "Q18": "O2",
+            "Q19": 17,
+            "Q20": "O2",
+            "Q22": 16,
+            "Q7": 30,
+            "Q23": "O5"
+          },
+          "expected_scores": {
+            "source_draft_1": 7,
+            "source_draft_2": 47,
+            "source_draft_3": 101
+          }
+        },
+        {
+          "id": "dce6e8665d04:explicit_skip_zero",
+          "kind": "conservative_application_policy",
+          "answers": {
+            "Q4": 0,
+            "Q6": 0
+          },
+          "expected_scores": {
+            "source_draft_1": 0
+          }
+        },
+        {
+          "id": "dce6e8665d04:required_frequency_missing",
+          "kind": "conservative_application_policy",
+          "answers": {
+            "Q4": 2,
+            "Q6": 0
+          },
+          "expected_scores": {
+            "source_draft_1": null
+          }
+        },
+        {
+          "id": "dce6e8665d04:maximum_domains",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O5",
+            "Q2": 30,
+            "Q3": 30,
+            "Q4": 30,
+            "Q5": 30,
+            "Q6": 30,
+            "Q14": "O5",
+            "Q17": 30,
+            "Q21": "O5",
+            "Q15": "O5",
+            "Q16": 30,
+            "Q18": "O5",
+            "Q19": 30,
+            "Q20": "O2",
+            "Q22": 30
+          },
+          "expected_scores": {
+            "source_draft_1": 90,
+            "source_draft_2": 180,
+            "source_draft_3": 180
+          }
+        }
+      ],
+      "additional_gaps": []
+    },
+    {
+      "assessment_id": "crafft-substance-use-assessment-crafft-2-1-n--74bd92c2de16",
+      "source_id": "crafft_manual",
+      "source_location": "printed pp. 5–6, 19–21 and Appendix C",
+      "review_scope": "Core Yes count and separate HONC count; no automated risk category, diagnosis, normative probability or treatment approval.",
+      "rule_assertions": [
+        {
+          "rule_id": "source_draft_1",
+          "expected": {
+            "item_ids": [
+              "Q5",
+              "Q6",
+              "Q7",
+              "Q8",
+              "Q9",
+              "Q10"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 6,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "source_draft_2",
+          "expected": {
+            "item_ids": [
+              "Q11",
+              "Q12",
+              "Q13",
+              "Q14",
+              "Q15",
+              "Q16",
+              "Q17",
+              "Q18",
+              "Q19",
+              "Q20"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 10,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        }
+      ],
+      "response_assertions": [
+        {
+          "item_id": "Q5",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q6",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q7",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q8",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q9",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q10",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q11",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q12",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q13",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q14",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q15",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q16",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q17",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q18",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q19",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        },
+        {
+          "item_id": "Q20",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1
+          }
+        }
+      ],
+      "cases": [
+        {
+          "id": "74bd92c2de16:car_only_no_use",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": 0,
+            "Q2": 0,
+            "Q3": 0,
+            "Q4": 0,
+            "Q5": "O2"
+          },
+          "expected_scores": {
+            "source_draft_1": 1,
+            "source_draft_2": null
+          }
+        },
+        {
+          "id": "74bd92c2de16:separate_core_nicotine",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": 4,
+            "Q2": 2,
+            "Q3": 3,
+            "Q4": 4,
+            "Q5": "O2",
+            "Q6": "O1",
+            "Q7": "O2",
+            "Q8": "O2",
+            "Q9": "O1",
+            "Q10": "O2",
+            "Q11": "O2",
+            "Q12": "O2",
+            "Q13": "O2",
+            "Q14": "O2",
+            "Q15": "O1",
+            "Q16": "O1",
+            "Q17": "O1",
+            "Q18": "O1",
+            "Q19": "O1",
+            "Q20": "O1"
+          },
+          "expected_scores": {
+            "source_draft_1": 4,
+            "source_draft_2": 4
+          }
+        },
+        {
+          "id": "74bd92c2de16:honc_not_added_to_core",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": 4,
+            "Q2": 2,
+            "Q3": 3,
+            "Q4": 4,
+            "Q5": "O2",
+            "Q6": "O1",
+            "Q7": "O2",
+            "Q8": "O2",
+            "Q9": "O1",
+            "Q10": "O2",
+            "Q11": "O2",
+            "Q12": "O2",
+            "Q13": "O2",
+            "Q14": "O2",
+            "Q15": "O2",
+            "Q16": "O2",
+            "Q17": "O2",
+            "Q18": "O2",
+            "Q19": "O2",
+            "Q20": "O2"
+          },
+          "expected_scores": {
+            "source_draft_1": 4,
+            "source_draft_2": 10
+          }
+        },
+        {
+          "id": "74bd92c2de16:missing_frequency",
+          "kind": "conservative_application_policy",
+          "answers": {
+            "Q1": 0,
+            "Q3": 0,
+            "Q4": 0,
+            "Q5": "O1"
+          },
+          "expected_scores": {
+            "source_draft_1": null
+          }
+        }
+      ],
+      "additional_gaps": []
+    },
+    {
+      "assessment_id": "scale-of-positive-and-negative-experience-spane--a5c3cc0b0cc4",
+      "source_id": "spane_author",
+      "source_location": "p. 1, item order and scoring",
+      "review_scope": "Positive and negative sums plus their signed difference. No normative interpretation reviewed.",
+      "rule_assertions": [
+        {
+          "rule_id": "source_draft_1",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q3",
+              "Q5",
+              "Q7",
+              "Q10",
+              "Q12"
+            ],
+            "method": "sum",
+            "minimum": 6,
+            "maximum": 30,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "source_draft_2",
+          "expected": {
+            "item_ids": [
+              "Q2",
+              "Q4",
+              "Q6",
+              "Q8",
+              "Q9",
+              "Q11"
+            ],
+            "method": "sum",
+            "minimum": 6,
+            "maximum": 30,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "source_draft_3",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q3",
+              "Q5",
+              "Q7",
+              "Q10",
+              "Q12",
+              "Q2",
+              "Q4",
+              "Q6",
+              "Q8",
+              "Q9",
+              "Q11"
+            ],
+            "method": "weighted_sum",
+            "minimum": -24,
+            "maximum": 24,
+            "multiplier": 1,
+            "item_coefficients": {
+              "Q2": -1,
+              "Q4": -1,
+              "Q6": -1,
+              "Q8": -1,
+              "Q9": -1,
+              "Q11": -1
+            },
+            "item_transforms": {}
+          }
+        }
+      ],
+      "response_assertions": [
+        {
+          "item_id": "Q1",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q2",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q3",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q4",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q5",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q6",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q7",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q8",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q9",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q10",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q11",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        },
+        {
+          "item_id": "Q12",
+          "expected_option_values": {
+            "O1": 1,
+            "O2": 2,
+            "O3": 3,
+            "O4": 4,
+            "O5": 5
+          }
+        }
+      ],
+      "cases": [
+        {
+          "id": "a5c3cc0b0cc4:neutral",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O3",
+            "Q3": "O3",
+            "Q5": "O3",
+            "Q7": "O3",
+            "Q10": "O3",
+            "Q12": "O3",
+            "Q2": "O3",
+            "Q4": "O3",
+            "Q6": "O3",
+            "Q8": "O3",
+            "Q9": "O3",
+            "Q11": "O3"
+          },
+          "expected_scores": {
+            "source_draft_1": 18,
+            "source_draft_2": 18,
+            "source_draft_3": 0
+          }
+        },
+        {
+          "id": "a5c3cc0b0cc4:positive",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O5",
+            "Q3": "O5",
+            "Q5": "O5",
+            "Q7": "O5",
+            "Q10": "O5",
+            "Q12": "O5",
+            "Q2": "O1",
+            "Q4": "O1",
+            "Q6": "O1",
+            "Q8": "O1",
+            "Q9": "O1",
+            "Q11": "O1"
+          },
+          "expected_scores": {
+            "source_draft_1": 30,
+            "source_draft_2": 6,
+            "source_draft_3": 24
+          }
+        },
+        {
+          "id": "a5c3cc0b0cc4:negative",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O1",
+            "Q3": "O1",
+            "Q5": "O1",
+            "Q7": "O1",
+            "Q10": "O1",
+            "Q12": "O1",
+            "Q2": "O5",
+            "Q4": "O5",
+            "Q6": "O5",
+            "Q8": "O5",
+            "Q9": "O5",
+            "Q11": "O5"
+          },
+          "expected_scores": {
+            "source_draft_1": 6,
+            "source_draft_2": 30,
+            "source_draft_3": -24
+          }
+        },
+        {
+          "id": "a5c3cc0b0cc4:mixed",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O4",
+            "Q3": "O4",
+            "Q5": "O4",
+            "Q7": "O4",
+            "Q10": "O4",
+            "Q12": "O4",
+            "Q2": "O2",
+            "Q4": "O2",
+            "Q6": "O2",
+            "Q8": "O2",
+            "Q9": "O2",
+            "Q11": "O2"
+          },
+          "expected_scores": {
+            "source_draft_1": 24,
+            "source_draft_2": 12,
+            "source_draft_3": 12
+          }
+        }
+      ],
+      "additional_gaps": []
+    },
+    {
+      "assessment_id": "clinical-outcomes-in-routine-evaluation-10-core-10--2cb1074a1a81",
+      "source_id": "core10_author",
+      "source_location": "p. 1, response grid and scoring footer",
+      "review_scope": "Complete-response arithmetic and reversal of items 2/3. One-missing prorating is a documented unimplemented source rule; severity bands not checked.",
+      "rule_assertions": [
+        {
+          "rule_id": "total_raw",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6",
+              "Q7",
+              "Q8",
+              "Q9",
+              "Q10"
+            ],
+            "method": "sum",
+            "minimum": 0,
+            "maximum": 40,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        }
+      ],
+      "response_assertions": [
+        {
+          "item_id": "Q1",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q4",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q5",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q6",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q7",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q8",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q9",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q10",
+          "expected_option_values": {
+            "O1": 0,
+            "O2": 1,
+            "O3": 2,
+            "O4": 3,
+            "O5": 4
+          }
+        },
+        {
+          "item_id": "Q2",
+          "expected_option_values": {
+            "O1": 4,
+            "O2": 3,
+            "O3": 2,
+            "O4": 1,
+            "O5": 0
+          }
+        },
+        {
+          "item_id": "Q3",
+          "expected_option_values": {
+            "O1": 4,
+            "O2": 3,
+            "O3": 2,
+            "O4": 1,
+            "O5": 0
+          }
+        }
+      ],
+      "cases": [
+        {
+          "id": "2cb1074a1a81:all_first",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O1",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1",
+            "Q10": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 8
+          }
+        },
+        {
+          "id": "2cb1074a1a81:all_last",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O5",
+            "Q2": "O5",
+            "Q3": "O5",
+            "Q4": "O5",
+            "Q5": "O5",
+            "Q6": "O5",
+            "Q7": "O5",
+            "Q8": "O5",
+            "Q9": "O5",
+            "Q10": "O5"
+          },
+          "expected_scores": {
+            "total_raw": 32
+          }
+        },
+        {
+          "id": "2cb1074a1a81:all_middle",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O3",
+            "Q2": "O3",
+            "Q3": "O3",
+            "Q4": "O3",
+            "Q5": "O3",
+            "Q6": "O3",
+            "Q7": "O3",
+            "Q8": "O3",
+            "Q9": "O3",
+            "Q10": "O3"
+          },
+          "expected_scores": {
+            "total_raw": 20
+          }
+        },
+        {
+          "id": "2cb1074a1a81:minimum",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O1",
+            "Q2": "O5",
+            "Q3": "O5",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1",
+            "Q10": "O1"
+          },
+          "expected_scores": {
+            "total_raw": 0
+          }
+        },
+        {
+          "id": "2cb1074a1a81:maximum",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O5",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O5",
+            "Q5": "O5",
+            "Q6": "O5",
+            "Q7": "O5",
+            "Q8": "O5",
+            "Q9": "O5",
+            "Q10": "O5"
+          },
+          "expected_scores": {
+            "total_raw": 40
+          }
+        },
+        {
+          "id": "2cb1074a1a81:one_missing_source_prorating",
+          "kind": "known_source_gap",
+          "answers": {
+            "Q1": "O3",
+            "Q2": "O3",
+            "Q3": "O3",
+            "Q4": "O3",
+            "Q5": "O3",
+            "Q6": "O3",
+            "Q7": "O3",
+            "Q8": "O3",
+            "Q9": "O3"
+          },
+          "expected_scores": {
+            "total_raw": 20
+          }
+        }
+      ],
+      "additional_gaps": [
+        "CORE-10 source permits one omitted item using answered-item mean times ten. Current sum rule withholds instead; prorating and fractional-score interpretation require implementation/review."
+      ]
+    },
+    {
+      "assessment_id": "your-experience-of-service-yes--29de2c8cbc9b",
+      "source_id": "yes_guidance",
+      "source_location": "sections 7.2.1–7.3, printed pp. 25–26",
+      "review_scope": "Complete-response mean ranges and domain membership. Current 1–5 means are not the official standardized percentage outputs; partial/NA handling remains incomplete.",
+      "rule_assertions": [
+        {
+          "rule_id": "pdf_1",
+          "expected": {
+            "item_ids": [
+              "Q23",
+              "Q24",
+              "Q25",
+              "Q26"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "pdf_2",
+          "expected": {
+            "item_ids": [
+              "Q18",
+              "Q19",
+              "Q20",
+              "Q21"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "pdf_3",
+          "expected": {
+            "item_ids": [
+              "Q6",
+              "Q16"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "pdf_4",
+          "expected": {
+            "item_ids": [
+              "Q8",
+              "Q10",
+              "Q13",
+              "Q14",
+              "Q15",
+              "Q17"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "pdf_5",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q2",
+              "Q4",
+              "Q5",
+              "Q7",
+              "Q12"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "pdf_6",
+          "expected": {
+            "item_ids": [
+              "Q3",
+              "Q9",
+              "Q11"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "pdf_7",
+          "expected": {
+            "item_ids": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6",
+              "Q7",
+              "Q8",
+              "Q9",
+              "Q10",
+              "Q11",
+              "Q12",
+              "Q13",
+              "Q14",
+              "Q15",
+              "Q16",
+              "Q17",
+              "Q18",
+              "Q19",
+              "Q20",
+              "Q21",
+              "Q22"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        },
+        {
+          "rule_id": "pdf_8",
+          "expected": {
+            "item_ids": [
+              "Q23",
+              "Q24",
+              "Q25"
+            ],
+            "method": "mean",
+            "minimum": 1,
+            "maximum": 5,
+            "multiplier": 1,
+            "item_transforms": {},
+            "item_coefficients": {}
+          }
+        }
+      ],
+      "response_assertions": [],
+      "cases": [
+        {
+          "id": "29de2c8cbc9b:all_O1",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O1",
+            "Q2": "O1",
+            "Q3": "O1",
+            "Q4": "O1",
+            "Q5": "O1",
+            "Q6": "O1",
+            "Q7": "O1",
+            "Q8": "O1",
+            "Q9": "O1",
+            "Q10": "O1",
+            "Q11": "O1",
+            "Q12": "O1",
+            "Q13": "O1",
+            "Q14": "O1",
+            "Q15": "O1",
+            "Q16": "O1",
+            "Q17": "O1",
+            "Q18": "O1",
+            "Q19": "O1",
+            "Q20": "O1",
+            "Q21": "O1",
+            "Q22": "O1",
+            "Q23": "O1",
+            "Q24": "O1",
+            "Q25": "O1",
+            "Q26": "O1"
+          },
+          "expected_scores": {
+            "pdf_1": 1,
+            "pdf_2": 1,
+            "pdf_3": 1,
+            "pdf_4": 1,
+            "pdf_5": 1,
+            "pdf_6": 1,
+            "pdf_7": 1,
+            "pdf_8": 1
+          }
+        },
+        {
+          "id": "29de2c8cbc9b:all_O3",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O3",
+            "Q2": "O3",
+            "Q3": "O3",
+            "Q4": "O3",
+            "Q5": "O3",
+            "Q6": "O3",
+            "Q7": "O3",
+            "Q8": "O3",
+            "Q9": "O3",
+            "Q10": "O3",
+            "Q11": "O3",
+            "Q12": "O3",
+            "Q13": "O3",
+            "Q14": "O3",
+            "Q15": "O3",
+            "Q16": "O3",
+            "Q17": "O3",
+            "Q18": "O3",
+            "Q19": "O3",
+            "Q20": "O3",
+            "Q21": "O3",
+            "Q22": "O3",
+            "Q23": "O3",
+            "Q24": "O3",
+            "Q25": "O3",
+            "Q26": "O3"
+          },
+          "expected_scores": {
+            "pdf_1": 3,
+            "pdf_2": 3,
+            "pdf_3": 3,
+            "pdf_4": 3,
+            "pdf_5": 3,
+            "pdf_6": 3,
+            "pdf_7": 3,
+            "pdf_8": 3
+          }
+        },
+        {
+          "id": "29de2c8cbc9b:all_O5",
+          "kind": "source_formula",
+          "answers": {
+            "Q1": "O5",
+            "Q2": "O5",
+            "Q3": "O5",
+            "Q4": "O5",
+            "Q5": "O5",
+            "Q6": "O5",
+            "Q7": "O5",
+            "Q8": "O5",
+            "Q9": "O5",
+            "Q10": "O5",
+            "Q11": "O5",
+            "Q12": "O5",
+            "Q13": "O5",
+            "Q14": "O5",
+            "Q15": "O5",
+            "Q16": "O5",
+            "Q17": "O5",
+            "Q18": "O5",
+            "Q19": "O5",
+            "Q20": "O5",
+            "Q21": "O5",
+            "Q22": "O5",
+            "Q23": "O5",
+            "Q24": "O5",
+            "Q25": "O5",
+            "Q26": "O5"
+          },
+          "expected_scores": {
+            "pdf_1": 5,
+            "pdf_2": 5,
+            "pdf_3": 5,
+            "pdf_4": 5,
+            "pdf_5": 5,
+            "pdf_6": 5,
+            "pdf_7": 5,
+            "pdf_8": 5
+          }
+        },
+        {
+          "id": "29de2c8cbc9b:exclude_na_source_mean",
+          "kind": "known_source_gap",
+          "answers": {
+            "Q1": "O3",
+            "Q2": "O3",
+            "Q3": "O3",
+            "Q4": "O3",
+            "Q5": "O3",
+            "Q6": "O3",
+            "Q7": "O3",
+            "Q8": "O3",
+            "Q9": "O3",
+            "Q10": "O3",
+            "Q11": "O3",
+            "Q12": "O3",
+            "Q13": "O3",
+            "Q14": "O3",
+            "Q15": "O3",
+            "Q16": "O6",
+            "Q17": "O3",
+            "Q18": "O3",
+            "Q19": "O3",
+            "Q20": "O3",
+            "Q21": "O3",
+            "Q22": "O3",
+            "Q23": "O3",
+            "Q24": "O3",
+            "Q25": "O3",
+            "Q26": "O3"
+          },
+          "expected_scores": {
+            "pdf_3": 3
+          }
+        },
+        {
+          "id": "29de2c8cbc9b:partial_source_mean",
+          "kind": "known_source_gap",
+          "answers": {
+            "Q6": "O3"
+          },
+          "expected_scores": {
+            "pdf_3": 3
+          }
+        }
+      ],
+      "additional_gaps": [
+        "YES source excludes missing/NA from denominators. The current evaluator withholds affected means. Standardized percentage outputs are not encoded."
+      ]
+    }
+  ]
+}

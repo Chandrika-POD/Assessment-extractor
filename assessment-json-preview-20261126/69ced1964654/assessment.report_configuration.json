@@ -1,0 +1,989 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Total raw score",
+   "minimum": 21.0,
+   "maximum": 105.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "7cfb2254736b459337814b09b35c03cfb99b77467e3d8c8429280e0488a7a622",
+     "page_url": null,
+     "page_sha256": "02da415998c2d44325aeebf275269278de827021c5ca70d5c1c0f2f7b78715fb",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C9",
+      "LIVE_C14"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 21.0,
+    "maximum": 105.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_2",
+   "ruleId": "source_draft_2",
+   "label": "Nonacceptance",
+   "minimum": 7.0,
+   "maximum": 35.0,
+   "calculation": {
+    "id": "source_draft_2",
+    "label": "Nonacceptance",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q5",
+     "Q8",
+     "Q12",
+     "Q18",
+     "Q20"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "7cfb2254736b459337814b09b35c03cfb99b77467e3d8c8429280e0488a7a622",
+     "page_url": null,
+     "page_sha256": "02da415998c2d44325aeebf275269278de827021c5ca70d5c1c0f2f7b78715fb",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C9",
+      "LIVE_C14"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 7.0,
+    "maximum": 35.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_3",
+   "ruleId": "source_draft_3",
+   "label": "Modulate",
+   "minimum": 7.0,
+   "maximum": 35.0,
+   "calculation": {
+    "id": "source_draft_3",
+    "label": "Modulate",
+    "item_ids": [
+     "Q3",
+     "Q9",
+     "Q10",
+     "Q13",
+     "Q15",
+     "Q17",
+     "Q21"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "7cfb2254736b459337814b09b35c03cfb99b77467e3d8c8429280e0488a7a622",
+     "page_url": null,
+     "page_sha256": "02da415998c2d44325aeebf275269278de827021c5ca70d5c1c0f2f7b78715fb",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C9",
+      "LIVE_C14"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 7.0,
+    "maximum": 35.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_4",
+   "ruleId": "source_draft_4",
+   "label": "Awareness",
+   "minimum": 5.0,
+   "maximum": 25.0,
+   "calculation": {
+    "id": "source_draft_4",
+    "label": "Awareness",
+    "item_ids": [
+     "Q2",
+     "Q6",
+     "Q11",
+     "Q16",
+     "Q19"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "7cfb2254736b459337814b09b35c03cfb99b77467e3d8c8429280e0488a7a622",
+     "page_url": null,
+     "page_sha256": "02da415998c2d44325aeebf275269278de827021c5ca70d5c1c0f2f7b78715fb",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C9",
+      "LIVE_C14"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 5.0,
+    "maximum": 25.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_5",
+   "ruleId": "source_draft_5",
+   "label": "Clarity",
+   "minimum": 2.0,
+   "maximum": 10.0,
+   "calculation": {
+    "id": "source_draft_5",
+    "label": "Clarity",
+    "item_ids": [
+     "Q7",
+     "Q14"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "7cfb2254736b459337814b09b35c03cfb99b77467e3d8c8429280e0488a7a622",
+     "page_url": null,
+     "page_sha256": "02da415998c2d44325aeebf275269278de827021c5ca70d5c1c0f2f7b78715fb",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C9",
+      "LIVE_C14"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 2.0,
+    "maximum": 10.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "450e94837b9e401ed1f49e46d756b797245744f1d4d99296ac17757502c6788c",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d450e94837b9e_p1",
+   "documentSha256": "450e94837b9e401ed1f49e46d756b797245744f1d4d99296ac17757502c6788c",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d450e94837b9e_p1_chart_1",
+    "d450e94837b9e_p1_chart_2"
+   ],
+   "tableIds": [
+    "d450e94837b9e_p1_table_1"
+   ],
+   "sectionIds": [
+    "d450e94837b9e_p1_section_1",
+    "d450e94837b9e_p1_section_2",
+    "d450e94837b9e_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d450e94837b9e_p2",
+   "documentSha256": "450e94837b9e401ed1f49e46d756b797245744f1d4d99296ac17757502c6788c",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d450e94837b9e_p2_table_1"
+   ],
+   "sectionIds": [
+    "d450e94837b9e_p2_section_1",
+    "d450e94837b9e_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "d450e94837b9e_p3",
+   "documentSha256": "450e94837b9e401ed1f49e46d756b797245744f1d4d99296ac17757502c6788c",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d450e94837b9e_p3_table_1"
+   ],
+   "sectionIds": [
+    "d450e94837b9e_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d450e94837b9e_p1_section_1",
+   "pageId": "d450e94837b9e_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d450e94837b9e_p1_section_2",
+   "pageId": "d450e94837b9e_p1",
+   "title": "S-DERS Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    241.334,
+    345.23251,
+    355.35797,
+    357.23251
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d450e94837b9e_p1_section_3",
+   "pageId": "d450e94837b9e_p1",
+   "title": "S-DERS Subscale Community Percentiles",
+   "type": "results",
+   "bboxPt": [
+    179.313,
+    553.23248,
+    417.38098,
+    565.23248
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d450e94837b9e_p2_section_1",
+   "pageId": "d450e94837b9e_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    290.26645,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d450e94837b9e_p2_section_2",
+   "pageId": "d450e94837b9e_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3462,
+    627.57941,
+    151.82021,
+    641.57941
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d450e94837b9e_p3_section_1",
+   "pageId": "d450e94837b9e_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d450e94837b9e_p1_chart_1",
+   "title": "S-DERS Total Score",
+   "type": "line",
+   "bboxPt": [
+    106.346,
+    362.135,
+    486.346,
+    494.575
+   ],
+   "widthPt": 380.0,
+   "heightPt": 132.44,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [],
+   "variantEvidence": "multiple_visits_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": "S-DERS Subscale Community Percentiles",
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    },
+    "kind": "visit_date",
+    "binding": "compatible_session_history.completedAt",
+    "minimum": null,
+    "maximum": null
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 105.0,
+      "positionPt": 364.75394,
+      "text": "105",
+      "colour": "#333333"
+     },
+     {
+      "value": 98.0,
+      "positionPt": 375.62384,
+      "text": "98",
+      "colour": "#333333"
+     },
+     {
+      "value": 91.0,
+      "positionPt": 386.49374,
+      "text": "91",
+      "colour": "#333333"
+     },
+     {
+      "value": 84.0,
+      "positionPt": 397.36365,
+      "text": "84",
+      "colour": "#333333"
+     },
+     {
+      "value": 77.0,
+      "positionPt": 408.23355,
+      "text": "77",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 419.10385,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 63.0,
+      "positionPt": 429.97375,
+      "text": "63",
+      "colour": "#333333"
+     },
+     {
+      "value": 56.0,
+      "positionPt": 440.84366,
+      "text": "56",
+      "colour": "#333333"
+     },
+     {
+      "value": 49.0,
+      "positionPt": 451.71356,
+      "text": "49",
+      "colour": "#333333"
+     },
+     {
+      "value": 42.0,
+      "positionPt": 462.58347,
+      "text": "42",
+      "colour": "#333333"
+     },
+     {
+      "value": 35.0,
+      "positionPt": 473.45377,
+      "text": "35",
+      "colour": "#333333"
+     },
+     {
+      "value": 28.0,
+      "positionPt": 484.32367,
+      "text": "28",
+      "colour": "#333333"
+     },
+     {
+      "value": 21.0,
+      "positionPt": 495.19357,
+      "text": "21",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 21.0,
+    "maximum": 105.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#4e79a7",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d450e94837b9e_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 368,
+    "detectedType": "line",
+    "reviewedType": "line",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "S-DERS Total Score",
+     "bboxPt": [
+      241.334,
+      345.23251,
+      355.35797,
+      357.23251
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "S-DERS Subscale Community Percentiles",
+     "bboxPt": [
+      179.313,
+      553.23248,
+      417.38098,
+      565.23248
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "d450e94837b9e_p1_chart_2",
+   "title": "S-DERS Subscale Community Percentiles",
+   "type": "multi_line",
+   "bboxPt": [
+    107.346,
+    570.135,
+    487.346,
+    704.575
+   ],
+   "widthPt": 380.0,
+   "heightPt": 134.44,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [],
+   "variantEvidence": "multiple_visits_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    },
+    "kind": "visit_date",
+    "binding": "compatible_session_history.completedAt",
+    "minimum": null,
+    "maximum": null
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 572.75397,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 585.99371,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 599.24371,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 612.48352,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 625.73352,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 638.97375,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 652.21356,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 665.46356,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 678.70374,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 691.95374,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 705.19354,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#edc949",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": null,
+     "colour": "#e15759",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": null,
+     "colour": "#f28e2b",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": null,
+     "colour": "#59a14f",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d450e94837b9e_p1",
+   "sourceChartId": "chart_2",
+   "typeReview": {
+    "reviewIndex": 369,
+    "detectedType": "multi_line",
+    "reviewedType": "multi_line",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "S-DERS Subscale Community Percentiles",
+     "bboxPt": [
+      179.313,
+      553.23248,
+      417.38098,
+      565.23248
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Nonacceptance",
+     "bboxPt": [
+      168.34599,
+      748.63354,
+      223.92998,
+      756.63354
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Modulate",
+     "bboxPt": [
+      253.95615,
+      748.63354,
+      286.86014,
+      756.63354
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Awareness",
+     "bboxPt": [
+      339.55615,
+      748.63354,
+      379.12415,
+      756.63354
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Clarity",
+     "bboxPt": [
+      425.16589,
+      748.63354,
+      447.8299,
+      756.63354
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "S-DERS Scoring & Interpretation",
+    "text": "The State Difficulties in Emotion Regulation Scale (S-DERS) yields a total score ranging from 21 to 105, with higher scores indicating greater difficulties with emotion regulation in the moment, as well as four subscale scores:\nNonacceptance (Items 1, 4, 5, 8, 12, 18, and 20): Reflects shame, guilt, and negative judgements about current emotions\nModulate (Items 3, 9, 10, 13, 15, 17, and 21): Captures difficulties controlling emotional intensity and maintaining goal-directed behaviour\nAwareness (Items 2, 6, 11, 16, and 19, all reverse-scored): Measures attention to and acknowledgement of emotional states\nClarity (Items 7 and 14): Assesses confusion about current emotional experiences\n\n\nPercentiles are provided based on normative data from a community sample of young adult women (Lavender et al., 2015), contextualising the respondent’s scores relative to the typical scores of those in the community. Higher percentiles indicate greater emotion regulation difficulties relative to the community sample. For instance:\nScores on or above the 90th percentile (e.g., a total score of around 50) indicate more severe state-based emotion regulation difficulties than 90% of the community sample.\nScores on or below the 40th percentile suggest relatively effective state-based emotion regulation capabilities.\nSubscale percentiles help identify specific areas of difficulty, guiding targeted therapeutic intervention strategies.\n\nWhen interpreting scores, it is recommended to consider the context in which the S-DERS was administered, as scores may vary substantially depending on recent stressors, emotional triggers, or therapeutic activities preceding assessment.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "450e94837b9e401ed1f49e46d756b797245744f1d4d99296ac17757502c6788c",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the State Difficulties in Emotion Regulation Scale (S-DERS), \nsee here\n.\nThe State Difficulties in Emotion Regulation Scale (S-DERS) yields a total score ranging from 21\nto 105, with higher scores indicating greater difficulties with emotion regulation in the moment,\nas well as four subscale scores:\n- Nonacceptance (Items 1, 7, 8, 12, 17, 24, and 27): Reflects shame, guilt, and negative\njudgements about current emotions\n- Modulate (Items 4, 14, 15, 18, 21, 23, and 28): Captures difficulties controlling emotional\nintensity and maintaining goal-directed behaviour\n- Awareness (Items 3, 10, 16, 22, and 26, all reverse-scored): Measures attention to and\nacknowledgement of emotional states\n- Clarity (Items 11 and 19): Assesses confusion about current emotional experiences\nPercentiles are provided based on normative data from a community sample of young adult\nwomen (Lavender et al., 2015), contextualising the respondent’s scores relative to the typical\nscores of those in the community. Higher percentiles indicate greater emotion regulation\ndifficulties relative to the community sample. For instance:\n- Scores on or above the 90th percentile (e.g., a total score of around 50) indicate more severe\nstate-based emotion regulation difficulties than 90% of the community sample.\n- Scores on or below the 40th percentile suggest relatively effective state-based emotion\nregulation capabilities.\nSubscale percentiles help identify specific areas of difficulty, guiding targeted therapeutic\nintervention strategies.\nWhen interpreting scores, it is recommended to consider the context in which the S-DERS was\nadministered, as scores may vary substantially depending on recent stressors, emotional\ntriggers, or therapeutic activities preceding assessment.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Percentiles are provided based on normative data from a community sample of young adult women (Lavender et al., 2015), contextualising the respondent’s scores relative to the typical scores of those in the community.",
+   "Higher percentiles indicate greater emotion regulation difficulties relative to the community sample.",
+   "Scores on or above the 90th percentile (e.g., a total score of around 50) indicate more severe state-based emotion regulation difficulties than 90% of the community sample.",
+   "Scores on or below the 40th percentile suggest relatively effective state-based emotion regulation capabilities.",
+   "Subscale percentiles help identify specific areas of difficulty, guiding targeted therapeutic intervention strategies."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": {
+  "$file": "assessment.report_configuration.paintStyles.json"
+ },
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 8,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 141
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

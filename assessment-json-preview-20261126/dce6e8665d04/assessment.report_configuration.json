@@ -1,0 +1,821 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Substance Use",
+   "minimum": 0,
+   "maximum": 90.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Substance Use",
+    "item_ids": [
+     "Q4",
+     "Q5",
+     "Q6"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+     "page_url": null,
+     "page_sha256": "18133d8123da15f360664bd5a93476285badbf5aaee3a12fab3adc284383e7e7",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C11",
+      "C13",
+      "C14",
+      "C17",
+      "LIVE_C28",
+      "LIVE_C30",
+      "LIVE_C31",
+      "LIVE_C34",
+      "LIVE_C43",
+      "LIVE_C45"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "ineligible_item_policy": "zero",
+    "minimum": 0,
+    "maximum": 90.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_2",
+   "ruleId": "source_draft_2",
+   "label": "Risk Factors",
+   "minimum": 0.0,
+   "maximum": 180.0,
+   "calculation": {
+    "id": "source_draft_2",
+    "label": "Risk Factors",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q14",
+     "Q17",
+     "Q21"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+     "page_url": null,
+     "page_sha256": "18133d8123da15f360664bd5a93476285badbf5aaee3a12fab3adc284383e7e7",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C11",
+      "C13",
+      "C14",
+      "C17",
+      "LIVE_C28",
+      "LIVE_C30",
+      "LIVE_C31",
+      "LIVE_C34",
+      "LIVE_C43",
+      "LIVE_C45"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 180.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_3",
+   "ruleId": "source_draft_3",
+   "label": "Protective Factors",
+   "minimum": 0.0,
+   "maximum": 180.0,
+   "calculation": {
+    "id": "source_draft_3",
+    "label": "Protective Factors",
+    "item_ids": [
+     "Q15",
+     "Q16",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q22"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+     "page_url": null,
+     "page_sha256": "18133d8123da15f360664bd5a93476285badbf5aaee3a12fab3adc284383e7e7",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C11",
+      "C13",
+      "C14",
+      "C17",
+      "LIVE_C28",
+      "LIVE_C30",
+      "LIVE_C31",
+      "LIVE_C34",
+      "LIVE_C43",
+      "LIVE_C45"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 180.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageCount": 10,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "de89101876841_p1",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "de89101876841_p1_chart_1",
+    "de89101876841_p1_chart_2"
+   ],
+   "tableIds": [
+    "de89101876841_p1_table_1",
+    "de89101876841_p1_table_2"
+   ],
+   "sectionIds": [
+    "de89101876841_p1_section_1",
+    "de89101876841_p1_section_2"
+   ]
+  },
+  {
+   "pageId": "de89101876841_p2",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "de89101876841_p2_chart_1",
+    "de89101876841_p2_chart_2",
+    "de89101876841_p2_chart_3",
+    "de89101876841_p2_chart_4"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "de89101876841_p2_section_1",
+    "de89101876841_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "de89101876841_p3",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "de89101876841_p3_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "de89101876841_p3_section_1",
+    "de89101876841_p3_section_2"
+   ]
+  },
+  {
+   "pageId": "de89101876841_p4",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "de89101876841_p4_chart_1",
+    "de89101876841_p4_chart_2",
+    "de89101876841_p4_chart_3"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "de89101876841_p4_section_1",
+    "de89101876841_p4_section_2",
+    "de89101876841_p4_section_3",
+    "de89101876841_p4_section_4"
+   ]
+  },
+  {
+   "pageId": "de89101876841_p5",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "de89101876841_p5_section_1",
+    "de89101876841_p5_section_2"
+   ]
+  },
+  {
+   "pageId": "de89101876841_p6",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "de89101876841_p7",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "de89101876841_p8",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 8,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "de89101876841_p8_table_1",
+    "de89101876841_p8_table_2",
+    "de89101876841_p8_table_3"
+   ],
+   "sectionIds": [
+    "de89101876841_p8_section_1",
+    "de89101876841_p8_section_2",
+    "de89101876841_p8_section_3",
+    "de89101876841_p8_section_4"
+   ]
+  },
+  {
+   "pageId": "de89101876841_p9",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 9,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "de89101876841_p9_table_1",
+    "de89101876841_p9_table_2"
+   ],
+   "sectionIds": [
+    "de89101876841_p9_section_1",
+    "de89101876841_p9_section_2"
+   ]
+  },
+  {
+   "pageId": "de89101876841_p10",
+   "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+   "pageNumber": 10,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "de89101876841_p10_table_1"
+   ],
+   "sectionIds": [
+    "de89101876841_p10_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "de89101876841_p1_section_1",
+   "pageId": "de89101876841_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p1_section_2",
+   "pageId": "de89101876841_p1",
+   "title": "Substance Use",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    319.87527,
+    134.71248,
+    339.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p2_section_1",
+   "pageId": "de89101876841_p2",
+   "title": "Risk Factors",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    148.37926,
+    118.37448,
+    167.65726
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p2_section_2",
+   "pageId": "de89101876841_p2",
+   "title": "Protective Factors",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    454.52097,
+    156.49648,
+    473.79898
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p3_section_1",
+   "pageId": "de89101876841_p3",
+   "title": "Recovery Satisfaction",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    168.22179,
+    180.61848,
+    187.49979
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p3_section_2",
+   "pageId": "de89101876841_p3",
+   "title": "Satisfaction with Recovery Progress",
+   "type": "source_heading",
+   "bboxPt": [
+    210.88489,
+    221.66774,
+    384.27487,
+    235.43774
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p4_section_1",
+   "pageId": "de89101876841_p4",
+   "title": "Domain Scores",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    136.26646,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p4_section_2",
+   "pageId": "de89101876841_p4",
+   "title": "Substance Use Domain Score",
+   "type": "source_heading",
+   "bboxPt": [
+    223.32045,
+    169.65488,
+    393.37244,
+    186.17888
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p4_section_3",
+   "pageId": "de89101876841_p4",
+   "title": "Risk Factors Domain Score",
+   "type": "source_heading",
+   "bboxPt": [
+    230.32245,
+    367.65488,
+    386.37042,
+    384.17886
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p4_section_4",
+   "pageId": "de89101876841_p4",
+   "title": "Protective Factors Domain Score",
+   "type": "source_heading",
+   "bboxPt": [
+    213.98445,
+    565.65485,
+    402.70844,
+    582.17889
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p5_section_1",
+   "pageId": "de89101876841_p5",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    124.57648,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p5_section_2",
+   "pageId": "de89101876841_p5",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    405.36322,
+    290.26642,
+    424.64124
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p8_section_1",
+   "pageId": "de89101876841_p8",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    151.82047,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p8_section_2",
+   "pageId": "de89101876841_p8",
+   "title": "Substance Use",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    159.71782,
+    134.71248,
+    178.99582
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p8_section_3",
+   "pageId": "de89101876841_p8",
+   "title": "Risk Factors",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    324.67685,
+    118.37448,
+    343.95486
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p8_section_4",
+   "pageId": "de89101876841_p8",
+   "title": "Protective Factors",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    631.36823,
+    156.49648,
+    650.64618
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p9_section_1",
+   "pageId": "de89101876841_p9",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p9_section_2",
+   "pageId": "de89101876841_p9",
+   "title": "Specific drug use (not scored)",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    365.50443,
+    235.83446,
+    384.78244
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "de89101876841_p10_section_1",
+   "pageId": "de89101876841_p10",
+   "title": "Recovery satisfaction (not scored)",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    263.84845,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "BAM Scoring",
+    "text": "Item-level scoring. Each BAM item is scored from 0 to 30. Items asking for a number of days or nights over the past month (2, 3, 4, 5, 6, 7a to 7g, 10, 11, 13, and 16) are scored as the actual number reported. Items with five rated response options (1, 8, 9, 12, 15, and 17) are scored 0, 8, 15, 22, or 30. Item 14, which asks whether the respondent has adequate legal income, is scored No = 0 and Yes = 30.\nContingent items. Two conditional blocks are displayed only if the respondent reported any use on the preceding item, covering eight items in total. If the respondent reports no alcohol use in the past 30 days (i.e., item 4 = 0 days), the heavy-drinking item (item 5) is skipped; if they report no drug use (i.e., item 6 = 0 days), the seven specific-drug items (7a to 7g) are skipped. Skipped items are scored zero, so the domain totals remain on the same scale for every client. Note that a skipped item still appears in the Client Responses table as “Not Completed”: item 5 whenever item 4 is zero, and items 7a to 7g whenever item 6 is zero. A “Not Completed” entry against one of these items means the question was not asked because the preceding answer made it redundant, not that data are missing, and the Substance Use total is complete.\n",
+    "source_url": null
+   },
+   {
+    "title": "BAM Domain Score Interpretation",
+    "text": "The BAM is interpreted using raw domain scores and interpretation is directional. On the Substance Use and Risk Factor domains, higher scores indicate more substance use and more risk-related circumstances. On the Protective Factors domain, higher scores indicate more recovery support. A single administration gives a snapshot of where the client currently sits across the three domains; the greatest clinical value comes from comparing scores across administrations to see what is improving and what is not.\nBecause each BAM item reflects a distinct and concrete behaviour or state, reviewing individual item responses is often as informative as the domain totals. Items carry richer implications for treatment planning than the composite scores. A high number of days of drug use, a rise in risky situations, or a fall in self-help attendance each points to a specific and actionable focus for the next stage of treatment. Two clients with the same Risk score may present entirely differently: one with physical health, sleep and mood difficulties, the other with craving, risky situations and interpersonal conflict; so the total domain score alone cannot guide the plan.\nThe items the report surfaces in its interpretive text are selected and ordered by score on the shared 0 to 30 metric, not by clinical importance, so that list is a starting point for review rather than a priority order. The full set of responses is set out at the end of the report, grouped by domain and numbered as they appear on the questionnaire (1 to 17, with 7a to 7g), so each answer can be reviewed directly alongside the domain totals.\nThere are no norms, cut-scores, or percentile ranks for the BAM domain scores, and the measure does not produce a total score. Results are compared against the same client’s earlier administrations rather than against a reference population. There is no threshold at which a domain score becomes “high” or “clinically significant.”\n",
+    "source_url": null
+   },
+   {
+    "title": "BAM Change Score Interpretation",
+    "text": "The BAM is designed for repeated administration as part of measurement-based care (MBC), and change across administrations is the primary interpretive output.\nOn a repeat administration the report describes change against two reference points: the most recent prior administration, and the client’s initial administration. Reporting both separates a recent shift from the overall trajectory, which can move in opposite directions. On a second administration the two reference points are the same, so only one comparison is given.\nA reduction in the Substance Use or Risk Factors domain, or an increase in the Protective Factors domain, reflects movement in the favourable direction. Movement on Protective Factors should be read with particular caution: the internal consistency of that domain is very low (Cronbach’s alpha .32 and .22; Hallinan et al., 2021), so a change in the total should always be checked against which of its six items actually moved. Change is reported as a raw point difference. No threshold defines how large a change must be before it counts as meaningful. Change is therefore read directionally and in the context of the client’s own trajectory.\nThe evidence base indicates that BAM scores move meaningfully during treatment, with the heavy alcohol use, drug use, craving, mood, and self-help items showing the greatest responsiveness (Blanchard et al., 2023).\n",
+    "source_url": null
+   },
+   {
+    "title": "BAM Substance Use Domain Score Graph Over Time",
+    "text": "\nBackground gradient. All plots carry a background gradient whose colour deepens as more of the construct is present: red as Substance Use and Risk Factors scores rise, green as Protective Factors scores rise. On the trajectory plots the gradient is a wash behind the line; on the single-administration plots it is a strip along the base of each chart. Only the upper portion of each scale is shaded, and the shading fades out gradually rather than beginning at a fixed point. The lower end is left unshaded deliberately: a low Substance Use or Risk Factors score reflects the absence of a reported problem rather than a positive finding. The shading is a visual guide only. The BAM has no validated cut scores, norms, or severity bands, so no score should be read as having crossed a threshold on the basis of where it falls within the gradient.\n",
+    "source_url": null
+   },
+   {
+    "title": "Why does the BAM report raw scores rather than percentiles or a cut-off?",
+    "text": "The BAM is a monitoring instrument, not a screener or diagnostic test, and it does not have an established cut-off score or general-population norms. Reporting raw domain scores and their change over time reflects how the measure is best used: as a way to track a specific client’s progress against their own earlier scores, rather than to rank them against a reference group. A consistent downward movement in a client’s Substance Use or Risk Factors score over several weeks is clinically informative in its own right, without needing a percentile.\n",
+    "source_url": null
+   },
+   {
+    "title": "Why might a client's scores get worse during treatment?",
+    "text": "An increase in the Substance Use or Risk Factors score, or a fall in the Protective Factors score, does not necessarily mean treatment is failing. Scores can rise as clients become more honest in their reporting as trust builds, or in response to a stressful period, a lapse, or a change in circumstances. Rather than reading a single upward movement as a setback, it is more useful to view the trajectory across several administrations and to use any deterioration as a prompt for discussion about what has changed for the client.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "e89101876841422307573a07a147bc79948384d2a65865b1ef46943da3a98ab2",
+    "pageNumber": 5,
+    "text": "For comprehensive information on the BAM, \nsee here\n.\nBAM Scoring\nItem-level scoring. Each BAM item is scored from 0 to 30. Items asking for a number of days or\nnights over the past month (2, 3, 4, 5, 6, 7a to 7g, 10, 11, 13, and 16) are scored as the actual\nnumber reported. Items with five rated response options (1, 8, 9, 12, 15, and 17) are scored 0, 8,\n15, 22, or 30. Item 14, which asks whether the respondent has adequate legal income, is scored\nNo = 0 and Yes = 30.\nContingent items. Two conditional blocks are displayed only if the respondent reported any use\non the preceding item, covering eight items in total. If the respondent reports no alcohol use in\nthe past 30 days (i.e., item 4 = 0 days), the heavy-drinking item (item 5) is skipped; if they report\nno drug use (i.e., item 6 = 0 days), the seven specific-drug items (7a to 7g) are skipped. Skipped\nitems are scored zero, so the domain totals remain on the same scale for every client. Note that\na skipped item still appears in the Client Responses table as \"Not Completed\": item 5 whenever\nitem 4 is zero, and items 7a to 7g whenever item 6 is zero. A \"Not Completed\" entry against one\nof these items means the question was not asked because the preceding answer made it\nredundant, not that data are missing, and the Substance Use total is complete.\nDomains. The BAM is scored as three domain totals by summing the relevant items. Each item\non the continuous form contributes a value from 0 to 30. The specific-drug items (questions 7a\nto 7g) and the recovery-satisfaction item (question 17) are recorded for clinical review but are\nnot included in the three domain totals.\n- Substance Use (3 items: 4, 5, 6; total ranging from 0 to 90), capturing the frequency of recent\nalcohol and drug use (days of drinking, days of heavy drinking, and days of illicit drug use or\nmisuse of prescription medication). Note: Item 6 in the NovoPsych version of the BAM reads\n\"…or misuse any prescription medications?\" whereas the original source reads \"abuse\". The\nchange follows current terminology guidance. The National Institute on Drug Abuse lists \"abuse\"",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "There are no norms, cut-scores, or percentile ranks for the BAM domain scores, and the measure does not produce a total score.",
+   "There is no threshold at which a domain score becomes “high” or “clinically significant.”",
+   "No threshold defines how large a change must be before it counts as meaningful.",
+   "All plots carry a background gradient whose colour deepens as more of the construct is present: red as Substance Use and Risk Factors scores rise, green as Protective Factors scores rise.",
+   "On the trajectory plots the gradient is a wash behind the line; on the single-administration plots it is a strip along the base of each chart.",
+   "The BAM has no validated cut scores, norms, or severity bands, so no score should be read as having crossed a threshold on the basis of where it falls within the gradient.",
+   "The BAM is a monitoring instrument, not a screener or diagnostic test, and it does not have an established cut-off score or general-population norms.",
+   "A consistent downward movement in a client’s Substance Use or Risk Factors score over several weeks is clinically informative in its own right, without needing a percentile."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": {
+  "$file": "assessment.report_configuration.paintStyles.json"
+ },
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 20,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 10
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 8,
+   "unresolvedCells": 62
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

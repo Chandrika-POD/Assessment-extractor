@@ -1,0 +1,1038 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "total_raw",
+   "label": "Total urge severity",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 30,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "b859f28885285deae4408022bbfe799c63dac985551beec622583bfb4e9b12b2",
+    "retrieved_at": "2026-11-13T11:57:02.145179+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  }
+ ],
+ "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+ "rules_provenance": null,
+ "source_rule_excerpts": [
+  "The Alexian Brothers Urge to Self-Injure Scale (ABUSI) is a 5-item self-report measure of the severity of the urge to engage in non-suicidal self-injury (NSSI) over the past week, for adolescents and adults aged 11 and over with known or suspected self-injury (Washburn et al., 2010). It captures how often the urge arose, how strong it became, how much time was spent thinking about it, how difficult it was to resist, and the overall average urge across the week.",
+  "A change of 7 points or more, in either direction, is larger than would be expected from the natural variability of the measure and can be treated as a real change. Smaller changes do not meet this threshold, although they may still be clinically meaningful. Average improvement across a whole treatment programme is sometimes smaller than 7 points, so a client who does not reach that level of improvement is not necessarily making no progress.",
+  "Overall urge : the person’s overall average urge or desire to self-injure.",
+  "Each item is rated on a 7-point scale from 0, the complete absence of an urge (for example, never or none), to 6, the most severe level (for example, nearly all of the time or was not able to resist). The response anchors vary across items but follow the same severity progression. The total score is the sum of the five items and ranges from 0 to 30, with higher scores indicating a more severe urge to self-injure over the past week. There are no subscales and no reverse-scored items.",
+  "The total score is described with a severity category created by NovoPsych from the measure’s own response anchors. Because all five items share a common severity progression, the average item response can be mapped back to the anchors: an average of 3 gives a total of 15 (a moderate urge), and an average of 5 gives a total of 25 (a strong urge that is difficult to control). Anchored to the response options rather than a comparison group, a category carries the same meaning for any client, which is why it is the primary basis for interpretation.",
+  "1 to 14 | Mild | The average response falls below a moderate urge, occurring rarely to occasionally. Scores in this range remain clinically relevant, particularly where self-injury has not previously been identified.",
+  "15 to 24 | Moderate | The average response corresponds to a moderate urge, or to a strong urge the client felt able to control.",
+  "25 to 30 | Severe | The average response corresponds to a strong urge the client found difficult to resist, indicating substantial and poorly controlled urges.",
+  "The NSSI Treatment Percentile compares the client with 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of non-suicidal self-injury, who averaged 18.4 (SD 8.0) at admission (Washburn et al., 2023). This is a severely affected group, so the 50th percentile describes the level typical of someone entering intensive treatment, and a client can score well below it while still reporting clinically relevant urges. The percentiles are estimated from the sample’s average and spread assuming a normal distribution, and are least accurate at the bottom of the scale, where roughly one in eight clients in treatment report no urge in a given week. The maximum score of 30 sits at the 93rd percentile.",
+  "A change of 7 points or more in either direction is treated as reliable, meaning it is larger than would be expected from measurement error. A decrease of that size indicates a reliable reduction in the urge, and an increase indicates a reliable worsening. The threshold was established across a full course of treatment, so change over a single week is worth reading with more caution.",
+  "Responsiveness to treatment is the strongest area of the ABUSI evidence base. Among 277 patients with admission and discharge data, total scores fell from 18.47 to 11.84, a within-group effect size of 0.83, the largest of the outcome measures administered alongside it and the only one on which average change exceeded its reliable change threshold (Washburn et al., 2010). Among 923 day-treatment patients, scores fell by 3.6 to 4.1 points on average (effect sizes 0.47 to 0.52; Washburn et al., 2023). In 1,780 patients, reductions in the reported functions of self-injury were no longer significant once change in urge severity was accounted for, suggesting the urge captures much of what changes in treatment (Victor et al., 2016).",
+  "The published reliable change cutoff is 6.58, which NovoPsych rounds to 7. It reproduces from the scale’s internal consistency rather than its test-retest reliability, and the authors applied it to change between admission and discharge, so it is best suited to comparisons across a course of treatment.",
+  "No community norms exist for the ABUSI. The NSSI Treatment Percentile is calculated by NovoPsych from a single clinical sample of 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of NSSI, who scored 18.4 (SD 8.0) at admission (Washburn et al., 2023). That sample was 87.4% female and 75.3% non-Hispanic white. The average closely matches the development sample a decade earlier (18.02, SD 8.45; Washburn et al., 2010), supporting the stability of the reference point, and clients reporting self-injurious disordered eating scored higher than those presenting with self-injury alone (21.3 compared with 17.2; Washburn et al., 2023)."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "ABUSI Scoring",
+   "text": "Each item is rated on a 7-point scale from 0, the complete absence of an urge (for example, never or none), to 6, the most severe level (for example, nearly all of the time or was not able to resist). The response anchors vary across items but follow the same severity progression. The total score is the sum of the five items and ranges from 0 to 30, with higher scores indicating a more severe urge to self-injure over the past week. There are no subscales and no reverse-scored items.\n",
+   "source_url": null
+  },
+  {
+   "title": "ABUSI Percentiles",
+   "text": "The NSSI Treatment Percentile compares the client with 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of non-suicidal self-injury, who averaged 18.4 (SD 8.0) at admission (Washburn et al., 2023). This is a severely affected group, so the 50th percentile describes the level typical of someone entering intensive treatment, and a client can score well below it while still reporting clinically relevant urges. The percentiles are estimated from the sample’s average and spread assuming a normal distribution, and are least accurate at the bottom of the scale, where roughly one in eight clients in treatment report no urge in a given week. The maximum score of 30 sits at the 93rd percentile.\nTotal score | Severity category | NSSI Treatment Percentile\n0 | None reported | 1.1\n1 | Mild | 1.5\n2 | Mild | 2\n3 | Mild | 3\n4 | Mild | 4\n5 | Mild | 5\n6 | Mild | 6\n7 | Mild | 8\n8 | Mild | 10\n9 | Mild | 12\n10 | Mild | 15\n11 | Mild | 18\n12 | Mild | 21\n13 | Mild | 25\n14 | Mild | 29\n15 | Moderate | 34\n16 | Moderate | 38\n17 | Moderate | 43\n18 | Moderate | 48\n19 | Moderate | 53\n20 | Moderate | 58\n21 | Moderate | 63\n22 | Moderate | 67\n23 | Moderate | 72\n24 | Moderate | 76\n25 | Severe | 80\n26 | Severe | 83\n27 | Severe | 86\n28 | Severe | 88\n29 | Severe | 91\n30 | Severe | 93\n",
+   "source_url": null
+  },
+  {
+   "title": "ABUSI Normative Data",
+   "text": "No community norms exist for the ABUSI. The NSSI Treatment Percentile is calculated by NovoPsych from a single clinical sample of 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of NSSI, who scored 18.4 (SD 8.0) at admission (Washburn et al., 2023). That sample was 87.4% female and 75.3% non-Hispanic white. The average closely matches the development sample a decade earlier (18.02, SD 8.45; Washburn et al., 2010), supporting the stability of the reference point, and clients reporting self-injurious disordered eating scored higher than those presenting with self-injury alone (21.3 compared with 17.2; Washburn et al., 2023).\n",
+   "source_url": null
+  },
+  {
+   "title": "Does a score of zero mean the person is not at risk?",
+   "text": "No. A score of zero means the client reported no urge to self-injure during the seven days the measure asks about. Among adolescents and adults admitted for treatment of self-injury, roughly one in eight reported no urge in the week before admission, so a zero is not unusual even in a population receiving intensive treatment. It is best read as information about that particular week rather than a general statement about the presence or absence of self-injury concerns.\n",
+   "source_url": null
+  },
+  {
+   "title": "The percentile compares my client with people in treatment for self-injury. How should I interpret that?",
+   "text": "With the comparison group in mind. Because everyone in the reference sample was admitted for treatment of NSSI, a client can score well below that group and still be reporting urges that are clinically relevant. This is why the severity category, which is based on what the response options themselves describe, is the primary basis for interpretation. The percentile adds context about how the client compares with a treatment population and should be read alongside the severity category, the individual item responses, and the broader clinical picture.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [
+  {
+   "rows": [
+    [
+     "Total score",
+     "Severity category",
+     "What it describes"
+    ],
+    [
+     "0",
+     "None reported",
+     "No urge to self-injure was reported at any point during the week. This reflects that week only and is not evidence that risk is absent."
+    ],
+    [
+     "1 to 14",
+     "Mild",
+     "The average response falls below a moderate urge, occurring rarely to occasionally. Scores in this range remain clinically relevant, particularly where self-injury has not previously been identified."
+    ],
+    [
+     "15 to 24",
+     "Moderate",
+     "The average response corresponds to a moderate urge, or to a strong urge the client felt able to control."
+    ],
+    [
+     "25 to 30",
+     "Severe",
+     "The average response corresponds to a strong urge the client found difficult to resist, indicating substantial and poorly controlled urges."
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Total score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severity category",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "What it describes",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "0",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "None reported",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "No urge to self-injure was reported at any point during the week. This reflects that week only and is not evidence that risk is absent.",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "1 to 14",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "The average response falls below a moderate urge, occurring rarely to occasionally. Scores in this range remain clinically relevant, particularly where self-injury has not previously been identified.",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "15 to 24",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "The average response corresponds to a moderate urge, or to a strong urge the client felt able to control.",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "25 to 30",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severe",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "The average response corresponds to a strong urge the client found difficult to resist, indicating substantial and poorly controlled urges.",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "ABUSI Severity Categories",
+   "source_url": null
+  },
+  {
+   "rows": [
+    [
+     "Total score",
+     "Severity category",
+     "NSSI Treatment Percentile"
+    ],
+    [
+     "0",
+     "None reported",
+     "1.1"
+    ],
+    [
+     "1",
+     "Mild",
+     "1.5"
+    ],
+    [
+     "2",
+     "Mild",
+     "2"
+    ],
+    [
+     "3",
+     "Mild",
+     "3"
+    ],
+    [
+     "4",
+     "Mild",
+     "4"
+    ],
+    [
+     "5",
+     "Mild",
+     "5"
+    ],
+    [
+     "6",
+     "Mild",
+     "6"
+    ],
+    [
+     "7",
+     "Mild",
+     "8"
+    ],
+    [
+     "8",
+     "Mild",
+     "10"
+    ],
+    [
+     "9",
+     "Mild",
+     "12"
+    ],
+    [
+     "10",
+     "Mild",
+     "15"
+    ],
+    [
+     "11",
+     "Mild",
+     "18"
+    ],
+    [
+     "12",
+     "Mild",
+     "21"
+    ],
+    [
+     "13",
+     "Mild",
+     "25"
+    ],
+    [
+     "14",
+     "Mild",
+     "29"
+    ],
+    [
+     "15",
+     "Moderate",
+     "34"
+    ],
+    [
+     "16",
+     "Moderate",
+     "38"
+    ],
+    [
+     "17",
+     "Moderate",
+     "43"
+    ],
+    [
+     "18",
+     "Moderate",
+     "48"
+    ],
+    [
+     "19",
+     "Moderate",
+     "53"
+    ],
+    [
+     "20",
+     "Moderate",
+     "58"
+    ],
+    [
+     "21",
+     "Moderate",
+     "63"
+    ],
+    [
+     "22",
+     "Moderate",
+     "67"
+    ],
+    [
+     "23",
+     "Moderate",
+     "72"
+    ],
+    [
+     "24",
+     "Moderate",
+     "76"
+    ],
+    [
+     "25",
+     "Severe",
+     "80"
+    ],
+    [
+     "26",
+     "Severe",
+     "83"
+    ],
+    [
+     "27",
+     "Severe",
+     "86"
+    ],
+    [
+     "28",
+     "Severe",
+     "88"
+    ],
+    [
+     "29",
+     "Severe",
+     "91"
+    ],
+    [
+     "30",
+     "Severe",
+     "93"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Total score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severity category",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "NSSI Treatment Percentile",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "0",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "None reported",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "1.1",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "1",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "1.5",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "2",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "2",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "3",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "3",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "4",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "4",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "5",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "5",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "6",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "6",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "7",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "8",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "8",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "10",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "9",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "12",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "10",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "15",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "11",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "18",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "12",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "21",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "13",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "25",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "14",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "29",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "15",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "34",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "16",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "38",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "17",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "43",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "18",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "48",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "19",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "53",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "20",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "58",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "21",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "63",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "22",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "67",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "23",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "72",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "24",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "76",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "25",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severe",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "80",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "26",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severe",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "83",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "27",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severe",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "86",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "28",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severe",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "88",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "29",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severe",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "91",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "30",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Severe",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "93",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "ABUSI Percentiles",
+   "source_url": null
+  }
+ ],
+ "unparsed_pdf_expressions": [],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+}

@@ -1,0 +1,953 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "adverse-childhood-experiences-questionnaire-ace-q--e0ab8a5b8f82",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Adverse Childhood Experiences Questionnaire (ACE-Q)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Adverse Childhood Experiences Questionnaire (ACE-Q) is a 10-item self-report measure designed to retrospectively assess exposure to potentially traumatic experiences from birth to age 18 years (Felitti et al., 1998). Developed within a public health framework, the ACE-Q evaluates two broad categories of adverse childhood experiences: abuse and neglect, and household dysfunction.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "While you were growing up, during your first 18 years of life: Abuse / Neglect· items 1–5",
+  "instructions_source": {
+   "url": null,
+   "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_raw",
+    "label": "Total adverse experiences",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 10,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "db731557e9321a5a6e82cf7745b9cda382c740f88d2a0a2d620f3f8049c1163c",
+     "retrieved_at": "2026-11-13T12:03:55.534323+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Dose-response relationship: Research consistently demonstrates a dose-response relationship between ACE scores and health outcomes, with higher scores associated with increased risk across multiple domains (Merrick et al., 2017). However, more recent research has highlighted that not all ACEs contribute equally to risk outcomes (Briggs et al., 2021) with certain pairs of ACEs potentially interacting to significantly increase overall risk beyond the sum of their individual contributions. Sexual abuse (Item 3 in the ACE-Q) has been identified as the most reactive ACE, combining with other adverse experiences to potentially create disproportionate impacts (Briggs et al., 2021)",
+   "4+ ACEs (High Adversity): Represents a clinically significant threshold where risk for negative outcomes increases substantially. This category is associated with significantly elevated risk across multiple domains of functioning and should prompt thorough clinical attention.",
+   "Research suggests that not all ACEs contribute equally to risk outcomes, challenging the notion of a simple cumulative score. Briggs et al. (2021) found that certain pairs of ACEs interact to significantly increase overall risk beyond the sum of their individual contributions. In their research with both a general population adult sample and a mixed trauma youth sample, approximately 30-40% of the variance in outcomes was accounted for by additive interactions between specific pairs of ACEs. Sexual abuse was consistently identified as the most reactive ACE, combining with other adverse experiences to create disproportionate impacts.",
+   "The threshold of 4 or more ACEs is particularly meaningful in clinical contexts, as it represents a statistical inflection point at which risk for negative health outcomes increases substantially (Felitti et al., 1998; Hughes et al., 2017)."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "ACE-Q Scoring & Interpretation",
+    "text": "The ACE-Q uses a dichotomous (Yes/No) response format, with “Yes” responses summed to create a total score ranging from 0 to 10. Higher scores indicate exposure to a greater number of adverse childhood experiences, with each point representing a different type of adversity rather than the frequency or severity of any single experience.\n\nThe ACE-Q items can be conceptually grouped into two categories:\n1. Abuse / Neglect (Items 1-5): Emotional, physical, and sexual abuse and emotional and physical neglect;\n2. Household Dysfunction (Items 6-10): Household substance abuse, mental illness, incarceration, domestic violence, and parental separation/divorce\nClinicians may find it valuable to note patterns across these domains in addition to the total score. For example, a client with a score of 4 concentrated in the abuse/neglect domain may present differently than a client with a score of 4 distributed across both domains.\n\nFor clinical interpretation, ACE-Q scores are categorised as follows, with corresponding qualitative descriptors:\n0 ACEs (No Reported Adversity): Indicates no exposure to the measured adverse childhood experiences. Individuals in this category typically show the lowest risk for negative health outcomes.\n1-3 ACEs (Low to Moderate Adversity): Indicates exposure to one or more types of adversity. Research demonstrates a modest but statistically significant elevation in risk for various health and social problems compared to individuals with no ACEs.\n4+ ACEs (High Adversity): Represents a clinically significant threshold where risk for negative outcomes increases substantially. This category is associated with significantly elevated risk across multiple domains of functioning and should prompt thorough clinical attention.\n6+ ACEs (Very High Adversity): Although not a formal categorisation in all ACE literature, scores of 6 or higher represent exposure to multiple forms of serious adversity and are associated with the highest risk for severe and complex health problems.\nThe ACE-Q demonstrates a robust dose-response relationship with health outcomes, meaning that each incremental increase in ACE score is associated with progressively higher risk for negative health outcomes. This graded relationship holds across physical health, mental health, and social functioning domains.\nWhen interpreting ACE-Q scores in clinical settings, consider the following guidance:\nContext matters: ACE scores should be interpreted within the context of the individual’s current functioning, symptom presentation, and available protective factors. Some individuals with high ACE scores demonstrate remarkable resilience and may not exhibit significant impairment.\nTypes of adversity: Consider not only the number but also the types of adversities experienced. Different types of adversity may have different mechanisms of impact and may require different intervention approaches.\nTiming and chronicity: Although the ACE-Q does not capture information about the timing, duration, or severity of adverse experiences, these factors are relevant to clinical formulation. When appropriate, gathering additional information about these aspects can enhance understanding of their impact.\nCultural considerations: Cultural factors may influence both the prevalence of specific ACEs and their psychological impact. Interpretation should be sensitive to cultural context and should avoid pathologising cultural differences.\nResilience and protective factors: ACE scores provide information about risk but do not capture protective factors or resilience. Comprehensive assessment should include attention to strengths and resources that may buffer against the impact of adversity.\nWhen communicating ACE scores to clients, a trauma-informed approach is essential. This includes:\nNormalising the prevalence of ACEs in the general population\nEmphasising that ACEs are risk factors, not deterministic predictors\nHighlighting the role of protective factors and the potential for resilience\nFocusing on the relevance of ACEs to current symptoms and treatment rather than simply labelling the client as “traumatised”\nUsing psychoeducation about the neurobiology of trauma to reduce shame and self-blame\nChecking readiness and attention to stabilisation and pacing\nFor clients with clinically significant ACE-Q scores (4+), evidence-based trauma-focused interventions such as Trauma-Focused Cognitive Behavioural Therapy (TF-CBT), Eye Movement Desensitisation and Reprocessing (EMDR), or Sensorimotor Psychotherapy may be indicated. However, the selection of intervention should be guided by the client’s specific symptoms, needs, and preferences rather than by the ACE score alone.\nUpon the first administration of the ACE-Q a plot is presented showing the ACE-Q total score with the subscale contribution to this score visible. The descriptors are shaded in the background of the plot to aid in interpretation of the ACE-Q total score. In subsequent administrations, a plot of the total score over time is also presented.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Abuse / Neglect (Items 1–5):",
+    "y": 355.5,
+    "url": null,
+    "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Household Dysfunction (Items 6–10):",
+    "y": 519.8,
+    "url": null,
+    "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Total ACE Score (sum of all “Yes” responses)",
+    "y": 552.8,
+    "url": null,
+    "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Felitti, V. J., Anda, R. F., Nordenberg, D., Williamson, D. F., Spitz, A. M., Edwards, V., Koss, M. P., & Marks, J. S. (1998). Relationship of childhood abuse and household dysfunction to many of the leading causes of death in adults. The Adverse Childhood Experiences (ACE) Study. American Journal of Preventive Medicine, 14(4), 245–258. https://doi.org/10.1016/s0749-3797(98)00017-8",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Anda, R. F., Felitti, V. J., Bremner, J. D., Walker, J. D., Whitfield, C., Perry, B. D., Dube, S. R., & Giles, W. H. (2006). The enduring effects of abuse and related adverse experiences in childhood: A convergence of evidence from neurobiology and epidemiology. European Archives of Psychiatry and Clinical Neuroscience, 256(3), 174-186. https://doi.org/10.1007/s00406-005-0624-4\nBethell, C. D., Carle, A., Hudziak, J., Gombojav, N., Powers, K., Wade, R., & Braveman, P. (2017). Methods to assess adverse childhood experiences of children and families: Toward approaches to promote child well-being in policy and practice. Academic Pediatrics, 17(7S), S51-S69. https://doi.org/10.1016/j.acap.2017.04.161\nBrown, D. W., Anda, R. F., Tiemeier, H., Felitti, V. J., Edwards, V. J., Croft, J. B., & Giles, W. H. (2009). Adverse childhood experiences and the risk of premature mortality. American Journal of Preventive Medicine, 37(5), 389-396. https://doi.org/10.1016/j.amepre.2009.06.021\nCampbell, J. A., Walker, R. J., & Egede, L. E. (2016). Associations between adverse childhood experiences, high-risk behaviors, and morbidity in adulthood. American Journal of Preventive Medicine, 50(3), 344-352. https://doi.org/10.1016/j.amepre.2015.07.022\nFelitti, V. J. (2009). Adverse childhood experiences and adult health. Academic Pediatrics, 9(3), 131-132. https://doi.org/10.1016/j.acap.2009.03.001\nHughes, K., Bellis, M. A., Hardcastle, K. A., Sethi, D., Butchart, A., Mikton, C., Jones, L., & Dunne, M. P. (2017). The effect of multiple adverse childhood experiences on health: A systematic review and meta-analysis. The Lancet Public Health, 2(8), e356–e366. https://doi.org/10.1016/S2468-2667(17)30118-4\nKaratekin, C., & Hill, M. (2019). Expanding the original definition of adverse childhood experiences (ACEs). Journal of Child & Adolescent Trauma, 12(3), 289-306. https://doi.org/10.1007/s40653-018-0237-5\nMcLennan, J. D., MacMillan, H. L., & Afifi, T. O. (2020). Questioning the use of adverse childhood experiences (ACEs) questionnaires. Child Abuse & Neglect, 101, 104331. https://doi.org/10.1016/j.chiabu.2019.104331\nMerrick, M. T., Ports, K. A., Ford, D. C., Afifi, T. O., Gershoff, E. T., & Grogan-Kaylor, A. (2017). Unpacking the impact of adverse childhood experiences on adult mental health. Child Abuse & Neglect, 69, 10–19. https://doi.org/10.1016/j.chiabu.2017.03.016\nMersky, J. P., Janczewski, C. E., & Topitzes, J. (2017). Rethinking the measurement of adversity: Moving toward second-generation research on adverse childhood experiences. Child Maltreatment, 22(1), 58-68. https://doi.org/10.1177/1077559516679513\nMichael, T., Phillips, B., & Loftis, M. (2025). Examining the factor structure and psychometric properties of the adverse childhood experiences questionnaire among college students in the southeastern United States. International Journal for the Advancement of Counseling, 47(1), 253–278. https://doi.org/10.1007/s10447-024-09583-y\nNarayan, A. J., Rivera, L. M., Bernstein, R. E., Harris, W. W., & Lieberman, A. F. (2018). Positive childhood experiences predict less psychopathology and stress in pregnant women with childhood adversity: A pilot study of the benevolent childhood experiences (BCEs) scale. Child Abuse & Neglect, 78, 19-30. https://doi.org/10.1016/j.chiabu.2017.09.022\nOláh, B., Fekete, Z., Kuritárné Szabó, I., & Kovács-Tóth, B. (2023). Validity and reliability of the 10-Item Adverse Childhood Experiences Questionnaire (ACE-10) among adolescents in the child welfare system. Frontiers in public health, 11, 1258798. https://doi.org/10.3389/fpubh.2023.1258798\nOral, R., Ramirez, M., Coohey, C., Nakada, S., Walz, A., Kuntz, A., Benoit, J., & Peek-Asa, C. (2016). Adverse childhood experiences and trauma informed care: The future of health care. Pediatric Research, 79(1), 227–233. https://doi.org/10.1038/pr.2015.197\nPorts, K. A., Ford, D. C., & Merrick, M. T. (2019). Adverse childhood experiences and sexual victimization in adulthood. Child Abuse & Neglect, 51, 313-322. https://doi.org/10.1016/j.chiabu.2015.08.017\nReavis, J. A., Looman, J., Franco, K. A., & Rojas, B. (2013). Adverse childhood experiences and adult criminality: how long must we live before we possess our own lives? The Permanente Journal, 17 (2), 44–48. https://doi.org/10.7812/TPP/12-072\nWingenfeld, K., Schäfer, I., Terfehr, K., Grabski, H., Driessen, M., Grabe, H., … & Spitzer, C. (2010). The reliable, valid and economic assessment of early traumatization: first psychometric characteristics of the German version of the Adverse Childhood Experiences Questionnaire (ACE). Psychotherapie, Psychosomatik, Medizinische Psychologie, 61(1), e10-4.\nZhu, J., Deneault, A.-A., Turgeon, J., & Madigan, S. (2025). Caregiver and child adverse childhood experiences: A meta-analysis. Pediatrics , 155 (2), e2024068578. https://doi.org/10.1542/peds.2024-068578",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Adverse Childhood Experiences Questionnaire (ACE-Q) PDF",
+   "source_url": null,
+   "sha256": "68eca82b16b7380b546258a4d9a0e0a41b8495e1e9ef41dd73a8ce1aced8fced",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/68eca82b16b7380b546258a4d9a0e0a41b8495e1e9ef41dd73a8ce1aced8fced.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACE-Q",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "adeb9a7612e06cc67e71edbe05dcfd434ff7b9373204a01df9396986232018a7",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/adeb9a7612e06cc67e71edbe05dcfd434ff7b9373204a01df9396986232018a7.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download ACE-Q PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "d79f7a5a668ecd36e3c60e3d53ab80bf7008bf904beea1f5084d9a2038cb0ab4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d79f7a5a668ecd36e3c60e3d53ab80bf7008bf904beea1f5084d9a2038cb0ab4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACE-Q Sample Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Adverse Childhood Experiences Questionnaire questions",
+   "source_url": null,
+   "sha256": "e89c7aafc0cd1d7edf11b0737aa5913a3684e939ee36a6d5f9a374cfca38acdc",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e89c7aafc0cd1d7edf11b0737aa5913a3684e939ee36a6d5f9a374cfca38acdc.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACE-Q Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f4a6aeead3f5356f3b0ca8fc85fa40e27d41a8818a911b0c8c6f05ef55a75611",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f4a6aeead3f5356f3b0ca8fc85fa40e27d41a8818a911b0c8c6f05ef55a75611.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACE-Q Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f82c1675f86dbf86a3ad015b6e953b564717844a413ffc92b6b207800ee872f6",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f82c1675f86dbf86a3ad015b6e953b564717844a413ffc92b6b207800ee872f6.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACE-Q Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Adverse Childhood Experiences Questionnaire using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download ACE-Q PDF",
+   "source_url": null,
+   "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "ACE-Q Review",
+   "source_url": null,
+   "sha256": "44c39d4f05bf431d1219400bcc04606bd46ff75c2e7eb0a9cd378f12172d70d8",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/44c39d4f05bf431d1219400bcc04606bd46ff75c2e7eb0a9cd378f12172d70d8.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "ACE-Q Sample Results",
+   "source_url": null,
+   "sha256": "bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 10
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/bb8c1c6aedfda4a084a60f33997128834a6f096f73c988a94f86f3a1e4b5331d.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_3",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "44c39d4f05bf431d1219400bcc04606bd46ff75c2e7eb0a9cd378f12172d70d8",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/44c39d4f05bf431d1219400bcc04606bd46ff75c2e7eb0a9cd378f12172d70d8.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf",
+    "ACE-Q Review"
+   ],
+   "page_count": 13,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "total_raw",
+    "label": "Total adverse experiences",
+    "minimum": 0,
+    "maximum": 10,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "total_raw",
+    "title": "Total adverse experiences",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_raw",
+      "label": "Total adverse experiences",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0,
+    "maximum": 10,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": "total_raw",
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "2188648c5eb5e379728d7fd86756d02b411a1bc1e756676ae09997447929d961",
+   "guidance_titles": [
+    "ACE-Q Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "total_raw"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "total_raw"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "total_raw",
+    "label": "Total adverse experiences",
+    "rule_id": "total_raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "8b6ea7edc5b7b308c85d70dced6bc9e80755130e8bcdc9fb509aa84544c35244",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_raw",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_raw",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T11:17:28.014753+00:00",
+  "raw_extraction_sha256": "ae09b07e9cdf0a9b03b6be88cbef1a0ead7c6a225fbe8864a226d7e5e5917664",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": "Administer ACE-Q Now"
+   },
+   {
+    "url": "https://doi.org/10.1016/s0749-3797(98)00017-8",
+    "title": "https://doi.org/10.1016/s0749-3797(98)00017-8"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00406-005-0624-4",
+    "title": "https://doi.org/10.1007/s00406-005-0624-4"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.acap.2017.04.161",
+    "title": "https://doi.org/10.1016/j.acap.2017.04.161"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.amepre.2009.06.021",
+    "title": "https://doi.org/10.1016/j.amepre.2009.06.021"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.amepre.2015.07.022",
+    "title": "https://doi.org/10.1016/j.amepre.2015.07.022"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.acap.2009.03.001",
+    "title": "https://doi.org/10.1016/j.acap.2009.03.001"
+   },
+   {
+    "url": "https://doi.org/10.1016/S2468-2667(17)30118-4",
+    "title": "https://doi.org/10.1016/S2468-2667(17)30118-4"
+   },
+   {
+    "url": "https://doi.org/10.1007/s40653-018-0237-5",
+    "title": "https://doi.org/10.1007/s40653-018-0237-5"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.chiabu.2019.104331",
+    "title": "https://doi.org/10.1016/j.chiabu.2019.104331"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.chiabu.2017.03.016",
+    "title": "https://doi.org/10.1016/j.chiabu.2017.03.016"
+   },
+   {
+    "url": "https://doi.org/10.1177/1077559516679513",
+    "title": "https://doi.org/10.1177/1077559516679513"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10447-024-09583-y",
+    "title": "https://doi.org/10.1007/s10447-024-09583-y"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.chiabu.2017.09.022",
+    "title": "https://doi.org/10.1016/j.chiabu.2017.09.022"
+   },
+   {
+    "url": "https://doi.org/10.3389/fpubh.2023.1258798",
+    "title": "https://doi.org/10.3389/fpubh.2023.1258798"
+   },
+   {
+    "url": "https://doi.org/10.1038/pr.2015.197",
+    "title": "https://doi.org/10.1038/pr.2015.197"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.chiabu.2015.08.017",
+    "title": "https://doi.org/10.1016/j.chiabu.2015.08.017"
+   },
+   {
+    "url": "https://doi.org/10.7812/TPP/12-072",
+    "title": "https://doi.org/10.7812/TPP/12-072"
+   },
+   {
+    "url": "https://doi.org/10.1542/peds.2024-068578",
+    "title": "https://doi.org/10.1542/peds.2024-068578"
+   },
+   {
+    "url": null,
+    "title": "Childhood resilience measure"
+   },
+   {
+    "url": null,
+    "title": "Positive family experiences measure"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Complex trauma measure"
+   },
+   {
+    "url": null,
+    "title": "Trauma healing assessment"
+   },
+   {
+    "url": null,
+    "title": "Post-trauma stress measure"
+   },
+   {
+    "url": null,
+    "title": "Download ACE-Q PDF"
+   },
+   {
+    "url": null,
+    "title": "ACE-Q Sample Results"
+   },
+   {
+    "url": null,
+    "title": "ACE-Q Review"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

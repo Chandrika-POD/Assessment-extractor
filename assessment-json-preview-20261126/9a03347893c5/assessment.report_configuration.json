@@ -1,0 +1,865 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Internalising",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Internalising",
+    "method": "mean",
+    "item_ids": [
+     "Q4",
+     "Q11",
+     "Q17",
+     "Q19",
+     "Q23",
+     "Q41",
+     "Q42",
+     "Q43"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Internalising (Items 4, 11, 17, 19, 23, 41, 42, 43, average of circled values):",
+     "y": 482.2,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Somatoform",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Somatoform",
+    "method": "mean",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q8",
+     "Q14",
+     "Q20",
+     "Q26",
+     "Q28",
+     "Q31"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Somatoform (Items 2, 3, 8, 14, 20, 26, 28, 31, average of circled values):",
+     "y": 504.0,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Detachment",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Detachment",
+    "method": "mean",
+    "item_ids": [
+     "Q22",
+     "Q25",
+     "Q32",
+     "Q36",
+     "Q38"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Detachment (Items 22, 25, 32, 36, 38, average of circled values):",
+     "y": 525.8,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Thought Disorder",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Thought Disorder",
+    "method": "mean",
+    "item_ids": [
+     "Q7",
+     "Q9",
+     "Q10",
+     "Q34",
+     "Q35",
+     "Q45"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Thought Disorder (Items 7, 9, 10, 34, 35, 45, average of circled values):",
+     "y": 547.5,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_5",
+   "ruleId": "pdf_5",
+   "label": "Disinhibition",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_5",
+    "label": "Disinhibition",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q13",
+     "Q15",
+     "Q21",
+     "Q27",
+     "Q30",
+     "Q33",
+     "Q37",
+     "Q44"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Disinhibition (Items 1, 13, 15, 21, 27, 30, 33, 37, 44, average of circled values):",
+     "y": 569.2,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_6",
+   "ruleId": "pdf_6",
+   "label": "Antagonism",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_6",
+    "label": "Antagonism",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q6",
+     "Q12",
+     "Q16",
+     "Q18",
+     "Q24",
+     "Q29",
+     "Q39",
+     "Q40"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Antagonism (Items 5, 6, 12, 16, 18, 24, 29, 39, 40, average of circled values):",
+     "y": 591.0,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_7",
+   "ruleId": "pdf_7",
+   "label": "Externalising (secondary)",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_7",
+    "label": "Externalising (secondary)",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q12",
+     "Q13",
+     "Q15",
+     "Q16",
+     "Q18",
+     "Q21",
+     "Q33",
+     "Q39",
+     "Q44"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Externalising (secondary) (Items 5, 12, 13, 15, 16, 18, 21, 33, 39, 44, average of circled values):",
+     "y": 612.8,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_8",
+   "ruleId": "pdf_8",
+   "label": "p-Factor (secondary)",
+   "minimum": 1.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_8",
+    "label": "p-Factor (secondary)",
+    "method": "mean",
+    "item_ids": [
+     "Q3",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q18",
+     "Q19",
+     "Q21",
+     "Q22",
+     "Q26",
+     "Q35",
+     "Q36",
+     "Q44"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "p-Factor (secondary) (Items 3, 10, 11, 12, 18, 19, 21, 22, 26, 35, 36, 44, average of circled values):",
+     "y": 634.5,
+     "url": null,
+     "sha256": "ea8888f519f08d0c0ce4a04a951de6e80ad9f5ac79686bac3dfab4d430eeba5a"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageCount": 8,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d820a7d177c9c_p1",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d820a7d177c9c_p1_chart_1"
+   ],
+   "tableIds": [
+    "d820a7d177c9c_p1_table_1",
+    "d820a7d177c9c_p1_table_2",
+    "d820a7d177c9c_p1_table_3"
+   ],
+   "sectionIds": [
+    "d820a7d177c9c_p1_section_1",
+    "d820a7d177c9c_p1_section_2",
+    "d820a7d177c9c_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d820a7d177c9c_p2",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d820a7d177c9c_p2_chart_1",
+    "d820a7d177c9c_p2_chart_2",
+    "d820a7d177c9c_p2_chart_3",
+    "d820a7d177c9c_p2_chart_4",
+    "d820a7d177c9c_p2_chart_5",
+    "d820a7d177c9c_p2_chart_6"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d820a7d177c9c_p2_section_1",
+    "d820a7d177c9c_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "d820a7d177c9c_p3",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d820a7d177c9c_p3_chart_1",
+    "d820a7d177c9c_p3_chart_2"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d820a7d177c9c_p3_section_1",
+    "d820a7d177c9c_p3_section_2",
+    "d820a7d177c9c_p3_section_3",
+    "d820a7d177c9c_p3_section_4"
+   ]
+  },
+  {
+   "pageId": "d820a7d177c9c_p4",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d820a7d177c9c_p4_section_1",
+    "d820a7d177c9c_p4_section_2",
+    "d820a7d177c9c_p4_section_3"
+   ]
+  },
+  {
+   "pageId": "d820a7d177c9c_p5",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d820a7d177c9c_p6",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d820a7d177c9c_p6_table_1"
+   ],
+   "sectionIds": [
+    "d820a7d177c9c_p6_section_1"
+   ]
+  },
+  {
+   "pageId": "d820a7d177c9c_p7",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d820a7d177c9c_p7_table_1"
+   ],
+   "sectionIds": [
+    "d820a7d177c9c_p7_section_1"
+   ]
+  },
+  {
+   "pageId": "d820a7d177c9c_p8",
+   "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+   "pageNumber": 8,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d820a7d177c9c_p8_table_1"
+   ],
+   "sectionIds": [
+    "d820a7d177c9c_p8_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d820a7d177c9c_p1_section_1",
+   "pageId": "d820a7d177c9c_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p1_section_2",
+   "pageId": "d820a7d177c9c_p1",
+   "title": "Secondary Scales",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    349.63907,
+    154.18646,
+    368.91708
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p1_section_3",
+   "pageId": "d820a7d177c9c_p1",
+   "title": "B-HiTOP Spectra and Secondary Scale Percentiles",
+   "type": "results",
+   "bboxPt": [
+    144.29245,
+    498.6174,
+    432.40042,
+    515.14142
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p2_section_1",
+   "pageId": "d820a7d177c9c_p2",
+   "title": "B-HiTOP Spectra Average Scores",
+   "type": "results",
+   "bboxPt": [
+    207.98245,
+    149.81235,
+    398.71045,
+    166.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p2_section_2",
+   "pageId": "d820a7d177c9c_p2",
+   "title": "Compared to Community Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    193.00645,
+    161.81235,
+    413.68646,
+    178.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p3_section_1",
+   "pageId": "d820a7d177c9c_p3",
+   "title": "B-HiTOP Secondary Scale Average Scores",
+   "type": "results",
+   "bboxPt": [
+    181.96645,
+    149.81235,
+    424.72641,
+    166.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p3_section_2",
+   "pageId": "d820a7d177c9c_p3",
+   "title": "Compared to Community Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    193.00645,
+    161.81235,
+    413.68646,
+    178.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p3_section_3",
+   "pageId": "d820a7d177c9c_p3",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    389.87527,
+    124.57648,
+    409.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p3_section_4",
+   "pageId": "d820a7d177c9c_p3",
+   "title": "Thought Disorder",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    506.97684,
+    183.31836,
+    522.12384
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p4_section_1",
+   "pageId": "d820a7d177c9c_p4",
+   "title": "Antagonism",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    140.04927,
+    154.59737,
+    155.19627
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p4_section_2",
+   "pageId": "d820a7d177c9c_p4",
+   "title": "Disinhibition",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    370.1033,
+    157.65533,
+    385.25031
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p4_section_3",
+   "pageId": "d820a7d177c9c_p4",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    614.44153,
+    290.26642,
+    633.71948
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p6_section_1",
+   "pageId": "d820a7d177c9c_p6",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    255.48961,
+    151.82047,
+    274.76761
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p7_section_1",
+   "pageId": "d820a7d177c9c_p7",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d820a7d177c9c_p8_section_1",
+   "pageId": "d820a7d177c9c_p8",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "B-HiTOP Scoring & Interpretation",
+    "text": "The Brief Hierarchical Taxonomy of Psychopathology (B-HiTOP) scores consist of dimensional scores across six primary spectra and two secondary scales. Higher average scores represent higher levels of symptoms within each spectrum measured.\n\nScores are provided for the following spectra and scales of the B-HiTOP:\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "820a7d177c9c0be34a6bff905881a946dc23d3460e0330be5b473bc91c7ece6b",
+    "pageNumber": 4,
+    "text": "For comprehensive information on the B-HiTOP, \nsee here\n.\n{link to be added and Scoring & Interpretation section to be added here}\nThe Brief Hierarchical Taxonomy of Psychopathology (B-HiTOP) scores consist of dimensional\nscores across six primary spectra and two secondary scales. Higher average scores represent\nhigher levels of symptoms within each spectrum measured. Scores are provided for the\nfollowing spectra and scales of the B-HiTOP:\nPrimary Spectra:\n1. Internalising (Items 4, 11, 17, 19, 23, 41, 42, 43) - assesses symptoms of emotional distress,",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 9
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d820a7d177c9c_p2_chart_1",
+    "d820a7d177c9c_p2_chart_2",
+    "d820a7d177c9c_p2_chart_3",
+    "d820a7d177c9c_p2_chart_4",
+    "d820a7d177c9c_p2_chart_5",
+    "d820a7d177c9c_p2_chart_6",
+    "d820a7d177c9c_p3_chart_1",
+    "d820a7d177c9c_p3_chart_2"
+   ]
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 6,
+   "unresolvedCells": 259
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

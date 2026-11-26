@@ -1,0 +1,931 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "brief-2-way-social-support-scale--2bae3b03aa75",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Brief 2-Way Social Support Scale (Brief 2-Way SSS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Brief 2-Way Social Support Scale is a 12-item self-report measure for adults 18 years of age and older that comprehensively assesses the bidirectional nature of social support through the giving and receiving of both emotional and instrumental support.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "The following statements relate to your experience of giving or receiving social support. Please read each statement and then indicate the degree to which the statement is generally true for you from not at all (0) to always (5).",
+  "instructions_source": {
+   "url": null,
+   "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total Brief 2-Way SSS Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 60.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total Brief 2-Way SSS Score (sum of all 12 items)",
+     "y": 576.8,
+     "url": null,
+     "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Percentile ranks are presented which compare the respondent’s scores to a normative sample of older adults (aged 55 plus, Obst, et al 2019). A percentile of 50 represents average levels of social support, whereas a percentile of 10 indicates a level of social support which is in the bottom 10 percent compared to older adults. Given some positive skew in normative distributions, percentile interpretation should consider that scores cluster toward the higher end, making lower scores particularly clinically significant. No total score percentile is reported as no total mean and standard deviation was reported by Obst et al. (2019).",
+   "On first administration a bar graph of subscale raw scores is presented, with a threshold of 7.5 as an indicator of halfway between 15 and 0."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "Brief 2-Way SSS Scoring & Interpretation",
+    "text": "A total score ranging from 0-60 and subscale scores ranging from 0 to 15 are provided, with higher scores indicative of higher levels of social support. Subscales are comprised of the following items:\nReceiving Emotional Support (items 6, 9, 10)\nReceiving Instrumental Support (items 1, 11, 12)\nGiving Emotional Support (items 3, 5, 7)\nGiving Instrumental Support (items 2, 4, 8)\n\nPercentile ranks are presented which compare the respondent’s scores to a normative sample of older adults (aged 55 plus, Obst, et al 2019). A percentile of 50 represents average levels of social support, whereas a percentile of 10 indicates a level of social support which is in the bottom 10 percent compared to older adults. Given some positive skew in normative distributions, percentile interpretation should consider that scores cluster toward the higher end, making lower scores particularly clinically significant. No total score percentile is reported as no total mean and standard deviation was reported by Obst et al. (2019).\n\nFor clinical interpretation, examining patterns across subscales is particularly informative. Balanced profiles with similar scores across all four dimensions suggest well-integrated reciprocal support relationships. Large discrepancies between giving and receiving dimensions may indicate relationship imbalances warranting exploration. For instance, high receiving but low giving scores might suggest dependency patterns or limited opportunities for contribution, whilst the reverse pattern could indicate caregiving burden or difficulty accepting help. A second results table shows a ratio representing the difference between giving and receiving support (giving minus receiving) for total, instrumental and emotional. A positive score indicates more support given than received, while a negative score indicates they receive more support than they provide. A score near zero suggests balance.\nOn first administration a bar graph of subscale raw scores is presented, with a threshold of 7.5 as an indicator of halfway between 15 and 0.\n\nOn multiple administrations, two line graphs are shown for the total and the subscale scores over time.\n\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Receiving Emotional Support (Items 6, 9, 10):",
+    "y": 478.5,
+    "url": null,
+    "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Receiving Instrumental Support (Items 1, 11, 12):",
+    "y": 500.2,
+    "url": null,
+    "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Giving Emotional Support (Items 3, 5, 7):",
+    "y": 522.0,
+    "url": null,
+    "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Giving Instrumental Support (Items 2, 4, 8):",
+    "y": 543.8,
+    "url": null,
+    "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Obst, P., Shakespeare-Finch, J., Krosch, D. J., & Rogers, E. J. (2019). Reliability and validity of the Brief 2-Way Social Support Scale: An investigation of social support in promoting older adult well-being. SAGE Open Medicine , 7 , 1-10. https://doi.org/10.1177/2050312119836020",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Haber, M. G., Cohen, J. L., Lucas, T., & Baltes, B. B. (2007). The relationship between self-reported received and perceived social support: a meta-analytic review. American Journal of Community Psychology , 39 (1-2), 133-144. https://doi.org/10.1007/s10464-007-9100-9\nKhodabakhsh, S., & Tan, C. S. (2022). Psychometric evaluation of the Brief 2-Way Social Support Scale among Malaysian older adults. Trends in Psychology , 30 , 97-110. https://doi.org/10.1007/s43076-021-00097-9\nObst, P., Shakespeare-Finch, J., Krosch, D. J., & Rogers, E. J. (2019). Reliability and validity of the Brief 2-Way Social Support Scale: An investigation of social support in promoting older adult well-being. SAGE Open Medicine , 7 , 1-10. https://doi.org/10.1177/2050312119836020\nShakespeare-Finch, J., & Obst, P. L. (2011). The development of the 2-Way Social Support Scale: A measure of giving and receiving emotional and instrumental support. Journal of Personality Assessment , 93 (5), 483-490. https://doi.org/10.1080/00223891.2011.594124",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Brief 2-Way Social Support Scale (Brief 2-Way SSS) PDF",
+   "source_url": null,
+   "sha256": "c6eab4b1e197b9c1a927c2e69b026abea360532d2cf6f07346e81c6cc49e108d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c6eab4b1e197b9c1a927c2e69b026abea360532d2cf6f07346e81c6cc49e108d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief Resilience Scale (BRS)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "9f3a443cbc2fd3f1def10b809630ba83bf8f7813e44ad3d9f2bff317cace57c5",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9f3a443cbc2fd3f1def10b809630ba83bf8f7813e44ad3d9f2bff317cace57c5.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download Brief 2-Way SSS PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "8759ca36026fa12e566c421b59c61ed43272cdd752bb86dd66826ae6598ea0a9",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8759ca36026fa12e566c421b59c61ed43272cdd752bb86dd66826ae6598ea0a9.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief 2-Way SSS Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4ea6a9130f08f63953c1ddfb333a3e8493e51565367468b9990ff957b4b781a5",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4ea6a9130f08f63953c1ddfb333a3e8493e51565367468b9990ff957b4b781a5.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief 2-Way SSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "2eb51eaea58fed8031e6e651ffee96d43652267d3d2fffd70ee808184357e6f0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2eb51eaea58fed8031e6e651ffee96d43652267d3d2fffd70ee808184357e6f0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief 2-Way SSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "726a0ed513bbba5b4f54ee60bb962822106f79c29e65354b78e5a981b47b9f3b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/726a0ed513bbba5b4f54ee60bb962822106f79c29e65354b78e5a981b47b9f3b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief 2-Way SSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3d5b522ad29354ccd5c40bb3b75396311b74219b0bb9657cc6a8e623fb0cf4eb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3d5b522ad29354ccd5c40bb3b75396311b74219b0bb9657cc6a8e623fb0cf4eb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief 2-Way SSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "2baa4fcf376fe62e57f1dd996f1fbd9fe2c13011d9c3bb7a7aeb3368694ead76",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2baa4fcf376fe62e57f1dd996f1fbd9fe2c13011d9c3bb7a7aeb3368694ead76.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief 2-Way SSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Brief 2-Way Social Support Scale (Brief 2-Way SSS) u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download Brief 2-Way SSS PDF",
+   "source_url": null,
+   "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Brief 2-Way SSS Sample Results",
+   "source_url": null,
+   "sha256": "79ac72fa85810da2aba832569e95a64a45845bb7895058d593c2f0890aa42c46",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/79ac72fa85810da2aba832569e95a64a45845bb7895058d593c2f0890aa42c46.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 12
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total Brief 2-Way SSS Score",
+    "minimum": 0.0,
+    "maximum": 60.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total Brief 2-Way SSS Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total Brief 2-Way SSS Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 60.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "d884d502c8286aa295a8399c579de33083b90eecee0a2171fd5f4e970ce27d9c",
+   "guidance_titles": [
+    "Brief 2-Way SSS Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total Brief 2-Way SSS Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "26c1f5ca900ea8b02a0fbd25a21158d0aacb3908cd5113d050c95066ce3d2904",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:26:15.164843+00:00",
+  "raw_extraction_sha256": "eba1297abb20f7e030c1c844deb3610bb93f2bba8ea6ed0144474782179af932",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1177/2050312119836020",
+    "title": "https://doi.org/10.1177/2050312119836020"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10464-007-9100-9",
+    "title": "https://doi.org/10.1007/s10464-007-9100-9"
+   },
+   {
+    "url": "https://doi.org/10.1007/s43076-021-00097-9",
+    "title": "https://doi.org/10.1007/s43076-021-00097-9"
+   },
+   {
+    "url": "https://doi.org/10.1080/00223891.2011.594124",
+    "title": "https://doi.org/10.1080/00223891.2011.594124"
+   },
+   {
+    "url": null,
+    "title": "Stress assessment scale"
+   },
+   {
+    "url": null,
+    "title": "Wellbeing assessment"
+   },
+   {
+    "url": null,
+    "title": "Quality of life index"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Bounce-back scale"
+   },
+   {
+    "url": null,
+    "title": "Download Brief 2-Way SSS PDF"
+   },
+   {
+    "url": null,
+    "title": "Brief 2-Way SSS Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychological Evaluation Report"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

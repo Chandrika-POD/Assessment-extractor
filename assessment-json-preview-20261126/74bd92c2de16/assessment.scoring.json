@@ -1,0 +1,659 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "source_draft_1",
+   "label": "CRAFFT Part B Yes count",
+   "item_ids": [
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10"
+   ],
+   "method": "sum",
+   "value_field": "printed_value",
+   "multiplier": 1,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "questionnaire_url": null,
+    "questionnaire_sha256": "5a3fa96045fb00a4bddf66c3a6e6b6eda393059a2fddf5648538ba39bee9fe39",
+    "page_url": null,
+    "page_sha256": "2f50e622be1611b194d446ea95e9e1be4f564e4730140c8f22a11b7ebf19daa3",
+    "method": "reviewed_saved_source_membership_and_arithmetic",
+    "context_section_ids": [
+     "C4",
+     "C12",
+     "C24",
+     "LIVE_C31",
+     "LIVE_C43",
+     "LIVE_C47"
+    ],
+    "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+   },
+   "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+   "ineligible_item_policy": "zero",
+   "minimum": 0,
+   "maximum": 6.0
+  },
+  {
+   "id": "source_draft_2",
+   "label": "HONC Yes count",
+   "item_ids": [
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20"
+   ],
+   "method": "sum",
+   "value_field": "printed_value",
+   "multiplier": 1,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "questionnaire_url": null,
+    "questionnaire_sha256": "5a3fa96045fb00a4bddf66c3a6e6b6eda393059a2fddf5648538ba39bee9fe39",
+    "page_url": null,
+    "page_sha256": "2f50e622be1611b194d446ea95e9e1be4f564e4730140c8f22a11b7ebf19daa3",
+    "method": "reviewed_saved_source_membership_and_arithmetic",
+    "context_section_ids": [
+     "C4",
+     "C12",
+     "C24",
+     "LIVE_C31",
+     "LIVE_C43",
+     "LIVE_C47"
+    ],
+    "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+   },
+   "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+   "applies_if": {
+    "item_id": "Q4",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   },
+   "minimum": 0.0,
+   "maximum": 10.0
+  }
+ ],
+ "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+ "rules_provenance": {
+  "questionnaire_url": null,
+  "questionnaire_sha256": "5a3fa96045fb00a4bddf66c3a6e6b6eda393059a2fddf5648538ba39bee9fe39",
+  "page_url": null,
+  "page_sha256": "2f50e622be1611b194d446ea95e9e1be4f564e4730140c8f22a11b7ebf19daa3",
+  "method": "reviewed_saved_source_membership_and_arithmetic"
+ },
+ "source_rule_excerpts": [
+  "The cut score of 2 or more was derived in the primary validation by maximising the product of sensitivity and specificity, and it was optimal for every criterion examined (Knight et al., 2002). The same threshold performed optimally against DSM-5 criteria in both later validations (Mitchell et al., 2014; Shenoi et al., 2019).",
+  "The developers advise that a higher cut score may be more appropriate for respondents aged 18 or older (CABHRe, 2021). In 382 adults aged 18 to 25 recruited for past-month alcohol or cannabis use, specificity at the standard cut score was low (13 to 19 percent), and a score of 4 or more gave the best balance of sensitivity and specificity (Bagley et al., 2017). Because no alternative threshold has been validated for routine use in this age range, NovoPsych retains the official cut score across the 12 to 21 range and notes in the report that scores of 2 or 3 in respondents aged 18 or older are weaker evidence of a disorder."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "CRAFFT 2.1+N Scoring",
+   "text": "The CRAFFT 2.1+N produces a total score, a risk category, and up to two clinical flags (riding and driving risk, and nicotine). The total score is the number of Yes answers across the six CRAFFT questions in Part B. The four Part A frequency questions decide which questions each young person answers and do not contribute to any score. A young person who reports no substance use in the past 12 months answers only the Car question, so their maximum possible score is 1. One who reports any use answers all six, giving a range of 0 to 6. Higher scores indicate a greater likelihood of substance-related problems.\nNovoPsych implements the self-administered CRAFFT 2.1+N and applies the official screening cut score of 2 or more (Knight et al., 2002) across the full 12 to 21 age range.\nWhen any vaping or tobacco use is reported, the ten HONC questions are also presented. They are scored as a separate count of Yes answers from 0 to 10 and do not contribute to the CRAFFT total.\n\n",
+   "source_url": null
+  },
+  {
+   "title": "CRAFFT 2.1+N Clinical Cut Score",
+   "text": "The cut score of 2 or more was derived in the primary validation by maximising the product of sensitivity and specificity, and it was optimal for every criterion examined (Knight et al., 2002). The same threshold performed optimally against DSM-5 criteria in both later validations (Mitchell et al., 2014; Shenoi et al., 2019).\nThe developers advise that a higher cut score may be more appropriate for respondents aged 18 or older (CABHRe, 2021). In 382 adults aged 18 to 25 recruited for past-month alcohol or cannabis use, specificity at the standard cut score was low (13 to 19 percent), and a score of 4 or more gave the best balance of sensitivity and specificity (Bagley et al., 2017). Because no alternative threshold has been validated for routine use in this age range, NovoPsych retains the official cut score across the 12 to 21 range and notes in the report that scores of 2 or 3 in respondents aged 18 or older are weaker evidence of a disorder.\n",
+   "source_url": null
+  },
+  {
+   "title": "How is vaping or tobacco use handled if it does not affect the CRAFFT score?",
+   "text": "The CRAFFT total score (0 to 6) comes only from the six CRAFFT questions, which ask about alcohol and drug involvement. Like the other opening frequency questions, the vaping and tobacco question is not part of that score. Nicotine is screened separately: any reported vaping or tobacco use brings up the Hooked on Nicotine Checklist (HONC), a 10-item screen for signs of diminished control over nicotine, which is reported alongside the CRAFFT score. Even one Yes on the HONC is treated as meaningful, because loss of autonomy over nicotine can emerge quickly in adolescence, well before daily use is established.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [
+  {
+   "rows": [
+    [
+     "Risk category",
+     "How it is reached",
+     "Total score",
+     "What the result offers"
+    ],
+    [
+     "Low risk",
+     "No substance use in the past 12 months and No to the Car question",
+     "0",
+     "An opportunity to reinforce and encourage the young person’s healthy choices."
+    ],
+    [
+     "Medium risk",
+     "No substance use in the past 12 months and Yes to the Car question, or any use in the past 12 months with a total score of 0 or 1",
+     "0 to 1",
+     "An opportunity for brief advice about the risks of substance use and of substance-related riding and driving."
+    ],
+    [
+     "High risk",
+     "Any use in the past 12 months and a total score of 2 or more",
+     "2 to 6",
+     "A positive screen, indicating a substantially elevated likelihood of a DSM-5 substance use disorder that likely warrants further follow-up. A positive screen is not a diagnosis."
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Risk category",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "How it is reached",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Total score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "What the result offers",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Low risk",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "No substance use in the past 12 months and No to the Car question",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "0",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "An opportunity to reinforce and encourage the young person’s healthy choices.",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Medium risk",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "No substance use in the past 12 months and Yes to the Car question, or any use in the past 12 months with a total score of 0 or 1",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "0 to 1",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "An opportunity for brief advice about the risks of substance use and of substance-related riding and driving.",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "High risk",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Any use in the past 12 months and a total score of 2 or more",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "2 to 6",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "A positive screen, indicating a substantially elevated likelihood of a DSM-5 substance use disorder that likely warrants further follow-up. A positive screen is not a diagnosis.",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "CRAFFT 2.1+N Risk Categories",
+   "source_url": null
+  },
+  {
+   "rows": [
+    [
+     "CRAFFT 2.1+N score",
+     "Adolescents meeting DSM-5 substance use disorder criteria"
+    ],
+    [
+     "1 or more",
+     "32%"
+    ],
+    [
+     "2 or more",
+     "64%"
+    ],
+    [
+     "3 or more",
+     "79%"
+    ],
+    [
+     "4 or more",
+     "92%"
+    ],
+    [
+     "5 or more",
+     "100%"
+    ],
+    [
+     "6",
+     "100%"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "CRAFFT 2.1+N score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Adolescents meeting DSM-5 substance use disorder criteria",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "1 or more",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "32%",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "2 or more",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "64%",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "3 or more",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "79%",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "4 or more",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "92%",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "5 or more",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "100%",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "6",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "100%",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "Likelihood of Substance Use Disorder",
+   "source_url": null
+  },
+  {
+   "rows": [
+    [
+     "Study",
+     "Sample",
+     "Criterion",
+     "Sensitivity",
+     "Specificity",
+     "AUC"
+    ],
+    [
+     "Mitchell et al. (2014)",
+     "525 primary care patients aged 12 to 17",
+     "Any substance use disorder",
+     ".91",
+     ".93",
+     ".97"
+    ],
+    [
+     "Mitchell et al. (2014)",
+     "525 primary care patients aged 12 to 17",
+     "Moderate to severe disorder",
+     ".88",
+     ".87",
+     ".95"
+    ],
+    [
+     "Shenoi et al. (2019)",
+     "2,143 emergency department patients aged 12 to 17",
+     "Mild disorder",
+     ".84",
+     ".93",
+     ".90"
+    ],
+    [
+     "Shenoi et al. (2019)",
+     "2,143 emergency department patients aged 12 to 17",
+     "Moderate to severe disorder",
+     "1.00",
+     ".92",
+     ".98"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Study",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Sample",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Criterion",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Sensitivity",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Specificity",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "AUC",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Mitchell et al. (2014)",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "525 primary care patients aged 12 to 17",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Any substance use disorder",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".91",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".93",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".97",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Mitchell et al. (2014)",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "525 primary care patients aged 12 to 17",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate to severe disorder",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".88",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".87",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".95",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Shenoi et al. (2019)",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "2,143 emergency department patients aged 12 to 17",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Mild disorder",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".84",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".93",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".90",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Shenoi et al. (2019)",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "2,143 emergency department patients aged 12 to 17",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Moderate to severe disorder",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "1.00",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".92",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": ".98",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "CRAFFT 2.1+N Validity",
+   "source_url": null
+  }
+ ],
+ "unparsed_pdf_expressions": [],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+ "remaining_work": [
+  "Normative conversions and clinical publication require separate source-specific review.",
+  "Source screening classifications and clinical response protocols require review."
+ ],
+ "implementation_status": {
+  "raw_calculation": "draft_implemented",
+  "interpretation": "not_compiled",
+  "normative_conversion": "not_implemented",
+  "clinical_use": "not_approved"
+ },
+ "runtime_module": "definition_runtime.py"
+}

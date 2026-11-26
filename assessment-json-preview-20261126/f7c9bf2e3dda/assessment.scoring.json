@@ -1,0 +1,211 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "pdf_1",
+   "label": "Total Score",
+   "method": "sum",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10"
+   ],
+   "multiplier": 1.0,
+   "value_field": "printed_value",
+   "minimum": 0.0,
+   "maximum": 30.0,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "page": 2,
+    "text": "Total Score (sum of all 10 items)",
+    "y": 422.2,
+    "url": null,
+    "sha256": "ab54ff995f678f7836e7014d9602678e7350cb981f975db8455900a212b0ebd6"
+   },
+   "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+  }
+ ],
+ "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+ "rules_provenance": null,
+ "source_rule_excerpts": [
+  "Percentiles need a reference sample that represents the women being screened, with a full score distribution from that sample. The two largest Australian EPDS datasets, together covering more than 65,000 women, report the proportion of women above each threshold but not the underlying distribution (Buist et al., 2008; Khanlari et al., 2019). Scores are also heavily concentrated at the low end, with around 86 percent of women in the Sydney cohort scoring 9 or below, so a percentile says little about most respondents. The two thresholds, by contrast, rest on strong evidence, so the report places each score against them: 10, a more sensitive screen, and 13, which indicates probable depressive illness.",
+  "A screening measure serves two purposes. A lower threshold catches more true cases at the cost of more false alarms; a higher threshold gives fewer false alarms but misses more cases. The scale’s authors proposed both a lower and a higher cut-off for exactly this reason (Cox et al., 1987), and the largest accuracy meta-analysis reaches the same conclusion (Levis et al., 2020). Scores of 10 or more pick up 85 percent of women with major depression; about a third of women with major depression score below 13.",
+  "The EPDS was developed and validated against Research Diagnostic Criteria for depressive illness, obtained from Goldberg’s Standardised Psychiatric Interview, in a sample of 84 mothers (Cox et al., 1987). Items were drawn from a pool derived from existing depression and anxiety scales, and refined with input from women and primary care workers on content, wording, acceptability, and likelihood of detecting postnatal depression. Two thresholds were proposed. A cut-off of 13 or more was reported as optimal for identifying probable depressive illness, while a lower cut-off of 10 or more was proposed to reduce false negatives, with the authors noting that failed detection could be reduced to under 10% at that threshold (Cox et al., 1987). Cox (2019) confirmed both cut-offs, with the caveat that users should establish the sensitivity, specificity, positive predictive value, and optimal cut-off appropriate to their own clinical or research purpose. The scale has been translated into more than 60 languages (Cox, 2019). NovoPsych administers the original English version, and findings from translated versions are identified as such below.",
+  "Short-term test-retest reliability was assessed in 118 Australian mothers of infants under 12 months, who completed the EPDS a second time an average of 2.82 days after the first administration (Kernot et al., 2015). The intraclass correlation for the total score was strong (ICC = .92), with 90.7% agreement on risk category, supporting the stability of scores over short retest intervals.",
+  "In the original validation, against Research Diagnostic Criteria for major and minor depressive illness, a threshold of 13 or more gave a sensitivity of 86%, specificity of 78%, and positive predictive value of 73% (Cox et al., 1987). The strongest criterion-validity evidence since comes from an individual participant data meta-analysis of 58 datasets comprising 15,557 pregnant and postpartum women, of whom 2,069 met criteria for major depression (Levis et al., 2020). Among the 36 studies using a semi-structured diagnostic interview as the reference standard (n = 9,066, 1,330 with major depression), sensitivity and specificity were .85 and .84 at a cut-off of 10 or more, .81 and .88 at 11 or more, and .66 and .95 at 13 or more. Combined sensitivity and specificity were maximised at 11 or more, and accuracy was similar across reference standards and subgroups, including pregnant and postpartum women considered separately.",
+  "Positive predictive value depends heavily on how common depression is in the population being screened. Across major-depression prevalence of 5% to 25%, positive predictive value at a cut-off of 11 or more ranges from 26% to 69%, while negative predictive value ranges from 93% to 99% (Levis et al., 2020).",
+  "The EPDS captures change in scores over repeated administrations. In the original validation study, mothers who met criteria for depression at the first interview but not at follow-up showed a significant reduction in average scores (n = 16; 15.8 to 9.8; t = 3.72, p = .002), while those who continued to meet criteria showed no significant change (n = 15; 16.5 to 15.38; Cox et al., 1987). Treatment responsiveness has since been demonstrated in independent intervention research: a meta-analysis of 11 studies comprising 20 trials of exercise interventions in postpartum women scoring 10 or more found a small but significant reduction in EPDS scores relative to control conditions (standardised mean difference = −0.28, 95% CI −0.38 to −0.18; Norhamazi et al., 2022). Score change also tracks change on concurrent symptom measures, correlating with change on the PHQ-9 (r = .55) and the GAD-7 (r = .54) in 117 pregnant women (Mao et al., 2021). Together, these findings support the use of the EPDS to monitor progress across repeated administrations.",
+  "The higher threshold of 13 or more is the point at which further assessment is recommended. The original authors identified it as optimal for detecting depressive illness (Cox et al., 1987), and the Australian guideline recommends further assessment at this level (COPE, 2023). It prioritises specificity, which is .95 at 13 or more against a semi-structured interview reference standard (36 studies, n = 9,066; Levis et al., 2020).",
+  "The lower threshold of 10 or more marks symptom elevation that warrants monitoring (COPE, 2023). Cox and colleagues (1987) proposed it as a first-stage screen, or for settings where potential cases must not be missed, and at 10 or more the scale detects 85% of major depression cases (Levis et al., 2020). Australian guidance recommends monitoring and rescreening within two to four weeks for scores of 10 to 12 (COPE, 2023), and US guidance uses 10 or more as the positive screening threshold (ACOG, 2023)."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "Edinburgh Postnatal Depression Scale Scoring",
+   "text": "The total score is calculated by summing all 10 items, giving a range of 0 to 30. Higher scores indicate more frequent or more intense depressive symptoms over the previous seven days.\n\n",
+   "source_url": null
+  },
+  {
+   "title": "EPDS Interpretive Text",
+   "text": "The report opens with the total score. At 10 or above it names the band and lists the three highest-scoring items with the response given to each, so the clinician can see which symptoms drive the score. Where items 3, 4 and 5, which are commonly associated with an anxious presentation, stand out from the rest of the profile, the report says so. No anxiety score is produced.\n",
+   "source_url": null
+  },
+  {
+   "title": "EPDS Change Score Interpretation",
+   "text": "Where EPDS scores are available from more than one administration, change between administrations supports progress monitoring. A change of 4 or more points is treated as a reliable change, meaning a change large enough to be unlikely to reflect measurement error alone (Matthey, 2004).\n",
+   "source_url": null
+  },
+  {
+   "title": "Why does the EPDS report use score thresholds rather than percentiles?",
+   "text": "Percentiles need a reference sample that represents the women being screened, with a full score distribution from that sample. The two largest Australian EPDS datasets, together covering more than 65,000 women, report the proportion of women above each threshold but not the underlying distribution (Buist et al., 2008; Khanlari et al., 2019). Scores are also heavily concentrated at the low end, with around 86 percent of women in the Sydney cohort scoring 9 or below, so a percentile says little about most respondents. The two thresholds, by contrast, rest on strong evidence, so the report places each score against them: 10, a more sensitive screen, and 13, which indicates probable depressive illness.\n",
+   "source_url": null
+  },
+  {
+   "title": "What does an EPDS score of 13 or above mean?",
+   "text": "It indicates probable depressive illness, and further mental health assessment is warranted. It is a screening result, not a diagnosis. Most women without major depression (95 percent) score below 13 (Levis et al., 2020), but how likely a particular positive screen is to reflect depression depends on how common depression is in the population being screened.\n",
+   "source_url": null
+  },
+  {
+   "title": "What does it mean if a woman's EPDS score goes up between administrations?",
+   "text": "Not necessarily that treatment is failing. The postnatal months bring changes in sleep, support and circumstance that can move mood independently of any intervention, and a rise around a known stressor reads differently from a rise with no obvious trigger. The report separates changes of 4 points or more, which are large enough to be unlikely to reflect measurement error alone, from smaller movements, so a modest increase is not reported as deterioration. The more useful question is usually what has changed for the woman since the last administration.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [
+  {
+   "rows": [
+    [
+     "Total score",
+     "Descriptor",
+     "What it means"
+    ],
+    [
+     "0 to 9",
+     "No descriptor",
+     "Below both published cut-offs; the report gives the score without a label"
+    ],
+    [
+     "10 to 12",
+     "Elevated",
+     "May reflect a depressive illness; further enquiry now, and repeat the EPDS within two to four weeks"
+    ],
+    [
+     "13 to 30",
+     "High",
+     "Probable depressive illness; further mental health assessment is warranted"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Total score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Descriptor",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "What it means",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "0 to 9",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "No descriptor",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Below both published cut-offs; the report gives the score without a label",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "10 to 12",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Elevated",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "May reflect a depressive illness; further enquiry now, and repeat the EPDS within two to four weeks",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "13 to 30",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "High",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Probable depressive illness; further mental health assessment is warranted",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "EPDS Severity Categories",
+   "source_url": null
+  }
+ ],
+ "unparsed_pdf_expressions": [],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+}

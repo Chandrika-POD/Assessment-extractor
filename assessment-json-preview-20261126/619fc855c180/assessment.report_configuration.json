@@ -1,0 +1,1096 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total BEAQ Score",
+   "minimum": 15.0,
+   "maximum": 90.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total BEAQ Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 15.0,
+    "maximum": 90.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total BEAQ Score (sum of all 15 items)",
+     "y": 651.0,
+     "url": null,
+     "sha256": "874e2b2cc1372f0a9d5bad762d195890ff29948312df10d653a33b598d3fa572"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "a462be81f157975b934470c30a07c44a112233392f45c6db046d8ed423cbe13e",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "da462be81f157_p1",
+   "documentSha256": "a462be81f157975b934470c30a07c44a112233392f45c6db046d8ed423cbe13e",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "da462be81f157_p1_chart_1",
+    "da462be81f157_p1_chart_2"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "da462be81f157_p1_section_1",
+    "da462be81f157_p1_section_2",
+    "da462be81f157_p1_section_3",
+    "da462be81f157_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "da462be81f157_p2",
+   "documentSha256": "a462be81f157975b934470c30a07c44a112233392f45c6db046d8ed423cbe13e",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "da462be81f157_p2_section_1",
+    "da462be81f157_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "da462be81f157_p3",
+   "documentSha256": "a462be81f157975b934470c30a07c44a112233392f45c6db046d8ed423cbe13e",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "da462be81f157_p3_table_1"
+   ],
+   "sectionIds": [
+    "da462be81f157_p3_section_1",
+    "da462be81f157_p3_section_2"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "da462be81f157_p1_section_1",
+   "pageId": "da462be81f157_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da462be81f157_p1_section_2",
+   "pageId": "da462be81f157_p1",
+   "title": "BEAQ Experiential Avoidance Percentile",
+   "type": "results",
+   "bboxPt": [
+    187.97301,
+    267.4455,
+    418.72098,
+    279.4455
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da462be81f157_p1_section_3",
+   "pageId": "da462be81f157_p1",
+   "title": "BEAQ Experiential Avoidance Score Compared",
+   "type": "source_heading",
+   "bboxPt": [
+    168.64101,
+    547.4455,
+    438.05295,
+    559.4455
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da462be81f157_p1_section_4",
+   "pageId": "da462be81f157_p1",
+   "title": "to Community and Clinical Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    188.99881,
+    559.4455,
+    417.69479,
+    571.4455
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da462be81f157_p2_section_1",
+   "pageId": "da462be81f157_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    124.57652,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da462be81f157_p2_section_2",
+   "pageId": "da462be81f157_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    384.33453,
+    290.26636,
+    398.33453
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da462be81f157_p3_section_1",
+   "pageId": "da462be81f157_p3",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    336.92838,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da462be81f157_p3_section_2",
+   "pageId": "da462be81f157_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3464,
+    214.93466,
+    151.8204,
+    228.93466
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "da462be81f157_p1_chart_1",
+   "title": "BEAQ Experiential Avoidance Percentile",
+   "type": "vertical_bar",
+   "bboxPt": [
+    167.346,
+    287.347,
+    460.346,
+    510.787
+   ],
+   "widthPt": 293.0,
+   "heightPt": 223.44,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      167.34599,
+      498.62723,
+      458.34601,
+      510.78702
+     ],
+     "colour": "#b6d7a8",
+     "opacity": 0.9,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      167.34599,
+      456.5567,
+      458.34601,
+      498.62701
+     ],
+     "colour": "#d9ead3",
+     "opacity": 0.9,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      167.34599,
+      343.617,
+      458.34601,
+      456.54703
+     ],
+     "colour": "#1111ff",
+     "opacity": 0.1,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      167.34599,
+      301.54706,
+      458.34601,
+      343.617
+     ],
+     "colour": "#f5b041",
+     "opacity": 0.3,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      167.34599,
+      289.34698,
+      458.34601,
+      301.547
+     ],
+     "colour": "#cd6155",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 160.12198999999998,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": "BEAQ Experiential Avoidance Score Compared",
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 289.96603,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 312.1058,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 334.2558,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 356.396,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 378.54599,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 400.68579,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 422.82599,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 444.97559,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 467.11578,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 489.26578,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 511.405595,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "BEAQ Experiential Avoidance Score Compared",
+     "colour": "#4e79a6",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4965870650793812,
+     "barThicknessPt": 71.0,
+     "fill": "#4e79a7",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4e79a6"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "da462be81f157_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 64,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "BEAQ Experiential Avoidance Percentile",
+     "bboxPt": [
+      187.97301,
+      267.4455,
+      418.72098,
+      279.4455
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Low",
+     "bboxPt": [
+      444.509,
+      502.25827,
+      457.34698,
+      509.25827
+     ],
+     "colour": "#97af8e",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Below Average",
+     "bboxPt": [
+      410.271,
+      474.57825,
+      457.34598,
+      481.57825
+     ],
+     "colour": "#b1bdac",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Average",
+     "bboxPt": [
+      431.27899,
+      397.06827,
+      457.34698,
+      404.06827
+     ],
+     "colour": "#b9b9cc",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Above Average",
+     "bboxPt": [
+      409.48801,
+      319.56824,
+      457.34702,
+      326.56824
+     ],
+     "colour": "#aea26f",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "High",
+     "bboxPt": [
+      442.95401,
+      291.88824,
+      457.34598,
+      298.88824
+     ],
+     "colour": "#bc9a96",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "BEAQ Experiential Avoidance Score Compared",
+     "bboxPt": [
+      168.64101,
+      547.4455,
+      438.05295,
+      559.4455
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "to Community and Clinical Distributions",
+     "bboxPt": [
+      188.99881,
+      559.4455,
+      417.69479,
+      571.4455
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "da462be81f157_p1_chart_2",
+   "title": null,
+   "type": "horizontal_bar",
+   "bboxPt": [
+    52.346,
+    603.347,
+    545.346,
+    707.787
+   ],
+   "widthPt": 493.0,
+   "heightPt": 104.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      183.27701,
+      620.71704,
+      292.99701,
+      702.66699
+     ],
+     "colour": "#1111ff",
+     "opacity": 0.1,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      268.38602,
+      615.58704,
+      379.67603,
+      697.53699
+     ],
+     "colour": "#ff1111",
+     "opacity": 0.1,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 15.0,
+      "positionPt": 52.3464,
+      "text": "15",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 85.07648499999999,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 25.0,
+      "positionPt": 117.81631999999999,
+      "text": "25",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 150.5464,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 35.0,
+      "positionPt": 183.276475,
+      "text": "35",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 216.01631,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 45.0,
+      "positionPt": 248.746385,
+      "text": "45",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 281.47647,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 55.0,
+      "positionPt": 314.21631,
+      "text": "55",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 346.94638,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 65.0,
+      "positionPt": 379.67645000000005,
+      "text": "65",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 412.41629,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 75.0,
+      "positionPt": 445.14635999999996,
+      "text": "75",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 477.876435,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 85.0,
+      "positionPt": 510.61627,
+      "text": "85",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 543.346375,
+      "text": "90",
+      "colour": "#333333"
+     }
+    ],
+    "title": "BEAQ Score",
+    "minimum": 15.0,
+    "maximum": 90.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "da462be81f157_p1",
+   "sourceChartId": "chart_2",
+   "typeReview": {
+    "reviewIndex": 65,
+    "detectedType": "unresolved",
+    "reviewedType": "horizontal_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "to Community and Clinical Distributions",
+     "bboxPt": [
+      188.99881,
+      559.4455,
+      417.69479,
+      571.4455
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Community:",
+     "bboxPt": [
+      167.27499,
+      608.67188,
+      199.27899,
+      614.67188
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th percentile",
+     "bboxPt": [
+      163.59999,
+      614.67188,
+      202.95398,
+      620.67188
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Clinical:",
+     "bboxPt": [
+      369.177,
+      603.17188,
+      390.177,
+      609.17188
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th percentile",
+     "bboxPt": [
+      360.00006,
+      609.17188,
+      399.35403,
+      615.17188
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "BEAQ Score",
+     "bboxPt": [
+      269.50201,
+      729.28119,
+      326.19205,
+      739.28119
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Community:",
+     "bboxPt": [
+      221.814,
+      587.39087,
+      253.81799,
+      593.39087
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th percentile",
+     "bboxPt": [
+      218.13899,
+      593.39087,
+      257.49298,
+      599.39087
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Clinical:",
+     "bboxPt": [
+      312.94601,
+      587.39087,
+      333.94601,
+      593.39087
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th percentile",
+     "bboxPt": [
+      303.76907,
+      593.39087,
+      343.12305,
+      599.39087
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null,
+   "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "BEAQ Scoring & Interpretation",
+    "text": "The Brief Experiential Avoidance Questionnaire (BEAQ) yields a total score between 15 and 90, with higher scores indicating greater levels of experiential avoidance.\n\nThe total score is presented as a percentile based on normative data from a community sample of adults (Gámez et al., 2014), contextualising the respondent’s score relative to the typical level of experiential avoidance among individuals in the community.\n\nQualitative descriptors categorise the total score based on specific ranges of percentiles.\nLow (less than or equal to the 5th percentile)\nBelow Average (percentile between 6 and 24)\nAverage (percentile between 25 and 75)\nAbove Average (percentile between 76 and 94)\nHigh (greater than or equal to the 95th percentile)\nAn above average or high score suggests that the respondent tends to rely on avoidance as a coping strategy for uncomfortable internal experiences. This reflects lower levels of psychological flexibility and may be associated with difficulties relating to mental health and well-being. Lower scores suggest adaptive psychological flexibility and greater acceptance of internal experiences, even when they are uncomfortable or distressing.\nA graph is presented comparing the respondent’s score to the normative distribution of scores among adults in the community and a clinical sample of adults presenting for treatment in mental health outpatient clinics, with shaded areas corresponding to scores between the 25th and 75th percentile (Gámez et al., 2014). This graph contextualises the respondent’s score relative to typical levels of experiential avoidance among adults in the community and those presenting for treatment in mental health clinics.\n\nIf administered more than once, a meaningful change in experiential avoidance is defined as a change of 6 or more points in the total score based on a Minimally Important Difference (MID) calculation.\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "a462be81f157975b934470c30a07c44a112233392f45c6db046d8ed423cbe13e",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the BEAQ, \nsee here\n.\nThe Brief Experiential Avoidance Questionnaire (BEAQ) yields a total score between 15 and 90,\nwith higher scores indicating greater levels of experiential avoidance.\nThe total score is presented as a percentile based on normative data from a community sample\nof adults (Gámez et al., 2014), contextualising the respondent’s score relative to the typical\nlevel of experiential avoidance among individuals in the community.\nQualitative descriptors categorise the total score based on specific ranges of percentiles.\n- Low (less than or equal to the 5th percentile)\n- Below Average (percentile between 6 and 24)\n- Average (percentile between 25 and 75)\n- Above Average (percentile between 76 and 94)\n- High (greater than or equal to the 95th percentile)\nAn above average or high score suggests that the respondent tends to rely on avoidance as a\ncoping strategy for uncomfortable internal experiences. This reflects lower levels of\npsychological flexibility and may be associated with difficulties relating to mental health and well-\nbeing. Lower scores suggest adaptive psychological flexibility and greater acceptance of internal\nexperiences, even when they are uncomfortable or distressing.\nA graph is presented comparing the respondent’s score to the normative distribution of scores\namong adults in the community and a clinical sample of adults presenting for treatment in mental\nhealth outpatient clinics, with shaded areas corresponding to scores between the 25th and 75th\npercentile (Gámez et al., 2014). This graph contextualises the respondent’s score relative to\ntypical levels of experiential avoidance among adults in the community and those presenting for\ntreatment in mental health clinics.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "a462be81f157975b934470c30a07c44a112233392f45c6db046d8ed423cbe13e",
+    "pageNumber": 3,
+    "text": "If administered more than once, a meaningful change in experiential avoidance is defined as a\nchange of 6 or more points in the total score based on a Minimally Important Difference (MID)\ncalculation.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The total score is presented as a percentile based on normative data from a community sample of adults (Gámez et al., 2014), contextualising the respondent’s score relative to the typical level of experiential avoidance among individuals in the community.",
+   "Qualitative descriptors categorise the total score based on specific ranges of percentiles.",
+   "Low (less than or equal to the 5th percentile)",
+   "Below Average (percentile between 6 and 24)",
+   "Average (percentile between 25 and 75)",
+   "Above Average (percentile between 76 and 94)",
+   "High (greater than or equal to the 95th percentile)",
+   "A graph is presented comparing the respondent’s score to the normative distribution of scores among adults in the community and a clinical sample of adults presenting for treatment in mental health outpatient clinics, with shaded areas corresponding to scores between the 25th and 75th percentile (Gámez et al., 2014).",
+   "This graph contextualises the respondent’s score relative to typical levels of experiential avoidance among adults in the community and those presenting for treatment in mental health clinics."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "da462be81f157_p1_chart_2"
+   ]
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 1,
+   "unresolvedCells": 105
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

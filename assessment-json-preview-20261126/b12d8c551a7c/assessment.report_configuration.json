@@ -1,0 +1,1044 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Total raw score",
+   "minimum": 0.0,
+   "maximum": 219.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35",
+     "Q36",
+     "Q37",
+     "Q38",
+     "Q39",
+     "Q40",
+     "Q41",
+     "Q42",
+     "Q43",
+     "Q44",
+     "Q45",
+     "Q46",
+     "Q47",
+     "Q48",
+     "Q49",
+     "Q50",
+     "Q51",
+     "Q52",
+     "Q53",
+     "Q54",
+     "Q55",
+     "Q56",
+     "Q57",
+     "Q58",
+     "Q59",
+     "Q60",
+     "Q61",
+     "Q62",
+     "Q63",
+     "Q64",
+     "Q65",
+     "Q66",
+     "Q67",
+     "Q68",
+     "Q69",
+     "Q70",
+     "Q71",
+     "Q72",
+     "Q73"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "aa09ed7325dabe94d0a8fc559d2efe635c16c2883dabbcfc95f418e4af171c11",
+     "page_url": null,
+     "page_sha256": "ae89f9c29e54e9e63cfd36d0c1394078c50452247fcf0fc3b08412cd0f516f8a",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 219.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_2",
+   "ruleId": "source_draft_2",
+   "label": "Total percent endorsed",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "source_draft_2",
+    "label": "Total percent endorsed",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35",
+     "Q36",
+     "Q37",
+     "Q38",
+     "Q39",
+     "Q40",
+     "Q41",
+     "Q42",
+     "Q43",
+     "Q44",
+     "Q45",
+     "Q46",
+     "Q47",
+     "Q48",
+     "Q49",
+     "Q50",
+     "Q51",
+     "Q52",
+     "Q53",
+     "Q54",
+     "Q55",
+     "Q56",
+     "Q57",
+     "Q58",
+     "Q59",
+     "Q60",
+     "Q61",
+     "Q62",
+     "Q63",
+     "Q64",
+     "Q65",
+     "Q66",
+     "Q67",
+     "Q68",
+     "Q69",
+     "Q70",
+     "Q71",
+     "Q72",
+     "Q73"
+    ],
+    "method": "count_threshold",
+    "value_field": "printed_value",
+    "multiplier": 1.36986301369863,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "aa09ed7325dabe94d0a8fc559d2efe635c16c2883dabbcfc95f418e4af171c11",
+     "page_url": null,
+     "page_sha256": "ae89f9c29e54e9e63cfd36d0c1394078c50452247fcf0fc3b08412cd0f516f8a",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "threshold": 2,
+    "operator": ">=",
+    "minimum": 0.0,
+    "maximum": 100.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_3",
+   "ruleId": "source_draft_3",
+   "label": "Depression Subscale percent endorsed",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "source_draft_3",
+    "label": "Depression Subscale percent endorsed",
+    "item_ids": [
+     "Q3",
+     "Q23",
+     "Q45",
+     "Q63",
+     "Q47",
+     "Q56",
+     "Q62",
+     "Q73",
+     "Q9",
+     "Q10",
+     "Q13",
+     "Q70",
+     "Q21",
+     "Q33",
+     "Q49",
+     "Q59",
+     "Q1",
+     "Q12",
+     "Q41",
+     "Q5",
+     "Q25",
+     "Q37",
+     "Q52",
+     "Q14",
+     "Q39",
+     "Q55",
+     "Q29",
+     "Q36",
+     "Q50",
+     "Q71",
+     "Q16",
+     "Q60",
+     "Q65",
+     "Q67",
+     "Q20",
+     "Q32",
+     "Q34",
+     "Q72",
+     "Q18",
+     "Q26",
+     "Q58",
+     "Q68",
+     "Q6",
+     "Q28",
+     "Q69"
+    ],
+    "method": "count_threshold",
+    "value_field": "printed_value",
+    "multiplier": 2.2222222222222223,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "aa09ed7325dabe94d0a8fc559d2efe635c16c2883dabbcfc95f418e4af171c11",
+     "page_url": null,
+     "page_sha256": "ae89f9c29e54e9e63cfd36d0c1394078c50452247fcf0fc3b08412cd0f516f8a",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "threshold": 2,
+    "operator": ">=",
+    "minimum": 0.0,
+    "maximum": 100.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_4",
+   "ruleId": "source_draft_4",
+   "label": "Hypomania/Biphasic Subscale percent endorsed",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "source_draft_4",
+    "label": "Hypomania/Biphasic Subscale percent endorsed",
+    "item_ids": [
+     "Q2",
+     "Q24",
+     "Q35",
+     "Q48",
+     "Q19",
+     "Q40",
+     "Q53",
+     "Q4",
+     "Q7",
+     "Q15",
+     "Q22",
+     "Q30",
+     "Q31",
+     "Q66",
+     "Q11",
+     "Q17",
+     "Q42",
+     "Q51",
+     "Q27",
+     "Q44",
+     "Q54",
+     "Q8",
+     "Q57",
+     "Q64",
+     "Q38",
+     "Q43",
+     "Q46",
+     "Q61"
+    ],
+    "method": "count_threshold",
+    "value_field": "printed_value",
+    "multiplier": 3.5714285714285716,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "aa09ed7325dabe94d0a8fc559d2efe635c16c2883dabbcfc95f418e4af171c11",
+     "page_url": null,
+     "page_sha256": "ae89f9c29e54e9e63cfd36d0c1394078c50452247fcf0fc3b08412cd0f516f8a",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "threshold": 2,
+    "operator": ">=",
+    "minimum": 0.0,
+    "maximum": 100.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageCount": 9,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d9431f140d024_p1",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d9431f140d024_p1_chart_1",
+    "d9431f140d024_p1_chart_2"
+   ],
+   "tableIds": [
+    "d9431f140d024_p1_table_1",
+    "d9431f140d024_p1_table_2"
+   ],
+   "sectionIds": [
+    "d9431f140d024_p1_section_1",
+    "d9431f140d024_p1_section_2",
+    "d9431f140d024_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p2",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d9431f140d024_p2_chart_1",
+    "d9431f140d024_p2_chart_2",
+    "d9431f140d024_p2_chart_3"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d9431f140d024_p2_section_1",
+    "d9431f140d024_p2_section_2",
+    "d9431f140d024_p2_section_3",
+    "d9431f140d024_p2_section_4",
+    "d9431f140d024_p2_section_5",
+    "d9431f140d024_p2_section_6"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p3",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d9431f140d024_p3_section_1",
+    "d9431f140d024_p3_section_2",
+    "d9431f140d024_p3_section_3",
+    "d9431f140d024_p3_section_4",
+    "d9431f140d024_p3_section_5"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p4",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d9431f140d024_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p5",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9431f140d024_p5_table_1"
+   ],
+   "sectionIds": [
+    "d9431f140d024_p5_section_1",
+    "d9431f140d024_p5_section_2"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p6",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9431f140d024_p6_table_1"
+   ],
+   "sectionIds": [
+    "d9431f140d024_p6_section_1"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p7",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9431f140d024_p7_table_1"
+   ],
+   "sectionIds": [
+    "d9431f140d024_p7_section_1"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p8",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 8,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9431f140d024_p8_table_1"
+   ],
+   "sectionIds": [
+    "d9431f140d024_p8_section_1"
+   ]
+  },
+  {
+   "pageId": "d9431f140d024_p9",
+   "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+   "pageNumber": 9,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d9431f140d024_p9_table_1"
+   ],
+   "sectionIds": [
+    "d9431f140d024_p9_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d9431f140d024_p1_section_1",
+   "pageId": "d9431f140d024_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p1_section_2",
+   "pageId": "d9431f140d024_p1",
+   "title": "GBI Total Score Percent Endorsed",
+   "type": "source_heading",
+   "bboxPt": [
+    186.18521,
+    300.04855,
+    382.24118,
+    316.57254
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p1_section_3",
+   "pageId": "d9431f140d024_p1",
+   "title": "GBI Subscale Score Percentiles",
+   "type": "results",
+   "bboxPt": [
+    193.50522,
+    548.39496,
+    374.92114,
+    564.91901
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p2_section_1",
+   "pageId": "d9431f140d024_p2",
+   "title": "Total Score in Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    209.91045,
+    149.81235,
+    362.61044,
+    166.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p2_section_2",
+   "pageId": "d9431f140d024_p2",
+   "title": "to Normative Community and Bipolar Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    141.57646,
+    161.81235,
+    430.94443,
+    178.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p2_section_3",
+   "pageId": "d9431f140d024_p2",
+   "title": "Depression Percent Endorsed Score in Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    138.55246,
+    349.81235,
+    433.96841,
+    366.33633
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p2_section_4",
+   "pageId": "d9431f140d024_p2",
+   "title": "to Normative Community and Bipolar Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    141.57646,
+    361.81235,
+    430.94443,
+    378.33633
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p2_section_5",
+   "pageId": "d9431f140d024_p2",
+   "title": "Hypomania/Biphasia Percent Endorsed Score in Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    112.21246,
+    549.81232,
+    460.30841,
+    566.33636
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p2_section_6",
+   "pageId": "d9431f140d024_p2",
+   "title": "to Normative Community and Bipolar Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    141.57646,
+    561.81232,
+    430.94443,
+    578.33636
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p3_section_1",
+   "pageId": "d9431f140d024_p3",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    124.57648,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p3_section_2",
+   "pageId": "d9431f140d024_p3",
+   "title": " suicidal thoughts. ",
+   "type": "source_heading",
+   "bboxPt": [
+    315.69238,
+    160.17683,
+    415.93552,
+    175.32384
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p3_section_3",
+   "pageId": "d9431f140d024_p3",
+   "title": "Likely to Have Bipolar Disorder",
+   "type": "source_heading",
+   "bboxPt": [
+    350.55136,
+    184.53078,
+    513.76947,
+    199.67778
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#ff0000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p3_section_4",
+   "pageId": "d9431f140d024_p3",
+   "title": "'High' ",
+   "type": "source_heading",
+   "bboxPt": [
+    271.05438,
+    257.28482,
+    303.79044,
+    272.43182
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#ff0000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p3_section_5",
+   "pageId": "d9431f140d024_p3",
+   "title": " 'Moderate'",
+   "type": "source_heading",
+   "bboxPt": [
+    271.05438,
+    535.73877,
+    328.24341,
+    550.8858
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#b8860b"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p4_section_1",
+   "pageId": "d9431f140d024_p4",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    290.26642,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p5_section_1",
+   "pageId": "d9431f140d024_p5",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p5_section_2",
+   "pageId": "d9431f140d024_p5",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    622.16107,
+    151.82047,
+    641.43903
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p6_section_1",
+   "pageId": "d9431f140d024_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p7_section_1",
+   "pageId": "d9431f140d024_p7",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p8_section_1",
+   "pageId": "d9431f140d024_p8",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d9431f140d024_p9_section_1",
+   "pageId": "d9431f140d024_p9",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "GBI Scoring & Interpretation",
+    "text": "The GBI total score ranges from 0 to 219. The GBI total score reflects the frequency and intensity of symptoms related to bipolar disorder.\nScore is also expressed as the “percent endorsed”, which uses a binary scoring where “Never or Hardly Ever” and “Sometimes” are not endorsed, while responses “Often” and “Very Often or Almost Constantly” are considered endorsed. Percent endorsed convert scores to 0% to 100%.\n\nTotal scores are classified into three risk categories:\nUnlikely to have Bipolar Disorder (Percent endorsed between 0 and 26%): Individuals are likely to not have bipolar classified as likely non-cases, meaning they are unlikely to have bipolar. About 80% of the population typically falls within this category, indicating that their mood variability falls within the normal range.\nIndeterminate (Percent endorsed between 27% and 36%): Scores in this range indicate respondents may exhibit mild or atypical mood disturbances that are consistent with bipolar symptoms, but not to the extent that they clearly indicate bipolar disorder. This score range represents 12% of individuals among members of the community.\nLikely to have Bipolar Disorder (Percent endorsed 37% and above): Individuals within this range are classified as likely cases of bipolar disorder. Scores in this range reflect meaningful syndromal behavior consistent with bipolar types I, II, or Cyclothymia (Klein et al., 1986).\n\nThe subscale scores are also computed using the Binary scoring system, where scores are expressed as the percent of items endorsed as occurring “Often” and “Very Often or Almost Constantly”:\nDepression Subscale (items 3, 23, 45, 63, 47, 56, 62, 73, 9, 10, 13, 70, 21, 33, 49, 59, 1, 12, 41, 5, 25, 37, 52, 14, 39, 55, 29, 36, 50, 71, 16, 60, 65, 67, 20, 32, 34, 72, 18, 26, 58, 68, 6, 28, 69) A higher score on the Depression subscale indicates higher depressive symptomatology. The percent of symptoms endorsed are classified into three categories (Pendergast et al., 2014): Low – 0 to 4% – Unlikely to have any mood disorder Moderate – 5% to 31% – May have a mood disorder of some kind High – 32% to 100% – Likely to have a mood disorder of some kind (4.75 times more likely than the general public)\nHypomania/Biphasic Subscale (items 2, 24, 35, 48, 19, 40, 53, 4, 7, 15, 22, 30, 31, 66, 11, 17, 42, 51, 27, 44, 54, 8, 57, 64, 38, 43, 46, 61) A higher score on the Hypomania/Biphasic subscale suggests mood variability, impulsivity, or energy dysregulation consistent with hypomanic or manic episodes. The percent of symptoms endorsed are classified into three categories (Pendergast et al., 2014): Low – 0 to 18% – Unlikely to have bipolar disorder Moderate – 19% to 68% – 4.21 times more likely to have bipolar disorder than the general public. High – 69% to 100% – 6.49 times more likely to have bipolar disorder than the general public.\n\nA percentile is used to contextualise a respondent’s score compared to the normative community sample. The community sample represents the typical level of mood-related symptoms found in the general population (Bullock et al., 2011; Pendergast et al., 2014). A percentile of 50 suggests typical (and relatively healthy) experience of psychomotor energy, whereas a percentile of 80 indicates that the respondent scores higher than 80 percent of individuals, indicating some symptoms consistent with bipolar disorder.\nThe horizontal graphs presents the total score (0 to 219, scored using the likert method) and percent endorsed score for the subscales (from 0 to 100%). These graphs shows scores in comparison to the normative community and clinical distributions, with shaded areas around the two middle quartiles (between the 25th and 75th percentile). The clinical distribution represents individuals diagnosed with bipolar disorder (Bullock et al., 2011; Pendergast et al., 2014). This graph helps contextualise patterns of responding in comparison to the distribution of responses among community samples and those with a diagnosis of bipolar disorder (Pendergast et al., 2014).\n\nFor the total score, when 37% of symptoms are endorsed the scale has a sensitivity of .90, meaning it correctly identifies 90% of true cases (Klein et al., 1986). At this level, its specificity is .98, indicating it correctly identifies 98% of non-cases.\nHigher scores on the GBI may suggest the presence of bipolar disorder, which frequently coexists with other psychiatric conditions. For instance, research indicates that one in six adults with bipolar disorder also has ADHD (Schiweck et al., 2021). People with ADHD also score higher on the GBI than the general public. Other commonly associated disorders include autism spectrum disorder, borderline personality disorder, and substance use disorders (Menezes et al., 2019; Skokauskas & Frodl, 2015). Recent evidence highlights the GBI’s effectiveness in differentiating bipolar disorder from conditions such as unipolar depression and ADHD, making it a valuable tool for addressing comorbidity challenges in psychiatric assessments (Pendergast et al., 2014).\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+    "pageNumber": 4,
+    "text": "For comprehensive information on the GBI, \nsee here\n.\nThe GBI total score ranges from 0 to 219. The GBI total score reflects the frequency and\nintensity of symptoms related to bipolar disorder.\nScore is also expressed as the “percent endorsed”, which uses a binary scoring where “Never\nor Hardly Ever” and “Sometimes” are not endorsed, while responses “Often” and “Very Often\nor Almost Constantly” are considered endorsed. Percent endorsed convert scores to 0% to\n100%.\nTotal scores are classified into three risk categories:\n-Unlikely to have Bipolar Disorder (Percent endorsed between 0 and 26%): Individuals are likely\nto not have bipolar classified as likely non-cases, meaning they are unlikely to have bipolar.\nAbout 80% of the population typically falls within this category, indicating that their mood\nvariability falls within the normal range.\n-Indeterminate (Percent endorsed between 27% and 36%): Scores in this range indicate\nrespondents may exhibit mild or atypical mood disturbances that are consistent with bipolar\nsymptoms, but not to the extent that they clearly indicate bipolar disorder. This score range\nrepresents 12% of individuals among members of the community.\n-Likely to have Bipolar Disorder (Percent endorsed 37% and above): Individuals within this\nrange are classified as likely cases of bipolar disorder. Scores in this range reflect meaningful\nsyndromal behavior consistent with bipolar types I, II, or Cyclothymia (Klein et al., 1986).\nThe subscale scores are also computed using the Binary scoring system, where scores are\nexpressed as the percent of items endorsed as occurring “Often” and “Very Often or Almost\nConstantly”:\n- Depression Subscale\n(items 3, 23, 45, 63, 47, 56, 62, 73, 9, 10, 13, 70, 21, 33, 49, 59, 1, 12, 41, 5, 25, 37, 52, 14, 39,\n55, 29, 36, 50, 71, 16, 60, 65, 67, 20, 32, 34, 72, 18, 26, 58, 68, 6, 28, 69)\nA higher score on the Depression subscale indicates higher depressive symptomatology. The\npercent of symptoms endorsed are classified into three categories (Pendergast et al., 2014):\n-Low - 0 to 4% - Unlikely to have any mood disorder\n-Moderate - 5% to 31% - May have a mood disorder of some kind\n-High - 32% to 100% - Likely to have a mood disorder of some kind (4.75 times more likely than\nthe general public)\n- Hypomania/Biphasic Subscale\n(items 2, 24, 35, 48, 19, 40, 53, 4, 7, 15, 22, 30, 31, 66, 11, 17, 42, 51, 27, 44, 54, 8, 57, 64, 38,\n43, 46, 61)\nA higher score on the Hypomania/Biphasic subscale suggests mood variability, impulsivity, or\nenergy dysregulation consistent with hypomanic or manic episodes. The percent of symptoms",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "9431f140d0249249cd3dfd9fd946a45cf61e76880dc14237004b7d3fbdfa996b",
+    "pageNumber": 5,
+    "text": "endorsed are classified into three categories (Pendergast et al., 2014):\n-Low - 0 to 18% - Unlikely to have bipolar disorder\n-Moderate - 19% to 68% - 4.21 times more likely to have bipolar disorder than the general\npublic.\n-High - 69% to 100% - 6.49 times more likely to have bipolar disorder than the general public.\nA percentile is used to contextualise a respondent's score compared to the normative\ncommunity sample. The community sample represents the typical level of mood-related\nsymptoms found in the general population (Bullock et al., 2011; Pendergast et al., 2014). A\npercentile of 50 suggests typical (and relatively healthy) experience of psychomotor energy,\nwhereas a percentile of 80 indicates that the respondent scores higher than 80 percent of\nindividuals, indicating some symptoms consistent with bipolar disorder.\nThe horizontal graphs presents the total score (0 to 219, scored using the likert method) and\npercent endorsed score for the subscales (from 0 to 100%). These graphs shows scores in\ncomparison to the normative community and clinical distributions, with shaded areas around the\ntwo middle quartiles (between the 25th and 75th percentile). The clinical distribution represents\nindividuals diagnosed with bipolar disorder (Bullock et al., 2011; Pendergast et al., 2014). This\ngraph helps contextualise patterns of responding in comparison to the distribution of responses\namong community samples and those with a diagnosis of bipolar disorder (Pendergast et al.,\n2014).\nFor the total score, when 37% of symptoms are endorsed the scale has a sensitivity of .90,\nmeaning it correctly identifies 90% of true cases (Klein et al., 1986). At this level, its specificity is\n.98, indicating it correctly identifies 98% of non-cases.\nHigher scores on the GBI may suggest the presence of bipolar disorder, which frequently\ncoexists with other psychiatric conditions. For instance, research indicates that one in six adults\nwith bipolar disorder also has ADHD (Schiweck et al., 2021). People with ADHD also score\nhigher on the GBI than the general public. Other commonly associated disorders include autism\nspectrum disorder, borderline personality disorder, and substance use disorders (Menezes et\nal., 2019; Skokauskas & Frodl, 2015). Recent evidence highlights the GBI's effectiveness in\ndifferentiating bipolar disorder from conditions such as unipolar depression and ADHD, making it\na valuable tool for addressing comorbidity challenges in psychiatric assessments (Pendergast et\nal., 2014).",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A percentile is used to contextualise a respondent’s score compared to the normative community sample.",
+   "A percentile of 50 suggests typical (and relatively healthy) experience of psychomotor energy, whereas a percentile of 80 indicates that the respondent scores higher than 80 percent of individuals, indicating some symptoms consistent with bipolar disorder.",
+   "The horizontal graphs presents the total score (0 to 219, scored using the likert method) and percent endorsed score for the subscales (from 0 to 100%).",
+   "These graphs shows scores in comparison to the normative community and clinical distributions, with shaded areas around the two middle quartiles (between the 25th and 75th percentile).",
+   "This graph helps contextualise patterns of responding in comparison to the distribution of responses among community samples and those with a diagnosis of bipolar disorder (Pendergast et al., 2014)."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 5
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d9431f140d024_p2_chart_1",
+    "d9431f140d024_p2_chart_2",
+    "d9431f140d024_p2_chart_3"
+   ]
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 7,
+   "unresolvedCells": 403
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

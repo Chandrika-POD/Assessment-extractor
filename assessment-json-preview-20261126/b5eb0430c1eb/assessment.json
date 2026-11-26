@@ -1,0 +1,1022 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "thought-action-fusion-scale-revised-tafs-r--b5eb0430c1eb",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Thought Action Fusion Scale – Revised (TAFS-R)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Thought-Action Fusion Scale-Revised (TAFS-R) is a 19-item self-report measure designed to assess thought-action fusion (TAF), a cognitive distortion particularly relevant to obsessive-compulsive disorder (OCD) and related conditions (Shafran, Thordarson, & Rachman, 1996).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Do you disagree or agree with the following statements?",
+  "instructions_source": {
+   "url": null,
+   "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 76.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of all 19 items)",
+     "y": 282.8,
+     "url": null,
+     "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "For each subscale, percentiles based on a student and clinical sample are computed using Safron et al., (1996) original validation samples. A percentile of 50 for the OCD clinical sample represents the average amount of TAF thoughts that a person with OCD experiences, while a percentile of 50 on the student sample indicates the average TAF thoughts that a relatively healthy individual experiences. Percentiles are not computed for the total score."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "TAFS-R Scoring & Interpretation",
+    "text": "Raw scores and percentiles for the three subscales are given as output, with higher scores indicating a stronger tendency toward thought-action-fusion like cognitions.\n\nFor each subscale, percentiles based on a student and clinical sample are computed using Safron et al., (1996) original validation samples. A percentile of 50 for the OCD clinical sample represents the average amount of TAF thoughts that a person with OCD experiences, while a percentile of 50 on the student sample indicates the average TAF thoughts that a relatively healthy individual experiences. Percentiles are not computed for the total score.\n\nThe three subscales are as follows:\n1. TAF-Moral (items: 1, 3, 4, 6, 8, 10, 11, 13, 15, 17, 18, 19): The belief that having an unacceptable thought is the moral equivalent of carrying out the unacceptable or disturbing action.\n2. TAF-Likelihood-Other (items: 2, 5, 7, 9): The belief that thinking an unacceptable thought about another person increases the likelihood of that thing happening.\n3. TAF-Likelihood-Self (items: 12, 14, 16): The belief that thinking an unacceptable thought about ourselves makes it more likely to occur.\n\nOn first administration, the subscale percentiles are presented compared to the clinical OCD sample with a shaded colour in the background for the higher percentiles (indicating more Thought-Action-Fusion). On subsequent administrations the subscale percentiles are presented over time to indicate change as a result of treatment.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "TAF-Moral score (Items 1, 3, 4, 6, 8, 10, 11, 13, 15, 17, 18, 19):",
+    "y": 194.2,
+    "url": null,
+    "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "TAF-Likelihood Other score (Items 2, 5, 7, 9):",
+    "y": 219.0,
+    "url": null,
+    "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "TAF-Likelihood Self score (Items 12, 14, 16):",
+    "y": 243.8,
+    "url": null,
+    "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Shafran, R., Thordarson, D. S., & Rachman, S. (1996). Thought–action fusion in obsessive compulsive disorder. Journal of Anxiety Disorders, 10, 379–391. https://doi.org/10.1016/0887-6185(96)00018-7",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Lee, H., Cougle, J. R., & Telch, M. J. (2005). Thought–action fusion and its relationship to schizotypy and OCD symptoms. Behaviour Research and Therapy, 43(1), 29-41. https://doi.org/10.1016/j.brat.2003.11.002\nMeyer, J. F., & Brown, T. A. (2013). Psychometric evaluation of the Thought–Action fusion scale in a large clinical sample. Assessment, 20(6), 764-775. https://doi.org/10.1177/1073191112436670",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Thought Action Fusion Scale – Revised (TAFS-R) PDF",
+   "source_url": null,
+   "sha256": "ef61b2a8c11556224c8b6bdb59abde4ed18e7e52d63ca38e5bd8d314ee5f03ff",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ef61b2a8c11556224c8b6bdb59abde4ed18e7e52d63ca38e5bd8d314ee5f03ff.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Obsessional Compulsive Inventory – Child Self Report (ChOCI-R-S)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "26b18fa37e5e27fbe5aa6587ea8339ba5c520857dbe3644bd6c9756941249e51",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/26b18fa37e5e27fbe5aa6587ea8339ba5c520857dbe3644bd6c9756941249e51.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download TAFS-R PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e15dbb07700aa785cb036d3c4fa1ca37a075ee86b1990751a809aa6b1f6084e2",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e15dbb07700aa785cb036d3c4fa1ca37a075ee86b1990751a809aa6b1f6084e2.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "TAFS-R Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "31cbebcb26212bfdb039b12132589334ca73e9a9302acdadaa5bacbe5c610e94",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/31cbebcb26212bfdb039b12132589334ca73e9a9302acdadaa5bacbe5c610e94.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "TAFS-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "7c18b246e2b8a651408f5cd1ae5ece31872a847994bafa4f49f9fdb7fa77e71d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7c18b246e2b8a651408f5cd1ae5ece31872a847994bafa4f49f9fdb7fa77e71d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "TAFS-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "d17e38cc173ab37e0bf1c518043bd31c498acc2295f4fe40856b4959d7eee066",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d17e38cc173ab37e0bf1c518043bd31c498acc2295f4fe40856b4959d7eee066.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "TAFS-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Thought Action Fusion Scale – Revised u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download TAFS-R PDF",
+   "source_url": null,
+   "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "TAFS-R Sample Results",
+   "source_url": null,
+   "sha256": "bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 19
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total Score",
+    "minimum": 0.0,
+    "maximum": 76.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 76.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c",
+   "guidance_titles": [
+    "TAFS-R Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q17",
+    "question_ref": "/questionnaire/items/16",
+    "source_label": "17",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q18",
+    "question_ref": "/questionnaire/items/17",
+    "source_label": "18",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q19",
+    "question_ref": "/questionnaire/items/18",
+    "source_label": "19",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "58ec6a2e4c865f8537fe6e8c1fc9a172ba4e9906b2ce89ac053e53d0679eab6b",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T10:30:06.422033+00:00",
+  "raw_extraction_sha256": "f343650aea6f48d8b45474d2abef79e7a292a1c88c2214cbe9317053d81cd400",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "OCD"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1016/0887-6185(96)00018-7",
+    "title": "https://doi.org/10.1016/0887-6185(96)00018-7"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.brat.2003.11.002",
+    "title": "https://doi.org/10.1016/j.brat.2003.11.002"
+   },
+   {
+    "url": "https://doi.org/10.1177/1073191112436670",
+    "title": "https://doi.org/10.1177/1073191112436670"
+   },
+   {
+    "url": null,
+    "title": "OCD assessment questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Obsessive compulsive assessment"
+   },
+   {
+    "url": null,
+    "title": "GAD worry measure"
+   },
+   {
+    "url": null,
+    "title": "Youth obsessive compulsive measure"
+   },
+   {
+    "url": null,
+    "title": "Download TAFS-R PDF"
+   },
+   {
+    "url": null,
+    "title": "TAFS-R Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Cognitive Behaviour Therapy (CBT)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

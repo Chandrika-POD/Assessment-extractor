@@ -1,0 +1,2691 @@
+{
+  "schemaVersion": "assessment-report-config/2.0.0",
+  "assessmentId": "penn-alcohol-craving-scale-pacs--7dc3b08407b5",
+  "title": "Penn Alcohol Craving Scale (PACS)",
+  "status": "source_specific_draft",
+  "definitionVersion": "1.0.0-draft.6",
+  "assessment": {
+    "name": "Penn Alcohol Craving Scale (PACS)",
+    "short_name": null,
+    "language": "en",
+    "description": "The Penn Alcohol Craving Scale (PACS; Flannery et al., 1999) is a 5-item self-report questionnaire designed to measure alcohol craving over the preceding week. Unlike measures that separate craving into distinct components (e.g., obsessions and compulsions), the PACS treats craving as a coherent, unified construct.",
+    "respondent_type": null,
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [
+        "past week"
+      ],
+      "status": "requires_review"
+    },
+    "target_population": null,
+    "intended_uses": null,
+    "estimated_administration_minutes": null
+  },
+  "administration": {
+    "instructions": "Please read each item carefully and select the response that best describes your craving during the past week.",
+    "instructions_source": {
+      "url": null,
+      "sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "selected_form_url": null,
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 5,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "During the past week how often have you thought about drinking or about how good a drink would make you feel?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+          "page": 1,
+          "bbox": [
+            33.75,
+            200.64,
+            565.92,
+            336.0
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Never (0 times during the past week)",
+            "source_label": "Never (0 times during the past week)",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Rarely (1 to 2 times during the past week)",
+            "source_label": "Rarely (1 to 2 times during the past week)",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Occasionally (3 to 4 times during the past week)",
+            "source_label": "Occasionally (3 to 4 times during the past week)",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Sometimes (5 to 10 times during the past week or 1 to 2 times per day)",
+            "source_label": "Sometimes (5 to 10 times during the past week or 1 to 2 times per day)",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Often (11 to 20 times during the past week or 2 to 3 times per day)",
+            "source_label": "Often (11 to 20 times during the past week or 2 to 3 times per day)",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "Most of the time (20 to 40 times during the past week or 3 to 6 times per day)",
+            "source_label": "Most of the time (20 to 40 times during the past week or 3 to 6 times per day)",
+            "label_origin": "printed_label",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Nearly all of the time (more than 40 times during the past week or more than 6 times per day)",
+            "source_label": "Nearly all of the time (more than 40 times during the past week or more than 6 times per day)",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "At its most severe point, how strong was your craving during the past week?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS2",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+          "page": 1,
+          "bbox": [
+            33.75,
+            334.89,
+            565.92,
+            471.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "None at all",
+            "source_label": "None at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Slight, that is a very mild urge",
+            "source_label": "Slight, that is a very mild urge",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Mild urge",
+            "source_label": "Mild urge",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Moderate urge",
+            "source_label": "Moderate urge",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Strong urge, but easily controlled",
+            "source_label": "Strong urge, but easily controlled",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "Strong urge and difficult to control",
+            "source_label": "Strong urge and difficult to control",
+            "label_origin": "printed_label",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Strong urge and would have drunk alcohol if it were available",
+            "source_label": "Strong urge and would have drunk alcohol if it were available",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "During the past week how much time have you spent thinking about drinking or bout how good a drink would make you feel?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS3",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+          "page": 1,
+          "bbox": [
+            33.75,
+            469.89,
+            565.92,
+            606.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "None at all",
+            "source_label": "None at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Less than 20 minutes",
+            "source_label": "Less than 20 minutes",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "21 to 45 minutes",
+            "source_label": "21 to 45 minutes",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "46 to 90 minutes",
+            "source_label": "46 to 90 minutes",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "90 minutes to 3 hours",
+            "source_label": "90 minutes to 3 hours",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "Between 3 to 6 hours",
+            "source_label": "Between 3 to 6 hours",
+            "label_origin": "printed_label",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "More than 6 hours",
+            "source_label": "More than 6 hours",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "During the past week how difficult would it have been to resist taking a drink if you had known a bottle were in your house?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+          "page": 1,
+          "bbox": [
+            33.75,
+            604.89,
+            565.92,
+            741.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not difficult at all",
+            "source_label": "Not difficult at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Very mildly difficult",
+            "source_label": "Very mildly difficult",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Mildly difficult",
+            "source_label": "Mildly difficult",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Moderately difficult",
+            "source_label": "Moderately difficult",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Very difficult",
+            "source_label": "Very difficult",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "Extremely difficult",
+            "source_label": "Extremely difficult",
+            "label_origin": "printed_label",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Would not be able to resist",
+            "source_label": "Would not be able to resist",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "Keeping in mind your responses to the previous questions, please rate your overall average alcohol craving for the past week.",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS5",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+          "page": 2,
+          "bbox": [
+            33.75,
+            38.62,
+            565.92,
+            177.0
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Never thought about drinking and never had the urge to drink",
+            "source_label": "Never thought about drinking and never had the urge to drink",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Rarely thought about drinking and rarely had the urge to drink",
+            "source_label": "Rarely thought about drinking and rarely had the urge to drink",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Occasionally thought about drinking and occasionally had the urge to drink",
+            "source_label": "Occasionally thought about drinking and occasionally had the urge to drink",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Sometimes thought about drinking and sometimes had the urge to drink",
+            "source_label": "Sometimes thought about drinking and sometimes had the urge to drink",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Often thought about drinking and often had the urge to drink",
+            "source_label": "Often thought about drinking and often had the urge to drink",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "Thought about drinking most of the time and had the urge to drink most of the time",
+            "source_label": "Thought about drinking most of the time and had the urge to drink most of the time",
+            "label_origin": "printed_label",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Thought about drinking nearly all of the time and had the urge to drink nearly all of the time",
+            "source_label": "Thought about drinking nearly all of the time and had the urge to drink nearly all of the time",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Never (0 times during the past week)",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Never (0 times during the past week)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Rarely (1 to 2 times during the past week)",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Rarely (1 to 2 times during the past week)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Occasionally (3 to 4 times during the past week)",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Occasionally (3 to 4 times during the past week)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Sometimes (5 to 10 times during the past week or 1 to 2 times per day)",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Sometimes (5 to 10 times during the past week or 1 to 2 times per day)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Often (11 to 20 times during the past week or 2 to 3 times per day)",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Often (11 to 20 times during the past week or 2 to 3 times per day)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": "Most of the time (20 to 40 times during the past week or 3 to 6 times per day)",
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "Most of the time (20 to 40 times during the past week or 3 to 6 times per day)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O7",
+            "label": "Nearly all of the time (more than 40 times during the past week or more than 6 times per day)",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Nearly all of the time (more than 40 times during the past week or more than 6 times per day)",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS2",
+        "options": [
+          {
+            "id": "O1",
+            "label": "None at all",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "None at all",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Slight, that is a very mild urge",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Slight, that is a very mild urge",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Mild urge",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Mild urge",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Moderate urge",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Moderate urge",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Strong urge, but easily controlled",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Strong urge, but easily controlled",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": "Strong urge and difficult to control",
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "Strong urge and difficult to control",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O7",
+            "label": "Strong urge and would have drunk alcohol if it were available",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Strong urge and would have drunk alcohol if it were available",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS3",
+        "options": [
+          {
+            "id": "O1",
+            "label": "None at all",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "None at all",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Less than 20 minutes",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Less than 20 minutes",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "21 to 45 minutes",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "21 to 45 minutes",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "46 to 90 minutes",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "46 to 90 minutes",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "90 minutes to 3 hours",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "90 minutes to 3 hours",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": "Between 3 to 6 hours",
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "Between 3 to 6 hours",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O7",
+            "label": "More than 6 hours",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "More than 6 hours",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS4",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Not difficult at all",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Not difficult at all",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Very mildly difficult",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Very mildly difficult",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Mildly difficult",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Mildly difficult",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Moderately difficult",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Moderately difficult",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Very difficult",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Very difficult",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": "Extremely difficult",
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "Extremely difficult",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O7",
+            "label": "Would not be able to resist",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Would not be able to resist",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS5",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Never thought about drinking and never had the urge to drink",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Never thought about drinking and never had the urge to drink",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Rarely thought about drinking and rarely had the urge to drink",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Rarely thought about drinking and rarely had the urge to drink",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Occasionally thought about drinking and occasionally had the urge to drink",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Occasionally thought about drinking and occasionally had the urge to drink",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Sometimes thought about drinking and sometimes had the urge to drink",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Sometimes thought about drinking and sometimes had the urge to drink",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Often thought about drinking and often had the urge to drink",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Often thought about drinking and often had the urge to drink",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": "Thought about drinking most of the time and had the urge to drink most of the time",
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "Thought about drinking most of the time and had the urge to drink most of the time",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O7",
+            "label": "Thought about drinking nearly all of the time and had the urge to drink nearly all of the time",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Thought about drinking nearly all of the time and had the urge to drink nearly all of the time",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "source_draft_1",
+        "label": "Total raw score",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5"
+        ],
+        "method": "sum",
+        "value_field": "printed_value",
+        "multiplier": 1,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "questionnaire_url": null,
+          "questionnaire_sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+          "page_url": null,
+          "page_sha256": "ebe1f68f063450687050334166d5ed9d5c372a967ecfac8d02175b3a0c46106f",
+          "method": "reviewed_saved_source_membership_and_arithmetic",
+          "context_section_ids": [
+            "C4",
+            "C11",
+            "C14",
+            "LIVE_C27",
+            "LIVE_C30",
+            "LIVE_C41"
+          ],
+          "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+        },
+        "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+        "minimum": 0.0,
+        "maximum": 30.0
+      }
+    ],
+    "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+    "rules_provenance": {
+      "questionnaire_url": null,
+      "questionnaire_sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+      "page_url": null,
+      "page_sha256": "ebe1f68f063450687050334166d5ed9d5c372a967ecfac8d02175b3a0c46106f",
+      "method": "reviewed_saved_source_membership_and_arithmetic"
+    },
+    "source_rule_excerpts": [
+      "Each item is rated on a 7-point scale, where 0 represents the complete absence of craving (e.g., ‘never thought about drinking’, ‘no urge’) and 6 represents the most severe level (e.g., ‘thought about drinking nearly all of the time’, ‘would not be able to resist’). Response anchors vary across items but follow the same severity progression. The PACS total score is the sum of all five items, yielding a possible range of 0 to 30. Higher scores indicate greater alcohol craving.",
+      "0–14: No/Minimal (Absent). Craving is absent or minimal. The average response falls in the “nonexistent”, “slight”, or “mild” range across items.",
+      "15–20: Moderate (Subclinical). Craving is present at a moderate level. The average response corresponds to “moderate urge” or “moderately difficult” to resist.",
+      "21–30: Elevated (Present). Craving is clearly present and potentially clinically significant. The average response corresponds to “strong urge” or “very difficult” to resist.",
+      "The PACS is primarily intended for progress monitoring, and score changes across administrations provide clinically informative data about treatment response. A minimally important difference (MID) of 3 points is used to evaluate whether a change in total score is clinically meaningful. This threshold is derived by applying the widely used convention that a meaningful change equals approximately half a standard deviation (Norman et al., 2003; Turner et al., 2010), applied to the treatment-seeking sample SD of 5.99 (Murphy et al., 2014).",
+      "Criterion validity. Hartwell et al. (2019) examined correspondence between PACS scores and a structured diagnostic interview for craving (N = 338 non-treatment-seeking heavy drinkers), an important consideration given craving’s status as a formal DSM-5 AUD criterion. A PACS threshold of ≥15 yielded sensitivity of 67%, specificity of 81%, positive predictive value of 49%, and negative predictive value of 90%. The higher threshold of >20 yielded a sensitivity of only 41% with a specificity of 95%. This remains the only known study to date to evaluate the PACS against a structured diagnostic criterion.",
+      "Murphy et al. (2014) proposed a content-based framework for interpreting PACS total scores, derived from the semantics of the response options. When a respondent’s average item score (total score ÷ 5) is mapped to the response anchors, three interpretive categories emerge: Absent, Subclinical, and Present. NovoPsych uses labels that are functionally equivalent (No/Minimal, Moderate, Elevated) to Murphy’s original labels but provide more descriptively transparent severity language for clinical reporting. Notably, the lower boundary of the Moderate category (score of 15 or greater) receives independent empirical support from Hartwell et al. (2019), who identified this threshold as optimal for discriminating diagnostic-interview-endorsed craving from non-craving (sensitivity = 0.67, specificity = 0.81, NPV = 0.90), providing convergent criterion-validity support for this boundary."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "PACS Scoring",
+        "text": "Each item is rated on a 7-point scale, where 0 represents the complete absence of craving (e.g., ‘never thought about drinking’, ‘no urge’) and 6 represents the most severe level (e.g., ‘thought about drinking nearly all of the time’, ‘would not be able to resist’). Response anchors vary across items but follow the same severity progression. The PACS total score is the sum of all five items, yielding a possible range of 0 to 30. Higher scores indicate greater alcohol craving.\n",
+        "source_url": null
+      },
+      {
+        "title": "PACS Percentile Context",
+        "text": "To provide additional interpretive context, percentile rankings are derived from a treatment-seeking heavy-drinking reference sample (Murphy et al., 2014). These percentiles indicate a respondent’s position relative to other treatment-seeking heavy drinkers. For example, a total score of 15 corresponds to approximately the 26th percentile in the treatment-seeking sample, indicating that roughly one-quarter of treatment-seeking heavy drinkers scored at or below this level. A score of 21 corresponds to approximately the 63rd percentile.\n",
+        "source_url": null
+      },
+      {
+        "title": "PACS Change Score Interpretation",
+        "text": "The PACS is primarily intended for progress monitoring, and score changes across administrations provide clinically informative data about treatment response. A minimally important difference (MID) of 3 points is used to evaluate whether a change in total score is clinically meaningful. This threshold is derived by applying the widely used convention that a meaningful change equals approximately half a standard deviation (Norman et al., 2003; Turner et al., 2010), applied to the treatment-seeking sample SD of 5.99 (Murphy et al., 2014).\n",
+        "source_url": null
+      },
+      {
+        "title": "What does a high PACS score mean for someone in alcohol treatment?",
+        "text": "A high PACS score, particularly one in the Elevated range (21 or above), indicates that the person is experiencing strong, frequent urges to drink and significant difficulty resisting them. In a treatment context, this does not mean treatment is failing, but it does suggest that craving is an active clinical concern that may benefit from targeted intervention. Craving management strategies, including cognitive techniques, pharmacotherapy (such as naltrexone or acamprosate), and relapse prevention planning, are most relevant for clients scoring in this range. Elevated scores early in treatment are common and expected; what matters clinically is the trajectory over time.\n",
+        "source_url": null
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [
+      {
+        "page": 2,
+        "text": "Total Score (sum of the 5 item scores)",
+        "y": 205.5,
+        "url": null,
+        "sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      }
+    ],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+    "remaining_work": [
+      "Normative conversions and clinical publication require separate source-specific review.",
+      "Source-described change comparison and interpretation are retained as prose; not executable."
+    ],
+    "implementation_status": {
+      "raw_calculation": "draft_implemented",
+      "interpretation": "not_compiled",
+      "normative_conversion": "not_implemented",
+      "clinical_use": "not_approved"
+    },
+    "runtime_module": "definition_runtime.py"
+  },
+  "metricBindings": [
+    {
+      "id": "metric_source_draft_1",
+      "ruleId": "source_draft_1",
+      "label": "Total raw score",
+      "minimum": 0.0,
+      "maximum": 30.0,
+      "calculation": {
+        "id": "source_draft_1",
+        "label": "Total raw score",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5"
+        ],
+        "method": "sum",
+        "value_field": "printed_value",
+        "multiplier": 1,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "questionnaire_url": null,
+          "questionnaire_sha256": "33ee8c655e69f09bbe34d121c0e22012d2b16b3a70dede14653ff7ac7f8818f0",
+          "page_url": null,
+          "page_sha256": "ebe1f68f063450687050334166d5ed9d5c372a967ecfac8d02175b3a0c46106f",
+          "method": "reviewed_saved_source_membership_and_arithmetic",
+          "context_section_ids": [
+            "C4",
+            "C11",
+            "C14",
+            "LIVE_C27",
+            "LIVE_C30",
+            "LIVE_C41"
+          ],
+          "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+        },
+        "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+        "minimum": 0.0,
+        "maximum": 30.0
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    }
+  ],
+  "sources": [
+    {
+      "sha256": "b6408f5477ed6a44c86069e2a4108f2e09638d387b1b6e704b869b8636ec869d",
+      "pageCount": 4,
+      "identityStatus": "title_or_acronym_matches",
+      "hashVerified": true,
+      "usage": "reference_identity_only_no_runtime_fetch"
+    }
+  ],
+  "page": {
+    "coordinateUnit": "pt",
+    "origin": "top_left",
+    "documentsAreAlternativesNotConcatenated": true
+  },
+  "theme": {
+    "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+    "branding": "application_branding",
+    "sourceLogosRequired": false
+  },
+  "pages": [
+    {
+      "pageId": "db6408f5477ed_p1",
+      "documentSha256": "b6408f5477ed6a44c86069e2a4108f2e09638d387b1b6e704b869b8636ec869d",
+      "pageNumber": 1,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "db6408f5477ed_p1_chart_1",
+        "db6408f5477ed_p1_chart_2"
+      ],
+      "tableIds": [],
+      "sectionIds": [
+        "db6408f5477ed_p1_section_1",
+        "db6408f5477ed_p1_section_2",
+        "db6408f5477ed_p1_section_3",
+        "db6408f5477ed_p1_section_4",
+        "db6408f5477ed_p1_section_5"
+      ]
+    },
+    {
+      "pageId": "db6408f5477ed_p2",
+      "documentSha256": "b6408f5477ed6a44c86069e2a4108f2e09638d387b1b6e704b869b8636ec869d",
+      "pageNumber": 2,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "db6408f5477ed_p2_section_1"
+      ]
+    },
+    {
+      "pageId": "db6408f5477ed_p3",
+      "documentSha256": "b6408f5477ed6a44c86069e2a4108f2e09638d387b1b6e704b869b8636ec869d",
+      "pageNumber": 3,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "db6408f5477ed_p3_section_1"
+      ]
+    },
+    {
+      "pageId": "db6408f5477ed_p4",
+      "documentSha256": "b6408f5477ed6a44c86069e2a4108f2e09638d387b1b6e704b869b8636ec869d",
+      "pageNumber": 4,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [
+        "db6408f5477ed_p4_table_1"
+      ],
+      "sectionIds": [
+        "db6408f5477ed_p4_section_1"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "db6408f5477ed_p1_section_1",
+      "pageId": "db6408f5477ed_p1",
+      "title": "PACS Total Score",
+      "type": "source_heading",
+      "bboxPt": [
+        34.3465,
+        197.90677,
+        153.37451,
+        211.90677
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "db6408f5477ed_p1_section_2",
+      "pageId": "db6408f5477ed_p1",
+      "title": "PACS Total Score",
+      "type": "source_heading",
+      "bboxPt": [
+        246.62601,
+        290.87048,
+        348.64999,
+        302.87048
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "db6408f5477ed_p1_section_3",
+      "pageId": "db6408f5477ed_p1",
+      "title": "PACS Total Score in Comparison to Heavy Drinkers in",
+      "type": "source_heading",
+      "bboxPt": [
+        148.97301,
+        490.87051,
+        457.72098,
+        502.87051
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "db6408f5477ed_p1_section_4",
+      "pageId": "db6408f5477ed_p1",
+      "title": "Non-Treatment-Seeking and Treatment-Seeking Samples",
+      "type": "source_heading",
+      "bboxPt": [
+        141.3109,
+        502.87054,
+        465.38287,
+        514.87054
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "db6408f5477ed_p1_section_5",
+      "pageId": "db6408f5477ed_p1",
+      "title": "Interpretation",
+      "type": "interpretation",
+      "bboxPt": [
+        34.3465,
+        681.52972,
+        124.57652,
+        695.52972
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "db6408f5477ed_p2_section_1",
+      "pageId": "db6408f5477ed_p2",
+      "title": "Scoring and Interpretation Information",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        34.3465,
+        269.25595,
+        290.26645,
+        283.25595
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "db6408f5477ed_p3_section_1",
+      "pageId": "db6408f5477ed_p3",
+      "title": "Client Responses",
+      "type": "responses",
+      "bboxPt": [
+        34.3465,
+        357.19684,
+        151.8205,
+        371.19684
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "db6408f5477ed_p4_section_1",
+      "pageId": "db6408f5477ed_p4",
+      "title": "Client Responses (cont.)",
+      "type": "responses",
+      "bboxPt": [
+        34.3465,
+        144.0488,
+        198.48251,
+        158.0488
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    }
+  ],
+  "charts": [
+    {
+      "id": "db6408f5477ed_p1_chart_1",
+      "title": "PACS Total Score",
+      "type": "vertical_bar",
+      "bboxPt": [
+        209.638,
+        316.772,
+        394.638,
+        443.213
+      ],
+      "widthPt": 185.0,
+      "heightPt": 126.441,
+      "axisColour": "#333333",
+      "observedDataType": "raw_score",
+      "backgroundBands": [
+        {
+          "bboxPt": [
+            209.63799,
+            318.77283,
+            392.638,
+            358.18301
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            209.63799,
+            358.18283,
+            392.638,
+            383.07303
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            209.63799,
+            383.06302,
+            392.638,
+            443.21301
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        }
+      ],
+      "variantEvidence": "single_visit_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [
+          {
+            "value": 0.0,
+            "positionPt": 201.858,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": "PACS Total Score in Comparison to Heavy Drinkers in",
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 30.0,
+            "positionPt": 319.5462,
+            "text": "30",
+            "colour": "#333333"
+          },
+          {
+            "value": 25.0,
+            "positionPt": 340.28638,
+            "text": "25",
+            "colour": "#333333"
+          },
+          {
+            "value": 20.0,
+            "positionPt": 361.02618,
+            "text": "20",
+            "colour": "#333333"
+          },
+          {
+            "value": 15.0,
+            "positionPt": 381.76639,
+            "text": "15",
+            "colour": "#333333"
+          },
+          {
+            "value": 10.0,
+            "positionPt": 402.5062,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 423.246,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 443.98621,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 30.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": null,
+          "colour": "#1f76b3",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.49459462191380416,
+          "barThicknessPt": 30.0,
+          "fill": "#1f77b4",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#1f76b3"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#1f76b3"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#1f76b3"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#1f76b3"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#1f76b3"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "db6408f5477ed_p1",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 316,
+        "detectedType": "vertical_bar",
+        "reviewedType": "vertical_bar",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "PACS Total Score",
+          "bboxPt": [
+            246.62601,
+            290.87048,
+            348.64999,
+            302.87048
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "No/Minimal",
+          "bboxPt": [
+            357.638,
+            410.57693,
+            387.63797,
+            416.57693
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Moderate",
+          "bboxPt": [
+            362.29401,
+            368.05695,
+            387.63797,
+            374.05695
+          ],
+          "colour": "#ff9800",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Elevated",
+          "bboxPt": [
+            364.29199,
+            335.90695,
+            387.638,
+            341.90695
+          ],
+          "colour": "#c62828",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "PACS Total Score in Comparison to Heavy Drinkers in",
+          "bboxPt": [
+            148.97301,
+            490.87051,
+            457.72098,
+            502.87051
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    },
+    {
+      "id": "db6408f5477ed_p1_chart_2",
+      "title": null,
+      "type": "horizontal_bar",
+      "bboxPt": [
+        52.346,
+        546.772,
+        554.346,
+        629.213
+      ],
+      "widthPt": 502.0,
+      "heightPt": 82.441,
+      "axisColour": "#333333",
+      "observedDataType": "raw_score",
+      "backgroundBands": [
+        {
+          "bboxPt": [
+            155.677,
+            552.77283,
+            319.00702,
+            605.21301
+          ],
+          "colour": "#90ee90",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            52.3465,
+            619.21222,
+            294.01651,
+            629.65204
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            294.01599,
+            619.21222,
+            394.01599,
+            629.65204
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            394.01599,
+            619.21222,
+            552.34601,
+            629.65204
+          ],
+          "colour": "#c62828",
+          "opacity": 0.5,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        }
+      ],
+      "variantEvidence": "single_visit_observed",
+      "xAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 0.0,
+            "positionPt": 52.3464,
+            "text": "0",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 135.6765,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 10.0,
+            "positionPt": 219.01649500000002,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 15.0,
+            "positionPt": 302.34619,
+            "text": "15",
+            "colour": "#333333"
+          },
+          {
+            "value": 20.0,
+            "positionPt": 385.67627,
+            "text": "20",
+            "colour": "#333333"
+          },
+          {
+            "value": 25.0,
+            "positionPt": 469.01648,
+            "text": "25",
+            "colour": "#333333"
+          },
+          {
+            "value": 30.0,
+            "positionPt": 552.34619,
+            "text": "30",
+            "colour": "#333333"
+          }
+        ],
+        "title": "Total Score",
+        "minimum": 0.0,
+        "maximum": 30.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "yAxis": {
+        "status": "unresolved",
+        "ticks": [],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": null,
+          "colour": "#1f76b3",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.5121365523773102,
+          "barThicknessPt": 16.0,
+          "fill": "#1f77b4",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#103f5f"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#1f76b3"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#1f76b3"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#1f76b3"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#1f76b3"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "db6408f5477ed_p1",
+      "sourceChartId": "chart_2",
+      "typeReview": {
+        "reviewIndex": 317,
+        "detectedType": "horizontal_bar",
+        "reviewedType": "horizontal_bar",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Non-Treatment-Seeking and Treatment-Seeking Samples",
+          "bboxPt": [
+            141.3109,
+            502.87054,
+            465.38287,
+            514.87054
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "25th",
+          "bboxPt": [
+            149.838,
+            545.59692,
+            161.51399,
+            551.59692
+          ],
+          "colour": "#228b22",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "75th",
+          "bboxPt": [
+            313.17841,
+            545.59692,
+            324.8544,
+            551.59692
+          ],
+          "colour": "#228b22",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "25th",
+          "bboxPt": [
+            294.83801,
+            611.2569,
+            306.51401,
+            617.2569
+          ],
+          "colour": "#4682b4",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "75th",
+          "bboxPt": [
+            429.83862,
+            611.2569,
+            441.51462,
+            617.2569
+          ],
+          "colour": "#4682b4",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "No/Minimal",
+          "bboxPt": [
+            160.677,
+            621.24963,
+            185.67699,
+            626.24963
+          ],
+          "colour": "#99a3a4",
+          "font": "Helvetica",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Moderate",
+          "bboxPt": [
+            333.457,
+            621.24963,
+            354.57703,
+            626.24963
+          ],
+          "colour": "#99a3a4",
+          "font": "Helvetica",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Elevated",
+          "bboxPt": [
+            463.44901,
+            621.24963,
+            482.90399,
+            626.24963
+          ],
+          "colour": "#696969",
+          "font": "Helvetica",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Total Score",
+          "bboxPt": [
+            276.78201,
+            652.98621,
+            327.91199,
+            662.98621
+          ],
+          "colour": "#fdfefe",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Non-Treatment-Seeking",
+          "bboxPt": [
+            205.336,
+            530.81592,
+            269.35599,
+            536.81592
+          ],
+          "colour": "#228b22",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "50th percentile",
+          "bboxPt": [
+            217.6692,
+            536.81592,
+            257.02319,
+            542.81592
+          ],
+          "colour": "#228b22",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Treatment-Seeking",
+          "bboxPt": [
+            342.50699,
+            530.81592,
+            393.52493,
+            536.81592
+          ],
+          "colour": "#4682b4",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "50th percentile",
+          "bboxPt": [
+            348.33902,
+            536.81592,
+            387.69299,
+            542.81592
+          ],
+          "colour": "#4682b4",
+          "font": "Helvetica",
+          "fontSizePt": 6.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Interpretation",
+          "bboxPt": [
+            34.3465,
+            681.52972,
+            124.57652,
+            695.52972
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    }
+  ],
+  "tables": [
+    {
+      "id": "db6408f5477ed_p4_table_1",
+      "type": "response_table",
+      "bboxPt": [
+        28.3465,
+        141.73221,
+        566.93002,
+        401.37701
+      ],
+      "rowCount": 17,
+      "columnCount": 2,
+      "cellsPt": [
+        [
+          28.3465,
+          141.73221,
+          566.93002,
+          161.57465
+        ],
+        [
+          28.3465,
+          161.57465,
+          48.1891,
+          182.263
+        ],
+        [
+          28.3465,
+          182.263,
+          48.1891,
+          196.43631
+        ],
+        [
+          28.3465,
+          196.43631,
+          48.1891,
+          210.61005
+        ],
+        [
+          28.3465,
+          210.61005,
+          48.1891,
+          224.78284
+        ],
+        [
+          28.3465,
+          224.78284,
+          48.1891,
+          238.95599
+        ],
+        [
+          28.3465,
+          238.95599,
+          48.1891,
+          253.1293
+        ],
+        [
+          28.3465,
+          253.1293,
+          48.1891,
+          267.30298
+        ],
+        [
+          28.3465,
+          267.30298,
+          48.1891,
+          281.47609
+        ],
+        [
+          28.3465,
+          281.47609,
+          48.1891,
+          302.16498
+        ],
+        [
+          28.3465,
+          302.16498,
+          48.1891,
+          316.3378
+        ],
+        [
+          28.3465,
+          316.3378,
+          48.1891,
+          330.51102
+        ],
+        [
+          28.3465,
+          330.51102,
+          48.1891,
+          344.68431
+        ],
+        [
+          28.3465,
+          344.68431,
+          48.1891,
+          358.85803
+        ],
+        [
+          28.3465,
+          358.85803,
+          48.1891,
+          373.03084
+        ],
+        [
+          28.3465,
+          373.03084,
+          48.1891,
+          387.20401
+        ],
+        [
+          28.3465,
+          387.20401,
+          48.1891,
+          401.37701
+        ],
+        [
+          48.1891,
+          161.57465,
+          566.93002,
+          182.263
+        ],
+        [
+          48.1891,
+          182.263,
+          566.93002,
+          196.43631
+        ],
+        [
+          48.1891,
+          196.43631,
+          566.93002,
+          210.61005
+        ],
+        [
+          48.1891,
+          210.61005,
+          566.93002,
+          224.78284
+        ],
+        [
+          48.1891,
+          224.78284,
+          566.93002,
+          238.95599
+        ],
+        [
+          48.1891,
+          238.95599,
+          566.93002,
+          253.1293
+        ],
+        [
+          48.1891,
+          253.1293,
+          566.93002,
+          267.30298
+        ],
+        [
+          48.1891,
+          267.30298,
+          566.93002,
+          281.47609
+        ],
+        [
+          48.1891,
+          281.47609,
+          566.93002,
+          302.16498
+        ],
+        [
+          48.1891,
+          302.16498,
+          566.93002,
+          316.3378
+        ],
+        [
+          48.1891,
+          316.3378,
+          566.93002,
+          330.51102
+        ],
+        [
+          48.1891,
+          330.51102,
+          566.93002,
+          344.68431
+        ],
+        [
+          48.1891,
+          344.68431,
+          566.93002,
+          358.85803
+        ],
+        [
+          48.1891,
+          358.85803,
+          566.93002,
+          373.03084
+        ],
+        [
+          48.1891,
+          373.03084,
+          566.93002,
+          387.20401
+        ],
+        [
+          48.1891,
+          387.20401,
+          566.93002,
+          401.37701
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "db6408f5477ed_p4",
+      "sourceTableId": "table_1",
+      "columns": [],
+      "rowBindings": [
+        {
+          "sourceRowIndex": 1,
+          "questionId": "Q4",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "questionId": "Q5",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        }
+      ],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "static_heading",
+          "content": "Client Responses (cont )\n.",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q4",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q5",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 13,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 13,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 14,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 14,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 15,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 15,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 16,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 16,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    }
+  ],
+  "variants": {
+    "sourceStatements": [],
+    "firstAdministration": {
+      "status": "requires_review"
+    },
+    "repeatAdministration": {
+      "status": "requires_review"
+    },
+    "policy": "Do not invent a repeat chart from an observed first-visit chart."
+  },
+  "interpretationRules": {
+    "encodedRules": [],
+    "sourceGuidance": [
+      {
+        "title": "PACS Scoring",
+        "text": "Each item is rated on a 7-point scale, where 0 represents the complete absence of craving (e.g., ‘never thought about drinking’, ‘no urge’) and 6 represents the most severe level (e.g., ‘thought about drinking nearly all of the time’, ‘would not be able to resist’). Response anchors vary across items but follow the same severity progression. The PACS total score is the sum of all five items, yielding a possible range of 0 to 30. Higher scores indicate greater alcohol craving.\n",
+        "source_url": null
+      },
+      {
+        "title": "PACS Percentile Context",
+        "text": "To provide additional interpretive context, percentile rankings are derived from a treatment-seeking heavy-drinking reference sample (Murphy et al., 2014). These percentiles indicate a respondent’s position relative to other treatment-seeking heavy drinkers. For example, a total score of 15 corresponds to approximately the 26th percentile in the treatment-seeking sample, indicating that roughly one-quarter of treatment-seeking heavy drinkers scored at or below this level. A score of 21 corresponds to approximately the 63rd percentile.\n",
+        "source_url": null
+      },
+      {
+        "title": "PACS Change Score Interpretation",
+        "text": "The PACS is primarily intended for progress monitoring, and score changes across administrations provide clinically informative data about treatment response. A minimally important difference (MID) of 3 points is used to evaluate whether a change in total score is clinically meaningful. This threshold is derived by applying the widely used convention that a meaningful change equals approximately half a standard deviation (Norman et al., 2003; Turner et al., 2010), applied to the treatment-seeking sample SD of 5.99 (Murphy et al., 2014).\n",
+        "source_url": null
+      },
+      {
+        "title": "What does a high PACS score mean for someone in alcohol treatment?",
+        "text": "A high PACS score, particularly one in the Elevated range (21 or above), indicates that the person is experiencing strong, frequent urges to drink and significant difficulty resisting them. In a treatment context, this does not mean treatment is failing, but it does suggest that craving is an active clinical concern that may benefit from targeted intervention. Craving management strategies, including cognitive techniques, pharmacotherapy (such as naltrexone or acamprosate), and relapse prevention planning, are most relevant for clients scoring in this range. Elevated scores early in treatment are common and expected; what matters clinically is the trajectory over time.\n",
+        "source_url": null
+      }
+    ],
+    "reportScoringGuidance": [
+      {
+        "documentSha256": "b6408f5477ed6a44c86069e2a4108f2e09638d387b1b6e704b869b8636ec869d",
+        "pageNumber": 2,
+        "text": "For comprehensive information on the PACS, \nsee here\n.\n### PACS Scoring\nEach item is rated on a 7-point scale, where 0 represents the complete absence of craving (e.g.,\n'never thought about drinking', 'no urge') and 6 represents the most severe level (e.g., 'thought\nabout drinking nearly all of the time', 'would not be able to resist'). Response anchors vary\nacross items but follow the same severity progression. The PACS total score is the sum of all\nfive items, yielding a possible range of 0 to 30. Higher scores indicate greater alcohol craving.\n### PACS Craving Severity Categories\nDescriptive severity labels are based on the response anchors' meanings at each score level\n(i.e., what a typical respondent at that score would endorse across items). Based upon the\nPACS total score, descriptive severity labels are (with Murphy et al.’s (2014) original descriptors\nin brackets):\n- 0–14: No/Minimal (Absent). Craving is absent or minimal. The average response falls in the\n\"nonexistent\", \"slight\", or \"mild\" range across items.\n- 15–20: Moderate (Subclinical). Craving is present at a moderate level. The average response\ncorresponds to \"moderate urge\" or \"moderately difficult\" to resist.\n- 21–30: Elevated (Present). Craving is clearly present and potentially clinically significant. The\naverage response corresponds to \"strong urge\" or \"very difficult\" to resist.\nThese categories are content-based interpretive guideposts derived from the response scale\nsemantics, not empirically validated diagnostic thresholds. They should be interpreted as\ndescribing the general level of craving severity rather than as clinical classifications. In clinical\npractice, a score of 15 or above may warrant further attention to craving management, while\nscores of 21 or above suggest craving at a level where the respondent reports strong urges and\nsignificant difficulty resisting.\n### PACS Percentile Context\nTo provide additional interpretive context, percentile rankings are derived from a treatment-\nseeking heavy-drinking reference sample (Murphy et al., 2014). These percentiles indicate a\nrespondent's position relative to other treatment-seeking heavy drinkers. For example, a total\nscore of 15 corresponds to approximately the 26th percentile in the treatment-seeking sample,\nindicating that roughly one-quarter of treatment-seeking heavy drinkers scored at or below this\nlevel. A score of 21 corresponds to approximately the 63rd percentile.\n### PACS Change Score Interpretation\nThe PACS is primarily intended for progress monitoring, and score changes across",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      }
+    ],
+    "sourceRequirements": [
+      "To provide additional interpretive context, percentile rankings are derived from a treatment-seeking heavy-drinking reference sample (Murphy et al., 2014).",
+      "These percentiles indicate a respondent’s position relative to other treatment-seeking heavy drinkers.",
+      "For example, a total score of 15 corresponds to approximately the 26th percentile in the treatment-seeking sample, indicating that roughly one-quarter of treatment-seeking heavy drinkers scored at or below this level.",
+      "A score of 21 corresponds to approximately the 63rd percentile.",
+      "This threshold is derived by applying the widely used convention that a meaningful change equals approximately half a standard deviation (Norman et al., 2003; Turner et al., 2010), applied to the treatment-seeking sample SD of 5.99 (Murphy et al., 2014)."
+    ],
+    "templates": [],
+    "sampleNarrativeReusable": false,
+    "runtimeEnabled": false
+  },
+  "referenceTables": [],
+  "paintStyles": [],
+  "assets": {
+    "runtimeImages": [],
+    "runtimeSourceFiles": [],
+    "runtimeSourceUrls": []
+  },
+  "runtimeContract": {
+    "version2RendererRequired": true,
+    "loadDefinitionFrom": "database_json",
+    "useCurrentPatientAnswers": true,
+    "useSamplePatientValues": false,
+    "externalNetworkRequired": false,
+    "sourceArchiveRequired": false,
+    "unknownScoring": "withhold",
+    "unknownNorms": "withhold",
+    "unsupportedChart": "withhold_and_report_exception",
+    "unknownRepeatLayout": "withhold"
+  },
+  "validation": {
+    "jsonStructureValidated": true,
+    "sourceHashesVerified": true,
+    "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+    "fullPageLayoutCompared": false,
+    "scoreBindingsReviewed": false,
+    "tablesSemanticallyReviewed": false,
+    "rendererEquivalent": false,
+    "clinicalApproved": false,
+    "readyForApplicationImport": false
+  },
+  "exceptions": [
+    {
+      "code": "score_and_series_bindings_require_review",
+      "count": 2
+    },
+    {
+      "code": "table_cell_semantics_require_review",
+      "count": 1,
+      "unresolvedCells": 16
+    },
+    {
+      "code": "interpretation_and_variant_rules_require_review"
+    }
+  ]
+}

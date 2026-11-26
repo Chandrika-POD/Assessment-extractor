@@ -1,0 +1,700 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Core Depressive Index Score",
+   "minimum": 0.25,
+   "maximum": 1.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Core Depressive Index Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q6",
+     "Q14",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ],
+    "multiplier": 0.03125,
+    "value_field": "printed_value",
+    "minimum": 0.25,
+    "maximum": 1.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Core Depressive Index Score (Items 1, 3, 6, 14, 17, 18, 19, 20, sum of circled values, divided by 32):",
+     "y": 164.2,
+     "url": null,
+     "sha256": "48a7a2724d0c7eb1261146c558b0d700bf6dd7889466556eea545a77d69c1379"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Cognitive Index Score",
+   "minimum": 0.25,
+   "maximum": 1.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Cognitive Index Score",
+    "method": "sum",
+    "item_ids": [
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q16"
+    ],
+    "multiplier": 0.0625,
+    "value_field": "printed_value",
+    "minimum": 0.25,
+    "maximum": 1.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Cognitive Index Score (Items 10, 11, 12, 16, sum of circled values, divided by 16):",
+     "y": 189.0,
+     "url": null,
+     "sha256": "48a7a2724d0c7eb1261146c558b0d700bf6dd7889466556eea545a77d69c1379"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Anxiety Index Score",
+   "minimum": 0.25,
+   "maximum": 1.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Anxiety Index Score",
+    "method": "sum",
+    "item_ids": [
+     "Q4",
+     "Q13",
+     "Q15"
+    ],
+    "multiplier": 0.08333333333333333,
+    "value_field": "printed_value",
+    "minimum": 0.25,
+    "maximum": 1.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Anxiety Index Score (Items 4, 13, 15, sum of circled values, divided by 12):",
+     "y": 213.8,
+     "url": null,
+     "sha256": "48a7a2724d0c7eb1261146c558b0d700bf6dd7889466556eea545a77d69c1379"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Somatic Index Score",
+   "minimum": 0.25,
+   "maximum": 1.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Somatic Index Score",
+    "method": "sum",
+    "item_ids": [
+     "Q5",
+     "Q7",
+     "Q9"
+    ],
+    "multiplier": 0.08333333333333333,
+    "value_field": "printed_value",
+    "minimum": 0.25,
+    "maximum": 1.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Somatic Index Score (Items 5, 7, 9, sum of circled values, divided by 12):",
+     "y": 238.5,
+     "url": null,
+     "sha256": "48a7a2724d0c7eb1261146c558b0d700bf6dd7889466556eea545a77d69c1379"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+   "pageCount": 6,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d24c557265206_p1",
+   "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d24c557265206_p1_chart_1",
+    "d24c557265206_p1_chart_2"
+   ],
+   "tableIds": [
+    "d24c557265206_p1_table_1",
+    "d24c557265206_p1_table_2"
+   ],
+   "sectionIds": [
+    "d24c557265206_p1_section_1",
+    "d24c557265206_p1_section_2",
+    "d24c557265206_p1_section_3",
+    "d24c557265206_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "d24c557265206_p2",
+   "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d24c557265206_p2_section_1",
+    "d24c557265206_p2_section_2",
+    "d24c557265206_p2_section_3",
+    "d24c557265206_p2_section_4",
+    "d24c557265206_p2_section_5",
+    "d24c557265206_p2_section_6",
+    "d24c557265206_p2_section_7",
+    "d24c557265206_p2_section_8"
+   ]
+  },
+  {
+   "pageId": "d24c557265206_p3",
+   "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d24c557265206_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "d24c557265206_p4",
+   "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d24c557265206_p4_table_1"
+   ],
+   "sectionIds": [
+    "d24c557265206_p4_section_1",
+    "d24c557265206_p4_section_2"
+   ]
+  },
+  {
+   "pageId": "d24c557265206_p5",
+   "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d24c557265206_p5_table_1"
+   ],
+   "sectionIds": [
+    "d24c557265206_p5_section_1"
+   ]
+  },
+  {
+   "pageId": "d24c557265206_p6",
+   "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d24c557265206_p6_table_1"
+   ],
+   "sectionIds": [
+    "d24c557265206_p6_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d24c557265206_p1_section_1",
+   "pageId": "d24c557265206_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p1_section_2",
+   "pageId": "d24c557265206_p1",
+   "title": "Zung Self-Rating Depression Scale Index Scores",
+   "type": "results",
+   "bboxPt": [
+    159.63846,
+    343.65488,
+    437.05444,
+    360.17886
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p1_section_3",
+   "pageId": "d24c557265206_p1",
+   "title": "Zung Self-Rating Depression Scale Total Index Score",
+   "type": "source_heading",
+   "bboxPt": [
+    146.97246,
+    559.65485,
+    449.72043,
+    576.17889
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p1_section_4",
+   "pageId": "d24c557265206_p1",
+   "title": "Compared to Community and Clinical Samples",
+   "type": "source_heading",
+   "bboxPt": [
+    164.98445,
+    571.65485,
+    431.70844,
+    588.17889
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_1",
+   "pageId": "d24c557265206_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    124.57648,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_2",
+   "pageId": "d24c557265206_p2",
+   "title": "Moderate to Severe",
+   "type": "source_heading",
+   "bboxPt": [
+    140.56137,
+    172.27681,
+    242.03633,
+    187.42381
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_3",
+   "pageId": "d24c557265206_p2",
+   "title": "Cognitive",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    257.13083,
+    228.85834,
+    272.27783
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_4",
+   "pageId": "d24c557265206_p2",
+   "title": "Severe",
+   "type": "source_heading",
+   "bboxPt": [
+    368.85538,
+    257.13083,
+    404.93536,
+    272.27783
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_5",
+   "pageId": "d24c557265206_p2",
+   "title": "Core Depressive",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    426.68481,
+    265.55435,
+    441.83182
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_6",
+   "pageId": "d24c557265206_p2",
+   "title": "Moderate to Severe",
+   "type": "source_heading",
+   "bboxPt": [
+    405.55136,
+    426.68481,
+    507.02637,
+    441.83182
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_7",
+   "pageId": "d24c557265206_p2",
+   "title": "Anxiety",
+   "type": "source_heading",
+   "bboxPt": [
+    178.74237,
+    608.33875,
+    218.47435,
+    623.48578
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p2_section_8",
+   "pageId": "d24c557265206_p2",
+   "title": "Mild to Moderate",
+   "type": "source_heading",
+   "bboxPt": [
+    358.47137,
+    608.33875,
+    445.86642,
+    623.48578
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p3_section_1",
+   "pageId": "d24c557265206_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    290.26642,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p4_section_1",
+   "pageId": "d24c557265206_p4",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p4_section_2",
+   "pageId": "d24c557265206_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    271.26102,
+    151.82047,
+    290.53903
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p5_section_1",
+   "pageId": "d24c557265206_p5",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d24c557265206_p6_section_1",
+   "pageId": "d24c557265206_p6",
+   "title": "Full Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    113.69848,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration, a graph is presented showing the respondent’s Total Index Score and Index Score for each subscale.",
+   "If administered more than once, longitudinal graphs are presented for the respondent’s Total and subscale Index Scores, which is useful for monitoring any changes in depressive symptoms over time and treatment progress and outcomes."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "SDS Scoring & Interpretation",
+    "text": "The Zung Self-Rating Depression Scale (SDS) provides a Total Score reflecting the overall frequency with which the respondent has experienced depressive symptoms in the past “several days,” with higher scores indicating higher frequency.\nThe respondent’s Total Score is expressed as a Community Percentile based on normative data for people aged 16 years and over in the general population (Knight et al., 1983), contextualising their score relative to the typical scores of people aged 16 years and over overall. For example, the 50th percentile represents the typical/“Normal” level of depressive symptoms among people aged 16 years and over, while scores on the 90th percentile fall within the top 10% when compared to people aged 16 years and over and are indicative of “Mild to Moderate” depressive symptoms.\n\nScores are also provided for the four factors (subscales) identified by Romera and colleagues (2008):\nCore Depressive (Items 1, 3, 6, 14, 17, 18, 19, and 20), which primarily reflects emotional or affective symptoms of depression.\nCognitive (Items 10, 11, 12, and 16), which reflects altered cognitive function including decreased concentration and speed of response.\nAnxiety (Items 4, 13, and 15), which captures symptoms commonly associated with anxiety disorders that frequently co-occur with depression.\nSomatic (Items 5, 7, and 9), which addresses physical manifestations of depression.\nThe scoring approach uses qualitative descriptors to categorise the Total Score and subscale scores. Each descriptor corresponds to a specific range of Index Scores (Zung, 1973). An Index Score is calculated by dividing the Raw Score by the maximum possible Raw Score on the scale/subscale, and multiplying by 100. This standardises the scores and enables direct comparisons between subscales. The descriptors and corresponding Index Score ranges are as follows.\n“Normal” – Index Score between 25 and 49\n“Mild to Moderate” – Index Score between 50 and 59\n“Moderate to Severe” – Index Score between 60 and 69\n“Severe” – Index Score between 70 and 100\nOn first administration, a graph is presented showing the respondent’s Total Index Score and Index Score for each subscale.\n\nIf administered more than once, longitudinal graphs are presented for the respondent’s Total and subscale Index Scores, which is useful for monitoring any changes in depressive symptoms over time and treatment progress and outcomes.\n\n\nA graph is also presented comparing the respondent’s Total Index Score to the normative distribution of Zung SDS scores among 1,125 people aged 16 years and over in the general population and 1,049 clients of a psychiatric outpatient clinic, with shaded areas corresponding to scores between the 25th and 75th percentile (Holmes et al., 1988; Knight et al., 1983). This graph contextualises the respondent’s score relative to the typical level of depressive symptoms among people aged 16 years and over overall and those presenting for treatment in mental health clinics.\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+    "pageNumber": 3,
+    "text": "For comprehensive information on the Zung Self-Rating Depression Scale (SDS), \nsee here\n.\nThe Zung Self-Rating Depression Scale (SDS) provides a Total Score reflecting the overall\nfrequency with which the respondent has experienced depressive symptoms in the past “several\ndays,” with higher scores indicating higher frequency.\nThe respondent’s Total Score is expressed as a Community Percentile based on normative\ndata for people aged 16 years and over in the general population (Knight et al., 1983),\ncontextualising their score relative to the typical scores of people aged 16 years and over\noverall. For example, the 50th percentile represents the typical/“Normal” level of depressive\nsymptoms among people aged 16 years and over, while scores on the 90th percentile fall within\nthe top 10% when compared to people aged 16 years and over and are indicative of “Mild to\nModerate” depressive symptoms.\nScores are also provided for the four factors (subscales) identified by Romera and colleagues\n(2008):\n- Core Depressive (Items 1, 3, 6, 14, 17, 18, 19, and 20), which primarily reflects emotional or\naffective symptoms of depression.\n- Cognitive (Items 10, 11, 12, and 16), which reflects altered cognitive function including\ndecreased concentration and speed of response.\n- Anxiety (Items 4, 13, and 15), which captures symptoms commonly associated with anxiety\ndisorders that frequently co-occur with depression.\n- Somatic (Items 5, 7, and 9), which addresses physical manifestations of depression.\nThe scoring approach uses qualitative descriptors to categorise the Total Score and subscale\nscores. Each descriptor corresponds to a specific range of Index Scores (Zung, 1973). An Index\nScore is calculated by dividing the Raw Score by the maximum possible Raw Score on the\nscale/subscale, and multiplying by 100. This standardises the scores and enables direct\ncomparisons between subscales. The descriptors and corresponding Index Score ranges are as\nfollows.\n- “Normal” - Index Score between 25 and 49\n- “Mild to Moderate” - Index Score between 50 and 59\n- “Moderate to Severe” - Index Score between 60 and 69\n- “Severe” - Index Score between 70 and 100\nOn first administration, a graph is presented showing the respondent’s Total Index Score and\nIndex Score for each subscale.\nIf administered more than once, longitudinal graphs are presented for the respondent’s Total\nand subscale Index Scores, which is useful for monitoring any changes in depressive symptoms\nover time and treatment progress and outcomes.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "24c557265206acb0500b8f18e20147645403d204a3b31b82cc818b85e2a3b733",
+    "pageNumber": 4,
+    "text": "A graph is also presented comparing the respondent’s Total Index Score to the normative\ndistribution of Zung SDS scores among 1,125 people aged 16 years and over in the general\npopulation and 1,049 clients of a psychiatric outpatient clinic, with shaded areas corresponding\nto scores between the 25th and 75th percentile (Holmes et al., 1988; Knight et al., 1983). This\ngraph contextualises the respondent’s score relative to the typical level of depressive symptoms\namong people aged 16 years and over overall and those presenting for treatment in mental\nhealth clinics.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The respondent’s Total Score is expressed as a Community Percentile based on normative data for people aged 16 years and over in the general population (Knight et al., 1983), contextualising their score relative to the typical scores of people aged 16 years and over overall.",
+   "For example, the 50th percentile represents the typical/“Normal” level of depressive symptoms among people aged 16 years and over, while scores on the 90th percentile fall within the top 10% when compared to people aged 16 years and over and are indicative of “Mild to Moderate” depressive symptoms.",
+   "The scoring approach uses qualitative descriptors to categorise the Total Score and subscale scores.",
+   "Each descriptor corresponds to a specific range of Index Scores (Zung, 1973).",
+   "The descriptors and corresponding Index Score ranges are as follows.",
+   "On first administration, a graph is presented showing the respondent’s Total Index Score and Index Score for each subscale.",
+   "If administered more than once, longitudinal graphs are presented for the respondent’s Total and subscale Index Scores, which is useful for monitoring any changes in depressive symptoms over time and treatment progress and outcomes.",
+   "A graph is also presented comparing the respondent’s Total Index Score to the normative distribution of Zung SDS scores among 1,125 people aged 16 years and over in the general population and 1,049 clients of a psychiatric outpatient clinic, with shaded areas corresponding to scores between the 25th and 75th percentile (Holmes et al., 1988; Knight et al., 1983).",
+   "This graph contextualises the respondent’s score relative to the typical level of depressive symptoms among people aged 16 years and over overall and those presenting for treatment in mental health clinics."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 5,
+   "unresolvedCells": 162
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

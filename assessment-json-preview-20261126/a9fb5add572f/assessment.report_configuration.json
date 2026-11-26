@@ -1,0 +1,1812 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Disruptive Mood/Behaviour subscale score",
+   "minimum": 0.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Disruptive Mood/Behaviour subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q6",
+     "Q8",
+     "Q10",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q18",
+     "Q19",
+     "Q21",
+     "Q22"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Disruptive Mood/Behaviour subscale score (average of items 5, 6, 8, 10, 12, 13, 14, 18, 19, 21, 22):",
+     "y": 332.2,
+     "url": null,
+     "sha256": "570d2110feafe7befbd6979350f5b26d60c06df52fe3bd7f9e5500be7911c4b1"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Inattentive/Hyperactive subscale score",
+   "minimum": 0.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Inattentive/Hyperactive subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q4",
+     "Q7",
+     "Q15",
+     "Q16",
+     "Q23",
+     "Q24",
+     "Q25"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Inattentive/Hyperactive subscale score (average of items 1, 3, 4, 7, 15, 16, 23, 24, 25):",
+     "y": 357.0,
+     "url": null,
+     "sha256": "570d2110feafe7befbd6979350f5b26d60c06df52fe3bd7f9e5500be7911c4b1"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Depression/Anxiety subscale score",
+   "minimum": 0.0,
+   "maximum": 4.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Depression/Anxiety subscale score",
+    "method": "mean",
+    "item_ids": [
+     "Q2",
+     "Q9",
+     "Q11",
+     "Q17"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Depression/Anxiety subscale score (average of items 2, 9, 11, 17):",
+     "y": 381.8,
+     "url": null,
+     "sha256": "570d2110feafe7befbd6979350f5b26d60c06df52fe3bd7f9e5500be7911c4b1"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Total WURS-25 score",
+   "minimum": 0.0,
+   "maximum": 100.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Total WURS-25 score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total WURS-25 score (sum of all 25 items)",
+     "y": 420.8,
+     "url": null,
+     "sha256": "570d2110feafe7befbd6979350f5b26d60c06df52fe3bd7f9e5500be7911c4b1"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageCount": 7,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d23e221f7ef7b_p1",
+   "documentSha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d23e221f7ef7b_p1_chart_1",
+    "d23e221f7ef7b_p1_chart_2"
+   ],
+   "tableIds": [
+    "d23e221f7ef7b_p1_table_1",
+    "d23e221f7ef7b_p1_table_2"
+   ],
+   "sectionIds": [
+    "d23e221f7ef7b_p1_section_1",
+    "d23e221f7ef7b_p1_section_2",
+    "d23e221f7ef7b_p1_section_3",
+    "d23e221f7ef7b_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "d23e221f7ef7b_p2",
+   "documentSha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d23e221f7ef7b_p2_chart_1",
+    "d23e221f7ef7b_p2_chart_2",
+    "d23e221f7ef7b_p2_chart_3"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d23e221f7ef7b_p2_section_1",
+    "d23e221f7ef7b_p2_section_2",
+    "d23e221f7ef7b_p2_section_3",
+    "d23e221f7ef7b_p2_section_4"
+   ]
+  },
+  {
+   "pageId": "d23e221f7ef7b_p3",
+   "documentSha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d23e221f7ef7b_p3_table_1"
+   ],
+   "sectionIds": [
+    "d23e221f7ef7b_p3_section_1",
+    "d23e221f7ef7b_p3_section_2",
+    "d23e221f7ef7b_p3_section_3",
+    "d23e221f7ef7b_p3_section_4",
+    "d23e221f7ef7b_p3_section_5",
+    "d23e221f7ef7b_p3_section_6"
+   ]
+  },
+  {
+   "pageId": "d23e221f7ef7b_p4",
+   "documentSha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d23e221f7ef7b_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "d23e221f7ef7b_p5",
+   "documentSha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d23e221f7ef7b_p5_table_1"
+   ],
+   "sectionIds": [
+    "d23e221f7ef7b_p5_section_1",
+    "d23e221f7ef7b_p5_section_2"
+   ]
+  },
+  {
+   "pageId": "d23e221f7ef7b_p6",
+   "documentSha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d23e221f7ef7b_p6_table_1"
+   ],
+   "sectionIds": [
+    "d23e221f7ef7b_p6_section_1"
+   ]
+  },
+  {
+   "pageId": "d23e221f7ef7b_p7",
+   "documentSha256": "23e221f7ef7b875e07d70a08eecd5a13c8af2095d07ca8d1bb48fccf9d4a5a7a",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d23e221f7ef7b_p7_table_1"
+   ],
+   "sectionIds": [
+    "d23e221f7ef7b_p7_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d23e221f7ef7b_p1_section_1",
+   "pageId": "d23e221f7ef7b_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p1_section_2",
+   "pageId": "d23e221f7ef7b_p1",
+   "title": "WURS-25 Normative Percentiles",
+   "type": "results",
+   "bboxPt": [
+    196.65445,
+    334.0643,
+    380.03845,
+    350.58829
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p1_section_3",
+   "pageId": "d23e221f7ef7b_p1",
+   "title": "WURS-25 Total Score in Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    198.32845,
+    554.06427,
+    408.36444,
+    570.58832
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p1_section_4",
+   "pageId": "d23e221f7ef7b_p1",
+   "title": "to Non-Clinical and ADHD Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    191.00845,
+    566.06427,
+    415.68448,
+    582.58832
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p2_section_1",
+   "pageId": "d23e221f7ef7b_p2",
+   "title": "Disruptive Mood/Behavior Subscale in Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    157.31245,
+    149.81235,
+    449.38043,
+    166.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p2_section_2",
+   "pageId": "d23e221f7ef7b_p2",
+   "title": "to Non-Clinical and ADHD Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    191.00845,
+    161.81235,
+    415.68448,
+    178.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p2_section_3",
+   "pageId": "d23e221f7ef7b_p2",
+   "title": "Inattentive/Hyperactive Subscale",
+   "type": "source_heading",
+   "bboxPt": [
+    209.64445,
+    349.81235,
+    397.04843,
+    366.33633
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p2_section_4",
+   "pageId": "d23e221f7ef7b_p2",
+   "title": "Depression/Anxiety Subscale",
+   "type": "source_heading",
+   "bboxPt": [
+    219.31645,
+    549.81232,
+    387.37643,
+    566.33636
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p3_section_1",
+   "pageId": "d23e221f7ef7b_p3",
+   "title": "Differential Diagnosis",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    178.26646,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p3_section_2",
+   "pageId": "d23e221f7ef7b_p3",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    223.49736,
+    124.57648,
+    242.77536
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p3_section_3",
+   "pageId": "d23e221f7ef7b_p3",
+   "title": "High",
+   "type": "source_heading",
+   "bboxPt": [
+    174.79337,
+    255.89888,
+    199.23535,
+    271.0459
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p3_section_4",
+   "pageId": "d23e221f7ef7b_p3",
+   "title": "Differential Diagnosis Summary",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    328.65286,
+    257.30435,
+    343.79987
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p3_section_5",
+   "pageId": "d23e221f7ef7b_p3",
+   "title": "'Likely ADHD'",
+   "type": "source_heading",
+   "bboxPt": [
+    480.74738,
+    340.90686,
+    551.99445,
+    356.05386
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p3_section_6",
+   "pageId": "d23e221f7ef7b_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    403.74509,
+    290.26642,
+    423.0231
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p4_section_1",
+   "pageId": "d23e221f7ef7b_p4",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p5_section_1",
+   "pageId": "d23e221f7ef7b_p5",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p5_section_2",
+   "pageId": "d23e221f7ef7b_p5",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    416.46103,
+    151.82047,
+    435.73904
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p6_section_1",
+   "pageId": "d23e221f7ef7b_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d23e221f7ef7b_p7_section_1",
+   "pageId": "d23e221f7ef7b_p7",
+   "title": "Other Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    126.14448,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "When multiple administrations are available, the WURS-25 generates a line graph displaying total scores across assessment points, enabling tracking of symptom reporting consistency over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "$file": "assessment.report_configuration.interpretationRules.json"
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_c2c1f15edd1b9f586fa849a69f404552",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_215bceb5f8eb4a2f490bf41c958a77ed",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_6de5015e9c52102b5425b9cb795c2744",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_5684b121bc7c905a092582e1b0a30924",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#e67e21",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_6a2e992413eefbbd6c10deb6997bcbc0",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#1abc9c",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_ab9688800e73aa0674f85963a8337642",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#9a59b5",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 6,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 5
+  },
+  {
+   "code": "reference_distribution_curves_require_numeric_parameters",
+   "chartIds": [
+    "d23e221f7ef7b_p1_chart_2",
+    "d23e221f7ef7b_p2_chart_1",
+    "d23e221f7ef7b_p2_chart_2",
+    "d23e221f7ef7b_p2_chart_3"
+   ]
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 6,
+   "unresolvedCells": 189
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

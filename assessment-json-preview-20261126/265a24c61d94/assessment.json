@@ -1,0 +1,1280 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "generalised-anxiety-disorder-assessment-gad-7--265a24c61d94",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Generalised Anxiety Disorder Assessment (GAD-7)",
+  "short_name": "GAD-7",
+  "language": "en",
+  "description": "The Generalised Anxiety Disorder Assessment (GAD-7) is a brief measure for symptoms of anxiety, based on the generalised anxiety disorder (GAD) diagnostic criteria described in the Diagnostic and Statistical Manual of Mental Disorders (DSM).",
+  "respondent_type": "self_report",
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": {
+    "duration": 14,
+    "unit": "days",
+    "label": "past two weeks"
+   },
+   "instruction_claims": [
+    "past two weeks"
+   ],
+   "status": "source_checked_draft"
+  },
+  "target_population": {
+   "minimum_age_years": null,
+   "status": "conflicting_source_claims",
+   "claims": [
+    {
+     "minimum_age_years": 12,
+     "source_location": "Page summary: Ages 12+"
+    },
+    {
+     "minimum_age_years": 14,
+     "source_location": "GAD-7 Overview: as young as 14 years"
+    }
+   ]
+  },
+  "intended_uses": [
+   "screening",
+   "symptom_monitoring"
+  ],
+  "estimated_administration_minutes": 1
+ },
+ "administration": {
+  "instructions": "Please read each statement and select from \"Not at all\" to \"Nearly every day\" to indicate how much the statement applied to you over the past two weeks.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "item_count": 7,
+  "items": [
+   {
+    "id": "Q1",
+    "order": 1,
+    "source_label": "1",
+    "text": "Feeling nervous, anxious or on edge",
+    "response_type": "single_choice",
+    "selection_mode": "single",
+    "response_set_id": "RS1",
+    "reverse_scored": false,
+    "printed_input_unit": null,
+    "source": {
+     "url": null,
+     "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+     "page": 1,
+     "bbox": [
+      33.75,
+      211.5,
+      562.5,
+      246.75
+     ],
+     "method": "pdf_table_geometry"
+    },
+    "review_status": "source_layout_extracted",
+    "review_flags": [],
+    "input_spec": {
+     "kind": "single_choice",
+     "answer_schema": {
+      "type": "string",
+      "enum": [
+       "O1",
+       "O2",
+       "O3",
+       "O4"
+      ]
+     },
+     "selection_mode": "single",
+     "selection_mode_review_required": false,
+     "source_review": "Retained printed response set; no new option labels or scores inferred."
+    },
+    "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+    "option_set_id": "OS1"
+   },
+   {
+    "id": "Q2",
+    "order": 2,
+    "source_label": "2",
+    "text": "Not being able to stop or control worrying",
+    "response_type": "single_choice",
+    "selection_mode": "single",
+    "response_set_id": "RS1",
+    "reverse_scored": false,
+    "printed_input_unit": null,
+    "source": {
+     "url": null,
+     "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+     "page": 1,
+     "bbox": [
+      33.75,
+      247.5,
+      562.5,
+      282.75
+     ],
+     "method": "pdf_table_geometry"
+    },
+    "review_status": "source_layout_extracted",
+    "review_flags": [],
+    "input_spec": {
+     "kind": "single_choice",
+     "answer_schema": {
+      "type": "string",
+      "enum": [
+       "O1",
+       "O2",
+       "O3",
+       "O4"
+      ]
+     },
+     "selection_mode": "single",
+     "selection_mode_review_required": false,
+     "source_review": "Retained printed response set; no new option labels or scores inferred."
+    },
+    "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+    "option_set_id": "OS1"
+   },
+   {
+    "id": "Q3",
+    "order": 3,
+    "source_label": "3",
+    "text": "Worrying too much about different things",
+    "response_type": "single_choice",
+    "selection_mode": "single",
+    "response_set_id": "RS1",
+    "reverse_scored": false,
+    "printed_input_unit": null,
+    "source": {
+     "url": null,
+     "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+     "page": 1,
+     "bbox": [
+      33.75,
+      283.5,
+      562.5,
+      318.75
+     ],
+     "method": "pdf_table_geometry"
+    },
+    "review_status": "source_layout_extracted",
+    "review_flags": [],
+    "input_spec": {
+     "kind": "single_choice",
+     "answer_schema": {
+      "type": "string",
+      "enum": [
+       "O1",
+       "O2",
+       "O3",
+       "O4"
+      ]
+     },
+     "selection_mode": "single",
+     "selection_mode_review_required": false,
+     "source_review": "Retained printed response set; no new option labels or scores inferred."
+    },
+    "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+    "option_set_id": "OS1"
+   },
+   {
+    "id": "Q4",
+    "order": 4,
+    "source_label": "4",
+    "text": "Trouble relaxing",
+    "response_type": "single_choice",
+    "selection_mode": "single",
+    "response_set_id": "RS1",
+    "reverse_scored": false,
+    "printed_input_unit": null,
+    "source": {
+     "url": null,
+     "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+     "page": 1,
+     "bbox": [
+      33.75,
+      319.5,
+      562.5,
+      354.75
+     ],
+     "method": "pdf_table_geometry"
+    },
+    "review_status": "source_layout_extracted",
+    "review_flags": [],
+    "input_spec": {
+     "kind": "single_choice",
+     "answer_schema": {
+      "type": "string",
+      "enum": [
+       "O1",
+       "O2",
+       "O3",
+       "O4"
+      ]
+     },
+     "selection_mode": "single",
+     "selection_mode_review_required": false,
+     "source_review": "Retained printed response set; no new option labels or scores inferred."
+    },
+    "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+    "option_set_id": "OS1"
+   },
+   {
+    "id": "Q5",
+    "order": 5,
+    "source_label": "5",
+    "text": "Being so restless that it is hard to sit still",
+    "response_type": "single_choice",
+    "selection_mode": "single",
+    "response_set_id": "RS1",
+    "reverse_scored": false,
+    "printed_input_unit": null,
+    "source": {
+     "url": null,
+     "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+     "page": 1,
+     "bbox": [
+      33.75,
+      355.5,
+      562.5,
+      390.75
+     ],
+     "method": "pdf_table_geometry"
+    },
+    "review_status": "source_layout_extracted",
+    "review_flags": [],
+    "input_spec": {
+     "kind": "single_choice",
+     "answer_schema": {
+      "type": "string",
+      "enum": [
+       "O1",
+       "O2",
+       "O3",
+       "O4"
+      ]
+     },
+     "selection_mode": "single",
+     "selection_mode_review_required": false,
+     "source_review": "Retained printed response set; no new option labels or scores inferred."
+    },
+    "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+    "option_set_id": "OS1"
+   },
+   {
+    "id": "Q6",
+    "order": 6,
+    "source_label": "6",
+    "text": "Becoming easily annoyed or irritable",
+    "response_type": "single_choice",
+    "selection_mode": "single",
+    "response_set_id": "RS1",
+    "reverse_scored": false,
+    "printed_input_unit": null,
+    "source": {
+     "url": null,
+     "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+     "page": 1,
+     "bbox": [
+      33.75,
+      391.5,
+      562.5,
+      426.75
+     ],
+     "method": "pdf_table_geometry"
+    },
+    "review_status": "source_layout_extracted",
+    "review_flags": [],
+    "input_spec": {
+     "kind": "single_choice",
+     "answer_schema": {
+      "type": "string",
+      "enum": [
+       "O1",
+       "O2",
+       "O3",
+       "O4"
+      ]
+     },
+     "selection_mode": "single",
+     "selection_mode_review_required": false,
+     "source_review": "Retained printed response set; no new option labels or scores inferred."
+    },
+    "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+    "option_set_id": "OS1"
+   },
+   {
+    "id": "Q7",
+    "order": 7,
+    "source_label": "7",
+    "text": "Feeling afraid as if something awful might happen",
+    "response_type": "single_choice",
+    "selection_mode": "single",
+    "response_set_id": "RS1",
+    "reverse_scored": false,
+    "printed_input_unit": null,
+    "source": {
+     "url": null,
+     "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+     "page": 1,
+     "bbox": [
+      33.75,
+      427.5,
+      562.5,
+      462.75
+     ],
+     "method": "pdf_table_geometry"
+    },
+    "review_status": "source_layout_extracted",
+    "review_flags": [],
+    "input_spec": {
+     "kind": "single_choice",
+     "answer_schema": {
+      "type": "string",
+      "enum": [
+       "O1",
+       "O2",
+       "O3",
+       "O4"
+      ]
+     },
+     "selection_mode": "single",
+     "selection_mode_review_required": false,
+     "source_review": "Retained printed response set; no new option labels or scores inferred."
+    },
+    "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+    "option_set_id": "OS1"
+   }
+  ],
+  "response_sets": [
+   {
+    "id": "RS1",
+    "options": [
+     {
+      "id": "O1",
+      "label": "NOT AT ALL",
+      "printed_value": 0,
+      "score": 0,
+      "display_label": "NOT AT ALL",
+      "display_label_origin": "printed_label"
+     },
+     {
+      "id": "O2",
+      "label": "SEVERAL DAYS",
+      "printed_value": 1,
+      "score": 1,
+      "display_label": "SEVERAL DAYS",
+      "display_label_origin": "printed_label"
+     },
+     {
+      "id": "O3",
+      "label": "MORE THAN HALF THE DAYS",
+      "printed_value": 2,
+      "score": 2,
+      "display_label": "MORE THAN HALF THE DAYS",
+      "display_label_origin": "printed_label"
+     },
+     {
+      "id": "O4",
+      "label": "NEARLY EVERY DAY",
+      "printed_value": 3,
+      "score": 3,
+      "display_label": "NEARLY EVERY DAY",
+      "display_label_origin": "printed_label"
+     }
+    ],
+    "mapping_status": "source_checked_draft"
+   }
+  ],
+  "option_sets": {
+   "OS1": [
+    {
+     "id": "O1",
+     "text": "NOT AT ALL",
+     "source_label": "NOT AT ALL",
+     "label_origin": "printed_label",
+     "printed_value": 0,
+     "score": 0,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "total_raw"
+     ]
+    },
+    {
+     "id": "O2",
+     "text": "SEVERAL DAYS",
+     "source_label": "SEVERAL DAYS",
+     "label_origin": "printed_label",
+     "printed_value": 1,
+     "score": 1,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "total_raw"
+     ]
+    },
+    {
+     "id": "O3",
+     "text": "MORE THAN HALF THE DAYS",
+     "source_label": "MORE THAN HALF THE DAYS",
+     "label_origin": "printed_label",
+     "printed_value": 2,
+     "score": 2,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "total_raw"
+     ]
+    },
+    {
+     "id": "O4",
+     "text": "NEARLY EVERY DAY",
+     "source_label": "NEARLY EVERY DAY",
+     "label_origin": "printed_label",
+     "printed_value": 3,
+     "score": 3,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "total_raw"
+     ]
+    }
+   ]
+  }
+ },
+ "scoring": {
+  "status": "source_checked_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_raw",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7"
+    ],
+    "multiplier": 1,
+    "value_field": "score",
+    "minimum": 0,
+    "maximum": 21,
+    "severity_bands": [
+     {
+      "label": "None-Minimal",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 4
+     },
+     {
+      "label": "Mild",
+      "minimum_inclusive": 5,
+      "maximum_inclusive": 9
+     },
+     {
+      "label": "Moderate",
+      "minimum_inclusive": 10,
+      "maximum_inclusive": 14
+     },
+     {
+      "label": "Severe",
+      "minimum_inclusive": 15,
+      "maximum_inclusive": 21
+     }
+    ]
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": "Archived questionnaire printed response values and corresponding scoring context sections; formulas tested separately.",
+  "source_rule_excerpts": [
+   "Lowe et al. (2008) investigated the validity and reliability of the GAD-7. The normative community sample consisted of a total of 5,036 individuals, with an average age of 48.4 years ( SD = 18) and 53.6% of participants being women. Confirmatory factor analyses substantiated the 1-dimensional structure of the GAD-7. Internal consistency was identical across all subgroups (Cronbach’s alpha = 0.89). Intercorrelations with the PHQ-2 and the Rosenberg Self-Esteem Scale were r = 0.64 ( p < 0.001) and r = -0.43 ( p < 0.001), respectively. Women had significantly higher mean ( SD ) GAD-7 anxiety scores compared with men [3.2 (3.5) vs. 2.7 (3.2); p < 0.001]. Approximately 5% of subjects had GAD-7 scores of 10 or greater, and 1% had GAD-7 scores of 15 or greater."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "GAD-7 Scoring & Interpretation",
+    "text": "A raw score (from 0 to 21) is presented as well as a percentile rank based on a normative community sample (Stocker et al., 2021) of age-related peers. A higher score indicates higher levels of anxiety symptoms.\nPercentiles are calculated according to the age of the client and provide a useful context for comparing a respondent’s results with levels of anxiety seen in the community. A percentile of 50 represents typical and relatively healthy patterns of anxiety, falling within the mild range of anxiety for younger age groups (50 years of age or less).\n\nExperiencing at least some anxiety is relatively normal, particularly among younger age groups. Approximately 11% of individuals under 30 fall into the “severe” anxiety range, whereas 1.4% of people over 70 years of age have scores in that range. Given that experiencing anxiety is common, anxiety is best considered on a dimensional basis (e.g. the degree to which someone has symptoms) rather than in a binary absent/present fashion.\n\nThe scale classifies individuals into distinct severity categories based on their raw scores, as follows:\nNone-Minimal (Scores of 4 or below): Scores within this range suggest minimal anxiety, with symptoms being either absent or so slight that they have little to no impact on daily functioning.\nMild (Scores between 5 and 9): Anxiety is present and noticeable but generally manageable, with only occasional interference in daily activities.\nModerate (Scores between 10 and 14): Anxiety symptoms are frequent and intense, potentially affecting the individual’s ability to perform daily tasks effectively. They are more likely than not to have a diagnosable anxiety disorder such as generalised anxiety disorder.\nSevere (Scores of 15 and above): Anxiety symptoms are intense and persistent, significantly disrupting daily functioning. They likely have a diagnosable anxiety disorder or other psychiatric condition.\n\nWhen administered multiple times, the total scores are graphed over time.\nA significant change in score is defined as an increase or decrease of at least 6 points. This criterion is based on the Reliable Change Index (Bischoff et al., 2020). Such changes indicate significant change symptoms, while a change of less than the specified points indicates minimal change in symptom severity between assessments.\nScores of 10 or greater are indicative of Generalised Anxiety Disorder (Sensitivity 89% and Specificity 82%) (Spitzer et al., 2006) and other psychiatric disorders involving anxiety. Scores of 10 or more may also indicate panic disorder (sensitivity 74%, specificity 81%), social anxiety disorder (sensitivity 72%, specificity 80%), and post-traumatic stress disorder (sensitivity 66%, specificity 81%) (Kroenke, et al. 2007).\nHigher scores on the GAD-7 indicate the presence of anxiety symptoms, however 90% of individuals with GAD experience at least one additional psychiatric condition over their lifetime. While major depressive disorder (MDD) is the most prevalent comorbidity among individuals with GAD, dysthymia, bipolar, alcohol abuse are also frequently observed (Simon, 2009; Preti et al., 2015).\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "American Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). https://doi.org/10.1176/appi.books.9780890425596",
+   "source_url": "https://doi.org/10.1176/appi.books.9780890425596"
+  },
+  {
+   "id": "R2",
+   "citation": "Bischoff, T., Anderson, S.R., Heafner, J., & Tambling, R. (2020). Establishment of a Reliable Change Index for the GAD-7. Faculty Publications, 8 (1), 176-187. https://scholarsarchive.byu.edu/facpub/4117",
+   "source_url": "https://scholarsarchive.byu.edu/facpub/4117"
+  },
+  {
+   "id": "R3",
+   "citation": "Kroenke, K., Spitzer, R. L., Williams, J. B. W., Monahan, P. O., & Löwe, B. (2007). Anxiety disorders in primary care: prevalence, impairment, comorbidity, and detection. Annals of Internal Medicine, 146 (5), 317–325. https://doi.org/10.7326/0003-4819-146-5-200703060-00004",
+   "source_url": "https://doi.org/10.7326/0003-4819-146-5-200703060-00004"
+  },
+  {
+   "id": "R4",
+   "citation": "Löwe, B., Decker, O., Müller, S., Brähler, E., Schellberg, D., Herzog, W., & Herzberg, P. Y. (2008). Validation and Standardization of the Generalized Anxiety Disorder Screener (GAD-7) in the General Population. Medical Care, 46( 3), 266–274. https://doi.org/10.1097/mlr.0b013e318160d093",
+   "source_url": "https://doi.org/10.1097/mlr.0b013e318160d093"
+  },
+  {
+   "id": "R5",
+   "citation": "Preti, A., Vrublevska, J., Veroniki, A. A., Huedo-Medina, T. B., & Fountoulakis, K. N. (2016). Prevalence, impact and treatment of generalised anxiety disorder in bipolar disorder: a systematic review and meta-analysis. BMJ Mental Health, 19 (3), 73–81. https://doi.org/10.1136/eb-2016-102412",
+   "source_url": "https://doi.org/10.1136/eb-2016-102412"
+  },
+  {
+   "id": "R6",
+   "citation": "Rutter, L. A., & Brown, T. A. (2017). Psychometric Properties of the Generalized Anxiety Disorder Scale-7 (GAD-7) in Outpatients with Anxiety and Mood Disorders. Journal of Psychopathology and Behavioral Assessment, 39 (1), 140–146. https://doi.org/10.1007/s10862-016-9571-9",
+   "source_url": "https://doi.org/10.1007/s10862-016-9571-9"
+  },
+  {
+   "id": "R7",
+   "citation": "Simon, N. M. (2009). Generalized anxiety disorder and psychiatric comorbidities such as depression, bipolar disorder, and substance abuse. Journal of Clinical Psychiatry, 70 (2), 10-14. https://www.psychiatrist.com/read-pdf/7730/",
+   "source_url": "https://www.psychiatrist.com/read-pdf/7730/"
+  },
+  {
+   "id": "R8",
+   "citation": "Spitzer, R. L., Kroenke, K., Williams, J. B., & Löwe, B. (2006). A brief measure for assessing generalized anxiety disorder: the GAD-7. Archives of Internal Medicine, 166 (10), 1092-1097. https://pubmed.ncbi.nlm.nih.gov/16717171/",
+   "source_url": "https://pubmed.ncbi.nlm.nih.gov/16717171/"
+  },
+  {
+   "id": "R9",
+   "citation": "Stocker, R., Tran, T., Hammarberg, K., Nguyen, H., Rowe, H., & Fisher, J. (2021). Patient Health Questionnaire 9 (PHQ-9) and General Anxiety Disorder 7 (GAD-7) data contributed by 13,829 respondents to a national survey about COVID-19 restrictions in Australia. Psychiatry Research, 298, 113792–113792. https://doi.org/10.1016/j.psychres.2021.113792",
+   "source_url": "https://doi.org/10.1016/j.psychres.2021.113792"
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "assessment_source_image",
+   "title": "Generalised Anxiety Disorder Assessment (GAD-7) PDF",
+   "source_url": null,
+   "sha256": "5cbe90bd637bb52e716921637e5d1a5fb8d1621bbc7c2cab4519964ca755c273",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5cbe90bd637bb52e716921637e5d1a5fb8d1621bbc7c2cab4519964ca755c273.png",
+   "status": "saved",
+   "caption": null,
+   "source_section": "The Kessler Psychological Distress Scale (K10)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "assessment_source_image",
+   "title": null,
+   "source_url": null,
+   "sha256": "781392c31dea91bac9de01888ce01d725c2d04757fe099e91c0cf5e9340ef75f",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/781392c31dea91bac9de01888ce01d725c2d04757fe099e91c0cf5e9340ef75f.png",
+   "status": "saved",
+   "caption": null,
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "assessment_source_image",
+   "title": "Generalised Anxiety Disorder Assessment questions",
+   "source_url": null,
+   "sha256": "1722a1477b376970a62c263c0db479ff2aa5f0e42c16a94f662c28137797b922",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1722a1477b376970a62c263c0db479ff2aa5f0e42c16a94f662c28137797b922.png",
+   "status": "saved",
+   "caption": null,
+   "source_section": "GAD-7 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "assessment_source_image",
+   "title": null,
+   "source_url": null,
+   "sha256": "0d7f4bf1af28f71571dad5e8dbc05a6dc7e3bd5d300cd76ea31e4ab1dde6a559",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0d7f4bf1af28f71571dad5e8dbc05a6dc7e3bd5d300cd76ea31e4ab1dde6a559.png",
+   "status": "saved",
+   "caption": null,
+   "source_section": "GAD-7 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "assessment_source_image",
+   "title": null,
+   "source_url": null,
+   "sha256": "e519ca9a7ce955bd4765f5fc592c4aeab6522171067d88a35f9a9493c2c399fe",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e519ca9a7ce955bd4765f5fc592c4aeab6522171067d88a35f9a9493c2c399fe.png",
+   "status": "saved",
+   "caption": null,
+   "source_section": "GAD-7 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "assessment_source_image",
+   "title": null,
+   "source_url": null,
+   "sha256": "a581f6b99f4a5d826e8b5049292f63b0f1fb75b0e4292cd1741d4b56a40b71e0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/a581f6b99f4a5d826e8b5049292f63b0f1fb75b0e4292cd1741d4b56a40b71e0.png",
+   "status": "saved",
+   "caption": null,
+   "source_section": "GAD-7 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "normative_percentile_table_image",
+   "title": null,
+   "source_url": null,
+   "sha256": "337668a2180fd5464130d45d285effa0d871563d845e525ad8b62bdda69aee3b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/337668a2180fd5464130d45d285effa0d871563d845e525ad8b62bdda69aee3b.png",
+   "status": "saved",
+   "caption": null,
+   "source_section": "Supplementary File",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "reference_document",
+   "title": "https://www.psychiatrist.com/read-pdf/7730/",
+   "source_url": "https://www.psychiatrist.com/read-pdf/7730/",
+   "sha256": null,
+   "mime_type": null,
+   "archive_path": null,
+   "status": "unavailable",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "f9c0c442c43925ec87e2cb1b46b9315a3b187a7941ca9d40e8494fe0fda21414",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f9c0c442c43925ec87e2cb1b46b9315a3b187a7941ca9d40e8494fe0fda21414.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "single_choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 0
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "total_raw",
+    "label": "Total raw",
+    "minimum": 0,
+    "maximum": 21,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7"
+    ],
+    "severity_bands_ref": "/scoring/rules/0/severity_bands",
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "total_raw",
+    "title": "Total raw",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_raw",
+      "label": "Total raw",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0,
+    "maximum": 21,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "rule.severity_bands",
+   "overall_total": "total_raw",
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "75c541a18d5af429810e7466fcb6a7bc794e16fc7e6c3803928f921a0026a859",
+   "guidance_titles": [
+    "GAD-7 Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "total_raw"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "total_raw"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "total_raw",
+    "label": "Total raw",
+    "rule_id": "total_raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "e384cb975ad13c05cb754619d6f25db0cf1325692c2606c598b70675b2286ac4",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_raw",
+    "technical_status": "passed",
+    "source_check": "selected_formula_checks_matched",
+    "source_scope": "Complete-response total and severity boundaries only; questionnaire wording, diagnosis, risk workflow and partial responses are not approved.",
+    "source_ids": [
+     "phq_gad_manual"
+    ],
+    "example_case_ids": [
+     "265a24c61d94:total_0",
+     "265a24c61d94:total_1",
+     "265a24c61d94:total_2",
+     "265a24c61d94:total_3",
+     "265a24c61d94:total_4",
+     "265a24c61d94:total_5",
+     "265a24c61d94:total_6",
+     "265a24c61d94:total_7",
+     "265a24c61d94:total_8",
+     "265a24c61d94:total_9",
+     "265a24c61d94:total_10",
+     "265a24c61d94:total_11",
+     "265a24c61d94:total_12",
+     "265a24c61d94:total_13",
+     "265a24c61d94:total_14",
+     "265a24c61d94:total_15",
+     "265a24c61d94:total_16",
+     "265a24c61d94:total_17",
+     "265a24c61d94:total_18",
+     "265a24c61d94:total_19",
+     "265a24c61d94:total_20",
+     "265a24c61d94:total_21",
+     "265a24c61d94:missing_required",
+     "265a24c61d94:invalid_answer"
+    ],
+    "example_result_counts": {
+     "passed": 24,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_raw",
+    "status": "selected_boundaries_checked",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [
+   {
+    "id": "phq_gad_manual",
+    "url": "https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf",
+    "retrieved_on": "2026-11-18",
+    "archive_path": "artifacts/scoring-verification-20261118/phq_gad_manual.pdf",
+    "sha256": "6ed2f00f97e438c1168cd702d38d31fc923031445c720653005f138aa424228a",
+    "access": "archived_pdf",
+    "runtime_fetch_required": false,
+    "location": "pp. 3, 5–7"
+   }
+  ],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T07:50:20.079573+00:00",
+  "raw_extraction_sha256": "4259bedca83f13700de57ee341b4a4591e269df4a88dab672e2abeb8fe230b9d",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Anxiety"
+   },
+   {
+    "url": null,
+    "title": "Outcome Monitoring"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16717171/",
+    "title": "https://pubmed.ncbi.nlm.nih.gov/16717171/"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.books.9780890425596",
+    "title": "https://doi.org/10.1176/appi.books.9780890425596"
+   },
+   {
+    "url": "https://scholarsarchive.byu.edu/facpub/4117",
+    "title": "https://scholarsarchive.byu.edu/facpub/4117"
+   },
+   {
+    "url": "https://doi.org/10.7326/0003-4819-146-5-200703060-00004",
+    "title": "https://doi.org/10.7326/0003-4819-146-5-200703060-00004"
+   },
+   {
+    "url": "https://doi.org/10.1097/mlr.0b013e318160d093",
+    "title": "https://doi.org/10.1097/mlr.0b013e318160d093"
+   },
+   {
+    "url": "https://doi.org/10.1136/eb-2016-102412",
+    "title": "https://doi.org/10.1136/eb-2016-102412"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10862-016-9571-9",
+    "title": "https://doi.org/10.1007/s10862-016-9571-9"
+   },
+   {
+    "url": "https://www.psychiatrist.com/read-pdf/7730/",
+    "title": "https://www.psychiatrist.com/read-pdf/7730/"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.psychres.2021.113792",
+    "title": "https://doi.org/10.1016/j.psychres.2021.113792"
+   },
+   {
+    "url": null,
+    "title": "Primary care depression scale"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "GAD worry measure"
+   },
+   {
+    "url": null,
+    "title": "Panic symptom questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "GP Letter – Progress Update or Mental Health Treatment Plan Reporting (Letter Template)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

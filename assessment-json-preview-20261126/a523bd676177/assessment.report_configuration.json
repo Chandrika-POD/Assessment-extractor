@@ -1,0 +1,1545 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Availability Stress",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Availability Stress",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q8",
+     "Q16",
+     "Q18"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Availability Stress (Items 1, 8, 16, 18, average of circled values):",
+     "y": 175.5,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Approval Anxiety",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Approval Anxiety",
+    "method": "mean",
+    "item_ids": [
+     "Q3",
+     "Q9",
+     "Q17",
+     "Q20",
+     "Q22",
+     "Q24"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Approval Anxiety (Items 3, 9, 17, 20, 22, 24, average of circled values):",
+     "y": 200.2,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Fear of Missing Out",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Fear of Missing Out",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q10",
+     "Q13",
+     "Q21"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Fear of Missing Out (Items 5, 10, 13, 21, average of circled values):",
+     "y": 225.0,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Connection Overload",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Connection Overload",
+    "method": "mean",
+    "item_ids": [
+     "Q2",
+     "Q6",
+     "Q11",
+     "Q14",
+     "Q19",
+     "Q23"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Connection Overload (Items 2, 6, 11, 14, 19, 23, average of circled values):",
+     "y": 249.8,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_5",
+   "ruleId": "pdf_5",
+   "label": "Online Vigilance",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_5",
+    "label": "Online Vigilance",
+    "method": "mean",
+    "item_ids": [
+     "Q4",
+     "Q7",
+     "Q12",
+     "Q15"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Online Vigilance (Items 4, 7, 12, 15, average of circled values):",
+     "y": 274.5,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_6",
+   "ruleId": "pdf_6",
+   "label": "Total Score",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "pdf_6",
+    "label": "Total Score",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (average of all 24 items)",
+     "y": 313.5,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+   "pageCount": 5,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d74dff43c3301_p1",
+   "documentSha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d74dff43c3301_p1_chart_1"
+   ],
+   "tableIds": [
+    "d74dff43c3301_p1_table_1",
+    "d74dff43c3301_p1_table_2"
+   ],
+   "sectionIds": [
+    "d74dff43c3301_p1_section_1",
+    "d74dff43c3301_p1_section_2"
+   ]
+  },
+  {
+   "pageId": "d74dff43c3301_p2",
+   "documentSha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d74dff43c3301_p2_section_1",
+    "d74dff43c3301_p2_section_2",
+    "d74dff43c3301_p2_section_3",
+    "d74dff43c3301_p2_section_4"
+   ]
+  },
+  {
+   "pageId": "d74dff43c3301_p3",
+   "documentSha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d74dff43c3301_p3_section_1",
+    "d74dff43c3301_p3_section_2"
+   ]
+  },
+  {
+   "pageId": "d74dff43c3301_p4",
+   "documentSha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d74dff43c3301_p4_table_1"
+   ],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d74dff43c3301_p5",
+   "documentSha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d74dff43c3301_p5_table_1"
+   ],
+   "sectionIds": [
+    "d74dff43c3301_p5_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d74dff43c3301_p1_section_1",
+   "pageId": "d74dff43c3301_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p1_section_2",
+   "pageId": "d74dff43c3301_p1",
+   "title": "Digital Stress Scale (DSS) Percentiles",
+   "type": "results",
+   "bboxPt": [
+    180.97,
+    368.82251,
+    395.72195,
+    380.82251
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p2_section_1",
+   "pageId": "d74dff43c3301_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    124.57652,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p2_section_2",
+   "pageId": "d74dff43c3301_p2",
+   "title": "Subscale Pattern Analysis:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.0394,
+    236.05521,
+    232.25735,
+    247.05521
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p2_section_3",
+   "pageId": "d74dff43c3301_p2",
+   "title": "Specific Item Endorsement:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.0394,
+    369.30936,
+    235.90936,
+    380.30936
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p2_section_4",
+   "pageId": "d74dff43c3301_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    554.04175,
+    290.26636,
+    568.04175
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p3_section_1",
+   "pageId": "d74dff43c3301_p3",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    336.92838,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p3_section_2",
+   "pageId": "d74dff43c3301_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3464,
+    686.83405,
+    151.8204,
+    700.83405
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d74dff43c3301_p5_section_1",
+   "pageId": "d74dff43c3301_p5",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d74dff43c3301_p1_chart_1",
+   "title": "Digital Stress Scale (DSS) Percentiles",
+   "type": "stacked_bar",
+   "bboxPt": [
+    70.347,
+    394.725,
+    550.346,
+    700.165
+   ],
+   "widthPt": 480.0,
+   "heightPt": 305.44,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      70.3465,
+      669.82483,
+      548.21649,
+      700.16504
+     ],
+     "colour": "#388e3c",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      624.30511,
+      548.21649,
+      669.82501
+     ],
+     "colour": "#66bb6a",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      472.58499,
+      548.21649,
+      624.30499
+     ],
+     "colour": "#2196f3",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      427.06509,
+      548.21649,
+      472.58499
+     ],
+     "colour": "#ff7043",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      396.72482,
+      548.21649,
+      427.065
+     ],
+     "colour": "#f44336",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 62.5663,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 397.49814,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 427.83835,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 458.18835,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 488.52817,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 518.87817,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 549.21838,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 579.55823,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 609.9082,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 640.24799,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 670.59802,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 700.93823,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Total Score",
+     "colour": "#e47272",
+     "ruleIdCandidate": "pdf_6",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.07778123565167805,
+     "barThicknessPt": 34.66990999999999,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#e47272"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_6",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Total Score",
+     "colour": "#4fc3f6",
+     "ruleIdCandidate": "pdf_6",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.07778123565167805,
+     "barThicknessPt": 34.66990999999999,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4fc3f6"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_6",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "Total Score",
+     "colour": "#80c683",
+     "ruleIdCandidate": "pdf_6",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.07778123565167805,
+     "barThicknessPt": 34.66990999999999,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#80c683"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_6",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": "Total Score",
+     "colour": "#ffb64d",
+     "ruleIdCandidate": "pdf_6",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.07778123565167805,
+     "barThicknessPt": 34.66990999999999,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ffb64d"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_6",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_5",
+     "label": "Total Score",
+     "colour": "#9575cd",
+     "ruleIdCandidate": "pdf_6",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.07778123565167805,
+     "barThicknessPt": 34.66990999999999,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9575cd"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_6",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_6",
+     "label": "Availability Stress",
+     "colour": "#e47272",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.23334285278749556,
+     "barThicknessPt": 34.66989000000001,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#e47272"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#e47272"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_7",
+     "label": "Approval Anxiety",
+     "colour": "#4fc3f6",
+     "ruleIdCandidate": "pdf_2",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.3888867407385478,
+     "barThicknessPt": 34.66988999999998,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4fc3f6"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4fc3f6"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_2",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_8",
+     "label": "Fear of Missing Out",
+     "colour": "#80c683",
+     "ruleIdCandidate": "pdf_3",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.5444473370399899,
+     "barThicknessPt": 34.66989000000001,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#80c683"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#80c683"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_3",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_9",
+     "label": "Connection Overload",
+     "colour": "#ffb64d",
+     "ruleIdCandidate": "pdf_4",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.7000099541768282,
+     "barThicknessPt": 34.66989000000001,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffb64d"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ffb64d"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_4",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_10",
+     "label": "Online Vigilance",
+     "colour": "#9575cd",
+     "ruleIdCandidate": "pdf_5",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8555539150446217,
+     "barThicknessPt": 34.66991999999999,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9575cd"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9575cd"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_5",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d74dff43c3301_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 124,
+    "detectedType": "stacked_bar",
+    "reviewedType": "stacked_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Digital Stress Scale (DSS) Percentiles",
+     "bboxPt": [
+      180.97,
+      368.82251,
+      395.72195,
+      380.82251
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Very Low",
+     "bboxPt": [
+      515.16998,
+      677.04626,
+      544.34607,
+      684.04626
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Low",
+     "bboxPt": [
+      531.50897,
+      639.11627,
+      544.34705,
+      646.11627
+     ],
+     "colour": "#808080",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Average",
+     "bboxPt": [
+      518.27899,
+      540.49628,
+      544.34711,
+      547.49628
+     ],
+     "colour": "#0000ff",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "High",
+     "bboxPt": [
+      529.95398,
+      443.39627,
+      544.34607,
+      450.39627
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Very High",
+     "bboxPt": [
+      513.61603,
+      403.94626,
+      544.34613,
+      410.94626
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Total Score",
+     "bboxPt": [
+      82.1113,
+      706.63818,
+      133.24129,
+      716.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Availability",
+     "bboxPt": [
+      158.73158,
+      706.63818,
+      205.96158,
+      716.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Stress",
+     "bboxPt": [
+      168.1765,
+      716.63818,
+      196.51649,
+      726.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Approval",
+     "bboxPt": [
+      237.2863,
+      706.63818,
+      276.74628,
+      716.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Anxiety",
+     "bboxPt": [
+      240.62146,
+      716.63818,
+      273.41144,
+      726.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Fear of",
+     "bboxPt": [
+      315.83624,
+      706.63818,
+      347.5162,
+      716.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Missing",
+     "bboxPt": [
+      314.73157,
+      716.63818,
+      348.62155,
+      726.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Out",
+     "bboxPt": [
+      323.61633,
+      726.63818,
+      339.73633,
+      736.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Connection",
+     "bboxPt": [
+      381.05652,
+      706.63818,
+      431.63651,
+      716.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Overload",
+     "bboxPt": [
+      386.06122,
+      716.63818,
+      426.6312,
+      726.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Online",
+     "bboxPt": [
+      466.56631,
+      706.63818,
+      495.46631,
+      716.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Vigilance",
+     "bboxPt": [
+      460.73154,
+      716.63818,
+      501.30154,
+      726.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration a plot is presented displaying the total DSS and the subscale percentiles.",
+   "When administered on multiple occasions, a longitudinal plot is displayed showing the subscale percentiles over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "DSS Scoring & Interpretation",
+    "text": "The Digital Stress Scale (DSS) items are typically averaged to provide subscale scores and a total score, with higher average scores (1-5) indicating greater digital stress.\nThe Total Score provides an overall indication of the level of digital distress experienced by the client but the subscales of the DSS provide clinically useful information about the dimensions of digital stress:\n1. Availability Stress (Items 1, 8, 16, 18): Availability Stress measures the distress, guilt, and anxiety resulting from perceived expectations to be constantly accessible and responsive via digital means. Unlike other dimensions of digital stress, availability stress shows a more complex relationship with social outcomes, as it can be associated with both greater social connectedness and increased subjective distress.\n2. Approval Anxiety (Items 3, 9, 17, 20, 22, 24): Approval Anxiety measures the nervousness and anxiety about how others perceive and respond to one’s digital self-presentation, particularly on social media. High scores on this subscale suggest that concerns about digital self-presentation may be a significant source of psychological distress.\n3. Fear of Missing Out (Items 5, 10, 13, 21): Fear of Missing Out measures the anxiety, worry, and distress resulting from concerns about being excluded from rewarding social experiences. High scores on this subscale suggest that fear of social exclusion may be driving problematic patterns of technology use.\n4. Connection Overload (Items 2, 6, 11, 14, 19, 23): Connection Overload measures the subjective experience of being overwhelmed by the volume and pace of digital communications. High scores on this subscale indicate that the sheer volume of digital communication may be exceeding the individual’s psychological resources.\n5. Online Vigilance (Items 4, 7, 12, 15): Online Vigilance measures the persistent preoccupation with staying connected to digital devices and online content. High scores on this subscale suggest that digital connectivity has become a dominant psychological need that may interfere with present-moment engagement in offline activities and relationships.\n\nAverage scores for each subscale and the total score are converted to percentiles based upon a sample of 735 adolescents and young adults (Hall et al., 2021). These percentiles are then used to derive descriptive categories that aid in clinical interpretation. The descriptive categories for each subscale and the total score are:\nVery Low (10th percentile or below): Indicates significantly less digital stress than most individuals.\nLow (11th to 25th percentile): Indicates less digital stress than most individuals.\nAverage (26th to 75th percentile): Indicates a typical level of digital stress compared to peers.\nHigh (76th to 90th percentile): Indicates more digital stress than most individuals.\nVery High (91st percentile or above): Indicates significantly elevated levels of digital stress.\nResearch indicates that the pattern and impact of digital stress may vary by developmental stage, with adolescents showing stronger associations between digital stress dimensions (particularly Approval Anxiety and FoMO) and psychosocial outcomes compared to young adults (Hall et al., 2021). When interpreting DSS scores for adolescents, consider the heightened importance of peer evaluation and social connectedness during this developmental period (Nesi et al., 2018).\n\nOn first administration a plot is presented displaying the total DSS and the subscale percentiles. The percentiles are presented with the qualitative descriptors in the background for ease of interpretation. When administered on multiple occasions, a longitudinal plot is displayed showing the subscale percentiles over time. When DSS scores are available from multiple timepoints, changes in scores can provide valuable information about the effectiveness of interventions or developmental changes in digital stress. For comparative interpretation, changes of at least 0.5 standard deviations in raw scores are considered clinically meaningful (the minimally important difference) (Norman et al., 2003; Turner et al., 2010). When interpreting changes, attention should be paid to both the total score and the patterns of change across subscales.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the Digital Stress Scale (DSS), \nsee here\n.\nThe Digital Stress Scale (DSS) items are typically averaged to provide subscale scores and a\ntotal score, with higher average scores (1-5) indicating greater digital stress. The Total Score\nprovides an overall indication of the level of digital distress experienced by the client but the\nsubscales of the DSS provide clinically useful information about the dimensions of digital stress:\n1. Availability Stress (Items 1, 8, 16, 18): Availability Stress measures the distress, guilt, and\nanxiety resulting from perceived expectations to be constantly accessible and responsive via\ndigital means. Unlike other dimensions of digital stress, availability stress shows a more complex\nrelationship with social outcomes, as it can be associated with both greater social\nconnectedness and increased subjective distress.\n2. Approval Anxiety (Items 3, 9, 17, 20, 22, 24): Approval Anxiety measures the nervousness\nand anxiety about how others perceive and respond to one's digital self-presentation, particularly\non social media. High scores on this subscale suggest that concerns about digital",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+    "pageNumber": 3,
+    "text": "self-presentation may be a significant source of psychological distress.\n3. Fear of Missing Out (Items 5, 10, 13, 21): Fear of Missing Out measures the anxiety, worry,\nand distress resulting from concerns about being excluded from rewarding social experiences.\nHigh scores on this subscale suggest that fear of social exclusion may be driving problematic\npatterns of technology use.\n4. Connection Overload (Items 2, 6, 11, 14, 19, 23): Connection Overload measures the\nsubjective experience of being overwhelmed by the volume and pace of digital communications.\nHigh scores on this subscale indicate that the sheer volume of digital communication may be\nexceeding the individual's psychological resources.\n5. Online Vigilance (Items 4, 7, 12, 15): Online Vigilance measures the persistent preoccupation\nwith staying connected to digital devices and online content. High scores on this subscale\nsuggest that digital connectivity has become a dominant psychological need that may interfere\nwith present-moment engagement in offline activities and relationships.\nAverage scores for each subscale and the total score are converted to percentiles based upon a\nsample of 735 adolescents and young adults (Hall et al., 2021). These percentiles are then used\nto derive descriptive categories that aid in clinical interpretation. The descriptive categories for\neach subscale and the total score are:\n- Very Low (10th percentile or below): Indicates significantly less digital stress than most\nindividuals.\n- Low (11th to 25th percentile): Indicates less digital stress than most individuals.\n- Average (26th to 75th percentile): Indicates a typical level of digital stress compared to peers.\n- High (76th to 90th percentile): Indicates more digital stress than most individuals.\n- Very High (91st percentile or above): Indicates significantly elevated levels of digital stress.\nResearch indicates that the pattern and impact of digital stress may vary by developmental\nstage, with adolescents showing stronger associations between digital stress dimensions\n(particularly Approval Anxiety and FoMO) and psychosocial outcomes compared to young adults\n(Hall et al., 2021). When interpreting DSS scores for adolescents, consider the heightened\nimportance of peer evaluation and social connectedness during this developmental period (Nesi\net al., 2018).\nOn first administration a plot is presented displaying the total DSS and the subscale percentiles.\nThe percentiles are presented with the qualitative descriptors in the background for ease of\ninterpretation. When administered on multiple occasions, a longitudinal plot is displayed showing\nthe subscale percentiles over time. When DSS scores are available from multiple timepoints,\nchanges in scores can provide valuable information about the effectiveness of interventions or\ndevelopmental changes in digital stress. For comparative interpretation, changes of at least 0.5\nstandard deviations in raw scores are considered clinically meaningful (the minimally important\ndifference) (Norman et al., 2003; Turner et al., 2010). When interpreting changes, attention\nshould be paid to both the total score and the patterns of change across subscales.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Average scores for each subscale and the total score are converted to percentiles based upon a sample of 735 adolescents and young adults (Hall et al., 2021).",
+   "These percentiles are then used to derive descriptive categories that aid in clinical interpretation.",
+   "Very Low (10th percentile or below): Indicates significantly less digital stress than most individuals.",
+   "Low (11th to 25th percentile): Indicates less digital stress than most individuals.",
+   "Average (26th to 75th percentile): Indicates a typical level of digital stress compared to peers.",
+   "High (76th to 90th percentile): Indicates more digital stress than most individuals.",
+   "Very High (91st percentile or above): Indicates significantly elevated levels of digital stress.",
+   "On first administration a plot is presented displaying the total DSS and the subscale percentiles.",
+   "The percentiles are presented with the qualitative descriptors in the background for ease of interpretation.",
+   "When administered on multiple occasions, a longitudinal plot is displayed showing the subscale percentiles over time."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": {
+  "$file": "assessment.report_configuration.paintStyles.json"
+ },
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 10,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 168
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

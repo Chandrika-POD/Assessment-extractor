@@ -1,0 +1,2965 @@
+{
+  "schemaVersion": "assessment-report-config/2.0.0",
+  "assessmentId": "strengths-and-difficulties-questionnaire-sdq--ae888b36225d",
+  "title": "Strengths and Difficulties Questionnaire (SDQ)",
+  "status": "source_specific_draft",
+  "definitionVersion": "1.0.0-draft.6",
+  "assessment": {
+    "name": "Strengths and Difficulties Questionnaire (SDQ)",
+    "short_name": null,
+    "language": "en",
+    "description": "The Strengths and Difficulties Questionnaire (SDQ) is a 25-item behavioural and emotional screening measure for children and young people aged 2 to 17 years (Goodman, 1997). It assesses four problem domains (emotional symptoms, conduct problems, hyperactivity/inattention, and peer relationship problems) together with a fifth prosocial behaviour scale.",
+    "respondent_type": null,
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [],
+      "status": "requires_review"
+    },
+    "target_population": null,
+    "intended_uses": null,
+    "estimated_administration_minutes": null
+  },
+  "administration": {
+    "instructions": null,
+    "instructions_source": {
+      "url": null,
+      "sha256": "6448dd8809bb6702361351da2860cbb1a73083ec03eb8435c1ed02ed9efb114a",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [],
+    "selected_form_url": null,
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 0,
+    "items": [],
+    "response_sets": [],
+    "source_availability": {
+      "status": "publisher_forms_linked_not_digitized",
+      "publisher_downloads_url": "[source reference omitted]",
+      "novopsych_pdf_role": "version_selection_guide_not_questionnaire",
+      "requires": [
+        "authorized digital form",
+        "respondent type and age variant"
+      ]
+    }
+  },
+  "scoring": {
+    "status": "requires_rule_review",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [],
+    "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+    "rules_provenance": null,
+    "source_rule_excerpts": [
+      "The Total Difficulties score (20 items; range 0-40) reflects the overall level of behavioural and emotional difficulties and is the sum of the four difficulty subscales (5 items each; items marked (R) are reverse-scored):",
+      "When the respondent answers “Yes”: The Impact score is the sum of one distress item and multiple interference items. Each item uses a four-point response scale: Not at all (0), Only a little (0), A medium amount (1), and A great deal (2). As such, only responses indicating at least “A medium amount” of distress or interference contribute to the score.",
+      "Close to Average indicates scores within the typical range for the general population (approximately 80% of children score in this band). No particular clinical concern is indicated.",
+      "Slightly Raised (or Slightly Lowered for Prosocial) indicates scores that are somewhat above the population average for difficulties (approximately 10% of children). This may warrant monitoring, but does not necessarily indicate a clinical concern.",
+      "The Impact score contextualises the symptom scores by indicating whether identified difficulties are causing functional impairment. For example, a child may score in the High or Very High range on one or more difficulty subscales but have a Close to Average Impact score, suggesting that the difficulties are present but not yet causing significant distress or interference. Conversely, a Slightly Raised symptom profile with a High Impact score may indicate that even moderate difficulties are having a disproportionate effect on the child’s functioning. The Impact score should be interpreted alongside the symptom subscales rather than in isolation.",
+      "Repeat administration. When more than one administration exists for the informant whose report is being generated (regardless of whether it is a Standard or Follow-Up version), multi-administration line plots replace the first-administration bar charts: a Total Difficulties line plot alongside an Impact line plot (side by side), a Prosocial Behaviour line plot, and a 2×2 grid of the four difficulty subscale line plots on a subsequent page. All plots display raw scores across time points with the four-band severity threshold shading in the background, enabling clinicians to track change trajectories.",
+      "Band changes (for example, a subscale moving from High to Slightly Raised) and band stability across administrations (for example, “remains in the Close to Average range”) are noted in the interpretive text. For the Impact plot, administrations at which the respondent answered “No” to the gateway question are marked with an x to distinguish them from administrations at which a measured Impact score of zero was recorded.",
+      "1. Close to Average ,",
+      "This system was developed by the SDQ authors (Goodman, 2015a) based on the empirical distribution of scores in the B-CAMHS surveys (Goodman et al., 2010), with thresholds calibrated so that approximately 80% of children fall in the Close to Average band, 10% in Slightly Raised, 5% in High, and 5% in Very High. It replaced an earlier three-band system (Normal, Borderline, Abnormal) that used an 80%/10%/10% split (Goodman, 1997).",
+      "Australian vs. UK Threshold Bands. The thresholds applied in NovoPsych’s SDQ scoring is the English (Australian) author-published thresholds (Goodman, 2015a, 2015b), which are numerically identical to the English (UK) thresholds with one exception: the UK revision corrects the teacher Impact upper bound in the ‘Very High’ band from 3-10 to the mathematically correct 3-6. Because the teacher Impact score has a ceiling of 6, this correction is documentary rather than substantive.",
+      "Australian vs. US Threshold Bands. Separate US thresholds are also published by the SDQ authors. The US Total Difficulties cut-points are approximately 1 to 2 points below the UK values at each band boundary, and the US Prosocial cut-points are approximately 1 point below the UK values at the lower two bands; the remaining subscale cut-points are broadly similar. The implication is that, all else equal, the US thresholds classify slightly more children into the elevated bands than the UK and Australian thresholds do, reflecting the lower mean scores observed in the US normative sample rather than any difference in the underlying construct.",
+      "Provisional Thresholds for Ages 2-4. Separate thresholds are provided for each informant type (parent, teacher, self-report), reflecting the different distributional properties of scores across informants. The 2-4 age band uses separate provisional thresholds, calibrated by the SDQ authors from a sample of 11,592 parent-completed SDQs for children aged 2-3 in Scotland (1,353 in Dumfries and 10,239 aged 30 months in Glasgow) and 10,004 teacher-completed SDQs for children aged 4 (Local Authority and Partnership nursery staff in Glasgow, 2012-2014). These data are author-published rather than peer-reviewed; the provisional thresholds are documented in Goodman (2015b), and the underlying sample is described at [source reference omitted] The provisional banding for 2-4 year-olds targets a slightly different distributional split (approximately 80% Close to Average, 12% Slightly Raised, 4% High, 4% Very High), reflecting estimated prevalence rates in this younger age group. The authors describe these thresholds as provisional, pending the collection of larger, nationally representative data for this age group.",
+      "Threshold Validation Against Australian Data. The four-band system does not stratify by sex. This is consistent with effect size analyses computed from Hawes and Dadds (2004) means and standard deviations (N = 1,359, ages 4-9), where all sex differences fell below the team’s threshold for meaningful stratification (|d| >= 0.5). The largest sex effect was on the Prosocial subscale (Cohen’s d = 0.38, girls higher than boys, weighted across age bands), with Hyperactivity a close second (Cohen’s d = -0.36, boys higher than girls). All other subscales showed |d| <= 0.30.",
+      "Cross-verification of the 4-17 parent thresholds against Australian community data (Hawes & Dadds, 2004) confirmed that the author’s thresholds fall at plausible points in the distribution. Under a normal approximation using the weighted means and SDs from Hawes & Dadds (2004) Table 1, the Total Difficulties Close to Average boundary (raw score 13) corresponds to approximately the 80th percentile of the Australian sample, matching the author’s intended target. Deviations for subscales with highly skewed distributions (Conduct, Peer Problems, Impact) are expected, given that the original thresholds were derived from empirical distributions rather than parametric estimates. Effect sizes and percentile mappings reported in this section were computed by NovoPsych using the means and standard deviations from Hawes and Dadds (2004), Table 1."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "SDQ Scoring & Interpretation",
+        "text": "All versions of the SDQ in NovoPsych follow the same scoring structure and produce scores at three levels: Total Difficulties score, five subscale scores, and an Impact score. A higher score indicates greater difficulty in all areas except Prosocial Behaviour, where a higher score indicates greater prosocial strength.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Total Difficulties Score & Subscales",
+        "text": "\nThe Total Difficulties score (20 items; range 0-40) reflects the overall level of behavioural and emotional difficulties and is the sum of the four difficulty subscales (5 items each; items marked (R) are reverse-scored):\n1. Emotional Symptoms (items 3, 8, 13, 16, 24; range 0-10): subjective emotional distress\n2. Conduct Problems (items 5, 7(R), 12, 18, 22; range 0-10): behavioural difficulties\n3. Hyperactivity/Inattention (items 2, 10, 15, 21(R), 25(R); range 0-10): overactivity and concentration difficulties\n4. Peer Problems (items 6, 11(R), 14(R), 19, 23; range 0-10): peer relationship difficulties\nA fifth subscale, Prosocial Behaviour (items 1, 4, 9, 17, 20; range 0-10), assesses positive social attributes. This is a strength scale, not included as part of the Total Difficulties score, with reversed interpretation: low scores indicate fewer prosocial behaviours and high scores indicate prosocial strengths.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Impact Score",
+        "text": "The Impact score is calculated from the Impact Supplement, which is administered on both Standard and Follow-up versions. The Supplement begins with a gateway question asking whether the respondent perceives the child to have any difficulties in emotions, concentration, behaviour, or social functioning.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Impact Score Graph",
+        "text": "\nWhen the respondent answers “No”: The Supplement is not administered, and an Impact score is not calculated. The results table shows “N/A – No difficulties reported” for the Impact row, and the interpretive narrative notes that the respondent reported no overall difficulties.\nWhen the respondent answers “Yes”: The Impact score is the sum of one distress item and multiple interference items. Each item uses a four-point response scale: Not at all (0), Only a little (0), A medium amount (1), and A great deal (2). As such, only responses indicating at least “A medium amount” of distress or interference contribute to the score.\nThe number of interference items and the resulting score range vary by informant version:\nParent-report and self-report versions: four interference items (home life, friendships, classroom learning, and leisure activities) are combined with the distress item, giving a total impact score in the range 0 to 10.\nTeacher-report versions: two interference items (peer relationships and classroom learning) are combined with the distress item, giving a total impact score in the range 0 to 6.\nImpact Supplement Items not included in the Impact score. Two items appear in the Impact Supplement but do not contribute to the Impact score.\nChronicity (Standard versions only): captures the duration of difficulties and is displayed as a caption beneath the Impact chart rather than contributing to the total impact score.\nBurden : captures the impact on the respondent or family/teacher and is referenced in the interpretive narrative but not in the total impact score.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Prosocial Behaviour Interpretation",
+        "text": "The Prosocial Behaviour subscale requires separate interpretive attention because it operates in the opposite direction to the difficulty subscales. A high Prosocial score is positive, indicating that the child is considerate, helpful, and kind. A low Prosocial score may indicate difficulties with social engagement, cooperation, or helping behaviour, and warrants further exploration. The Prosocial subscale is not included in the Total Difficulties score, so a child can have a low Total Difficulties score (few problems) but still have a Prosocial score that warrants attention.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Impact Score Interpretation",
+        "text": "The Impact score contextualises the symptom scores by indicating whether identified difficulties are causing functional impairment. For example, a child may score in the High or Very High range on one or more difficulty subscales but have a Close to Average Impact score, suggesting that the difficulties are present but not yet causing significant distress or interference. Conversely, a Slightly Raised symptom profile with a High Impact score may indicate that even moderate difficulties are having a disproportionate effect on the child’s functioning. The Impact score should be interpreted alongside the symptom subscales rather than in isolation.\n",
+        "source_url": null
+      },
+      {
+        "title": "What does it mean if the respondent reports \"no difficulties\" but the symptom scores look elevated?",
+        "text": "The Impact Supplement opens with a gateway question asking whether the respondent thinks the child has any difficulties at all. If they answer “no”, the Impact score is not calculated and the report records this, even when one or more subscale scores fall in an elevated band. This pattern is clinically informative rather than contradictory: it can mean the behaviours are present but not yet causing the respondent concern, that the respondent has a high tolerance for the behaviours, or that they are minimising. It is worth exploring gently in conversation rather than assuming the rating is a mistake.\n",
+        "source_url": null
+      },
+      {
+        "title": "A parent and a teacher have given quite different ratings. How should I interpret that?",
+        "text": "Disagreement between informants is common and usually meaningful rather than a sign that one of them is wrong. Children often behave differently at home and at school, so a difference can point to a situation-specific difficulty, for example conduct concerns that show up in the classroom but not at home, or anxiety that a parent sees but a teacher does not. Read each informant’s profile against that informant’s own norms and treat the discrepancy itself as a clinical clue about where and when the child struggles. Surfacing these context differences is one of the SDQ’s real strengths.\n",
+        "source_url": null
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [],
+    "calculation_status": "source_guidance_only",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+    "remaining_work": [
+      "No authorized, variant-specific SDQ questionnaire is available in the selected source; its PDF is a version-selection guide. Questions, response sets, administration and executable scoring remain blocked."
+    ],
+    "implementation_status": {
+      "raw_calculation": "blocked",
+      "interpretation": "not_compiled",
+      "normative_conversion": "not_implemented",
+      "clinical_use": "not_approved"
+    },
+    "runtime_module": "definition_runtime.py"
+  },
+  "metricBindings": [],
+  "sources": [
+    {
+      "sha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+      "pageCount": 6,
+      "identityStatus": "title_or_acronym_matches",
+      "hashVerified": true,
+      "usage": "reference_identity_only_no_runtime_fetch"
+    }
+  ],
+  "page": {
+    "coordinateUnit": "pt",
+    "origin": "top_left",
+    "documentsAreAlternativesNotConcatenated": true
+  },
+  "theme": {
+    "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+    "branding": "application_branding",
+    "sourceLogosRequired": false
+  },
+  "pages": [
+    {
+      "pageId": "d92f391c0119f_p1",
+      "documentSha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+      "pageNumber": 1,
+      "widthPt": 595.280029296875,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "d92f391c0119f_p1_chart_1",
+        "d92f391c0119f_p1_chart_2",
+        "d92f391c0119f_p1_chart_3"
+      ],
+      "tableIds": [
+        "d92f391c0119f_p1_table_1",
+        "d92f391c0119f_p1_table_2"
+      ],
+      "sectionIds": [
+        "d92f391c0119f_p1_section_1",
+        "d92f391c0119f_p1_section_2",
+        "d92f391c0119f_p1_section_3",
+        "d92f391c0119f_p1_section_4"
+      ]
+    },
+    {
+      "pageId": "d92f391c0119f_p2",
+      "documentSha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+      "pageNumber": 2,
+      "widthPt": 595.280029296875,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "d92f391c0119f_p2_section_1",
+        "d92f391c0119f_p2_section_2",
+        "d92f391c0119f_p2_section_3",
+        "d92f391c0119f_p2_section_4",
+        "d92f391c0119f_p2_section_5",
+        "d92f391c0119f_p2_section_6",
+        "d92f391c0119f_p2_section_7",
+        "d92f391c0119f_p2_section_8",
+        "d92f391c0119f_p2_section_9"
+      ]
+    },
+    {
+      "pageId": "d92f391c0119f_p3",
+      "documentSha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+      "pageNumber": 3,
+      "widthPt": 595.280029296875,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "d92f391c0119f_p3_section_1"
+      ]
+    },
+    {
+      "pageId": "d92f391c0119f_p4",
+      "documentSha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+      "pageNumber": 4,
+      "widthPt": 595.280029296875,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": []
+    },
+    {
+      "pageId": "d92f391c0119f_p5",
+      "documentSha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+      "pageNumber": 5,
+      "widthPt": 595.280029296875,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": []
+    },
+    {
+      "pageId": "d92f391c0119f_p6",
+      "documentSha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+      "pageNumber": 6,
+      "widthPt": 595.280029296875,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "d92f391c0119f_p6_section_1"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "d92f391c0119f_p1_section_1",
+      "pageId": "d92f391c0119f_p1",
+      "title": "SDQ Results",
+      "type": "results",
+      "bboxPt": [
+        34.3465,
+        197.8842,
+        119.14452,
+        211.8842
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p1_section_2",
+      "pageId": "d92f391c0119f_p1",
+      "title": "Total Difficulties Score",
+      "type": "source_heading",
+      "bboxPt": [
+        73.4488,
+        373.05518,
+        203.48079,
+        385.05518
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p1_section_3",
+      "pageId": "d92f391c0119f_p1",
+      "title": "Impact Score",
+      "type": "source_heading",
+      "bboxPt": [
+        399.13101,
+        373.05518,
+        474.491,
+        385.05518
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p1_section_4",
+      "pageId": "d92f391c0119f_p1",
+      "title": "Subscale Scores",
+      "type": "results",
+      "bboxPt": [
+        255.323,
+        574.67816,
+        351.37097,
+        586.67816
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_1",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Interpretation",
+      "type": "interpretation",
+      "bboxPt": [
+        34.3465,
+        144.02623,
+        124.57652,
+        158.02623
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_2",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Difficulties",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        308.63727,
+        147.27139,
+        319.63727
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_3",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Peer Problems",
+      "type": "source_heading",
+      "bboxPt": [
+        113.0503,
+        320.89154,
+        190.0833,
+        331.89154
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_4",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Conduct Problems",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        369.44547,
+        188.82939,
+        380.44547
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_5",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Emotional Symptoms",
+      "type": "source_heading",
+      "bboxPt": [
+        428.48639,
+        405.89938,
+        540.9505,
+        416.89938
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_6",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Hyperactivity",
+      "type": "source_heading",
+      "bboxPt": [
+        112.4453,
+        418.15329,
+        181.52527,
+        429.15329
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_7",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Prosocial Behaviour",
+      "type": "source_heading",
+      "bboxPt": [
+        91.03949,
+        490.90762,
+        197.40945,
+        501.90762
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_8",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Prosocial Behaviour",
+      "type": "source_heading",
+      "bboxPt": [
+        113.05039,
+        503.16153,
+        219.42035,
+        514.16156
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p2_section_9",
+      "pageId": "d92f391c0119f_p2",
+      "title": "Additional Comments",
+      "type": "source_heading",
+      "bboxPt": [
+        91.0394,
+        636.41547,
+        204.71338,
+        647.41547
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 11.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p3_section_1",
+      "pageId": "d92f391c0119f_p3",
+      "title": "Scoring and Interpretation Information",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        34.3465,
+        144.02623,
+        290.26645,
+        158.02623
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d92f391c0119f_p6_section_1",
+      "pageId": "d92f391c0119f_p6",
+      "title": "Client Responses",
+      "type": "responses",
+      "bboxPt": [
+        34.3465,
+        723.38916,
+        151.8205,
+        737.38916
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    }
+  ],
+  "charts": [
+    {
+      "id": "d92f391c0119f_p1_chart_1",
+      "title": "Total Difficulties Score",
+      "type": "vertical_bar",
+      "bboxPt": [
+        50.465,
+        398.977,
+        235.465,
+        525.417
+      ],
+      "widthPt": 185.0,
+      "heightPt": 126.44,
+      "axisColour": "#333333",
+      "observedDataType": "raw_score",
+      "backgroundBands": [
+        {
+          "bboxPt": [
+            50.4648,
+            483.41702,
+            233.4648,
+            525.41699
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            50.4648,
+            474.08694,
+            233.4648,
+            483.41702
+          ],
+          "colour": "#fdd835",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            50.4648,
+            464.75693,
+            233.4648,
+            474.08701
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            50.4648,
+            400.97693,
+            233.4648,
+            464.75699
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        }
+      ],
+      "variantEvidence": "single_visit_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [
+          {
+            "value": 0.0,
+            "positionPt": 42.6847,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": "Subscale Scores",
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 40.0,
+            "positionPt": 401.78592,
+            "text": "40",
+            "colour": "#333333"
+          },
+          {
+            "value": 35.0,
+            "positionPt": 417.33591,
+            "text": "35",
+            "colour": "#333333"
+          },
+          {
+            "value": 30.0,
+            "positionPt": 432.89612,
+            "text": "30",
+            "colour": "#333333"
+          },
+          {
+            "value": 25.0,
+            "positionPt": 448.44611,
+            "text": "25",
+            "colour": "#333333"
+          },
+          {
+            "value": 20.0,
+            "positionPt": 464.00632,
+            "text": "20",
+            "colour": "#333333"
+          },
+          {
+            "value": 15.0,
+            "positionPt": 479.5563,
+            "text": "15",
+            "colour": "#333333"
+          },
+          {
+            "value": 10.0,
+            "positionPt": 495.11612,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 510.666125,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 526.22632,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 40.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": null,
+          "colour": "#1975d2",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.4945951680052239,
+          "barThicknessPt": 30.000010000000003,
+          "fill": "#1976d2",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#1975d2"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#1975d2"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#1975d2"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#1975d2"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#1975d2"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "d92f391c0119f_p1",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 370,
+        "detectedType": "vertical_bar",
+        "reviewedType": "vertical_bar",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Total Difficulties Score",
+          "bboxPt": [
+            73.4488,
+            373.05518,
+            203.48079,
+            385.05518
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Close to",
+          "bboxPt": [
+            205.74001,
+            499.77957,
+            225.46498,
+            504.77957
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Average",
+          "bboxPt": [
+            205.73492,
+            504.77957,
+            225.46492,
+            509.77957
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Slightly Raised",
+          "bboxPt": [
+            189.62,
+            476.60959,
+            225.46497,
+            481.60959
+          ],
+          "colour": "#fdd835",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "High",
+          "bboxPt": [
+            214.355,
+            467.27957,
+            225.46498,
+            472.27957
+          ],
+          "colour": "#ff9800",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Very High",
+          "bboxPt": [
+            202.125,
+            430.71957,
+            225.465,
+            435.71957
+          ],
+          "colour": "#c62828",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Subscale Scores",
+          "bboxPt": [
+            255.323,
+            574.67816,
+            351.37097,
+            586.67816
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    },
+    {
+      "id": "d92f391c0119f_p1_chart_2",
+      "title": "Impact Score",
+      "type": "vertical_bar",
+      "bboxPt": [
+        347.811,
+        398.977,
+        533.811,
+        525.417
+      ],
+      "widthPt": 186.0,
+      "heightPt": 126.44,
+      "axisColour": "#333333",
+      "observedDataType": "raw_score",
+      "backgroundBands": [
+        {
+          "bboxPt": [
+            347.811,
+            519.19708,
+            531.81104,
+            525.41699
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            347.811,
+            506.74722,
+            531.81104,
+            519.18701
+          ],
+          "colour": "#fdd835",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            347.811,
+            494.30679,
+            531.81104,
+            506.74701
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            347.811,
+            400.97693,
+            531.81104,
+            494.30701
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        }
+      ],
+      "variantEvidence": "single_visit_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [
+          {
+            "value": 0.0,
+            "positionPt": 340.031005,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": "Subscale Scores",
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 10.0,
+            "positionPt": 401.78635,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 9.0,
+            "positionPt": 414.22653,
+            "text": "9",
+            "colour": "#333333"
+          },
+          {
+            "value": 8.0,
+            "positionPt": 426.67654,
+            "text": "8",
+            "colour": "#333333"
+          },
+          {
+            "value": 7.0,
+            "positionPt": 439.11633,
+            "text": "7",
+            "colour": "#333333"
+          },
+          {
+            "value": 6.0,
+            "positionPt": 451.56635,
+            "text": "6",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 464.00653,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 4.0,
+            "positionPt": 476.44632,
+            "text": "4",
+            "colour": "#333333"
+          },
+          {
+            "value": 3.0,
+            "positionPt": 488.89633,
+            "text": "3",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.0,
+            "positionPt": 501.33612,
+            "text": "2",
+            "colour": "#333333"
+          },
+          {
+            "value": 1.0,
+            "positionPt": 513.786115,
+            "text": "1",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 526.22632,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 10.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": "Difficulties reported to have been present for 1-5 months.",
+          "colour": "#536e7a",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.49462373569200035,
+          "barThicknessPt": 30.0,
+          "fill": "#546e7a",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#536e7a"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#536e7a"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#536e7a"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#536e7a"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#536e7a"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "d92f391c0119f_p1",
+      "sourceChartId": "chart_2",
+      "typeReview": {
+        "reviewIndex": 371,
+        "detectedType": "vertical_bar",
+        "reviewedType": "vertical_bar",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Impact Score",
+          "bboxPt": [
+            399.13101,
+            373.05518,
+            474.491,
+            385.05518
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Close to Average",
+          "bboxPt": [
+            481.966,
+            520.15955,
+            522.8111,
+            525.15955
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Slightly Raised",
+          "bboxPt": [
+            486.966,
+            510.82959,
+            522.8111,
+            515.82959
+          ],
+          "colour": "#fdd835",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "High",
+          "bboxPt": [
+            511.70099,
+            498.38959,
+            522.81097,
+            503.38959
+          ],
+          "colour": "#ff9800",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Very High",
+          "bboxPt": [
+            499.47101,
+            445.49957,
+            522.81104,
+            450.49957
+          ],
+          "colour": "#c62828",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Difficulties reported to have been present for 1-5 months.",
+          "bboxPt": [
+            345.875,
+            542.77246,
+            547.74695,
+            550.77246
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Oblique",
+          "fontSizePt": 8.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Subscale Scores",
+          "bboxPt": [
+            255.323,
+            574.67816,
+            351.37097,
+            586.67816
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    },
+    {
+      "id": "d92f391c0119f_p1_chart_3",
+      "title": "Subscale Scores",
+      "type": "vertical_bar",
+      "bboxPt": [
+        54.346,
+        600.599,
+        555.346,
+        729.799
+      ],
+      "widthPt": 501.0,
+      "heightPt": 129.2,
+      "axisColour": "#333333",
+      "observedDataType": "raw_score",
+      "backgroundBands": [
+        {
+          "bboxPt": [
+            54.3465,
+            681.46979,
+            183.6165,
+            729.81
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            54.3465,
+            668.74915,
+            183.6165,
+            681.46899
+          ],
+          "colour": "#fdd835",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            54.3465,
+            643.3092,
+            183.6165,
+            668.74902
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            54.3465,
+            602.59979,
+            183.6165,
+            643.31
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            183.61601,
+            694.19012,
+            269.79611,
+            729.81
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            183.61601,
+            681.46973,
+            269.79611,
+            694.19
+          ],
+          "colour": "#fdd835",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            183.61601,
+            656.02924,
+            269.79611,
+            681.46899
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            183.61601,
+            602.59888,
+            269.79611,
+            656.02899
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            269.79599,
+            656.02991,
+            355.9761,
+            729.81
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            269.79599,
+            630.58923,
+            355.9761,
+            656.02899
+          ],
+          "colour": "#fdd835",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            269.79599,
+            617.85913,
+            355.9761,
+            630.57898
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            269.79599,
+            602.59979,
+            355.9761,
+            617.85999
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            355.98602,
+            694.19012,
+            442.16611,
+            729.81
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            355.98602,
+            681.46973,
+            442.16611,
+            694.19
+          ],
+          "colour": "#fdd835",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            355.98602,
+            668.74915,
+            442.16611,
+            681.46899
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            355.98602,
+            602.599,
+            442.16611,
+            668.74902
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            442.01602,
+            663.66003,
+            554.05603,
+            729.81
+          ],
+          "colour": "#c62828",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            442.01602,
+            650.94012,
+            554.05603,
+            663.66003
+          ],
+          "colour": "#ff9800",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            442.01602,
+            638.21973,
+            554.05603,
+            650.94
+          ],
+          "colour": "#fdd835",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        },
+        {
+          "bboxPt": [
+            442.01602,
+            602.59912,
+            554.05603,
+            638.21899
+          ],
+          "colour": "#4caf50",
+          "opacity": 0.3,
+          "semantics": "visual_background_only_not_a_scoring_threshold"
+        }
+      ],
+      "variantEvidence": "single_visit_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [
+          {
+            "value": 0.0,
+            "positionPt": 46.5663,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 10.0,
+            "positionPt": 603.40857,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 9.0,
+            "positionPt": 616.12842,
+            "text": "9",
+            "colour": "#333333"
+          },
+          {
+            "value": 8.0,
+            "positionPt": 628.84875,
+            "text": "8",
+            "colour": "#333333"
+          },
+          {
+            "value": 7.0,
+            "positionPt": 641.56866,
+            "text": "7",
+            "colour": "#333333"
+          },
+          {
+            "value": 6.0,
+            "positionPt": 654.28857,
+            "text": "6",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 667.00842,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 4.0,
+            "positionPt": 679.72833,
+            "text": "4",
+            "colour": "#333333"
+          },
+          {
+            "value": 3.0,
+            "positionPt": 692.44861,
+            "text": "3",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.0,
+            "positionPt": 705.16852,
+            "text": "2",
+            "colour": "#333333"
+          },
+          {
+            "value": 1.0,
+            "positionPt": 717.88843,
+            "text": "1",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 730.60834,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 10.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": "Emotional Symptoms",
+          "colour": "#e67e21",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.1720152380987359,
+          "barThicknessPt": 31.18009999999998,
+          "fill": "#e67e22",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#e67e21"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#e67e21"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#e67e21"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#e67e21"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#e67e21"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        },
+        {
+          "id": "series_2",
+          "label": "Conduct Problems",
+          "colour": "#33495e",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.34403137440194304,
+          "barThicknessPt": 31.18009999999998,
+          "fill": "#34495e",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#33495e"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#33495e"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#33495e"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#33495e"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#33495e"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        },
+        {
+          "id": "series_3",
+          "label": "Hyperactivity",
+          "colour": "#3397db",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.5160475007251005,
+          "barThicknessPt": 31.180109999999956,
+          "fill": "#3498db",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#3397db"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#3397db"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#3397db"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#3397db"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#3397db"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        },
+        {
+          "id": "series_4",
+          "label": "Peer Problems",
+          "colour": "#9a59b5",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.6880836370478686,
+          "barThicknessPt": 31.180090000000007,
+          "fill": "#9b59b6",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#9a59b5"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#9a59b5"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#9a59b5"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#9a59b5"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#9a59b5"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        },
+        {
+          "id": "series_5",
+          "label": "Prosocial Behaviour",
+          "colour": "#1abb9b",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.8600997633710261,
+          "barThicknessPt": 31.180079999999975,
+          "fill": "#1abc9c",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#1abb9b"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#1abb9b"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#1abb9b"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#1abb9b"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#1abb9b"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "d92f391c0119f_p1",
+      "sourceChartId": "chart_3",
+      "typeReview": {
+        "reviewIndex": 372,
+        "detectedType": "vertical_bar",
+        "reviewedType": "vertical_bar",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Subscale Scores",
+          "bboxPt": [
+            255.323,
+            574.67816,
+            351.37097,
+            586.67816
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Close to",
+          "bboxPt": [
+            59.3465,
+            700.99255,
+            79.0715,
+            705.99255
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Average",
+          "bboxPt": [
+            59.3465,
+            705.99255,
+            79.0765,
+            710.99255
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Slightly",
+          "bboxPt": [
+            59.3465,
+            670.46155,
+            77.4065,
+            675.46155
+          ],
+          "colour": "#fdd835",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Raised",
+          "bboxPt": [
+            59.3465,
+            675.46155,
+            75.7415,
+            680.46155
+          ],
+          "colour": "#fdd835",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "High",
+          "bboxPt": [
+            59.3465,
+            653.88159,
+            70.4565,
+            658.88159
+          ],
+          "colour": "#ff9800",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Very High",
+          "bboxPt": [
+            59.3465,
+            620.81158,
+            82.6865,
+            625.81158
+          ],
+          "colour": "#c62828",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Close to",
+          "bboxPt": [
+            529.62097,
+            615.7616,
+            549.34601,
+            620.7616
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Average",
+          "bboxPt": [
+            529.61591,
+            620.7616,
+            549.34601,
+            625.7616
+          ],
+          "colour": "#4caf50",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Slightly",
+          "bboxPt": [
+            531.28601,
+            639.93158,
+            549.34607,
+            644.93158
+          ],
+          "colour": "#fdd835",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Lowered",
+          "bboxPt": [
+            528.78601,
+            644.93158,
+            549.34607,
+            649.93158
+          ],
+          "colour": "#fdd835",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Low",
+          "bboxPt": [
+            539.34601,
+            655.15161,
+            549.34601,
+            660.15161
+          ],
+          "colour": "#ff9800",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Very Low",
+          "bboxPt": [
+            527.11603,
+            694.59259,
+            549.34613,
+            699.59259
+          ],
+          "colour": "#c62828",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 5.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Emotional",
+          "bboxPt": [
+            118.296,
+            736.30872,
+            162.75598,
+            746.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Symptoms",
+          "bboxPt": [
+            116.91084,
+            746.30872,
+            164.14084,
+            756.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Conduct",
+          "bboxPt": [
+            208.08585,
+            736.30872,
+            245.32584,
+            746.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Problems",
+          "bboxPt": [
+            205.59093,
+            746.30872,
+            247.82092,
+            756.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Hyperactivity",
+          "bboxPt": [
+            284.28113,
+            736.30872,
+            341.51111,
+            746.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Peer",
+          "bboxPt": [
+            388.51581,
+            736.30872,
+            409.6358,
+            746.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Problems",
+          "bboxPt": [
+            377.96082,
+            746.30872,
+            420.1908,
+            756.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Prosocial",
+          "bboxPt": [
+            464.69601,
+            736.30872,
+            505.81601,
+            746.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Behaviour",
+          "bboxPt": [
+            462.746,
+            746.30872,
+            507.76599,
+            756.30872
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    }
+  ],
+  "tables": [
+    {
+      "id": "d92f391c0119f_p1_table_1",
+      "type": "patient_metadata",
+      "bboxPt": [
+        28.3465,
+        113.38562,
+        566.92919,
+        180.0
+      ],
+      "rowCount": 4,
+      "columnCount": 4,
+      "cellsPt": [
+        [
+          28.3465,
+          113.38562,
+          566.92919,
+          133.22818
+        ],
+        [
+          28.3465,
+          133.22818,
+          141.73212,
+          148.81921
+        ],
+        [
+          28.3465,
+          148.81921,
+          141.73212,
+          164.40994
+        ],
+        [
+          28.3465,
+          164.40994,
+          141.73212,
+          180.0
+        ],
+        [
+          141.73212,
+          133.22818,
+          355.32117,
+          148.81921
+        ],
+        [
+          141.73212,
+          148.81921,
+          355.32117,
+          164.40994
+        ],
+        [
+          141.73212,
+          164.40994,
+          355.32117,
+          180.0
+        ],
+        [
+          355.32117,
+          133.22818,
+          467.93302,
+          148.81921
+        ],
+        [
+          355.32117,
+          148.81921,
+          467.93302,
+          164.40994
+        ],
+        [
+          355.32117,
+          164.40994,
+          467.93302,
+          180.0
+        ],
+        [
+          467.93302,
+          133.22818,
+          566.92919,
+          148.81921
+        ],
+        [
+          467.93302,
+          148.81921,
+          566.92919,
+          164.40994
+        ],
+        [
+          467.93302,
+          164.40994,
+          566.92919,
+          180.0
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "d92f391c0119f_p1",
+      "sourceTableId": "table_1",
+      "columns": [],
+      "rowBindings": [],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Client Name",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "patient.displayName"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "patient.displayName"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "static_label",
+          "content": "Date administered",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.completedAt"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.completedAt"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Date of birth (age)",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "patient.dateOfBirthAndAgeAtAdministration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "patient.dateOfBirthAndAgeAtAdministration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "static_label",
+          "content": "Time taken",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.duration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.duration"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Assessor",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.assessorName"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.assessorName"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "d92f391c0119f_p1_table_2",
+      "type": "unresolved_table",
+      "bboxPt": [
+        28.3465,
+        195.59064,
+        566.92919,
+        347.24402
+      ],
+      "rowCount": 9,
+      "columnCount": 4,
+      "cellsPt": [
+        [
+          28.3465,
+          195.59064,
+          566.92919,
+          215.43287
+        ],
+        [
+          28.3465,
+          215.43287,
+          85.03951,
+          238.11018
+        ],
+        [
+          28.3465,
+          238.11018,
+          85.03951,
+          253.70094
+        ],
+        [
+          28.3465,
+          253.70094,
+          85.03951,
+          269.29108
+        ],
+        [
+          28.3465,
+          269.29108,
+          85.03951,
+          284.88184
+        ],
+        [
+          28.3465,
+          284.88184,
+          85.03951,
+          300.47211
+        ],
+        [
+          28.3465,
+          300.47211,
+          85.03951,
+          316.06294
+        ],
+        [
+          28.3465,
+          316.06294,
+          85.03951,
+          331.65323
+        ],
+        [
+          28.3465,
+          331.65323,
+          85.03951,
+          347.24402
+        ],
+        [
+          85.03951,
+          215.43287,
+          340.15726,
+          238.11018
+        ],
+        [
+          85.03951,
+          238.11018,
+          340.15726,
+          253.70094
+        ],
+        [
+          85.03951,
+          253.70094,
+          340.15726,
+          269.29108
+        ],
+        [
+          85.03951,
+          269.29108,
+          340.15726,
+          284.88184
+        ],
+        [
+          85.03951,
+          284.88184,
+          340.15726,
+          300.47211
+        ],
+        [
+          85.03951,
+          300.47211,
+          340.15726,
+          316.06294
+        ],
+        [
+          85.03951,
+          316.06294,
+          340.15726,
+          331.65323
+        ],
+        [
+          85.03951,
+          331.65323,
+          340.15726,
+          347.24402
+        ],
+        [
+          340.15726,
+          215.43287,
+          453.61762,
+          238.11018
+        ],
+        [
+          340.15726,
+          238.11018,
+          453.61762,
+          253.70094
+        ],
+        [
+          340.15726,
+          253.70094,
+          453.61762,
+          269.29108
+        ],
+        [
+          340.15726,
+          269.29108,
+          453.61762,
+          284.88184
+        ],
+        [
+          340.15726,
+          284.88184,
+          453.61762,
+          300.47211
+        ],
+        [
+          340.15726,
+          300.47211,
+          453.61762,
+          316.06294
+        ],
+        [
+          340.15726,
+          316.06294,
+          453.61762,
+          331.65323
+        ],
+        [
+          340.15726,
+          331.65323,
+          453.61762,
+          347.24402
+        ],
+        [
+          453.61762,
+          215.43287,
+          566.92919,
+          238.11018
+        ],
+        [
+          453.61762,
+          238.11018,
+          566.92919,
+          253.70094
+        ],
+        [
+          453.61762,
+          253.70094,
+          566.92919,
+          269.29108
+        ],
+        [
+          453.61762,
+          269.29108,
+          566.92919,
+          284.88184
+        ],
+        [
+          453.61762,
+          284.88184,
+          566.92919,
+          300.47211
+        ],
+        [
+          453.61762,
+          300.47211,
+          566.92919,
+          316.06294
+        ],
+        [
+          453.61762,
+          316.06294,
+          566.92919,
+          331.65323
+        ],
+        [
+          453.61762,
+          331.65323,
+          566.92919,
+          347.24402
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "d92f391c0119f_p1",
+      "sourceTableId": "table_2",
+      "columns": [
+        {
+          "sourceColumnIndex": 2,
+          "label": "Score",
+          "binding": null
+        }
+      ],
+      "rowBindings": [],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "static_column_header",
+          "content": "Score",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    }
+  ],
+  "variants": {
+    "sourceStatements": [],
+    "firstAdministration": {
+      "status": "requires_review"
+    },
+    "repeatAdministration": {
+      "status": "requires_review"
+    },
+    "policy": "Do not invent a repeat chart from an observed first-visit chart."
+  },
+  "interpretationRules": {
+    "encodedRules": [],
+    "sourceGuidance": [
+      {
+        "title": "SDQ Scoring & Interpretation",
+        "text": "All versions of the SDQ in NovoPsych follow the same scoring structure and produce scores at three levels: Total Difficulties score, five subscale scores, and an Impact score. A higher score indicates greater difficulty in all areas except Prosocial Behaviour, where a higher score indicates greater prosocial strength.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Total Difficulties Score & Subscales",
+        "text": "\nThe Total Difficulties score (20 items; range 0-40) reflects the overall level of behavioural and emotional difficulties and is the sum of the four difficulty subscales (5 items each; items marked (R) are reverse-scored):\n1. Emotional Symptoms (items 3, 8, 13, 16, 24; range 0-10): subjective emotional distress\n2. Conduct Problems (items 5, 7(R), 12, 18, 22; range 0-10): behavioural difficulties\n3. Hyperactivity/Inattention (items 2, 10, 15, 21(R), 25(R); range 0-10): overactivity and concentration difficulties\n4. Peer Problems (items 6, 11(R), 14(R), 19, 23; range 0-10): peer relationship difficulties\nA fifth subscale, Prosocial Behaviour (items 1, 4, 9, 17, 20; range 0-10), assesses positive social attributes. This is a strength scale, not included as part of the Total Difficulties score, with reversed interpretation: low scores indicate fewer prosocial behaviours and high scores indicate prosocial strengths.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Impact Score",
+        "text": "The Impact score is calculated from the Impact Supplement, which is administered on both Standard and Follow-up versions. The Supplement begins with a gateway question asking whether the respondent perceives the child to have any difficulties in emotions, concentration, behaviour, or social functioning.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Impact Score Graph",
+        "text": "\nWhen the respondent answers “No”: The Supplement is not administered, and an Impact score is not calculated. The results table shows “N/A – No difficulties reported” for the Impact row, and the interpretive narrative notes that the respondent reported no overall difficulties.\nWhen the respondent answers “Yes”: The Impact score is the sum of one distress item and multiple interference items. Each item uses a four-point response scale: Not at all (0), Only a little (0), A medium amount (1), and A great deal (2). As such, only responses indicating at least “A medium amount” of distress or interference contribute to the score.\nThe number of interference items and the resulting score range vary by informant version:\nParent-report and self-report versions: four interference items (home life, friendships, classroom learning, and leisure activities) are combined with the distress item, giving a total impact score in the range 0 to 10.\nTeacher-report versions: two interference items (peer relationships and classroom learning) are combined with the distress item, giving a total impact score in the range 0 to 6.\nImpact Supplement Items not included in the Impact score. Two items appear in the Impact Supplement but do not contribute to the Impact score.\nChronicity (Standard versions only): captures the duration of difficulties and is displayed as a caption beneath the Impact chart rather than contributing to the total impact score.\nBurden : captures the impact on the respondent or family/teacher and is referenced in the interpretive narrative but not in the total impact score.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Prosocial Behaviour Interpretation",
+        "text": "The Prosocial Behaviour subscale requires separate interpretive attention because it operates in the opposite direction to the difficulty subscales. A high Prosocial score is positive, indicating that the child is considerate, helpful, and kind. A low Prosocial score may indicate difficulties with social engagement, cooperation, or helping behaviour, and warrants further exploration. The Prosocial subscale is not included in the Total Difficulties score, so a child can have a low Total Difficulties score (few problems) but still have a Prosocial score that warrants attention.\n",
+        "source_url": null
+      },
+      {
+        "title": "SDQ Impact Score Interpretation",
+        "text": "The Impact score contextualises the symptom scores by indicating whether identified difficulties are causing functional impairment. For example, a child may score in the High or Very High range on one or more difficulty subscales but have a Close to Average Impact score, suggesting that the difficulties are present but not yet causing significant distress or interference. Conversely, a Slightly Raised symptom profile with a High Impact score may indicate that even moderate difficulties are having a disproportionate effect on the child’s functioning. The Impact score should be interpreted alongside the symptom subscales rather than in isolation.\n",
+        "source_url": null
+      },
+      {
+        "title": "What does it mean if the respondent reports \"no difficulties\" but the symptom scores look elevated?",
+        "text": "The Impact Supplement opens with a gateway question asking whether the respondent thinks the child has any difficulties at all. If they answer “no”, the Impact score is not calculated and the report records this, even when one or more subscale scores fall in an elevated band. This pattern is clinically informative rather than contradictory: it can mean the behaviours are present but not yet causing the respondent concern, that the respondent has a high tolerance for the behaviours, or that they are minimising. It is worth exploring gently in conversation rather than assuming the rating is a mistake.\n",
+        "source_url": null
+      },
+      {
+        "title": "A parent and a teacher have given quite different ratings. How should I interpret that?",
+        "text": "Disagreement between informants is common and usually meaningful rather than a sign that one of them is wrong. Children often behave differently at home and at school, so a difference can point to a situation-specific difficulty, for example conduct concerns that show up in the classroom but not at home, or anxiety that a parent sees but a teacher does not. Read each informant’s profile against that informant’s own norms and treat the discrepancy itself as a clinical clue about where and when the child struggles. Surfacing these context differences is one of the SDQ’s real strengths.\n",
+        "source_url": null
+      }
+    ],
+    "reportScoringGuidance": [
+      {
+        "documentSha256": "92f391c0119ff02d7f17dbfa13692efe4060bd38832ec29671bf0386d3fed966",
+        "pageNumber": 3,
+        "text": "For comprehensive information on the SDQ (© Robert Goodman, 2005), \nsee here\n.\nAll versions of the SDQ in NovoPsych follow the same scoring structure and produce scores at\nthree levels: Total Difficulties score, five subscale scores, and an Impact score. A higher score\nindicates greater difficulty in all areas except Prosocial Behaviour, where a higher score\nindicates greater prosocial strength.\nEach informant version is available as a Standard form (typically for initial/baseline\nadministration; recall window: past six months or current school year) and a Follow-Up form\n(typically for re-administration to track change; recall window: past month).\nSDQ Total Difficulties Score & Subscales\nThe Total Difficulties score (20 items; range 0-40) reflects the overall level of behavioural and\nemotional difficulties and is the sum of the four difficulty subscales (5 items each; items marked\n(R) are reverse-scored):\n1. Emotional Symptoms (items 3, 8, 13, 16, 24; range 0-10): subjective emotional distress\n2. Conduct Problems (items 5, 7(R), 12, 18, 22; range 0-10): behavioural difficulties\n3. Hyperactivity/Inattention (items 2, 10, 15, 21(R), 25(R); range 0-10): overactivity and\nconcentration difficulties\n4. Peer Problems (items 6, 11(R), 14(R), 19, 23; range 0-10): peer relationship difficulties\nA fifth subscale, Prosocial Behaviour (items 1, 4, 9, 17, 20; range 0-10), assesses positive social\nattributes. This is a strength scale, not included as part of the Total Difficulties score, with\nreversed interpretation: low scores indicate fewer prosocial behaviours and high scores indicate\nprosocial strengths.\nSDQ Impact Score\nThe Impact score is calculated from the Impact Supplement, which is administered on both\nStandard and Follow-up versions. The Supplement begins with a gateway question asking\nwhether the respondent perceives the child to have any difficulties in emotions, concentration,\nbehaviour, or social functioning.\nWhen the respondent answers \"No\": The Supplement is not administered, and an Impact score\nis not calculated. The results table shows \"N/A - No difficulties reported\" for the Impact row, and\nthe interpretive narrative notes that the respondent reported no overall difficulties.\nWhen the respondent answers \"Yes\": The Impact score is the sum of one distress item and\nmultiple interference items. Each item uses a four-point response scale: Not at all (0), Only a\nlittle (0), A medium amount (1), and A great deal (2). As such, only responses indicating at least\n\"A medium amount\" of distress or interference contribute to the score.\nThe number of interference items and the resulting score range vary by informant version:\n- Parent-report and self-report versions: four interference items (home life, friendships,\nclassroom learning, and leisure activities) are combined with the distress item, giving a total\nimpact score in the range 0 to 10.\n- Teacher-report versions: two interference items (peer relationships and classroom learning)",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      }
+    ],
+    "sourceRequirements": [],
+    "templates": [],
+    "sampleNarrativeReusable": false,
+    "runtimeEnabled": false
+  },
+  "referenceTables": [],
+  "paintStyles": [],
+  "assets": {
+    "runtimeImages": [],
+    "runtimeSourceFiles": [],
+    "runtimeSourceUrls": []
+  },
+  "runtimeContract": {
+    "version2RendererRequired": true,
+    "loadDefinitionFrom": "database_json",
+    "useCurrentPatientAnswers": true,
+    "useSamplePatientValues": false,
+    "externalNetworkRequired": false,
+    "sourceArchiveRequired": false,
+    "unknownScoring": "withhold",
+    "unknownNorms": "withhold",
+    "unsupportedChart": "withhold_and_report_exception",
+    "unknownRepeatLayout": "withhold"
+  },
+  "validation": {
+    "jsonStructureValidated": true,
+    "sourceHashesVerified": true,
+    "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+    "fullPageLayoutCompared": false,
+    "scoreBindingsReviewed": false,
+    "tablesSemanticallyReviewed": false,
+    "rendererEquivalent": false,
+    "clinicalApproved": false,
+    "readyForApplicationImport": false
+  },
+  "exceptions": [
+    {
+      "code": "score_and_series_bindings_require_review",
+      "count": 3
+    },
+    {
+      "code": "table_cell_semantics_require_review",
+      "count": 2,
+      "unresolvedCells": 24
+    },
+    {
+      "code": "interpretation_and_variant_rules_require_review"
+    }
+  ]
+}

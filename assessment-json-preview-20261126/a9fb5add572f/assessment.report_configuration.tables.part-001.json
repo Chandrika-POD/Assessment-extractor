@@ -1,0 +1,2081 @@
+[
+ {
+  "id": "d23e221f7ef7b_p1_table_1",
+  "type": "patient_metadata",
+  "bboxPt": [
+   28.34646,
+   113.38586,
+   566.92927,
+   180.00003
+  ],
+  "rowCount": 4,
+  "columnCount": 4,
+  "cellsPt": [
+   [
+    28.34646,
+    113.38586,
+    566.92927,
+    133.22834
+   ],
+   [
+    28.34646,
+    133.22834,
+    141.73228,
+    148.81891
+   ],
+   [
+    28.34646,
+    148.81891,
+    141.73228,
+    164.40948
+   ],
+   [
+    28.34646,
+    164.40948,
+    141.73228,
+    180.00003
+   ],
+   [
+    141.73228,
+    133.22834,
+    354.65438,
+    148.81891
+   ],
+   [
+    141.73228,
+    148.81891,
+    354.65438,
+    164.40948
+   ],
+   [
+    141.73228,
+    164.40948,
+    354.65438,
+    180.00003
+   ],
+   [
+    354.65438,
+    133.22834,
+    467.71653,
+    148.81891
+   ],
+   [
+    354.65438,
+    148.81891,
+    467.71653,
+    164.40948
+   ],
+   [
+    354.65438,
+    164.40948,
+    467.71653,
+    180.00003
+   ],
+   [
+    467.71653,
+    133.22834,
+    566.92927,
+    148.81891
+   ],
+   [
+    467.71653,
+    148.81891,
+    566.92927,
+    164.40948
+   ],
+   [
+    467.71653,
+    164.40948,
+    566.92927,
+    180.00003
+   ]
+  ],
+  "dataBinding": null,
+  "runtimeEnabled": false,
+  "reviewStatus": "cell_semantics_require_review",
+  "pageId": "d23e221f7ef7b_p1",
+  "sourceTableId": "table_1",
+  "columns": [],
+  "rowBindings": [],
+  "cellTemplates": [
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 0,
+    "kind": "static_heading",
+    "content": "Wender Utah Rating Scale 25 item version (WURS -25)\n-",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 0,
+    "kind": "static_label",
+    "content": "Client Name",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "patient.displayName"
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 1,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "patient.displayName"
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 2,
+    "kind": "static_label",
+    "content": "Date administered",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "session.completedAt"
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 3,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "session.completedAt"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 0,
+    "kind": "static_label",
+    "content": "Date of birth (age)",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "patient.dateOfBirthAndAgeAtAdministration"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 1,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "patient.dateOfBirthAndAgeAtAdministration"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 2,
+    "kind": "static_label",
+    "content": "Time taken",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "session.duration"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 3,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "session.duration"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 0,
+    "kind": "static_label",
+    "content": "Assessor",
+    "runtimeEnabled": false,
+    "followingCellBindingCandidate": "session.assessorName"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 1,
+    "kind": "patient_or_session_field",
+    "content": null,
+    "runtimeEnabled": false,
+    "contentBinding": "session.assessorName"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   }
+  ],
+  "contentPolicy": {
+   "sampleCellValuesExcluded": true,
+   "patientCells": "bind_current_patient_session",
+   "responseCells": "bind_questionnaire_items_and_session_answers",
+   "unresolvedCells": "withhold",
+   "referenceCellsRequireReview": true
+  }
+ },
+ {
+  "id": "d23e221f7ef7b_p1_table_2",
+  "type": "unresolved_table",
+  "bboxPt": [
+   28.34646,
+   195.59058,
+   566.92927,
+   311.81104
+  ],
+  "rowCount": 6,
+  "columnCount": 7,
+  "cellsPt": [
+   [
+    28.34646,
+    195.59058,
+    566.92927,
+    215.43311
+   ],
+   [
+    28.34646,
+    215.43311,
+    85.03937,
+    249.44885
+   ],
+   [
+    28.34646,
+    249.44885,
+    85.03937,
+    265.03938
+   ],
+   [
+    28.34646,
+    265.03938,
+    85.03937,
+    280.62994
+   ],
+   [
+    28.34646,
+    280.62994,
+    85.03937,
+    296.22048
+   ],
+   [
+    28.34646,
+    296.22048,
+    85.03937,
+    311.81104
+   ],
+   [
+    85.03937,
+    215.43311,
+    198.4252,
+    249.44885
+   ],
+   [
+    85.03937,
+    249.44885,
+    198.4252,
+    265.03938
+   ],
+   [
+    85.03937,
+    265.03938,
+    198.4252,
+    280.62994
+   ],
+   [
+    85.03937,
+    280.62994,
+    198.4252,
+    296.22048
+   ],
+   [
+    85.03937,
+    296.22048,
+    198.4252,
+    311.81104
+   ],
+   [
+    198.4252,
+    215.43311,
+    268.56792,
+    249.44885
+   ],
+   [
+    198.4252,
+    249.44885,
+    268.56792,
+    265.03938
+   ],
+   [
+    198.4252,
+    265.03938,
+    268.56792,
+    280.62994
+   ],
+   [
+    198.4252,
+    280.62994,
+    268.56792,
+    296.22048
+   ],
+   [
+    198.4252,
+    296.22048,
+    268.56792,
+    311.81104
+   ],
+   [
+    268.56792,
+    215.43311,
+    339.96648,
+    249.44885
+   ],
+   [
+    268.56792,
+    249.44885,
+    339.96648,
+    265.03938
+   ],
+   [
+    268.56792,
+    265.03938,
+    339.96648,
+    280.62994
+   ],
+   [
+    268.56792,
+    280.62994,
+    339.96648,
+    296.22048
+   ],
+   [
+    268.56792,
+    296.22048,
+    339.96648,
+    311.81104
+   ],
+   [
+    339.96648,
+    215.43311,
+    410.88388,
+    249.44885
+   ],
+   [
+    339.96648,
+    249.44885,
+    410.88388,
+    265.03938
+   ],
+   [
+    339.96648,
+    265.03938,
+    410.88388,
+    280.62994
+   ],
+   [
+    339.96648,
+    280.62994,
+    410.88388,
+    296.22048
+   ],
+   [
+    339.96648,
+    296.22048,
+    410.88388,
+    311.81104
+   ],
+   [
+    410.88388,
+    215.43311,
+    481.80129,
+    249.44885
+   ],
+   [
+    410.88388,
+    249.44885,
+    481.80129,
+    265.03938
+   ],
+   [
+    410.88388,
+    265.03938,
+    481.80129,
+    280.62994
+   ],
+   [
+    410.88388,
+    280.62994,
+    481.80129,
+    296.22048
+   ],
+   [
+    410.88388,
+    296.22048,
+    481.80129,
+    311.81104
+   ],
+   [
+    481.80129,
+    215.43311,
+    566.92927,
+    249.44885
+   ],
+   [
+    481.80129,
+    249.44885,
+    566.92927,
+    265.03938
+   ],
+   [
+    481.80129,
+    265.03938,
+    566.92927,
+    280.62994
+   ],
+   [
+    481.80129,
+    280.62994,
+    566.92927,
+    296.22048
+   ],
+   [
+    481.80129,
+    296.22048,
+    566.92927,
+    311.81104
+   ]
+  ],
+  "dataBinding": null,
+  "runtimeEnabled": false,
+  "reviewStatus": "cell_semantics_require_review",
+  "pageId": "d23e221f7ef7b_p1",
+  "sourceTableId": "table_2",
+  "columns": [
+   {
+    "sourceColumnIndex": 2,
+    "label": "Raw Score",
+    "binding": null
+   }
+  ],
+  "rowBindings": [],
+  "cellTemplates": [
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 0,
+    "kind": "static_heading",
+    "content": "Results",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 2,
+    "kind": "static_column_header",
+    "content": "Raw Score",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 1,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 1,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 1,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 1,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   }
+  ],
+  "contentPolicy": {
+   "sampleCellValuesExcluded": true,
+   "patientCells": "bind_current_patient_session",
+   "responseCells": "bind_questionnaire_items_and_session_answers",
+   "unresolvedCells": "withhold",
+   "referenceCellsRequireReview": true
+  }
+ },
+ {
+  "id": "d23e221f7ef7b_p3_table_1",
+  "type": "unresolved_table",
+  "bboxPt": [
+   109.88467,
+   168.40717,
+   534.31812,
+   209.66685
+  ],
+  "rowCount": 2,
+  "columnCount": 4,
+  "cellsPt": [
+   [
+    109.88467,
+    168.40717,
+    184.25197,
+    195.59058
+   ],
+   [
+    184.25197,
+    168.40717,
+    311.81104,
+    195.59058
+   ],
+   [
+    311.81104,
+    168.40717,
+    439.37009,
+    195.59058
+   ],
+   [
+    439.37009,
+    168.40717,
+    534.31812,
+    195.59058
+   ],
+   [
+    109.88467,
+    195.59058,
+    184.25197,
+    209.66685
+   ],
+   [
+    184.25197,
+    195.59058,
+    311.81104,
+    209.66685
+   ],
+   [
+    311.81104,
+    195.59058,
+    439.37009,
+    209.66685
+   ],
+   [
+    439.37009,
+    195.59058,
+    534.31812,
+    209.66685
+   ]
+  ],
+  "dataBinding": null,
+  "runtimeEnabled": false,
+  "reviewStatus": "cell_semantics_require_review",
+  "pageId": "d23e221f7ef7b_p3",
+  "sourceTableId": "table_1",
+  "columns": [],
+  "rowBindings": [],
+  "cellTemplates": [
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 1,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 1,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   }
+  ],
+  "contentPolicy": {
+   "sampleCellValuesExcluded": true,
+   "patientCells": "bind_current_patient_session",
+   "responseCells": "bind_questionnaire_items_and_session_answers",
+   "unresolvedCells": "withhold",
+   "referenceCellsRequireReview": true
+  }
+ },
+ {
+  "id": "d23e221f7ef7b_p5_table_1",
+  "type": "response_table",
+  "bboxPt": [
+   28.34646,
+   418.31805,
+   566.92955,
+   721.62512
+  ],
+  "rowCount": 11,
+  "columnCount": 8,
+  "cellsPt": [
+   [
+    28.34646,
+    418.31805,
+    566.92955,
+    438.16056
+   ],
+   [
+    28.34646,
+    438.16056,
+    51.02362,
+    466.50702
+   ],
+   [
+    28.34646,
+    466.50702,
+    51.02362,
+    494.85349
+   ],
+   [
+    28.34646,
+    494.85349,
+    51.02362,
+    523.19995
+   ],
+   [
+    28.34646,
+    523.19995,
+    51.02362,
+    551.54639
+   ],
+   [
+    28.34646,
+    551.54639,
+    51.02362,
+    579.89282
+   ],
+   [
+    28.34646,
+    579.89282,
+    51.02362,
+    608.23932
+   ],
+   [
+    28.34646,
+    608.23932,
+    51.02362,
+    636.58575
+   ],
+   [
+    28.34646,
+    636.58575,
+    51.02362,
+    664.93225
+   ],
+   [
+    28.34646,
+    664.93225,
+    51.02362,
+    693.27869
+   ],
+   [
+    28.34646,
+    693.27869,
+    51.02362,
+    721.62512
+   ],
+   [
+    51.02362,
+    438.16056,
+    257.95276,
+    466.50702
+   ],
+   [
+    51.02362,
+    466.50702,
+    257.95276,
+    494.85349
+   ],
+   [
+    51.02362,
+    494.85349,
+    257.95276,
+    523.19995
+   ],
+   [
+    51.02362,
+    523.19995,
+    257.95276,
+    551.54639
+   ],
+   [
+    51.02362,
+    551.54639,
+    257.95276,
+    579.89282
+   ],
+   [
+    51.02362,
+    579.89282,
+    257.95276,
+    608.23932
+   ],
+   [
+    51.02362,
+    608.23932,
+    257.95276,
+    636.58575
+   ],
+   [
+    51.02362,
+    636.58575,
+    257.95276,
+    664.93225
+   ],
+   [
+    51.02362,
+    664.93225,
+    257.95276,
+    693.27869
+   ],
+   [
+    51.02362,
+    693.27869,
+    257.95276,
+    721.62512
+   ],
+   [
+    257.95276,
+    438.16056,
+    317.48032,
+    466.50702
+   ],
+   [
+    257.95276,
+    466.50702,
+    317.48032,
+    494.85349
+   ],
+   [
+    257.95276,
+    494.85349,
+    317.48032,
+    523.19995
+   ],
+   [
+    257.95276,
+    523.19995,
+    317.48032,
+    551.54639
+   ],
+   [
+    257.95276,
+    551.54639,
+    317.48032,
+    579.89282
+   ],
+   [
+    257.95276,
+    579.89282,
+    317.48032,
+    608.23932
+   ],
+   [
+    257.95276,
+    608.23932,
+    317.48032,
+    636.58575
+   ],
+   [
+    257.95276,
+    636.58575,
+    317.48032,
+    664.93225
+   ],
+   [
+    257.95276,
+    664.93225,
+    317.48032,
+    693.27869
+   ],
+   [
+    257.95276,
+    693.27869,
+    317.48032,
+    721.62512
+   ],
+   [
+    317.48032,
+    438.16056,
+    377.00787,
+    466.50702
+   ],
+   [
+    317.48032,
+    466.50702,
+    377.00787,
+    494.85349
+   ],
+   [
+    317.48032,
+    494.85349,
+    377.00787,
+    523.19995
+   ],
+   [
+    317.48032,
+    523.19995,
+    377.00787,
+    551.54639
+   ],
+   [
+    317.48032,
+    551.54639,
+    377.00787,
+    579.89282
+   ],
+   [
+    317.48032,
+    579.89282,
+    377.00787,
+    608.23932
+   ],
+   [
+    317.48032,
+    608.23932,
+    377.00787,
+    636.58575
+   ],
+   [
+    317.48032,
+    636.58575,
+    377.00787,
+    664.93225
+   ],
+   [
+    317.48032,
+    664.93225,
+    377.00787,
+    693.27869
+   ],
+   [
+    317.48032,
+    693.27869,
+    377.00787,
+    721.62512
+   ],
+   [
+    377.00787,
+    438.16056,
+    436.53543,
+    466.50702
+   ],
+   [
+    377.00787,
+    466.50702,
+    436.53543,
+    494.85349
+   ],
+   [
+    377.00787,
+    494.85349,
+    436.53543,
+    523.19995
+   ],
+   [
+    377.00787,
+    523.19995,
+    436.53543,
+    551.54639
+   ],
+   [
+    377.00787,
+    551.54639,
+    436.53543,
+    579.89282
+   ],
+   [
+    377.00787,
+    579.89282,
+    436.53543,
+    608.23932
+   ],
+   [
+    377.00787,
+    608.23932,
+    436.53543,
+    636.58575
+   ],
+   [
+    377.00787,
+    636.58575,
+    436.53543,
+    664.93225
+   ],
+   [
+    377.00787,
+    664.93225,
+    436.53543,
+    693.27869
+   ],
+   [
+    377.00787,
+    693.27869,
+    436.53543,
+    721.62512
+   ],
+   [
+    436.53543,
+    438.16056,
+    496.06299,
+    466.50702
+   ],
+   [
+    436.53543,
+    466.50702,
+    496.06299,
+    494.85349
+   ],
+   [
+    436.53543,
+    494.85349,
+    496.06299,
+    523.19995
+   ],
+   [
+    436.53543,
+    523.19995,
+    496.06299,
+    551.54639
+   ],
+   [
+    436.53543,
+    551.54639,
+    496.06299,
+    579.89282
+   ],
+   [
+    436.53543,
+    579.89282,
+    496.06299,
+    608.23932
+   ],
+   [
+    436.53543,
+    608.23932,
+    496.06299,
+    636.58575
+   ],
+   [
+    436.53543,
+    636.58575,
+    496.06299,
+    664.93225
+   ],
+   [
+    436.53543,
+    664.93225,
+    496.06299,
+    693.27869
+   ],
+   [
+    436.53543,
+    693.27869,
+    496.06299,
+    721.62512
+   ],
+   [
+    496.06299,
+    438.16056,
+    555.59058,
+    466.50702
+   ],
+   [
+    496.06299,
+    466.50702,
+    555.59058,
+    494.85349
+   ],
+   [
+    496.06299,
+    494.85349,
+    555.59058,
+    523.19995
+   ],
+   [
+    496.06299,
+    523.19995,
+    555.59058,
+    551.54639
+   ],
+   [
+    496.06299,
+    551.54639,
+    555.59058,
+    579.89282
+   ],
+   [
+    496.06299,
+    579.89282,
+    555.59058,
+    608.23932
+   ],
+   [
+    496.06299,
+    608.23932,
+    555.59058,
+    636.58575
+   ],
+   [
+    496.06299,
+    636.58575,
+    555.59058,
+    664.93225
+   ],
+   [
+    496.06299,
+    664.93225,
+    555.59058,
+    693.27869
+   ],
+   [
+    496.06299,
+    693.27869,
+    555.59058,
+    721.62512
+   ],
+   [
+    555.59058,
+    438.16056,
+    566.92955,
+    721.62512
+   ]
+  ],
+  "dataBinding": null,
+  "runtimeEnabled": false,
+  "reviewStatus": "cell_semantics_require_review",
+  "pageId": "d23e221f7ef7b_p5",
+  "sourceTableId": "table_1",
+  "columns": [],
+  "rowBindings": [
+   {
+    "sourceRowIndex": 2,
+    "questionId": "Q1",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "questionId": "Q2",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "questionId": "Q3",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "questionId": "Q4",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "questionId": "Q5",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "questionId": "Q6",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "questionId": "Q7",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "questionId": "Q8",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "questionId": "Q9",
+    "contentBinding": "session.answers",
+    "status": "question_text_matched_response_cells_require_review",
+    "runtimeEnabled": false
+   }
+  ],
+  "cellTemplates": [
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 0,
+    "kind": "static_heading",
+    "content": "Client Responses",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 2,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 3,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 4,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 5,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 6,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 0,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 0,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 1,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 2,
+    "kind": "response_option_header",
+    "content": "Notatallor\nveryslightly",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 3,
+    "kind": "response_option_header",
+    "content": "Mildly",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 4,
+    "kind": "response_option_header",
+    "content": "Moderately",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 5,
+    "kind": "response_option_header",
+    "content": "Quiteabit",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 6,
+    "kind": "response_option_header",
+    "content": "Verymuch",
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 1,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q1",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 2,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q2",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 3,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q3",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 4,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q4",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 5,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q5",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 6,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q6",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 7,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q7",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 8,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q8",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 9,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 0,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 1,
+    "kind": "question_text",
+    "content": null,
+    "runtimeEnabled": false,
+    "questionId": "Q9",
+    "contentBinding": "questionnaire.items.text",
+    "matchingMethod": "exact_normalized_source_text"
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 2,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 3,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 4,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 5,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 6,
+    "kind": "unresolved",
+    "content": null,
+    "runtimeEnabled": false
+   },
+   {
+    "sourceRowIndex": 10,
+    "sourceColumnIndex": 7,
+    "kind": "empty",
+    "content": null,
+    "runtimeEnabled": false
+   }
+  ],
+  "contentPolicy": {
+   "sampleCellValuesExcluded": true,
+   "patientCells": "bind_current_patient_session",
+   "responseCells": "bind_questionnaire_items_and_session_answers",
+   "unresolvedCells": "withhold",
+   "referenceCellsRequireReview": true
+  }
+ }
+]

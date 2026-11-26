@@ -45,13 +45,13 @@ $('extract-form').onsubmit = async event => {
   $('submit').disabled = true;
   $('try-example').disabled = true;
   $('error').hidden = true;
-  $('progress').textContent = 'Reading the page, opening tabs and processing linked PDFs. The first browser extraction can take 2–4 minutes…';
+  $('progress').textContent = 'Reading tabs, saving images and original PDFs. Pages with many documents can take several minutes…';
   $('preview-state').textContent = 'Preparing document';
   $('results').hidden = true;
   $('empty').hidden = false;
   current = null;
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 360000);
+  const timer = setTimeout(() => controller.abort(), 1200000);
   try {
     const response = await fetch('/api/extract', { method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ url: $('url').value.trim(), mode: $('mode').value, process_documents: $('process-documents').checked, render_browser: $('render-browser').checked }), signal: controller.signal });

@@ -1,0 +1,403 @@
+{
+  "schemaVersion": "report-visual-spec/1.0.0",
+  "assessmentId": "athens-insomnia-scale-ais--456d2e3fe9f5",
+  "title": "Athens Insomnia Scale (AIS)",
+  "status": "draft_extracted",
+  "definitionRef": {
+    "assessmentId": "athens-insomnia-scale-ais--456d2e3fe9f5",
+    "definitionVersion": "1.0.0-draft.6",
+    "questionnaireItemCount": 8,
+    "requiredRuleIds": ["total_raw", "sleep_difficulty_mean", "daytime_consequences_mean"]
+  },
+  "sources": [
+    {
+      "id": "source_sample_report",
+      "role": "sample_report",
+      "sha256": "bbb1bec849f127145d0f7a43e2d8ca0b0bbe6bc18c518f62a3496ecb81df7240",
+      "pageCount": 4,
+      "usage": "Primary evidence for page order, first-administration charts, tables, typography, colours, interpretation sections and response layout. Example patient values are evidence only."
+    },
+    {
+      "id": "source_assessment_page",
+      "role": "assessment_page",
+      "sha256": "4be805f30adf55039652c61fbfaa3f7c87eaf5356cd0d83530cc46c3551593e2",
+      "pageCount": null,
+      "usage": "Evidence for scoring formulas, descriptor boundaries, repeat-administration chart behaviour and interpretation requirements."
+    }
+  ],
+  "page": {
+    "size": "A4",
+    "orientation": "portrait",
+    "widthPt": 595.276,
+    "heightPt": 841.89,
+    "marginsPt": {"top": 28, "right": 28, "bottom": 34, "left": 28},
+    "header": {
+      "heightPt": 82,
+      "elements": [{"type": "image", "binding": "application.brand.reportLogo", "alignment": "center"}]
+    },
+    "footer": {
+      "heightPt": 30,
+      "elements": [
+        {"type": "image", "binding": "application.brand.footerLogo", "alignment": "left"},
+        {"type": "page_number", "binding": "Page {pageNumber} of {pageCount}", "alignment": "right"}
+      ]
+    }
+  },
+  "theme": {
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "baseFontSizePt": 10,
+    "textColor": "#000000",
+    "headingColor": "#000000",
+    "sectionHeader": {
+      "fontFamily": "Arial, Helvetica, sans-serif", "fontSizePt": 14, "fontWeight": "bold",
+      "textColor": "#000000", "backgroundColor": "#EDF7FC", "borderColor": "#333333",
+      "borderWidthPt": 0.6, "paddingPt": 5, "alignment": "left"
+    },
+    "table": {
+      "fontFamily": "Arial, Helvetica, sans-serif", "fontSizePt": 10, "fontWeight": "normal",
+      "textColor": "#000000", "backgroundColor": "#FFFFFF", "borderColor": "#333333",
+      "borderWidthPt": 0.6, "paddingPt": 4, "alignment": "left"
+    },
+    "chartPalette": ["#4E79A7", "#F28E2B", "#E15759", "#FF9DA7", "#333333", "#808080"]
+  },
+  "metricBindings": [
+    {
+      "id": "metric_total", "ruleId": "total_raw", "label": "Total Score",
+      "calculation": "sum(Q1..Q8)", "minimum": 0, "maximum": 24,
+      "unit": "raw score", "precision": 0, "missingPolicy": "withhold"
+    },
+    {
+      "id": "metric_sleep_difficulty", "ruleId": "sleep_difficulty_mean", "label": "Sleep Difficulty",
+      "calculation": "mean(Q1..Q5)", "minimum": 0, "maximum": 3,
+      "unit": "average item score", "precision": 1, "missingPolicy": "withhold"
+    },
+    {
+      "id": "metric_daytime_consequences", "ruleId": "daytime_consequences_mean", "label": "Daytime Consequences",
+      "calculation": "mean(Q6..Q8)", "minimum": 0, "maximum": 3,
+      "unit": "average item score", "precision": 1, "missingPolicy": "withhold"
+    }
+  ],
+  "variants": [
+    {
+      "id": "first_administration",
+      "when": {"expression": "administrationCount == 1", "description": "Use two vertical bar charts for the first completed administration."},
+      "chartIds": ["chart_total_first", "chart_domains_first"],
+      "sectionIds": ["section_chart_total_first", "section_chart_domains_first"],
+      "changePolicy": {"method": "none", "reliableChange": null, "highlightThresholdCrossing": false}
+    },
+    {
+      "id": "repeat_administration",
+      "when": {"expression": "administrationCount >= 2", "description": "Replace both first-administration charts with dated line trajectories."},
+      "chartIds": ["chart_total_history", "chart_domains_history"],
+      "sectionIds": ["section_chart_total_history", "section_chart_domains_history"],
+      "changePolicy": {"method": "raw_difference", "reliableChange": null, "highlightThresholdCrossing": true}
+    }
+  ],
+  "sections": [
+    {
+      "id": "section_patient_metadata", "type": "patient_metadata", "order": 1, "title": null,
+      "pagePlacement": {"preferredPage": 1, "keepTogether": true, "startOnNewPage": false, "sourceBBoxPt": [28, 111, 567, 181]},
+      "dataBindings": ["patient.displayName", "patient.dateOfBirth", "patient.ageAtAdministration", "administration.completedAt", "administration.durationSeconds", "assessor.displayName"],
+      "tableId": "table_patient_metadata", "style": {}
+    },
+    {
+      "id": "section_total_summary", "type": "score_summary", "order": 2, "title": "Total Score",
+      "pagePlacement": {"preferredPage": 1, "keepTogether": true, "startOnNewPage": false, "sourceBBoxPt": [28, 195, 567, 253]},
+      "dataBindings": ["metric_total", "descriptor(metric_total)"], "tableId": "table_total_summary", "style": {}
+    },
+    {
+      "id": "section_chart_total_first", "type": "chart", "order": 3, "title": null,
+      "pagePlacement": {"preferredPage": 1, "keepTogether": true, "startOnNewPage": false, "sourceBBoxPt": [150, 269, 435, 476]},
+      "dataBindings": ["metric_total"], "chartId": "chart_total_first", "style": {}
+    },
+    {
+      "id": "section_chart_total_history", "type": "chart", "order": 3, "title": null,
+      "pagePlacement": {"preferredPage": 1, "keepTogether": true, "startOnNewPage": false, "sourceBBoxPt": null},
+      "dataBindings": ["metric_total", "administration.completedAt"], "chartId": "chart_total_history", "style": {}
+    },
+    {
+      "id": "section_domain_summary", "type": "score_summary", "order": 4, "title": "Domains",
+      "pagePlacement": {"preferredPage": 1, "keepTogether": true, "startOnNewPage": false, "sourceBBoxPt": [28, 486, 567, 557]},
+      "dataBindings": ["metric_sleep_difficulty", "metric_daytime_consequences"], "tableId": "table_domain_summary", "style": {}
+    },
+    {
+      "id": "section_chart_domains_first", "type": "chart", "order": 5, "title": null,
+      "pagePlacement": {"preferredPage": 1, "keepTogether": true, "startOnNewPage": false, "sourceBBoxPt": [113, 575, 479, 742]},
+      "dataBindings": ["metric_sleep_difficulty", "metric_daytime_consequences"], "chartId": "chart_domains_first", "style": {}
+    },
+    {
+      "id": "section_chart_domains_history", "type": "chart", "order": 5, "title": null,
+      "pagePlacement": {"preferredPage": 1, "keepTogether": true, "startOnNewPage": false, "sourceBBoxPt": null},
+      "dataBindings": ["metric_sleep_difficulty", "metric_daytime_consequences", "administration.completedAt"],
+      "chartId": "chart_domains_history", "style": {}
+    },
+    {
+      "id": "section_interpretation", "type": "interpretation", "order": 6, "title": "Interpretation",
+      "pagePlacement": {"preferredPage": 2, "keepTogether": false, "startOnNewPage": false, "sourceBBoxPt": null},
+      "dataBindings": ["metric_total", "metric_sleep_difficulty", "metric_daytime_consequences", "questionnaire.responses"], "style": {}
+    },
+    {
+      "id": "section_scoring_information", "type": "scoring_information", "order": 7,
+      "title": "Scoring and Interpretation Information",
+      "pagePlacement": {"preferredPage": 2, "keepTogether": false, "startOnNewPage": false, "sourceBBoxPt": null},
+      "dataBindings": ["definition.scoring.guidance", "definition.scoring.sourceTables"],
+      "tableId": "table_descriptor_lookup", "style": {}
+    },
+    {
+      "id": "section_responses", "type": "response_table", "order": 8, "title": "Client Responses",
+      "pagePlacement": {"preferredPage": 4, "keepTogether": false, "startOnNewPage": true, "sourceBBoxPt": null},
+      "dataBindings": ["definition.questionnaire.items", "questionnaire.responses"],
+      "tableId": "table_client_responses", "style": {}
+    }
+  ],
+  "charts": [
+    {
+      "id": "chart_total_first", "title": "AIS Total Score", "variantId": "first_administration",
+      "type": "vertical_bar", "sourceRef": "source_sample_report#page=1",
+      "sourceBBoxPt": [180, 307.4342, 401, 419.384], "widthPt": 285, "heightPt": 207,
+      "xAxis": {"minimum": 0, "maximum": 1, "tickInterval": null, "title": null, "scale": "category", "grid": false, "labels": ["Total Score"]},
+      "yAxis": {"minimum": 0, "maximum": 24, "tickInterval": 2, "title": null, "scale": "linear", "grid": false, "labels": []},
+      "series": [
+        {"id": "series_total_first", "label": "Total Score", "metricId": "metric_total", "mark": "bar", "color": "#4E79A7", "lineWidthPt": 1, "marker": "none", "valueLabel": false}
+      ],
+      "bands": [
+        {"from": 0, "to": 6, "includeFrom": true, "includeTo": false, "label": "Below cut-off", "fill": "#FFFFFF", "opacity": 1, "classificationRule": "metric_total >= 0 && metric_total <= 5"},
+        {"from": 6, "to": 10, "includeFrom": true, "includeTo": false, "label": "Elevated", "fill": "#FF9DA7", "opacity": 0.5, "classificationRule": "metric_total >= 6 && metric_total <= 9"},
+        {"from": 10, "to": 24, "includeFrom": true, "includeTo": true, "label": "Highly elevated", "fill": "#E15759", "opacity": 0.4, "classificationRule": "metric_total >= 10 && metric_total <= 24"}
+      ],
+      "gradient": null,
+      "annotations": [{"type": "threshold_line", "value": 6, "label": "Cut-off", "color": "#808080", "lineStyle": "dashed"}],
+      "legend": {"show": false, "position": "none"}, "background": "#FFFFFF",
+      "dataPolicy": {"xBinding": "category", "missingValue": "withhold_chart", "sampleValuesReusable": false}
+    },
+    {
+      "id": "chart_domains_first", "title": "AIS Domain Average Scores", "variantId": "first_administration",
+      "type": "vertical_bar", "sourceRef": "source_sample_report#page=1",
+      "sourceBBoxPt": [176.886, 648.11792, 433.88605, 724], "widthPt": 366, "heightPt": 167,
+      "xAxis": {"minimum": 0, "maximum": 2, "tickInterval": null, "title": null, "scale": "category", "grid": false, "labels": ["Sleep Difficulty", "Daytime Consequences"]},
+      "yAxis": {"minimum": 0, "maximum": 3, "tickInterval": 0.5, "title": null, "scale": "linear", "grid": false, "labels": []},
+      "series": [
+        {"id": "series_sleep_first", "label": "Sleep Difficulty", "metricId": "metric_sleep_difficulty", "mark": "bar", "color": "#4E79A7", "lineWidthPt": 1, "marker": "none", "valueLabel": false},
+        {"id": "series_daytime_first", "label": "Daytime Consequences", "metricId": "metric_daytime_consequences", "mark": "bar", "color": "#F28E2B", "lineWidthPt": 1, "marker": "none", "valueLabel": false}
+      ],
+      "bands": [],
+      "gradient": {"axis": "y", "from": 0.75, "to": 3, "stops": [
+        {"value": 0.75, "color": "#FFFFFF", "opacity": 1},
+        {"value": 3, "color": "#E15759", "opacity": 0.4}
+      ]},
+      "annotations": [], "legend": {"show": false, "position": "none"}, "background": "#FFFFFF",
+      "dataPolicy": {"xBinding": "category", "missingValue": "withhold_chart", "sampleValuesReusable": false}
+    },
+    {
+      "id": "chart_total_history", "title": "AIS Total Score across administrations", "variantId": "repeat_administration",
+      "type": "line", "sourceRef": "source_assessment_page#AIS-Graphs-and-Change-Over-Time",
+      "sourceBBoxPt": null, "widthPt": 500, "heightPt": 240,
+      "xAxis": {"minimum": 0, "maximum": 1, "tickInterval": null, "title": null, "scale": "date", "grid": false, "labels": []},
+      "yAxis": {"minimum": 0, "maximum": 24, "tickInterval": 2, "title": null, "scale": "linear", "grid": false, "labels": []},
+      "series": [
+        {"id": "series_total_history", "label": "Total Score", "metricId": "metric_total", "mark": "line", "color": "#4E79A7", "lineWidthPt": 2.5, "marker": "circle", "valueLabel": true}
+      ],
+      "bands": [
+        {"from": 0, "to": 6, "includeFrom": true, "includeTo": false, "label": "Below cut-off", "fill": "#FFFFFF", "opacity": 1, "classificationRule": "metric_total >= 0 && metric_total <= 5"},
+        {"from": 6, "to": 10, "includeFrom": true, "includeTo": false, "label": "Elevated", "fill": "#FF9DA7", "opacity": 0.5, "classificationRule": "metric_total >= 6 && metric_total <= 9"},
+        {"from": 10, "to": 24, "includeFrom": true, "includeTo": true, "label": "Highly elevated", "fill": "#E15759", "opacity": 0.4, "classificationRule": "metric_total >= 10 && metric_total <= 24"}
+      ],
+      "gradient": null,
+      "annotations": [{"type": "threshold_line", "value": 6, "label": "Cut-off", "color": "#808080", "lineStyle": "dashed"}],
+      "legend": {"show": false, "position": "none"}, "background": "#FFFFFF",
+      "dataPolicy": {"xBinding": "administration_date", "missingValue": "gap", "sampleValuesReusable": false}
+    },
+    {
+      "id": "chart_domains_history", "title": "AIS Domain Average Scores across administrations", "variantId": "repeat_administration",
+      "type": "multi_line", "sourceRef": "source_assessment_page#AIS-Graphs-and-Change-Over-Time",
+      "sourceBBoxPt": null, "widthPt": 500, "heightPt": 240,
+      "xAxis": {"minimum": 0, "maximum": 1, "tickInterval": null, "title": null, "scale": "date", "grid": false, "labels": []},
+      "yAxis": {"minimum": 0, "maximum": 3, "tickInterval": 0.5, "title": null, "scale": "linear", "grid": false, "labels": []},
+      "series": [
+        {"id": "series_sleep_history", "label": "Sleep Difficulty", "metricId": "metric_sleep_difficulty", "mark": "line", "color": "#4E79A7", "lineWidthPt": 2.5, "marker": "circle", "valueLabel": true},
+        {"id": "series_daytime_history", "label": "Daytime Consequences", "metricId": "metric_daytime_consequences", "mark": "line", "color": "#F28E2B", "lineWidthPt": 2.5, "marker": "square", "valueLabel": true}
+      ],
+      "bands": [],
+      "gradient": {"axis": "y", "from": 0.75, "to": 3, "stops": [
+        {"value": 0.75, "color": "#FFFFFF", "opacity": 1},
+        {"value": 3, "color": "#E15759", "opacity": 0.4}
+      ]},
+      "annotations": [], "legend": {"show": true, "position": "right"}, "background": "#FFFFFF",
+      "dataPolicy": {"xBinding": "administration_date", "missingValue": "gap", "sampleValuesReusable": false}
+    }
+  ],
+  "tables": [
+    {
+      "id": "table_patient_metadata", "type": "patient_metadata", "title": "Athens Insomnia Scale (AIS)",
+      "sourceRef": "source_sample_report#page=1",
+      "columns": [
+        {"id": "metadata_label_left", "label": "", "binding": null, "widthPercent": 22, "alignment": "right"},
+        {"id": "metadata_value_left", "label": "", "binding": "patient_or_assessor_value", "widthPercent": 38, "alignment": "left"},
+        {"id": "metadata_label_right", "label": "", "binding": null, "widthPercent": 20, "alignment": "right"},
+        {"id": "metadata_value_right", "label": "", "binding": "administration_value", "widthPercent": 20, "alignment": "left"}
+      ],
+      "rowBinding": "report.patientMetadataRows", "staticRows": [], "imageAssetId": null,
+      "ocrStatus": "not_applicable", "style": {}
+    },
+    {
+      "id": "table_total_summary", "type": "score_summary", "title": "Total Score",
+      "sourceRef": "source_sample_report#page=1",
+      "columns": [
+        {"id": "total_label", "label": "", "binding": "metric.label", "widthPercent": 42, "alignment": "center"},
+        {"id": "total_raw", "label": "Raw Score (0-24)", "binding": "metric_total", "widthPercent": 21, "alignment": "center"},
+        {"id": "total_descriptor", "label": "Descriptor", "binding": "descriptor(metric_total)", "widthPercent": 37, "alignment": "center"}
+      ],
+      "rowBinding": "metric_total", "staticRows": [], "imageAssetId": null,
+      "ocrStatus": "not_applicable", "style": {}
+    },
+    {
+      "id": "table_domain_summary", "type": "domain_summary", "title": "Domains",
+      "sourceRef": "source_sample_report#page=1",
+      "columns": [
+        {"id": "domain_label", "label": "", "binding": "metric.label_and_range", "widthPercent": 68, "alignment": "center"},
+        {"id": "domain_average", "label": "Average Score", "binding": "metric.value", "widthPercent": 32, "alignment": "center"}
+      ],
+      "rowBinding": "[metric_sleep_difficulty,metric_daytime_consequences]", "staticRows": [], "imageAssetId": null,
+      "ocrStatus": "not_applicable", "style": {}
+    },
+    {
+      "id": "table_descriptor_lookup", "type": "interpretation_lookup", "title": "AIS Total Score Cut-Off and Descriptors",
+      "sourceRef": "source_assessment_page#AIS-Cut-Off-and-Descriptors",
+      "columns": [
+        {"id": "lookup_range", "label": "Total Score", "binding": null, "widthPercent": 18, "alignment": "left"},
+        {"id": "lookup_descriptor", "label": "Descriptor", "binding": null, "widthPercent": 22, "alignment": "left"},
+        {"id": "lookup_interpretation", "label": "Interpretation", "binding": null, "widthPercent": 60, "alignment": "left"}
+      ],
+      "rowBinding": null,
+      "staticRows": [
+        ["0 to 5", "Below cut-off", "Negative screen; clinically significant insomnia is unlikely, while sleep difficulty can still be present."],
+        ["6 to 9", "Elevated", "Positive screen; further assessment of the sleep complaint is warranted."],
+        ["10 to 24", "Highly elevated", "Positive screen with stronger support for a true case; diagnosis still requires clinical assessment."]
+      ],
+      "imageAssetId": null, "ocrStatus": "not_applicable", "style": {}
+    },
+    {
+      "id": "table_client_responses", "type": "responses", "title": "Client Responses",
+      "sourceRef": "source_sample_report#page=4",
+      "columns": [
+        {"id": "response_number", "label": "", "binding": "question.order", "widthPercent": 4, "alignment": "center"},
+        {"id": "response_question", "label": "", "binding": "question.text", "widthPercent": 38, "alignment": "left"},
+        {"id": "response_option_0", "label": "0", "binding": "question.options[printedValue=0]", "widthPercent": 14.5, "alignment": "center"},
+        {"id": "response_option_1", "label": "1", "binding": "question.options[printedValue=1]", "widthPercent": 14.5, "alignment": "center"},
+        {"id": "response_option_2", "label": "2", "binding": "question.options[printedValue=2]", "widthPercent": 14.5, "alignment": "center"},
+        {"id": "response_option_3", "label": "3", "binding": "question.options[printedValue=3]", "widthPercent": 14.5, "alignment": "center"}
+      ],
+      "rowBinding": "definition.questionnaire.items joined with questionnaire.responses", "staticRows": [],
+      "imageAssetId": null, "ocrStatus": "not_applicable", "style": {}
+    }
+  ],
+  "interpretationRules": [
+    {
+      "id": "interpret_total_below",
+      "when": {"expression": "metric_total >= 0 && metric_total <= 5", "description": "Total score is below the clinical cut-off."},
+      "template": "The AIS total score is {metric_total} out of 24 and is below the clinical cut-off of 6.",
+      "sourceRef": "source_assessment_page#AIS-Cut-Off-and-Descriptors", "reviewStatus": "extracted"
+    },
+    {
+      "id": "interpret_total_elevated",
+      "when": {"expression": "metric_total >= 6 && metric_total <= 9", "description": "Total score is a positive screen in the Elevated range."},
+      "template": "The AIS total score is {metric_total} out of 24, at or above the clinical cut-off of 6, and falls in the Elevated range.",
+      "sourceRef": "source_assessment_page#AIS-Cut-Off-and-Descriptors", "reviewStatus": "extracted"
+    },
+    {
+      "id": "interpret_total_highly_elevated",
+      "when": {"expression": "metric_total >= 10 && metric_total <= 24", "description": "Total score is a positive screen in the Highly elevated range."},
+      "template": "The AIS total score is {metric_total} out of 24, above the clinical cut-off of 6, and falls in the Highly elevated range.",
+      "sourceRef": "source_assessment_page#AIS-Cut-Off-and-Descriptors", "reviewStatus": "extracted"
+    },
+    {
+      "id": "interpret_sleep_domain",
+      "when": {"expression": "metric_sleep_difficulty != null", "description": "A complete Sleep Difficulty domain score is available."},
+      "template": "Sleep Difficulty has an average item score of {metric_sleep_difficulty} out of 3, based on items 1 to 5.",
+      "sourceRef": "source_assessment_page#Interpreting-the-AIS-Domain-Scores", "reviewStatus": "extracted"
+    },
+    {
+      "id": "interpret_daytime_domain",
+      "when": {"expression": "metric_daytime_consequences != null", "description": "A complete Daytime Consequences domain score is available."},
+      "template": "Daytime Consequences has an average item score of {metric_daytime_consequences} out of 3, based on items 6 to 8.",
+      "sourceRef": "source_assessment_page#Interpreting-the-AIS-Domain-Scores", "reviewStatus": "extracted"
+    },
+    {
+      "id": "interpret_domain_comparison",
+      "when": {"expression": "metric_sleep_difficulty != null && metric_daytime_consequences != null", "description": "Both domain scores are available for relative comparison; neither domain has a validated cut-off."},
+      "template": "Compare the two domain averages descriptively. Do not apply a domain cut-off or percentile; the total score remains the primary interpretation index.",
+      "sourceRef": "source_assessment_page#Interpreting-the-AIS-Domain-Scores", "reviewStatus": "extracted"
+    },
+    {
+      "id": "interpret_change",
+      "when": {"expression": "administrationCount >= 2", "description": "At least two compatible administrations are available."},
+      "template": "The total score changed by {current.metric_total - baseline.metric_total} points from baseline. Report movement across the cut-off separately. No reliable-change classification is applied.",
+      "sourceRef": "source_assessment_page#AIS-Graphs-and-Change-Over-Time", "reviewStatus": "extracted"
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset_total_first_reference", "role": "reference_chart",
+      "sha256": "305e47d2b8d4375a524726c081cffeef921de92680636310d83f5a9ef866e92b",
+      "mimeType": "image/png",
+      "sourceRef": "source_assessment_page#AIS-Cut-Off-and-Descriptors", "runtimeUsage": "reference_only"
+    },
+    {
+      "id": "asset_domains_first_reference", "role": "reference_chart",
+      "sha256": "910f618fce24a7a57da47e513c13dff2205810e14a826f888cd67881e921764b",
+      "mimeType": "image/png",
+      "sourceRef": "source_assessment_page#Interpreting-the-AIS-Domain-Scores", "runtimeUsage": "reference_only"
+    },
+    {
+      "id": "asset_total_history_reference", "role": "reference_chart",
+      "sha256": "136accbf982667d135679fb81a99e5d817e79d3b99b16c8633233bcb7d9303c1",
+      "mimeType": "image/png",
+      "sourceRef": "source_assessment_page#AIS-Graphs-and-Change-Over-Time", "runtimeUsage": "reference_only"
+    },
+    {
+      "id": "asset_domains_history_reference", "role": "reference_chart",
+      "sha256": "e3204cac12b634e48e1429777ccc90fabf4a9fb53fd3012f026775e27837481e",
+      "mimeType": "image/png",
+      "sourceRef": "source_assessment_page#AIS-Graphs-and-Change-Over-Time", "runtimeUsage": "reference_only"
+    }
+  ],
+  "validation": {
+    "expectedPageCount": 4, "expectedFirstVisitChartCount": 2, "expectedRepeatVisitChartCount": 2,
+    "scoreChecks": [
+      {"id": "sample_total_12", "status": "pass", "expected": 12, "observed": 12, "sourceRef": "source_sample_report#page=1"},
+      {"id": "sample_sleep_mean_1_2", "status": "pass", "expected": 1.2, "observed": 1.2, "sourceRef": "source_sample_report#page=1"},
+      {"id": "sample_daytime_mean_2_0", "status": "pass", "expected": 2, "observed": 2, "sourceRef": "source_sample_report#page=1"}
+    ],
+    "visualChecks": [
+      {"id": "source_page_count", "status": "pass", "expected": 4, "observed": 4, "sourceRef": "source_sample_report"},
+      {"id": "first_visit_chart_count", "status": "pass", "expected": 2, "observed": 2, "sourceRef": "source_sample_report#page=1"},
+      {"id": "pixel_geometry_comparison", "status": "pending", "expected": "renderer output within approved visual-difference tolerance", "observed": null, "sourceRef": "source_sample_report"}
+    ],
+    "fullSourceCoverage": false, "rendererEquivalent": false, "clinicalApproved": false
+  },
+  "exceptions": [
+    {
+      "code": "renderer_not_implemented", "severity": "blocking",
+      "message": "The application renderer does not yet consume report-visual-spec/1.0.0.", "sourceRef": null,
+      "requiredAction": "Implement the schema-driven PDF renderer and compare its AIS output against the four-page source report."
+    },
+    {
+      "code": "repeat_pdf_not_archived", "severity": "warning",
+      "message": "Repeat-administration chart behaviour and images come from the assessment page, not an archived multi-visit sample-report PDF.",
+      "sourceRef": "source_assessment_page#AIS-Graphs-and-Change-Over-Time",
+      "requiredAction": "Validate page placement and print geometry against a compatible multi-visit sample report when available."
+    },
+    {
+      "code": "clinical_review_pending", "severity": "blocking",
+      "message": "Interpretation templates and scoring presentation have not completed independent clinical review.",
+      "sourceRef": "source_assessment_page",
+      "requiredAction": "Review scoring, descriptor boundaries, wording, domain limitations and change statements before clinical use."
+    },
+    {
+      "code": "brand_substitution_required", "severity": "info",
+      "message": "The source report's third-party branding is visual evidence only and is not a runtime asset.",
+      "sourceRef": "source_sample_report",
+      "requiredAction": "Use the application's own report logo while preserving the validated content layout."
+    }
+  ]
+}

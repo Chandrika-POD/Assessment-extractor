@@ -1,0 +1,710 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "empathy-quotient-40-item-version--b54fdd8fd587",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Empathy Quotient (EQ-40)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Empathy Quotient – 40 item version (EQ-40) is a self-report tool to assess empathy in adults (18 years of age and older). The EQ-40 ( Baron-Cohen & Wheelwright, 2004) assesses various aspects of empathy and three subscales are included:",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Please read each statement carefully and rate how strongly you agree or disagree with it by selecting your answer. There are no right or wrong answers or trick questions.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34",
+   "Q35",
+   "Q36",
+   "Q37",
+   "Q38",
+   "Q39",
+   "Q40"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "EQ-40 Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35",
+     "Q36",
+     "Q37",
+     "Q38",
+     "Q39",
+     "Q40"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 80.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "EQ-40 Total Score (sum of all 40 items)",
+     "y": 252.8,
+     "url": null,
+     "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Empathy is a crucial component of social cognition and plays a significant role in interpersonal relationships, mental health, and overall well-being (Decety & Ickes, 2009). On average, women have significantly higher levels of empathy compared with men.",
+   "A cut-off score of 30 is the threshold at which Baren-Cohen & Wheelwright (2004) suggest that the EQ-40 can be used to discriminate between neurotypical and autistic individuals. About 80% of adults with autism score at or below this cut-off, while only 12% of neurotypical adults do.",
+   "In addition to presenting scores for the EQ-40, scores for the shortened 28-item version of the Empathy Quotient (EQ-28) are presented. The EQ-28 results are presented as average scores, which represent the typical score for each item (between 0 and 2).",
+   "EQ-28 subscale scores are categorised as Low, Moderate, or High. Low scores are defined as average scores of 0.81 or lower, which corresponds to being lower than approximately the 15th percentile compared to a combined sample of males and females (Groen et al., 2015). Given the gender differences, men are disproportionately more likely to be described as having low empathy. Average scores of 1.5 or higher are categorised as High and correspond to approximately the 85th percentile."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "EQ-40 Scoring & Interpretation",
+    "text": "The EQ-40 yields a total score between 0 and 80, with higher scores indicating higher levels of empathy (Baren-Cohen & Wheelwright, 2004). The client’s score is also converted to a percentile based on normative data for their gender, providing useful information about the client’s level of empathy relative to individuals of the same gender. While the percentile is gender-specific, the overall descriptor is gender-neutral.\n\n\nA graph comparing the client’s total score to the normative distributions for gender matched non-clinical (neurotypical) and clinical (autism) samples is presented, with shaded areas around the means demarcating the two middle quartiles between the 25th and 75th percentile. This graph contextualises the client’s score relative to the distribution of scores among neurotypical and autism samples.\n\n",
+    "source_url": null
+   },
+   {
+    "title": "EQ-40 Score Interpretation",
+    "text": "Interpretation of EQ-40 scores should consider that females typically score significantly higher than males, making it important to refer to the client’s gender-specific percentile. A consequence of these gender differences is that men are seven times more likely to be described as having “Extremely Low Empathy” compared to women (i.e., 5% of men and 0.7% of women are in the extremely low category).\nA cut-off score of 30 is the threshold at which Baren-Cohen & Wheelwright (2004) suggest that the EQ-40 can be used to discriminate between neurotypical and autistic individuals. About 80% of adults with autism score at or below this cut-off, while only 12% of neurotypical adults do.\nIn addition to presenting scores for the EQ-40, scores for the shortened 28-item version of the Empathy Quotient (EQ-28) are presented. The EQ-28 results are presented as average scores, which represent the typical score for each item (between 0 and 2).\nThe EQ-28 includes three subscales:\nCognitive Empathy : items 1, 11, 14, 15, 22, 26, 29, 34, 35, 36, 38 The ability to understand another person’s mental state and perspective. Cognitive empathy involves rationally appreciating someone else’s point of view and intentions without necessarily sharing their emotional experience. Low scorers may have difficulties in perspective-taking and social understanding, which is a feature of Autism and certain personality disorders (Dinsdale & Crepi, 2013; Michaels et al., 2014; Wheelwright et al., 2006).\nEmotional Empathy : items 3, 12, 13, 16, 18, 19, 27, 28, 31, 33, 39 The ability to share and resonate with another person’s emotions and the tendency to absorb other people’s emotions. Low scorers on emotional empathy may have difficulties with emotional awareness and difficulties showing compassion and kindness.\nSocial Skills : items 2, 4, 7, 8, 21, 37 The ability to communicate effectively, navigate social interactions, and engage appropriately with others. Low scorers on this scale may have difficulties with communication and social interactions. Difficulties with social skills are associated with autism and certain personality disorders (Pepper et al., 2019).\n\n\nEQ-28 subscale scores are categorised as Low, Moderate, or High. Low scores are defined as average scores of 0.81 or lower, which corresponds to being lower than approximately the 15th percentile compared to a combined sample of males and females (Groen et al., 2015). Given the gender differences, men are disproportionately more likely to be described as having low empathy. Average scores of 1.5 or higher are categorised as High and correspond to approximately the 85th percentile.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Empathy Quotient - 40-item version (EQ-40)",
+    "y": 102.8,
+    "url": null,
+    "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Cognitive Empathy (Items 1, 11, 14, 15, 22, 26, 29, 34, 35, 36, 38):",
+    "y": 164.2,
+    "url": null,
+    "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Emotional Empathy (Items 3, 12, 13, 16, 18, 19, 27, 28, 31, 33, 39):",
+    "y": 189.0,
+    "url": null,
+    "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Social Skills (Items 2, 4, 7, 8, 21, 37):",
+    "y": 213.8,
+    "url": null,
+    "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Baron-Cohen, S., & Wheelwright, S. (2004). The Empathy Quotient: An Investigation of Adults with Asperger Syndrome or High Functioning Autism, and Normal Sex Differences. Journal of Autism and Developmental Disorders, 34(2), 163–175.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Allison, C., Baron-Cohen, S., Wheelwright, S. J., Stone, M. H., & Muncer, S. J. (2011). Psychometric analysis of the Empathy Quotient (EQ). Personality and Individual Differences, 51(7), 829–835. https://doi.org/10.1016/j.paid.2011.07.005\nBons, D., van den Broek, E., Scheepers, F., Herpers, P., Rommelse, N., & Buitelaaar, J. K. (2013). Motor, emotional, and cognitive empathy in children and adolescents with autism spectrum disorder and conduct disorder. Journal of Abnormal Child Psychology, 41, 425-443. Doi: 10.1007/s10802-012-9689-5\nDecety, J., & Ickes, W. (Eds.). (2009). The social neuroscience of empathy. MIT Press.\nde Lima, F. F., & Osório, F. de L. (2021). Empathy: Assessment Instruments and Psychometric Quality – A Systematic Literature Review With a Meta-Analysis of the Past Ten Years. Frontiers in Psychology, 12, 781346–781346. https://doi.org/10.3389/fpsyg.2021.781346\nDinsdale, N., & Crespi, B. J. (2013). The Borderline Empathy Paradox: Evidence And Conceptual Models For Empathic Enhancements In Borderline Personality Disorder. Journal Of Personality Disorders, 27(2), 172–195. https://Doi.Org/10.1521/Pedi_2012_26_071\nEklund, J. H., & Meranius, M. S. (2021). Toward a consensus on the nature of empathy: A review of reviews. Patient Education and Counseling , 104 (2), 300–307. https://doi.org/10.1016/j.pec.2020.08.022\nGroen, Y., Fuermaier, A. B. M., Den Heijer, A. E., Tucha, O., & Althaus, M. (2015). The Empathy and Systemising Quotient: The Psychometric Properties of the Dutch Version and a Review of the Cross-Cultural Stability. Journal of Autism and Developmental Disorders, 45(9), 2848–2864. https://doi.org/10.1007/s10803-015-2448-z\nLawrence, E. J., Shaw, P., Baker, D., Baron-Cohen, S., & David, A. S. (2004). Measuring empathy: reliability and validity of the Empathy Quotient. Psychological Medicine, 34(5), 911–920. https://doi.org/10.1017/S0033291703001624\nMichaels, T. M., Horan, W. P., Ginger, E. J., Martinovich, Z., Pinkham, A. E., & Smith, M. J. (2014). Cognitive empathy contributes to poor social functioning in schizophrenia: Evidence from a new self-report measure of cognitive and affective empathy. Psychiatry Research, 220(3), 803–810. https://doi.org/10.1016/j.psychres.2014.08.054\nMuncer, S. J., & Ling, J. (2006). Psychometric analysis of the empathy quotient (EQ) scale. Personality and Individual Differences, 40(6), 1111–1119. https://doi.org/10.1016/j.paid.2005.09.020\nPepper, K. L., Demetriou, E. A., Park, S. H., Boulton, K. A., Hickie, I. B., Thomas, E. E., & Guastella, A. J. (2019). Self-reported empathy in adults with autism, early psychosis, and social anxiety disorder. Psychiatry Research, 281, 112604–112604. https://doi.org/10.1016/j.psychres.2019.112604\nRum, Y., & Perry, A. (2020). Empathic Accuracy in Clinical Populations.\nFrontiers in Psychiatry\n,\n11\n, 457–457.\nhttps://doi.org/10.3389/fpsyt.2020.00457\nSchwenck, C., Mergenthaler, J., Keller, K., Zech, J., Salehi, S., Taurines, R., Romanos, M., Schecklmann, M., Schneider, W., Warnke, A., & Freitag, C. M. (2012). Empathy in children with autism and conduct disorder: group-specific profiles and developmental aspects. Journal of Child Psychology and Psychiatry, 53(6), 651–659. https://doi.org/10.1111/j.1469-7610.2011.02499.x\nTone, E. B., & Tully, E. C. (2014). Empathy as a “risky strength”: A multilevel examination of empathy and risk for internalising disorders. Development and Psychopathology, 26(4pt2), 1547–1565. https://doi.org/10.1017/S0954579414001199\nTurner, I. N., Foster, J. D., & Webster, G. D. (2019). The Dark Triad’s inverse relations with cognitive and emotional empathy: High-powered tests with multiple measures.\nPersonality and Individual Differences\n,\n139\n, 1–6.\nhttps://doi.org/10.1016/j.paid.2018.10.030\nVelotti, P., Garofalo, C., Dimaggio, G., & Fonagy, P. (2019). Mindfulness, Alexithymia, and Empathy Moderate Relations Between Trait Aggression and Antisocial Personality Disorder Traits. Mindfulness, 10(6), 1082–1090. https://doi.org/10.1007/s12671-018-1048-3\nWakabayashi, A., Baron-Cohen, S., Wheelwright, S., Goldenfeld, N., Delaney, J., Fine, D., Smith, R., & Weil, L. (2006). Development of short forms of the Empathy Quotient (EQ-Short) and the Systemising Quotient (SQ-Short). Personality and Individual Differences, 41(5), 929–940. https://doi.org/10.1016/j.paid.2006.03.017\nWheelwright, S., Baron-Cohen, S., Goldenfeld, N., Delaney, J., Fine, D., Smith, R., Weil, L., & Wakabayashi, A. (2006). Predicting autism spectrum quotient (AQ) from the systemizing quotient-revised (SQ-R) and empathy quotient (EQ): Multiple perspectives on the Psychological and neural bases of social cognition. Brain Research, 1079, 47–56. doi: 10.1016/j.brainres.2006.01.012",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Empathy Quotient (EQ-40) questionnaire PDF",
+   "source_url": null,
+   "sha256": "b1a67769b9d50342cf5d4569616c6c2e6a3cef9ecaaf3513487e38c4d4641030",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b1a67769b9d50342cf5d4569616c6c2e6a3cef9ecaaf3513487e38c4d4641030.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Brief Emotional Intelligence Scale (BEIS-10)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "14ae624443ca21f722f86726124477cb1158bff5bb11f64f5238c65475e1ecbb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/14ae624443ca21f722f86726124477cb1158bff5bb11f64f5238c65475e1ecbb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Simon Baker, Ph.D",
+   "source_url": null,
+   "sha256": "9a09fa7d2de8b2ca61f3f840c48e2cb2c3825b1477285ac7b3d171e6eb16154b",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9a09fa7d2de8b2ca61f3f840c48e2cb2c3825b1477285ac7b3d171e6eb16154b.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "10d8d134383d209625be4bd361bcbe0e78361a8e684b610a534a776d5aa01a51",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/10d8d134383d209625be4bd361bcbe0e78361a8e684b610a534a776d5aa01a51.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "EQ-40 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "657896a7260a9383bbe6e8c1a73f58d839ae892bdb6aedff3fb65594139d0084",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/657896a7260a9383bbe6e8c1a73f58d839ae892bdb6aedff3fb65594139d0084.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "EQ-40 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0168d1a548e91b09a116bf4d2138f07eec28eeba18c04b0acabbd79059aaa127",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0168d1a548e91b09a116bf4d2138f07eec28eeba18c04b0acabbd79059aaa127.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "EQ-40 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "24329714b6a3fd80baff68653021769ce904e80ab2a53ac6995d9d760c605b64",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/24329714b6a3fd80baff68653021769ce904e80ab2a53ac6995d9d760c605b64.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "EQ-40 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1b44d33d67254c173f06fbb980fa0064a1641d0ff42ae94e7494bcf9ae95797d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1b44d33d67254c173f06fbb980fa0064a1641d0ff42ae94e7494bcf9ae95797d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "EQ-40 Score Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "d007d44a5eca1aa9cdc5ca082665bfe200d113ecbec7f269b53790385e4a1215",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d007d44a5eca1aa9cdc5ca082665bfe200d113ecbec7f269b53790385e4a1215.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "EQ-40 Score Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Empathy Quotient – 40 item version using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "719052149953d8facac2d173049a5919426051c87870ad5a7cd296ab79e587c6",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/719052149953d8facac2d173049a5919426051c87870ad5a7cd296ab79e587c6.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 40
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9275acaadc3cdf7d8c23d6bf34b6f6de5588363b3105b81bd890fa5eaf3d761f.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "719052149953d8facac2d173049a5919426051c87870ad5a7cd296ab79e587c6",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/719052149953d8facac2d173049a5919426051c87870ad5a7cd296ab79e587c6.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 6,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "756ff52de9aafb4462d2d89748634e1d57d04a97f7e476d3eafe1ac0fdaa02a1",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:04:56.443028+00:00",
+  "raw_extraction_sha256": "248575bd1aa96143045ff0ed33c1be81c6a8821748594d4dfc29cc5357c9ecba",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Autism"
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2011.07.005",
+    "title": "https://doi.org/10.1016/j.paid.2011.07.005"
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23096764/",
+    "title": "Doi: 10.1007/s10802-012-9689-5"
+   },
+   {
+    "url": "https://doi.org/10.3389/fpsyg.2021.781346",
+    "title": "https://doi.org/10.3389/fpsyg.2021.781346"
+   },
+   {
+    "url": "https://Doi.Org/10.1521/Pedi_2012_26_071",
+    "title": "https://Doi.Org/10.1521/Pedi_2012_26_071"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.pec.2020.08.022",
+    "title": "https://doi.org/10.1016/j.pec.2020.08.022"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10803-015-2448-z",
+    "title": "https://doi.org/10.1007/s10803-015-2448-z"
+   },
+   {
+    "url": "https://doi.org/10.1017/S0033291703001624",
+    "title": "https://doi.org/10.1017/S0033291703001624"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.psychres.2014.08.054",
+    "title": "https://doi.org/10.1016/j.psychres.2014.08.054"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2005.09.020",
+    "title": "https://doi.org/10.1016/j.paid.2005.09.020"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.psychres.2019.112604",
+    "title": "https://doi.org/10.1016/j.psychres.2019.112604"
+   },
+   {
+    "url": "https://doi.org/10.3389/fpsyt.2020.00457",
+    "title": "https://doi.org/10.3389/fpsyt.2020.00457"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1469-7610.2011.02499.x",
+    "title": "https://doi.org/10.1111/j.1469-7610.2011.02499.x"
+   },
+   {
+    "url": "https://doi.org/10.1017/S0954579414001199",
+    "title": "https://doi.org/10.1017/S0954579414001199"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2018.10.030",
+    "title": "https://doi.org/10.1016/j.paid.2018.10.030"
+   },
+   {
+    "url": "https://doi.org/10.1007/s12671-018-1048-3",
+    "title": "https://doi.org/10.1007/s12671-018-1048-3"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2006.03.017",
+    "title": "https://doi.org/10.1016/j.paid.2006.03.017"
+   },
+   {
+    "url": null,
+    "title": "Autism screening test"
+   },
+   {
+    "url": null,
+    "title": "Adult ASD assessment"
+   },
+   {
+    "url": null,
+    "title": "Autism assessment for females"
+   },
+   {
+    "url": null,
+    "title": "Brief EI scale"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Simon Baker, Ph.D"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Autism Clinical Interview for Adult Diagnosis (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "ADHD Clinical Interview for Adult Diagnosis (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

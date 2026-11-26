@@ -1,0 +1,1225 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "borderline-symptom-list-bsl-23--8c1defb2159d",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Borderline Symptom List (BSL-23)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Borderline Symptom List – Short Version (BSL-23) is a 23-item self-rating instrument for specific assessment of borderline personality disorder (BPD) symptomatology in adults (18+). The scale assesses DSM BPD diagnostic criteria (e.g., affective instability, recurrent suicidal behaviour, gestures, or threats, or self-mutilating behaviour, and transient dissociative symptoms) in addition to items that are based on borderline-typical empirical findings regarding self-criticism, problems with trust, emotional vulnerability, and proneness to shame, self-disgust, loneliness, and helplessness (Kleindienst et al., 2020).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "last week"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Please follow these instructions when answering the questionnaire: In the following table you will find a set of difficulties and problems which possibly describe you. Please work through the questionnaire and decide how much you suffered from each problem in the course of the last week. In case you have no feelings at all at the present moment, please answer according to how you think you might have felt. Please answer honestly. All questions refer to the last week. If you felt different ways at different times in the week, give a rating for how things were for you on average.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_mean",
+    "label": "Mean of the 23 symptom items",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "c6b5bace9ea81163291264de14c3249d36553ebf256374cbbea9f90e0c685b79",
+     "retrieved_at": "2026-11-13T12:00:11.319512+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Complete-answer mean only. The source permits at least 21 answers; partial-answer prorating requires review. Item 24 is a separate wellbeing response."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "The average score of items (range 0 to 4) is calculated, with a higher score indicating greater impairment. The total average score is computed by summing responses to all 23 items and dividing by 23. Scores can be calculated for respondents who complete at least 21 of the 23 items.",
+   "Scores of 1.50 or higher indicate responses consistent with BPD, with empirical data showing this cut-off score discriminates between BPD patients and individuals with other clinical psychopathology. A lower threshold of 0.64 provides optimal discrimination between individuals with BPD and healthy controls.",
+   "An average score of 1.50 corresponds to a percentile of 17 compared to the BPD group and a percentile above 99 compared to the healthy control group, indicating this score is typical for someone with BPD but extreme compared to someone without a psychiatric diagnosis.",
+   "On first administration, a bar graph displays the total average score with severity range bands for reference. A comparison graph is also presented showing the respondent’s score relative to the BPD diagnosed group, the clinical control group, and those without any psychiatric diagnosis. On multiple administrations, a line graph tracks the total average score over time to visualise changes in symptom severity.",
+   "Discriminant validity is demonstrated by the scale’s excellent ability to distinguish BPD patients from healthy controls (ROC AUC = .997) and from individuals with other psychiatric conditions such as anxiety disorders, major depression, and schizophrenia (ROC AUC = .85; Kleindienst et al., 2020). A BSL-23 score of 1.50 provides optimal discrimination between individuals with BPD and those with other clinical psychopathology, while a lower threshold of 0.64 provides optimal discrimination between individuals with BPD and healthy controls.",
+   "The BSL-23 is sensitive to therapeutic change, showing meaningful reductions following evidence-based treatments including DBT (Bohus et al., 2009; Nicastro et al., 2016; Robinson et al., 2018). A Reliable Change Index (RCI) was calculated using the Jacobson-Truax method, based on the internal consistency of α = .97 (Bohus et al., 2009) and the standard deviation of 0.86 from the treatment-seeking BPD sample (Kleindienst et al., 2020). A change of 0.41 average score points or more represents statistically reliable change at a 95% confidence level."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "BSL-23 Total Score",
+    "text": "The average score of items (range 0 to 4) is calculated, with a higher score indicating greater impairment. The total average score is computed by summing responses to all 23 items and dividing by 23. Scores can be calculated for respondents who complete at least 21 of the 23 items.\n\n",
+    "source_url": null
+   },
+   {
+    "title": "BSL-23 Percentiles",
+    "text": "Three percentile comparisons are provided, comparing the respondent’s score to: (1) a healthy control group ( n = 356; no history of psychopathology), (2) a clinical control group ( n = 176; individuals with Axis I disorders but no BPD diagnosis), and (3) a BPD group ( n = 317; met DSM-5 diagnostic criteria for BPD) from Kleindienst et al. (2020). A percentile of 50 means the client has scored at the typical level compared with the comparative group.\nAn average score of 1.50 corresponds to a percentile of 17 compared to the BPD group and a percentile above 99 compared to the healthy control group, indicating this score is typical for someone with BPD but extreme compared to someone without a psychiatric diagnosis.\n",
+    "source_url": null
+   },
+   {
+    "title": "Normative Data and Reference Samples",
+    "text": "Kleindienst et al. (2020) established normative data from a large multi-sample study ( N = 1,090) to develop and validate a severity classification system for the BSL-23. Three independent samples are used to provide context for interpreting individual scores:\nHealthy Control Sample (n = 356): Recruited from a local health survey and residents’ registration office in Mannheim, Germany, this sample consisted of adults (282 female, 74 male) with no psychiatric disorder (lifetime), with a mean age of 27.68 years ( SD = 6.88; range 18–55). The mean BSL-23 score was 0.12 ( SD = 0.17), with 89% scoring in the “None/Low” range and 11% in the “Mild” range.\nClinical Control Sample (n = 176): This sample consisted of individuals with Axis I disorders including major depressive disorder, schizophrenia, anxiety disorders, and obsessive-compulsive disorder, but no BPD diagnosis. The mean BSL-23 score was 1.08 ( SD = 0.79), with 59% scoring in the “None/Low” to “Mild” ranges and 18% in the “High” to “Very High” ranges.\nTreatment-Seeking BPD Sample (n = 317): Recruited from patients applying for psychological therapy at the Central Institute of Mental Health Mannheim and associated hospitals, all participants met DSM-5 diagnostic criteria for BPD as established using the International Personality Disorder Examination. The mean BSL-23 score was 2.34 ( SD = 0.86), with 70% scoring in the “High” to “Extremely High” ranges.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "Total Average Score (sum of items 1–23 ÷ 23)",
+    "y": 218.2,
+    "url": null,
+    "sha256": "6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "answered. Item 24 (overall personal state, 0–100%) is recorded separately and is not included in the total.",
+    "y": 255.0,
+    "url": null,
+    "sha256": "6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Bohus, M., Kleindienst, N., Limberger, M. F., Stieglitz, R.-D., Domsalla, M., Chapman, A. L., Steil, R., Philipsen, A., & Wolf, M. (2009). The short version of the Borderline Symptom List (BSL-23): development and initial data on psychometric properties. Psychopathology, 42(1), 32–39. https://doi.org/10.1159/000173701",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Bohus, M., Limberger, M. F., Frank, U., Chapman, A. L., Kühler, T., & Stieglitz, R.-D. (2007). Psychometric properties of the Borderline Symptom List (BSL). Psychopathology, 40(2), 126–132. https://doi.org/10.1159/000098493\nBohus, M., Kleindienst, N., Limberger, M. F., Stieglitz, R.-D., Domsalla, M., Chapman, A. L., Steil, R., Philipsen, A., & Wolf, M. (2009). The short version of the Borderline Symptom List (BSL-23): Development and initial data on psychometric properties. Psychopathology, 42(1), 32–39. https://doi.org/10.1159/000173701\nKleindienst, N., Jungkunz, M., & Bohus, M. (2020). A proposed severity classification of borderline symptoms using the borderline symptom list (BSL-23). Borderline Personality Disorder and Emotion Dysregulation, 7, 11. https://doi.org/10.1186/s40479-020-00126-6\nNicastro, R., Prada, P., Kung, A. L., Salamin, V., Dayer, A., Aubry, J. M., Guenot, F., & Perroud, N. (2016). Psychometric properties of the French borderline symptom list, short form (BSL-23). Borderline Personality Disorder and Emotion Dysregulation, 3(1), 4. https://doi.org/10.1186/s40479-016-0038-0\nRobinson, S., Lang, J. E., Hernandez, A. M., Holz, T., Cameron, M., & Brannon, B. (2018). Outcomes of dialectical behavior therapy administered by an interdisciplinary team. Archives of Psychiatric Nursing, 32(4), 512–516. https://doi.org/10.1016/j.apnu.2018.02.009\nShen, J. E., Huang, Y. H., Huang, H. C., Chen, Y. L., Yen, C. F., & Ko, C. H. (2023). Psychometric properties of the Chinese Mandarin version of the Borderline Symptom List, short form (BSL-23) in suicidal adolescents. Borderline Personality Disorder and Emotion Dysregulation, 10, 23. https://doi.org/10.1186/s40479-023-00230-3\nSoler, J., Vega, D., Feliu-Soler, A., Trujols, J., Soto, Á., Elices, M., Ortiz, C., Pérez, V., Bohus, M., & Pascual, J. C. (2013). Validation of the Spanish version of the borderline symptom list, short form (BSL-23). BMC Psychiatry, 13, 139. https://doi.org/10.1186/1471-244X-13-139\nYang, H., Lei, X., Zhong, M., Zhou, Q., Ling, Y., Jungkunz, M., & Yi, J. (2018). Psychometric properties of the Chinese version of the brief borderline symptom list in undergraduate students and clinical patients. Frontiers in Psychology, 9, 605. https://doi.org/10.3389/fpsyg.2018.00605\nZanarini, M. C., Gunderson, J. G., Frankenburg, F. R., & Chauncey, D. L. (1989). The revised diagnostic interview for borderlines: Discriminating BPD from other axis II disorders. Journal of Personality Disorders, 3(1), 10–18. https://doi.org/10.1521/pedi.1989.3.1.10",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Borderline Symptom List (BSL-23) questionnaire PDF",
+   "source_url": null,
+   "sha256": "8df2bebb611f30bf4ff0b27fc308048d9a7c3e2d571b25aa203fddb2d7ffe856",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8df2bebb611f30bf4ff0b27fc308048d9a7c3e2d571b25aa203fddb2d7ffe856.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Maladaptive Schema Scale (MSS)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "616119462d7d2443509d27171ccb013b2989e3d795740cd9c6ff0808cd789979",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/616119462d7d2443509d27171ccb013b2989e3d795740cd9c6ff0808cd789979.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c1838e159a132c21650cbcb9cb5ff2835c37bde3d5c1ad51228fa6f889aa0ddf",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c1838e159a132c21650cbcb9cb5ff2835c37bde3d5c1ad51228fa6f889aa0ddf.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Sample Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1e4cea2294d25f596a5849c236748a3e43661311ce41d06bf4f5c1d4a284a17c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4cea2294d25f596a5849c236748a3e43661311ce41d06bf4f5c1d4a284a17c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BSL-23 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6151121c02cabd5a460f3c4e8a253f98b7ba492d10b135cc2e14e3bd60d1118c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6151121c02cabd5a460f3c4e8a253f98b7ba492d10b135cc2e14e3bd60d1118c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BSL-23 Total Score",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "7ff130b62f4557c40c3785a5ed253ba84e073c06942d5aaf278f54ec3941d33a",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ff130b62f4557c40c3785a5ed253ba84e073c06942d5aaf278f54ec3941d33a.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Visual Outputs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1e487259cec620897c5be1974315698470ce53df81aa9a093f7ebde1edd14119",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e487259cec620897c5be1974315698470ce53df81aa9a093f7ebde1edd14119.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Visual Outputs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6e4ed205724c0f54beac19cf957fc1adb6c39d6e2d9571f8cca36bc167e248ae",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6e4ed205724c0f54beac19cf957fc1adb6c39d6e2d9571f8cca36bc167e248ae.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Visual Outputs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Borderline Symptom List (BSL-23) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "BSL-23 Review",
+   "source_url": null,
+   "sha256": "5a2245948404a7a255fecca1256b146075a9da2b7df2ef8bc874fdb9727310cd",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5a2245948404a7a255fecca1256b146075a9da2b7df2ef8bc874fdb9727310cd.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "33cdb1c1bb7f87c7004ece83661d85e508a9b03509d98a368a642f77bffd8ac1",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/33cdb1c1bb7f87c7004ece83661d85e508a9b03509d98a368a642f77bffd8ac1.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "source_item_count_differs",
+    "detail": "Page description mentions [23] items; selected PDF has 24 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice",
+   "single_choice"
+  ],
+  "question_recovery_date": "2026-11-13",
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 23
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "5a2245948404a7a255fecca1256b146075a9da2b7df2ef8bc874fdb9727310cd",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/5a2245948404a7a255fecca1256b146075a9da2b7df2ef8bc874fdb9727310cd.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf",
+    "BSL-23 Review"
+   ],
+   "page_count": 20,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "total_mean",
+    "label": "Mean of the 23 symptom items",
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "total_mean",
+    "title": "Mean of the 23 symptom items",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_mean",
+      "label": "Mean of the 23 symptom items",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "axis_unit": "mean score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "6dc21eff9b24a451eb6c2af738dc609a53fdfe451450f16fd2a4bc88a1a6a927",
+   "guidance_titles": [
+    "BSL-23 Total Score",
+    "BSL-23 Percentiles",
+    "Normative Data and Reference Samples"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "total_mean"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending",
+    "source_item_count_differs"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "total_mean"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "total_mean",
+    "label": "Mean of the 23 symptom items",
+    "rule_id": "total_mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23"
+    ]
+   },
+   {
+    "id": "recorded_responses",
+    "label": "Additional recorded responses",
+    "rule_id": null,
+    "item_ids": [
+     "Q24"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q17",
+    "question_ref": "/questionnaire/items/16",
+    "source_label": "17",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q18",
+    "question_ref": "/questionnaire/items/17",
+    "source_label": "18",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q19",
+    "question_ref": "/questionnaire/items/18",
+    "source_label": "19",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q20",
+    "question_ref": "/questionnaire/items/19",
+    "source_label": "20",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q21",
+    "question_ref": "/questionnaire/items/20",
+    "source_label": "21",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q22",
+    "question_ref": "/questionnaire/items/21",
+    "source_label": "22",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q23",
+    "question_ref": "/questionnaire/items/22",
+    "source_label": "23",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q24",
+    "question_ref": "/questionnaire/items/23",
+    "source_label": "24",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "f633ddc48b6f8bc14e58525a16817673a5b84696f98e23978199fe89caa51fc0",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_mean",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_mean",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Page description mentions [23] items; selected PDF has 24 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:30:16.173737+00:00",
+  "raw_extraction_sha256": "c7f97b23d55d8569019e762ea78c6c6bfa245d8f221e5908685dfd47e605ed98",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Diagnosis"
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Personality"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1159/000173701",
+    "title": "https://doi.org/10.1159/000173701"
+   },
+   {
+    "url": "https://doi.org/10.1159/000098493",
+    "title": "https://doi.org/10.1159/000098493"
+   },
+   {
+    "url": "https://doi.org/10.1186/s40479-020-00126-6",
+    "title": "https://doi.org/10.1186/s40479-020-00126-6"
+   },
+   {
+    "url": "https://doi.org/10.1186/s40479-016-0038-0",
+    "title": "https://doi.org/10.1186/s40479-016-0038-0"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.apnu.2018.02.009",
+    "title": "https://doi.org/10.1016/j.apnu.2018.02.009"
+   },
+   {
+    "url": "https://doi.org/10.1186/s40479-023-00230-3",
+    "title": "https://doi.org/10.1186/s40479-023-00230-3"
+   },
+   {
+    "url": "https://doi.org/10.1186/1471-244X-13-139",
+    "title": "https://doi.org/10.1186/1471-244X-13-139"
+   },
+   {
+    "url": "https://doi.org/10.3389/fpsyg.2018.00605",
+    "title": "https://doi.org/10.3389/fpsyg.2018.00605"
+   },
+   {
+    "url": "https://doi.org/10.1521/pedi.1989.3.1.10",
+    "title": "https://doi.org/10.1521/pedi.1989.3.1.10"
+   },
+   {
+    "url": null,
+    "title": "BPD screening tool"
+   },
+   {
+    "url": null,
+    "title": "Emotional dysregulation scale"
+   },
+   {
+    "url": null,
+    "title": "Personality traits questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Relationship attachment questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Complex dissociation scale"
+   },
+   {
+    "url": null,
+    "title": "Young Schema Questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "BSL-23 Review"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Dialectical Behaviour Therapy (DBT) (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychological Evaluation Report (Report Template)"
+   },
+   {
+    "url": null,
+    "title": "122"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

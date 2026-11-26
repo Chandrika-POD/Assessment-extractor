@@ -1,0 +1,967 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "brief-emotional-intelligence-scale--71e06748d4fe",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Brief Emotional Intelligence Scale (BEIS-10)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Brief Emotional Intelligence Scale (BEIS-10) is a 10-item self-report measure designed to assess emotional intelligence (EI) in adults. The BEIS-10 was developed by Davies et al. (2010) as a shortened version of the 33-item Emotional Intelligence Scale (EIS; Schutte et al., 1998).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Select the response that best matches each of the following statements.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total BEIS-10 Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total BEIS-10 Score (sum of all 10 items)",
+     "y": 666.0,
+     "url": null,
+     "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Below Average: 6th to 24th percentile",
+   "Average : 25th to 75th percentile",
+   "Above Average : 76th to 94th percentile",
+   "6th – 24th percentile: Below Average",
+   "25th – 75th percentile: Average",
+   "76th – 94th percentile: Above Average"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "BEIS-10 Scoring & Interpretation",
+    "text": "BEIS-10 scores consist of a total raw score (range from 10 to 50) and five sub-scale scores, with higher scores indicating greater self-perceived emotional intelligence capabilities. These scores are converted into percentiles based on a large combined normative sample (N = 2,770) drawn from multiple studies across different populations and countries.\n\nSub-scales are presented for the BEIS-10:\nAppraisal of Own Emotions (items 1, 2; range 2-10): Assesses an individual’s capacity to identify and understand their own emotional states. This includes awareness of mood changes, recognition of physiological responses to emotions, and the ability to label emotional experiences accurately.\nAppraisal of Others’ Emotions (items 3, 4; range 2-10): Measures one’s ability to accurately perceive and interpret others’ emotional states through both verbal and non-verbal cues. This includes recognition of facial expressions, tone of voice, and body language.\nRegulation of Own Emotions (items 5, 6; range 2-10): Evaluates an individual’s ability to manage and modify their emotional responses. This includes skills in emotional self-control, ability to calm oneself when upset, and capacity to maintain emotional balance.\nRegulation of Others’ Emotions (items 7, 8; range 2-10): Assesses capability to influence and manage others’ emotional states. This includes helping others feel better when down, providing emotional support, and facilitating positive emotional states in others.\nUtilisation of Emotions (items 9, 10; range 2-10): Measures how effectively individuals harness emotions to enhance thinking, problem-solving, and creativity. This includes using emotions to guide decision-making and leveraging emotional states for improved performance.\n\nA percentile score interpretation framework provides qualitative descriptors ranging from Low to High emotional intelligence:\nLow : 5th percentile and below\nBelow Average: 6th to 24th percentile\nAverage : 25th to 75th percentile\nAbove Average : 76th to 94th percentile\nHigh : 95th percentile and above\nOn first administration, a stacked bar graph is presented showing the percentiles for the total score and subscales with the descriptors in the background of the plot. If the scale is administered on multiple occasions, a graph is produced to track emotional intelligence development over time for both the total and the subscale percentiles.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Appraisal of Own Emotions (Items 1–2):",
+    "y": 546.8,
+    "url": null,
+    "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Appraisal of Others' Emotions (Items 3–4):",
+    "y": 568.5,
+    "url": null,
+    "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Regulation of Own Emotions (Items 5–6):",
+    "y": 590.2,
+    "url": null,
+    "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Regulation of Others' Emotions (Items 7–8):",
+    "y": 612.0,
+    "url": null,
+    "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Utilisation of Emotions (Items 9–10):",
+    "y": 633.8,
+    "url": null,
+    "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Davies, K. A., Lane, A. M., Devonport, T. J., & Scott, J. A. (2010). Validity and reliability of a Brief Emotional Intelligence Scale (BEIS-10). Journal of Individual Differences , 31 (4), 198–208. https://doi.org/10.1027/1614-0001/a000028",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Balakrishnan, A., & Saklofske, D. H. (2015). Be mindful how you measure: A psychometric investigation of the Brief Emotional Intelligence Scale. Personality and Individual Differences , 87 , 293–297. https://doi.org/10.1016/j.paid.2015.08.030\nCoyne, K. A. D. (2020). Nurses Caring for Pregnant Women with Substance Use Disorder: Exploring Emotional Intelligence and Attitude . [Doctoral dissertation, Carlow University], https://www.proquest.com/openview/d18c93212c25aa943a053f78e917a72a/1?pq-origsite=gscholar&cbl=51922&diss=y\nHatamnejad, M. R., Hosseinpour, M., Shiati, S., Seifaee, A., Sayari, M., Seyyedi, F., Lankarani, K. B., & Ghahramani, S. (2023). Emotional intelligence and happiness in clinical medical students: A cross-sectional multicenter study. Health Science Reports , 6 (12), e1745. https://doi.org/10.1002/hsr2.1745\nMoussa, M. A., & Abdelrehim, H. A. (2024). An evaluation study of emotional intelligence structure according to the ability and traits perspectives among university students. Port Said Journal of Educational Research , 3 (2), 41–66. https://doi.org/10.21608/psjer.2024.265051.1033\nRizzo, J. M., & Schwartz, R. C. (2021). The effect of mindfulness, psychological flexibility, and emotional intelligence on self-efficacy and functional outcomes among chronic pain clients. Journal of Contemporary Psychotherapy , 51 (2), 109–116. https://doi.org/10.1007/s10879-020-09481-5\nSalovey, P., & Mayer, J. D. (1990). Emotional intelligence. Imagination, Cognition and Personality , 9 (3), 185–211. https://doi.org/10.2190/dugg-p24e-52wk-6cdg\nSchutte, N. S., Malouff, J. M., Hall, L. E., Haggerty, D. J., Cooper, J. T., Golden, C. J., & Dornheim, L. (1998). Development and validation of a measure of emotional intelligence. Personality and Individual Differences , 25 (2), 167–177. https://doi.org/10.1016/s0191-8869(98)00001-4\nSchutte, N. S., Malouff, J. M., Thorsteinsson, E. B., Bhullar, N., & Rooke, S. E. (2007). A meta-analytic investigation of the relationship between emotional intelligence and health. Personality and Individual Differences , 42 (6), 921–933. https://doi.org/10.1016/j.paid.2006.09.003\nSharma, S. (2024). Impact of Emotional Intelligence and Resilience and Life Satisfaction among Young Adults. International Journal of Interdisciplinary Approaches in Psychology , 2 (5). https://www.psychopediajournals.com/index.php/ijiap/article/view/433\nVan Rooy, D. L., & Viswesvaran, C. (2004). Emotional intelligence: A meta-analytic investigation of predictive validity and nomological net. Journal of Vocational Behavior , 65 (1), 71–95. https://doi.org/10.1016/s0001-8791(03)00076-9",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Brief Emotional Intelligence Scale (BEIS-10) PDF",
+   "source_url": null,
+   "sha256": "507b5c5068fad6c9628c20b69f0f7c2ecce83fd8420be0dbb3e10a8dc55accdb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/507b5c5068fad6c9628c20b69f0f7c2ecce83fd8420be0dbb3e10a8dc55accdb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Maladaptive Schema Scale (MSS)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "8d11045c8560a0241a6ee612ddef83f0fcaa3912d27eee58b155d751d8bde76c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8d11045c8560a0241a6ee612ddef83f0fcaa3912d27eee58b155d751d8bde76c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download BEIS-10 PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "63d2c74b9687fb333724f1dda15e6ca15d509bfa164e4e89cbcb8c7f355cb052",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/63d2c74b9687fb333724f1dda15e6ca15d509bfa164e4e89cbcb8c7f355cb052.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Sample BEIS-10 Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c216811ae2336ca4b7ecea6f7fef577cf23fda11071d280f84daf661f40d4488",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c216811ae2336ca4b7ecea6f7fef577cf23fda11071d280f84daf661f40d4488.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BEIS-10 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "468bb163c891f9a8585e3812de0ac0a7ee86d85faabde242606bba77da5edcc9",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/468bb163c891f9a8585e3812de0ac0a7ee86d85faabde242606bba77da5edcc9.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BEIS-10 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4510f84b0ffd43521a429178508fc1c11dae150643dfb8cfc24fef7eb60de649",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4510f84b0ffd43521a429178508fc1c11dae150643dfb8cfc24fef7eb60de649.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BEIS-10 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Brief Emotional Intelligence Scale (BEIS-10) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download BEIS-10 PDF",
+   "source_url": null,
+   "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "emotional-intelligence-test-onlline.pdf",
+   "source_url": null,
+   "sha256": "370cfc9116e893aa2b7f80bbfa250b19370d45b514d518decc03361f69b0d9bf",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/370cfc9116e893aa2b7f80bbfa250b19370d45b514d518decc03361f69b0d9bf.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "BEIS-10 Review",
+   "source_url": null,
+   "sha256": "557f711d2869662de62640b4225d941b0f1be1a8924d6c9a21ca3469d937e093",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/557f711d2869662de62640b4225d941b0f1be1a8924d6c9a21ca3469d937e093.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "Sample BEIS-10 Results",
+   "source_url": null,
+   "sha256": "76975947e597b334fed262f8a084ce786f813aa7250fd094ea5e6e9c4c5cbef1",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/76975947e597b334fed262f8a084ce786f813aa7250fd094ea5e6e9c4c5cbef1.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 10
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "557f711d2869662de62640b4225d941b0f1be1a8924d6c9a21ca3469d937e093",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/557f711d2869662de62640b4225d941b0f1be1a8924d6c9a21ca3469d937e093.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf",
+    "BEIS-10 Review"
+   ],
+   "page_count": 13,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total BEIS-10 Score",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total BEIS-10 Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total BEIS-10 Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988",
+   "guidance_titles": [
+    "BEIS-10 Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total BEIS-10 Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "3bb063038fe50b6f934738f1115f76e46039ecf70a9acfa1b028b12519094333",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:36:41.218272+00:00",
+  "raw_extraction_sha256": "7baf20cb02c08b4257c96ee640b90c9443f991c5a71dc5f871c5eff16491e0cc",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1027/1614-0001/a000028",
+    "title": "https://doi.org/10.1027/1614-0001/a000028"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2015.08.030",
+    "title": "https://doi.org/10.1016/j.paid.2015.08.030"
+   },
+   {
+    "url": "https://www.proquest.com/openview/d18c93212c25aa943a053f78e917a72a/1?pq-origsite=gscholar&cbl=51922&diss=y",
+    "title": "https://www.proquest.com/openview/d18c93212c25aa943a053f78e917a72a/1?pq-origsite=gscholar&cbl=51922&diss=y"
+   },
+   {
+    "url": "https://doi.org/10.1002/hsr2.1745",
+    "title": "https://doi.org/10.1002/hsr2.1745"
+   },
+   {
+    "url": "https://doi.org/10.21608/psjer.2024.265051.1033",
+    "title": "https://doi.org/10.21608/psjer.2024.265051.1033"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10879-020-09481-5",
+    "title": "https://doi.org/10.1007/s10879-020-09481-5"
+   },
+   {
+    "url": "https://doi.org/10.2190/dugg-p24e-52wk-6cdg",
+    "title": "https://doi.org/10.2190/dugg-p24e-52wk-6cdg"
+   },
+   {
+    "url": "https://doi.org/10.1016/s0191-8869(98)00001-4",
+    "title": "https://doi.org/10.1016/s0191-8869(98)00001-4"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2006.09.003",
+    "title": "https://doi.org/10.1016/j.paid.2006.09.003"
+   },
+   {
+    "url": "https://www.psychopediajournals.com/index.php/ijiap/article/view/433",
+    "title": "https://www.psychopediajournals.com/index.php/ijiap/article/view/433"
+   },
+   {
+    "url": "https://doi.org/10.1016/s0001-8791(03)00076-9",
+    "title": "https://doi.org/10.1016/s0001-8791(03)00076-9"
+   },
+   {
+    "url": null,
+    "title": "Social empathy measure"
+   },
+   {
+    "url": null,
+    "title": "Autistic traits questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Autism assessment for females"
+   },
+   {
+    "url": null,
+    "title": "Autism screening test"
+   },
+   {
+    "url": null,
+    "title": "Personality traits questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Young Schema Questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download BEIS-10 PDF"
+   },
+   {
+    "url": null,
+    "title": "emotional-intelligence-test-onlline.pdf"
+   },
+   {
+    "url": null,
+    "title": "Sample BEIS-10 Results"
+   },
+   {
+    "url": null,
+    "title": "BEIS-10 Review"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

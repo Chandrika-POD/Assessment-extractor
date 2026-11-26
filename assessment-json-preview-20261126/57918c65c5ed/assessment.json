@@ -1,0 +1,1312 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "self-compassion-scale-short-form-scs-sf--57918c65c5ed",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Self-Compassion Scale – Short Form (SCS-SF)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Self-Compassion Scale – Short Form (SCS-SF) is a 12-item self-report measure of self-compassion designed for adults aged 18 years and over (Raes et al., 2011). It was developed as a brief alternative to Neff’s (2003) original 26-item SCS.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "How I typically act towards myself in difficult times Please read each statement carefully before answering. Indicate how often you behave in the stated manner using the following scale.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Total Self-Compassion mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+     "page_url": null,
+     "page_sha256": "938d8452e711455699bebd90930efbafb0ac3805911a155651050586df212d9e",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C20",
+      "LIVE_C26",
+      "LIVE_C27",
+      "LIVE_C36",
+      "LIVE_C40"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 1.0,
+    "maximum": 5.0
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Self Care mean",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q10"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+     "page_url": null,
+     "page_sha256": "938d8452e711455699bebd90930efbafb0ac3805911a155651050586df212d9e",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C20",
+      "LIVE_C26",
+      "LIVE_C27",
+      "LIVE_C36",
+      "LIVE_C40"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 1.0,
+    "maximum": 5.0
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Self Disparagement mean",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q8",
+     "Q9",
+     "Q11",
+     "Q12"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+     "page_url": null,
+     "page_sha256": "938d8452e711455699bebd90930efbafb0ac3805911a155651050586df212d9e",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C20",
+      "LIVE_C26",
+      "LIVE_C27",
+      "LIVE_C36",
+      "LIVE_C40"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "item_transforms": {
+     "Q1": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q4": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q8": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q9": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q11": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q12": {
+      "scale": -1,
+      "offset": 6
+     }
+    },
+    "minimum": 1.0,
+    "maximum": 5.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+   "page_url": null,
+   "page_sha256": "938d8452e711455699bebd90930efbafb0ac3805911a155651050586df212d9e",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [
+   "The SCS-SF total average score is an overall indicator of self-compassion. It is the average of all 12 items (range 1 to 5), made up of the six Self Care items and the six Self Disparagement items. The Self Disparagement items are reverse-scored first so that higher totals reflect more self-compassion. As a result, a high total reflects high Self Care together with low Self Disparagement.",
+   "A percentile is presented for the average total score and for each subscale, indicating how the respondent’s score compares with the community reference sample (Adu et al., 2024, New Zealand subsample). A community percentile of 50 represents a typical score within the community reference sample. Importantly, the subscales run in opposite directions, so a high percentile does not mean the same for each average score:",
+   "The results table displays the average score (1 to 5), and community percentile for the Total Score and subscales scores.",
+   "On the first administration, two bar charts are shown. The first graph plots the respondent’s total average score against the community sample, so clinicians can quickly see where they sit relative to most adults. The second graph compares the two subscales, Self Disparagement and Self Care, with colour shading on each bar indicating how the scores sit relative to the community sample.",
+   "On repeat administrations, a multi-administration line plot replaces the single-administration graphs for the total score and subscales, plotting the average scores over time, so that change can be seen across administrations.",
+   "Descriptive statistics for the New Zealand community sample are shown below, first as raw scores and then as average scores (1 to 5):",
+   "Total: raw score M = 35.50, SD = 8.52; average score M = 2.96, SD = 0.71",
+   "Self Disparagement: raw score M = 18.80, SD = 5.46; average score M = 3.13, SD = 0.91",
+   "Self Care: raw score M = 18.30, SD = 4.07; average score M = 3.05, SD = 0.68",
+   "When SCS-SF scores are available from multiple administrations, changes in the total score can indicate the effectiveness of treatment or shifts in self-compassion over time. In NovoPsych, change is interpreted against a Minimum Important Difference (MID; Norman et al., 2003) of 0.4 on the 1–5 average scale, equivalent to a 5-point change on the raw 12–60 total score (half the community SD, rounded up to the nearest whole total-score point). Changes are presented as change in average score and are categorised as:",
+   "Meaningful improvement of self-compassion: average increase of 0.4 or more (an increase of 5 or more points on the total score).",
+   "Meaningful decline of self-compassion: average decrease of 0.4 or more (a decrease of 5 or more points on the total score).",
+   "Minimal change of self-compassion: average change below 0.4 (a change of fewer than 5 points on the total score)."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "Self-Compassion Scale – Short Form (SCS-SF) Scoring",
+    "text": "The SCS-SF total average score is an overall indicator of self-compassion. It is the average of all 12 items (range 1 to 5), made up of the six Self Care items and the six Self Disparagement items. The Self Disparagement items are reverse-scored first so that higher totals reflect more self-compassion. As a result, a high total reflects high Self Care together with low Self Disparagement.\n",
+    "source_url": null
+   },
+   {
+    "title": "SCS-SF Subscale Interpretation",
+    "text": "Subscale interpretation is provided only to support clinical conversation about the relative balance between Self Disparagement and Self Care dimensions of self-compassion. Both subscales are total averages using the same scale as the total score (1-5).\nSelf Disparagement (items 1, 4, 8, 9, 11, 12): Captures harsh self-criticism, feeling alone in failure, and fixation on personal inadequacy. On this subscale, higher scores indicate more self-critical responses to difficulty (e.g., thoughts like “there’s something wrong with me”, or a sense that everyone else is coping better). Lower scores indicate fewer self-critical responses. Because these items are reverse-scored in the total, lower Self Disparagement contributes to a higher total self-compassion score.\nSelf Care (items 2, 3, 5, 6, 7, 10): Captures self-kindness, recognition of common humanity, and a balanced, mindful stance. Higher scores indicate warmer, more balanced responses to difficulty. People who score high on Self Care find thoughts such as “this is hard, and that’s understandable” relatively accessible, and may offer themselves comfort or rest when distressed. Lower scores may indicate that a person pushes through distress without acknowledging it, or makes limited use of self-soothing strategies.\n",
+    "source_url": null
+   },
+   {
+    "title": "SCS-SF Percentiles",
+    "text": "A percentile is presented for the average total score and for each subscale, indicating how the respondent’s score compares with the community reference sample (Adu et al., 2024, New Zealand subsample). A community percentile of 50 represents a typical score within the community reference sample. Importantly, the subscales run in opposite directions, so a high percentile does not mean the same for each average score:\nFor the Total Score and Self Care, a higher percentile suggests greater self-compassion, while a low percentile (e.g., 5, meaning lower than 95 percent of the community sample) flags low self-compassion and is a useful prompt for psychoeducation about self-compassion as a learnable skill.\nFor Self Disparagement the direction is reversed: a higher percentile means more self-criticism, so a high percentile (rather than a low one) is clinically notable.\n",
+    "source_url": null
+   },
+   {
+    "title": "SCS-SF Change Score Interpretation",
+    "text": "When SCS-SF scores are available from multiple administrations, changes in the total score can indicate the effectiveness of treatment or shifts in self-compassion over time. In NovoPsych, change is interpreted against a Minimum Important Difference (MID; Norman et al., 2003) of 0.4 on the 1–5 average scale, equivalent to a 5-point change on the raw 12–60 total score (half the community SD, rounded up to the nearest whole total-score point). Changes are presented as change in average score and are categorised as:\nMeaningful improvement of self-compassion: average increase of 0.4 or more (an increase of 5 or more points on the total score).\nMeaningful decline of self-compassion: average decrease of 0.4 or more (a decrease of 5 or more points on the total score).\nMinimal change of self-compassion: average change below 0.4 (a change of fewer than 5 points on the total score).\nProfessional Access\n",
+    "source_url": null
+   },
+   {
+    "title": "What if a client scores very low on the total SCS-SF?",
+    "text": "A low score does not indicate a fixed problem; it often reflects a current relationship with the self that can shift with focused work. Very low scores tend to be common in clients presenting with depression, anxiety, perfectionism, or chronic self-criticism. Self-compassion typically responds well to brief, structured interventions (e.g., CFT, MSC, brief writing tasks). The subscale pattern can complement the total at the low end, since a low Self Care score and a high Self Disparagement score point to different therapeutic emphases.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Self-Disparagement score (average of items 1, 4, 8, 9, 11, 12):",
+    "y": 491.2,
+    "url": null,
+    "sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+    "reason": "Subscale and total use different score directions; per-rule transformation review required."
+   },
+   {
+    "page": 1,
+    "text": "Self-Care score (average of items 2, 3, 5, 6, 7, 10):",
+    "y": 513.0,
+    "url": null,
+    "sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+    "reason": "Subscale and total use different score directions; per-rule transformation review required."
+   },
+   {
+    "page": 1,
+    "text": "Total Self-Compassion score (average of all 12 items)",
+    "y": 546.0,
+    "url": null,
+    "sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+    "reason": "Subscale and total use different score directions; per-rule transformation review required."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "not_compiled",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Raes, F., Pommier, E., Neff, K. D., & Van Gucht, D. (2011). Construction and factorial validation of a short form of the Self-Compassion Scale. Clinical Psychology and Psychotherapy, 18 (3), 250–255. https://doi.org/10.1002/cpp.702",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Adu, P., Popoola, T., Bartholomew, E., Iqbal, N., Roemer, A., Jurcik, T., Collings, S., Aspin, C., Medvedev, O. N., & Simpson, C. R. (2024). Enhancing the precision of the Self-Compassion Scale Short Form (SCS-SF) with Rasch methodology. Mindfulness, 15 , 2779–2793. https://doi.org/10.1007/s12671-024-02462-y\nAlfonsson, S., Wolf-Arehult, M., Winai, E., Collin, E., & Isaksson, M. (2023). The Self-Compassion Scale–Short Form: Psychometric evaluation in one non-clinical and two clinical Swedish samples. Clinical Psychology & Psychotherapy, 30 , 631–642. https://doi.org/10.1002/cpp.2830\nBabenko, O., & Guo, Q. (2019). Measuring self-compassion in medical students: Factorial validation of the Self-Compassion Scale–Short Form (SCS-SF). Academic Psychiatry, 43 , 590–594. https://doi.org/10.1007/s40596-019-01095-x\nGarcia-Campayo, J., Navarro-Gil, M., Andrés, E., Montero-Marin, J., López-Artal, L., & Demarzo, M. M. P. (2014). Validation of the Spanish versions of the long (26 items) and short (12 items) forms of the Self-Compassion Scale (SCS). Health and Quality of Life Outcomes, 12 , 4. https://doi.org/10.1186/1477-7525-12-4\nHayes, J. A., Lockard, A. J., Janis, R. A., & Locke, B. D. (2016). Construct validity of the Self-Compassion Scale–Short Form among psychotherapy clients. Counselling Psychology Quarterly, 29 (4), 405–422. https://doi.org/10.1080/09515070.2016.1138397\nLópez, A., Sanderman, R., Smink, A., Zhang, Y., van Sonderen, E., Ranchor, A. V., & Schroevers, M. J. (2015). A reconsideration of the Self-Compassion Scale’s total score: Self-compassion versus self-criticism. PLoS ONE, 10 (7), e0132940. https://doi.org/10.1371/journal.pone.0132940\nMuris, P., & Petrocchi, N. (2017). Protection or vulnerability? A meta-analysis of the relations between the positive and negative components of self-compassion and psychopathology. Clinical Psychology & Psychotherapy, 24 (2), 373–383. https://doi.org/10.1002/cpp.2005\nNeff, K. D. (2003). The development and validation of a scale to measure self-compassion. Self and Identity, 2 (3), 223–250. https://doi.org/10.1080/15298860309027\nNeff, K. D., Long, P., Knox, M. C., Davidson, O., Kuchar, A., Costigan, A., Williamson, Z., Rohleder, N., Tóth-Király, I., & Breines, J. G. (2018). The forest and the trees: Examining the association of self-compassion and its positive and negative components with psychological functioning. Self and Identity, 17 (6), 627–645. https://doi.org/10.1080/15298868.2018.1436587\nNeff, K. D. (n.d.). Self-compassion. https://self-compassion.org/\nNeff, K. D. (2023). Self-Compassion: Theory, Method, Research, and Intervention. Annual Review of Psychology, 74 , 193–218. https://doi.org/10.1146/annurev-psych-032420-031047\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: the remarkable universality of half a standard deviation. Medical Care, 41 (5), 582–592. https://doi.org/10.1097/01.MLR.0000062554.74615.4C\nRaes, F., Pommier, E., Neff, K. D., & Van Gucht, D. (2011). Construction and factorial validation of a short form of the Self-Compassion Scale. Clinical Psychology and Psychotherapy, 18 (3), 250–255. https://doi.org/10.1002/cpp.702\nSmeets, E., Neff, K., Alberts, H., & Peters, M. (2014). Meeting suffering with kindness: Effects of a brief self-compassion intervention for female college students. Journal of Clinical Psychology, 70 (9), 794–807. https://doi.org/10.1002/jclp.22076",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Self-Compassion Scale – Short Form (SCS-SF) PDF",
+   "source_url": null,
+   "sha256": "98a421f47b2c7fd6e00c4045847d420069abed771773def5e889c3871d4feff0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/98a421f47b2c7fd6e00c4045847d420069abed771773def5e889c3871d4feff0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Automatic Thoughts Questionnaire – Believability (ATQ-B)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0b5c02492a2af31ac9d6bdf3e5aad5bd353cb9003b512b97b328b5bf339c482b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0b5c02492a2af31ac9d6bdf3e5aad5bd353cb9003b512b97b328b5bf339c482b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download SCS-SF PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Joseph Phillips",
+   "source_url": null,
+   "sha256": "fe1ae5a97ddfafb55a0ec494ff351f42008a7c99ba49e3b2c44f757621d7c421",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/fe1ae5a97ddfafb55a0ec494ff351f42008a7c99ba49e3b2c44f757621d7c421.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "a819cf90392d3864522f9208435acf63b25c353b2e1d28ead3a10182b2b00411",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/a819cf90392d3864522f9208435acf63b25c353b2e1d28ead3a10182b2b00411.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Self-Compassion Scale – Short Form (SCS-SF) General Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f5beb9eec34ab2d38f006e7e0cf4ac3e4d84bb979b3dd4480dd875837597e23a",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f5beb9eec34ab2d38f006e7e0cf4ac3e4d84bb979b3dd4480dd875837597e23a.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SCS-SF Results Table",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0143610a696b100fa60c3286e46301441ed2278df8941692d3b6988ab3310164",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0143610a696b100fa60c3286e46301441ed2278df8941692d3b6988ab3310164.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SCS-SF Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "64169a3b709dd414fb0dc19c4e82cb15e7c0554384fedfdb98f6c4ea013dac70",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/64169a3b709dd414fb0dc19c4e82cb15e7c0554384fedfdb98f6c4ea013dac70.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SCS-SF Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1a81f03e6b611759c9382cbeda36c9eb3d58d029bce40224ba621fd2007f937c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1a81f03e6b611759c9382cbeda36c9eb3d58d029bce40224ba621fd2007f937c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SCS-SF Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f0a11f342df4e2e8cfa72d11446fe647a15b1f484a497424a2638a13d3bf43ae",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f0a11f342df4e2e8cfa72d11446fe647a15b1f484a497424a2638a13d3bf43ae.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SCS-SF Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Self Compassion Scale – Short Form using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download SCS-SF PDF",
+   "source_url": null,
+   "sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "SCS-SF Sample Results",
+   "source_url": null,
+   "sha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 12
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [
+    "Represented per-rule score direction; Self Disparagement reverses the total-keyed printed values once."
+   ],
+   "scoring_rule_count": 3,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 5,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "source_draft_1",
+    "label": "Total Self-Compassion mean",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "source_draft_2",
+    "label": "Self Care mean",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/1",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "source_draft_3",
+    "label": "Self Disparagement mean",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/2",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q8",
+     "Q9",
+     "Q11",
+     "Q12"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "source_draft_1",
+    "title": "Total Self-Compassion mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_1",
+      "label": "Total Self-Compassion mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "source_draft_2",
+    "title": "Self Care mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_2",
+      "label": "Self Care mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "source_draft_3",
+    "title": "Self Disparagement mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_3",
+      "label": "Self Disparagement mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+   "guidance_titles": [
+    "Self-Compassion Scale – Short Form (SCS-SF) Scoring",
+    "SCS-SF Subscale Interpretation",
+    "SCS-SF Percentiles",
+    "SCS-SF Change Score Interpretation",
+    "What if a client scores very low on the total SCS-SF?"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 3,
+   "rules_included": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3"
+   ],
+   "raw_calculation_status": "draft_implemented",
+   "interpretation_status": "not_compiled",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "source_draft_1",
+    "label": "Total Self-Compassion mean",
+    "rule_id": "source_draft_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ]
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Self Care mean",
+    "rule_id": "source_draft_2",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q10"
+    ]
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Self Disparagement mean",
+    "rule_id": "source_draft_3",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q8",
+     "Q9",
+     "Q11",
+     "Q12"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "901bf7552e95ecaaea2bcecb9866aa158c3b52f0c3e22a6230c9cb70f040f871",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T11:23:52.279827+00:00",
+  "raw_extraction_sha256": "66acfbba3bd948f687556000f90fc09fdd47dc9773fbeb0b1096cb874bbd7310",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Well-being"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": null,
+    "title": "DASS-21"
+   },
+   {
+    "url": null,
+    "title": "PHQ-9"
+   },
+   {
+    "url": null,
+    "title": "GAD-7"
+   },
+   {
+    "url": "https://doi.org/10.1002/cpp.702",
+    "title": "https://doi.org/10.1002/cpp.702"
+   },
+   {
+    "url": "https://doi.org/10.1007/s12671-024-02462-y",
+    "title": "https://doi.org/10.1007/s12671-024-02462-y"
+   },
+   {
+    "url": "https://doi.org/10.1002/cpp.2830",
+    "title": "https://doi.org/10.1002/cpp.2830"
+   },
+   {
+    "url": "https://doi.org/10.1007/s40596-019-01095-x",
+    "title": "https://doi.org/10.1007/s40596-019-01095-x"
+   },
+   {
+    "url": "https://doi.org/10.1186/1477-7525-12-4",
+    "title": "https://doi.org/10.1186/1477-7525-12-4"
+   },
+   {
+    "url": "https://doi.org/10.1080/09515070.2016.1138397",
+    "title": "https://doi.org/10.1080/09515070.2016.1138397"
+   },
+   {
+    "url": "https://doi.org/10.1371/journal.pone.0132940",
+    "title": "https://doi.org/10.1371/journal.pone.0132940"
+   },
+   {
+    "url": "https://doi.org/10.1002/cpp.2005",
+    "title": "https://doi.org/10.1002/cpp.2005"
+   },
+   {
+    "url": "https://doi.org/10.1080/15298860309027",
+    "title": "https://doi.org/10.1080/15298860309027"
+   },
+   {
+    "url": "https://doi.org/10.1080/15298868.2018.1436587",
+    "title": "https://doi.org/10.1080/15298868.2018.1436587"
+   },
+   {
+    "url": "https://self-compassion.org/",
+    "title": "https://self-compassion.org/"
+   },
+   {
+    "url": "https://doi.org/10.1146/annurev-psych-032420-031047",
+    "title": "https://doi.org/10.1146/annurev-psych-032420-031047"
+   },
+   {
+    "url": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C",
+    "title": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C"
+   },
+   {
+    "url": "https://doi.org/10.1002/jclp.22076",
+    "title": "https://doi.org/10.1002/jclp.22076"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Download SCS-SF PDF"
+   },
+   {
+    "url": null,
+    "title": "SCS-SF Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Joseph Phillips"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Compassion Focused Therapy (CFT) (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

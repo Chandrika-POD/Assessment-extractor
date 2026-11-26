@@ -1,0 +1,4594 @@
+{
+  "schemaVersion": "assessment-report-config/2.0.0",
+  "assessmentId": "the-montgomery-asberg-rating-scale-madrs--87bdd7875dc7",
+  "title": "Montgomery-Asberg Rating Scale (MADRS)",
+  "status": "source_specific_draft",
+  "definitionVersion": "1.0.0-draft.6",
+  "assessment": {
+    "name": "Montgomery-Asberg Rating Scale (MADRS)",
+    "short_name": null,
+    "language": "en",
+    "description": "The Montgomery-Asberg Rating Scale (MADRS) is a 10-item clinician -rated assessment for depression in adults (18+). The MADRS focusses more upon functional impairment and somatic symptoms than other assessments which might focus more upon depressive cognitive attitudes (Montgomery and Asberg, 1979).",
+    "respondent_type": null,
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [
+        "past week"
+      ],
+      "status": "requires_review"
+    },
+    "target_population": null,
+    "intended_uses": null,
+    "estimated_administration_minutes": null
+  },
+  "administration": {
+    "instructions": "– guidance for the rater The rating should be based on a clinical interview moving from broadly phrased questions about symptoms to more detailed ones which allow a precise rating of severity. The rater must decide whether the rating lies on the defined scale steps or between them (1,3,5). It is important to remember that it is only on rare occasions that a depressed patient is encountered who cannot be rated on the items in the scale. If definite answers cannot be elicited from the client all relevant clues as well as information from other sources should be used as a basis for the rating in line with customary clinical practice. Ratings should be based upon the clientʼs condition in the past week.",
+    "instructions_source": {
+      "url": null,
+      "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10"
+    ],
+    "selected_form_url": null,
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 10,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "Apparent Sadness Representing despondency, gloom and despair, (more than just ordinary transient low spirits) reflected in speech, facial expression, and posture. Rate by depth and inability to brighten up.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 1,
+          "bbox": [
+            33.75,
+            242.25,
+            565.92,
+            396.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "No sadness",
+            "source_label": "No sadness",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Looks dispirited but does brighten up without difficulty",
+            "source_label": "Looks dispirited but does brighten up without difficulty",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Appears sad and unhappy most of the time",
+            "source_label": "Appears sad and unhappy most of the time",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Looks miserable all the time. Extremely despondent",
+            "source_label": "Looks miserable all the time. Extremely despondent",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "Reported sadness Representing reports of depressed mood, regardless of whether it is reflected in appearance or not. Includes low spirits, despondency or the feeling of being beyond help and without hope. Rate according to intensity, duration and the extent to which the mood is reported to be influenced by events.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS2",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 1,
+          "bbox": [
+            33.75,
+            400.5,
+            565.92,
+            564.0
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Occasional sadness in keeping with the circumstances",
+            "source_label": "Occasional sadness in keeping with the circumstances",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Sad or low but brightens up without difficulty",
+            "source_label": "Sad or low but brightens up without difficulty",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Pervasive feelings of sadness or gloominess. The mood is still influenced by external circumstances",
+            "source_label": "Pervasive feelings of sadness or gloominess. The mood is still influenced by external circumstances",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Continuous or unvarying sadness, misery or despondency",
+            "source_label": "Continuous or unvarying sadness, misery or despondency",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "Inner tension Representing feelings of ill-defined discomfort, edginess, inner turmoil, mental tension mounting to either panic, dread or anguish. Rate according to intensity, frequency, duration and the extent of reassurance called for.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS3",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 1,
+          "bbox": [
+            33.75,
+            567.75,
+            565.92,
+            722.25
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Placid. Only fleeting inner tension",
+            "source_label": "Placid. Only fleeting inner tension",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Occasional feelings of edginess and ill defined discomfort",
+            "source_label": "Occasional feelings of edginess and ill defined discomfort",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Continuous feelings of inner tension or intermittent panic which the patient can only master with some difficulty",
+            "source_label": "Continuous feelings of inner tension or intermittent panic which the patient can only master with some difficulty",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Unrelenting dread or anguish. Overwhelming panic",
+            "source_label": "Unrelenting dread or anguish. Overwhelming panic",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "Reduced Sleep Representing the experience of reduced duration or depth of sleep compared to the subjectʼs own normal pattern when well.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS4",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 2,
+          "bbox": [
+            33.75,
+            45.75,
+            565.92,
+            190.5
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Sleeps as usual",
+            "source_label": "Sleeps as usual",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Slight difficulty dropping off to sleep or slightly reduced, light or fitful sleep",
+            "source_label": "Slight difficulty dropping off to sleep or slightly reduced, light or fitful sleep",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Sleep reduced or broken by at least two hours",
+            "source_label": "Sleep reduced or broken by at least two hours",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Less than two or three hours sleep",
+            "source_label": "Less than two or three hours sleep",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "Reduced appetite Representing the feeling of a loss of appetite compared with when well. Rate by loss of desire for food or the need to force oneself to eat",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS5",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 2,
+          "bbox": [
+            33.75,
+            194.25,
+            565.92,
+            348.0
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Normal or increased appetite",
+            "source_label": "Normal or increased appetite",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Slightly reduced appetite",
+            "source_label": "Slightly reduced appetite",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "No appetite. Food is tasteless",
+            "source_label": "No appetite. Food is tasteless",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Needs persuasion to eat at all",
+            "source_label": "Needs persuasion to eat at all",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "Concentration Difficulties Representing difficulties in collecting oneʼs thoughts mounting to incapacitating lack of concentration. Rate according to intensity, frequency, and degree of incapacity produced.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS6",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 2,
+          "bbox": [
+            33.75,
+            351.75,
+            565.92,
+            506.25
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "No difficulties in concentrating",
+            "source_label": "No difficulties in concentrating",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Occasional difficulties in collecting oneʼs thoughts",
+            "source_label": "Occasional difficulties in collecting oneʼs thoughts",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Difficulties in concentrating and sustaining thought which reduces ability to read or hold a conversation",
+            "source_label": "Difficulties in concentrating and sustaining thought which reduces ability to read or hold a conversation",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Unable to read or converse without great difficulty",
+            "source_label": "Unable to read or converse without great difficulty",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "Lassitude Representing a difficulty getting started or slowness initiating and performing everyday activities.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS7",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 2,
+          "bbox": [
+            33.75,
+            510.0,
+            565.92,
+            654.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Hardly any difficulty in getting started. No sluggishness",
+            "source_label": "Hardly any difficulty in getting started. No sluggishness",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Difficulties in starting activities",
+            "source_label": "Difficulties in starting activities",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Difficulties in starting simple routine activities which are carried out with effort",
+            "source_label": "Difficulties in starting simple routine activities which are carried out with effort",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Complete lassitude. Unable to do anything without help",
+            "source_label": "Complete lassitude. Unable to do anything without help",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q8",
+        "order": 8,
+        "source_label": "8",
+        "text": "Inability to feel Representing the subjective experience of reduced interest in the surroundings, or activities that normally give pleasure. The ability to react with adequate emotion to circumstances or people is reduced.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS8",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 3,
+          "bbox": [
+            33.75,
+            45.75,
+            565.92,
+            206.25
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Normal interest in the surroundings and in other people",
+            "source_label": "Normal interest in the surroundings and in other people",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Reduced ability to enjoy usual interests",
+            "source_label": "Reduced ability to enjoy usual interests",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Loss of interest in the surroundings. Loss of feelings for friends and acquaintances",
+            "source_label": "Loss of interest in the surroundings. Loss of feelings for friends and acquaintances",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "The experience of being emotionally paralysed, inability to feel anger, grief or pleasure and a complete or even painful failure to feel for close relatives and friends",
+            "source_label": "The experience of being emotionally paralysed, inability to feel anger, grief or pleasure and a complete or even painful failure to feel for close relatives and friends",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q9",
+        "order": 9,
+        "source_label": "9",
+        "text": "Pessimistic thoughts Representing thoughts of guilt, inferiority, self-reproach, sinfulness, remorse and ruin.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS9",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 3,
+          "bbox": [
+            33.75,
+            210.0,
+            565.92,
+            354.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "No pessimistic thoughts",
+            "source_label": "No pessimistic thoughts",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Fluctuating ideas of failure, self-reproach or self depreciation",
+            "source_label": "Fluctuating ideas of failure, self-reproach or self depreciation",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Persistent self-accusations, or definite but still rational ideas of guilt or sin. Increasingly pessimistic about the future",
+            "source_label": "Persistent self-accusations, or definite but still rational ideas of guilt or sin. Increasingly pessimistic about the future",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Delusions of ruin, remorse or unredeemable sin. Self-accusations which are absurd and unshakable",
+            "source_label": "Delusions of ruin, remorse or unredeemable sin. Self-accusations which are absurd and unshakable",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q10",
+        "order": 10,
+        "source_label": "10",
+        "text": "Suicidal thoughts Representing the feeling that life is not worth living, that a natural death would be welcome, suicidal thoughts, and preparations for suicide. Suicidal attempts should not in themselves influence the rating.",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS10",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+          "page": 3,
+          "bbox": [
+            33.75,
+            358.5,
+            565.92,
+            519.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [
+          "some_printed_rating_values_have_no_verbal_anchor"
+        ],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5",
+              "O6",
+              "O7"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Enjoys life or takes it as it comes",
+            "source_label": "Enjoys life or takes it as it comes",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "1",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Weary of life. Only fleeting suicidal thoughts",
+            "source_label": "Weary of life. Only fleeting suicidal thoughts",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "3",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Probably better off dead. Suicidal thoughts are common, and suicide is considered as a possible solution, but without specific plans or intention",
+            "source_label": "Probably better off dead. Suicidal thoughts are common, and suicide is considered as a possible solution, but without specific plans or intention",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O6",
+            "text": "5",
+            "source_label": null,
+            "label_origin": "printed_number_only",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O7",
+            "text": "Explicit plans for suicide when there is an opportunity. Active preparation for suicide",
+            "source_label": "Explicit plans for suicide when there is an opportunity. Active preparation for suicide",
+            "label_origin": "printed_label",
+            "printed_value": 6,
+            "score": 6,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "No sadness",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "No sadness",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Looks dispirited but does brighten up without difficulty",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Looks dispirited but does brighten up without difficulty",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Appears sad and unhappy most of the time",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Appears sad and unhappy most of the time",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Looks miserable all the time. Extremely despondent",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Looks miserable all the time. Extremely despondent",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS2",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Occasional sadness in keeping with the circumstances",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Occasional sadness in keeping with the circumstances",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Sad or low but brightens up without difficulty",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Sad or low but brightens up without difficulty",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Pervasive feelings of sadness or gloominess. The mood is still influenced by external circumstances",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Pervasive feelings of sadness or gloominess. The mood is still influenced by external circumstances",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Continuous or unvarying sadness, misery or despondency",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Continuous or unvarying sadness, misery or despondency",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS3",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Placid. Only fleeting inner tension",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Placid. Only fleeting inner tension",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Occasional feelings of edginess and ill defined discomfort",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Occasional feelings of edginess and ill defined discomfort",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Continuous feelings of inner tension or intermittent panic which the patient can only master with some difficulty",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Continuous feelings of inner tension or intermittent panic which the patient can only master with some difficulty",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Unrelenting dread or anguish. Overwhelming panic",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Unrelenting dread or anguish. Overwhelming panic",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS4",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Sleeps as usual",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Sleeps as usual",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Slight difficulty dropping off to sleep or slightly reduced, light or fitful sleep",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Slight difficulty dropping off to sleep or slightly reduced, light or fitful sleep",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Sleep reduced or broken by at least two hours",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Sleep reduced or broken by at least two hours",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Less than two or three hours sleep",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Less than two or three hours sleep",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS5",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Normal or increased appetite",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Normal or increased appetite",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Slightly reduced appetite",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Slightly reduced appetite",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "No appetite. Food is tasteless",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "No appetite. Food is tasteless",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Needs persuasion to eat at all",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Needs persuasion to eat at all",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS6",
+        "options": [
+          {
+            "id": "O1",
+            "label": "No difficulties in concentrating",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "No difficulties in concentrating",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Occasional difficulties in collecting oneʼs thoughts",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Occasional difficulties in collecting oneʼs thoughts",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Difficulties in concentrating and sustaining thought which reduces ability to read or hold a conversation",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Difficulties in concentrating and sustaining thought which reduces ability to read or hold a conversation",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Unable to read or converse without great difficulty",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Unable to read or converse without great difficulty",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS7",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Hardly any difficulty in getting started. No sluggishness",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Hardly any difficulty in getting started. No sluggishness",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Difficulties in starting activities",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Difficulties in starting activities",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Difficulties in starting simple routine activities which are carried out with effort",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Difficulties in starting simple routine activities which are carried out with effort",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Complete lassitude. Unable to do anything without help",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Complete lassitude. Unable to do anything without help",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS8",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Normal interest in the surroundings and in other people",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Normal interest in the surroundings and in other people",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Reduced ability to enjoy usual interests",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Reduced ability to enjoy usual interests",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Loss of interest in the surroundings. Loss of feelings for friends and acquaintances",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Loss of interest in the surroundings. Loss of feelings for friends and acquaintances",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "The experience of being emotionally paralysed, inability to feel anger, grief or pleasure and a complete or even painful failure to feel for close relatives and friends",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "The experience of being emotionally paralysed, inability to feel anger, grief or pleasure and a complete or even painful failure to feel for close relatives and friends",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS9",
+        "options": [
+          {
+            "id": "O1",
+            "label": "No pessimistic thoughts",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "No pessimistic thoughts",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Fluctuating ideas of failure, self-reproach or self depreciation",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Fluctuating ideas of failure, self-reproach or self depreciation",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Persistent self-accusations, or definite but still rational ideas of guilt or sin. Increasingly pessimistic about the future",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Persistent self-accusations, or definite but still rational ideas of guilt or sin. Increasingly pessimistic about the future",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Delusions of ruin, remorse or unredeemable sin. Self-accusations which are absurd and unshakable",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Delusions of ruin, remorse or unredeemable sin. Self-accusations which are absurd and unshakable",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      },
+      {
+        "id": "RS10",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Enjoys life or takes it as it comes",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Enjoys life or takes it as it comes",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": null,
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "1",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O3",
+            "label": "Weary of life. Only fleeting suicidal thoughts",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Weary of life. Only fleeting suicidal thoughts",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": null,
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "3",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O5",
+            "label": "Probably better off dead. Suicidal thoughts are common, and suicide is considered as a possible solution, but without specific plans or intention",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Probably better off dead. Suicidal thoughts are common, and suicide is considered as a possible solution, but without specific plans or intention",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O6",
+            "label": null,
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "5",
+            "display_label_origin": "printed_number_only"
+          },
+          {
+            "id": "O7",
+            "label": "Explicit plans for suicide when there is an opportunity. Active preparation for suicide",
+            "printed_value": 6,
+            "score": 6,
+            "display_label": "Explicit plans for suicide when there is an opportunity. Active preparation for suicide",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_checked_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "total_raw",
+        "method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "multiplier": 1,
+        "value_field": "score",
+        "minimum": 0,
+        "maximum": 60,
+        "severity_bands": [
+          {
+            "label": "Normal / no symptoms",
+            "minimum_inclusive": 0,
+            "maximum_inclusive": 6
+          },
+          {
+            "label": "Mild",
+            "minimum_inclusive": 7,
+            "maximum_inclusive": 19
+          },
+          {
+            "label": "Moderate",
+            "minimum_inclusive": 20,
+            "maximum_inclusive": 30
+          },
+          {
+            "label": "Severe",
+            "minimum_inclusive": 31,
+            "maximum_inclusive": 39
+          },
+          {
+            "label": "Extremely severe",
+            "minimum_inclusive": 40,
+            "maximum_inclusive": 60
+          }
+        ]
+      }
+    ],
+    "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+    "rules_provenance": "Archived questionnaire printed response values and corresponding scoring context sections; formulas tested separately.",
+    "source_rule_excerpts": [
+      "Although cutoffs were derived by Snaith et al. (1986), subsequent research by Müller et al. (2003) modified the cutoff between moderate and severe to 31 (sensitivity 92%, specificity 83%) and research by Thase et al. (2021) added a further description at the top end of the scale (40 – 60). Although the work by Thase et al. (2021) was focussed upon bi-polar patients and added significantly more descriptors (although still similar to Snaith et al.’s cutoffs and descriptors), for simplicity’s sake it was decided to keep the prior descriptors but simply add the descriptor for ‘extremely’ at the top end."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "MADRS Scoring & Interpretation",
+        "text": "All items are summed to provide an overall score (from 0 to 60), with higher scores reflecting more severe depressive symptoms. A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):\n0 – 6 = normal / no symptoms\n7 – 19 = mild\n20 – 30 = moderate\n31 – 39 = severe\n40 – 60 = extremely severe\n\nUpon multiple administrations of the MADRS, if the client improves by 6 points it will be noted as ‘clinically meaningful change’ or if the client improves by 12 points it will be noted as ‘clinically substantial change’ (Turkoz et al., 2020).\n\nA plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs. Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot.\n\n",
+        "source_url": null
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+  },
+  "metricBindings": [
+    {
+      "id": "metric_total_raw",
+      "ruleId": "total_raw",
+      "label": "total_raw",
+      "minimum": 0,
+      "maximum": 60,
+      "calculation": {
+        "id": "total_raw",
+        "method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "multiplier": 1,
+        "value_field": "score",
+        "minimum": 0,
+        "maximum": 60,
+        "severity_bands": [
+          {
+            "label": "Normal / no symptoms",
+            "minimum_inclusive": 0,
+            "maximum_inclusive": 6
+          },
+          {
+            "label": "Mild",
+            "minimum_inclusive": 7,
+            "maximum_inclusive": 19
+          },
+          {
+            "label": "Moderate",
+            "minimum_inclusive": 20,
+            "maximum_inclusive": 30
+          },
+          {
+            "label": "Severe",
+            "minimum_inclusive": 31,
+            "maximum_inclusive": 39
+          },
+          {
+            "label": "Extremely severe",
+            "minimum_inclusive": 40,
+            "maximum_inclusive": 60
+          }
+        ]
+      },
+      "status": "requires_review",
+      "runtimeEnabled": false
+    }
+  ],
+  "sources": [
+    {
+      "sha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+      "pageCount": 4,
+      "identityStatus": "title_or_acronym_matches",
+      "hashVerified": true,
+      "usage": "reference_identity_only_no_runtime_fetch"
+    }
+  ],
+  "page": {
+    "coordinateUnit": "pt",
+    "origin": "top_left",
+    "documentsAreAlternativesNotConcatenated": true
+  },
+  "theme": {
+    "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+    "branding": "application_branding",
+    "sourceLogosRequired": false
+  },
+  "pages": [
+    {
+      "pageId": "d43e0e81f685a_p1",
+      "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+      "pageNumber": 1,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "d43e0e81f685a_p1_chart_1"
+      ],
+      "tableIds": [],
+      "sectionIds": [
+        "d43e0e81f685a_p1_section_1",
+        "d43e0e81f685a_p1_section_2",
+        "d43e0e81f685a_p1_section_3",
+        "d43e0e81f685a_p1_section_4"
+      ]
+    },
+    {
+      "pageId": "d43e0e81f685a_p2",
+      "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+      "pageNumber": 2,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "d43e0e81f685a_p2_section_1",
+        "d43e0e81f685a_p2_section_2"
+      ]
+    },
+    {
+      "pageId": "d43e0e81f685a_p3",
+      "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+      "pageNumber": 3,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [
+        "d43e0e81f685a_p3_table_1"
+      ],
+      "sectionIds": []
+    },
+    {
+      "pageId": "d43e0e81f685a_p4",
+      "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+      "pageNumber": 4,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [
+        "d43e0e81f685a_p4_table_1"
+      ],
+      "sectionIds": [
+        "d43e0e81f685a_p4_section_1"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "d43e0e81f685a_p1_section_1",
+      "pageId": "d43e0e81f685a_p1",
+      "title": "Assessment Information",
+      "type": "source_heading",
+      "bboxPt": [
+        74.03149,
+        176.72569,
+        237.39752,
+        196.00369
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d43e0e81f685a_p1_section_2",
+      "pageId": "d43e0e81f685a_p1",
+      "title": "Results",
+      "type": "results",
+      "bboxPt": [
+        74.03149,
+        273.10361,
+        124.59951,
+        292.38162
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d43e0e81f685a_p1_section_3",
+      "pageId": "d43e0e81f685a_p1",
+      "title": "Interpretive Text",
+      "type": "interpretation",
+      "bboxPt": [
+        74.03149,
+        338.30048,
+        182.95149,
+        357.57849
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d43e0e81f685a_p1_section_4",
+      "pageId": "d43e0e81f685a_p1",
+      "title": "Total MADRS Score",
+      "type": "source_heading",
+      "bboxPt": [
+        241.6915,
+        408.10324,
+        354.37149,
+        424.62723
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d43e0e81f685a_p2_section_1",
+      "pageId": "d43e0e81f685a_p2",
+      "title": "Scoring and Interpretation Information",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        74.03149,
+        139.87529,
+        329.95145,
+        159.15329
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d43e0e81f685a_p2_section_2",
+      "pageId": "d43e0e81f685a_p2",
+      "title": "Client Responses",
+      "type": "responses",
+      "bboxPt": [
+        74.03149,
+        428.56104,
+        191.50549,
+        447.83905
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d43e0e81f685a_p4_section_1",
+      "pageId": "d43e0e81f685a_p4",
+      "title": "Client Responses (cont.)",
+      "type": "responses",
+      "bboxPt": [
+        74.03149,
+        139.87529,
+        238.1675,
+        159.15329
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    }
+  ],
+  "charts": [
+    {
+      "id": "d43e0e81f685a_p1_chart_1",
+      "title": "Total MADRS Score",
+      "type": "vertical_bar",
+      "bboxPt": [
+        105.031,
+        435.943,
+        510.031,
+        702.943
+      ],
+      "widthPt": 405.0,
+      "heightPt": 267.0,
+      "axisColour": "#333333",
+      "observedDataType": "unresolved",
+      "backgroundBands": [],
+      "variantEvidence": "single_visit_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 40.0,
+            "positionPt": 437.06323499999996,
+            "text": "40",
+            "colour": "#333333"
+          },
+          {
+            "value": 35.0,
+            "positionPt": 470.18823499999996,
+            "text": "35",
+            "colour": "#333333"
+          },
+          {
+            "value": 30.0,
+            "positionPt": 503.31323499999996,
+            "text": "30",
+            "colour": "#333333"
+          },
+          {
+            "value": 25.0,
+            "positionPt": 536.443235,
+            "text": "25",
+            "colour": "#333333"
+          },
+          {
+            "value": 20.0,
+            "positionPt": 569.563235,
+            "text": "20",
+            "colour": "#333333"
+          },
+          {
+            "value": 15.0,
+            "positionPt": 602.683225,
+            "text": "15",
+            "colour": "#333333"
+          },
+          {
+            "value": 10.0,
+            "positionPt": 635.813235,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 668.943235,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 702.063235,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 40.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": "Total",
+          "colour": "#82dfaa",
+          "ruleIdCandidate": "total_raw",
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": 0.49753086419753084,
+          "barThicknessPt": 103.00000000000003,
+          "fill": "#82e0aa",
+          "stroke": "#000000",
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "observedFill": {
+            "method": "source_PDF_interior_colour_samples",
+            "direction": "vertical",
+            "stops": [
+              {
+                "offset": 0.1,
+                "colour": "#82dfaa"
+              },
+              {
+                "offset": 0.3,
+                "colour": "#82dfaa"
+              },
+              {
+                "offset": 0.5,
+                "colour": "#82dfaa"
+              },
+              {
+                "offset": 0.7,
+                "colour": "#82dfaa"
+              },
+              {
+                "offset": 0.9,
+                "colour": "#82dfaa"
+              }
+            ],
+            "runtimeColourRuleVerified": false
+          },
+          "metricId": null,
+          "metricIdCandidate": "metric_total_raw",
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "d43e0e81f685a_p1",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 379,
+        "detectedType": "vertical_bar",
+        "reviewedType": "vertical_bar",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Total MADRS Score",
+          "bboxPt": [
+            241.6915,
+            408.10324,
+            354.37149,
+            424.62723
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Normal",
+          "bboxPt": [
+            470.81149,
+            687.19324,
+            503.03146,
+            700.93323
+          ],
+          "colour": "#000000",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Mild",
+          "bboxPt": [
+            484.70151,
+            641.48328,
+            503.03149,
+            655.22327
+          ],
+          "colour": "#0000ff",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Moderate",
+          "bboxPt": [
+            460.7915,
+            555.35327,
+            503.03146,
+            569.09326
+          ],
+          "colour": "#f1c40f",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Severe",
+          "bboxPt": [
+            471.3515,
+            482.48126,
+            503.03149,
+            496.22125
+          ],
+          "colour": "#ec7063",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Extremely Severe",
+          "bboxPt": [
+            424.12149,
+            422.85626,
+            503.03146,
+            436.59625
+          ],
+          "colour": "#ff0000",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Total",
+          "bboxPt": [
+            287.45367,
+            704.34174,
+            312.88831,
+            729.77637
+          ],
+          "colour": "#333333",
+          "font": "Helvetica",
+          "fontSizePt": 10.000003814697266,
+          "direction": [
+            0.70711,
+            -0.70711
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    }
+  ],
+  "tables": [
+    {
+      "id": "d43e0e81f685a_p3_table_1",
+      "type": "response_table",
+      "bboxPt": [
+        68.03149,
+        142.45258,
+        527.24451,
+        767.61072
+      ],
+      "rowCount": 33,
+      "columnCount": 2,
+      "cellsPt": [
+        [
+          68.03149,
+          142.45258,
+          87.87402,
+          157.106
+        ],
+        [
+          68.03149,
+          157.106,
+          87.87402,
+          215.19458
+        ],
+        [
+          68.03149,
+          215.19458,
+          87.87402,
+          229.3678
+        ],
+        [
+          68.03149,
+          229.3678,
+          87.87402,
+          243.54102
+        ],
+        [
+          68.03149,
+          243.54102,
+          87.87402,
+          257.71426
+        ],
+        [
+          68.03149,
+          257.71426,
+          87.87402,
+          271.88751
+        ],
+        [
+          68.03149,
+          271.88751,
+          87.87402,
+          286.06073
+        ],
+        [
+          68.03149,
+          286.06073,
+          87.87402,
+          300.23395
+        ],
+        [
+          68.03149,
+          300.23395,
+          87.87402,
+          314.40717
+        ],
+        [
+          68.03149,
+          314.40717,
+          87.87402,
+          353.79577
+        ],
+        [
+          68.03149,
+          353.79577,
+          87.87402,
+          367.96899
+        ],
+        [
+          68.03149,
+          367.96899,
+          87.87402,
+          382.14221
+        ],
+        [
+          68.03149,
+          382.14221,
+          87.87402,
+          396.31544
+        ],
+        [
+          68.03149,
+          396.31544,
+          87.87402,
+          410.48868
+        ],
+        [
+          68.03149,
+          410.48868,
+          87.87402,
+          424.6619
+        ],
+        [
+          68.03149,
+          424.6619,
+          87.87402,
+          438.83513
+        ],
+        [
+          68.03149,
+          438.83513,
+          87.87402,
+          453.00836
+        ],
+        [
+          68.03149,
+          453.00836,
+          87.87402,
+          511.09695
+        ],
+        [
+          68.03149,
+          511.09695,
+          87.87402,
+          525.27014
+        ],
+        [
+          68.03149,
+          525.27014,
+          87.87402,
+          539.44336
+        ],
+        [
+          68.03149,
+          539.44336,
+          87.87402,
+          553.61661
+        ],
+        [
+          68.03149,
+          553.61661,
+          87.87402,
+          567.78986
+        ],
+        [
+          68.03149,
+          567.78986,
+          87.87402,
+          581.96307
+        ],
+        [
+          68.03149,
+          581.96307,
+          87.87402,
+          596.13629
+        ],
+        [
+          68.03149,
+          596.13629,
+          87.87402,
+          610.30957
+        ],
+        [
+          68.03149,
+          610.30957,
+          87.87402,
+          668.39813
+        ],
+        [
+          68.03149,
+          668.39813,
+          87.87402,
+          682.57135
+        ],
+        [
+          68.03149,
+          682.57135,
+          87.87402,
+          696.74457
+        ],
+        [
+          68.03149,
+          696.74457,
+          87.87402,
+          710.91785
+        ],
+        [
+          68.03149,
+          710.91785,
+          87.87402,
+          725.09106
+        ],
+        [
+          68.03149,
+          725.09106,
+          87.87402,
+          739.26428
+        ],
+        [
+          68.03149,
+          739.26428,
+          87.87402,
+          753.4375
+        ],
+        [
+          68.03149,
+          753.4375,
+          87.87402,
+          767.61072
+        ],
+        [
+          87.87402,
+          142.45258,
+          527.24451,
+          157.106
+        ],
+        [
+          87.87402,
+          157.106,
+          527.24451,
+          215.19458
+        ],
+        [
+          87.87402,
+          215.19458,
+          527.24451,
+          229.3678
+        ],
+        [
+          87.87402,
+          229.3678,
+          527.24451,
+          243.54102
+        ],
+        [
+          87.87402,
+          243.54102,
+          527.24451,
+          257.71426
+        ],
+        [
+          87.87402,
+          257.71426,
+          527.24451,
+          271.88751
+        ],
+        [
+          87.87402,
+          271.88751,
+          527.24451,
+          286.06073
+        ],
+        [
+          87.87402,
+          286.06073,
+          527.24451,
+          300.23395
+        ],
+        [
+          87.87402,
+          300.23395,
+          527.24451,
+          314.40717
+        ],
+        [
+          87.87402,
+          314.40717,
+          527.24451,
+          353.79577
+        ],
+        [
+          87.87402,
+          353.79577,
+          527.24451,
+          367.96899
+        ],
+        [
+          87.87402,
+          367.96899,
+          527.24451,
+          382.14221
+        ],
+        [
+          87.87402,
+          382.14221,
+          527.24451,
+          396.31544
+        ],
+        [
+          87.87402,
+          396.31544,
+          527.24451,
+          410.48868
+        ],
+        [
+          87.87402,
+          410.48868,
+          527.24451,
+          424.6619
+        ],
+        [
+          87.87402,
+          424.6619,
+          527.24451,
+          438.83513
+        ],
+        [
+          87.87402,
+          438.83513,
+          527.24451,
+          453.00836
+        ],
+        [
+          87.87402,
+          453.00836,
+          527.24451,
+          511.09695
+        ],
+        [
+          87.87402,
+          511.09695,
+          527.24451,
+          525.27014
+        ],
+        [
+          87.87402,
+          525.27014,
+          527.24451,
+          539.44336
+        ],
+        [
+          87.87402,
+          539.44336,
+          527.24451,
+          553.61661
+        ],
+        [
+          87.87402,
+          553.61661,
+          527.24451,
+          567.78986
+        ],
+        [
+          87.87402,
+          567.78986,
+          527.24451,
+          581.96307
+        ],
+        [
+          87.87402,
+          581.96307,
+          527.24451,
+          596.13629
+        ],
+        [
+          87.87402,
+          596.13629,
+          527.24451,
+          610.30957
+        ],
+        [
+          87.87402,
+          610.30957,
+          527.24451,
+          668.39813
+        ],
+        [
+          87.87402,
+          668.39813,
+          527.24451,
+          682.57135
+        ],
+        [
+          87.87402,
+          682.57135,
+          527.24451,
+          696.74457
+        ],
+        [
+          87.87402,
+          696.74457,
+          527.24451,
+          710.91785
+        ],
+        [
+          87.87402,
+          710.91785,
+          527.24451,
+          725.09106
+        ],
+        [
+          87.87402,
+          725.09106,
+          527.24451,
+          739.26428
+        ],
+        [
+          87.87402,
+          739.26428,
+          527.24451,
+          753.4375
+        ],
+        [
+          87.87402,
+          753.4375,
+          527.24451,
+          767.61072
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "d43e0e81f685a_p3",
+      "sourceTableId": "table_1",
+      "columns": [],
+      "rowBindings": [
+        {
+          "sourceRowIndex": 1,
+          "questionId": "Q3",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "questionId": "Q4",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 17,
+          "questionId": "Q5",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 25,
+          "questionId": "Q6",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        }
+      ],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q3",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q4",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 13,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 13,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 14,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 14,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 15,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 15,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 16,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 16,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 17,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 17,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q5",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 18,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 18,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 19,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 19,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 20,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 20,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 21,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 21,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 22,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 22,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 23,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 23,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 24,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 24,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 25,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 25,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q6",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 26,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 26,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 27,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 27,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 28,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 28,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 29,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 29,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 30,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 30,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 31,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 31,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 32,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 32,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "d43e0e81f685a_p4_table_1",
+      "type": "response_table",
+      "bboxPt": [
+        68.03149,
+        141.7323,
+        527.24451,
+        768.10236
+      ],
+      "rowCount": 33,
+      "columnCount": 2,
+      "cellsPt": [
+        [
+          68.03149,
+          141.7323,
+          527.24451,
+          161.57483
+        ],
+        [
+          68.03149,
+          161.57483,
+          87.87402,
+          200.9634
+        ],
+        [
+          68.03149,
+          200.9634,
+          87.87402,
+          215.13663
+        ],
+        [
+          68.03149,
+          215.13663,
+          87.87402,
+          229.30988
+        ],
+        [
+          68.03149,
+          229.30988,
+          87.87402,
+          243.48309
+        ],
+        [
+          68.03149,
+          243.48309,
+          87.87402,
+          257.65631
+        ],
+        [
+          68.03149,
+          257.65631,
+          87.87402,
+          271.82953
+        ],
+        [
+          68.03149,
+          271.82953,
+          87.87402,
+          286.00275
+        ],
+        [
+          68.03149,
+          286.00275,
+          87.87402,
+          300.17601
+        ],
+        [
+          68.03149,
+          300.17601,
+          87.87402,
+          348.91459
+        ],
+        [
+          68.03149,
+          348.91459,
+          87.87402,
+          363.0878
+        ],
+        [
+          68.03149,
+          363.0878,
+          87.87402,
+          377.26103
+        ],
+        [
+          68.03149,
+          377.26103,
+          87.87402,
+          391.43427
+        ],
+        [
+          68.03149,
+          391.43427,
+          87.87402,
+          405.60748
+        ],
+        [
+          68.03149,
+          405.60748,
+          87.87402,
+          419.78072
+        ],
+        [
+          68.03149,
+          419.78072,
+          87.87402,
+          433.95395
+        ],
+        [
+          68.03149,
+          433.95395,
+          87.87402,
+          455.48859
+        ],
+        [
+          68.03149,
+          455.48859,
+          87.87402,
+          494.87717
+        ],
+        [
+          68.03149,
+          494.87717,
+          87.87402,
+          509.0504
+        ],
+        [
+          68.03149,
+          509.0504,
+          87.87402,
+          523.22363
+        ],
+        [
+          68.03149,
+          523.22363,
+          87.87402,
+          537.39685
+        ],
+        [
+          68.03149,
+          537.39685,
+          87.87402,
+          551.57007
+        ],
+        [
+          68.03149,
+          551.57007,
+          87.87402,
+          565.74329
+        ],
+        [
+          68.03149,
+          565.74329,
+          87.87402,
+          579.91653
+        ],
+        [
+          68.03149,
+          579.91653,
+          87.87402,
+          594.08978
+        ],
+        [
+          68.03149,
+          594.08978,
+          87.87402,
+          661.52838
+        ],
+        [
+          68.03149,
+          661.52838,
+          87.87402,
+          675.7016
+        ],
+        [
+          68.03149,
+          675.7016,
+          87.87402,
+          689.87482
+        ],
+        [
+          68.03149,
+          689.87482,
+          87.87402,
+          704.04803
+        ],
+        [
+          68.03149,
+          704.04803,
+          87.87402,
+          718.22125
+        ],
+        [
+          68.03149,
+          718.22125,
+          87.87402,
+          739.75592
+        ],
+        [
+          68.03149,
+          739.75592,
+          87.87402,
+          753.92914
+        ],
+        [
+          68.03149,
+          753.92914,
+          87.87402,
+          768.10236
+        ],
+        [
+          87.87402,
+          161.57483,
+          527.24451,
+          200.9634
+        ],
+        [
+          87.87402,
+          200.9634,
+          527.24451,
+          215.13663
+        ],
+        [
+          87.87402,
+          215.13663,
+          527.24451,
+          229.30988
+        ],
+        [
+          87.87402,
+          229.30988,
+          527.24451,
+          243.48309
+        ],
+        [
+          87.87402,
+          243.48309,
+          527.24451,
+          257.65631
+        ],
+        [
+          87.87402,
+          257.65631,
+          527.24451,
+          271.82953
+        ],
+        [
+          87.87402,
+          271.82953,
+          527.24451,
+          286.00275
+        ],
+        [
+          87.87402,
+          286.00275,
+          527.24451,
+          300.17601
+        ],
+        [
+          87.87402,
+          300.17601,
+          527.24451,
+          348.91459
+        ],
+        [
+          87.87402,
+          348.91459,
+          527.24451,
+          363.0878
+        ],
+        [
+          87.87402,
+          363.0878,
+          527.24451,
+          377.26103
+        ],
+        [
+          87.87402,
+          377.26103,
+          527.24451,
+          391.43427
+        ],
+        [
+          87.87402,
+          391.43427,
+          527.24451,
+          405.60748
+        ],
+        [
+          87.87402,
+          405.60748,
+          527.24451,
+          419.78072
+        ],
+        [
+          87.87402,
+          419.78072,
+          527.24451,
+          433.95395
+        ],
+        [
+          87.87402,
+          433.95395,
+          527.24451,
+          455.48859
+        ],
+        [
+          87.87402,
+          455.48859,
+          527.24451,
+          494.87717
+        ],
+        [
+          87.87402,
+          494.87717,
+          527.24451,
+          509.0504
+        ],
+        [
+          87.87402,
+          509.0504,
+          527.24451,
+          523.22363
+        ],
+        [
+          87.87402,
+          523.22363,
+          527.24451,
+          537.39685
+        ],
+        [
+          87.87402,
+          537.39685,
+          527.24451,
+          551.57007
+        ],
+        [
+          87.87402,
+          551.57007,
+          527.24451,
+          565.74329
+        ],
+        [
+          87.87402,
+          565.74329,
+          527.24451,
+          579.91653
+        ],
+        [
+          87.87402,
+          579.91653,
+          527.24451,
+          594.08978
+        ],
+        [
+          87.87402,
+          594.08978,
+          527.24451,
+          661.52838
+        ],
+        [
+          87.87402,
+          661.52838,
+          527.24451,
+          675.7016
+        ],
+        [
+          87.87402,
+          675.7016,
+          527.24451,
+          689.87482
+        ],
+        [
+          87.87402,
+          689.87482,
+          527.24451,
+          704.04803
+        ],
+        [
+          87.87402,
+          704.04803,
+          527.24451,
+          718.22125
+        ],
+        [
+          87.87402,
+          718.22125,
+          527.24451,
+          739.75592
+        ],
+        [
+          87.87402,
+          739.75592,
+          527.24451,
+          753.92914
+        ],
+        [
+          87.87402,
+          753.92914,
+          527.24451,
+          768.10236
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "d43e0e81f685a_p4",
+      "sourceTableId": "table_1",
+      "columns": [],
+      "rowBindings": [
+        {
+          "sourceRowIndex": 1,
+          "questionId": "Q7",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "questionId": "Q8",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 17,
+          "questionId": "Q9",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 25,
+          "questionId": "Q10",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        }
+      ],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "static_heading",
+          "content": "Client Responses (cont )\n.",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q7",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q8",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 13,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 13,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 14,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 14,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 15,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 15,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 16,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 16,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 17,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 17,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q9",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 18,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 18,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 19,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 19,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 20,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 20,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 21,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 21,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 22,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 22,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 23,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 23,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 24,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 24,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 25,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 25,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q10",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 26,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 26,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 27,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 27,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 28,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 28,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 29,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 29,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 30,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 30,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 31,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 31,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 32,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 32,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    }
+  ],
+  "variants": {
+    "sourceStatements": [
+      "A plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs."
+    ],
+    "firstAdministration": {
+      "status": "requires_review"
+    },
+    "repeatAdministration": {
+      "status": "requires_review"
+    },
+    "policy": "Do not invent a repeat chart from an observed first-visit chart."
+  },
+  "interpretationRules": {
+    "encodedRules": [
+      {
+        "ruleId": "total_raw",
+        "severityBands": [
+          {
+            "label": "Normal / no symptoms",
+            "minimum_inclusive": 0,
+            "maximum_inclusive": 6
+          },
+          {
+            "label": "Mild",
+            "minimum_inclusive": 7,
+            "maximum_inclusive": 19
+          },
+          {
+            "label": "Moderate",
+            "minimum_inclusive": 20,
+            "maximum_inclusive": 30
+          },
+          {
+            "label": "Severe",
+            "minimum_inclusive": 31,
+            "maximum_inclusive": 39
+          },
+          {
+            "label": "Extremely severe",
+            "minimum_inclusive": 40,
+            "maximum_inclusive": 60
+          }
+        ]
+      }
+    ],
+    "sourceGuidance": [
+      {
+        "title": "MADRS Scoring & Interpretation",
+        "text": "All items are summed to provide an overall score (from 0 to 60), with higher scores reflecting more severe depressive symptoms. A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):\n0 – 6 = normal / no symptoms\n7 – 19 = mild\n20 – 30 = moderate\n31 – 39 = severe\n40 – 60 = extremely severe\n\nUpon multiple administrations of the MADRS, if the client improves by 6 points it will be noted as ‘clinically meaningful change’ or if the client improves by 12 points it will be noted as ‘clinically substantial change’ (Turkoz et al., 2020).\n\nA plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs. Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot.\n\n",
+        "source_url": null
+      }
+    ],
+    "reportScoringGuidance": [
+      {
+        "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+        "pageNumber": 2,
+        "text": "All items are summed to provide an overall score (from 0 to 60), with\nhigher scores reflecting more severe depressive symptoms. A\ndepression severity descriptor is also provided (Müller et al., 2003;\nSnaith et al., 1986; Thase et al., 2021):\n0 - 6 = normal / no symptoms\n7 - 19 = mild \n20 - 30 = moderate\n31 - 39 = severe\n40 - 60 = extremely severe\nUpon multiple administrations of the MADRS, if the client improves\nby 6 points it will be noted as 'clinically meaningful change' or if the\nclient improves by 12 points it will be noted as 'clinically substantial\nchange' (Turkoz et al., 2020). \nA plot is displayed for the first administration or multiple\nadministrations of the MADRS with dotted lines indicating the\nseverity cutoffs. Although the maximum score of the MADRS is 60,\nthe y-axis may be truncated (dependent upon the client's score/s) to\nenhance the readability of the plot. ",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      }
+    ],
+    "sourceRequirements": [
+      "A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):",
+      "A plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs.",
+      "Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot."
+    ],
+    "templates": [],
+    "sampleNarrativeReusable": false,
+    "runtimeEnabled": false
+  },
+  "referenceTables": [],
+  "paintStyles": [],
+  "assets": {
+    "runtimeImages": [],
+    "runtimeSourceFiles": [],
+    "runtimeSourceUrls": []
+  },
+  "runtimeContract": {
+    "version2RendererRequired": true,
+    "loadDefinitionFrom": "database_json",
+    "useCurrentPatientAnswers": true,
+    "useSamplePatientValues": false,
+    "externalNetworkRequired": false,
+    "sourceArchiveRequired": false,
+    "unknownScoring": "withhold",
+    "unknownNorms": "withhold",
+    "unsupportedChart": "withhold_and_report_exception",
+    "unknownRepeatLayout": "withhold"
+  },
+  "validation": {
+    "jsonStructureValidated": true,
+    "sourceHashesVerified": true,
+    "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+    "fullPageLayoutCompared": false,
+    "scoreBindingsReviewed": false,
+    "tablesSemanticallyReviewed": false,
+    "rendererEquivalent": false,
+    "clinicalApproved": false,
+    "readyForApplicationImport": false
+  },
+  "exceptions": [
+    {
+      "code": "score_and_series_bindings_require_review",
+      "count": 1
+    },
+    {
+      "code": "table_cell_semantics_require_review",
+      "count": 2,
+      "unresolvedCells": 65
+    },
+    {
+      "code": "interpretation_and_variant_rules_require_review"
+    }
+  ]
+}

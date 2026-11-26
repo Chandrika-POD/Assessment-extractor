@@ -10,6 +10,7 @@ import tempfile
 from urllib.parse import urljoin, urlsplit
 
 from retrieval import ExtractionError, public_fetch as fetch, permission, validate_url
+from rich_content import archive, collect_images, coverage, MAX_DOCUMENTS
 
 ROOT = Path(__file__).parent
 GAD_URL = 'https://novopsych.com/assessments/anxiety/generalised-anxiety-disorder-assessment-gad-7/'
@@ -27,7 +28,7 @@ def normalize(url):
 
 
 def base(url):
-    return {'schema_version': '0.1', 'requested_url': url, 'created_at': datetime.now(timezone.utc).isoformat(),
+    return {'schema_version': '0.2', 'requested_url': url, 'created_at': datetime.now(timezone.utc).isoformat(),
             'status': 'partial', 'mode': None, 'assessment': {k: None for k in FIELDS},
             'instructions': None, 'questionnaire': [], 'scoring': {}, 'sections': [],
             'documents': [], 'sources': [], 'warnings': [], 'missing_fields': [], 'field_provenance': {}}
@@ -154,13 +155,15 @@ def live(url, process_documents=True, render_browser=True):
         result['permission'] = {'access': 'public_page', 'reproduction_permission': 'not_verified',
             'note': 'Public retrieval does not establish licensing or reuse rights.'}
     result['sources'] = [{'url': final, 'retrieved_at': result['created_at']}]
+    result['source_archive'] = [dict(archive(body, content_type, final), label='Original response')]
     result['extraction_log'] = [{'stage': 'source', 'url': final, 'status': 'retrieved'}]
     if 'application/pdf' in content_type or body.startswith(b'%PDF-'):
         text = pdf_text(body)
         result['assessment']['name'] = urlsplit(final).path.rsplit('/', 1)[-1]
         result['sections'] = [{'title': 'PDF text', 'text': text, 'source_url': final}]
         result['questionnaire'] = pdf_questions(text, final)
-        result['documents'] = [{'title': 'Submitted PDF', 'url': final, 'status': 'processed'}]
+        result['documents'] = [{'title': 'Submitted PDF', 'url': final, 'status': 'processed',
+                                'archive': archive(body, 'application/pdf', final)}]
     elif 'text/html' in content_type:
         charset = re.search(r'charset=([\w-]+)', content_type, re.I)
         try:
@@ -172,17 +175,20 @@ def live(url, process_documents=True, render_browser=True):
             from browser_capture import capture
             try:
                 rendered = capture(final, html)
+                result['source_archive'] += [dict(archive(s['html'].encode(), 'text/html', final),
+                    label=s.get('label', 'Rendered content')) for s in rendered['snapshots']]
                 snapshots = [parse_html(s['html'], final) for s in rendered['snapshots']]
                 if snapshots:
-                    combined = snapshots[0]
-                    for part in snapshots[1:]:
-                        for key in ('sections', 'tables', 'links', 'list_items'):
+                    combined = parsed
+                    for part in snapshots:
+                        for key in ('sections', 'tables', 'links', 'list_items', 'images', 'embedded_media'):
                             combined[key].extend(part[key])
-                    for key in ('sections', 'tables', 'links', 'list_items'):
-                        combined[key] = list({json.dumps(v, sort_keys=True): v for v in combined[key]}.values())
+                    for key in ('sections', 'tables', 'links', 'list_items', 'images', 'embedded_media'):
+                        combined[key] = list({(v['url'] if key in ('links', 'images') else json.dumps(v, sort_keys=True)): v for v in combined[key]}.values())
                     combined['description'] = parsed['description']
                     parsed = combined
-                result['browser'] = {'engine': 'Playwright Chromium', 'tabs': rendered['tabs'], 'page_errors': rendered.get('page_errors', [])}
+                result['browser'] = {'engine': 'Playwright Chromium', 'tabs': rendered['tabs'], 'page_errors': rendered.get('page_errors', []),
+                                     'capture_gaps': rendered.get('capture_gaps', [])}
                 result['extraction_log'] += [{'stage': 'tab', **t} for t in rendered['tabs']]
             except (ExtractionError, OSError) as exc:
                 result['browser'] = {'engine': 'Playwright Chromium', 'status': 'failed', 'error': str(exc)}
@@ -191,9 +197,12 @@ def live(url, process_documents=True, render_browser=True):
         result['assessment'].update(name=parsed['name'], description=parsed['description'])
         result['sections'] = parsed['sections']
         result['tables'] = parsed['tables']
+        result['images'] = parsed['images']
+        result['embedded_media'] = parsed['embedded_media']
+        result['links'] = parsed['links']
         result['questionnaire'] = html_questions(parsed)
         result['documents'] = [{**link, 'status': 'not_processed'} for link in parsed['links']
-            if urlsplit(link['url']).path.lower().endswith('.pdf')][:50]
+            if urlsplit(link['url']).path.lower().endswith('.pdf') or re.search(r'\bpdf\b', link['title'], re.I)]
         result['documents'].sort(key=lambda d: (bool(re.search(r'sample|results|example[-_ ]?report|scoring[-_ ]?report|manual', d['title']+' '+d['url'], re.I)),
             not bool(re.search(r'standard|questionnaire|form|survey', d['title']+' '+d['url'], re.I))))
         result['warnings'].append('Page retrieved live. Check tab and document statuses for coverage. Image-only content may need OCR.')
@@ -203,11 +212,15 @@ def live(url, process_documents=True, render_browser=True):
     if len(text.strip()) < 40:
         raise ExtractionError('No substantial source text found. This page may require JavaScript or access credentials.', 'extraction_failed')
     if 'text/html' in content_type and process_documents:
-        for doc in result['documents'][:3]:
+        for index, doc in enumerate(result['documents']):
+            if index >= MAX_DOCUMENTS:
+                doc.update(status='limit_reached', error='Document count budget reached; URL retained.')
+                continue
             try:
                 resolved, _, content = fetch(doc['url'])
                 if not content.startswith(b'%PDF-'):
                     raise ExtractionError('Link did not return a PDF.', 'extraction_failed')
+                doc['archive'] = archive(content, 'application/pdf', resolved)
                 pdf = pdf_text(content)
                 doc.update(status='processed', resolved_url=resolved)
                 result['sources'].append({'url': resolved, 'retrieved_at': result['created_at'], 'discovered_on': final})
@@ -225,6 +238,8 @@ def live(url, process_documents=True, render_browser=True):
             except (OSError, subprocess.TimeoutExpired):
                 doc.update(status='extraction_failed', error='Document retrieval or parsing failed.')
             result['extraction_log'].append({'stage': 'document', 'url': doc['url'], 'status': doc['status']})
+    collect_images(result.get('images', []), fetch)
+    result['coverage'] = coverage(result)
     unique = {}
     for question in result['questionnaire']:
         key = re.sub(r'\W+', '', question['text']).lower()
@@ -242,7 +257,7 @@ def live(url, process_documents=True, render_browser=True):
                             'independent_wording_review_completed': False, 'ready_for_clinical_use': False}
     result['warnings'] += ['Extracted question text and option mappings need review against the source; reverse scoring is not inferred.',
         'Printed response values are preserved; item scores are unknown until scoring rules are reviewed. Additional forms remain separate under Documents.',
-        'Only three linked PDFs are processed. Each has an independent status; restricted or failed documents do not erase page results.',
+        'Discovered images and linked PDFs have individual capture statuses. Original PDF bytes are saved even when text extraction needs OCR; check Capture coverage for gaps and limits.',
         'Unknown fields are left unavailable. No LLM or clinical scoring is used.']
     result['missing_fields'] = [f'assessment.{k}' for k, v in result['assessment'].items() if v is None]
     result['field_provenance'].update({'assessment.name': {'url': final, 'locator': 'Page heading or PDF filename'},

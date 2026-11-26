@@ -1,0 +1,1008 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "the-montgomery-asberg-rating-scale-madrs--87bdd7875dc7",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Montgomery-Asberg Rating Scale (MADRS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Montgomery-Asberg Rating Scale (MADRS) is a 10-item clinician -rated assessment for depression in adults (18+). The MADRS focusses more upon functional impairment and somatic symptoms than other assessments which might focus more upon depressive cognitive attitudes (Montgomery and Asberg, 1979).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "past week"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "– guidance for the rater The rating should be based on a clinical interview moving from broadly phrased questions about symptoms to more detailed ones which allow a precise rating of severity. The rater must decide whether the rating lies on the defined scale steps or between them (1,3,5). It is important to remember that it is only on rare occasions that a depressed patient is encountered who cannot be rated on the items in the scale. If definite answers cannot be elicited from the client all relevant clues as well as information from other sources should be used as a basis for the rating in line with customary clinical practice. Ratings should be based upon the clientʼs condition in the past week.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_checked_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_raw",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1,
+    "value_field": "score",
+    "minimum": 0,
+    "maximum": 60,
+    "severity_bands": [
+     {
+      "label": "Normal / no symptoms",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 6
+     },
+     {
+      "label": "Mild",
+      "minimum_inclusive": 7,
+      "maximum_inclusive": 19
+     },
+     {
+      "label": "Moderate",
+      "minimum_inclusive": 20,
+      "maximum_inclusive": 30
+     },
+     {
+      "label": "Severe",
+      "minimum_inclusive": 31,
+      "maximum_inclusive": 39
+     },
+     {
+      "label": "Extremely severe",
+      "minimum_inclusive": 40,
+      "maximum_inclusive": 60
+     }
+    ]
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": "Archived questionnaire printed response values and corresponding scoring context sections; formulas tested separately.",
+  "source_rule_excerpts": [
+   "Although cutoffs were derived by Snaith et al. (1986), subsequent research by Müller et al. (2003) modified the cutoff between moderate and severe to 31 (sensitivity 92%, specificity 83%) and research by Thase et al. (2021) added a further description at the top end of the scale (40 – 60). Although the work by Thase et al. (2021) was focussed upon bi-polar patients and added significantly more descriptors (although still similar to Snaith et al.’s cutoffs and descriptors), for simplicity’s sake it was decided to keep the prior descriptors but simply add the descriptor for ‘extremely’ at the top end."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "MADRS Scoring & Interpretation",
+    "text": "All items are summed to provide an overall score (from 0 to 60), with higher scores reflecting more severe depressive symptoms. A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):\n0 – 6 = normal / no symptoms\n7 – 19 = mild\n20 – 30 = moderate\n31 – 39 = severe\n40 – 60 = extremely severe\n\nUpon multiple administrations of the MADRS, if the client improves by 6 points it will be noted as ‘clinically meaningful change’ or if the client improves by 12 points it will be noted as ‘clinically substantial change’ (Turkoz et al., 2020).\n\nA plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs. Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot.\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": [
+  {
+   "id": "C1",
+   "title": "Montgomery-Asberg Rating Scale (MADRS)",
+   "text": "The Montgomery-Asberg Rating Scale (MADRS) is a 10-item clinician -rated assessment for depression in adults (18+). The MADRS focusses more upon functional impairment and somatic symptoms than other assessments which might focus more upon depressive cognitive attitudes (Montgomery and Asberg, 1979).\n2 minutes\nAges 18+\nDepression , Outcome Monitoring\nAdminister Now",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C2",
+   "title": "MADRS Overview",
+   "text": "The MADRS has been reported to be more sensitive to symptom changes over time compared to other assessments for depression (Carmody et al., 2006), so it can be a good assessment option to monitor client outcomes over time.\nExample MADRS items:\nRetrospective research has shown that high scores on the MADRS have predicted suicide in depressed clients, above and beyond suicidal ideation and self-harm (Frekriksen et al., 2022), thus depression severity as measured by the MADRS independently correlates with suicide attempts.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C3",
+   "title": "MADRS Scoring & Interpretation",
+   "text": "All items are summed to provide an overall score (from 0 to 60), with higher scores reflecting more severe depressive symptoms. A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):\n0 – 6 = normal / no symptoms\n7 – 19 = mild\n20 – 30 = moderate\n31 – 39 = severe\n40 – 60 = extremely severe\n\nUpon multiple administrations of the MADRS, if the client improves by 6 points it will be noted as ‘clinically meaningful change’ or if the client improves by 12 points it will be noted as ‘clinically substantial change’ (Turkoz et al., 2020).\n\nA plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs. Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C4",
+   "title": "MADRS Psychometric Properties",
+   "text": "The psychometric characteristics of the MADRS scale have undergone extensive scrutiny across various studies, with comparisons drawn to alternative scales such as the Hamilton Rating Scale for Depression (HRS). Notably, the MADRS exhibits robust internal consistency, marginally surpassing that of the HRS (Carmody et al., 2006). Clinician interrater reliability, both at the item level and for the total score, is very good (0.89 – 0.97; Montgomery & Asbert, 1979). Convergent validity is evident through a substantial correlation between MADRS scores and those from other measures like the HRS ( r = 0.87 – 0.94; Carmody et al., 2006; Davidson et al., 1986; Heo et al. ,2007; Muller et al., 2003). The MADRS further exhibits a noteworthy ability to discriminate between various levels of depression severity (Carmody et al., 2006). Studies consistently highlight the MADRS’s heightened sensitivity to treatment-related changes (Davidson et al., 1986; Mulder et al., 2003).\nAlthough cutoffs were derived by Snaith et al. (1986), subsequent research by Müller et al. (2003) modified the cutoff between moderate and severe to 31 (sensitivity 92%, specificity 83%) and research by Thase et al. (2021) added a further description at the top end of the scale (40 – 60). Although the work by Thase et al. (2021) was focussed upon bi-polar patients and added significantly more descriptors (although still similar to Snaith et al.’s cutoffs and descriptors), for simplicity’s sake it was decided to keep the prior descriptors but simply add the descriptor for ‘extremely’ at the top end.\nAs determined by Turkoz et al. (2020), a clinically meaningful change score (as determined by a one point change in the Clinical Global Impression – Severity (CGI-S) score) on the MADRS is 6 points and a clinically substantial change (a two point change in CGI-S) score is 12 points.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "LIVE_C5",
+   "title": "Overview",
+   "text": "Search\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C6",
+   "title": "Montgomery-Asberg Rating Scale (MADRS)",
+   "text": "The Montgomery-Asberg Rating Scale (MADRS) is a 10-item clinician -rated assessment for depression in adults (18+). The MADRS focusses more upon functional impairment and somatic symptoms than other assessments which might focus more upon depressive cognitive attitudes (Montgomery and Asberg, 1979).\n2 minutes\nAges 18+\nDepression , Outcome Monitoring\nAdminister Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C7",
+   "title": "MADRS Overview",
+   "text": "The MADRS has been reported to be more sensitive to symptom changes over time compared to other assessments for depression (Carmody et al., 2006), so it can be a good assessment option to monitor client outcomes over time.\nExample MADRS items:\nRetrospective research has shown that high scores on the MADRS have predicted suicide in depressed clients, above and beyond suicidal ideation and self-harm (Frekriksen et al., 2022), thus depression severity as measured by the MADRS independently correlates with suicide attempts.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C8",
+   "title": "MADRS Scoring & Interpretation",
+   "text": "All items are summed to provide an overall score (from 0 to 60), with higher scores reflecting more severe depressive symptoms. A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):\n0 – 6 = normal / no symptoms\n7 – 19 = mild\n20 – 30 = moderate\n31 – 39 = severe\n40 – 60 = extremely severe\n\nUpon multiple administrations of the MADRS, if the client improves by 6 points it will be noted as ‘clinically meaningful change’ or if the client improves by 12 points it will be noted as ‘clinically substantial change’ (Turkoz et al., 2020).\n\nA plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs. Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot.\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C9",
+   "title": "MADRS Psychometric Properties",
+   "text": "The psychometric characteristics of the MADRS scale have undergone extensive scrutiny across various studies, with comparisons drawn to alternative scales such as the Hamilton Rating Scale for Depression (HRS). Notably, the MADRS exhibits robust internal consistency, marginally surpassing that of the HRS (Carmody et al., 2006). Clinician interrater reliability, both at the item level and for the total score, is very good (0.89 – 0.97; Montgomery & Asbert, 1979). Convergent validity is evident through a substantial correlation between MADRS scores and those from other measures like the HRS ( r = 0.87 – 0.94; Carmody et al., 2006; Davidson et al., 1986; Heo et al. ,2007; Muller et al., 2003). The MADRS further exhibits a noteworthy ability to discriminate between various levels of depression severity (Carmody et al., 2006). Studies consistently highlight the MADRS’s heightened sensitivity to treatment-related changes (Davidson et al., 1986; Mulder et al., 2003).\nAlthough cutoffs were derived by Snaith et al. (1986), subsequent research by Müller et al. (2003) modified the cutoff between moderate and severe to 31 (sensitivity 92%, specificity 83%) and research by Thase et al. (2021) added a further description at the top end of the scale (40 – 60). Although the work by Thase et al. (2021) was focussed upon bi-polar patients and added significantly more descriptors (although still similar to Snaith et al.’s cutoffs and descriptors), for simplicity’s sake it was decided to keep the prior descriptors but simply add the descriptor for ‘extremely’ at the top end.\nAs determined by Turkoz et al. (2020), a clinically meaningful change score (as determined by a one point change in the Clinical Global Impression – Severity (CGI-S) score) on the MADRS is 6 points and a clinically substantial change (a two point change in CGI-S) score is 12 points.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C10",
+   "title": "Assess your patients with the Montgomery-Asberg Rating Scale using a NovoPsych account",
+   "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C11",
+   "title": "Developer",
+   "text": "Montgomery, S.A., & Asberg, M. (1979). A new depression scale designed to be sensitive to change . British Journal of Psychiatry, 134(4), 382–389. doi: 10.1192/bjp.134.4.382. PMID: 444788.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C12",
+   "title": "References",
+   "text": "Carmody, T.J., Rush, A.J., Bernstein, I., Warden, D., Brannan, S., Burnham, D., et al. (2006). The Montgomery Äsberg and the Hamilton ratings of depression: a comparison of measures. European Journal of Neuropsychopharmacology, 16(8), 601–611. doi: 10.1016/j.euroneuro.2006.04.008. Epub 2006 Jun 12. PMID: 16769204; PMCID: PMC2151980.\nDavidson, J., Turnbull, C.D., Strickland, R., Miller, R., & Graves, K. (1986). The Montgomery-Asberg Depression Scale: reliability and validity. Acta Psychiatry Scandinavica, 73(5), 544–548. doi: 10.1111/j.1600-0447.1986.tb02723.x. PMID: 3751660.\nFredriksen, K. J., Gjestad, R., Walby, F. A., Anda, L. G., Oedegaard, K. J., & Schoeyen, H. K. (2022). High Scores on the Montgomery-Åsberg Depression Rating Scale and Psychotic Symptoms Predict Suicide: A Prospective Cohort Study of Psychiatric Acute Ward Patients. The Journal of Clinical Psychiatry , 83 (5), 41950. https://doi.org/10.4088/JCP.21m14018\nHeo, M., Murphy, C.F., & Meyers, B.S. (2007). Relationship between the Hamilton Depression Rating Scale and the Montgomery-Åsberg Depression Rating Scale in depressed elderly: a meta-analysis. American Journal of Geriatric Psychiatry, 15(10), 899–905. doi: 10.1097/JGP.0b013e318098614e. PMID: 17911366.\nMulder, R.T., Joyce, P.R., & Frampton, C. (2003). Relationships among measures of treatment outcome in depressed patients. Journal of Affective Disorders, (1–3), 127–135. doi: 10.1016/s0165-0327(02)00080-0. PMID: 12943942.\nMüller, M. J., Himmerich, H., Kienzle, B., & Szegedi, A. (2003). Differentiating moderate and severe depression using the Montgomery-Asberg depression rating scale (MADRS). Journal of Affective Disorders , 77 (3), 255–260. https://doi.org/10.1016/s0165-0327(02 )00120-9\nSnaith, R., Harrop, F., Newby, D., & Teale, C. (1986). Grade Scores of the Montgomery—Åsberg Depression and the Clinical Anxiety Scales. British Journal of Psychiatry, 148 (5), 599-601. doi:10.1192/bjp.148.5.599\nFredriksen, K. J., Gjestad, R., Walby, F. A., Anda, L. G., Oedegaard, K. J., & Schoeyen, H. K. (2022). High Scores on the Montgomery-Åsberg Depression Rating Scale and Psychotic Symptoms Predict Suicide: A Prospective Cohort Study of Psychiatric Acute Ward Patients. The Journal of Clinical Psychiatry , 83 (5), 41950. https://doi.org/10.4088/JCP.21m14018\nThase, M. E., Harrington, A., Calabrese, J., Montgomery, S., Niu, X., & Patel, M. D. (2021). Evaluation of MADRS severity thresholds in patients with bipolar depression. Journal of Affective Disorders , 286 , 58–63. https://doi.org/10.1016/j.jad.2021.02.043\nTurkoz, I., Alphs, L., Singh, J., Jamieson, C., Daly, E., Shawi, M., Sheehan, J. J., Trivedi, M. H., & Rush, A. J. (2021). Clinically meaningful changes on depressive symptom measures and patient-reported outcomes in patients with treatment-resistant depression. Acta Psychiatrica Scandinavica , 143 (3), 253–263. https://doi.org/10.1111/acps.13260\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C13",
+   "title": "Patient Health Questionnaire – Depression (PHQ-9)",
+   "text": "Also known as: PHQ-9 , PHQ , Patient Health Questionnaire , Depression screening tool , Primary care depression scale\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C14",
+   "title": "Center for Epidemiologic Studies Depression Scale – Revised (CESD-R)",
+   "text": "Also known as: CESD-R , CES-D Revised , Center for Epidemiologic Studies Depression Scale , Community depression screening\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C15",
+   "title": "Clinical Outcomes in Routine Evaluation (CORE-OM)",
+   "text": "Also known as: CORE-OM , Clinical Outcomes in Routine Evaluation , Clinical outcomes questionnaire , Routine evaluation measure\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C16",
+   "title": "Depression Anxiety Stress Scales – Short Form (DASS-21)",
+   "text": "Also known as: DASS-21 , DASS , Depression Anxiety Stress Scales , Mental health screening tool\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C17",
+   "title": "Sample Results",
+   "text": "Administer Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C18",
+   "title": "Dr Ben Buchanan",
+   "text": "NovoPsych CEO & Clinical Psychologist\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  }
+ ],
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Montgomery, S.A., & Asberg, M. (1979). A new depression scale designed to be sensitive to change . British Journal of Psychiatry, 134(4), 382–389. doi: 10.1192/bjp.134.4.382. PMID: 444788.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Carmody, T.J., Rush, A.J., Bernstein, I., Warden, D., Brannan, S., Burnham, D., et al. (2006). The Montgomery Äsberg and the Hamilton ratings of depression: a comparison of measures. European Journal of Neuropsychopharmacology, 16(8), 601–611. doi: 10.1016/j.euroneuro.2006.04.008. Epub 2006 Jun 12. PMID: 16769204; PMCID: PMC2151980.\nDavidson, J., Turnbull, C.D., Strickland, R., Miller, R., & Graves, K. (1986). The Montgomery-Asberg Depression Scale: reliability and validity. Acta Psychiatry Scandinavica, 73(5), 544–548. doi: 10.1111/j.1600-0447.1986.tb02723.x. PMID: 3751660.\nFredriksen, K. J., Gjestad, R., Walby, F. A., Anda, L. G., Oedegaard, K. J., & Schoeyen, H. K. (2022). High Scores on the Montgomery-Åsberg Depression Rating Scale and Psychotic Symptoms Predict Suicide: A Prospective Cohort Study of Psychiatric Acute Ward Patients. The Journal of Clinical Psychiatry , 83 (5), 41950. https://doi.org/10.4088/JCP.21m14018\nHeo, M., Murphy, C.F., & Meyers, B.S. (2007). Relationship between the Hamilton Depression Rating Scale and the Montgomery-Åsberg Depression Rating Scale in depressed elderly: a meta-analysis. American Journal of Geriatric Psychiatry, 15(10), 899–905. doi: 10.1097/JGP.0b013e318098614e. PMID: 17911366.\nMulder, R.T., Joyce, P.R., & Frampton, C. (2003). Relationships among measures of treatment outcome in depressed patients. Journal of Affective Disorders, (1–3), 127–135. doi: 10.1016/s0165-0327(02)00080-0. PMID: 12943942.\nMüller, M. J., Himmerich, H., Kienzle, B., & Szegedi, A. (2003). Differentiating moderate and severe depression using the Montgomery-Asberg depression rating scale (MADRS). Journal of Affective Disorders , 77 (3), 255–260. https://doi.org/10.1016/s0165-0327(02 )00120-9\nSnaith, R., Harrop, F., Newby, D., & Teale, C. (1986). Grade Scores of the Montgomery—Åsberg Depression and the Clinical Anxiety Scales. British Journal of Psychiatry, 148 (5), 599-601. doi:10.1192/bjp.148.5.599\nFredriksen, K. J., Gjestad, R., Walby, F. A., Anda, L. G., Oedegaard, K. J., & Schoeyen, H. K. (2022). High Scores on the Montgomery-Åsberg Depression Rating Scale and Psychotic Symptoms Predict Suicide: A Prospective Cohort Study of Psychiatric Acute Ward Patients. The Journal of Clinical Psychiatry , 83 (5), 41950. https://doi.org/10.4088/JCP.21m14018\nThase, M. E., Harrington, A., Calabrese, J., Montgomery, S., Niu, X., & Patel, M. D. (2021). Evaluation of MADRS severity thresholds in patients with bipolar depression. Journal of Affective Disorders , 286 , 58–63. https://doi.org/10.1016/j.jad.2021.02.043\nTurkoz, I., Alphs, L., Singh, J., Jamieson, C., Daly, E., Shawi, M., Sheehan, J. J., Trivedi, M. H., & Rush, A. J. (2021). Clinically meaningful changes on depressive symptom measures and patient-reported outcomes in patients with treatment-resistant depression. Acta Psychiatrica Scandinavica , 143 (3), 253–263. https://doi.org/10.1111/acps.13260",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Montgomery-Asberg Rating Scale (MADRS) PDF",
+   "source_url": null,
+   "sha256": "00125726bdbf871d8d5affa30f2c1a774ca787c053dc2def258c15fb79c43108",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/00125726bdbf871d8d5affa30f2c1a774ca787c053dc2def258c15fb79c43108.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Depression Anxiety Stress Scales – Short Form (DASS-21)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "d204e2da94c2e538d868db2b9bfd62af24c840be2e4dbc43695c6271f175f513",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d204e2da94c2e538d868db2b9bfd62af24c840be2e4dbc43695c6271f175f513.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "fb3c223ef95f59707a0193962e3d715e15e798da0e25946b4a8a6171bfd808f3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/fb3c223ef95f59707a0193962e3d715e15e798da0e25946b4a8a6171bfd808f3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MADRS Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "b1b4cb9507b2a20adc6558790c9fd6b13ecbc5c944148712f88ceb7236897950",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b1b4cb9507b2a20adc6558790c9fd6b13ecbc5c944148712f88ceb7236897950.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MADRS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4accfe3e72ed0adf6063a8a2e8476ad25b1b8094df836011951fc74ead4eb8e7",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4accfe3e72ed0adf6063a8a2e8476ad25b1b8094df836011951fc74ead4eb8e7.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MADRS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "7257cdea659b4a2dca211b8c032236b6bb81fa81f4563bcbe25548f560c141ad",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7257cdea659b4a2dca211b8c032236b6bb81fa81f4563bcbe25548f560c141ad.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MADRS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Montgomery-Asberg Rating Scale using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "single_choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 0
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 4,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "total_raw",
+    "label": "Total raw",
+    "minimum": 0,
+    "maximum": 60,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": "/scoring/rules/0/severity_bands",
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "total_raw",
+    "title": "Total raw",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_raw",
+      "label": "Total raw",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0,
+    "maximum": 60,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "rule.severity_bands",
+   "overall_total": "total_raw",
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "e44887ad6cf36eb2eda7f893365c102ed74f6fbb3e71048ebb002744d46b0b6d",
+   "guidance_titles": [
+    "MADRS Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "total_raw"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "total_raw"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "total_raw",
+    "label": "Total raw",
+    "rule_id": "total_raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "single_choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "a4b255e858ae195603588a95e02754aa8f9d80302193301a555d68ef173b0a3c",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_raw",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_raw",
+    "status": "pending_source_review",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:07:56.158198+00:00",
+  "raw_extraction_sha256": "1a4192edadfb1e58db19d89326d5b539bd018f05c1524290d8eb0076c7a1f931",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Depression"
+   },
+   {
+    "url": null,
+    "title": "Outcome Monitoring"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/444788/",
+    "title": "doi: 10.1192/bjp.134.4.382. PMID: 444788."
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16769204/",
+    "title": "doi: 10.1016/j.euroneuro.2006.04.008. Epub 2006 Jun 12. PMID: 16769204; PMCID: PMC2151980."
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3751660/",
+    "title": "doi: 10.1111/j.1600-0447.1986.tb02723.x. PMID: 3751660."
+   },
+   {
+    "url": "https://doi.org/10.4088/JCP.21m14018",
+    "title": "https://doi.org/10.4088/JCP.21m14018"
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17911366/",
+    "title": "10.1097/JGP.0b013e318098614e. PMID: 17911366."
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12943942/",
+    "title": "doi: 10.1016/s0165-0327(02)00080-0. PMID: 12943942."
+   },
+   {
+    "url": "https://doi.org/10.1016/s0165-0327(02",
+    "title": "https://doi.org/10.1016/s0165-0327(02"
+   },
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/3779233/",
+    "title": "doi:10.1192/bjp.148.5.599"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jad.2021.02.043",
+    "title": "https://doi.org/10.1016/j.jad.2021.02.043"
+   },
+   {
+    "url": "https://doi.org/10.1111/acps.13260",
+    "title": "https://doi.org/10.1111/acps.13260"
+   },
+   {
+    "url": null,
+    "title": "Primary care depression scale"
+   },
+   {
+    "url": null,
+    "title": "Community depression screening"
+   },
+   {
+    "url": null,
+    "title": "Routine evaluation measure"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Risk Assessment (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Client Safety Plan (Client Document)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,368 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": {
+  "$file": "assessment.scoring.rules.json"
+ },
+ "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+ "rules_provenance": {
+  "questionnaire_url": null,
+  "questionnaire_sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+  "page_url": null,
+  "page_sha256": "cc232582c49573353081a70fbf16a75abf0bbd90860d771fe0cfb94c2544ece0",
+  "method": "reviewed_saved_source_membership_and_arithmetic"
+ },
+ "source_rule_excerpts": [
+  "Sharing personality assessment results can be a powerful therapeutic intervention when approached thoughtfully. The IPIP-NEO-120 report includes visual displays with behavioural anchors at both ends of each trait continuum, which can help clients understand that all positions on the spectrum have adaptive value – there is no “good” or “bad” profile. Begin by exploring traits in the Average range to establish that the assessment captures a nuanced picture, then discuss extreme scores in terms of both potential strengths and challenges they may create in specific contexts. For example, low Extraversion is not a deficit but reflects a preference for quieter, more reflective engagement with the world; however, it may create challenges in contexts that demand extensive social energy. Encourage clients to reflect on whether the results resonate with their self-perception and in which situations various traits are most evident. This collaborative exploration promotes self-understanding and can help clients recognise how their characteristic patterns contribute to both their presenting concerns and their resources for change.",
+  "Average: Middle 40% of scores (percentile 30-70)",
+  "Average (‘Valid Response Profile’): between 10th and 90th percentile",
+  "The report begins with a summary table displaying results for the five major personality factors. For each factor, the table shows the raw score, community percentile, and descriptor (based on the client’s age and gender, if provided). Percentiles falling outside the Average range (i.e., High or Low) are highlighted in blue to draw attention to clinically relevant information.",
+  "The original IPIP-NEO was designed to measure constructs similar to those in the NEO PI-R (Costa & McCrae, 1995). Therefore, the primary validity of the IPIP-NEO inventories is represented by the correlations between its scales and the corresponding scales of the NEO PI-R. Those correlations average .66 (.91 corrected for attenuation due to unreliability) for the 4-item scales from the IPIP-NEO-120 (Johnson, 2014)."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "IPIP-NEO-120 Percentiles",
+   "text": "Percentiles are also presented for each of the trait factors and facets that were calculated by NovoPsych based upon Australian data from 5,252 males (between the ages of 16 – 95) and 8,911 females (between the ages of 16 – 88) that were derived from data provided by Johnson (2020). Descriptors for each factor and facet are assigned based on percentile scores:\nHigh: Top 30% of scores (percentile of 70 or more)\nAverage: Middle 40% of scores (percentile 30-70)\nLow: Bottom 30% of scores (percentile of 30 or less)\nPercentiles are based upon gender and age, which were categorised into seven age groups:\n16-17\n18-19\n20-21\n22-25\n26-30\n31-39\n40+\n",
+   "source_url": null
+  },
+  {
+   "title": "IPIP-NEO-120 Interpretive Report Structure",
+   "text": "The IPIP-NEO-120 generates a comprehensive interpretive report designed for ease of clinical interpretation. The report is organised to present results systematically, moving from broad personality factors to specific facets, with visual and narrative components at each level.\nThe report begins with a summary table displaying results for the five major personality factors. For each factor, the table shows the raw score, community percentile, and descriptor (based on the client’s age and gender, if provided). Percentiles falling outside the Average range (i.e., High or Low) are highlighted in blue to draw attention to clinically relevant information.\n",
+   "source_url": null
+  },
+  {
+   "title": "IPIP-NEO-120 Facet Percentiles Graph",
+   "text": "\nFollowing the summary table, each factor is represented on a graph as a continuum with behavioural anchors at both extremes (e.g., for Extraversion: “Reflective, independent, self-sufficient” versus “Outgoing, warm, seeks adventure”), allowing clinicians to immediately contextualise what a client’s score means in terms of real-world behaviour and functioning. The client’s percentile score is plotted on each continuum to make it easy to identify which traits may be contributing to presenting concerns, which traits may serve as strengths or resources in treatment, and which personality domains warrant deeper exploration through the facet-level results.\nAfter the Big Five overview, the report presents five tables with detailed facet-level information for each factor (raw score, community percentile, descriptor). Following the facet tables, a series of corresponding horizontal bar graphs, each consisting of seven horizontal bars reflecting the percentile scores, are presented: The top bar shows the overall factor score (demonstrating how the six facets each contribute), and the six bars below show each facet score.\nFinally, a standalone table presents the SDR results showing the raw score, community percentile, and descriptor (Very Candid / Self-Critical, Valid Response Profile, or Review Response Validity). Following the tables and bar graph visualisations, the narrative report provides detailed written interpretations:\nPersonality overview\nSocially desirability responding\nPattern types (if applicable)\n",
+   "source_url": null
+  },
+  {
+   "title": "IPIP-NEO-120 Percentiles",
+   "text": "Normative data was gathered from Johnson’s IPIP-NEO data repository (Johnson, 2020) to enable the calculation of percentiles. This data was analysed by NovoPsych to determine appropriate Australian norms. Initial data from the repository (N = 619,150) was first filtered for some data errors where responses were 0 for some questions (given question responses need to be 1 to 5), and if any rows contained a 0 in a response, the whole row was removed (resultant n = 410,376). The age of clients was then used to remove data for clients who were below the age of 16 (resultant n = 385,902), and then data was filtered to only include data where the respondent was in Australia (resultant n = 14,163). These respondents were made up of 5,252 males (between the ages of 16 – 95) and 8,911 females (between the ages of 16 – 88). Given that the respondent age was skewed positively, with a mean age of 26.9, the data was binned into age groups to allow approximately equally sized groups (n ~ 2,000) for comparison. The resultant age groups were 16-17 year old (n = 2,509), 18-19 year olds (n = 2,279), 20-21 year olds (n = 1,624), 22-25 year olds (n = 1,742), 26-30 year olds (n = 2,032), 31-39 year olds (n = 2,128), and 40 year olds plus (n = 1,849). Percentiles for each factor and facet, based upon gender and age, were then created in the R statistical program (Version 4.2.0; R Core Team, 2022) using the cNORM package (Version 3.0.2; Lenhard & Lenhard, 2021). This method of norming estimates percentiles on the basis of the raw data without requiring assumptions about the distribution of the raw data. This method minimises bias arising from sampling and measurement error, while handling marked deviations from normality, addressing bottom or ceiling effects and capturing almost all of the variance in the original norm data sample (Lenhard & Lenhard, 2021).\nProfessional Access\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [
+  {
+   "page": 6,
+   "text": "Scoring: circle one number per item, then add the circled numbers. Each facet is the sum of its 4 items (4–20); each factor is the sum of its 6 facet scores (24–120).",
+   "y": 606.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Imagination (Items 3, 33, 63, 93):",
+   "y": 84.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Artistic Interests (Items 8, 38, 68, 98):",
+   "y": 106.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Emotionality (Items 13, 43, 73, 103):",
+   "y": 128.2,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Adventurousness (Items 18, 48, 78, 108):",
+   "y": 150.0,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Intellect (Items 23, 53, 83, 113):",
+   "y": 171.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Liberalism (Items 28, 58, 88, 118):",
+   "y": 193.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Openness to Experience factor score (sum of the 6 facet scores above)",
+   "y": 226.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Self-Efficacy (Items 5, 35, 65, 95):",
+   "y": 282.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Orderliness (Items 10, 40, 70, 100):",
+   "y": 304.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Dutifulness (Items 15, 45, 75, 105):",
+   "y": 326.2,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Achievement Striving (Items 20, 50, 80, 110):",
+   "y": 348.0,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Self-Discipline (Items 25, 55, 85, 115):",
+   "y": 369.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Cautiousness (Items 30, 60, 90, 120):",
+   "y": 391.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Conscientiousness factor score (sum of the 6 facet scores above)",
+   "y": 424.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Friendliness (Items 2, 32, 62, 92):",
+   "y": 480.0,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Gregariousness (Items 7, 37, 67, 97):",
+   "y": 501.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Assertiveness (Items 12, 42, 72, 102):",
+   "y": 523.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Activity Level (Items 17, 47, 77, 107):",
+   "y": 545.2,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Excitement Seeking (Items 22, 52, 82, 112):",
+   "y": 567.0,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Cheerfulness (Items 27, 57, 87, 117):",
+   "y": 588.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 7,
+   "text": "Extraversion factor score (sum of the 6 facet scores above)",
+   "y": 621.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Trust (Items 4, 34, 64, 94):",
+   "y": 84.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Morality (Items 9, 39, 69, 99):",
+   "y": 106.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Altruism (Items 14, 44, 74, 104):",
+   "y": 128.2,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Cooperation (Items 19, 49, 79, 109):",
+   "y": 150.0,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Modesty (Items 24, 54, 84, 114):",
+   "y": 171.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Sympathy (Items 29, 59, 89, 119):",
+   "y": 193.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Agreeableness factor score (sum of the 6 facet scores above)",
+   "y": 226.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Anxiety (Items 1, 31, 61, 91):",
+   "y": 282.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Anger (Items 6, 36, 66, 96):",
+   "y": 304.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Depression (Items 11, 41, 71, 101):",
+   "y": 326.2,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Self-Consciousness (Items 16, 46, 76, 106):",
+   "y": 348.0,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Immoderation (Items 21, 51, 81, 111):",
+   "y": 369.8,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Vulnerability (Items 26, 56, 86, 116):",
+   "y": 391.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Neuroticism factor score (sum of the 6 facet scores above)",
+   "y": 424.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 8,
+   "text": "Johnson, J. A. (2014). Measuring thirty facets of the five factor model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in",
+   "y": 469.5,
+   "url": null,
+   "sha256": "192fed5aa50c233ade67f4c354e48cf99a7268946ae382dbcae1c8adf602453c",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  }
+ ],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+ "remaining_work": [
+  "Normative conversions and clinical publication require separate source-specific review.",
+  "Age/gender percentile lookups and derived personality descriptors are not implemented."
+ ],
+ "implementation_status": {
+  "raw_calculation": "draft_implemented",
+  "interpretation": "not_compiled",
+  "normative_conversion": "not_implemented",
+  "clinical_use": "not_approved"
+ },
+ "runtime_module": "definition_runtime.py"
+}

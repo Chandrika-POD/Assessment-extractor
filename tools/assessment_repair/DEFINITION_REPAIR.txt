@@ -1,0 +1,85 @@
+14 November 2026 source-bound definition repairs — schema 2.3.0
+
+Latest combined file:
+assessment-exports/novopsych-all-186-assessments-definition-repaired-20261114.json
+
+Scope and evidence
+The saved 13 November live refresh remains the immutable input. This pass reuses
+its page/PDF content; it does not perform another network extraction. The input
+SHA-256 is checked before applying the reviewed 44-record repair map. All 186
+records and 4,927 fields remain. Source documents, context, tables, assets,
+references, original IDs and all 434 previous rules are preserved.
+
+Results
+- 295 additional source-bound arithmetic rules across 42 of the 44 audited
+  records, including partial MAPsy coverage. Total: 729 rules in 183 records.
+- asQ has a nonnumeric draft screening protocol, not a fabricated total.
+- SDQ remains without a selected questionnaire; LEC-5 remains a descriptive
+  exposure inventory without a formal numeric score.
+- WSAS Q1 now has its actual question stem and the separate non-working option.
+  Existing option IDs are preserved; the additional choice is O10. Its printed
+  value stays null (the PDF prints a dash); the explicit scoring override is 0.
+- CRAFFT, BAM, MAPsy, asQ and WHODAS gained source-defined eligibility handling.
+- LSS and BES scoring guidance is restored from the retained context sections.
+- Signed composites, rule-specific reversals, endorsement counts, optional-item
+  means and consistent ORT source-column selection are implemented.
+
+Consumer contract
+Use definition_runtime.py for development/testing of schema 2.3 definitions.
+Do not pass these rules to the older source_formulas.py evaluator: it does not
+understand the new conditions, transforms, overrides or context constraints.
+All scoring.enabled and ready_for_clinical_use flags remain false. Calling the
+draft test evaluator is not clinical publication or an approval mechanism.
+
+Answers use stable item and option IDs, e.g. {"Q1": "O2"}; numeric fields accept
+numbers and multiple-choice fields accept arrays of option IDs. Validate against
+each input_spec.answer_schema. A source option's printed number/base score is
+not sufficient to compute the result: apply the rule's value_field, transforms,
+coefficients, thresholds, overrides, eligibility and multiplier exactly once.
+
+condition() returns True, False or None (unknown). Do not coerce unknown to
+False. evaluate() returns None for unavailable results, including missing
+required answers, unknown eligibility and NA. It returns a real zero for a
+scored zero. Explicit ineligible_item_policy governs known skips. Invalid answer
+values or inconsistent ORT columns raise an exception. Optional inputs are
+excluded from a mean only where optional_item_ids explicitly allows it.
+
+WHODAS requires boolean context attends_school or works_or_studies as specified
+by administration.respondent_context_requirements. ORT requires source_scoring_sex
+matching a supported source column and consistent options; never infer it.
+
+evaluate_protocol() returns asQ screening states only, without autonomous
+clinical actions. evaluate_profile() evaluates the PMQ-9/PHQ-9 paired raw-score
+profile. interpret() returns only explicit source bands stored on a rule.
+Gemini should administer reviewed definitions and collect confirmed answers;
+deterministic application code should apply the chosen version's scoring rules.
+
+Remaining work (not solved by another generic scrape)
+Every changed record has scoring.remaining_work and scoring.implementation_status.
+The accompanying definition-repair-report-20261114.json lists all 44 records.
+Presence of draft rules does not mean full scoring coverage or clinical readiness.
+- SDQ: appropriate variant-specific questionnaire and scoring source needed.
+- MAPsy: only Harmful Substance Use raw sum implemented; remaining construct
+  memberships, reverse keys and normative conversions are not compiled.
+- ECR-S: source conflict, web subscale range 6–36 versus PDF values implying
+  6–42. PDF-based raw calculations are drafts; norm/pattern interpretation awaits
+  reconciliation.
+- WHODAS: complex IRT conversion, normative scoring and source-specific prorating
+  remain unimplemented. Child overall domain-weighted 0–100 formula is ambiguous
+  and is withheld; explicit domain percentages and overall item mean are present.
+- WSR-II: NA withholds the affected domain; NA denominator policy needs review.
+- Normative lookups, age/sex reference selection, pattern classifiers,
+  longitudinal change and clinical actions remain uncompiled where noted.
+  They are retained in the source text, not silently guessed by an LLM.
+- Existing extraction/completeness and rights review flags are preserved. The
+  repair does not certify that every source passage or questionnaire is complete.
+
+Rebuild (from repository root; no network)
+python3 tools/assessment_repair/repair_definitions.py --project . --output assessment-exports/novopsych-all-186-assessments-definition-repaired-20261114.json
+
+Validate
+python3 -m unittest discover -s tools/assessment_repair -p 'test_*.py' -v
+
+Download
+python3 tools/assessment_repair/serve_downloads.py --port 4185
+Open http://127.0.0.1:4185/ . Reading/downloading files does not run extraction.

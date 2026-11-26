@@ -1,0 +1,659 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Assessment response-complete review draft, version 2.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "assessment_id",
+    "definition_version",
+    "status",
+    "cleaned_on",
+    "assessment",
+    "administration",
+    "questionnaire",
+    "scoring",
+    "context_sections",
+    "references",
+    "tables",
+    "assets",
+    "conversation_policy",
+    "review",
+    "provenance",
+    "rights",
+    "source_documents",
+    "source_refresh"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.2.0"
+    },
+    "assessment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "definition_version": {
+      "const": "1.0.0-draft.5"
+    },
+    "status": {
+      "const": "draft"
+    },
+    "cleaned_on": {
+      "type": "string"
+    },
+    "assessment": {
+      "type": "object",
+      "required": [
+        "name",
+        "language",
+        "reference_period",
+        "target_population",
+        "intended_uses"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reference_period": {
+          "type": "object",
+          "required": [
+            "structured",
+            "instruction_claims",
+            "status"
+          ]
+        }
+      }
+    },
+    "administration": {
+      "type": "object",
+      "required": [
+        "instructions",
+        "instructions_source",
+        "item_order",
+        "selected_form_url"
+      ],
+      "properties": {
+        "instructions": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_order": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "questionnaire": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "item_count",
+        "items",
+        "response_sets"
+      ],
+      "properties": {
+        "item_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "response_sets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/response_set"
+          }
+        },
+        "source_availability": {
+          "type": "object"
+        }
+      }
+    },
+    "scoring": {
+      "type": "object",
+      "required": [
+        "status",
+        "enabled",
+        "rules",
+        "missing_item_policy"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "source_checked_draft",
+            "requires_rule_review",
+            "source_arithmetic_draft",
+            "descriptive_exposure_inventory"
+          ]
+        },
+        "enabled": {
+          "const": false
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "method",
+              "item_ids",
+              "multiplier",
+              "minimum",
+              "maximum",
+              "severity_bands"
+            ],
+            "properties": {
+              "method": {
+                "enum": [
+                  "sum",
+                  "mean",
+                  "count_threshold"
+                ]
+              },
+              "item_ids": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "multiplier": {
+                "type": "number"
+              },
+              "value_field": {
+                "enum": [
+                  "score",
+                  "printed_value"
+                ]
+              },
+              "enabled": {
+                "const": false
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "method": {
+                      "const": "count_threshold"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "threshold",
+                    "operator"
+                  ],
+                  "properties": {
+                    "threshold": {
+                      "type": "number"
+                    },
+                    "operator": {
+                      "enum": [
+                        ">=",
+                        "<="
+                      ]
+                    },
+                    "item_thresholds": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "context_sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "text",
+          "source_url",
+          "review_status"
+        ]
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "citation",
+          "source_url"
+        ]
+      }
+    },
+    "tables": {
+      "type": "array"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "role",
+          "source_url",
+          "sha256",
+          "archive_path",
+          "runtime_context_allowed"
+        ],
+        "properties": {
+          "runtime_context_allowed": {
+            "const": false
+          },
+          "archive_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "conversation_policy": {
+      "type": "object",
+      "required": [
+        "status",
+        "context_allowlist",
+        "send_asset_bytes_or_sample_reports"
+      ],
+      "properties": {
+        "send_asset_bytes_or_sample_reports": {
+          "const": false
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "ready_for_clinical_use",
+        "questionnaire_status",
+        "questionnaire_completeness_verified",
+        "issues"
+      ],
+      "properties": {
+        "ready_for_clinical_use": {
+          "const": false
+        },
+        "questionnaire_completeness_verified": {
+          "const": false
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "code",
+              "detail"
+            ]
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source_url",
+        "raw_extraction_path",
+        "raw_extraction_sha256",
+        "layout_evidence_path"
+      ]
+    },
+    "rights": {
+      "type": "object"
+    },
+    "source_documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "url",
+          "sha256",
+          "page_count",
+          "pages",
+          "runtime_context_allowed"
+        ],
+        "properties": {
+          "pages": {
+            "type": "array"
+          },
+          "runtime_context_allowed": {
+            "const": false
+          }
+        }
+      }
+    },
+    "source_refresh": {
+      "type": "object",
+      "required": [
+        "page_status",
+        "selected_questionnaire",
+        "documents",
+        "sections",
+        "tables"
+      ]
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "order",
+        "source_label",
+        "text",
+        "response_type",
+        "selection_mode",
+        "response_set_id",
+        "reverse_scored",
+        "printed_input_unit",
+        "source",
+        "review_status",
+        "review_flags",
+        "input_spec",
+        "options",
+        "score_encoding"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^Q[1-9][0-9]*(?:_[a-z_]+)?$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 3
+        },
+        "response_type": {
+          "enum": [
+            "choice",
+            "single_choice",
+            "multiple_choice",
+            "integer",
+            "number",
+            "text"
+          ]
+        },
+        "selection_mode": {
+          "enum": [
+            "single",
+            "multiple",
+            null
+          ]
+        },
+        "response_set_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reverse_scored": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "printed_input_unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "url",
+            "sha256",
+            "page",
+            "bbox",
+            "method"
+          ],
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "page": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "bbox": {
+              "type": [
+                "array",
+                "null"
+              ]
+            }
+          }
+        },
+        "review_status": {
+          "type": "string"
+        },
+        "review_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "input_spec": {
+          "type": "object",
+          "required": [
+            "kind",
+            "answer_schema"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "choice",
+                "single_choice",
+                "multiple_choice",
+                "integer",
+                "number",
+                "text"
+              ]
+            },
+            "answer_schema": {
+              "type": "object"
+            }
+          }
+        },
+        "display_if": {
+          "type": "object",
+          "required": [
+            "item_id",
+            "operator",
+            "value"
+          ],
+          "properties": {
+            "operator": {
+              "const": "equals"
+            }
+          }
+        },
+        "context_text": {
+          "type": "string"
+        },
+        "context_origin": {
+          "type": "string"
+        },
+        "context_source": {
+          "type": "object"
+        },
+        "score_encoding": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "text",
+              "source_label",
+              "label_origin",
+              "printed_value",
+              "score",
+              "score_status",
+              "used_by_scoring_rules"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "label_origin": {
+                "type": "string"
+              },
+              "printed_value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "score": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "score_status": {
+                "enum": [
+                  "draft_rule_value",
+                  "not_assigned"
+                ]
+              },
+              "used_by_scoring_rules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "response_set": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "options",
+        "mapping_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "mapping_status": {
+          "enum": [
+            "printed_values_only_scores_unverified",
+            "source_checked_draft",
+            "source_checked_categorical_options_unscored",
+            "source_arithmetic_draft"
+          ]
+        },
+        "options": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "printed_value",
+              "score",
+              "display_label",
+              "display_label_origin"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "printed_value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "score": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "display_label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "display_label_origin": {
+                "enum": [
+                  "printed_label",
+                  "printed_number_only"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$id": "https://assessment-extractor.local/definition-v2.2.schema.json"
+}

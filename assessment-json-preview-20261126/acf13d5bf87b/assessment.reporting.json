@@ -1,0 +1,803 @@
+{
+ "version": "2.0.0-draft.1",
+ "status": "draft_requires_clinical_review",
+ "clinical_scoring_enabled": false,
+ "metrics": [
+  {
+   "rule_id": "total_raw",
+   "label": "Total raw",
+   "minimum": 0,
+   "maximum": 63,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/0",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q21"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "depression_raw",
+   "label": "Depression raw",
+   "minimum": 0,
+   "maximum": 21,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/1",
+   "item_ids": [
+    "Q3",
+    "Q5",
+    "Q10",
+    "Q13",
+    "Q16",
+    "Q17",
+    "Q21"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "depression_doubled",
+   "label": "Depression doubled",
+   "minimum": 0,
+   "maximum": 42,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/2",
+   "item_ids": [
+    "Q3",
+    "Q5",
+    "Q10",
+    "Q13",
+    "Q16",
+    "Q17",
+    "Q21"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "anxiety_raw",
+   "label": "Anxiety raw",
+   "minimum": 0,
+   "maximum": 21,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/3",
+   "item_ids": [
+    "Q2",
+    "Q4",
+    "Q7",
+    "Q9",
+    "Q15",
+    "Q19",
+    "Q20"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "anxiety_doubled",
+   "label": "Anxiety doubled",
+   "minimum": 0,
+   "maximum": 42,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/4",
+   "item_ids": [
+    "Q2",
+    "Q4",
+    "Q7",
+    "Q9",
+    "Q15",
+    "Q19",
+    "Q20"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "stress_raw",
+   "label": "Stress raw",
+   "minimum": 0,
+   "maximum": 21,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/5",
+   "item_ids": [
+    "Q1",
+    "Q6",
+    "Q8",
+    "Q11",
+    "Q12",
+    "Q14",
+    "Q18"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "stress_doubled",
+   "label": "Stress doubled",
+   "minimum": 0,
+   "maximum": 42,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/6",
+   "item_ids": [
+    "Q1",
+    "Q6",
+    "Q8",
+    "Q11",
+    "Q12",
+    "Q14",
+    "Q18"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  }
+ ],
+ "charts": [
+  {
+   "id": "total_raw",
+   "title": "Total raw",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "total_raw",
+     "label": "Total raw",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 63,
+   "axis_unit": "score"
+  },
+  {
+   "id": "depression_raw",
+   "title": "Depression raw",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "depression_raw",
+     "label": "Depression raw",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 21,
+   "axis_unit": "score"
+  },
+  {
+   "id": "depression_doubled",
+   "title": "Depression doubled",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "depression_doubled",
+     "label": "Depression doubled",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 42,
+   "axis_unit": "score"
+  },
+  {
+   "id": "anxiety_raw",
+   "title": "Anxiety raw",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "anxiety_raw",
+     "label": "Anxiety raw",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 21,
+   "axis_unit": "score"
+  },
+  {
+   "id": "anxiety_doubled",
+   "title": "Anxiety doubled",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "anxiety_doubled",
+     "label": "Anxiety doubled",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 42,
+   "axis_unit": "score"
+  },
+  {
+   "id": "stress_raw",
+   "title": "Stress raw",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "stress_raw",
+     "label": "Stress raw",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 21,
+   "axis_unit": "score"
+  },
+  {
+   "id": "stress_doubled",
+   "title": "Stress doubled",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "stress_doubled",
+     "label": "Stress doubled",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 42,
+   "axis_unit": "score"
+  }
+ ],
+ "comparisons": {
+  "reference_visits": [
+   "previous",
+   "baseline"
+  ],
+  "delta_formula": "current_minus_reference",
+  "deduplicate_same_reference_visit": true,
+  "require_same_assessment_definition_language_and_scoring_version": true,
+  "missing_result": "withhold_comparison",
+  "single_visit": "show_current_scores_only",
+  "date_source": "saved_session_completion_timestamp",
+  "require_compatible_respondent_context": true,
+  "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+  "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+  "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+ },
+ "percentiles": {
+  "enabled": false,
+  "reason": "verified_lookup_not_available"
+ },
+ "interpretation": {
+  "method": "deterministic_templates",
+  "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+  "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+  "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+  "clinical_significance": "not_implemented_requires_review",
+  "diagnosis": "not_inferred",
+  "severity_source": "not_compiled",
+  "overall_total": "total_raw",
+  "combine_metrics_into_new_total": false,
+  "source_guidance_ref": "/scoring/source_guidance",
+  "source_guidance_use": "reference_text_for_review_not_executable_rules",
+  "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+  "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+  "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+ },
+ "source_evidence": {
+  "questionnaire_sha256": "32cd9624bb956232d1cf6bb65a32df620ab30c8701e5974a1667e01f99c7da2f",
+  "guidance_titles": [
+   "DASS-21 Scoring & Interpretation",
+   "Should I rely on the severity band or the percentile when interpreting a DASS-21 result?",
+   "How do I know whether a change in DASS-21 scores between sessions is clinically meaningful?"
+  ]
+ },
+ "mode": "numeric_scores",
+ "required_context": [],
+ "coverage": {
+  "questionnaire_available": true,
+  "numeric_rule_count": 7,
+  "rules_included": [
+   "total_raw",
+   "depression_raw",
+   "depression_doubled",
+   "anxiety_raw",
+   "anxiety_doubled",
+   "stress_raw",
+   "stress_doubled"
+  ],
+  "raw_calculation_status": "draft_rules_available",
+  "interpretation_status": "requires_review",
+  "full_source_coverage_verified": false,
+  "clinical_review_complete": false,
+  "remaining_work": [],
+  "review_issue_codes": [
+   "independent_review_pending"
+  ],
+  "reference_guidance_only": false,
+  "missing_direction_rule_ids": [
+   "total_raw",
+   "depression_raw",
+   "depression_doubled",
+   "anxiety_raw",
+   "anxiety_doubled",
+   "stress_raw",
+   "stress_doubled"
+  ]
+ },
+ "sections": [
+  {
+   "id": "patient_details",
+   "enabled": true,
+   "source": "saved_patient_and_session"
+  },
+  {
+   "id": "assessment_summary",
+   "enabled": true,
+   "source": "assessment_and_reporting_coverage"
+  },
+  {
+   "id": "results",
+   "enabled": true,
+   "source": "reporting.metrics"
+  },
+  {
+   "id": "score_charts",
+   "enabled": true,
+   "source": "reporting.charts",
+   "single_visit": "range_bar",
+   "repeated_visits": "line_chart"
+  },
+  {
+   "id": "comparisons",
+   "enabled": true,
+   "source": "compatible_saved_sessions"
+  },
+  {
+   "id": "protocol_result",
+   "enabled": false,
+   "source": "scoring.protocol"
+  },
+  {
+   "id": "paired_profile",
+   "enabled": false,
+   "source": "scoring.paired_profile"
+  },
+  {
+   "id": "response_history",
+   "enabled": true,
+   "source": "reporting.item_history"
+  },
+  {
+   "id": "responses",
+   "enabled": true,
+   "source": "reporting.response_groups"
+  },
+  {
+   "id": "source_guidance",
+   "enabled": true,
+   "source": "scoring.source_guidance",
+   "role": "reference_material_requires_review"
+  },
+  {
+   "id": "limitations",
+   "enabled": true,
+   "source": "reporting.coverage"
+  }
+ ],
+ "response_groups": [
+  {
+   "id": "total_raw",
+   "label": "Total raw",
+   "rule_id": "total_raw",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q21"
+   ]
+  },
+  {
+   "id": "depression_raw",
+   "label": "Depression raw",
+   "rule_id": "depression_raw",
+   "item_ids": [
+    "Q3",
+    "Q5",
+    "Q10",
+    "Q13",
+    "Q16",
+    "Q17",
+    "Q21"
+   ]
+  },
+  {
+   "id": "depression_doubled",
+   "label": "Depression doubled",
+   "rule_id": "depression_doubled",
+   "item_ids": [
+    "Q3",
+    "Q5",
+    "Q10",
+    "Q13",
+    "Q16",
+    "Q17",
+    "Q21"
+   ]
+  },
+  {
+   "id": "anxiety_raw",
+   "label": "Anxiety raw",
+   "rule_id": "anxiety_raw",
+   "item_ids": [
+    "Q2",
+    "Q4",
+    "Q7",
+    "Q9",
+    "Q15",
+    "Q19",
+    "Q20"
+   ]
+  },
+  {
+   "id": "anxiety_doubled",
+   "label": "Anxiety doubled",
+   "rule_id": "anxiety_doubled",
+   "item_ids": [
+    "Q2",
+    "Q4",
+    "Q7",
+    "Q9",
+    "Q15",
+    "Q19",
+    "Q20"
+   ]
+  },
+  {
+   "id": "stress_raw",
+   "label": "Stress raw",
+   "rule_id": "stress_raw",
+   "item_ids": [
+    "Q1",
+    "Q6",
+    "Q8",
+    "Q11",
+    "Q12",
+    "Q14",
+    "Q18"
+   ]
+  },
+  {
+   "id": "stress_doubled",
+   "label": "Stress doubled",
+   "rule_id": "stress_doubled",
+   "item_ids": [
+    "Q1",
+    "Q6",
+    "Q8",
+    "Q11",
+    "Q12",
+    "Q14",
+    "Q18"
+   ]
+  }
+ ],
+ "item_history": [
+  {
+   "item_id": "Q1",
+   "question_ref": "/questionnaire/items/0",
+   "source_label": "1",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q2",
+   "question_ref": "/questionnaire/items/1",
+   "source_label": "2",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q3",
+   "question_ref": "/questionnaire/items/2",
+   "source_label": "3",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q4",
+   "question_ref": "/questionnaire/items/3",
+   "source_label": "4",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q5",
+   "question_ref": "/questionnaire/items/4",
+   "source_label": "5",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q6",
+   "question_ref": "/questionnaire/items/5",
+   "source_label": "6",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q7",
+   "question_ref": "/questionnaire/items/6",
+   "source_label": "7",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q8",
+   "question_ref": "/questionnaire/items/7",
+   "source_label": "8",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q9",
+   "question_ref": "/questionnaire/items/8",
+   "source_label": "9",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q10",
+   "question_ref": "/questionnaire/items/9",
+   "source_label": "10",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q11",
+   "question_ref": "/questionnaire/items/10",
+   "source_label": "11",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q12",
+   "question_ref": "/questionnaire/items/11",
+   "source_label": "12",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q13",
+   "question_ref": "/questionnaire/items/12",
+   "source_label": "13",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q14",
+   "question_ref": "/questionnaire/items/13",
+   "source_label": "14",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q15",
+   "question_ref": "/questionnaire/items/14",
+   "source_label": "15",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q16",
+   "question_ref": "/questionnaire/items/15",
+   "source_label": "16",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q17",
+   "question_ref": "/questionnaire/items/16",
+   "source_label": "17",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q18",
+   "question_ref": "/questionnaire/items/17",
+   "source_label": "18",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q19",
+   "question_ref": "/questionnaire/items/18",
+   "source_label": "19",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q20",
+   "question_ref": "/questionnaire/items/19",
+   "source_label": "20",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q21",
+   "question_ref": "/questionnaire/items/20",
+   "source_label": "21",
+   "response_type": "single_choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  }
+ ],
+ "protocol": null,
+ "paired_profile": null
+}

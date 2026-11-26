@@ -1,0 +1,1068 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "opioid-risk-tool-ort--5141a0590370",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Opioid Risk Tool (ORT)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Opioid Risk Tool (ORT) is a brief, self-report or clinician rated screening tool designed for use with adult patients in primary care settings to assess risk for opioid abuse among individuals prescribed opioids for treatment of chronic pain. Patients categorized as high-risk are at increased likelihood of future abusive drug-related behaviours. This tool is best administered to patients upon an initial visit prior to beginning opioid therapy, and can inform the risk/benefit decisions around prescribing opioid medication.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Please mark each question as either Yes or No depending on if the question applies to you. For scoring purposes, please select options based on your sex assigned at birth; the ORT applies different item weights for males and females.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details.",
+  "respondent_context_requirements": [
+   {
+    "key": "source_scoring_sex",
+    "enum": [
+     "female",
+     "male"
+    ],
+    "reason": "Source sex-specific weighting. Withhold if unsupported or unknown; never infer it."
+   }
+  ]
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Total weighted score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [
+     {
+      "label": "Low Risk",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 3
+     },
+     {
+      "label": "Moderate Risk",
+      "minimum_inclusive": 4,
+      "maximum_inclusive": 7
+     },
+     {
+      "label": "High Risk",
+      "minimum_inclusive": 8,
+      "maximum_inclusive": 26
+     }
+    ],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+     "page_url": null,
+     "page_sha256": "d6516cf68cc372b2a2645ce68d2c457b0980a39efe2ddc4d9fa1f926eded7fb8",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "context_constraints": [
+     {
+      "context_key": "source_scoring_sex",
+      "allowed_values": [
+       "female",
+       "male"
+      ],
+      "allowed_options": {
+       "Q1": {
+        "female": [
+         "O1",
+         "O2"
+        ],
+        "male": [
+         "O1",
+         "O3"
+        ]
+       },
+       "Q2": {
+        "female": [
+         "O1",
+         "O2"
+        ],
+        "male": [
+         "O1",
+         "O3"
+        ]
+       },
+       "Q8": {
+        "female": [
+         "O1",
+         "O2"
+        ],
+        "male": [
+         "O1",
+         "O3"
+        ]
+       }
+      }
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 26,
+    "bounds_basis": "Maximum over consistent female or male source columns; mixed-column maximum 29 is invalid."
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+   "page_url": null,
+   "page_sha256": "d6516cf68cc372b2a2645ce68d2c457b0980a39efe2ddc4d9fa1f926eded7fb8",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "ORT Scoring & Interpretation",
+    "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Total Score (sum of circled values)",
+    "y": 450.7,
+    "url": null,
+    "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Note: items 1, 2 and 8 are weighted differently for male and female respondents (Webster, 2005) - circle the value under the column matching the respondent's sex.",
+    "y": 475.5,
+    "url": null,
+    "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "partial_source_bands",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": [
+  {
+   "id": "C1",
+   "title": "Opioid Risk Tool (ORT)",
+   "text": "The Opioid Risk Tool (ORT) is a brief, self-report or clinician rated screening tool designed for use with adult patients in primary care settings to assess risk for opioid abuse among individuals prescribed opioids for treatment of chronic pain. Patients categorized as high-risk are at increased likelihood of future abusive drug-related behaviours. This tool is best administered to patients upon an initial visit prior to beginning opioid therapy, and can inform the risk/benefit decisions around prescribing opioid medication.\n2 minutes\nAges 18+\nHealth\nAdminister Now",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C2",
+   "title": "ORT Overview",
+   "text": "The ORT asks questions about the following risk factors based on scientific literature: personal and family history of substance abuse; age; history of preadolescent sexual abuse; and certain psychological diseases.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C3",
+   "title": "ORT Scoring & Interpretation",
+   "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C4",
+   "title": "ORT Psychometric Properties",
+   "text": "In the initial validation research by Webster (2005) administered the ORT to 85 patients treated with opioids at pain clinics. For those patients with a risk category of low, 17 out of 18 (94.4%) did not display an aberrant behaviour. For those patients with a risk category of high, 40 out of 44 (90.9%) did display an aberrant behaviour. The ORT displayed excellent discrimination for both the male (c = 0.82) and the female (c = 0.85) prognostic models. Among patients prescribed opioids for chronic pain, the ORT exhibited a high degree of sensitivity and specificity for determining which individuals are at risk for opioid-related, aberrant behaviours.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "LIVE_C5",
+   "title": "Overview",
+   "text": "Search\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C6",
+   "title": "Opioid Risk Tool (ORT)",
+   "text": "The Opioid Risk Tool (ORT) is a brief, self-report or clinician rated screening tool designed for use with adult patients in primary care settings to assess risk for opioid abuse among individuals prescribed opioids for treatment of chronic pain. Patients categorized as high-risk are at increased likelihood of future abusive drug-related behaviours. This tool is best administered to patients upon an initial visit prior to beginning opioid therapy, and can inform the risk/benefit decisions around prescribing opioid medication.\n2 minutes\nAges 18+\nHealth\nAdminister Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C7",
+   "title": "ORT Psychometric Properties",
+   "text": "Professional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C8",
+   "title": "ORT Overview",
+   "text": "The ORT asks questions about the following risk factors based on scientific literature: personal and family history of substance abuse; age; history of preadolescent sexual abuse; and certain psychological diseases.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C9",
+   "title": "ORT Scoring & Interpretation",
+   "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C10",
+   "title": "ORT Psychometric Properties",
+   "text": "In the initial validation research by Webster (2005) administered the ORT to 85 patients treated with opioids at pain clinics. For those patients with a risk category of low, 17 out of 18 (94.4%) did not display an aberrant behaviour. For those patients with a risk category of high, 40 out of 44 (90.9%) did display an aberrant behaviour. The ORT displayed excellent discrimination for both the male (c = 0.82) and the female (c = 0.85) prognostic models. Among patients prescribed opioids for chronic pain, the ORT exhibited a high degree of sensitivity and specificity for determining which individuals are at risk for opioid-related, aberrant behaviours.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C11",
+   "title": "",
+   "text": "Professional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C12",
+   "title": "Assess your patients with the Opioid Risk Tool using a NovoPsych account",
+   "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C13",
+   "title": "Developer",
+   "text": "Webster LR. Predicting aberrant behaviors in opioid-treated patients: Preliminary validation of the opioid risk tool. Pain Medicine. 2005;6(6):432-442. Used with permission.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C14",
+   "title": "Alcohol Use Disorders Identification Test (AUDIT)",
+   "text": "Also known as: AUDIT , Alcohol Use Disorders Identification Test , Alcohol use disorder scale , Alcohol problems screening\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C15",
+   "title": "Leeds Dependence Questionnaire (LDQ)",
+   "text": "Also known as: LDQ , Leeds Dependence Questionnaire , Substance dependence questionnaire , Addiction severity measure , Psychological dependence assessment\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C16",
+   "title": "Pain Self-Efficacy Questionnaire (PSEQ)",
+   "text": "Also known as: PSEQ , Pain Self-Efficacy Questionnaire , Pain management assessment\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C17",
+   "title": "Personality Inventory for DSM-5 – Short Form (PID-5-SF)",
+   "text": "Also known as: PID-5-SF , PID-5 , DSM-5 personality inventory , Personality disorder assessment , Personality traits questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C18",
+   "title": "Maladaptive Schema Scale (MSS)",
+   "text": "Also known as: MSS , Maladaptive Schema Scale , Early maladaptive schemas questionnaire , Schema therapy measure , Young Schema Questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C19",
+   "title": "Attachment Style Questionnaire – Short Form (ASQ-SF)",
+   "text": "Also known as: ASQ-SF , ASQ , Adult attachment scale , Attachment style assessment\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C20",
+   "title": "Sample Results",
+   "text": "Administer Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C21",
+   "title": "Dr Ben Buchanan",
+   "text": "NovoPsych CEO & Clinical Psychologist\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  }
+ ],
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Webster LR. Predicting aberrant behaviors in opioid-treated patients: Preliminary validation of the opioid risk tool. Pain Medicine. 2005;6(6):432-442. Used with permission.",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Opioid Risk Tool (ORT) PDF",
+   "source_url": null,
+   "sha256": "006e092fcc7645e6d22cf11491ac03603c56b5ceeb928796da23a41fb45041a0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/006e092fcc7645e6d22cf11491ac03603c56b5ceeb928796da23a41fb45041a0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Attachment Style Questionnaire – Short Form (ASQ-SF)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "094a48f6c33028a7e66c88cb983298defdb423c35e2c19e1dcae8e7982683d0b",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/094a48f6c33028a7e66c88cb983298defdb423c35e2c19e1dcae8e7982683d0b.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f5015f2b6d89885e41d4dbfec4b94d393210da3037dabbd550fe5f9c0d379037",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f5015f2b6d89885e41d4dbfec4b94d393210da3037dabbd550fe5f9c0d379037.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Opioid Risk Tool using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 6,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 10
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [],
+   "scoring_rule_count": 1,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "source_draft_1",
+    "label": "Total weighted score",
+    "minimum": 0.0,
+    "maximum": 26,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": "/scoring/rules/0/severity_bands",
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "source_draft_1",
+    "title": "Total weighted score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_1",
+      "label": "Total weighted score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 26,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "rule.severity_bands",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+   "guidance_titles": [
+    "ORT Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [
+   {
+    "key": "source_scoring_sex",
+    "type": "enum",
+    "allowed_values": [
+     "female",
+     "male"
+    ],
+    "required_when": "a dependent question or scoring rule is evaluated",
+    "missing_policy": "withhold_dependent_result"
+   }
+  ],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "source_draft_1"
+   ],
+   "raw_calculation_status": "draft_implemented",
+   "interpretation_status": "partial_source_bands",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "source_draft_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "source_draft_1",
+    "label": "Total weighted score",
+    "rule_id": "source_draft_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "62e71a209ffb8e1f7d9d89debde556eee6d3da88dd4b1ec227578a22fca754e3",
+  "status": "technical_checks_with_limits",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "conditional_review_required",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "pending_source_review",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T11:30:48.453548+00:00",
+  "raw_extraction_sha256": "9197b30f54659a085793e540296b939f31fd83f77abc00ffeb732cd0ff274c45",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Health"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": null,
+    "title": "Alcohol problems screening"
+   },
+   {
+    "url": null,
+    "title": "Psychological dependence assessment"
+   },
+   {
+    "url": null,
+    "title": "Pain management assessment"
+   },
+   {
+    "url": null,
+    "title": "Personality traits questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Young Schema Questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Attachment style assessment"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Drug and Alcohol Initial Assessment"
+   },
+   {
+    "url": null,
+    "title": "Risk Assessment (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Psychiatric Clinical Interview and Assessment (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

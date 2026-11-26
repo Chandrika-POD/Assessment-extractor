@@ -1,0 +1,932 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "fatigue-assessment-scale-fas--4da3697fad5d",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Fatigue Assessment Scale (FAS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The FAS is a 10-item self-report measure of general fatigue (Michielsen et al., 2003). It assesses fatigue as a single overall construct while ensuring coverage of both physical symptoms (e.g., physical exhaustion, lack of energy, tiring quickly) and mental symptoms (e.g., lack of motivation, problems thinking clearly, difficulty initiating tasks). The FAS was originally developed in Dutch by selecting and refining items from four established fatigue questionnaires (Michielsen et al., 2004). It has since been translated into numerous other languages and used across a range of populations and conditions (Hendriks et al., 2018).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "The following 10 statements refer to how you usually feel. For each statement you can choose one out of five answer categories, varying from never to always.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total FAS Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total FAS Score (sum of all 10 items)",
+     "y": 559.5,
+     "url": null,
+     "sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "The commonly cited FAS cut-off scores and severity classifications were derived primarily from research with sarcoidosis patient populations. Scores below 22 are typically interpreted as indicating no substantial fatigue, scores between 22 and 34 as mild-to-moderate fatigue, and scores of 35 or above as severe fatigue. Whilst these thresholds have been widely cited, their validity has not been systematically established across the diverse range of conditions in which the FAS is now used.",
+   "For example, a study examining poststroke fatigue suggested that a cut-off of 24, rather than 22, may be more appropriate for defining clinically significant fatigue in that population. This highlights that optimal thresholds may vary depending on the clinical context and the characteristics of the population being assessed.",
+   "Rather than applying cut-off scores and severity classifications rigidly, clinicians may find it more informative to use the FAS as a dimensional measure, interpreting scores along a continuum. The FAS is particularly valuable for tracking changes in fatigue over time and for facilitating discussion about how fatigue is affecting a person’s daily life, regardless of whether their score falls above or below a particular threshold. When cut-off scores are used, clinicians should be mindful of the limitations of these thresholds and avoid over-interpreting categorical classifications.",
+   "Total FAS scores of 22 or above are commonly cited as indicating the presence of significant fatigue. This threshold corresponds approximately to the 65th percentile of the normative sample of working adults and was originally based on the observation that scores at this level differentiated the majority of patients with sarcoidosis from the general population (De Vries et al., 2004). It is important to note that this cut-off score is not a formally validated threshold for identifying people with clinically significant fatigue."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "Scoring the Fatigue Assessment Scale (FAS)",
+    "text": "The FAS yields a total score between 10 and 50, with higher scores indicating more severe fatigue. Each item is rated on a 5-point Likert-type scale from 1 to 5 reflecting the frequency with which the respondent usually experiences a specific physical or mental symptom of fatigue. Items 4 and 10 are reverse-scored.\n",
+    "source_url": null
+   },
+   {
+    "title": "FAS Normative Data",
+    "text": "The respondent’s total FAS score is expressed as a percentile based on normative data for working adults in the general Dutch population (De Vries et al., 2003; Michielsen et al., 2003), contextualising their score relative to the typical scores of working adults. For example, the 50th percentile represents the typical level of general fatigue among working adults in the general population, while scores on the 90th percentile fall within the top 10% and are considered “Moderate”, and scores on the 99th percentile fall within the top 1% and are considered “Severe”.\n",
+    "source_url": null
+   },
+   {
+    "title": "FAS Cut-off Score",
+    "text": "Total FAS scores of 22 or above are commonly cited as indicating the presence of significant fatigue. This threshold corresponds approximately to the 65th percentile of the normative sample of working adults and was originally based on the observation that scores at this level differentiated the majority of patients with sarcoidosis from the general population (De Vries et al., 2004). It is important to note that this cut-off score is not a formally validated threshold for identifying people with clinically significant fatigue.\n",
+    "source_url": null
+   },
+   {
+    "title": "Normative Data",
+    "text": "Normative data for the FAS are based on a general population sample of 351 Dutch adults aged 21 to 65 years who were working 20 or more hours per week. In this sample, the mean total FAS score was 19.26 (SD = 6.52), with scores approximately normally distributed (De Vries et al., 2003; Michielsen et al., 2003). These data are used to convert the respondent’s total FAS score to a percentile, providing useful information about the severity of their general fatigue relative to working adults in the general population.\n",
+    "source_url": null
+   },
+   {
+    "title": "What is the difference between fatigue and normal tiredness?",
+    "text": "Fatigue, as measured by the FAS, is distinct from the everyday tiredness that most people experience after exertion or inadequate sleep. Whilst normal tiredness typically resolves with rest and is proportionate to activity levels, clinically significant fatigue is persistent, often disproportionate to recent activity, and may not improve substantially with rest or sleep. It can affect a person’s capacity to engage in work, social activities, and self-care, and frequently influences overall quality of life.\nFatigue becomes a clinical concern when it is persistent, causes distress, and interferes with daily functioning. Because it is not always apparent to others or detectable with objective clinical markers, it is important to ask a person about their subjective experience of fatigue.\nThe FAS captures this subjective experience by asking about physical exhaustion, mental exhaustion, energy levels, motivation, and concentration. Higher scores indicate that a person is experiencing more frequent and intense fatigue that is likely affecting their daily functioning, rather than transient tiredness that most people would consider unremarkable.\n",
+    "source_url": null
+   },
+   {
+    "title": "How should clinicians interpret FAS cut-off scores and severity classifications?",
+    "text": "The commonly cited FAS cut-off scores and severity classifications were derived primarily from research with sarcoidosis patient populations. Scores below 22 are typically interpreted as indicating no substantial fatigue, scores between 22 and 34 as mild-to-moderate fatigue, and scores of 35 or above as severe fatigue. Whilst these thresholds have been widely cited, their validity has not been systematically established across the diverse range of conditions in which the FAS is now used.\nFor example, a study examining poststroke fatigue suggested that a cut-off of 24, rather than 22, may be more appropriate for defining clinically significant fatigue in that population. This highlights that optimal thresholds may vary depending on the clinical context and the characteristics of the population being assessed.\nTo provide additional granularity for clinical interpretation, NovoPsych separates the mild-to-moderate range (scores between 22 and 34) into mild fatigue (scores between 22 and 27) and moderate fatigue (scores between 28 and 34). These categories correspond to logical and progressively higher percentile ranges in a normative sample of working adults, though, like the original classifications, they should be used as clinical interpretation guidelines rather than formally validated severity classification thresholds.\nRather than applying cut-off scores and severity classifications rigidly, clinicians may find it more informative to use the FAS as a dimensional measure, interpreting scores along a continuum. The FAS is particularly valuable for tracking changes in fatigue over time and for facilitating discussion about how fatigue is affecting a person’s daily life, regardless of whether their score falls above or below a particular threshold. When cut-off scores are used, clinicians should be mindful of the limitations of these thresholds and avoid over-interpreting categorical classifications.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Physical Fatigue (Items 1, 2, 4, 5, 10):",
+    "y": 495.8,
+    "url": null,
+    "sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Mental Fatigue (Items 3, 6, 7, 8, 9):",
+    "y": 520.5,
+    "url": null,
+    "sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Michielsen, H. J., De Vries, J., & Van Heck, G. L. (2003). Psychometric qualities of a brief self-rated fatigue measure: The Fatigue Assessment Scale. Journal of Psychosomatic Research, 54 (4), 345–352. https://doi.org/10.1016/s0022-3999(02)00392-6",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Cumming, T. B., & Mead, G. (2017). Classifying post-stroke fatigue: Optimal cut-off on the Fatigue Assessment Scale. Journal of Psychosomatic Research, 103 , 147–149. https://doi.org/10.1016/j.jpsychores.2017.10.016\nde Kleijn, W. P. E., De Vries, J., Wijnen, P. A. H. M., & Drent, M. (2011). Minimal (clinically) important differences for the Fatigue Assessment Scale in sarcoidosis. Respiratory Medicine, 105 (9), 1388–1395. https://doi.org/10.1016/j.rmed.2011.05.004\nDe Vries, J., Michielsen, H. J., & Van Heck, G. L. (2003). Assessment of fatigue among working people: A comparison of six questionnaires. Occupational and Environmental Medicine, 60 (Suppl 1), i10–i15. https://doi.org/10.1136/oem.60.suppl_1.i10\nDe Vries, J., Michielsen, H., Van Heck, G. L., & Drent, M. (2004). Measuring fatigue in sarcoidosis: The Fatigue Assessment Scale (FAS). British Journal of Health Psychology, 9 (Pt 3), 279–291. https://doi.org/10.1348/1359107041557048\nDrent, M., Lower, E. E., & De Vries, J. (2012). Sarcoidosis-associated fatigue. European Respiratory Journal, 40 (1), 255–263. https://doi.org/10.1183/09031936.00002512\nHendriks, C., Drent, M., Elfferich, M., & De Vries, J. (2018). The Fatigue Assessment Scale: Quality and availability in sarcoidosis and other diseases. Current Opinion in Pulmonary Medicine, 24 (5), 495–503. https://doi.org/10.1097/MCP.0000000000000496\nMichielsen, H. J., De Vries, J., & Van Heck, G. L. (2003). Psychometric qualities of a brief self-rated fatigue measure: The Fatigue Assessment Scale. Journal of Psychosomatic Research, 54 (4), 345–352. https://doi.org/10.1016/s0022-3999(02)00392-6\nMichielsen, H. J., De Vries, J., Van Heck, G. L., Van de Vijver, F. J. R., & Sijtsma, K. (2004). Examination of the dimensionality of fatigue: The construction of the Fatigue Assessment Scale (FAS). European Journal of Psychological Assessment, 20 (1), 39–48. https://doi.org/10.1027/1015-5759.20.1.39",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Fatigue Assessment Scale (FAS) PDF",
+   "source_url": null,
+   "sha256": "c412f47ceca0f3906579d23931707e16b4888970a931c3a4c345f560550e8c96",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c412f47ceca0f3906579d23931707e16b4888970a931c3a4c345f560550e8c96.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Short Health Anxiety Inventory (SHAI)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "b8c19dccefc5d9b45416f052496e662ebe7e1a071b88504fad14f504f8590546",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b8c19dccefc5d9b45416f052496e662ebe7e1a071b88504fad14f504f8590546.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download FAS PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Simon Baker, Ph.D",
+   "source_url": null,
+   "sha256": "9a09fa7d2de8b2ca61f3f840c48e2cb2c3825b1477285ac7b3d171e6eb16154b",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9a09fa7d2de8b2ca61f3f840c48e2cb2c3825b1477285ac7b3d171e6eb16154b.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "5775aeae7a1767ab1773754f9d64c57180a19353426f2a94a899be98b127047e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5775aeae7a1767ab1773754f9d64c57180a19353426f2a94a899be98b127047e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Fatigue Assessment Scale (FAS)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "a9182f4a058f941939dafc6553149c849190131a0ba011c07f633ba2a48fba99",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/a9182f4a058f941939dafc6553149c849190131a0ba011c07f633ba2a48fba99.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FAS Results Table",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3ff53dff8a2076fd75100d60a0ebeabc904adbe38ba11d0abc1bb411ae9d10e9",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3ff53dff8a2076fd75100d60a0ebeabc904adbe38ba11d0abc1bb411ae9d10e9.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FAS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "5d31a9d7c0d13a1a41758a41234799503bf1247428d01bfb091035a17a323fd9",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5d31a9d7c0d13a1a41758a41234799503bf1247428d01bfb091035a17a323fd9.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FAS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "5f5f08b094d2fafe78dabfe4f3c40846b672538ce1b0181130ae185640eaad00",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5f5f08b094d2fafe78dabfe4f3c40846b672538ce1b0181130ae185640eaad00.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FAS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Fatigue Assessment Scale using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download FAS PDF",
+   "source_url": null,
+   "sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "FAS Sample Results",
+   "source_url": null,
+   "sha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 10
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/c716d7cb50b4f3a772a575c802bed8b8eb75862c47e5025783a6d89ae7628afb.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 4,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total FAS Score",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total FAS Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total FAS Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "75b653666716f6cd5608802b0f8fbd1b000ca27748ed441a76eb8547ddf0e2e3",
+   "guidance_titles": [
+    "Scoring the Fatigue Assessment Scale (FAS)",
+    "FAS Normative Data",
+    "FAS Cut-off Score",
+    "Normative Data",
+    "What is the difference between fatigue and normal tiredness?",
+    "How should clinicians interpret FAS cut-off scores and severity classifications?"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total FAS Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "da1fdddba6540917d9910dde705e09ad29c831d59f517dccff5a4ff0c518cccd",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:07:19.694206+00:00",
+  "raw_extraction_sha256": "d1a69c9036f2962eada4a1eba934490ddd3bd1a4db44d8eabed29dd5d2e3e75d",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Health"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1016/s0022-3999(02)00392-6",
+    "title": "https://doi.org/10.1016/s0022-3999(02)00392-6"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jpsychores.2017.10.016",
+    "title": "https://doi.org/10.1016/j.jpsychores.2017.10.016"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.rmed.2011.05.004",
+    "title": "https://doi.org/10.1016/j.rmed.2011.05.004"
+   },
+   {
+    "url": "https://doi.org/10.1136/oem.60.suppl_1.i10",
+    "title": "https://doi.org/10.1136/oem.60.suppl_1.i10"
+   },
+   {
+    "url": "https://doi.org/10.1348/1359107041557048",
+    "title": "https://doi.org/10.1348/1359107041557048"
+   },
+   {
+    "url": "https://doi.org/10.1183/09031936.00002512",
+    "title": "https://doi.org/10.1183/09031936.00002512"
+   },
+   {
+    "url": "https://doi.org/10.1097/MCP.0000000000000496",
+    "title": "https://doi.org/10.1097/MCP.0000000000000496"
+   },
+   {
+    "url": "https://doi.org/10.1027/1015-5759.20.1.39",
+    "title": "https://doi.org/10.1027/1015-5759.20.1.39"
+   },
+   {
+    "url": null,
+    "title": "Professional burnout measure"
+   },
+   {
+    "url": null,
+    "title": "Professional wellbeing measure"
+   },
+   {
+    "url": null,
+    "title": "Primary care depression scale"
+   },
+   {
+    "url": null,
+    "title": "Tinnitus impact measure"
+   },
+   {
+    "url": null,
+    "title": "Medical worry assessment"
+   },
+   {
+    "url": null,
+    "title": "Download FAS PDF"
+   },
+   {
+    "url": null,
+    "title": "FAS Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Simon Baker, Ph.D"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "GP Letter – Progress Update or Mental Health Treatment Plan Reporting (Letter Template)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,176 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "part_a_raw",
+   "label": "Part A Raw",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 24,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "62fc185f4de2923e9c3b84040b79d0344d0593478df5d8e3a662ac4daf531d4b",
+    "retrieved_at": "2026-11-13T11:56:19.087581+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "part_b_raw",
+   "label": "Part B Raw",
+   "item_ids": [
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 48,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "62fc185f4de2923e9c3b84040b79d0344d0593478df5d8e3a662ac4daf531d4b",
+    "retrieved_at": "2026-11-13T11:56:19.087581+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "total_raw",
+   "label": "Total Raw",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 72,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "62fc185f4de2923e9c3b84040b79d0344d0593478df5d8e3a662ac4daf531d4b",
+    "retrieved_at": "2026-11-13T11:56:19.087581+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  }
+ ],
+ "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+ "rules_provenance": null,
+ "source_rule_excerpts": [
+  "The ASRS demonstrates excellent diagnostic accuracy for adult ADHD. In a validation study by Brevik et al. (2020) comparing 646 clinically diagnosed ADHD adults with 908 controls, the ASRS achieved an Area Under the Curve (AUC) of 0.904, with the 6-item Part A screener performing equally well (AUC 0.903). NovoPsych’s recommended Part A cutoff of 14+ follows the updated scoring guidance from Harvard Medical School (2024), based on Kessler et al. (2007), whose four-level classification of Part A scores (0–9, 10–13, 14–17, 18–24) predicted clinician-diagnosed ADHD with an AUC of 0.90. The full scale showed high internal consistency (Cronbach’s alpha = 0.952), confirming its reliability as a screening instrument.",
+  "The ASRS scoring was updated in 2024 at the suggestion of Harvard Medical School authors to enhance clinical utility and diagnostic accuracy. The key change is moving from a dichotomous scoring system (0 or 1) to a 5-point Likert scale (0 to 4). This provides more nuanced assessment of symptom severity. The updated scoring maintains the Part A cutoff of 14+ for ADHD diagnosis but offers better gradation of symptoms. The original dichotomous scoring is still used for calculating percentage of items endorsed for subtype determination.",
+  "Part A (items 1-6) contains the most predictive items for ADHD diagnosis with a cutoff of 14+, showing high sensitivity and high negative predictive power. Part B provides additional symptom severity information with scores of 27+ being clinically significant. Even if Part A doesn’t reach threshold, a high Part B score and total score percentile above the 79th percentile (raw score of 40) can be diagnostically informative.",
+  "A plot is displayed that shows the client’s Part A score in relation to non-ADHD and ADHD samples (Adler et al., 2018). This plot shows the middle two quartiles (25th to 75th percentiles) as they related to a group of individuals who had been independently assessed as having ADHD, and typical adults without an ADHD diagnosis (the community sample). The cutoff for ADHD is marked at 14, indicating that individuals who score 14 or above show symptoms that are consistent with an ADHD diagnosis.",
+  "Over and above the key interpretation metrics from Part A and Part B, the total score (sum of part A and B) is converted into a percentile to contextualise responses in comparison to normative data of adults (Adler et al., 2018). For example, a percentile of 90 represents that the respondent scored higher than 90 percent of typical adults in their age range in the community. In most cases, someone with ADHD will score higher than the 79th percentile (raw score of 40). The total score is described as:",
+  "While Part A contains the items that have been found to be most predictive of ADHD (Kessler et al., 2007), looking at both the Part B score and description (and percentile) can also be informative about diagnosis in cases where the Part A score doesn’t reach the threshold. This scale should always be used in conjunction with a clinical interview to provide additional clinical information important for diagnosis. A WURS-25 could also be useful to retrospectively evaluate the presence and severity of childhood symptoms of ADHD."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "ASRS Scoring & Interpretation",
+   "text": "ASRS results are presented as Part A, Part B, Total Score and the subscale scores. The primary scoring method is a 5 point Likert scale, from 0 to 4. Older variations of the ASRS use a dichotomous scoring method (0 or 1) which continues to be utilised when calculating the percentage of items endorsed for each sub-type.\n\nPart A scores are most predictive of an ADHD diagnosis (Kessler et al., 2007) and therefore have the most screening and diagnostic utility. However, other aspects of the ASRS can aid in the considerations around applying an ADHD diagnosis based upon overall consistency or differences observed between parts or subscales.\n\nA plot is displayed that shows the client’s Part A score in relation to non-ADHD and ADHD samples (Adler et al., 2018). This plot shows the middle two quartiles (25th to 75th percentiles) as they related to a group of individuals who had been independently assessed as having ADHD, and typical adults without an ADHD diagnosis (the community sample). The cutoff for ADHD is marked at 14, indicating that individuals who score 14 or above show symptoms that are consistent with an ADHD diagnosis.\nCriterion Part A (items 1-6. Scores range from 0 to 24)\nIf the respondent scores 14 or more in Part-A, then the symptom profile of the individual is consistent with a DSM-5-TR ADHD diagnosis in adults (Adler et al., 2006; Kessler et al., 2007). The Part A descriptor provides an indication of whether the respondent meets the DSM criteria, with scores in the high or very high range being considered clinically significant:\nLow: 9 or less\nMild to Moderate: 10-13\nHigh: 14-17\nVery High: 18 or more\nAdditional Symptoms Part B (items 7-18. Scores range from 0 to 48)\nThe scores on Part B provide additional information about a broader set of ADHD symptom severity and the impact that inattention or hyperactivity has on their life. A descriptor in the high or very high range (27 or above) is clinically significant:\nLow: 19 or less\nMild to Moderate: 20-26\nHigh: 27-32\nVery High: 33 or more\nTotal Score (scores range from 0 to 72)\nOver and above the key interpretation metrics from Part A and Part B, the total score (sum of part A and B) is converted into a percentile to contextualise responses in comparison to normative data of adults (Adler et al., 2018). For example, a percentile of 90 represents that the respondent scored higher than 90 percent of typical adults in their age range in the community. In most cases, someone with ADHD will score higher than the 79th percentile (raw score of 40). The total score is described as:\nLow: 30 or less\nMild to Moderate: 31-39\nHigh: 40-49\nVery High: 50 or more\nWhile Part A contains the items that have been found to be most predictive of ADHD (Kessler et al., 2007), looking at both the Part B score and description (and percentile) can also be informative about diagnosis in cases where the Part A score doesn’t reach the threshold. This scale should always be used in conjunction with a clinical interview to provide additional clinical information important for diagnosis. A WURS-25 could also be useful to retrospectively evaluate the presence and severity of childhood symptoms of ADHD.\n",
+   "source_url": null
+  },
+  {
+   "title": "How has the ASRS scoring changed from the original version, and why should I use the updated scoring?",
+   "text": "The ASRS scoring was updated in 2024 at the suggestion of Harvard Medical School authors to enhance clinical utility and diagnostic accuracy. The key change is moving from a dichotomous scoring system (0 or 1) to a 5-point Likert scale (0 to 4). This provides more nuanced assessment of symptom severity. The updated scoring maintains the Part A cutoff of 14+ for ADHD diagnosis but offers better gradation of symptoms. The original dichotomous scoring is still used for calculating percentage of items endorsed for subtype determination.\n",
+   "source_url": null
+  },
+  {
+   "title": "What's the clinical significance of Part A versus Part B scores, and how should I interpret them together?",
+   "text": "Part A (items 1-6) contains the most predictive items for ADHD diagnosis with a cutoff of 14+, showing high sensitivity and high negative predictive power. Part B provides additional symptom severity information with scores of 27+ being clinically significant. Even if Part A doesn’t reach threshold, a high Part B score and total score percentile above the 79th percentile (raw score of 40) can be diagnostically informative.\n",
+   "source_url": null
+  },
+  {
+   "title": "What normative data and percentiles should I reference when interpreting scores?",
+   "text": "The updated ASRS uses normative data from Adler et al. (2018) based on 22,397 adults, including 465 with self-reported ADHD diagnosis. NovoPsych has recalculated the means and standard deviations using a methodology that accounts for inter-item correlations (r = 0.32 within parts and r = 0.74 between Parts A and B).\nADHD group reference values:\nPart A: M = 16.71 (SD = 5.07)\nPart B: M = 32.74 (SD = 9.16)\nTotal Score: M = 49.45 (SD = 13.36)\nCommunity sample reference values:\nPart A: M = 10.88 (SD = 3.76)\nPart B: M = 21.60 (SD = 6.69)\nTotal Score: M = 32.48 (SD = 9.80)\nA total score at the 79th percentile or above (raw score ≥40) typically indicates ADHD. The percentile tables use descriptors (Low, Mild to Moderate, High, Very High) that maintain consistent meaning across all parts of the scale relative to the general population distribution. These calculations provide more accurate variance estimates than earlier versions, though clinicians should note they assume uniform correlations within each part for computational efficiency.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [
+  {
+   "page": 2,
+   "text": "Part A score (Items 1–6):",
+   "y": 168.0,
+   "url": null,
+   "sha256": "5889385ffb743df2880307af45ca71f336e8426c5d0b5fcc4a2b00154f147991",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Part B score (Items 7–18):",
+   "y": 192.8,
+   "url": null,
+   "sha256": "5889385ffb743df2880307af45ca71f336e8426c5d0b5fcc4a2b00154f147991",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  }
+ ],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+}

@@ -1,0 +1,1463 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "depression-anxiety-stress-scale-dass-10--3b7391b71c72",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Depression Anxiety Stress Scale (DASS-10)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Depression Anxiety Stress Scale (DASS-10) is a brief 10-item version of the full version of the Depression Anxiety Stress Scale (DASS-42) . The DASS-10 can determine the overall level of distress as well as provides subscale scores for two symptom clusters: Depression and Anxiety/Stress",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "PAST WEEK"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Please read each statement and select the statement that indicates how much each item has applied to you over the PAST WEEK. There are no right or wrong answers. Do not spend too much time on any statement. The rating scale is as follows: - Never - Did not apply to me at all - Sometimes - Applied to me to some degree, or some of the time - Often - Applied to me to a considerable degree, or a good part of time - Almost Always - Applied to me very much, or most of the time",
+  "instructions_source": {
+   "url": null,
+   "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_raw",
+    "label": "Total",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 30,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "total_mean",
+    "label": "Total mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "anxiety_stress_raw",
+    "label": "Anxiety Stress",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 18,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "anxiety_stress_mean",
+    "label": "Anxiety Stress mean",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "depression_raw",
+    "label": "Depression",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 12,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "depression_mean",
+    "label": "Depression mean",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+     "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "In addition to the raw score being computed, average scores are calculated by dividing the raw score by the number of items, giving a sense of the general pattern of responding at the subscale level. Average scores are helpful for interpretation as they allow comparisons between total score and subscales.",
+   "subclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)",
+   "mild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )",
+   "moderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)",
+   "severe (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)",
+   "extremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)",
+   "When administered more than once, average scores are graphed, showing the change in symptoms over time."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "DASS-10 Scoring & Interpretation",
+    "text": "The total score for questions 1-10 represents overall distress (0 to 30), with higher scores indicating more severe or greater number of symptoms. Two subscales are presented:\nAnxiety-Stress : Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\nDepression : Items 2, 3, 5, 10 (raw score range = 0 to 12)\n\nIn addition to the raw score being computed, average scores are calculated by dividing the raw score by the number of items, giving a sense of the general pattern of responding at the subscale level. Average scores are helpful for interpretation as they allow comparisons between total score and subscales.\n\nOverall scores can be classified into three severity groups:\nsubclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)\nmild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )\nmoderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)\nsevere (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)\nextremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)\nA normative percentile is computed based on a community sample (Halford & Frost, 2021), indicating how the respondent scored in relation to a typical pattern of responding for adults. For example, a percentile of 83 or less indicates the individual has more distress than 83 percent of the normal population, but this puts them in the mild category. In mental health settings it is typical to see people with percentiles in the 90s.\n\nWhen administered more than once, average scores are graphed, showing the change in symptoms over time.\n\nBased on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:\nintensified significantly (increase in score by 5 or more)\nintensified slightly (score increased by between 2 to 4)\nnot significantly changed (score increased by 1, reduced by 1 or did not change at all)\nimproved slightly (score reduced by between 2 to 4)\nimproved significantly (score reduced by 5 or more)\nThe last two questions are used by clinicians to determine whether the client has a potential substance use issue (Question 11) or whether the client has had suicidal ideation (Question 12). Both these items do not contribute towards the overall score or subscale scores, but are highlighted in the the Interpretive Text section if any problems are reported.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Anxiety–Stress score (Items 1, 4, 6, 7, 8, 9):",
+    "y": 540.8,
+    "url": null,
+    "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Depression score (Items 2, 3, 5, 10):",
+    "y": 562.5,
+    "url": null,
+    "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Total Distress Score (sum of items 1–10 · items 11 and 12 are not scored)",
+    "y": 595.5,
+    "url": null,
+    "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Halford, W. K., & Frost, A. D. J. (2021). Depression Anxiety Stress Scale-10: A Brief Measure for Routine Psychotherapy Outcome and Progress Assessment. Behaviour Change: Journal of the Australian Behaviour Modification Association , 1–14. https://doi.org/10.1017/bec.2021.12\nFurther information from the DASS-10 developers: https://www.benchmarkpsychology.com.au/dass-10",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Lovibond S.H. & Lovibond P.F.(1995). Manual for the Depression, Anxiety, Stress Scale. Sydney: Psychology Foundation, University of New South Wales.\nSwanson, J. M., Schuck, S., Porter, M. M., Carlson, C., Hartman, C. A., Sergeant, J. A., Clevenger, W., Wasdell, M., McCleary, R., Lakes, K., & Wigal, T. (2012). Categorical and Dimensional Definitions and Evaluations of Symptoms of ADHD: History of the SNAP and the SWAN Rating Scales. The International journal of educational and psychological assessment, 10(1), 51–70.",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Depression Anxiety Stress Scale (DASS-10) PDF",
+   "source_url": null,
+   "sha256": "2e975e9674e19e8c777897937072b51964ab4533fec15622f672d5af8f2e9ea6",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2e975e9674e19e8c777897937072b51964ab4533fec15622f672d5af8f2e9ea6.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Generalised Anxiety Disorder Assessment (GAD-7)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e61e95514771fe21c7b3de077a4ce48f3e43560a3c21b13f9e33a035aa468c4e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e61e95514771fe21c7b3de077a4ce48f3e43560a3c21b13f9e33a035aa468c4e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Depression Anxiety Stress Scale questions",
+   "source_url": null,
+   "sha256": "b2fd1dd1f66b50d8821ffce1bf18e0d18f009a91742cf7926be0eb6c5b7fb276",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b2fd1dd1f66b50d8821ffce1bf18e0d18f009a91742cf7926be0eb6c5b7fb276.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DASS-10 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4f3880fd6df4f6f8a760797bb1595ee9333d46a8f1bce71e6b23a8afbbd8941f",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4f3880fd6df4f6f8a760797bb1595ee9333d46a8f1bce71e6b23a8afbbd8941f.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DASS-10 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f7e95d264746cd7088ab5a02d95c485e9096850d6482002ed1feedc3b6bd536d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f7e95d264746cd7088ab5a02d95c485e9096850d6482002ed1feedc3b6bd536d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DASS-10 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e7211a09522a34c0344b5eb269c39bcb0e049d912bd2dc86f147b6766129ab15",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e7211a09522a34c0344b5eb269c39bcb0e049d912bd2dc86f147b6766129ab15.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DASS-10 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1a4dbae4f73e32c94bc7fa70373577ff7d8872bf748c5be815eb72af86e184d0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1a4dbae4f73e32c94bc7fa70373577ff7d8872bf748c5be815eb72af86e184d0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DASS-10 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "8f2451a5820121de2b11e77c415a134567b04bcc953198475cf966c94d9f6ca8",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8f2451a5820121de2b11e77c415a134567b04bcc953198475cf966c94d9f6ca8.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Supplementary Material",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Depression Anxiety Stress Scale using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "DASS-10-online-scoring.pdf",
+   "source_url": null,
+   "sha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "source_item_count_differs",
+    "detail": "Page description mentions [10] items; selected PDF has 12 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 12
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 4,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "total_raw",
+    "label": "Total",
+    "minimum": 0,
+    "maximum": 30,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "total_mean",
+    "label": "Total mean",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "anxiety_stress_raw",
+    "label": "Anxiety Stress",
+    "minimum": 0,
+    "maximum": 18,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/2",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "anxiety_stress_mean",
+    "label": "Anxiety Stress mean",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/3",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "depression_raw",
+    "label": "Depression",
+    "minimum": 0,
+    "maximum": 12,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/4",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "depression_mean",
+    "label": "Depression mean",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/5",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "total_raw",
+    "title": "Total",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_raw",
+      "label": "Total",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0,
+    "maximum": 30,
+    "axis_unit": "score"
+   },
+   {
+    "id": "total_mean",
+    "title": "Total mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_mean",
+      "label": "Total mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "anxiety_stress_raw",
+    "title": "Anxiety Stress",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "anxiety_stress_raw",
+      "label": "Anxiety Stress",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0,
+    "maximum": 18,
+    "axis_unit": "score"
+   },
+   {
+    "id": "anxiety_stress_mean",
+    "title": "Anxiety Stress mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "anxiety_stress_mean",
+      "label": "Anxiety Stress mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "depression_raw",
+    "title": "Depression",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "depression_raw",
+      "label": "Depression",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0,
+    "maximum": 12,
+    "axis_unit": "score"
+   },
+   {
+    "id": "depression_mean",
+    "title": "Depression mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "depression_mean",
+      "label": "Depression mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "axis_unit": "mean score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": "total_raw",
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+   "guidance_titles": [
+    "DASS-10 Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 6,
+   "rules_included": [
+    "total_raw",
+    "total_mean",
+    "anxiety_stress_raw",
+    "anxiety_stress_mean",
+    "depression_raw",
+    "depression_mean"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending",
+    "source_item_count_differs"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "total_raw",
+    "total_mean",
+    "anxiety_stress_raw",
+    "anxiety_stress_mean",
+    "depression_raw",
+    "depression_mean"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "total_raw",
+    "label": "Total",
+    "rule_id": "total_raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   },
+   {
+    "id": "total_mean",
+    "label": "Total mean",
+    "rule_id": "total_mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   },
+   {
+    "id": "anxiety_stress_raw",
+    "label": "Anxiety Stress",
+    "rule_id": "anxiety_stress_raw",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ]
+   },
+   {
+    "id": "anxiety_stress_mean",
+    "label": "Anxiety Stress mean",
+    "rule_id": "anxiety_stress_mean",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ]
+   },
+   {
+    "id": "depression_raw",
+    "label": "Depression",
+    "rule_id": "depression_raw",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ]
+   },
+   {
+    "id": "depression_mean",
+    "label": "Depression mean",
+    "rule_id": "depression_mean",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q10"
+    ]
+   },
+   {
+    "id": "recorded_responses",
+    "label": "Additional recorded responses",
+    "rule_id": null,
+    "item_ids": [
+     "Q11",
+     "Q12"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "5bc1706eb3fa89b3bc1df7ea36b3fdad4fbee901f0c9d69a9eb85046d64e3c40",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_raw",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "total_mean",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "anxiety_stress_raw",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "anxiety_stress_mean",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "depression_raw",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "depression_mean",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_raw",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "total_mean",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "anxiety_stress_raw",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "anxiety_stress_mean",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "depression_raw",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "depression_mean",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Page description mentions [10] items; selected PDF has 12 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:35:39.030082+00:00",
+  "raw_extraction_sha256": "9d5d6fb91f9ce64b4a09c313b0a63952b377c1f58cd5ba56e82efb8a05f0da26",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Depression Anxiety Stress Scale (DASS-42)"
+   },
+   {
+    "url": null,
+    "title": "Anxiety"
+   },
+   {
+    "url": null,
+    "title": "Depression"
+   },
+   {
+    "url": null,
+    "title": "Outcome Monitoring"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1017/bec.2021.12",
+    "title": "https://doi.org/10.1017/bec.2021.12"
+   },
+   {
+    "url": "https://www.benchmarkpsychology.com.au/dass-10",
+    "title": "https://www.benchmarkpsychology.com.au/dass-10"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive mood assessment"
+   },
+   {
+    "url": null,
+    "title": "Primary care depression scale"
+   },
+   {
+    "url": null,
+    "title": "Generalised anxiety questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "DASS-10-online-scoring.pdf"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "GP Letter – Progress Update or Mental Health Treatment Plan Reporting (Letter Template)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

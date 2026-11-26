@@ -1,0 +1,763 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Disconnection and Rejection domain average",
+   "minimum": 1.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Disconnection and Rejection domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Disconnection and Rejection domain average (Items 1–7, average of circled values):",
+     "y": 158.2,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Impaired Autonomy and Performance domain average",
+   "minimum": 1.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Impaired Autonomy and Performance domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Impaired Autonomy and Performance domain average (Items 8–12, average of circled values):",
+     "y": 183.0,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Impaired Limits domain average",
+   "minimum": 1.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Impaired Limits domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Impaired Limits domain average (Items 13–15, average of circled values):",
+     "y": 207.8,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Other-Directedness domain average",
+   "minimum": 1.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Other-Directedness domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Other-Directedness domain average (Items 16–18, average of circled values):",
+     "y": 232.5,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_5",
+   "ruleId": "pdf_5",
+   "label": "Over Vigilance and Inhibition domain average",
+   "minimum": 1.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_5",
+    "label": "Over Vigilance and Inhibition domain average",
+    "method": "mean",
+    "item_ids": [
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Over Vigilance and Inhibition domain average (Items 19–24, average of circled values):",
+     "y": 257.2,
+     "url": null,
+     "sha256": "2204da4f8b0bab6bf43a7b354ec327e0678670edbae5a89156340ba4e75ff4c5"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageCount": 7,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d200fa949fe4b_p1",
+   "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d200fa949fe4b_p1_chart_1"
+   ],
+   "tableIds": [
+    "d200fa949fe4b_p1_table_1"
+   ],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d200fa949fe4b_p2",
+   "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d200fa949fe4b_p2_table_1"
+   ],
+   "sectionIds": [
+    "d200fa949fe4b_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "d200fa949fe4b_p3",
+   "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d200fa949fe4b_p3_chart_1"
+   ],
+   "tableIds": [
+    "d200fa949fe4b_p3_table_1"
+   ],
+   "sectionIds": [
+    "d200fa949fe4b_p3_section_1",
+    "d200fa949fe4b_p3_section_2",
+    "d200fa949fe4b_p3_section_3",
+    "d200fa949fe4b_p3_section_4",
+    "d200fa949fe4b_p3_section_5"
+   ]
+  },
+  {
+   "pageId": "d200fa949fe4b_p4",
+   "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d200fa949fe4b_p4_section_1",
+    "d200fa949fe4b_p4_section_2",
+    "d200fa949fe4b_p4_section_3",
+    "d200fa949fe4b_p4_section_4",
+    "d200fa949fe4b_p4_section_5",
+    "d200fa949fe4b_p4_section_6",
+    "d200fa949fe4b_p4_section_7",
+    "d200fa949fe4b_p4_section_8"
+   ]
+  },
+  {
+   "pageId": "d200fa949fe4b_p5",
+   "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d200fa949fe4b_p5_table_1",
+    "d200fa949fe4b_p5_table_2"
+   ],
+   "sectionIds": [
+    "d200fa949fe4b_p5_section_1",
+    "d200fa949fe4b_p5_section_2"
+   ]
+  },
+  {
+   "pageId": "d200fa949fe4b_p6",
+   "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d200fa949fe4b_p6_table_1"
+   ],
+   "sectionIds": [
+    "d200fa949fe4b_p6_section_1"
+   ]
+  },
+  {
+   "pageId": "d200fa949fe4b_p7",
+   "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d200fa949fe4b_p7_table_1"
+   ],
+   "sectionIds": [
+    "d200fa949fe4b_p7_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d200fa949fe4b_p2_section_1",
+   "pageId": "d200fa949fe4b_p2",
+   "title": "Schema",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    88.03647,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p3_section_1",
+   "pageId": "d200fa949fe4b_p3",
+   "title": "Unmet Need Scores",
+   "type": "results",
+   "bboxPt": [
+    246.66444,
+    159.81235,
+    360.02844,
+    176.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p3_section_2",
+   "pageId": "d200fa949fe4b_p3",
+   "title": "Unmet Need",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    439.87527,
+    116.02248,
+    459.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p3_section_3",
+   "pageId": "d200fa949fe4b_p3",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    585.85956,
+    124.57648,
+    605.13751
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p3_section_4",
+   "pageId": "d200fa949fe4b_p3",
+   "title": "Schemas scoring in the High range:",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    91.03937,
+    678.76105,
+    278.69931,
+    693.90808
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p3_section_5",
+   "pageId": "d200fa949fe4b_p3",
+   "title": "Emotional Deprivation - Protection",
+   "type": "source_heading",
+   "bboxPt": [
+    97.76037,
+    691.01501,
+    278.67734,
+    706.16205
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_1",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Interpretation (cont.)",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    171.23848,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_2",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Defectiveness/Shame",
+   "type": "source_heading",
+   "bboxPt": [
+    97.76037,
+    160.17683,
+    210.86234,
+    175.32384
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_3",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Social Isolation/Alienation",
+   "type": "source_heading",
+   "bboxPt": [
+    97.76037,
+    220.83083,
+    234.68829,
+    235.97783
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_4",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Self-Sacrifice",
+   "type": "source_heading",
+   "bboxPt": [
+    97.76037,
+    269.3848,
+    167.45636,
+    284.5318
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_5",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Approval-Seeking/Recognition-Seeking",
+   "type": "source_heading",
+   "bboxPt": [
+    97.76037,
+    342.13882,
+    303.74631,
+    357.28583
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_6",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Schemas scoring in the Mid range:",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    91.03937,
+    426.99283,
+    273.19931,
+    442.13983
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_7",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Dependence/Incompetence",
+   "type": "source_heading",
+   "bboxPt": [
+    97.76037,
+    439.24683,
+    240.18829,
+    454.39383
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p4_section_8",
+   "pageId": "d200fa949fe4b_p4",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    525.36108,
+    290.26642,
+    544.63904
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p5_section_1",
+   "pageId": "d200fa949fe4b_p5",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p5_section_2",
+   "pageId": "d200fa949fe4b_p5",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    622.16107,
+    151.82047,
+    641.43903
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p6_section_1",
+   "pageId": "d200fa949fe4b_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d200fa949fe4b_p7_section_1",
+   "pageId": "d200fa949fe4b_p7",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "BESQ Scoring & Interpretation",
+    "text": "BESQ scores are presented for each individual schema, with responses on a 6-point Likert scale describing how relatable an item is i.e., 1 (Completely unrelated to me) to 6 (Relates to me perfectly).\nHigher scores indicate a greater identification with a schema and suggest that it may be relevant to the individual’s cognitive and emotional patterns.\nScores are presented for each schema:\n\n\nScores of 1-2: Low Range – seems unrelated to the individual’s experience.\nScores of 3-4: Mid-Range – may be somewhat related to the individual’s experience.\nScores of 5-6: High Range – may be very much related to the individual’s experience.\nAdditionally, graphs are provided for the Unmet Needs categories:\n\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+    "pageNumber": 4,
+    "text": "For comprehensive information on the BESQ, \nsee here\n.\nBESQ scores are presented for each individual schema, with responses on a 6-point Likert scale\ndescribing how relatable an item is:\n1 (Completely unrelated to me) to 6 (Relates to me perfectly)\nHigher scores indicate a greater identification with a schema and suggest that it may be relevant\nto the individual's cognitive and emotional patterns.\nScores are presented for each schema as well as the domains.\n• Scores of 1-2: Low Range - seems unrelated to the individual's experience.\n• Scores of 3-4: Mid-Range - may be somewhat related to the individual's experience.\n• Scores of 5-6: High Range - may be very much related to the individual's experience.\nScores are also presented for the domain on unmet need. Unmet needs refer to a fundamental\nemotional need that was not adequately fulfilled during childhood or early development. These\nunmet needs are considered crucial for healthy psychological development and well-being.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "200fa949fe4b76faa04110b903e45539fc1754650ac7999df485ab901a712fe8",
+    "pageNumber": 5,
+    "text": "When these needs are not met, individuals may develop maladaptive schemas.\nThe unmet need and associated schemas are as follows:\n-- Disconnection and Rejection Domain --\n- Abandonment/Instability\n- Mistrust/Abuse\n- Emotional Deprivation: Nurturance\n- Emotional Deprivation: Empathy\n- Emotional Deprivation: Protection\n- Defectiveness/Shame\n- Social Isolation/Alienation\n-- Impaired Autonomy and Performance Domain --\n- Dependence/Incompetence\n- Vulnerability to Harm or Illness\n- Enmeshment\n- Enmeshment: Underdeveloped Self\n- Failure\n-- Impaired Limits Domain --\n- Entitlement/Grandiosity\n- Insufficient Self-Control\n- Insufficient Self-Discipline\n-- Other-Directedness --\n- Subjugation\n- Self-Sacrifice\n- Approval/Recognition Seeking\n-- Over Vigilance and Inhibition --\n- Negativity/Pessimism\n- Emotional Inhibition - Constriction\n- Emotional Inhibition - Fear of Losing Control\n- Unrelenting Standards\n- Punitiveness Self\n- Punitiveness Others",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Additionally, graphs are provided for the Unmet Needs categories:"
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 7,
+   "unresolvedCells": 275
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

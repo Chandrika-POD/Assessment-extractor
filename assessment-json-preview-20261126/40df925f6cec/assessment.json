@@ -1,0 +1,909 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "clinical-outcomes-in-routine-evaluation-core-om--40df925f6cec",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Clinical Outcomes in Routine Evaluation (CORE-OM)",
+  "short_name": null,
+  "language": "en",
+  "description": "The CORE Outcome Measure (CORE-OM) is a self-report measure of psychological distress designed to be administered during a course of treatment to determine treatment response. The broad spectrum nature of the measure means it captures a wide variety of problems associated with mental health difficulties, beyond typical symptom measures. The copyright holder for the CORE-OM is the CORE System Trust.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "LAST WEEK",
+    "last week"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "This form has 34 statements about how you have been OVER THE LAST WEEK. Please read each statement and think how often you felt that way last week. Then tick the box which is closest to this.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [
+     {
+      "label": "Healthy",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 20
+     },
+     {
+      "label": "Low",
+      "minimum_inclusive": 21,
+      "maximum_inclusive": 33
+     },
+     {
+      "label": "Mild",
+      "minimum_inclusive": 34,
+      "maximum_inclusive": 50
+     },
+     {
+      "label": "Moderate",
+      "minimum_inclusive": 51,
+      "maximum_inclusive": 67
+     },
+     {
+      "label": "Moderate-to-Severe",
+      "minimum_inclusive": 68,
+      "maximum_inclusive": 84
+     },
+     {
+      "label": "Severe",
+      "minimum_inclusive": 85,
+      "maximum_inclusive": 136
+     }
+    ],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 136.0
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Subjective wellbeing deficits",
+    "item_ids": [
+     "Q4",
+     "Q14",
+     "Q17",
+     "Q31"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 16.0
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Problems symptoms",
+    "item_ids": [
+     "Q2",
+     "Q5",
+     "Q8",
+     "Q11",
+     "Q13",
+     "Q15",
+     "Q18",
+     "Q20",
+     "Q23",
+     "Q27",
+     "Q28",
+     "Q30"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 48.0
+   },
+   {
+    "id": "source_draft_4",
+    "label": "Life functioning difficulties",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q7",
+     "Q12",
+     "Q10",
+     "Q19",
+     "Q21",
+     "Q25",
+     "Q26",
+     "Q29",
+     "Q32",
+     "Q33"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 48.0
+   },
+   {
+    "id": "source_draft_5",
+    "label": "Risk harm",
+    "item_ids": [
+     "Q9",
+     "Q6",
+     "Q16",
+     "Q22",
+     "Q24",
+     "Q34"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+     "page_url": null,
+     "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 24.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+   "page_url": null,
+   "page_sha256": "5c6c1a9134cfa8ba7d370fb035a4587f313942091eab8e477ee354d3518dcdd3",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [
+   "Scores are presented as a percentile compared to a clinical sample, where a percentile of 50 represents the average psychological distress of someone seeking intervention.",
+   "A total raw score of 33 is the established cut-off for distinguishing between clinical and non-clinical populations (Barkham et al., 2006; Connell et al., 2007).",
+   "A change of 17 raw score points or more is considered to exceed the reliable change index (RCI) threshold for changes that may be due to measurement error or chance acting alone, indicating meaningful improvement or deterioration (Barkham et al., 2006)."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "CORE-OM Scoring & Interpretation",
+    "text": "Both a raw score and a clinical percentile are given for the total scale and each of the four subscales. Higher scores indicate poorer well-being, greater distress, more functional impairment, and higher risk across the past week.\n\nSubjective well-being deficits (items 4, 14, 17, 31)\nProblems/symptoms (items 2, 5, 8, 11, 13, 15, 18, 20, 23, 27, 28, 30)\nLife functioning difficulties (1, 3, 7, 12, 10, 19, 21, 25, 26, 29, 32, 33)\nRisk/harm (9, 6, 16, 22, 24, 34)\nScores are presented as a percentile compared to a clinical sample, where a percentile of 50 represents the average psychological distress of someone seeking intervention.\n\nWhen administered more than once, two graphs are produced. The first shows the total percentile over time, which compares respondents’ total score to others seeking mental health support. The second graph represents subscale percentiles over time and is helpful for understanding the areas of improvement or deterioration and therefore targets for treatment. Both graphs can be useful in providing feedback to clients and assessing treatment response.\n\nSeverity ranges are reported for the CORE-OM, ranging from Healthy to Severe:\n0-20 Healthy: Minimal psychological distress; typical of a non-distressed population without mental health concerns.\n21-33 Low: Some distress related to everyday challenges or temporary situations, within the general population range.\n34-50 Mild: Noticeable psychological discomfort, early signal of a trend towards mental health concerns.\n51-67 Moderate: Emerging psychological distress\n68-84 Moderate-to-Severe: noticeable distress that is likely to be interfering with daily functioning\n85-136 Severe: Significant distress impacting several life domains, substantially impacting well-being and daily functioning.\nThe severity ranges above are based on raw scores for the total score. These total raw score ranges correspond to specific clinical percentile ranges as follows:\nHealthy: 1st-3rd percentile\nLow-level: 4th-11th percentile\nMild: 12th-31st percentile\nModerate: 32nd-60th percentile\nModerate-to-Severe: 61st-84th percentile\nSevere: 85th-100th percentile\nFor the four subscales (Well-being deficits, Problems/symptoms, Life functioning difficulties, and Risk/harm), severity descriptors are assigned based on the percentile ranges derived from the total score. Note, the Risk/harm subscale uses a binary classification where a raw score of 0 indicates “No Risk Identified” and any score above 0 indicates “Risk Identified.”\nA total raw score of 33 is the established cut-off for distinguishing between clinical and non-clinical populations (Barkham et al., 2006; Connell et al., 2007).\n\nA change of 17 raw score points or more is considered to exceed the reliable change index (RCI) threshold for changes that may be due to measurement error or chance acting alone, indicating meaningful improvement or deterioration (Barkham et al., 2006).\nTherefore, to be sure that a client has made a reliable change, a score difference of 17 or more should be observed. Given that most of the severity ranges are approximately 17 points in size, a person scoring at the higher end of moderate (65) will move to the ‘mild’ range if their score exceeds the RCI. Typically, a score that exceeds the RCI corresponds with a change in severity level, with the exception being the severe category (Barkham et al., 2006).\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "partial_source_bands",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "The copyright holder for the CORE-OM is the CORE System Trust https://www.coresystemtrust.org.uk/home/instruments/core-om-information/\nEvans, C., Connell, J., Barkham, M., Margison, F., McGrath, G., Mellor-Clark, J., & Audin, K. (2002). Towards a standardised brief outcome measure: Psychometric properties and utility of the CORE-OM. The British Journal of Psychiatry, 180 , 51–60. https://doi.org/10.1192/bjp.180.1.51",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Barkham, M., Gilbert, N., Connell, J., Marshall, C., & Twigg, E. (2005a). Suitability and utility of the CORE-OM and CORE-A for assessing severity of presenting problems in psychological therapy services based in primary and secondary care settings. The British Journal of Psychiatry, 186, 239–246. https://doi.org/10.1192/bjp.186.3.239\nBarkham, M., Culverwell, A., Spindler, K., & Twigg, E. (2005b). The CORE-OM in an older adult population: psychometric status, acceptability, and feasibility. Aging & mental health, 9(3), 235–245. https://doi.org/10.1080/13607860500090052\nBarkham, M., Mellor-Clark, J., Connell, J., & Cahill, J. (2006). A core approach to practice-based evidence: A brief history of the origins and applications of the CORE-OM and CORE System. Counselling and Psychotherapy Research, 6(1), 3–15. https://doi.org/10.1080/14733140600581218\nBiringer, E., & Bjørkvik, J. (2024). Is there a prospective association between psychological distress as measured by the CORE-OM and treatment attendance and treatment duration? A follow-up study at a Norwegian Community Mental Health Centre. Nordic Journal of Psychiatry, 78(3), 220-229. https://doi.org/10.1080/08039488.2024.2306217\nBeck, A., Burdett, M., & Lewis, H. (2015). The association between waiting for psychological therapy and therapy outcomes as measured by the CORE-OM. British Journal of Clinical Psychology, 54, 233–248. https://doi.org/10.1111/bjc.12072\nBedford, A., Lukic, G., & Tibbles, J. (2011). Evaluation of risk by patients’ and clinicians’ ratings: A CORE-OM and CORE-A investigation. Clinical Psychology and Psychotherapy, 18, 244–249. https://doi.org/10.1002/cpp.714\nConnell, J., Barkham, M., Stiles, W. B., Twigg, E., Singleton, N., Evans, O., & Miles, J. N. V. (2007). Distribution of CORE-OM scores in a general population, clinical cut-off points, and comparison with the CIS-R. The British Journal of Psychiatry, 190, 69–74. https://doi.org/10.1192/bjp.bp.105.017657\nEvans, C., Connell, J., Barkham, M., Margison, F., McGrath, G., Mellor-Clark, J., & Audin, K. (2002). Towards a standardised brief outcome measure: psychometric properties and utility of the CORE-OM. The British Journal of Psychiatry, 180, 51–60. https://doi.org/10.1192/bjp.180.1.51\nHandscomb, L., Hall, D. A., Hoare, D. J., & Shorter, G. W. (2016). Confirmatory factor analysis of Clinical Outcomes in Routine Evaluation (CORE-OM) used as a measure of emotional distress in people with tinnitus. Health and Quality of Life Outcomes, 14, 124. https://doi.org/10.1186/s12955-016-0524-5\nLorentzen, V., Handegård, B. H., Moen, C. M., Solem, K., & Skre, I. (2020). CORE-OM as a routine outcome measure for adolescents with emotional disorders: Factor structure and psychometric properties. BMC Psychology, 8, 86. https://doi.org/10.1186/s40359-020-00459-5\nMavranezouli, I., Brazier, J. E., Rowen, D., & Barkham, M. (2013). Estimating a preference-based index from the Clinical Outcomes in Routine Evaluation–Outcome Measure (CORE-OM): Valuation of CORE-6D. Medical Decision Making, 33(4), 381-395. https://doi.org/10.1177/0272989X12464431\nMurray, A. L., McKenzie, K., Murray, K., & Richelieu, M. (2018). Examining response shifts in the Clinical Outcomes in Routine Evaluation- Outcome Measure (CORE-OM). British Journal of Guidance & Counselling. https://doi.org/10.1080/03069885.2018.1483007\nOna, J. V., Evans, C., & Paz, C. (2024). Clinical utility of the CORE-OM and CORE-10: An exploratory study in psychotherapy services in Ecuador. Collabra: Psychology, 10(1). https://doi.org/10.1525/collabra.121932\nPaz, C., Adana-Díaz, L., & Evans, C. (2020). Clients with different problems are different and questionnaires are not blood tests: A template analysis of psychiatric and psychotherapy clients’ experiences of the CORE-OM. Counselling and Psychotherapy Research, 20(2), 276-285. https://doi.org/10.1002/capr.12290\nSkre, I., Friborg, O., Elgarøy, S., Evans, C., Myklebust, L. H., Lillevoll, K., Sørgaard, K., & Hansen, V. (2013). The factor structure and psychometric properties of the Clinical Outcomes in Routine Evaluation – Outcome Measure (CORE-OM) in Norwegian clinical and non-clinical samples. BMC Psychiatry, 13, 99. https://doi.org/10.1186/1471-244X-13-99",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Clinical Outcomes in Routine Evaluation (CORE-OM) questionnaire PDF",
+   "source_url": null,
+   "sha256": "7195d205decdac815380b0897a15370ee9e9af10abe6aaf8c26f521b76a1b651",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7195d205decdac815380b0897a15370ee9e9af10abe6aaf8c26f521b76a1b651.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Your Experience of Service (YES)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f4b3bfde741266bed055a766f2eb1406f41c54b6c4424ebac68b59acc184459e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f4b3bfde741266bed055a766f2eb1406f41c54b6c4424ebac68b59acc184459e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Clinical Outcomes in Routine Evaluation QUESTIONS",
+   "source_url": null,
+   "sha256": "f858136374c1abcbb3d4805109ef69211c5c2f69c448682d8437620492f674bd",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f858136374c1abcbb3d4805109ef69211c5c2f69c448682d8437620492f674bd.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CORE-OM Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e80d2303697ab22d6f830a1a95c96bcef3738b811e1b087d352552f11c0a00ba",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e80d2303697ab22d6f830a1a95c96bcef3738b811e1b087d352552f11c0a00ba.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CORE-OM Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e7f6487a8535d62241d6e1d3ec3ac2e408935e1bc3200574b1f2e59e7abea189",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e7f6487a8535d62241d6e1d3ec3ac2e408935e1bc3200574b1f2e59e7abea189.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CORE-OM Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c2199390f553285a987cae76e4a2e170fab56783b6de565bcd74f8cbd47838c4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c2199390f553285a987cae76e4a2e170fab56783b6de565bcd74f8cbd47838c4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CORE-OM Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f0807d03320d49d1d80e76306049c6849b3044ff1a9e808da9ed14c7d9952c87",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f0807d03320d49d1d80e76306049c6849b3044ff1a9e808da9ed14c7d9952c87.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CORE-OM Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "You can also assess your patients with the Clinical Outcomes in Routine Evaluation using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1235a3b3346ac8fb432882f38732dee92ef9668eecbf0ede28e04ae1ce44625e.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 34
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [],
+   "scoring_rule_count": 5,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/af2622879f07dabbf663c61b08a95fde146d58f7a92ef2b37b57870be8165e75.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "1d0655c7b6489ce93ff0eecabb302fbbef7752a81ceb21c01b76cbb9a778a76b",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "pending_source_review",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:40:03.838528+00:00",
+  "raw_extraction_sha256": "7b098f1837f7517673ef46848962af462e064404bd4e3e5b0d17158b24c64929",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": "https://www.coresystemtrust.org.uk/home/instruments/core-om-information/",
+    "title": "https://www.coresystemtrust.org.uk/home/instruments/core-om-information/"
+   },
+   {
+    "url": null,
+    "title": "Outcome Monitoring"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1192/bjp.180.1.51",
+    "title": "https://doi.org/10.1192/bjp.180.1.51"
+   },
+   {
+    "url": "https://doi.org/10.1192/bjp.186.3.239",
+    "title": "https://doi.org/10.1192/bjp.186.3.239"
+   },
+   {
+    "url": "https://doi.org/10.1080/13607860500090052",
+    "title": "https://doi.org/10.1080/13607860500090052"
+   },
+   {
+    "url": "https://doi.org/10.1080/14733140600581218",
+    "title": "https://doi.org/10.1080/14733140600581218"
+   },
+   {
+    "url": "https://doi.org/10.1080/08039488.2024.2306217",
+    "title": "https://doi.org/10.1080/08039488.2024.2306217"
+   },
+   {
+    "url": "https://doi.org/10.1111/bjc.12072",
+    "title": "https://doi.org/10.1111/bjc.12072"
+   },
+   {
+    "url": "https://doi.org/10.1002/cpp.714",
+    "title": "https://doi.org/10.1002/cpp.714"
+   },
+   {
+    "url": "https://doi.org/10.1192/bjp.bp.105.017657",
+    "title": "https://doi.org/10.1192/bjp.bp.105.017657"
+   },
+   {
+    "url": "https://doi.org/10.1186/s12955-016-0524-5",
+    "title": "https://doi.org/10.1186/s12955-016-0524-5"
+   },
+   {
+    "url": "https://doi.org/10.1186/s40359-020-00459-5",
+    "title": "https://doi.org/10.1186/s40359-020-00459-5"
+   },
+   {
+    "url": "https://doi.org/10.1177/0272989X12464431",
+    "title": "https://doi.org/10.1177/0272989X12464431"
+   },
+   {
+    "url": "https://doi.org/10.1080/03069885.2018.1483007",
+    "title": "https://doi.org/10.1080/03069885.2018.1483007"
+   },
+   {
+    "url": "https://doi.org/10.1525/collabra.121932",
+    "title": "https://doi.org/10.1525/collabra.121932"
+   },
+   {
+    "url": "https://doi.org/10.1002/capr.12290",
+    "title": "https://doi.org/10.1002/capr.12290"
+   },
+   {
+    "url": "https://doi.org/10.1186/1471-244X-13-99",
+    "title": "https://doi.org/10.1186/1471-244X-13-99"
+   },
+   {
+    "url": null,
+    "title": "Short outcome measure"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Therapy session rating"
+   },
+   {
+    "url": null,
+    "title": "Therapy relationship measure"
+   },
+   {
+    "url": null,
+    "title": "Treatment experience measure"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "GP Letter – Progress Update or Mental Health Treatment Plan Reporting (Letter Template)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

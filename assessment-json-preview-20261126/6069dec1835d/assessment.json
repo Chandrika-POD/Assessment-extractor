@@ -1,0 +1,1366 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "five-facet-mindfulness-questionnaire-ffmq-15--6069dec1835d",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Five Facet Mindfulness Questionnaire (FFMQ-15)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Five Facet Mindfulness Questionnaire (FFMQ-15) is a 15 question self-report scale that measures mindfulness with regards to thoughts, experiences, and actions in daily life (Baer, Carmody, & Hunsinger, 2012). The FFMQ-15 measures 5 subscales of mindfulness:",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Please use the descriptions provided to indicate how true the below statements are of you. Select the option which represents your own opinion of what is generally true for you.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "ee379dd67a8866b9d4ec53671ef4296489fe0cc33d673d76f77b234d547b56aa",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_mean",
+    "label": "Total mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "f525ff34b4640f6ee294885f8db9c90a11f3a881bcc34cd378f78da53758a378",
+     "retrieved_at": "2026-11-13T12:00:56.581096+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "subscale_1",
+    "label": "Observation",
+    "item_ids": [
+     "Q1",
+     "Q6",
+     "Q11"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "f525ff34b4640f6ee294885f8db9c90a11f3a881bcc34cd378f78da53758a378",
+     "retrieved_at": "2026-11-13T12:00:56.581096+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "subscale_2",
+    "label": "Description",
+    "item_ids": [
+     "Q2",
+     "Q7",
+     "Q12"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "f525ff34b4640f6ee294885f8db9c90a11f3a881bcc34cd378f78da53758a378",
+     "retrieved_at": "2026-11-13T12:00:56.581096+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "subscale_3",
+    "label": "Acting with Awareness",
+    "item_ids": [
+     "Q3",
+     "Q8",
+     "Q13"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "f525ff34b4640f6ee294885f8db9c90a11f3a881bcc34cd378f78da53758a378",
+     "retrieved_at": "2026-11-13T12:00:56.581096+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "subscale_4",
+    "label": "Non-judgmental",
+    "item_ids": [
+     "Q4",
+     "Q9",
+     "Q14"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "f525ff34b4640f6ee294885f8db9c90a11f3a881bcc34cd378f78da53758a378",
+     "retrieved_at": "2026-11-13T12:00:56.581096+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "subscale_5",
+    "label": "Non-reactivity",
+    "item_ids": [
+     "Q5",
+     "Q10",
+     "Q15"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "f525ff34b4640f6ee294885f8db9c90a11f3a881bcc34cd378f78da53758a378",
+     "retrieved_at": "2026-11-13T12:00:56.581096+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Results consist of a total average score and five subscale. Average scores are calculated by summing the responses and dividing by the number of items, and indicate the average level of agreement with the each subscale (1 = rarely true, 5 = always true). Higher scores are indicative of someone who is more mindful in their everyday life.",
+   "Percentiles are also computed in comparison to a young adult sample (Kim et al., 2021). Interpretation via percentiles can be helpful to contextualise a respondent’s pattern of responding in comparison to a non-clinical, ethnically diverse population. For example, a score at the 50th percentile is indicative of an average level of mindfulness for a non-clinical individual.",
+   "Kim et al. (2021) produced normative data for the scale with 538 ethnically diverse College students. The average scores and standard deviations were obtained as follows:"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "Scoring and Interpretation",
+    "text": "Results consist of a total average score and five subscale. Average scores are calculated by summing the responses and dividing by the number of items, and indicate the average level of agreement with the each subscale (1 = rarely true, 5 = always true). Higher scores are indicative of someone who is more mindful in their everyday life.\nThe five subscales are:\nObservation (items 1, 6, 11): how we see, feel, and perceive the internal and external world around us and select the stimuli that require our attention and focus.\nDescription (items 2, 7, 12): the way we label our experiences and express them in words to ourselves and others.\nActing with Awareness (items 3, 8, 13): the movements we choose after attending to the information present at the moment. Determines whether we act out of quick judgment and get out of ‘autopilot mode’ before responding to a situation.\nNon-judgmental (items 4, 9, 14): ability to be non-judgmental regarding our inner experience. It measures self-acceptance and empathy for oneself and others.\nNon-reactivity (items 5, 10, 15): active detachment from negative thoughts and emotions so that we can accept their existence and choose not to react to them.\nPercentiles are also computed in comparison to a young adult sample (Kim et al., 2021). Interpretation via percentiles can be helpful to contextualise a respondent’s pattern of responding in comparison to a non-clinical, ethnically diverse population. For example, a score at the 50th percentile is indicative of an average level of mindfulness for a non-clinical individual.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Total Average Score (average of all 15 circled values)",
+    "y": 660.8,
+    "url": null,
+    "sha256": "ee379dd67a8866b9d4ec53671ef4296489fe0cc33d673d76f77b234d547b56aa",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Baer, R. A., Carmody, J., & Hunsinger, M. (2012). Weekly change in mindfulness and perceived stress in a mindfulness-based stress reduction program. Journal of Clinical Psychology, 68(7), 755–765. https://doi.org/10.1002/jclp.21865",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Baer, R. A., Smith, G. T., Hopkins, J., Krietemeyer, J., & Toney, L. (2006). Using self-report assessment methods to explore facets of mindfulness. Assessment, 13(1), 27–45. https://doi.org/10.1177/1073191105283504\nBaer, R. A., Smith, G. T., Lykins, E., Button, D., Krietemeyer, J., Sauer, S., Walsh, E., Duggan, D., & Williams, J. M. G. (2008). Construct validity of the five facet mindfulness questionnaire in meditating and nonmeditating samples. Assessment, 15(3), 329–342. https://doi.org/10.1177/1073191107313003\nBohlmeijer, E., ten Klooster, P. M., Fledderus, M., Veehof, M., & Baer, R. (2011). Psychometric properties of the five facet mindfulness questionnaire in depressed adults and development of a short form. Assessment, 18(3), 308–320. https://doi.org/10.1177/1073191111408231\nChowdhury, M. R. (2021). The Five Facet Mindfulness Questionnaire (FFMQ). PositivePsychology.com. Retrieved from https://positivepsychology.com/five-facet-mindfulness-questionnaire-ffmq/\nGu, J., Strauss, C., Crane, C., Barnhofer, T., Karl, A., Cavanagh, K., & Kuyken, W. (2016). Examining the factor structure of the 39-item and 15-item versions of the Five Facet Mindfulness Questionnaire before and after mindfulness-based cognitive therapy for people with recurrent depression. Psychological Assessment, 28(7), 791–802. https://doi.org/10.1037/pas0000263\nKim, H., Li, N., Broyles, A., Musoka, L., & Correa-Fernández, V. (2021). Validity of the 15-item five-facet mindfulness questionnaire among an ethnically diverse sample of university students. Journal of American College Health: J of ACH, 1–11. https://doi.org/10.1080/07448481.2021.1892700",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Five Facet Mindfulness Questionnaire (FFMQ-15) PDF",
+   "source_url": null,
+   "sha256": "231bd5b59a8686dbeff9fe777aca2135f97f1711537ccc46bdd8331945ada25d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/231bd5b59a8686dbeff9fe777aca2135f97f1711537ccc46bdd8331945ada25d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Self-Compassion Scale – Short Form (SCS-SF)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0580bc3d0672eb23ef7dfeb91c1997d493149fb9300674379a655b59b3ff1f70",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0580bc3d0672eb23ef7dfeb91c1997d493149fb9300674379a655b59b3ff1f70.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "09c6426664993f8e57dc83614402549a468b0c48fa4a7878d9891f2c41113aba",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/09c6426664993f8e57dc83614402549a468b0c48fa4a7878d9891f2c41113aba.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FFMQ-15 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Five Facet Mindfulness Questionnaire – 15 using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "ee379dd67a8866b9d4ec53671ef4296489fe0cc33d673d76f77b234d547b56aa",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ee379dd67a8866b9d4ec53671ef4296489fe0cc33d673d76f77b234d547b56aa.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "acded0f3be73fda6ecbe8d7c35e3ee36860cf1fbf740b5fb53ff1b84ef34efaf",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/acded0f3be73fda6ecbe8d7c35e3ee36860cf1fbf740b5fb53ff1b84ef34efaf.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 15
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "ee379dd67a8866b9d4ec53671ef4296489fe0cc33d673d76f77b234d547b56aa",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ee379dd67a8866b9d4ec53671ef4296489fe0cc33d673d76f77b234d547b56aa.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "acded0f3be73fda6ecbe8d7c35e3ee36860cf1fbf740b5fb53ff1b84ef34efaf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/acded0f3be73fda6ecbe8d7c35e3ee36860cf1fbf740b5fb53ff1b84ef34efaf.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "total_mean",
+    "label": "Total mean",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "subscale_1",
+    "label": "Observation",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/1",
+    "item_ids": [
+     "Q1",
+     "Q6",
+     "Q11"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "subscale_2",
+    "label": "Description",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/2",
+    "item_ids": [
+     "Q2",
+     "Q7",
+     "Q12"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "subscale_3",
+    "label": "Acting with Awareness",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/3",
+    "item_ids": [
+     "Q3",
+     "Q8",
+     "Q13"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "subscale_4",
+    "label": "Non-judgmental",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/4",
+    "item_ids": [
+     "Q4",
+     "Q9",
+     "Q14"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "subscale_5",
+    "label": "Non-reactivity",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/5",
+    "item_ids": [
+     "Q5",
+     "Q10",
+     "Q15"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "total_mean",
+    "title": "Total mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "total_mean",
+      "label": "Total mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "subscale_1",
+    "title": "Observation",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "subscale_1",
+      "label": "Observation",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "subscale_2",
+    "title": "Description",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "subscale_2",
+      "label": "Description",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "subscale_3",
+    "title": "Acting with Awareness",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "subscale_3",
+      "label": "Acting with Awareness",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "subscale_4",
+    "title": "Non-judgmental",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "subscale_4",
+      "label": "Non-judgmental",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "subscale_5",
+    "title": "Non-reactivity",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "subscale_5",
+      "label": "Non-reactivity",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "ee379dd67a8866b9d4ec53671ef4296489fe0cc33d673d76f77b234d547b56aa",
+   "guidance_titles": [
+    "Scoring and Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 6,
+   "rules_included": [
+    "total_mean",
+    "subscale_1",
+    "subscale_2",
+    "subscale_3",
+    "subscale_4",
+    "subscale_5"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "total_mean",
+    "subscale_1",
+    "subscale_2",
+    "subscale_3",
+    "subscale_4",
+    "subscale_5"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "total_mean",
+    "label": "Total mean",
+    "rule_id": "total_mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ]
+   },
+   {
+    "id": "subscale_1",
+    "label": "Observation",
+    "rule_id": "subscale_1",
+    "item_ids": [
+     "Q1",
+     "Q6",
+     "Q11"
+    ]
+   },
+   {
+    "id": "subscale_2",
+    "label": "Description",
+    "rule_id": "subscale_2",
+    "item_ids": [
+     "Q2",
+     "Q7",
+     "Q12"
+    ]
+   },
+   {
+    "id": "subscale_3",
+    "label": "Acting with Awareness",
+    "rule_id": "subscale_3",
+    "item_ids": [
+     "Q3",
+     "Q8",
+     "Q13"
+    ]
+   },
+   {
+    "id": "subscale_4",
+    "label": "Non-judgmental",
+    "rule_id": "subscale_4",
+    "item_ids": [
+     "Q4",
+     "Q9",
+     "Q14"
+    ]
+   },
+   {
+    "id": "subscale_5",
+    "label": "Non-reactivity",
+    "rule_id": "subscale_5",
+    "item_ids": [
+     "Q5",
+     "Q10",
+     "Q15"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "366282730a2f8165a7acd616fd5c7337edb6e8f3ea0c632c8ccbd63e56bef954",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_mean",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_mean",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "subscale_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:50:38.917658+00:00",
+  "raw_extraction_sha256": "33569375ead090637eced474a9b796b08530fd0997692687307f34e9bc1677b1",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Adolescent"
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1002/jclp.21865",
+    "title": "https://doi.org/10.1002/jclp.21865"
+   },
+   {
+    "url": "https://doi.org/10.1177/1073191105283504",
+    "title": "https://doi.org/10.1177/1073191105283504"
+   },
+   {
+    "url": "https://doi.org/10.1177/1073191107313003",
+    "title": "https://doi.org/10.1177/1073191107313003"
+   },
+   {
+    "url": "https://doi.org/10.1177/1073191111408231",
+    "title": "https://doi.org/10.1177/1073191111408231"
+   },
+   {
+    "url": "https://positivepsychology.com/five-facet-mindfulness-questionnaire-ffmq/",
+    "title": "https://positivepsychology.com/five-facet-mindfulness-questionnaire-ffmq/"
+   },
+   {
+    "url": "https://doi.org/10.1037/pas0000263",
+    "title": "https://doi.org/10.1037/pas0000263"
+   },
+   {
+    "url": "https://doi.org/10.1080/07448481.2021.1892700",
+    "title": "https://doi.org/10.1080/07448481.2021.1892700"
+   },
+   {
+    "url": null,
+    "title": "Mindfulness skills assessment"
+   },
+   {
+    "url": null,
+    "title": "Experiential avoidance questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Psychological flexibility assessment"
+   },
+   {
+    "url": null,
+    "title": "Body awareness scale"
+   },
+   {
+    "url": null,
+    "title": "Self-kindness questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Acceptance and Commitment Therapy (ACT) (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

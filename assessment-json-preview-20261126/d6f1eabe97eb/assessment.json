@@ -1,0 +1,795 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "strengths-and-stressors--d6f1eabe97eb",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Strengths and Stressors (SAS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Strengths and Stressors (SAS) scale is a 56-item clinician-rated instrument designed to assess family functioning and psychosocial development in child protection settings (Berry et al., 2003).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Each of the following factors may be important to the level of maltreatment or risk of out-of-home placement for this family in the context of family strengths and weaknesses. Consider each factor and the items listed under each factor in terms of its importance in reducing risk of maltreatment or diverting the out- of-home placement of children in this family. For each factor, rate its importance on a continuum of strength/weakness by selecting the appropriate option. Select each factor at the current point of assessment. DOMAIN 1Environment",
+  "instructions_source": {
+   "url": null,
+   "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34",
+   "Q35"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Domain score",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": -3.0,
+    "maximum": 2.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Domain score (Items 1–9, average of circled values):",
+     "y": 594.8,
+     "url": null,
+     "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_2",
+    "label": "Domain score",
+    "method": "mean",
+    "item_ids": [
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": -3.0,
+    "maximum": 2.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Domain score (Items 10–13, average of circled values):",
+     "y": 54.8,
+     "url": null,
+     "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_3",
+    "label": "Domain score",
+    "method": "mean",
+    "item_ids": [
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": -3.0,
+    "maximum": 2.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Domain score (Items 14–19, average of circled values):",
+     "y": 323.2,
+     "url": null,
+     "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_4",
+    "label": "Domain score",
+    "method": "mean",
+    "item_ids": [
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": -3.0,
+    "maximum": 2.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Domain score (Items 20–23, average of circled values):",
+     "y": 519.0,
+     "url": null,
+     "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_5",
+    "label": "Domain score",
+    "method": "mean",
+    "item_ids": [
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": -3.0,
+    "maximum": 2.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Domain score (Items 24–28, average of circled values):",
+     "y": 751.5,
+     "url": null,
+     "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_6",
+    "label": "Domain score",
+    "method": "mean",
+    "item_ids": [
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": -3.0,
+    "maximum": 2.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Domain score (Items 29–35, average of circled values):",
+     "y": 306.8,
+     "url": null,
+     "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "SAS Scoring & Interpretation",
+    "text": "The scale uses a 6-point rating scale for each item, ranging from -3 to +2, where negative scores indicate stressors and positive scores represent strengths. This asymmetric scale acknowledges that risk factors may require more nuanced differentiation than protective factors in child protection contexts. Items within each domain are summed to produce raw scores, which are then averaged to generate domain-level scores maintaining the -3 to +2 range.\n\nHigher positive scores across domains suggest family resilience and capacity, whilst negative scores highlight vulnerabilities and risks. The scale does not produce a total score, encouraging practitioners to maintain focus on the unique profile of strengths and challenges within each family rather than reducing complex family dynamics to a single risk indicator. This domain-specific approach facilitates targeted intervention planning and enables practitioners to track differential progress across various aspects of family functioning over time.\nDomain raw score ranges:\nEnvironment (9 items, 1-9, range -27 to +18): Providing a measure of housing stability, safety in the community, habitability of housing, income/employment, financial management, food and nutrition, personal hygiene, transportation, and learning environment.\nSocial Support (4 items, 10-13, range -12 to +8): Providing a measure of social relationships, regular services accessed, access to emergency services, and motivation for support.\nParental Capabilities (6 items, 14-19, range -18 to +12): Providing a measure supervision of children, disciplinary practices, support of child development, and mental, physical, and alcohol/drug abuse issues that might affect parenting.\nFamily Interactions (4 items, 20-23, range -12 to +8): Providing a measure of bonding with children, expectations of children, mutual support, and the marital relationship.\nFamily Safety (5 items, 24-28, range -15 to +10): Providing a measure of potential physical, sexual, and emotional abuse of children, child neglect, and domestic violence.\nChild Well-Being (7 items, 29-35, raw scores -21 to +14): Providing a measure of child mental health and behaviour, school performance, relationship with caregivers, relationship with siblings (if applicable), relationship with peers, and motivation/cooperation\nInterpretation guidelines for averaged domain scores:\n-3 to -2.5: Serious Stressor – indicating significant concern requiring immediate and intensive intervention\n-2.5 to -1.5: Moderate Stressor – representing notable concerns requiring targeted intervention\n-1.5 to -0.5: Mild Stressor – suggesting areas to monitor with potential preventive support\n-0.5 to +0.5: Adequate/Community Norm – reflecting typical functioning not requiring specific intervention\n+0.5 to +1.5: Mild Strength – indicating positive functioning that can be leveraged in intervention planning\n+1.5 to +2: Clear Strength – representing significant protective factors that buffer against risk\n\nOn first administration a two-way horizontal bar graph is displayed showing all six domain scores ranging from -3 to +2. On multiple administrations a line graph of all domains is shown to track scores over time.\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Berry, M., Cash, S., & Mathieson, S. (2003). Validation of the strengths and stressors tracking device with a child welfare population. Child Welfare, 82(3), 293-318.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Berry, M., Cash, S., & Mathieson, S. (2003). Validation of the strengths and stressors tracking device with a child welfare population. Child Welfare, 82(3), 293-318. https://eric.ed.gov/?id=EJ673625\nBronfenbrenner, U., & Morris, P. A. (2006). The bioecological model of human development. In R. M. Lerner & W. Damon (Eds.), Handbook of child psychology: Theoretical models of human development (6th ed., Vol. 1, pp. 793-828). John Wiley & Sons.\nBlair, K. D., Taylor, D. B., & Rivera, C. J. (2009). Strengths and stressors in a population of kinship caregivers: Implications for caseload management and administration. Families in Society, 90(4), 431-438. https://doi.org/10.1606/1044-3894.3927\nReed-Ashcraft, K., Kirk, R. S., & Fraser, M. W. (2001). The reliability and validity of the North Carolina Family Assessment Scale. Research on Social Work Practice, 11(4), 503-520. https://doi.org/10.1177/104973150101100406\nU.S. Department of Health and Human Services. (2018). Child protective services: A guide for caseworkers. Children’s Bureau, Administration for Children and Families. https://www.childwelfare.gov/pubPDFs/cps2018.pdf",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Strengths and Stressors (SAS) questionnaire PDF",
+   "source_url": null,
+   "sha256": "a6b2516b0f7b34ecf8e7035094d76343359b0292efe178714a7b828f76a16b03",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/a6b2516b0f7b34ecf8e7035094d76343359b0292efe178714a7b828f76a16b03.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Spence Children’s Anxiety Scale – Child (SCAS-Child)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6520b9aeff9f3a1735ee50f9dadf84a1fee690fa65ecc0200f4da50f4d64cd65",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6520b9aeff9f3a1735ee50f9dadf84a1fee690fa65ecc0200f4da50f4d64cd65.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download SAS PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "53a1728fa693cd0e1e549c788b32c42f8e9937ded970962f8bdd1e3602ac6b28",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/53a1728fa693cd0e1e549c788b32c42f8e9937ded970962f8bdd1e3602ac6b28.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SAS Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "937b1dd5f3aea4738c26ce562644dea743b5d8b4ea65901f295bec7c92b9cb46",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/937b1dd5f3aea4738c26ce562644dea743b5d8b4ea65901f295bec7c92b9cb46.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SAS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "b326a2ba7c65f908819c15df96fbc7df6c9e99588536875fc7595e587044e4ab",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b326a2ba7c65f908819c15df96fbc7df6c9e99588536875fc7595e587044e4ab.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SAS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "81d73c22f552cdcedad2b8fdeeb538e0b79aca2527300e937896f2057e7f0a60",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/81d73c22f552cdcedad2b8fdeeb538e0b79aca2527300e937896f2057e7f0a60.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "SAS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Strengths and Stressors (SAS) u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "https://www.childwelfare.gov/pubPDFs/cps2018.pdf",
+   "source_url": "https://www.childwelfare.gov/pubPDFs/cps2018.pdf",
+   "sha256": null,
+   "mime_type": null,
+   "archive_path": null,
+   "status": "unavailable",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download SAS PDF",
+   "source_url": null,
+   "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "SAS Sample Results",
+   "source_url": null,
+   "sha256": "c616f4907b20b6193c63b326a80a75e537cd67af6fdef3ff6dcba2433615eed2",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c616f4907b20b6193c63b326a80a75e537cd67af6fdef3ff6dcba2433615eed2.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "original_capture_gaps",
+    "detail": "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately."
+   },
+   {
+    "code": "source_item_count_differs",
+    "detail": "Page description mentions [56] items; selected PDF has 35 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 35
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2ccc891845f9d711f2a85f94c8a311ca28d337e88de5c365d47870a2dd228566.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "65b901ea458e528e56d548a1829b6ace02acbe37aec6a574a1a21fb83f9a3b97",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately.",
+   "Page description mentions [56] items; selected PDF has 35 extracted response fields. Follow-up fields, subquestions or different editions may explain this; review the form scope.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T10:20:54.673808+00:00",
+  "raw_extraction_sha256": "efbb7916fac262d82103ac63cfe9daf76cb2b577728f9e40a5eaaa4c69571949",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Child"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://eric.ed.gov/?id=EJ673625",
+    "title": "https://eric.ed.gov/?id=EJ673625"
+   },
+   {
+    "url": "https://doi.org/10.1606/1044-3894.3927",
+    "title": "https://doi.org/10.1606/1044-3894.3927"
+   },
+   {
+    "url": "https://doi.org/10.1177/104973150101100406",
+    "title": "https://doi.org/10.1177/104973150101100406"
+   },
+   {
+    "url": "https://www.childwelfare.gov/pubPDFs/cps2018.pdf",
+    "title": "https://www.childwelfare.gov/pubPDFs/cps2018.pdf"
+   },
+   {
+    "url": null,
+    "title": "Paediatric behavioural checklist"
+   },
+   {
+    "url": null,
+    "title": "Parent anxiety rating scale"
+   },
+   {
+    "url": null,
+    "title": "Paediatric anxiety assessment"
+   },
+   {
+    "url": null,
+    "title": "Download SAS PDF"
+   },
+   {
+    "url": null,
+    "title": "SAS Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Family Therapy"
+   },
+   {
+    "url": null,
+    "title": "Treatment Summary Report – Third Party Request"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

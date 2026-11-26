@@ -1,0 +1,1245 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "the-impact-of-event-scale-revised-ies-r--46fccba3226e",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "The Impact of Event Scale – Revised (IES-R)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Impact of Event Scale-Revised (IES-R) is a 22-item self-report measure designed to assess distress caused by a traumatic event and can assist clinicians in assessing for Post Traumatic Stress Disorder (PTSD). This technical review presents normative data from latent profile analysis of clinical populations, along with detailed percentile rankings and interpretive guidelines, to help clinicians better understand and utilise the assessment in practice.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Below is a list of difficulties people sometimes have after stressful life events. Please read each item, and then indicate how distressing each difficulty has been for you DURING THE PAST SEVEN DAYS with respect to (the event). How much were you distressed or bothered by these difficulties?",
+  "instructions_source": {
+   "url": null,
+   "sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 88.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of all 22 items)",
+     "y": 198.8,
+     "url": null,
+     "sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "The total score is also expressed as an average score from 0-4 (by taking the raw score and dividing it by the number of items), and as a percentile rank based on the sub-clinical profile from NovoPsych’s Latent Profile Analysis. This percentile contextualises the client’s score relative to treatment-seeking individuals who have been exposed to a traumatic event, and who have low symptoms or who are managing their symptoms well. For example, a client’s score at the 70th percentile means that 70% of individuals in the sub-clinical group scored lower, indicating the client has a higher level of trauma-related distress compared to their sub-clinical peers.",
+   "Severity ranges are given for the total score, with a total score exceeding 24 (average score 1.09: Average Likert score above “A little bit”) indicates PTSD symptoms are clinically relevant. A score of 33 or above (average score 1.50) represents an appropriate cut-off for probable PTSD. A score of 37 (average score 1.68) or more is indicative of severe symptoms that have been associated with significant functional impairment and physiological issues such as immunosuppression.",
+   "Severity descriptors for the total score are based on cut-off scores in the literature, detailed here:",
+   "Low (raw score 0-23: Average score <1.08): Minimal to mild distress related to the traumatic event.",
+   "Clinically Significant (raw score 24-32: Average score between 1.09 and 1.45): Notable trauma-related symptoms.",
+   "Probable (raw score 33-36: Average score between 1.46 and 1.64): Symptoms consistent with PTSD.",
+   "Extreme (raw score 37+: Average score > 1.65+): Severe PTSD symptoms.",
+   "On first administration, results are shown in a stacked average score bar graph, which displays the total average score.",
+   "Then, a second bar graph of the three subscale average scores is shown next, allowing each symptom cluster’s relative contribution to overall distress to be seen.",
+   "When administered multiple times, two line graphs are generated, the first tracks the total average score.",
+   "The second shows the subscale average scores over time to visualise changes in symptom patterns.",
+   "A little bit = Average score 0-1",
+   "Moderately = Average score 1.1-2",
+   "Quite a bit = Average score 2.1-3",
+   "Extremely = Average score 3.1-4",
+   "Cut-off scores for the total have been established based on research examining the relationship between IES-R scores and the presence or absence of a PTSD diagnosis. A score of 24 or above indicates that PTSD is a clinical concern, with those scoring in this range who do not have full PTSD likely experiencing some PTSD symptoms (Asukai et al., 2002). A score of 33 or above represents the optimal cut-off for probable PTSD diagnosis, providing the best balance between sensitivity and specificity (Creamer et al., 2003). Research has also found that scores of 37 or above are high enough to suppress immune system functioning, even 10 years after the traumatic event (Kawamura et al., 2001).",
+   "Based on cut-off scores provided in the literature (Asukai et al., 2002; Creamer et al., 2003; Kawamura et al., 2001), several severity categories are provided below to aid in the interpretation of the IES-R Total Score:"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "IES-R Scoring & Interpretation",
+    "text": "The IES-R produces a total score ranging from 0-88, with higher scores indicating a greater frequency and severity of post-traumatic stress symptoms. Three subscale scores with differing ranges are also produced:\nIntrusion (8 items: 1, 2, 3, 6, 9, 14, 16, 20): intrusive thoughts, nightmares, intrusive feelings, and imagery associated with the traumatic event (range 0-32)\nAvoidance (8 items: 5, 7, 8, 11, 12, 13, 17, 22): efforts to avoid trauma-related thoughts, feelings, or reminders, as well as numbing of responsiveness (range 0-32)\nHyperarousal (6 items: 4, 10, 15, 18, 19, 21): heightened physiological arousal and reactivity following the trauma (range 0-24)\n\nThe total score is also expressed as an average score from 0-4 (by taking the raw score and dividing it by the number of items), and as a percentile rank based on the sub-clinical profile from NovoPsych’s Latent Profile Analysis. This percentile contextualises the client’s score relative to treatment-seeking individuals who have been exposed to a traumatic event, and who have low symptoms or who are managing their symptoms well. For example, a client’s score at the 70th percentile means that 70% of individuals in the sub-clinical group scored lower, indicating the client has a higher level of trauma-related distress compared to their sub-clinical peers.\nSeverity ranges are given for the total score, with a total score exceeding 24 (average score 1.09: Average Likert score above “A little bit”) indicates PTSD symptoms are clinically relevant. A score of 33 or above (average score 1.50) represents an appropriate cut-off for probable PTSD. A score of 37 (average score 1.68) or more is indicative of severe symptoms that have been associated with significant functional impairment and physiological issues such as immunosuppression.\nSeverity descriptors for the total score are based on cut-off scores in the literature, detailed here:\nLow (raw score 0-23: Average score <1.08): Minimal to mild distress related to the traumatic event.\nClinically Significant (raw score 24-32: Average score between 1.09 and 1.45): Notable trauma-related symptoms.\nProbable (raw score 33-36: Average score between 1.46 and 1.64): Symptoms consistent with PTSD.\nExtreme (raw score 37+: Average score > 1.65+): Severe PTSD symptoms.\nFor tracking clinical progress, changes of half a standard deviation (approximately 9 total score points) are considered clinically meaningful, following the minimally important difference guidelines (Norman et al., 2003; Turner et al., 2010). Monitoring scores over time allows clinicians to assess treatment effectiveness and adjust trauma-focused interventions as needed.\nOn first administration, results are shown in a stacked average score bar graph, which displays the total average score.\n\nThen, a second bar graph of the three subscale average scores is shown next, allowing each symptom cluster’s relative contribution to overall distress to be seen.\n\nA comparison graph is also presented showing the respondent’s raw score relative to a group of trauma-exposed but well coping individuals and a sample of patients with a confirmed PTSD diagnosis.\n\nWhen administered multiple times, two line graphs are generated, the first tracks the total average score.\n\nThe second shows the subscale average scores over time to visualise changes in symptom patterns.\n\nSeverity ranges for the subscales use a gradient, with Likert response labels on the right for reference. Response table descriptors for the subscales also follow this logic:\nA little bit = Average score 0-1\nModerately = Average score 1.1-2\nQuite a bit = Average score 2.1-3\nExtremely = Average score 3.1-4\nInterpretation at the subscale level may also be clinically useful. For example, a high score on the Avoidance subscale relative to the Intrusion subscale may suggest that the client’s avoidance strategies may be temporarily ‘successful’ in keeping intrusive symptoms at bay. However, this avoidance pattern is likely impeding progress by preventing natural emotional processing of the trauma.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "Intrusion (Items 1, 2, 3, 6, 9, 14, 16, 20):",
+    "y": 110.2,
+    "url": null,
+    "sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Avoidance (Items 5, 7, 8, 11, 12, 13, 17, 22):",
+    "y": 135.0,
+    "url": null,
+    "sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Hyperarousal (Items 4, 10, 15, 18, 19, 21):",
+    "y": 159.8,
+    "url": null,
+    "sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Weiss, D.S., & Marmar, C.R. (1997). The Impact of Event Scale-Revised. In J.P. Wilson, & T.M. Keane (Eds.), Assessing Psychological Trauma and PTSD: A Practitioner’s Handbook (pp. 399-411). New York: Guilford Press.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Aljaberi, M. A., Lee, K. H., Alareqe, N. A., Qasem, M. A., Alsalahi, A., Abdallah, A. M., Noman, S., Al-Tammemi, A. B., Mohamed Ibrahim, M. I., & Lin, C. Y. (2022). Rasch modeling and multilevel confirmatory factor analysis for the usability of the Impact of Event Scale-Revised (IES-R) during the COVID-19 pandemic. Healthcare, 10 (10), 1858. https://doi.org/10.3390/healthcare10101858\nAmerican Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). American Psychiatric Publishing.\nAsukai, N., Kato, H., Kawamura, N., Kim, Y., Yamamoto, K., Kishimoto, J., Miyake, Y., & Nishizono-Maher, A. (2002). Reliability and validity of the Japanese-language version of the Impact of Event Scale-Revised (IES-R-J): Four studies of different traumatic events. Journal of Nervous and Mental Disease, 190 (3), 175-182. https://doi.org/10.1097/00005053-200203000-00006\nBeck, J. G., Grant, D. M., Read, J. P., Clapp, J. D., Coffey, S. F., Miller, L. M., & Palyo, S. A. (2008). The impact of event scale-revised: Psychometric properties in a sample of motor vehicle accident survivors. Journal of Anxiety Disorders, 22 (2), 187-198. https://doi.org/10.1016/j.janxdis.2007.02.007\nCoffey, S. F., & Berglind, G. (2006). Screening for PTSD in motor vehicle accident survivors using PSS-SR and IES. Journal of Traumatic Stress, 19 (1), 119-128. https://doi.org/10.1002/jts.20106\nCreamer, M., Bell, R., & Failla, S. (2003). Psychometric properties of the Impact of Event Scale-Revised. Behaviour Research and Therapy, 41 (12), 1489-1496. https://doi.org/10.1016/j.brat.2003.07.010\nHorowitz, M., Wilner, N., & Alvarez, W. (1979). Impact of Event Scale: A measure of subjective stress. Psychosomatic Medicine, 41 (3), 209-218. https://doi.org/10.1097/00006842-197905000-00004\nKawamura, N., Yoshiharu, K., & Nozomu, A. (2001). Suppression of cellular immunity in men with a past history of post-traumatic stress disorder. American Journal of Psychiatry, 158 (3), 484-486. https://doi.org/10.1176/appi.ajp.158.3.484\nKessler, R. C., Berglund, P., Demler, O., Jin, R., Merikangas, K. R., & Walters, E. E. (2005). Lifetime prevalence and age-of-onset distributions of DSM-IV disorders in the National Comorbidity Survey Replication. Archives of General Psychiatry, 62 (6), 593-602. https://doi.org/10.1001/archpsyc.62.6.593\nLoewenstein, R. J. (2018). Dissociation debates: Everything you know is wrong. Dialogues in Clinical Neuroscience, 20 (3), 229-242. https://doi.org/10.31887/DCNS.2018.20.3/rloewenstein\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: The remarkable universality of half a standard deviation. Medical Care, 41 (5), 582-592. https://doi.org/10.1097/01.MLR.0000062554.74615.4C\nRash, C. J., Coffey, S. F., Baschnagel, J. S., Drobes, D. J., & Saladin, M. E. (2008). Psychometric properties of the IES-R in traumatized substance dependent individuals with and without PTSD. Addictive Behaviors, 33 (8), 1039-1047. https://doi.org/10.1016/j.addbeh.2008.04.006\nTurner, D., Schünemann, H. J., Griffith, L. E., Beaton, D. E., Griffiths, A. M., Critch, J. N., & Guyatt, G. H. (2010). The minimal detectable change cannot reliably replace the minimal important difference. Journal of Clinical Epidemiology, 63 (1), 28-36. https://doi.org/10.1016/j.jclinepi.2009.01.024\nWeiss, D. S. (2007). The Impact of Event Scale-Revised. In J. P. Wilson & T. M. Keane (Eds.), Assessing psychological trauma and PTSD: A practitioner’s handbook (2nd ed., pp. 168-189). Guilford Press.",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Impact of Event Scale – Revised (IES-R) PDF",
+   "source_url": null,
+   "sha256": "bb0b62309104a30a736f34a2b692157ff77be8fdf07f4442d4ff012ab089e9c3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/bb0b62309104a30a736f34a2b692157ff77be8fdf07f4442d4ff012ab089e9c3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Adverse Childhood Experiences Questionnaire (ACE-Q)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "678a6a297c14417030097d722a91934be973bd6b678df2fc22c4f54aafaadc50",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/678a6a297c14417030097d722a91934be973bd6b678df2fc22c4f54aafaadc50.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download IES-R PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "32648bd56f246152c6d68528068f325a6c7c59fe343a2b38cf7be518cfaec780",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/32648bd56f246152c6d68528068f325a6c7c59fe343a2b38cf7be518cfaec780.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Sample Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "IES-R PTSD screening guidelines and severity categories",
+   "source_url": null,
+   "sha256": "e731d1dd9314cbf1b82463b4318e07382c18b86026969d200ec4a3993516639f",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e731d1dd9314cbf1b82463b4318e07382c18b86026969d200ec4a3993516639f.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "56bee37307ffff0ce27e2552bd38d4cf0668d79a4eb390754a53f33c83f99f4c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/56bee37307ffff0ce27e2552bd38d4cf0668d79a4eb390754a53f33c83f99f4c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "76b714e72358cc62cb0d481aed06e5ca9c6b697ca8590a8b2c568d372ab913b4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/76b714e72358cc62cb0d481aed06e5ca9c6b697ca8590a8b2c568d372ab913b4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6321d33aa38202a6874c2a95e8914c6c7684b85902144e310017ce49d9b2165e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6321d33aa38202a6874c2a95e8914c6c7684b85902144e310017ce49d9b2165e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3412dc17f0ac72dd50ea6525f50246855b3b4c796bf49ff676cafec32a655688",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3412dc17f0ac72dd50ea6525f50246855b3b4c796bf49ff676cafec32a655688.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "7ef286d92233c8d5abd02577e8e1f6b6cc3e78a5a57d7e8dfd198095b672f20d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ef286d92233c8d5abd02577e8e1f6b6cc3e78a5a57d7e8dfd198095b672f20d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "443ef063bc588b85baf6b25f839065e3667d80a74ddd7a035ee0c1935ace1e08",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/443ef063bc588b85baf6b25f839065e3667d80a74ddd7a035ee0c1935ace1e08.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "IES-R Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the The Impact of Event Scale – Revised (IES-R) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download IES-R PDF",
+   "source_url": null,
+   "sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A15",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "IES-R Review",
+   "source_url": null,
+   "sha256": null,
+   "mime_type": null,
+   "archive_path": null,
+   "status": "unavailable",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A16",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "IES-R Sample Results",
+   "source_url": null,
+   "sha256": "b5045e31575d531c3d663088518d3ab5186353c578aedb4a1a84ea1c890c8d77",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b5045e31575d531c3d663088518d3ab5186353c578aedb4a1a84ea1c890c8d77.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "LIVE_A27",
+   "kind": "documents",
+   "role": "reference_material",
+   "source_url": null,
+   "sha256": "0c51f51c43c9b877f8045d2329a6fb0b801b480e8ddc39216556990c578df785",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/0c51f51c43c9b877f8045d2329a6fb0b801b480e8ddc39216556990c578df785.pdf",
+   "mime_type": "application/pdf",
+   "status": "saved",
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "original_capture_gaps",
+    "detail": "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 22
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "b5045e31575d531c3d663088518d3ab5186353c578aedb4a1a84ea1c890c8d77",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/b5045e31575d531c3d663088518d3ab5186353c578aedb4a1a84ea1c890c8d77.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 6,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_3",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "0c51f51c43c9b877f8045d2329a6fb0b801b480e8ddc39216556990c578df785",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/0c51f51c43c9b877f8045d2329a6fb0b801b480e8ddc39216556990c578df785.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "IES-R Review"
+   ],
+   "page_count": 25,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total Score",
+    "minimum": 0.0,
+    "maximum": 88.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 88.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "c7baa8cb4efa85e27f97393bdbf19f02c5fb2ab0b12cb36b9d39934762279f63",
+   "guidance_titles": [
+    "IES-R Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending",
+    "original_capture_gaps"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q17",
+    "question_ref": "/questionnaire/items/16",
+    "source_label": "17",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q18",
+    "question_ref": "/questionnaire/items/17",
+    "source_label": "18",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q19",
+    "question_ref": "/questionnaire/items/18",
+    "source_label": "19",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q20",
+    "question_ref": "/questionnaire/items/19",
+    "source_label": "20",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q21",
+    "question_ref": "/questionnaire/items/20",
+    "source_label": "21",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q22",
+    "question_ref": "/questionnaire/items/21",
+    "source_label": "22",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "324b305c43400b05bd703a9cd5daf9ec4b880733499415dd4f764787f60096af",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T11:51:13.372230+00:00",
+  "raw_extraction_sha256": "8f99e769ba08f2aeed2b3e42f73d5d77a3f903a05d49aa6333094f8343bb1275",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Diagnosis"
+   },
+   {
+    "url": null,
+    "title": "Trauma"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.3390/healthcare10101858",
+    "title": "https://doi.org/10.3390/healthcare10101858"
+   },
+   {
+    "url": "https://doi.org/10.1097/00005053-200203000-00006",
+    "title": "https://doi.org/10.1097/00005053-200203000-00006"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.janxdis.2007.02.007",
+    "title": "https://doi.org/10.1016/j.janxdis.2007.02.007"
+   },
+   {
+    "url": "https://doi.org/10.1002/jts.20106",
+    "title": "https://doi.org/10.1002/jts.20106"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.brat.2003.07.010",
+    "title": "https://doi.org/10.1016/j.brat.2003.07.010"
+   },
+   {
+    "url": "https://doi.org/10.1097/00006842-197905000-00004",
+    "title": "https://doi.org/10.1097/00006842-197905000-00004"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.ajp.158.3.484",
+    "title": "https://doi.org/10.1176/appi.ajp.158.3.484"
+   },
+   {
+    "url": "https://doi.org/10.1001/archpsyc.62.6.593",
+    "title": "https://doi.org/10.1001/archpsyc.62.6.593"
+   },
+   {
+    "url": "https://doi.org/10.31887/DCNS.2018.20.3/rloewenstein",
+    "title": "https://doi.org/10.31887/DCNS.2018.20.3/rloewenstein"
+   },
+   {
+    "url": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C",
+    "title": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.addbeh.2008.04.006",
+    "title": "https://doi.org/10.1016/j.addbeh.2008.04.006"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jclinepi.2009.01.024",
+    "title": "https://doi.org/10.1016/j.jclinepi.2009.01.024"
+   },
+   {
+    "url": null,
+    "title": "Trauma healing assessment"
+   },
+   {
+    "url": null,
+    "title": "Trauma symptom checklist"
+   },
+   {
+    "url": null,
+    "title": "Complex trauma measure"
+   },
+   {
+    "url": null,
+    "title": "Traumatic events checklist"
+   },
+   {
+    "url": null,
+    "title": "Adverse experiences scale"
+   },
+   {
+    "url": null,
+    "title": "Download IES-R PDF"
+   },
+   {
+    "url": null,
+    "title": "IES-R Sample Results"
+   },
+   {
+    "url": null,
+    "title": "IES-R Review"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Trauma-Focused CBT (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "EMDR Session (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychological Evaluation Report (Report Template)"
+   },
+   {
+    "url": null,
+    "title": "6"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

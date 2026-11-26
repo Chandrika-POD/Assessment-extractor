@@ -1,0 +1,882 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "digital-stress-scale--a523bd676177",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Digital Stress Scale (DSS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Digital Stress Scale (DSS) is a 24-item self-report measure designed to assess the subjective experience of stress associated with digital technology use, particularly mobile and social media (Hall et al., 2021). The DSS can be used with adolescents or adults (ages 14+).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "past 7 days"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "The following statements are about how people feel about their media use. Please indicate how frequently you have felt this way over the past 7 days.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Availability Stress",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q8",
+     "Q16",
+     "Q18"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Availability Stress (Items 1, 8, 16, 18, average of circled values):",
+     "y": 175.5,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_2",
+    "label": "Approval Anxiety",
+    "method": "mean",
+    "item_ids": [
+     "Q3",
+     "Q9",
+     "Q17",
+     "Q20",
+     "Q22",
+     "Q24"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Approval Anxiety (Items 3, 9, 17, 20, 22, 24, average of circled values):",
+     "y": 200.2,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_3",
+    "label": "Fear of Missing Out",
+    "method": "mean",
+    "item_ids": [
+     "Q5",
+     "Q10",
+     "Q13",
+     "Q21"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Fear of Missing Out (Items 5, 10, 13, 21, average of circled values):",
+     "y": 225.0,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_4",
+    "label": "Connection Overload",
+    "method": "mean",
+    "item_ids": [
+     "Q2",
+     "Q6",
+     "Q11",
+     "Q14",
+     "Q19",
+     "Q23"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Connection Overload (Items 2, 6, 11, 14, 19, 23, average of circled values):",
+     "y": 249.8,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_5",
+    "label": "Online Vigilance",
+    "method": "mean",
+    "item_ids": [
+     "Q4",
+     "Q7",
+     "Q12",
+     "Q15"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Online Vigilance (Items 4, 7, 12, 15, average of circled values):",
+     "y": 274.5,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   {
+    "id": "pdf_6",
+    "label": "Total Score",
+    "method": "mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (average of all 24 items)",
+     "y": 313.5,
+     "url": null,
+     "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "The Digital Stress Scale (DSS) items are typically averaged to provide subscale scores and a total score, with higher average scores (1-5) indicating greater digital stress.",
+   "Average scores for each subscale and the total score are converted to percentiles based upon a sample of 735 adolescents and young adults (Hall et al., 2021). These percentiles are then used to derive descriptive categories that aid in clinical interpretation. The descriptive categories for each subscale and the total score are:",
+   "Average (26th to 75th percentile): Indicates a typical level of digital stress compared to peers.",
+   "For clinical interpretation, DSS scores are typically evaluated dimensionally, with higher average scores indicating greater digital stress in specific domains. While formal clinical cutoffs have not been established, scores can be interpreted relative to sample means. Based on the combined sample from Hall et al. (2021), the following means and standard deviations provide reference points for interpretation:"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "DSS Scoring & Interpretation",
+    "text": "The Digital Stress Scale (DSS) items are typically averaged to provide subscale scores and a total score, with higher average scores (1-5) indicating greater digital stress.\nThe Total Score provides an overall indication of the level of digital distress experienced by the client but the subscales of the DSS provide clinically useful information about the dimensions of digital stress:\n1. Availability Stress (Items 1, 8, 16, 18): Availability Stress measures the distress, guilt, and anxiety resulting from perceived expectations to be constantly accessible and responsive via digital means. Unlike other dimensions of digital stress, availability stress shows a more complex relationship with social outcomes, as it can be associated with both greater social connectedness and increased subjective distress.\n2. Approval Anxiety (Items 3, 9, 17, 20, 22, 24): Approval Anxiety measures the nervousness and anxiety about how others perceive and respond to one’s digital self-presentation, particularly on social media. High scores on this subscale suggest that concerns about digital self-presentation may be a significant source of psychological distress.\n3. Fear of Missing Out (Items 5, 10, 13, 21): Fear of Missing Out measures the anxiety, worry, and distress resulting from concerns about being excluded from rewarding social experiences. High scores on this subscale suggest that fear of social exclusion may be driving problematic patterns of technology use.\n4. Connection Overload (Items 2, 6, 11, 14, 19, 23): Connection Overload measures the subjective experience of being overwhelmed by the volume and pace of digital communications. High scores on this subscale indicate that the sheer volume of digital communication may be exceeding the individual’s psychological resources.\n5. Online Vigilance (Items 4, 7, 12, 15): Online Vigilance measures the persistent preoccupation with staying connected to digital devices and online content. High scores on this subscale suggest that digital connectivity has become a dominant psychological need that may interfere with present-moment engagement in offline activities and relationships.\n\nAverage scores for each subscale and the total score are converted to percentiles based upon a sample of 735 adolescents and young adults (Hall et al., 2021). These percentiles are then used to derive descriptive categories that aid in clinical interpretation. The descriptive categories for each subscale and the total score are:\nVery Low (10th percentile or below): Indicates significantly less digital stress than most individuals.\nLow (11th to 25th percentile): Indicates less digital stress than most individuals.\nAverage (26th to 75th percentile): Indicates a typical level of digital stress compared to peers.\nHigh (76th to 90th percentile): Indicates more digital stress than most individuals.\nVery High (91st percentile or above): Indicates significantly elevated levels of digital stress.\nResearch indicates that the pattern and impact of digital stress may vary by developmental stage, with adolescents showing stronger associations between digital stress dimensions (particularly Approval Anxiety and FoMO) and psychosocial outcomes compared to young adults (Hall et al., 2021). When interpreting DSS scores for adolescents, consider the heightened importance of peer evaluation and social connectedness during this developmental period (Nesi et al., 2018).\n\nOn first administration a plot is presented displaying the total DSS and the subscale percentiles. The percentiles are presented with the qualitative descriptors in the background for ease of interpretation. When administered on multiple occasions, a longitudinal plot is displayed showing the subscale percentiles over time. When DSS scores are available from multiple timepoints, changes in scores can provide valuable information about the effectiveness of interventions or developmental changes in digital stress. For comparative interpretation, changes of at least 0.5 standard deviations in raw scores are considered clinically meaningful (the minimally important difference) (Norman et al., 2003; Turner et al., 2010). When interpreting changes, attention should be paid to both the total score and the patterns of change across subscales.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Hall, J. A., Steele, R. G., Christofferson, J. L., & Mihailova, T. (2021). Development and initial evaluation of a multidimensional digital stress scale. Psychological Assessment , 33(3), 230–242. https://doi.org/10.1037/pas0000979",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Nesi, J., Choukas-Bradley, S., & Prinstein, M. J. (2018). Transformation of adolescent peer relations in the social media context: Part 1—A theoretical framework and application to dyadic peer relationships. Clinical Child and Family Psychology Review, 21(3), 267–294. https://doi.org/10.1007/s10567-018-0261-x\nReinecke, L., Aufenanger, S., Beutel, M. E., Dreier, M., Quiring, O., Stark, B., Wölfling, K., & Müller, K. W. (2017). Digital stress over the life span: The effects of communication load and Internet multitasking on perceived stress and psychological health impairments in a German probability sample. Media Psychology, 20, 90–115. https://doi.org/10.1080/15213269.2015.1121832\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: The remarkable universality of half a standard deviation. Medical Care, 41(5), 582–592. https://doi.org/10.1097/01.MLR.0000062554.74615.4C\nSteele, R. G., Hall, J. A., & Christofferson, J. L. (2020). Conceptualizing digital stress in adolescents and young adults: Toward the development of an empirically based model. Clinical Child and Family Psychology Review, 23, 15–26. https://doi.org/10.1007/s10567-019-00300-5\nTurner, D., Schünemann, H. J., Griffith, L. E., Beaton, D. E., Griffiths, A. M., Critch, J. N., & Guyatt, G. H. (2010). The minimal detectable change cannot reliably replace the minimal important difference. Journal of Clinical Epidemiology, 63(1), 28–36. https://doi.org/10.1016/j.jclinepi.2009.01.024",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Digital Stress Scale (DSS) PDF",
+   "source_url": null,
+   "sha256": null,
+   "mime_type": null,
+   "archive_path": null,
+   "status": "unsupported_format",
+   "caption": "",
+   "source_section": "The Kessler Psychological Distress Scale (K10)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1e7cf55aa224622d84d3e424b3bbea4eb432279ffe8fb1f25ffb07d116b3ba86",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e7cf55aa224622d84d3e424b3bbea4eb432279ffe8fb1f25ffb07d116b3ba86.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download DSS PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "d209d57680b4713d39534d8e107b043d90153d3a626e9c34c52fef050e14f532",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d209d57680b4713d39534d8e107b043d90153d3a626e9c34c52fef050e14f532.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Sample DSS Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "b064f190ed2a9ca4295919f3f325833f6757da98c209443038d59e9ef82f4bb0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b064f190ed2a9ca4295919f3f325833f6757da98c209443038d59e9ef82f4bb0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DSS Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "766ebc8e38241835339ef71893e400750ef180af93199abfc0bbf77b8e368ac1",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/766ebc8e38241835339ef71893e400750ef180af93199abfc0bbf77b8e368ac1.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "256c98bb91e0d14185ed335a3e59c6589eb4a3b8e480b8e1a52b99a012e43170",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/256c98bb91e0d14185ed335a3e59c6589eb4a3b8e480b8e1a52b99a012e43170.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3d5c8cc9f392f9027802a83e781f3441bbe4dc98af4e7a62da9a0ad1b398e12d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3d5c8cc9f392f9027802a83e781f3441bbe4dc98af4e7a62da9a0ad1b398e12d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "DSS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Digital Stress Scale (DSS) scale using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download DSS PDF",
+   "source_url": null,
+   "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "DSS Review",
+   "source_url": null,
+   "sha256": null,
+   "mime_type": null,
+   "archive_path": null,
+   "status": "unavailable",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "Sample DSS Results",
+   "source_url": null,
+   "sha256": "74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/74dff43c3301ca1d4ab1434bd9b398f55db0cdd8625737848bc177dda143883b.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "LIVE_A20",
+   "kind": "documents",
+   "role": "reference_material",
+   "source_url": null,
+   "sha256": "26658b0d46f8f728eb2c97d345b4988e80da2e0266e0c3a88e638c8d7ce07b7a",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/26658b0d46f8f728eb2c97d345b4988e80da2e0266e0c3a88e638c8d7ce07b7a.pdf",
+   "mime_type": "application/pdf",
+   "status": "saved",
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "original_capture_gaps",
+    "detail": "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 24
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5ddf4321b4a2cd88a6fc51b8d04438959878659a91ec964d2fbeed2836ffede8.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "26658b0d46f8f728eb2c97d345b4988e80da2e0266e0c3a88e638c8d7ce07b7a",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/26658b0d46f8f728eb2c97d345b4988e80da2e0266e0c3a88e638c8d7ce07b7a.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf",
+    "DSS Review"
+   ],
+   "page_count": 18,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "b425b7b0267556a256408da3aef1d8d4060e6386714d8b377c0c3b0d08fe2ed8",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "pdf_6",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:29:40.593892+00:00",
+  "raw_extraction_sha256": "d51d5cd4e8300bfa6d9a4705579ec27ca01efc5c917d930d63f1631cd2315905",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1037/pas0000979",
+    "title": "https://doi.org/10.1037/pas0000979"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10567-018-0261-x",
+    "title": "https://doi.org/10.1007/s10567-018-0261-x"
+   },
+   {
+    "url": "https://doi.org/10.1080/15213269.2015.1121832",
+    "title": "https://doi.org/10.1080/15213269.2015.1121832"
+   },
+   {
+    "url": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C",
+    "title": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10567-019-00300-5",
+    "title": "https://doi.org/10.1007/s10567-019-00300-5"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jclinepi.2009.01.024",
+    "title": "https://doi.org/10.1016/j.jclinepi.2009.01.024"
+   },
+   {
+    "url": "https://doi.org/10.1186/s43045-023-00387-1",
+    "title": "https://doi.org/10.1186/s43045-023-00387-1"
+   },
+   {
+    "url": "https://doi.org/10.13209/j.0479-8023.2023.055",
+    "title": "https://doi.org/10.13209/j.0479-8023.2023.055"
+   },
+   {
+    "url": "https://doi.org/10.1007/s12144-022-03156-1",
+    "title": "https://doi.org/10.1007/s12144-022-03156-1"
+   },
+   {
+    "url": "https://doi.org/10.2147/PRBM.S413162",
+    "title": "https://doi.org/10.2147/PRBM.S413162"
+   },
+   {
+    "url": "https://doi.org/10.24106/kefdergi.1473539",
+    "title": "https://doi.org/10.24106/kefdergi.1473539"
+   },
+   {
+    "url": "https://doi.org/10.53478/yuksekogretim.1381953",
+    "title": "https://doi.org/10.53478/yuksekogretim.1381953"
+   },
+   {
+    "url": "https://doi.org/10.1080/01296612.2024.2368344",
+    "title": "https://doi.org/10.1080/01296612.2024.2368344"
+   },
+   {
+    "url": null,
+    "title": "Stress assessment scale"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Generalised anxiety questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Download DSS PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample DSS Results"
+   },
+   {
+    "url": null,
+    "title": "DSS Review"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

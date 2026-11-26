@@ -1,0 +1,816 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total Score",
+   "minimum": 0.0,
+   "maximum": 30.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 30.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of all 10 items)",
+     "y": 422.2,
+     "url": null,
+     "sha256": "ab54ff995f678f7836e7014d9602678e7350cb981f975db8455900a212b0ebd6"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "252c638f96d93412caeb6b562ac161a3e685cd5e43cc55523d7c2033d0d9572d",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d252c638f96d9_p1",
+   "documentSha256": "252c638f96d93412caeb6b562ac161a3e685cd5e43cc55523d7c2033d0d9572d",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d252c638f96d9_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d252c638f96d9_p1_section_1",
+    "d252c638f96d9_p1_section_2",
+    "d252c638f96d9_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d252c638f96d9_p2",
+   "documentSha256": "252c638f96d93412caeb6b562ac161a3e685cd5e43cc55523d7c2033d0d9572d",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d252c638f96d9_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "d252c638f96d9_p3",
+   "documentSha256": "252c638f96d93412caeb6b562ac161a3e685cd5e43cc55523d7c2033d0d9572d",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d252c638f96d9_p3_table_1"
+   ],
+   "sectionIds": [
+    "d252c638f96d9_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "d252c638f96d9_p4",
+   "documentSha256": "252c638f96d93412caeb6b562ac161a3e685cd5e43cc55523d7c2033d0d9572d",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d252c638f96d9_p4_table_1"
+   ],
+   "sectionIds": [
+    "d252c638f96d9_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d252c638f96d9_p1_section_1",
+   "pageId": "d252c638f96d9_p1",
+   "title": "EPDS Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    126.92852,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d252c638f96d9_p1_section_2",
+   "pageId": "d252c638f96d9_p1",
+   "title": "Edinburgh Postnatal Depression Scale (EPDS) Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    130.76601,
+    296.87488,
+    464.18594,
+    308.87488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d252c638f96d9_p1_section_3",
+   "pageId": "d252c638f96d9_p1",
+   "title": "Interpretive Text",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    613.09253,
+    143.26651,
+    627.09253
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d252c638f96d9_p2_section_1",
+   "pageId": "d252c638f96d9_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    162.34251,
+    290.26645,
+    176.34251
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d252c638f96d9_p3_section_1",
+   "pageId": "d252c638f96d9_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    301.58649,
+    151.8205,
+    315.58649
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d252c638f96d9_p4_section_1",
+   "pageId": "d252c638f96d9_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d252c638f96d9_p1_chart_1",
+   "title": "Edinburgh Postnatal Depression Scale (EPDS) Total Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    105.977,
+    316.787,
+    490.977,
+    574.787
+   ],
+   "widthPt": 385.0,
+   "heightPt": 258.0,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      105.97701,
+      493.7171,
+      488.97702,
+      574.78699
+     ],
+     "colour": "#ffffff",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      105.97701,
+      468.117,
+      488.97702,
+      493.71701
+     ],
+     "colour": "#d5d5d5",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      105.97701,
+      318.78699,
+      488.97702,
+      468.117
+     ],
+     "colour": "#f3bcbd",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 98.196395,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 30.0,
+      "positionPt": 319.56024,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 25.0,
+      "positionPt": 362.23056,
+      "text": "25",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 404.89035,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 15.0,
+      "positionPt": 447.56024,
+      "text": "15",
+      "colour": "#333333"
+     },
+     {
+      "value": 13.0,
+      "positionPt": 464.63013,
+      "text": "13",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 490.23053,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 532.89032,
+      "text": "5",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 575.56018,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 30.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d252c638f96d9_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 136,
+    "detectedType": "line",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Elevated",
+     "bboxPt": [
+      456.73901,
+      477.92825,
+      483.97601,
+      484.92825
+     ],
+     "colour": "#424242",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "High",
+     "bboxPt": [
+      469.58499,
+      390.45825,
+      483.97696,
+      397.45825
+     ],
+     "colour": "#c62828",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Edinburgh Postnatal Depression Scale (EPDS) Total Score",
+     "bboxPt": [
+      130.76601,
+      296.87488,
+      464.18594,
+      308.87488
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Interpretive Text",
+     "bboxPt": [
+      34.3465,
+      613.09253,
+      143.26651,
+      627.09253
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "The Edinburgh Postnatal Depression Scale (EPDS) was administered on 23 October 2026, with",
+     "bboxPt": [
+      91.0394,
+      632.34808,
+      556.29547,
+      643.34808
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null,
+   "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Edinburgh Postnatal Depression Scale Scoring",
+    "text": "The total score is calculated by summing all 10 items, giving a range of 0 to 30. Higher scores indicate more frequent or more intense depressive symptoms over the previous seven days.\n\n",
+    "source_url": null
+   },
+   {
+    "title": "EPDS Interpretive Text",
+    "text": "The report opens with the total score. At 10 or above it names the band and lists the three highest-scoring items with the response given to each, so the clinician can see which symptoms drive the score. Where items 3, 4 and 5, which are commonly associated with an anxious presentation, stand out from the rest of the profile, the report says so. No anxiety score is produced.\n",
+    "source_url": null
+   },
+   {
+    "title": "EPDS Change Score Interpretation",
+    "text": "Where EPDS scores are available from more than one administration, change between administrations supports progress monitoring. A change of 4 or more points is treated as a reliable change, meaning a change large enough to be unlikely to reflect measurement error alone (Matthey, 2004).\n",
+    "source_url": null
+   },
+   {
+    "title": "Why does the EPDS report use score thresholds rather than percentiles?",
+    "text": "Percentiles need a reference sample that represents the women being screened, with a full score distribution from that sample. The two largest Australian EPDS datasets, together covering more than 65,000 women, report the proportion of women above each threshold but not the underlying distribution (Buist et al., 2008; Khanlari et al., 2019). Scores are also heavily concentrated at the low end, with around 86 percent of women in the Sydney cohort scoring 9 or below, so a percentile says little about most respondents. The two thresholds, by contrast, rest on strong evidence, so the report places each score against them: 10, a more sensitive screen, and 13, which indicates probable depressive illness.\n",
+    "source_url": null
+   },
+   {
+    "title": "What does an EPDS score of 13 or above mean?",
+    "text": "It indicates probable depressive illness, and further mental health assessment is warranted. It is a screening result, not a diagnosis. Most women without major depression (95 percent) score below 13 (Levis et al., 2020), but how likely a particular positive screen is to reflect depression depends on how common depression is in the population being screened.\n",
+    "source_url": null
+   },
+   {
+    "title": "What does it mean if a woman's EPDS score goes up between administrations?",
+    "text": "Not necessarily that treatment is failing. The postnatal months bring changes in sleep, support and circumstance that can move mood independently of any intervention, and a rise around a known stressor reads differently from a rise with no obvious trigger. The report separates changes of 4 points or more, which are large enough to be unlikely to reflect measurement error alone, from smaller movements, so a modest increase is not reported as deterioration. The more useful question is usually what has changed for the woman since the last administration.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "252c638f96d93412caeb6b562ac161a3e685cd5e43cc55523d7c2033d0d9572d",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the EPDS, \nsee here\n.\nThe total score is calculated by summing all 10 items, giving a range of 0 to 30. Higher scores\nindicate more frequent or more intense depressive symptoms over the previous seven days.\nEPDS Severity Categories\nTwo descriptor bands are applied to the total score, at the scale authors' own cut-offs of 10 and\n13. Each does a different job: 10 is set low to catch as many cases as possible, and 13 is set\nhigh to flag the women most likely to have depression. Scores of 9 or below fall beneath both\nand carry no descriptor. The report gives the number without a label, and clinical judgement\nguides follow-up.\nElevated (10 to 12): a more sensitive screen, in other words a wider net that catches more cases\nbut includes more non-cases. Scores of 10 or more identify 85% of women with major\ndepression (Levis et al., 2020). A score in this range may reflect a depressive illness and\nwarrants further enquiry now, with the EPDS repeated within two to four weeks (COPE, 2023).\nHigh (13 to 30): probable depressive illness. Most women without major depression (95%) score\nbelow 13, so scores in this range are seldom seen without it. The trade-off is that about a third of\nwomen with major depression also score below 13, which is why the Elevated range sits\nbeneath it (Levis et al., 2020). A score in this range is likely to reflect a depressive illness and\nwarrants further mental health assessment.\nHow likely a High score is to reflect depression depends on how common depression is in the\npopulation being screened, so the score identifies who needs a closer look rather than\nconfirming a diagnosis. Responses may also shift when the questionnaire is completed in front\nof family members, or where disclosure feels risky.\nEPDS Item 10 and Risk of Self-Harm\nItem 10 asks directly about thoughts of self-harm. Any endorsement generates a risk alert in the\nreport, whatever the total score, and Australian guidance recommends immediate further mental\nhealth assessment (COPE, 2023). The item does not ask specifically about suicidal ideation, so\nresponses should be explored further and read both on their own and alongside the total score.\nThe thresholds work the same with or without item 10: total scores with and without it correlate\nat .998 (Qiu et al., 2023). A respondent may score in the Elevated or High range while\nanswering Never to item 10, or may endorse item 10 while the total score stays below 10. The\nsecond pattern does not on its own indicate depression, but it does indicate a risk of self-harm\nthat warrants attention in its own right.\nEPDS Change Score Interpretation\nWhere EPDS scores are available from more than one administration, change between\nadministrations supports progress monitoring. A change of 4 or more points is treated as a\nreliable change, meaning a change large enough to be unlikely to reflect measurement error\nalone (Matthey, 2004).",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A change of 4 or more points is treated as a reliable change, meaning a change large enough to be unlikely to reflect measurement error alone (Matthey, 2004).",
+   "Percentiles need a reference sample that represents the women being screened, with a full score distribution from that sample.",
+   "The two largest Australian EPDS datasets, together covering more than 65,000 women, report the proportion of women above each threshold but not the underlying distribution (Buist et al., 2008; Khanlari et al., 2019).",
+   "Scores are also heavily concentrated at the low end, with around 86 percent of women in the Sydney cohort scoring 9 or below, so a percentile says little about most respondents.",
+   "The two thresholds, by contrast, rest on strong evidence, so the report places each score against them: 10, a more sensitive screen, and 13, which indicates probable depressive illness."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [
+  {
+   "rows": [
+    [
+     "Total score",
+     "Descriptor",
+     "What it means"
+    ],
+    [
+     "0 to 9",
+     "No descriptor",
+     "Below both published cut-offs; the report gives the score without a label"
+    ],
+    [
+     "10 to 12",
+     "Elevated",
+     "May reflect a depressive illness; further enquiry now, and repeat the EPDS within two to four weeks"
+    ],
+    [
+     "13 to 30",
+     "High",
+     "Probable depressive illness; further mental health assessment is warranted"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Total score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Descriptor",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "What it means",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "0 to 9",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "No descriptor",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Below both published cut-offs; the report gives the score without a label",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "10 to 12",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Elevated",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "May reflect a depressive illness; further enquiry now, and repeat the EPDS within two to four weeks",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "13 to 30",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "High",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Probable depressive illness; further mental health assessment is warranted",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "EPDS Severity Categories",
+   "source_url": null
+  },
+  {
+   "rows": [
+    [
+     "Total score",
+     "Descriptor",
+     "What it means"
+    ],
+    [
+     "0 to 9",
+     "No descriptor",
+     "Below both published cut-offs; the report gives the score without a label"
+    ],
+    [
+     "10 to 12",
+     "Elevated",
+     "May reflect a depressive illness; further enquiry now, and repeat the EPDS within two to four weeks"
+    ],
+    [
+     "13 to 30",
+     "High",
+     "Probable depressive illness; further mental health assessment is warranted"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Total score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Descriptor",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "What it means",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "0 to 9",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "No descriptor",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Below both published cut-offs; the report gives the score without a label",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "10 to 12",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Elevated",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "May reflect a depressive illness; further enquiry now, and repeat the EPDS within two to four weeks",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "13 to 30",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "High",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "Probable depressive illness; further mental health assessment is warranted",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "EPDS Severity Categories",
+   "source_url": null
+  }
+ ],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d252c638f96d9_p1_chart_1"
+   ]
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 69
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

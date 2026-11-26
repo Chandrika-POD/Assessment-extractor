@@ -1,0 +1,1087 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "short-health-anxiety-inventory-shai--1295bbae11bd",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Short Health Anxiety Inventory (SHAI)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Short Health Anxiety Inventory (SHAI) contains 18 items that assess health anxiety independent of physical health status...",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "past six months"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Health Anxiety Please read each group of statements carefully and then select the one which best describes how you have felt over the past six months.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 54.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Total Score (sum of all 18 items)",
+     "y": 460.5,
+     "url": null,
+     "sha256": "8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "– A Normative Percentile compares the respondent’s scores against patterns of responding in a community sample. A Normative Percentile of around 50 represents an average (and healthy) level of concern about health. Higher percentiles indicate higher levels of concern over health. Those with Illness Anxiety Disorder will typically have a Normative Percentile above 99, indicating they score above 99% of the community.",
+   "If the SHAI is administered on more than one occasion, the total score will be graphed over time with a dotted horizontal line displayed at the community average score. The SHAI is sensitive to treatment effects, it is also a useful measure of the effectiveness of treatment for health anxiety."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "SHAI Scoring & Interpretation",
+    "text": "Scores consist of a total (range = 0 to 54) and scores for two subscales:\n– Health Anxiety (items 1-14, range 0 to 42) which measures anxiety related to health\n– Negative Consequences’ of becoming ill (items 15-18, range 0 to 12).\nHigher scores indicate more health anxiety and beliefs of negative consequences of becoming ill.\nTwo percentiles are computed that compares scores against two samples (Salkovskis, Rimes, Warwick & Clark, 2002).\n– A Normative Percentile compares the respondent’s scores against patterns of responding in a community sample. A Normative Percentile of around 50 represents an average (and healthy) level of concern about health. Higher percentiles indicate higher levels of concern over health. Those with Illness Anxiety Disorder will typically have a Normative Percentile above 99, indicating they score above 99% of the community.\n– A Clinical Percentile is also computed, indicating how the respondent scored in comparison to people who had been independently assessed as having Health Anxiety Disorder (previously known as hypochondriasis).\nIf the SHAI is administered on more than one occasion, the total score will be graphed over time with a dotted horizontal line displayed at the community average score. The SHAI is sensitive to treatment effects, it is also a useful measure of the effectiveness of treatment for health anxiety.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "Health Anxiety (Items 1–14):",
+    "y": 601.5,
+    "url": null,
+    "sha256": "8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Negative Consequences (Items 15–18):",
+    "y": 428.2,
+    "url": null,
+    "sha256": "8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": [
+  {
+   "id": "C1",
+   "title": "Short Health Anxiety Inventory (SHAI)",
+   "text": "The Short Health Anxiety Inventory (SHAI) contains 18 items that assess health anxiety independent of physical health status.\nItems assess worry about one’s health, awareness of bodily sensations and/or changes, and the feared consequences of having an illness (Salkovskis et al., 2002). It can be used in both healthy individuals and physically ill individuals including those who were temporarily sick or diagnosed with a serious and/or chronic illness.\n3 minutes\nAges 18+\nAnxiety , Health\nAdminister Now",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C2",
+   "title": "SHAI Overview",
+   "text": "Worries about health are a normal human experience, and thought to fall along a continuum in the general population (Salkovskis and Warwick, 2001). Towards the upper end of the continuum, individuals are likely to experience and obsessional fear of illness and may fall in the realm of health anxiety. Health Anxiety (now referred to as Illness Anxiety Disorder in the DSM-5-TR and previously known as hypochondriasis) refers to inappropriate or excessive fears about one’s health. It is characterised by excessive fears or beliefs that one has a serious illness, and this is often based on the misinterpretation of bodily sensations or symptoms.\nHealth anxiety consists of distressing emotions (such as fear) due to thoughts of danger and physiological arousal (Taylor, & Asmundson, 2004). This anxiety is often maintained by behaviours that individuals use to decrease distress however inadvertently increase or maintain physical symptoms of anxiety (Haig-Ferguson et al., 2021). Health anxiety has also been conceptualised to offer a unifying perspective on the fears symptoms worsening or returning commonly experienced by those living with chronic disease (Lebel et al., 2020; Haig-Ferguson et al., 2021).",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C3",
+   "title": "SHAI Scoring & Interpretation",
+   "text": "Scores consist of a total (range = 0 to 54) and scores for two subscales:\n– Health Anxiety (items 1-14, range 0 to 42) which measures anxiety related to health\n– Negative Consequences’ of becoming ill (items 15-18, range 0 to 12).\nHigher scores indicate more health anxiety and beliefs of negative consequences of becoming ill.\nTwo percentiles are computed that compares scores against two samples (Salkovskis, Rimes, Warwick & Clark, 2002).\n– A Normative Percentile compares the respondent’s scores against patterns of responding in a community sample. A Normative Percentile of around 50 represents an average (and healthy) level of concern about health. Higher percentiles indicate higher levels of concern over health. Those with Illness Anxiety Disorder will typically have a Normative Percentile above 99, indicating they score above 99% of the community.\n– A Clinical Percentile is also computed, indicating how the respondent scored in comparison to people who had been independently assessed as having Health Anxiety Disorder (previously known as hypochondriasis).\nIf the SHAI is administered on more than one occasion, the total score will be graphed over time with a dotted horizontal line displayed at the community average score. The SHAI is sensitive to treatment effects, it is also a useful measure of the effectiveness of treatment for health anxiety.",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "C4",
+   "title": "SHAI Psychometric Properties",
+   "text": "Salkovskis, Rimes, Warwick, and Clark (2002) developed the Health Anxiety Inventory (HAI; 64 items) and a shortened version of this scale, the Short Health Anxiety Inventory (SHAI; 18 items), to be sensitive to both normal levels of health concern and severe health anxiety.\nThe scale was validated in clinical and non-clinical samples, 24 diagnosed with hypochondriasis, 19 anxious controls (panic disorder or social anxiety), 107 women attending a general practice clinic, 267 people attending gastroenterology department, 97 attending MRI scan, 190 non-anxious controls and 66 students. These samples yielded the following means and standard deviates. – Hypochondriasis patients – 37.9 (SD=6.8) – Anxious control -18.5 (SD=7.3) – Controls 12.2 (SD=6.2) – Students 12.6 (SD=5.0) – Women in GP clinic 14.5 (SD=5.9) – Gastroenterology clinic 13.9 (SD=7.4)\nAnother study found the mean score for SHAI in non-clinical sample with 467 undergraduate students was 10.79 (SD = 6.38) (Abramowitz et al., 2007).\nA systematic review and meta-analysis of the SHAI concluded that it was a psychometrically sound tool for assessing health anxiety across non-clinical, clinical, and medical samples (Alberts et al., 2013).\nThe SHAI has good to excellent internal consistency (= .74–.96) across 16 studies (Alberts et al., 2013). It has sound factorial,, convergent, divergent and criterion validity (Alberts et al., 2013). However, test re-test reliability of the SHAI was reported in only one study by Olatunji et al. (2011) and was found to be adequate (r = .87) when administered over four administrations across a 3-week study period.\nThe SHAI has also been shown to be sensitive to treatment effects with CBT for severe health anxiety (Williams et al., 2011; Hedman et al., 2011).",
+   "source_url": null,
+   "review_status": "source_text_not_independently_reviewed"
+  },
+  {
+   "id": "LIVE_C5",
+   "title": "Overview",
+   "text": "Search\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C6",
+   "title": "Short Health Anxiety Inventory (SHAI)",
+   "text": "The Short Health Anxiety Inventory (SHAI) contains 18 items that assess health anxiety independent of physical health status.\nItems assess worry about one’s health, awareness of bodily sensations and/or changes, and the feared consequences of having an illness (Salkovskis et al., 2002). It can be used in both healthy individuals and physically ill individuals including those who were temporarily sick or diagnosed with a serious and/or chronic illness.\n3 minutes\nAges 18+\nAnxiety , Health\nAdminister Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C7",
+   "title": "SHAI Psychometric Properties",
+   "text": "Professional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C8",
+   "title": "SHAI Overview",
+   "text": "Worries about health are a normal human experience, and thought to fall along a continuum in the general population (Salkovskis and Warwick, 2001). Towards the upper end of the continuum, individuals are likely to experience and obsessional fear of illness and may fall in the realm of health anxiety. Health Anxiety (now referred to as Illness Anxiety Disorder in the DSM-5-TR and previously known as hypochondriasis) refers to inappropriate or excessive fears about one’s health. It is characterised by excessive fears or beliefs that one has a serious illness, and this is often based on the misinterpretation of bodily sensations or symptoms.\nHealth anxiety consists of distressing emotions (such as fear) due to thoughts of danger and physiological arousal (Taylor, & Asmundson, 2004). This anxiety is often maintained by behaviours that individuals use to decrease distress however inadvertently increase or maintain physical symptoms of anxiety (Haig-Ferguson et al., 2021). Health anxiety has also been conceptualised to offer a unifying perspective on the fears symptoms worsening or returning commonly experienced by those living with chronic disease (Lebel et al., 2020; Haig-Ferguson et al., 2021).\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C9",
+   "title": "SHAI Scoring & Interpretation",
+   "text": "Scores consist of a total (range = 0 to 54) and scores for two subscales:\n– Health Anxiety (items 1-14, range 0 to 42) which measures anxiety related to health\n– Negative Consequences’ of becoming ill (items 15-18, range 0 to 12).\nHigher scores indicate more health anxiety and beliefs of negative consequences of becoming ill.\nTwo percentiles are computed that compares scores against two samples (Salkovskis, Rimes, Warwick & Clark, 2002).\n– A Normative Percentile compares the respondent’s scores against patterns of responding in a community sample. A Normative Percentile of around 50 represents an average (and healthy) level of concern about health. Higher percentiles indicate higher levels of concern over health. Those with Illness Anxiety Disorder will typically have a Normative Percentile above 99, indicating they score above 99% of the community.\n– A Clinical Percentile is also computed, indicating how the respondent scored in comparison to people who had been independently assessed as having Health Anxiety Disorder (previously known as hypochondriasis).\nIf the SHAI is administered on more than one occasion, the total score will be graphed over time with a dotted horizontal line displayed at the community average score. The SHAI is sensitive to treatment effects, it is also a useful measure of the effectiveness of treatment for health anxiety.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C10",
+   "title": "SHAI Psychometric Properties",
+   "text": "Salkovskis, Rimes, Warwick, and Clark (2002) developed the Health Anxiety Inventory (HAI; 64 items) and a shortened version of this scale, the Short Health Anxiety Inventory (SHAI; 18 items), to be sensitive to both normal levels of health concern and severe health anxiety.\nThe scale was validated in clinical and non-clinical samples, 24 diagnosed with hypochondriasis, 19 anxious controls (panic disorder or social anxiety), 107 women attending a general practice clinic, 267 people attending gastroenterology department, 97 attending MRI scan, 190 non-anxious controls and 66 students. These samples yielded the following means and standard deviates. – Hypochondriasis patients – 37.9 (SD=6.8) – Anxious control -18.5 (SD=7.3) – Controls 12.2 (SD=6.2) – Students 12.6 (SD=5.0) – Women in GP clinic 14.5 (SD=5.9) – Gastroenterology clinic 13.9 (SD=7.4)\nAnother study found the mean score for SHAI in non-clinical sample with 467 undergraduate students was 10.79 (SD = 6.38) (Abramowitz et al., 2007).\nA systematic review and meta-analysis of the SHAI concluded that it was a psychometrically sound tool for assessing health anxiety across non-clinical, clinical, and medical samples (Alberts et al., 2013).\nThe SHAI has good to excellent internal consistency (= .74–.96) across 16 studies (Alberts et al., 2013). It has sound factorial,, convergent, divergent and criterion validity (Alberts et al., 2013). However, test re-test reliability of the SHAI was reported in only one study by Olatunji et al. (2011) and was found to be adequate (r = .87) when administered over four administrations across a 3-week study period.\nThe SHAI has also been shown to be sensitive to treatment effects with CBT for severe health anxiety (Williams et al., 2011; Hedman et al., 2011).\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C11",
+   "title": "",
+   "text": "Professional Access\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C12",
+   "title": "Assess your patients with the Short Health Anxiety Inventory using a NovoPsych account",
+   "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C13",
+   "title": "Developer",
+   "text": "Salkovskis, P. M., Rimes, K. A., Warwick, H. M. C., & Clark, D. M. (2002). The Health Anxiety Inventory: development and validation of scales for the measurement of health anxiety and hypochondriasis. Psychological Medicine, 32(05), 843-853.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C14",
+   "title": "References",
+   "text": "Haig-Ferguson, A., Cooper, K., Cartwright, E., Loades, M. E., & Daniels, J. (2021). Practitioner review: Health anxiety in children and young people in the context of the COVID-19 pandemic. Behavioural and cognitive psychotherapy, 49(2), 129-143.\nHedman, E., Andersson, G., Andersson, E., Ljotsson, B., Rück, C., Asmundson, G. J., & Lindefors, N. (2011). Internet-based cognitive–behavioural therapy for severe health anxiety: randomised controlled trial. The British Journal of Psychiatry, 198(3), 230-236.\nLebel, S., Mutsaers, B., Tomei, C., Leclair, C.S., Jones, G., Petricone-Westwood, D., Rutkowski, N., Ta, V., Trudel, G., Laflamme, S.Z. and Lavigne, A.A. (2020). Health anxiety and illness-related fears across diverse chronic illnesses: A systematic review on conceptualization, measurement, prevalence, course, and correlates. Plos one, 15(7), e0234124.\nOlatunji, B. O., Etzel, E. N., Tomarken, A. J., Ciesielski, B. G., & Deacon, B. (2011). The effects of safety behaviors on health anxiety: An experimental investigation. Behaviour research and therapy, 49(11), 719-728.\nTaylor, S., Asmundson, G. J., & Hyprochondria. (2004). Treating health anxiety: A cognitive-behavioral approach (Vol. 494, p. 495). New York: Guilford Press.\nWilliams, M. J., McManus, F., Muse, K., & Williams, J. M. G. (2011). Mindfulness‐based cognitive therapy for severe health anxiety (hypochondriasis): An interpretative phenomenological analysis of patients’ experiences. British Journal of Clinical Psychology, 50(4), 379-397.\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C15",
+   "title": "Generalised Anxiety Disorder Assessment (GAD-7)",
+   "text": "Also known as: GAD-7 , GAD scale , Generalised Anxiety Disorder Assessment , Anxiety screening tool , Generalised anxiety questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C16",
+   "title": "Penn State Worry Questionnaire (PSWQ)",
+   "text": "Also known as: PSWQ , Penn State worry scale , Worry assessment questionnaire , GAD worry measure\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C17",
+   "title": "Panic Disorder Severity Scale (PDSS)",
+   "text": "Also known as: PDSS , Panic Disorder Severity Scale , Panic disorder assessment , Panic attack severity measure , Panic symptom questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C18",
+   "title": "Obsessional Compulsive Inventory – Revised (OCI-R)",
+   "text": "Also known as: OCI-R , OCI , OCD screening tool , OCD assessment questionnaire\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C19",
+   "title": "Depression Anxiety Stress Scales – Short Form (DASS-21)",
+   "text": "Also known as: DASS-21 , DASS , Depression Anxiety Stress Scales , Mental health screening tool\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C20",
+   "title": "Sample Results",
+   "text": "Administer Now\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  },
+  {
+   "id": "LIVE_C21",
+   "title": "Dr David Hegarty",
+   "text": "Head of Psychometrics & Psychologist\n",
+   "source_url": null,
+   "review_status": "fresh_source_text_needs_review"
+  }
+ ],
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Salkovskis, P. M., Rimes, K. A., Warwick, H. M. C., & Clark, D. M. (2002). The Health Anxiety Inventory: development and validation of scales for the measurement of health anxiety and hypochondriasis. Psychological Medicine, 32(05), 843-853.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Haig-Ferguson, A., Cooper, K., Cartwright, E., Loades, M. E., & Daniels, J. (2021). Practitioner review: Health anxiety in children and young people in the context of the COVID-19 pandemic. Behavioural and cognitive psychotherapy, 49(2), 129-143.\nHedman, E., Andersson, G., Andersson, E., Ljotsson, B., Rück, C., Asmundson, G. J., & Lindefors, N. (2011). Internet-based cognitive–behavioural therapy for severe health anxiety: randomised controlled trial. The British Journal of Psychiatry, 198(3), 230-236.\nLebel, S., Mutsaers, B., Tomei, C., Leclair, C.S., Jones, G., Petricone-Westwood, D., Rutkowski, N., Ta, V., Trudel, G., Laflamme, S.Z. and Lavigne, A.A. (2020). Health anxiety and illness-related fears across diverse chronic illnesses: A systematic review on conceptualization, measurement, prevalence, course, and correlates. Plos one, 15(7), e0234124.\nOlatunji, B. O., Etzel, E. N., Tomarken, A. J., Ciesielski, B. G., & Deacon, B. (2011). The effects of safety behaviors on health anxiety: An experimental investigation. Behaviour research and therapy, 49(11), 719-728.\nTaylor, S., Asmundson, G. J., & Hyprochondria. (2004). Treating health anxiety: A cognitive-behavioral approach (Vol. 494, p. 495). New York: Guilford Press.\nWilliams, M. J., McManus, F., Muse, K., & Williams, J. M. G. (2011). Mindfulness‐based cognitive therapy for severe health anxiety (hypochondriasis): An interpretative phenomenological analysis of patients’ experiences. British Journal of Clinical Psychology, 50(4), 379-397.",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Short Health Anxiety Inventory (SHAI) PDF",
+   "source_url": null,
+   "sha256": "c39d658cd2c1d828656bd680ac6098300aaf08e6ba1f6c23a59441795e032cbf",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c39d658cd2c1d828656bd680ac6098300aaf08e6ba1f6c23a59441795e032cbf.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Depression Anxiety Stress Scales – Short Form (DASS-21)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0a7a0ad395ea8145c495ccc8061bb645e4bd3882dad72c46cf1576500d5c90e0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0a7a0ad395ea8145c495ccc8061bb645e4bd3882dad72c46cf1576500d5c90e0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "427872bd5f93622a0508dbe8d2bca1dd609634e5a148e0e8b4852e49d65e99b3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/427872bd5f93622a0508dbe8d2bca1dd609634e5a148e0e8b4852e49d65e99b3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Short Health Anxiety Inventory using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "1596d1446e8393195e632e042b1fc85c10c5a9989edf65f50b55a2e554933e3c",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1596d1446e8393195e632e042b1fc85c10c5a9989edf65f50b55a2e554933e3c.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 18
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total Score",
+    "minimum": 0.0,
+    "maximum": 54.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 54.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "8adae429eb6e34a590e861c82da2eda357ed8fad856c6931486dbdbb47655b9b",
+   "guidance_titles": [
+    "SHAI Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q17",
+    "question_ref": "/questionnaire/items/16",
+    "source_label": "17",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q18",
+    "question_ref": "/questionnaire/items/17",
+    "source_label": "18",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "3dc4b64173099aa72002a7bcc4b85ddc16d669d92460b7237f7d2fe68b9b5eea",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T11:06:14.869444+00:00",
+  "raw_extraction_sha256": "dffe6e1a3e445a3920ba591171720a089f7262cc5ba73ea33e986b2f313f69a4",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Anxiety"
+   },
+   {
+    "url": null,
+    "title": "Health"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": null,
+    "title": "Generalised anxiety questionnaire"
+   },
+   {
+    "url": null,
+    "title": "GAD worry measure"
+   },
+   {
+    "url": null,
+    "title": "Panic symptom questionnaire"
+   },
+   {
+    "url": null,
+    "title": "OCD assessment questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

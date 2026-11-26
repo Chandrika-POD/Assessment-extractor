@@ -1,0 +1,2154 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Physical Health",
+   "minimum": 7.0,
+   "maximum": 35.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Physical Health",
+    "method": "sum",
+    "item_ids": [
+     "Q3",
+     "Q4",
+     "Q10",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 7.0,
+    "maximum": 35.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Physical Health (Sum of items 3, 4, 10, 15–18):",
+     "y": 345.0,
+     "url": null,
+     "sha256": "7d52cbcfb52008e5ba78e2eca714e0db378570ce5a2a09f3900bf1a1f13c1d32"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Psychological Health",
+   "minimum": 6.0,
+   "maximum": 30.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Psychological Health",
+    "method": "sum",
+    "item_ids": [
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q11",
+     "Q19",
+     "Q26"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 6.0,
+    "maximum": 30.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Psychological Health (Sum of items 5–7, 11, 19, 26):",
+     "y": 366.8,
+     "url": null,
+     "sha256": "7d52cbcfb52008e5ba78e2eca714e0db378570ce5a2a09f3900bf1a1f13c1d32"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Social Relationships",
+   "minimum": 3.0,
+   "maximum": 15.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Social Relationships",
+    "method": "sum",
+    "item_ids": [
+     "Q20",
+     "Q21",
+     "Q22"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 3.0,
+    "maximum": 15.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Social Relationships (Sum of items 20–22):",
+     "y": 388.5,
+     "url": null,
+     "sha256": "7d52cbcfb52008e5ba78e2eca714e0db378570ce5a2a09f3900bf1a1f13c1d32"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Environment",
+   "minimum": 8.0,
+   "maximum": 40.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Environment",
+    "method": "sum",
+    "item_ids": [
+     "Q8",
+     "Q9",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q23",
+     "Q24",
+     "Q25"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 8.0,
+    "maximum": 40.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Environment (Sum of items 8, 9, 12–14, 23–25):",
+     "y": 410.2,
+     "url": null,
+     "sha256": "7d52cbcfb52008e5ba78e2eca714e0db378570ce5a2a09f3900bf1a1f13c1d32"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_5",
+   "ruleId": "pdf_5",
+   "label": "Total Score",
+   "minimum": 26.0,
+   "maximum": 130.0,
+   "calculation": {
+    "id": "pdf_5",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 26.0,
+    "maximum": 130.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of items 1–26)",
+     "y": 458.2,
+     "url": null,
+     "sha256": "7d52cbcfb52008e5ba78e2eca714e0db378570ce5a2a09f3900bf1a1f13c1d32"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "b1e24e026aa2aadd367ba5ed1cbc97fc8f2c9fd09e842fc6e1f0a03bb88a6574",
+   "pageCount": 5,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "db1e24e026aa2_p1",
+   "documentSha256": "b1e24e026aa2aadd367ba5ed1cbc97fc8f2c9fd09e842fc6e1f0a03bb88a6574",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "db1e24e026aa2_p1_chart_1"
+   ],
+   "tableIds": [
+    "db1e24e026aa2_p1_table_1"
+   ],
+   "sectionIds": [
+    "db1e24e026aa2_p1_section_1",
+    "db1e24e026aa2_p1_section_2",
+    "db1e24e026aa2_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "db1e24e026aa2_p2",
+   "documentSha256": "b1e24e026aa2aadd367ba5ed1cbc97fc8f2c9fd09e842fc6e1f0a03bb88a6574",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db1e24e026aa2_p2_table_1"
+   ],
+   "sectionIds": [
+    "db1e24e026aa2_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "db1e24e026aa2_p3",
+   "documentSha256": "b1e24e026aa2aadd367ba5ed1cbc97fc8f2c9fd09e842fc6e1f0a03bb88a6574",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db1e24e026aa2_p3_table_1"
+   ],
+   "sectionIds": []
+  },
+  {
+   "pageId": "db1e24e026aa2_p4",
+   "documentSha256": "b1e24e026aa2aadd367ba5ed1cbc97fc8f2c9fd09e842fc6e1f0a03bb88a6574",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db1e24e026aa2_p4_table_1"
+   ],
+   "sectionIds": [
+    "db1e24e026aa2_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "db1e24e026aa2_p5",
+   "documentSha256": "b1e24e026aa2aadd367ba5ed1cbc97fc8f2c9fd09e842fc6e1f0a03bb88a6574",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "db1e24e026aa2_p5_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "db1e24e026aa2_p5_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "db1e24e026aa2_p1_section_1",
+   "pageId": "db1e24e026aa2_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e24e026aa2_p1_section_2",
+   "pageId": "db1e24e026aa2_p1",
+   "title": "WHOQOL-BREF Percentiles",
+   "type": "results",
+   "bboxPt": [
+    221.187,
+    347.64151,
+    380.547,
+    359.64151
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e24e026aa2_p1_section_3",
+   "pageId": "db1e24e026aa2_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    678.30072,
+    290.26645,
+    692.30072
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e24e026aa2_p2_section_1",
+   "pageId": "db1e24e026aa2_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    432.76556,
+    151.8205,
+    446.76556
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e24e026aa2_p4_section_1",
+   "pageId": "db1e24e026aa2_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e24e026aa2_p5_section_1",
+   "pageId": "db1e24e026aa2_p5",
+   "title": "WHOQOL-BREF Transformed Scores",
+   "type": "results",
+   "bboxPt": [
+    194.853,
+    163.38954,
+    406.88098,
+    175.38954
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "db1e24e026aa2_p1_chart_1",
+   "title": "WHOQOL-BREF Percentiles",
+   "type": "vertical_bar",
+   "bboxPt": [
+    112.867,
+    373.544,
+    512.867,
+    628.984
+   ],
+   "widthPt": 400.0,
+   "heightPt": 255.44,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 105.087,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 376.31754,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 401.65735,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 427.00735,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 452.34756,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 477.69757,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 503.03738,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 528.3772,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 553.72717,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 579.06738,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 604.41742,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 629.7572,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Physical Health",
+     "colour": "#8d0303",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.12437499999999999,
+     "barThicknessPt": 39.5,
+     "fill": "#8e0404",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#8d0303"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Psychological Health",
+     "colour": "#b203b2",
+     "ruleIdCandidate": "pdf_2",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.37312498749999995,
+     "barThicknessPt": 39.50001000000003,
+     "fill": "#b303b3",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#b203b2"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_2",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "Social Relationships",
+     "colour": "#00008b",
+     "ruleIdCandidate": "pdf_3",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6218750000000001,
+     "barThicknessPt": 39.5,
+     "fill": "#01018c",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#00008b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_3",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": "Environment",
+     "colour": "#ffc30d",
+     "ruleIdCandidate": "pdf_4",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8706250000000001,
+     "barThicknessPt": 39.5,
+     "fill": "#ffc30e",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ffc30d"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_4",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "db1e24e026aa2_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 405,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "WHOQOL-BREF Percentiles",
+     "bboxPt": [
+      221.187,
+      347.64151,
+      380.547,
+      359.64151
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Physical",
+     "bboxPt": [
+      144.002,
+      635.45721,
+      181.23199,
+      645.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Health",
+     "bboxPt": [
+      148.16684,
+      645.45721,
+      177.06683,
+      655.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Psychological",
+     "bboxPt": [
+      231.55203,
+      635.45721,
+      292.68204,
+      645.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Health",
+     "bboxPt": [
+      247.66684,
+      645.45721,
+      276.56683,
+      655.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Social",
+     "bboxPt": [
+      348.00183,
+      635.45721,
+      375.23184,
+      645.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Relationships",
+     "bboxPt": [
+      331.60654,
+      645.45721,
+      391.62653,
+      655.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Environment",
+     "bboxPt": [
+      433.05154,
+      635.45721,
+      489.18152,
+      645.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Scoring and Interpretation Information",
+     "bboxPt": [
+      34.3465,
+      678.30072,
+      290.26645,
+      692.30072
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "db1e24e026aa2_p5_chart_1",
+   "title": "WHOQOL-BREF Transformed Scores",
+   "type": "vertical_bar",
+   "bboxPt": [
+    110.867,
+    189.292,
+    512.867,
+    454.732
+   ],
+   "widthPt": 402.0,
+   "heightPt": 265.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 101.0,
+      "positionPt": 192.06562,
+      "text": "101",
+      "colour": "#333333"
+     },
+     {
+      "value": 98.0,
+      "positionPt": 207.56562,
+      "text": "98",
+      "colour": "#333333"
+     },
+     {
+      "value": 95.0,
+      "positionPt": 223.05543,
+      "text": "95",
+      "colour": "#333333"
+     },
+     {
+      "value": 92.0,
+      "positionPt": 238.55543,
+      "text": "92",
+      "colour": "#333333"
+     },
+     {
+      "value": 89.0,
+      "positionPt": 254.05542000000003,
+      "text": "89",
+      "colour": "#333333"
+     },
+     {
+      "value": 86.0,
+      "positionPt": 269.54559,
+      "text": "86",
+      "colour": "#333333"
+     },
+     {
+      "value": 83.0,
+      "positionPt": 285.04559,
+      "text": "83",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 300.54559,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 77.0,
+      "positionPt": 316.0354,
+      "text": "77",
+      "colour": "#333333"
+     },
+     {
+      "value": 74.0,
+      "positionPt": 331.5354,
+      "text": "74",
+      "colour": "#333333"
+     },
+     {
+      "value": 71.0,
+      "positionPt": 347.02521,
+      "text": "71",
+      "colour": "#333333"
+     },
+     {
+      "value": 68.0,
+      "positionPt": 362.52521,
+      "text": "68",
+      "colour": "#333333"
+     },
+     {
+      "value": 65.0,
+      "positionPt": 378.02521,
+      "text": "65",
+      "colour": "#333333"
+     },
+     {
+      "value": 62.0,
+      "positionPt": 393.51541,
+      "text": "62",
+      "colour": "#333333"
+     },
+     {
+      "value": 59.0,
+      "positionPt": 409.01541,
+      "text": "59",
+      "colour": "#333333"
+     },
+     {
+      "value": 56.0,
+      "positionPt": 424.51541,
+      "text": "56",
+      "colour": "#333333"
+     },
+     {
+      "value": 53.0,
+      "positionPt": 440.00522,
+      "text": "53",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 455.50522,
+      "text": "50",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 50.0,
+    "maximum": 101.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Physical Health",
+     "colour": "#8d0303",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.12437810945273631,
+     "barThicknessPt": 40.0,
+     "fill": "#8e0404",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#8d0303"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Psychological Health",
+     "colour": "#b203b2",
+     "ruleIdCandidate": "pdf_2",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.373134315920398,
+     "barThicknessPt": 40.00001000000003,
+     "fill": "#b303b3",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#b203b2"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_2",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "Social Relationships",
+     "colour": "#00008b",
+     "ruleIdCandidate": "pdf_3",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6218905472636816,
+     "barThicknessPt": 40.0,
+     "fill": "#01018c",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#00008b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_3",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": "Environment",
+     "colour": "#ffc30d",
+     "ruleIdCandidate": "pdf_4",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8706467661691544,
+     "barThicknessPt": 40.0,
+     "fill": "#ffc30e",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffc30d"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ffc30d"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_4",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "db1e24e026aa2_p5",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 406,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "WHOQOL-BREF Transformed Scores",
+     "bboxPt": [
+      194.853,
+      163.38954,
+      406.88098,
+      175.38954
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Physical",
+     "bboxPt": [
+      142.252,
+      461.2052,
+      179.48199,
+      471.2052
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Health",
+     "bboxPt": [
+      146.41684,
+      471.2052,
+      175.31683,
+      481.2052
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Psychological",
+     "bboxPt": [
+      230.30203,
+      461.2052,
+      291.43204,
+      471.2052
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Health",
+     "bboxPt": [
+      246.41684,
+      471.2052,
+      275.31683,
+      481.2052
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Social",
+     "bboxPt": [
+      347.25183,
+      461.2052,
+      374.48184,
+      471.2052
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Relationships",
+     "bboxPt": [
+      330.85654,
+      471.2052,
+      390.87653,
+      481.2052
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Environment",
+     "bboxPt": [
+      432.80154,
+      461.2052,
+      488.93152,
+      471.2052
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration a plot is displayed showing the domain percentiles with shaded colours in the background."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "WHOQOL-BREF Scoring & Interpretation",
+    "text": "Higher scores represent higher levels of quality of life.\n\nA quality of life profile is also produced by examining the four domain scores.\n1. Physical health (items 3, 4, 10, 15, 16, 17, 18). Raw scores between 7 and 35: Assesses energy levels, pain, sleep quality, mobility, ability to perform daily activities, dependence on medical treatments, and capacity for work.\n2. Psychological Health (items 5, 6, 7, 11, 19, 26). Raw score between 6 and 30: Evaluates positive feelings, thinking and concentration abilities, self-esteem, body image, negative emotions, and sense of meaning in life.\n3. Social relationships (items 20, 21, 22). Raw score between 3 and 15: Measures satisfaction with personal relationships, social support from friends and family, and sexual life.\n4. Environment (items 8, 9, 12, 13, 14, 23, 24, 25). Raw score between 8 and 40: Examines physical safety, home conditions, financial resources, access to health services and information, leisure opportunities, physical environment quality, and transport availability.\n\nAs well as raw scores being presented, a transformed score between 0 and 100 is computed – this represents the percentage of the total possible score for each domain. This allows domain scores to be compared to each other. Higher transformed scores are indicative of a higher level of quality of life. Scores are also presented as a percentile rank against the normative Australian population. Higher percentiles represent higher quality of life, and a percentile of 50 represents average quality of life.\n\nOn first administration a plot is displayed showing the domain percentiles with shaded colours in the background. On multiple administrations, the transformed score is shown over time so that changes as a result of treatment can be seen.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "b1e24e026aa2aadd367ba5ed1cbc97fc8f2c9fd09e842fc6e1f0a03bb88a6574",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the WHOQOL-BREF, \nsee here\n.\nThe total score is presented between 26 and 156, where higher scores represent higher levels\nof quality of life. A quality of life profile is also produced by examining the four domain scores.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Scores are also presented as a percentile rank against the normative Australian population.",
+   "Higher percentiles represent higher quality of life, and a percentile of 50 represents average quality of life.",
+   "On first administration a plot is displayed showing the domain percentiles with shaded colours in the background."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_c3ce71464631f7a0534338570bd169c0",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#333332",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#363636",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#3e3e3e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#434343",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#4b4b4b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#515151",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#565756",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#5e5f5e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#636363",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#696969",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#717171",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#767776",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#7c7c7c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#848484",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#898989",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#919191",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#969796",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#9c9c9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#a4a4a4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#aaaaaa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#b2b2b2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#b6b7b6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#bcbcbc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#c4c4c4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#cacaca",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#cfcfcf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#d7d7d7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#dcdcdc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#e2e2e2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#eaeaea",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#efefef",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#f7f7f7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fdfdfd",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_9413ded9aaadef7fc40fd2236512b7ad",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#008000",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#048104",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#0e860e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#158a15",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#1f8f1f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#269226",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#2d962d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#379b37",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#3d9e3d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#44a144",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#4ea64e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#55aa55",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#5cad5c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#66b266",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#6cb56c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#76ba76",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#7dbe7d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#84c184",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#8ec68e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#95ca95",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#9fcf9f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#a5d2a5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#acd5ac",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#b6dab6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#bddebd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#c4e1c4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#cee6ce",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#d4e9d4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#dbeddb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#e5f2e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#ecf5ec",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#f6faf6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fdfefd",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_edf8d194b086267704e12008acd21bdd",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ffffff",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#fcfcfc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#f4f4f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#eeefee",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#e6e7e6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e1e1e1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#dcdcdc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#d4d4d4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#cecfce",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#c9c9c9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#c1c1c1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#bbbbbb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#b6b7b6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#aeafae",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#a9a9a9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#a1a1a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#9b9b9b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#969796",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#8e8e8e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#898989",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#818181",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#7b7b7b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#767676",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#6e6e6e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#696969",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#636363",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#5b5b5b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#565656",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#505050",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#484848",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#434343",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#3b3b3b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#363636",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_a4fb2396232bceb37522735bbd72764d",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ffffff",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#fefdfd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#fef8f8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#fdf5f5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#fdf0f0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#fcecec",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#fce9e9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#fbe4e4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#fbe1e1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#fbdddd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#fad8d8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#fad5d5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#f9d2d2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#f9cdcd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#f8c9c9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#f8c4c4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#f7c1c1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#f7bebe",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#f6b8b8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#f6b5b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#f5b0b0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#f5adad",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#f4a9a9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#f4a4a4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#f3a1a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#f39e9e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#f29999",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#f29595",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#f29292",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#f18d8d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#f18a8a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#f08585",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#f08181",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 4,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 217
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

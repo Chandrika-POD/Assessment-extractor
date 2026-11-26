@@ -1,0 +1,1343 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "protective-factors-of-resilience-scale--d80af8b839be",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Protective Factors of Resilience Scale (PFRS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Protective Factors for Resilience Scale (PFRS) is a 15-item self-report measure for those aged 16 years and older designed to assess the protective factors that contribute to an individual’s capacity for resilience in the face of adversity (Harms et al., 2017).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "To what extent do you agree or disagree with these statements.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Personal Resources",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q5",
+     "Q6",
+     "Q13"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+     "page_url": null,
+     "page_sha256": "bb81f7f46db7fb08847212446acb71ab8806f655881f997155af1f299980f258",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Personal Resources (Items 1, 2, 5, 6, 13):",
+      "y": 159.8,
+      "url": null,
+      "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C3",
+      "C10",
+      "C13",
+      "LIVE_C24",
+      "LIVE_C27",
+      "LIVE_C35"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 5.0,
+    "maximum": 35.0
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Family Resources",
+    "item_ids": [
+     "Q4",
+     "Q8",
+     "Q10",
+     "Q12",
+     "Q15"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+     "page_url": null,
+     "page_sha256": "bb81f7f46db7fb08847212446acb71ab8806f655881f997155af1f299980f258",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Family Resources (Items 4, 8, 10, 12, 15):",
+      "y": 184.5,
+      "url": null,
+      "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C3",
+      "C10",
+      "C13",
+      "LIVE_C24",
+      "LIVE_C27",
+      "LIVE_C35"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 5.0,
+    "maximum": 35.0
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Peer Resources",
+    "item_ids": [
+     "Q3",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q14"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+     "page_url": null,
+     "page_sha256": "bb81f7f46db7fb08847212446acb71ab8806f655881f997155af1f299980f258",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Peer Resources (Items 3, 7, 9, 11, 14):",
+      "y": 209.2,
+      "url": null,
+      "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C3",
+      "C10",
+      "C13",
+      "LIVE_C24",
+      "LIVE_C27",
+      "LIVE_C35"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 5.0,
+    "maximum": 35.0
+   },
+   {
+    "id": "source_draft_4",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+     "page_url": null,
+     "page_sha256": "bb81f7f46db7fb08847212446acb71ab8806f655881f997155af1f299980f258",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "C10",
+      "C13",
+      "LIVE_C24",
+      "LIVE_C27",
+      "LIVE_C35"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 15.0,
+    "maximum": 105.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+   "page_url": null,
+   "page_sha256": "bb81f7f46db7fb08847212446acb71ab8806f655881f997155af1f299980f258",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "PFRS Total Score Interpretation",
+    "text": "A total score is given ranging from 15 to 105, with higher scores indicating greater protective resources for resilience.\n",
+    "source_url": null
+   },
+   {
+    "title": "PFRS Percentiles",
+    "text": "Based on the normative sample (M = 78.90, SD = 15.98), percentile rankings can be calculated to contextualise individual scores. A score at the 50th percentile (approximately 79) represents typical protective resources in the general adult population.\n",
+    "source_url": null
+   },
+   {
+    "title": "PFRS Interpretation Guidelines",
+    "text": "The PFRS is particularly valuable when integrated with comprehensive clinical assessment, providing a strengths-based perspective to complement traditional symptom-focused measures. High scores should not be interpreted as immunity to psychological difficulties but rather as indicating available resources that can be mobilised during treatment. Conversely, low scores highlight specific areas where building protective resources might enhance treatment outcomes and long-term resilience.\n",
+    "source_url": null
+   },
+   {
+    "title": "PFRS Percentiles",
+    "text": "Normative data is available based on a North American adult sample (n = 240; 58.6% female, M age = 35.34, SD = 11.32 years). The mean total score was 78.90 (SD = 15.98). While means and standard deviations were not reported for individual subscales in the original publication, the total score normative data enables calculation of percentile rankings for clinical comparison. The scale shows a slight negative skew in community samples, indicating that most individuals report moderate to high levels of protective resources, which aligns with resilience theory suggesting that protective factors required for adaptation are not extraordinary but rather consist of normative developmental resources.\n",
+    "source_url": null
+   },
+   {
+    "title": "How is the PFRS scored and interpreted?",
+    "text": "Scores in the top 30% indicate greater resources for resilience (shown in green on reports), whilst bottom 30% scores suggest areas where building protective resources might be beneficial (shown in red). The scale shouldn’t be interpreted as measuring immunity to psychological difficulties, but rather as indicating available resources that can be mobilised.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "Personal Resources (Items 1, 2, 5, 6, 13):",
+    "y": 159.8,
+    "url": null,
+    "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Family Resources (Items 4, 8, 10, 12, 15):",
+    "y": 184.5,
+    "url": null,
+    "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Peer Resources (Items 3, 7, 9, 11, 14):",
+    "y": 209.2,
+    "url": null,
+    "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Total Score (sum of the three subscale scores)",
+    "y": 248.2,
+    "url": null,
+    "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "not_compiled",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Harms, C., Pooley, J. A., & Cohen, L. (2017). The protective factors for resilience scale (PFRS): Development of the scale. Cogent Psychology, 4(1), Article 1400415. https://doi.org/10.1080/23311908.2017.1400415",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Garmezy, N. (1987). Stress, competence, and development: Continuities in the study of schizophrenic adults, children vulnerable to psychopathology, and the search for stress-resistant children. American Journal of Orthopsychiatry, 57(2), 159-174. https://doi.org/10.1111/j.1939-0025.1987.tb03526.x\nHarms, C., Pooley, J. A., & Cohen, L. (2017). The protective factors for resilience scale (PFRS): Development of the scale. Cogent Psychology, 4(1), Article 1400415. https://doi.org/10.1080/23311908.2017.1400415\nPooley, J. A., & Cohen, L. (2010). Resilience: A definition in context. The Australian Community Psychologist, 22(1), 30-37.\nRutter, M. (1987). Psychosocial resilience and protective mechanisms. American Journal of Orthopsychiatry, 57(3), 316-331. https://doi.org/10.1111/j.1939-0025.1987.tb03541.x\nWerner, E. E., & Smith, R. S. (1992). Overcoming the odds: High risk children from birth to adulthood. Cornell University Press.",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Protective Factors of Resilience Scale (PFRS) PDF",
+   "source_url": null,
+   "sha256": "994ac76f528ebd8cdea001338b6e8236e3ba3c39bfc413e2c5e6da85d773abfb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/994ac76f528ebd8cdea001338b6e8236e3ba3c39bfc413e2c5e6da85d773abfb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Adverse Childhood Experiences Questionnaire (ACE-Q)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c22dbb67a4af1727474811c74d60828b9ec292266e6226a35264a992c0054a25",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c22dbb67a4af1727474811c74d60828b9ec292266e6226a35264a992c0054a25.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PFRS PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "304f53f4c7d520085089dc53b8344732007cb16a344438ea845e54d1c949cff1",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/304f53f4c7d520085089dc53b8344732007cb16a344438ea845e54d1c949cff1.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "PFRS Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3d2a09950b57df909cdd70f7330f466dd725537651d2df82437bd42c47d3020e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3d2a09950b57df909cdd70f7330f466dd725537651d2df82437bd42c47d3020e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "PFRS Results Table",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3bfc750bfe232eac39f33a05ebc133af6d90434bf4fb4922f7f879e593fe780e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3bfc750bfe232eac39f33a05ebc133af6d90434bf4fb4922f7f879e593fe780e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "PFRS Subscale Graph",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "8562ca7ae3de78902ed1082dc8b41cef1fe306efd5ec0cbc20d3768a23e627bc",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8562ca7ae3de78902ed1082dc8b41cef1fe306efd5ec0cbc20d3768a23e627bc.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "PFRS Multiple Administration Graph",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Protective Factors of Resilience Scale (PFRS) u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PFRS PDF",
+   "source_url": null,
+   "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "PFRS Sample Results",
+   "source_url": null,
+   "sha256": "e58c037493a0d2a23c4748fa7db922876ecbadc21bb499484934aa285017c739",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e58c037493a0d2a23c4748fa7db922876ecbadc21bb499484934aa285017c739.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 15
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [],
+   "scoring_rule_count": 4,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "source_draft_1",
+    "label": "Personal Resources",
+    "minimum": 5.0,
+    "maximum": 35.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q5",
+     "Q6",
+     "Q13"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "source_draft_2",
+    "label": "Family Resources",
+    "minimum": 5.0,
+    "maximum": 35.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/1",
+    "item_ids": [
+     "Q4",
+     "Q8",
+     "Q10",
+     "Q12",
+     "Q15"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "source_draft_3",
+    "label": "Peer Resources",
+    "minimum": 5.0,
+    "maximum": 35.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/2",
+    "item_ids": [
+     "Q3",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q14"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "source_draft_4",
+    "label": "Total raw score",
+    "minimum": 15.0,
+    "maximum": 105.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/3",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "source_draft_1",
+    "title": "Personal Resources",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_1",
+      "label": "Personal Resources",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 5.0,
+    "maximum": 35.0,
+    "axis_unit": "score"
+   },
+   {
+    "id": "source_draft_2",
+    "title": "Family Resources",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_2",
+      "label": "Family Resources",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 5.0,
+    "maximum": 35.0,
+    "axis_unit": "score"
+   },
+   {
+    "id": "source_draft_3",
+    "title": "Peer Resources",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_3",
+      "label": "Peer Resources",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 5.0,
+    "maximum": 35.0,
+    "axis_unit": "score"
+   },
+   {
+    "id": "source_draft_4",
+    "title": "Total raw score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_4",
+      "label": "Total raw score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 15.0,
+    "maximum": 105.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "d9cb2830884c37cc4a8f222b03a30bd53979df9f434f9bd25a5ac043bf0e8538",
+   "guidance_titles": [
+    "PFRS Total Score Interpretation",
+    "PFRS Percentiles",
+    "PFRS Interpretation Guidelines",
+    "PFRS Percentiles",
+    "How is the PFRS scored and interpreted?"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 4,
+   "rules_included": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3",
+    "source_draft_4"
+   ],
+   "raw_calculation_status": "draft_implemented",
+   "interpretation_status": "not_compiled",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3",
+    "source_draft_4"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "source_draft_1",
+    "label": "Personal Resources",
+    "rule_id": "source_draft_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q5",
+     "Q6",
+     "Q13"
+    ]
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Family Resources",
+    "rule_id": "source_draft_2",
+    "item_ids": [
+     "Q4",
+     "Q8",
+     "Q10",
+     "Q12",
+     "Q15"
+    ]
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Peer Resources",
+    "rule_id": "source_draft_3",
+    "item_ids": [
+     "Q3",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q14"
+    ]
+   },
+   {
+    "id": "source_draft_4",
+    "label": "Total raw score",
+    "rule_id": "source_draft_4",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "b568ebd38bbead2497c86acb00c0feda1471f12b796609adc57df3e3beb4f59b",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T10:22:23.263466+00:00",
+  "raw_extraction_sha256": "8aa7f3526966e1631b24115b0473795576eb275184784b4e14e83fe870af6c75",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1080/23311908.2017.1400415",
+    "title": "https://doi.org/10.1080/23311908.2017.1400415"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1939-0025.1987.tb03526.x",
+    "title": "https://doi.org/10.1111/j.1939-0025.1987.tb03526.x"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1939-0025.1987.tb03541.x",
+    "title": "https://doi.org/10.1111/j.1939-0025.1987.tb03541.x"
+   },
+   {
+    "url": null,
+    "title": "Bounce-back scale"
+   },
+   {
+    "url": null,
+    "title": "Childhood resilience measure"
+   },
+   {
+    "url": null,
+    "title": "Positive family experiences measure"
+   },
+   {
+    "url": null,
+    "title": "Dispositional optimism measure"
+   },
+   {
+    "url": null,
+    "title": "Adverse experiences scale"
+   },
+   {
+    "url": null,
+    "title": "Download PFRS PDF"
+   },
+   {
+    "url": null,
+    "title": "PFRS Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Positive Psychology"
+   },
+   {
+    "url": null,
+    "title": "Acceptance and Commitment Therapy"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,610 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "DUDIT Total Score",
+   "minimum": 0.0,
+   "maximum": 44.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "DUDIT Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 44.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "DUDIT Total Score (sum of items 1–11)",
+     "y": 607.5,
+     "url": null,
+     "sha256": "df403d26b5797c90d8faacb3582a6c368629d9266ed1b04dc29ae67eff8cc86f"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d1ac221ab241b_p1",
+   "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d1ac221ab241b_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d1ac221ab241b_p1_section_1",
+    "d1ac221ab241b_p1_section_2",
+    "d1ac221ab241b_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d1ac221ab241b_p2",
+   "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d1ac221ab241b_p2_table_1",
+    "d1ac221ab241b_p2_table_2"
+   ],
+   "sectionIds": [
+    "d1ac221ab241b_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "d1ac221ab241b_p3",
+   "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d1ac221ab241b_p3_table_1"
+   ],
+   "sectionIds": [
+    "d1ac221ab241b_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d1ac221ab241b_p1_section_1",
+   "pageId": "d1ac221ab241b_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ac221ab241b_p1_section_2",
+   "pageId": "d1ac221ab241b_p1",
+   "title": "DUDIT Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    245.673,
+    290.86084,
+    351.021,
+    302.86084
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ac221ab241b_p1_section_3",
+   "pageId": "d1ac221ab241b_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    556.51855,
+    290.26645,
+    570.51855
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ac221ab241b_p2_section_1",
+   "pageId": "d1ac221ab241b_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    221.20061,
+    151.8205,
+    235.20061
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ac221ab241b_p3_section_1",
+   "pageId": "d1ac221ab241b_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d1ac221ab241b_p1_chart_1",
+   "title": "DUDIT Total Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    165.346,
+    316.772,
+    450.346,
+    528.213
+   ],
+   "widthPt": 285.0,
+   "heightPt": 211.441,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      165.34599,
+      318.77191,
+      448.34601,
+      410.40201
+     ],
+     "colour": "#f7b6b7",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 157.565995,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 44.0,
+      "positionPt": 319.54645,
+      "text": "44",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 338.58667,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 36.0,
+      "positionPt": 357.62646,
+      "text": "36",
+      "colour": "#333333"
+     },
+     {
+      "value": 32.0,
+      "positionPt": 376.66666,
+      "text": "32",
+      "colour": "#333333"
+     },
+     {
+      "value": 28.0,
+      "positionPt": 395.70645,
+      "text": "28",
+      "colour": "#333333"
+     },
+     {
+      "value": 24.0,
+      "positionPt": 414.74625,
+      "text": "24",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 433.78644,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 16.0,
+      "positionPt": 452.82623,
+      "text": "16",
+      "colour": "#333333"
+     },
+     {
+      "value": 12.0,
+      "positionPt": 471.86642,
+      "text": "12",
+      "colour": "#333333"
+     },
+     {
+      "value": 8.0,
+      "positionPt": 490.90622,
+      "text": "8",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 509.94604000000004,
+      "text": "4",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 528.98621,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 44.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#4e79a6",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49649126340412186,
+     "barThicknessPt": 63.0,
+     "fill": "#4e79a7",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4e79a6"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d1ac221ab241b_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 128,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "DUDIT Total Score",
+     "bboxPt": [
+      245.673,
+      290.86084,
+      351.021,
+      302.86084
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Problems (Females)",
+     "bboxPt": [
+      384.33899,
+      511.93427,
+      447.34595,
+      518.93427
+     ],
+     "colour": "#cbbaa6",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Problems (Males)",
+     "bboxPt": [
+      392.50812,
+      492.89407,
+      447.34607,
+      499.89407
+     ],
+     "colour": "#cbbaa6",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Drug Dependence",
+     "bboxPt": [
+      390.54099,
+      361.57425,
+      447.34595,
+      368.57425
+     ],
+     "colour": "#c9afaf",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Scoring and Interpretation Information",
+     "bboxPt": [
+      34.3465,
+      556.51855,
+      290.26645,
+      570.51855
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "For comprehensive information on the Drug Use Disorders Identification Test (DUDIT), ",
+     "bboxPt": [
+      91.0394,
+      575.77399,
+      515.27631,
+      586.77399
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "DUDIT Scoring & Interpretation",
+    "text": "The DUDIT yields a total score ranging from 0 to 44, with higher scores indicating greater drug-related problems. The total score is calculated by summing all 11 items, where items 1-9 are scored 0-4 and items 10-11 are scored 0, 2, or 4.\n\nCut-off scores for probable drug-related problems:\nDrug dependence: A score of 25 or more indicates high probability of dependence on one or more drugs.\nMales: A score of 6 or more indicates probable drug-related problems (either harmful use or dependence).\nFemales: A score of 2 or more indicates probable drug-related problems (either harmful use or dependence).\nThe higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.\n\nScores should be considered as indicators for further comprehensive assessment rather than diagnostic.\n",
+    "source_url": null
+   },
+   {
+    "title": "How are DUDIT scores interpreted and what do they mean for treatment planning?",
+    "text": "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems. For men, a score of 6 or more indicates probable drug-related problems, while a score of 25 or more suggests drug dependence. For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.\nThese scores provide valuable information for treatment planning. Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches. Those scoring in the dependence range typically require more intensive treatment, potentially including medically supervised withdrawal, structured treatment programmes, or ongoing psychological support. The DUDIT can be administered repeatedly throughout treatment to monitor progress and adjust interventions as needed.\n",
+    "source_url": null
+   },
+   {
+    "title": "What should individuals and families know about DUDIT scores?",
+    "text": "If you or a loved one completes the DUDIT, it’s important to understand that the scores indicate probability of drug-related problems rather than providing a definitive diagnosis. A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial. However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably.\nThe DUDIT is a screening tool, not a judgment – it’s designed to identify when professional support might be helpful. Higher scores don’t mean someone is “bad” or “weak,” but rather indicate that drug use has likely become problematic enough to warrant attention. Many people are surprised by their scores, particularly if drug use has gradually increased over time. If concerning scores are identified, this represents an opportunity for early intervention. Speaking with a healthcare provider about the results can help determine appropriate next steps, whether that’s monitoring, brief intervention, or more structured treatment. Remember that drug-related problems exist on a continuum, and addressing them early typically leads to better outcomes than waiting until problems become severe.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "1ac221ab241b5ffa602d1e33f9d74a35329cc46ffe5b2669c23ac96473223807",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the Drug Use Disorders Identification Test (DUDIT), \nsee here\n.\nThe DUDIT yields a total score ranging from 0 to 44, with higher scores indicating greater drug-\nrelated problems. The total score is calculated by summing all 11 items, where items 1-9 are\nscored 0-4 and items 10-11 are scored 0, 2, or 4.\nCut-off scores for probable drug-related problems:\n- Drug dependence: A score of 25 or more indicates high probability of dependence on one or\nmore drugs.\n- Males: A score of 6 or more indicates probable drug-related problems (either harmful use or\ndependence).\n- Females: A score of 2 or more indicates probable drug-related problems (either harmful use or\ndependence).\nThe higher threshold for males accounts for generally higher prevalence rates and different",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Cut-off scores for probable drug-related problems:",
+   "The higher threshold for males accounts for generally higher prevalence rates and different patterns of substance use between males and females.",
+   "The DUDIT uses a total score ranging from 0-44, with established cut-off points that help identify different levels of drug-related problems.",
+   "For women, these cut-offs are slightly lower at 2 or more for drug-related problems and 25 or more for dependence, reflecting gender differences in drug use patterns and consequences.",
+   "Individuals scoring in the drug-related problems range (but below the dependence threshold) may benefit from brief interventions, harm reduction strategies, or motivational interviewing approaches.",
+   "A score above the cut-off points suggests that drug use may be causing difficulties and that further assessment would be beneficial.",
+   "However, even scores below the cut-off can be concerning if drug use is impacting specific areas of life, as individual circumstances vary considerably."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 67
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

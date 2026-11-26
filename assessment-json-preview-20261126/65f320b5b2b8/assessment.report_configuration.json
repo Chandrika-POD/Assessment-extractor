@@ -1,0 +1,597 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total BEDSY Score",
+   "minimum": 0.0,
+   "maximum": 24.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total BEDSY Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 24.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total BEDSY Score (sum of all 8 items)",
+     "y": 462.0,
+     "url": null,
+     "sha256": "681ecde549b30bf67f9b47f760e9dc043164c55e1be527df7e5705e8f19d1275"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "3c3da826ad1f9d1a061bf3be912f7d65d6468de193374df70b6995d0ab7e9108",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d3c3da826ad1f_p1",
+   "documentSha256": "3c3da826ad1f9d1a061bf3be912f7d65d6468de193374df70b6995d0ab7e9108",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d3c3da826ad1f_p1_chart_1"
+   ],
+   "tableIds": [
+    "d3c3da826ad1f_p1_table_1"
+   ],
+   "sectionIds": [
+    "d3c3da826ad1f_p1_section_1",
+    "d3c3da826ad1f_p1_section_2",
+    "d3c3da826ad1f_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d3c3da826ad1f_p2",
+   "documentSha256": "3c3da826ad1f9d1a061bf3be912f7d65d6468de193374df70b6995d0ab7e9108",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d3c3da826ad1f_p2_table_1"
+   ],
+   "sectionIds": [
+    "d3c3da826ad1f_p2_section_1",
+    "d3c3da826ad1f_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "d3c3da826ad1f_p3",
+   "documentSha256": "3c3da826ad1f9d1a061bf3be912f7d65d6468de193374df70b6995d0ab7e9108",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d3c3da826ad1f_p3_table_1"
+   ],
+   "sectionIds": [
+    "d3c3da826ad1f_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d3c3da826ad1f_p1_section_1",
+   "pageId": "d3c3da826ad1f_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3c3da826ad1f_p1_section_2",
+   "pageId": "d3c3da826ad1f_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3463,
+    281.51776,
+    124.57632,
+    295.51776
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3c3da826ad1f_p1_section_3",
+   "pageId": "d3c3da826ad1f_p1",
+   "title": "BEDSY Percentile",
+   "type": "results",
+   "bboxPt": [
+    252.32899,
+    385.94687,
+    354.36496,
+    397.94687
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3c3da826ad1f_p2_section_1",
+   "pageId": "d3c3da826ad1f_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    290.26645,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3c3da826ad1f_p2_section_2",
+   "pageId": "d3c3da826ad1f_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34701,
+    529.52393,
+    151.82101,
+    543.52393
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3c3da826ad1f_p3_section_1",
+   "pageId": "d3c3da826ad1f_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d3c3da826ad1f_p1_chart_1",
+   "title": "BEDSY Percentile",
+   "type": "vertical_bar",
+   "bboxPt": [
+    70.347,
+    411.858,
+    550.346,
+    759.268
+   ],
+   "widthPt": 480.0,
+   "heightPt": 347.41,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      70.3465,
+      482.93802,
+      548.3465,
+      598.078
+     ],
+     "colour": "#ffff00",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      436.888,
+      548.3465,
+      482.93802
+     ],
+     "colour": "#ffa500",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      413.85794,
+      548.3465,
+      436.888
+     ],
+     "colour": "#ff0000",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 414.63159,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 95.0,
+      "positionPt": 472.20148,
+      "text": "95",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 529.77136,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 85.0,
+      "positionPt": 587.3316,
+      "text": "85",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 644.90149,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 75.0,
+      "positionPt": 702.47144,
+      "text": "75",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 760.04169,
+      "text": "70",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 70.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#5dace2",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4979161332893861,
+     "barThicknessPt": 118.00001999999998,
+     "fill": "#5dade2",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#5dace2"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#5dace2"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#5dace2"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#5dace2"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#5dace2"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d3c3da826ad1f_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 62,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "BEDSY Percentile",
+     "bboxPt": [
+      252.32899,
+      385.94687,
+      354.36496,
+      397.94687
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild",
+     "bboxPt": [
+      529.01599,
+      536.2312,
+      547.34595,
+      546.2312
+     ],
+     "colour": "#f1c40f",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      505.10699,
+      455.6312,
+      547.34705,
+      465.6312
+     ],
+     "colour": "#ffa500",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      515.66602,
+      421.09122,
+      547.34601,
+      431.09122
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Page 1 of 3",
+     "bboxPt": [
+      510.23599,
+      809.92731,
+      561.38611,
+      819.92731
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "After the first administration, a plot is presented that shows the client’s percentile score with the severity ratings in the background.",
+   "After multiple administrations a longitudinal plot will be displayed for the BEDSY total score over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "BEDSY Scoring & Interpretation",
+    "text": "A total score is provided for the BEDSY (0 – 24) with higher scores indicating higher levels of emotional distress. In addition, percentiles are computed based on community samples and are dependent upon age brackets (11-17 for males, 11-13 or 14-17 for females) and gender (Spence & Rapee, 2022).\n\nA percentile of 50 indicates an average and healthy level of emotional distress when compared to their age and gender-related peers. Note that females scored significantly higher on the BEDSY than males (Spence & Rapee, 2022), so the same score for each gender will give significantly different percentiles and, as a result, potentially different severity descriptors.\n\nScores are categorised into four severity ranges and are dependent upon the percentiles (S. H. Spence & R. M. Rapee, personal communication, May 1, 2024):\nNormal: Percentile of less than 84\nMild: Percentile of 84 or greater and less than 94\nModerate: Percentile of 94 or greater and less than 98\nSevere: Percentile of 98 or greater\nAfter the first administration, a plot is presented that shows the client’s percentile score with the severity ratings in the background.\nAfter multiple administrations a longitudinal plot will be displayed for the BEDSY total score over time.\n\nAfter multiple administrations, interpretive text will be provided that will outline if the change in score is clinically meaningful or not. This is based upon the Minimally Important Difference (MID; Norman, Sloan & Wyrwich, 2003) between the initial score on the BEDSY and the latest administration. The threshold score for clinically significant change is 2 points or more.\nExample BEDSY Interpretive Text:\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "3c3da826ad1f9d1a061bf3be912f7d65d6468de193374df70b6995d0ab7e9108",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the BEDSY, \nsee here\n.\nA total score is provided for the BEDSY (0 - 24) with higher scores indicating higher levels of\nemotional distress. In addition, percentiles are computed based on community samples and are\ndependent upon age brackets (11-17 for males, 11-13 or 14-17 for females) and gender\n(Spence & Rapee, 2022).\nA percentile of 50 indicates an average and healthy level of emotional distress when compared\nto their age and gender-related peers. Note that females scored significantly higher on the\nBEDSY than males (Spence & Rapee, 2022), so the same score for each gender will give\nsignificantly different percentiles and, as a result, potentially different severity descriptors.\nScores are categorised into four severity ranges and are dependent upon the percentiles (S. H.\nSpence & R. M. Rapee, personal communication, May 1, 2024):\n- Normal: Percentile of less than 84\n- Mild: Percentile of 84 or greater and less than 94\n- Moderate: Percentile of 94 or greater and less than 98\n- Severe: Percentile of 98 or greater\nAfter the first administration, a plot is presented that shows the client's percentile score with the\nseverity ratings in the background.\nAfter multiple administrations a longitudinal plot will be displayed for the BEDSY total score over\ntime.\nAfter multiple administrations, interpretive text will be provided that will outline if the change in\nscore is clinically meaningful or not. This is based upon the Minimally Important Difference (MID;\nNorman, Sloan & Wyrwich, 2003) between the initial score on the BEDSY and the latest\nadministration. The threshold score for clinically significant change is 2 points or more.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "In addition, percentiles are computed based on community samples and are dependent upon age brackets (11-17 for males, 11-13 or 14-17 for females) and gender (Spence & Rapee, 2022).",
+   "A percentile of 50 indicates an average and healthy level of emotional distress when compared to their age and gender-related peers.",
+   "Note that females scored significantly higher on the BEDSY than males (Spence & Rapee, 2022), so the same score for each gender will give significantly different percentiles and, as a result, potentially different severity descriptors.",
+   "Scores are categorised into four severity ranges and are dependent upon the percentiles (S.",
+   "Normal: Percentile of less than 84",
+   "Mild: Percentile of 84 or greater and less than 94",
+   "Moderate: Percentile of 94 or greater and less than 98",
+   "Severe: Percentile of 98 or greater",
+   "After the first administration, a plot is presented that shows the client’s percentile score with the severity ratings in the background.",
+   "After multiple administrations a longitudinal plot will be displayed for the BEDSY total score over time.",
+   "The threshold score for clinically significant change is 2 points or more."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 40
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,3509 @@
+{
+  "schema_version": "2.3.0-clean-export.4",
+  "assessment_id": "opioid-risk-tool-ort--5141a0590370",
+  "definition_version": "1.0.0-draft.6",
+  "status": "draft",
+  "assessment": {
+    "name": "Opioid Risk Tool (ORT)",
+    "language": "en",
+    "description": "The Opioid Risk Tool (ORT) is a brief, self-report or clinician rated screening tool designed for use with adult patients in primary care settings to assess risk for opioid abuse among individuals prescribed opioids for treatment of chronic pain. Patients categorized as high-risk are at increased likelihood of future abusive drug-related behaviours. This tool is best administered to patients upon an initial visit prior to beginning opioid therapy, and can inform the risk/benefit decisions around prescribing opioid medication.",
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [],
+      "status": "requires_review"
+    }
+  },
+  "administration": {
+    "instructions": "Please mark each question as either Yes or No depending on if the question applies to you. For scoring purposes, please select options based on your sex assigned at birth; the ORT applies different item weights for males and females.",
+    "instructions_source": {
+      "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10"
+    ],
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details.",
+    "respondent_context_requirements": [
+      {
+        "key": "source_scoring_sex",
+        "enum": [
+          "female",
+          "male"
+        ],
+        "reason": "Source sex-specific weighting. Withhold if unsupported or unknown; never infer it."
+      }
+    ]
+  },
+  "questionnaire": {
+    "item_count": 10,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "Has there been family history of alcohol abuse?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            200.25,
+            562.49,
+            225.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES (FEMALE)",
+            "source_label": "YES (FEMALE)",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "YES (MALE)",
+            "source_label": "YES (MALE)",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "Has there been family history of illegal drug use?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS2",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            225.75,
+            562.49,
+            250.49
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES (FEMALE)",
+            "source_label": "YES (FEMALE)",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "YES (MALE)",
+            "source_label": "YES (MALE)",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "Has there been family history of recreational drug use?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS3",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            251.25,
+            562.49,
+            270.74
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "Has there been personal history of alcohol abuse?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            271.49,
+            562.49,
+            291.74
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "Has there been personal history of illegal drug use?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS3",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            292.49,
+            562.49,
+            312.74
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "Has there been personal history of recreational drug use?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS5",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            313.49,
+            562.49,
+            333.74
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 5,
+            "score": 5,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "Aged between 16 - 45 years?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS6",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            334.49,
+            562.49,
+            354.74
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q8",
+        "order": 8,
+        "source_label": "8",
+        "text": "Has there been a history of preadolescent sexual abuse?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS7",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            355.49,
+            562.49,
+            380.24
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES (FEMALE)",
+            "source_label": "YES (FEMALE)",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "YES (MALE)",
+            "source_label": "YES (MALE)",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q9",
+        "order": 9,
+        "source_label": "9",
+        "text": "Has there been a personal history of Attention Deficit Disorder (ADD or ADHD), bipolar or schizophrenia?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS8",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            380.99,
+            562.49,
+            404.99
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ],
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+      },
+      {
+        "id": "Q10",
+        "order": 10,
+        "source_label": "10",
+        "text": "Has there been a personal history of depression?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS6",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page": 1,
+          "bbox": [
+            33.75,
+            405.74,
+            562.49,
+            425.99
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NO",
+            "source_label": "NO",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "YES",
+            "source_label": "YES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "source_draft_1"
+            ]
+          }
+        ]
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES (FEMALE)",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "YES (FEMALE)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "YES (MALE)",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "YES (MALE)",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS2",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES (FEMALE)",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "YES (FEMALE)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "YES (MALE)",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "YES (MALE)",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS3",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "YES",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS4",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "YES",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS5",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES",
+            "printed_value": 5,
+            "score": 5,
+            "display_label": "YES",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS6",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "YES",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS7",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES (FEMALE)",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "YES (FEMALE)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "YES (MALE)",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "YES (MALE)",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      },
+      {
+        "id": "RS8",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NO",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NO",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "YES",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "YES",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "printed_values_only_scores_unverified"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "source_draft_1",
+        "label": "Total weighted score",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "sum",
+        "value_field": "printed_value",
+        "multiplier": 1,
+        "severity_bands": [
+          {
+            "label": "Low Risk",
+            "minimum_inclusive": 0,
+            "maximum_inclusive": 3
+          },
+          {
+            "label": "Moderate Risk",
+            "minimum_inclusive": 4,
+            "maximum_inclusive": 7
+          },
+          {
+            "label": "High Risk",
+            "minimum_inclusive": 8,
+            "maximum_inclusive": 26
+          }
+        ],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+          "page_sha256": "d6516cf68cc372b2a2645ce68d2c457b0980a39efe2ddc4d9fa1f926eded7fb8",
+          "method": "reviewed_saved_source_membership_and_arithmetic",
+          "context_section_ids": [
+            "C3",
+            "LIVE_C9"
+          ],
+          "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+        },
+        "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+        "context_constraints": [
+          {
+            "context_key": "source_scoring_sex",
+            "allowed_values": [
+              "female",
+              "male"
+            ],
+            "allowed_options": {
+              "Q1": {
+                "female": [
+                  "O1",
+                  "O2"
+                ],
+                "male": [
+                  "O1",
+                  "O3"
+                ]
+              },
+              "Q2": {
+                "female": [
+                  "O1",
+                  "O2"
+                ],
+                "male": [
+                  "O1",
+                  "O3"
+                ]
+              },
+              "Q8": {
+                "female": [
+                  "O1",
+                  "O2"
+                ],
+                "male": [
+                  "O1",
+                  "O3"
+                ]
+              }
+            }
+          }
+        ],
+        "minimum": 0.0,
+        "maximum": 26,
+        "bounds_basis": "Maximum over consistent female or male source columns; mixed-column maximum 29 is invalid."
+      }
+    ],
+    "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+    "rules_provenance": {
+      "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+      "page_sha256": "d6516cf68cc372b2a2645ce68d2c457b0980a39efe2ddc4d9fa1f926eded7fb8",
+      "method": "reviewed_saved_source_membership_and_arithmetic"
+    },
+    "source_rule_excerpts": [],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "ORT Scoring & Interpretation",
+        "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation\n"
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [
+      {
+        "page": 1,
+        "text": "Total Score (sum of circled values)",
+        "y": 450.7,
+        "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      },
+      {
+        "page": 1,
+        "text": "Note: items 1, 2 and 8 are weighted differently for male and female respondents (Webster, 2005) - circle the value under the column matching the respondent's sex.",
+        "y": 475.5,
+        "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      }
+    ],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+    "remaining_work": [
+      "Normative conversions and clinical publication require separate source-specific review."
+    ],
+    "implementation_status": {
+      "raw_calculation": "draft_implemented",
+      "interpretation": "partial_source_bands",
+      "normative_conversion": "not_implemented",
+      "clinical_use": "not_approved"
+    },
+    "runtime_module": "definition_runtime.py"
+  },
+  "context_sections": [
+    {
+      "id": "C1",
+      "title": "Opioid Risk Tool (ORT)",
+      "text": "The Opioid Risk Tool (ORT) is a brief, self-report or clinician rated screening tool designed for use with adult patients in primary care settings to assess risk for opioid abuse among individuals prescribed opioids for treatment of chronic pain. Patients categorized as high-risk are at increased likelihood of future abusive drug-related behaviours. This tool is best administered to patients upon an initial visit prior to beginning opioid therapy, and can inform the risk/benefit decisions around prescribing opioid medication.\n2 minutes\nAges 18+\nHealth\nAdminister Now",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C2",
+      "title": "ORT Overview",
+      "text": "The ORT asks questions about the following risk factors based on scientific literature: personal and family history of substance abuse; age; history of preadolescent sexual abuse; and certain psychological diseases.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C3",
+      "title": "ORT Scoring & Interpretation",
+      "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C4",
+      "title": "ORT Psychometric Properties",
+      "text": "In the initial validation research by Webster (2005) administered the ORT to 85 patients treated with opioids at pain clinics. For those patients with a risk category of low, 17 out of 18 (94.4%) did not display an aberrant behaviour. For those patients with a risk category of high, 40 out of 44 (90.9%) did display an aberrant behaviour. The ORT displayed excellent discrimination for both the male (c = 0.82) and the female (c = 0.85) prognostic models. Among patients prescribed opioids for chronic pain, the ORT exhibited a high degree of sensitivity and specificity for determining which individuals are at risk for opioid-related, aberrant behaviours.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "LIVE_C5",
+      "title": "Overview",
+      "text": "Search\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C6",
+      "title": "Opioid Risk Tool (ORT)",
+      "text": "The Opioid Risk Tool (ORT) is a brief, self-report or clinician rated screening tool designed for use with adult patients in primary care settings to assess risk for opioid abuse among individuals prescribed opioids for treatment of chronic pain. Patients categorized as high-risk are at increased likelihood of future abusive drug-related behaviours. This tool is best administered to patients upon an initial visit prior to beginning opioid therapy, and can inform the risk/benefit decisions around prescribing opioid medication.\n2 minutes\nAges 18+\nHealth\nAdminister Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C7",
+      "title": "ORT Psychometric Properties",
+      "text": "Professional Access\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C8",
+      "title": "ORT Overview",
+      "text": "The ORT asks questions about the following risk factors based on scientific literature: personal and family history of substance abuse; age; history of preadolescent sexual abuse; and certain psychological diseases.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C9",
+      "title": "ORT Scoring & Interpretation",
+      "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C10",
+      "title": "ORT Psychometric Properties",
+      "text": "In the initial validation research by Webster (2005) administered the ORT to 85 patients treated with opioids at pain clinics. For those patients with a risk category of low, 17 out of 18 (94.4%) did not display an aberrant behaviour. For those patients with a risk category of high, 40 out of 44 (90.9%) did display an aberrant behaviour. The ORT displayed excellent discrimination for both the male (c = 0.82) and the female (c = 0.85) prognostic models. Among patients prescribed opioids for chronic pain, the ORT exhibited a high degree of sensitivity and specificity for determining which individuals are at risk for opioid-related, aberrant behaviours.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C11",
+      "title": "",
+      "text": "Professional Access\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C12",
+      "title": "Assess your patients with the Opioid Risk Tool using a NovoPsych account",
+      "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C13",
+      "title": "Developer",
+      "text": "Webster LR. Predicting aberrant behaviors in opioid-treated patients: Preliminary validation of the opioid risk tool. Pain Medicine. 2005;6(6):432-442. Used with permission.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C14",
+      "title": "Alcohol Use Disorders Identification Test (AUDIT)",
+      "text": "Also known as: AUDIT , Alcohol Use Disorders Identification Test , Alcohol use disorder scale , Alcohol problems screening\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C15",
+      "title": "Leeds Dependence Questionnaire (LDQ)",
+      "text": "Also known as: LDQ , Leeds Dependence Questionnaire , Substance dependence questionnaire , Addiction severity measure , Psychological dependence assessment\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C16",
+      "title": "Pain Self-Efficacy Questionnaire (PSEQ)",
+      "text": "Also known as: PSEQ , Pain Self-Efficacy Questionnaire , Pain management assessment\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C17",
+      "title": "Personality Inventory for DSM-5 – Short Form (PID-5-SF)",
+      "text": "Also known as: PID-5-SF , PID-5 , DSM-5 personality inventory , Personality disorder assessment , Personality traits questionnaire\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C18",
+      "title": "Maladaptive Schema Scale (MSS)",
+      "text": "Also known as: MSS , Maladaptive Schema Scale , Early maladaptive schemas questionnaire , Schema therapy measure , Young Schema Questionnaire\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C19",
+      "title": "Attachment Style Questionnaire – Short Form (ASQ-SF)",
+      "text": "Also known as: ASQ-SF , ASQ , Adult attachment scale , Attachment style assessment\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C20",
+      "title": "Sample Results",
+      "text": "Administer Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C21",
+      "title": "Dr Ben Buchanan",
+      "text": "NovoPsych CEO & Clinical Psychologist\n",
+      "review_status": "fresh_source_text_needs_review"
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Webster LR. Predicting aberrant behaviors in opioid-treated patients: Preliminary validation of the opioid risk tool. Pain Medicine. 2005;6(6):432-442. Used with permission."
+    }
+  ],
+  "tables": [],
+  "assets": [
+    {
+      "id": "A1",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "'Back to Assessments' navigation button",
+      "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A2",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Opioid Risk Tool (ORT) PDF",
+      "sha256": "006e092fcc7645e6d22cf11491ac03603c56b5ceeb928796da23a41fb45041a0",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Attachment Style Questionnaire – Short Form (ASQ-SF)",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A3",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "094a48f6c33028a7e66c88cb983298defdb423c35e2c19e1dcae8e7982683d0b",
+      "mime_type": "image/jpeg",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Download PDF",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A4",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Picture of Dr Ben Buchanan",
+      "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+      "mime_type": "image/jpeg",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Scale information composed by:",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A5",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "f5015f2b6d89885e41d4dbfec4b94d393210da3037dabbd550fe5f9c0d379037",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A6",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Assess your patients with the Opioid Risk Tool using a NovoPsych account",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A7",
+      "kind": "documents",
+      "role": "selected_questionnaire",
+      "title": "Download PDF",
+      "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A8",
+      "kind": "documents",
+      "role": "sample_report_not_runtime_context",
+      "title": "Sample Results",
+      "sha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A9",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Original response",
+      "sha256": "259506ed6a737c1d61b1a2901a7509cf05c4ee65bafa03820b39c4ec3a08bc58",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A10",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Initial page",
+      "sha256": "56564c147a95af5f5051a838ab8e7c46765573101effbdb1a9f848887e0592e0",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A11",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "ORT Overview",
+      "sha256": "56564c147a95af5f5051a838ab8e7c46765573101effbdb1a9f848887e0592e0",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A12",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "ORT Scoring & Interpretation",
+      "sha256": "84dd33a3f2164c3b17c695795005baab015ad9ae255f4fcc4b98b5038155bd9c",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A13",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "ORT Psychometric Properties",
+      "sha256": "72b2273a0c051ae9ca95a6986c28859ef08c579e87540e4161d684022899a9cb",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A14",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Professional Access",
+      "sha256": "07cfa4d1cf81d6d993395ab8a22f2b96e371a66483c99a6622306ea1ad90ee7d",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    }
+  ],
+  "conversation_policy": {
+    "status": "draft_disabled_pending_review",
+    "preserve_question_wording": true,
+    "require_answer_confirmation": true,
+    "infer_unanswered_items": false,
+    "calculate_scores_in_backend": true,
+    "treat_source_as_data_not_instructions": true,
+    "context_allowlist": [
+      "assessment",
+      "administration",
+      "questionnaire",
+      "context_sections"
+    ],
+    "send_asset_bytes_or_sample_reports": false
+  },
+  "review": {
+    "ready_for_clinical_use": false,
+    "questionnaire_status": "recovered_needs_review",
+    "questionnaire_completeness_verified": false,
+    "complete_capture_verified": false,
+    "independent_clinical_review_completed": false,
+    "issues": [
+      {
+        "code": "selection_and_branching_need_review",
+        "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+      },
+      {
+        "code": "draft_scoring_review_pending",
+        "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+      },
+      {
+        "code": "independent_review_pending",
+        "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+      }
+    ],
+    "previous_review_notes": [],
+    "response_structure_complete": true,
+    "unresolved_response_item_ids": [],
+    "required_input_widgets": [
+      "choice"
+    ],
+    "option_refresh": {
+      "corrected_cells_or_fields": 6,
+      "unrenderable_option_count": 0,
+      "numeric_only_options_are_not_missing": true,
+      "selection_modes_still_needing_review": 10
+    },
+    "definition_repair": {
+      "status": "source_implementation_draft",
+      "content_repairs": [],
+      "scoring_rule_count": 1,
+      "remaining_work": [
+        "Normative conversions and clinical publication require separate source-specific review."
+      ],
+      "clinical_approval": false
+    }
+  },
+  "rights": {
+    "access": "public_page",
+    "reproduction_permission": "not_verified",
+    "note": "Public retrieval does not establish licensing or reuse rights."
+  },
+  "source_documents": [
+    {
+      "id": "selected_pdf",
+      "role": "questionnaire_source",
+      "sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+      "runtime_context_allowed": false,
+      "page_count": 1,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    },
+    {
+      "id": "live_pdf_2",
+      "role": "supplemental_source_document",
+      "sha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+      "runtime_context_allowed": false,
+      "source_titles": [
+        "linked_pdf"
+      ],
+      "page_count": 2,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    }
+  ],
+  "reporting": {
+    "version": "2.0.0-draft.1",
+    "status": "draft_requires_clinical_review",
+    "clinical_scoring_enabled": false,
+    "metrics": [
+      {
+        "rule_id": "source_draft_1",
+        "label": "Total weighted score",
+        "minimum": 0.0,
+        "maximum": 26,
+        "favourable_direction": null,
+        "direction_status": "not_compiled",
+        "calculation_method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "severity_bands_rule_id": "source_draft_1",
+        "axis_unit": "score"
+      }
+    ],
+    "charts": [
+      {
+        "id": "source_draft_1",
+        "title": "Total weighted score",
+        "kind": "domain_trend",
+        "series": [
+          {
+            "id": "source_draft_1",
+            "label": "Total weighted score",
+            "value_field": "rule_result"
+          }
+        ],
+        "minimum": 0.0,
+        "maximum": 26,
+        "axis_unit": "score"
+      }
+    ],
+    "comparisons": {
+      "reference_visits": [
+        "previous",
+        "baseline"
+      ],
+      "delta_formula": "current_minus_reference",
+      "deduplicate_same_reference_visit": true,
+      "require_same_assessment_definition_language_and_scoring_version": true,
+      "missing_result": "withhold_comparison",
+      "single_visit": "show_current_scores_only",
+      "date_source": "saved_session_completion_timestamp",
+      "require_compatible_respondent_context": true,
+      "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+      "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+      "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+    },
+    "percentiles": {
+      "enabled": false,
+      "reason": "verified_lookup_not_available"
+    },
+    "interpretation": {
+      "method": "deterministic_templates",
+      "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+      "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+      "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+      "clinical_significance": "not_implemented_requires_review",
+      "diagnosis": "not_inferred",
+      "severity_source": "rule.severity_bands",
+      "overall_total": null,
+      "combine_metrics_into_new_total": false,
+      "source_guidance_ref": {
+        "section": "scoring",
+        "field": "source_guidance"
+      },
+      "source_guidance_use": "reference_text_for_review_not_executable_rules",
+      "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+      "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+      "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+    },
+    "source_evidence": {
+      "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+      "guidance_titles": [
+        "ORT Scoring & Interpretation"
+      ]
+    },
+    "mode": "numeric_scores",
+    "required_context": [
+      {
+        "key": "source_scoring_sex",
+        "type": "enum",
+        "allowed_values": [
+          "female",
+          "male"
+        ],
+        "required_when": "a dependent question or scoring rule is evaluated",
+        "missing_policy": "withhold_dependent_result"
+      }
+    ],
+    "coverage": {
+      "questionnaire_available": true,
+      "numeric_rule_count": 1,
+      "rules_included": [
+        "source_draft_1"
+      ],
+      "raw_calculation_status": "draft_implemented",
+      "interpretation_status": "partial_source_bands",
+      "full_source_coverage_verified": false,
+      "clinical_review_complete": false,
+      "remaining_work": [
+        "Normative conversions and clinical publication require separate source-specific review."
+      ],
+      "review_issue_codes": [
+        "selection_and_branching_need_review",
+        "scoring_not_structured",
+        "independent_review_pending"
+      ],
+      "reference_guidance_only": false,
+      "missing_direction_rule_ids": [
+        "source_draft_1"
+      ]
+    },
+    "sections": [
+      {
+        "id": "patient_details",
+        "enabled": true,
+        "source": "saved_patient_and_session"
+      },
+      {
+        "id": "assessment_summary",
+        "enabled": true,
+        "source": "assessment_and_reporting_coverage"
+      },
+      {
+        "id": "results",
+        "enabled": true,
+        "source": "reporting.metrics"
+      },
+      {
+        "id": "score_charts",
+        "enabled": true,
+        "source": "reporting.charts",
+        "single_visit": "range_bar",
+        "repeated_visits": "line_chart"
+      },
+      {
+        "id": "comparisons",
+        "enabled": true,
+        "source": "compatible_saved_sessions"
+      },
+      {
+        "id": "protocol_result",
+        "enabled": false,
+        "source": "scoring.protocol"
+      },
+      {
+        "id": "paired_profile",
+        "enabled": false,
+        "source": "scoring.paired_profile"
+      },
+      {
+        "id": "response_history",
+        "enabled": true,
+        "source": "reporting.item_history"
+      },
+      {
+        "id": "responses",
+        "enabled": true,
+        "source": "reporting.response_groups"
+      },
+      {
+        "id": "source_guidance",
+        "enabled": true,
+        "source": "scoring.source_guidance",
+        "role": "reference_material_requires_review"
+      },
+      {
+        "id": "limitations",
+        "enabled": true,
+        "source": "reporting.coverage"
+      }
+    ],
+    "response_groups": [
+      {
+        "id": "source_draft_1",
+        "label": "Total weighted score",
+        "rule_id": "source_draft_1",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ]
+      }
+    ],
+    "item_history": [
+      {
+        "item_id": "Q1",
+        "source_label": "1",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q2",
+        "source_label": "2",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q3",
+        "source_label": "3",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q4",
+        "source_label": "4",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q5",
+        "source_label": "5",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q6",
+        "source_label": "6",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q7",
+        "source_label": "7",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q8",
+        "source_label": "8",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q9",
+        "source_label": "9",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q10",
+        "source_label": "10",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      }
+    ],
+    "protocol": null,
+    "paired_profile": null
+  },
+  "verification": {
+    "schema_version": "1.0.0",
+    "checked_on": "2026-11-18",
+    "definition_version": "1.0.0-draft.6",
+    "scoring_content_sha256": "62e71a209ffb8e1f7d9d89debde556eee6d3da88dd4b1ec227578a22fca754e3",
+    "status": "technical_checks_with_limits",
+    "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+    "questionnaire": {
+      "status": "pending_independent_review",
+      "complete_wording_review": false
+    },
+    "rules": [
+      {
+        "rule_id": "source_draft_1",
+        "technical_status": "conditional_review_required",
+        "source_check": "not_checked",
+        "source_scope": null,
+        "source_ids": [],
+        "example_case_ids": [],
+        "example_result_counts": {
+          "passed": 0,
+          "known_gap_confirmed": 0,
+          "failed": 0
+        },
+        "clinical_approved": false
+      }
+    ],
+    "interpretation": [
+      {
+        "rule_id": "source_draft_1",
+        "status": "pending_source_review",
+        "clinical_approved": false
+      }
+    ],
+    "percentiles": {
+      "status": "not_implemented",
+      "clinical_approved": false
+    },
+    "protocol": {
+      "status": "not_encoded",
+      "clinical_approved": false
+    },
+    "source_references": [],
+    "evidence_build": {
+      "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+      "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+      "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+      "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+    },
+    "remaining_work": [
+      "Normative conversions and clinical publication require separate source-specific review.",
+      "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+      "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+      "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+      "No independent primary-source benchmark was added for this assessment in this pass."
+    ],
+    "clinical_approval": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "approved_definition_version": null,
+      "approved_scoring_sha256": null
+    },
+    "runtime_policy": {
+      "clinical_scoring_enabled": false,
+      "draft_label": "Draft score — not clinically validated",
+      "draft_requires_explicit_opt_in": true,
+      "missing_rule_result": "unavailable",
+      "reject_stale_verification": true,
+      "source_links_are_evidence_only": true
+    }
+  },
+  "report_configuration": {
+    "schemaVersion": "assessment-report-config/2.0.0",
+    "status": "source_specific_draft",
+    "metricBindings": [
+      {
+        "id": "metric_source_draft_1",
+        "ruleId": "source_draft_1",
+        "label": "Total weighted score",
+        "minimum": 0.0,
+        "maximum": 26,
+        "calculation": {
+          "id": "source_draft_1",
+          "label": "Total weighted score",
+          "item_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q6",
+            "Q7",
+            "Q8",
+            "Q9",
+            "Q10"
+          ],
+          "method": "sum",
+          "value_field": "printed_value",
+          "multiplier": 1,
+          "severity_bands": [
+            {
+              "label": "Low Risk",
+              "minimum_inclusive": 0,
+              "maximum_inclusive": 3
+            },
+            {
+              "label": "Moderate Risk",
+              "minimum_inclusive": 4,
+              "maximum_inclusive": 7
+            },
+            {
+              "label": "High Risk",
+              "minimum_inclusive": 8,
+              "maximum_inclusive": 26
+            }
+          ],
+          "status": "source_arithmetic_draft",
+          "enabled": false,
+          "source": {
+            "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+            "page_sha256": "d6516cf68cc372b2a2645ce68d2c457b0980a39efe2ddc4d9fa1f926eded7fb8",
+            "method": "reviewed_saved_source_membership_and_arithmetic",
+            "context_section_ids": [
+              "C3",
+              "LIVE_C9"
+            ],
+            "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+          },
+          "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+          "context_constraints": [
+            {
+              "context_key": "source_scoring_sex",
+              "allowed_values": [
+                "female",
+                "male"
+              ],
+              "allowed_options": {
+                "Q1": {
+                  "female": [
+                    "O1",
+                    "O2"
+                  ],
+                  "male": [
+                    "O1",
+                    "O3"
+                  ]
+                },
+                "Q2": {
+                  "female": [
+                    "O1",
+                    "O2"
+                  ],
+                  "male": [
+                    "O1",
+                    "O3"
+                  ]
+                },
+                "Q8": {
+                  "female": [
+                    "O1",
+                    "O2"
+                  ],
+                  "male": [
+                    "O1",
+                    "O3"
+                  ]
+                }
+              }
+            }
+          ],
+          "minimum": 0.0,
+          "maximum": 26,
+          "bounds_basis": "Maximum over consistent female or male source columns; mixed-column maximum 29 is invalid."
+        },
+        "status": "source_arithmetic_draft",
+        "runtimeEnabled": false
+      }
+    ],
+    "sources": [
+      {
+        "sha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+        "pageCount": 2,
+        "identityStatus": "title_or_acronym_matches",
+        "hashVerified": true,
+        "usage": "reference_identity_only_no_runtime_fetch"
+      }
+    ],
+    "page": {
+      "coordinateUnit": "pt",
+      "origin": "top_left",
+      "documentsAreAlternativesNotConcatenated": true
+    },
+    "theme": {
+      "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+      "branding": "application_branding",
+      "sourceLogosRequired": false
+    },
+    "pages": [
+      {
+        "pageId": "db156f83781f9_p1",
+        "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+        "pageNumber": 1,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [
+          "db156f83781f9_p1_table_1"
+        ],
+        "sectionIds": [
+          "db156f83781f9_p1_section_1",
+          "db156f83781f9_p1_section_2",
+          "db156f83781f9_p1_section_3",
+          "db156f83781f9_p1_section_4"
+        ]
+      },
+      {
+        "pageId": "db156f83781f9_p2",
+        "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+        "pageNumber": 2,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [
+          "db156f83781f9_p2_table_1"
+        ],
+        "sectionIds": [
+          "db156f83781f9_p2_section_1",
+          "db156f83781f9_p2_section_2",
+          "db156f83781f9_p2_section_3",
+          "db156f83781f9_p2_section_4",
+          "db156f83781f9_p2_section_5",
+          "db156f83781f9_p2_section_6",
+          "db156f83781f9_p2_section_7",
+          "db156f83781f9_p2_section_8",
+          "db156f83781f9_p2_section_9",
+          "db156f83781f9_p2_section_10",
+          "db156f83781f9_p2_section_11",
+          "db156f83781f9_p2_section_12",
+          "db156f83781f9_p2_section_13",
+          "db156f83781f9_p2_section_14",
+          "db156f83781f9_p2_section_15",
+          "db156f83781f9_p2_section_16",
+          "db156f83781f9_p2_section_17",
+          "db156f83781f9_p2_section_18",
+          "db156f83781f9_p2_section_19",
+          "db156f83781f9_p2_section_20",
+          "db156f83781f9_p2_section_21",
+          "db156f83781f9_p2_section_22"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "db156f83781f9_p1_section_1",
+        "pageId": "db156f83781f9_p1",
+        "title": "Assessment Information",
+        "type": "source_heading",
+        "bboxPt": [
+          74.03149,
+          176.72569,
+          237.39752,
+          196.00369
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p1_section_2",
+        "pageId": "db156f83781f9_p1",
+        "title": "Results",
+        "type": "results",
+        "bboxPt": [
+          74.03149,
+          273.10361,
+          124.59951,
+          292.38162
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p1_section_3",
+        "pageId": "db156f83781f9_p1",
+        "title": "Interpretive Text",
+        "type": "interpretation",
+        "bboxPt": [
+          74.03149,
+          338.30048,
+          182.95149,
+          357.57849
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p1_section_4",
+        "pageId": "db156f83781f9_p1",
+        "title": "Scoring and Interpretation Information",
+        "type": "scoring_guidance",
+        "bboxPt": [
+          74.03149,
+          409.18625,
+          329.95145,
+          428.46426
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_1",
+        "pageId": "db156f83781f9_p2",
+        "title": "Scoring and Interpretation Information (cont.)",
+        "type": "scoring_guidance",
+        "bboxPt": [
+          74.03149,
+          139.87529,
+          376.61337,
+          159.15329
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_2",
+        "pageId": "db156f83781f9_p2",
+        "title": "Client Responses",
+        "type": "responses",
+        "bboxPt": [
+          74.03149,
+          234.96104,
+          191.50549,
+          254.23904
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_3",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          292.15027,
+          312.91077,
+          305.92029
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_4",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          292.15027,
+          459.49963,
+          305.92029
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_5",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          320.4967,
+          312.91077,
+          334.26672
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_6",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          320.4967,
+          459.49963,
+          334.26672
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_7",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          348.84314,
+          312.91077,
+          362.61316
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_8",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          348.84314,
+          459.49963,
+          362.61316
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_9",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          377.18961,
+          312.91077,
+          390.95963
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_10",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          377.18961,
+          459.49963,
+          390.95963
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_11",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          405.53607,
+          312.91077,
+          419.30609
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_12",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          405.53607,
+          459.49963,
+          419.30609
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_13",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          433.88251,
+          312.91077,
+          447.65253
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_14",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          433.88251,
+          459.49963,
+          447.65253
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_15",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          462.22897,
+          312.91077,
+          475.99899
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_16",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          462.22897,
+          459.49963,
+          475.99899
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_17",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          490.57544,
+          312.91077,
+          504.34546
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_18",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          490.57544,
+          459.49963,
+          504.34546
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_19",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          518.92194,
+          312.91077,
+          532.69196
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_20",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          518.92194,
+          459.49963,
+          532.69196
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_21",
+        "pageId": "db156f83781f9_p2",
+        "title": "Yes",
+        "type": "source_heading",
+        "bboxPt": [
+          295.12076,
+          547.26837,
+          312.91077,
+          561.03839
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#ffffff"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "db156f83781f9_p2_section_22",
+        "pageId": "db156f83781f9_p2",
+        "title": "No",
+        "type": "source_heading",
+        "bboxPt": [
+          446.16965,
+          547.26837,
+          459.49963,
+          561.03839
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 10.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      }
+    ],
+    "charts": [],
+    "tables": [
+      {
+        "id": "db156f83781f9_p1_table_1",
+        "type": "unresolved_table",
+        "bboxPt": [
+          195.43547,
+          298.60495,
+          439.26035,
+          324.47003
+        ],
+        "rowCount": 2,
+        "columnCount": 2,
+        "cellsPt": [
+          [
+            195.43547,
+            298.60495,
+            323.14963,
+            310.39377
+          ],
+          [
+            323.14963,
+            298.60495,
+            439.26035,
+            310.39377
+          ],
+          [
+            195.43547,
+            310.39377,
+            323.14963,
+            324.47003
+          ],
+          [
+            323.14963,
+            310.39377,
+            439.26035,
+            324.47003
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "db156f83781f9_p1",
+        "sourceTableId": "table_1",
+        "columns": [],
+        "rowBindings": [],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      },
+      {
+        "id": "db156f83781f9_p2_table_1",
+        "type": "response_table",
+        "bboxPt": [
+          68.03149,
+          236.81805,
+          527.24421,
+          568.47156
+        ],
+        "rowCount": 12,
+        "columnCount": 4,
+        "cellsPt": [
+          [
+            68.03149,
+            236.81805,
+            527.24421,
+            256.66058
+          ],
+          [
+            68.03149,
+            256.66058,
+            87.87402,
+            285.00702
+          ],
+          [
+            68.03149,
+            285.00702,
+            87.87402,
+            313.35345
+          ],
+          [
+            68.03149,
+            313.35345,
+            87.87402,
+            341.69994
+          ],
+          [
+            68.03149,
+            341.69994,
+            87.87402,
+            370.0464
+          ],
+          [
+            68.03149,
+            370.0464,
+            87.87402,
+            398.39285
+          ],
+          [
+            68.03149,
+            398.39285,
+            87.87402,
+            426.73932
+          ],
+          [
+            68.03149,
+            426.73932,
+            87.87402,
+            455.08576
+          ],
+          [
+            68.03149,
+            455.08576,
+            87.87402,
+            483.43222
+          ],
+          [
+            68.03149,
+            483.43222,
+            87.87402,
+            511.77869
+          ],
+          [
+            68.03149,
+            511.77869,
+            87.87402,
+            540.12512
+          ],
+          [
+            68.03149,
+            540.12512,
+            87.87402,
+            568.47156
+          ],
+          [
+            87.87402,
+            256.66058,
+            229.60629,
+            285.00702
+          ],
+          [
+            87.87402,
+            285.00702,
+            229.60629,
+            313.35345
+          ],
+          [
+            87.87402,
+            313.35345,
+            229.60629,
+            341.69994
+          ],
+          [
+            87.87402,
+            341.69994,
+            229.60629,
+            370.0464
+          ],
+          [
+            87.87402,
+            370.0464,
+            229.60629,
+            398.39285
+          ],
+          [
+            87.87402,
+            398.39285,
+            229.60629,
+            426.73932
+          ],
+          [
+            87.87402,
+            426.73932,
+            229.60629,
+            455.08576
+          ],
+          [
+            87.87402,
+            455.08576,
+            229.60629,
+            483.43222
+          ],
+          [
+            87.87402,
+            483.43222,
+            229.60629,
+            511.77869
+          ],
+          [
+            87.87402,
+            511.77869,
+            229.60629,
+            540.12512
+          ],
+          [
+            87.87402,
+            540.12512,
+            229.60629,
+            568.47156
+          ],
+          [
+            229.60629,
+            256.66058,
+            378.42519,
+            285.00702
+          ],
+          [
+            229.60629,
+            285.00702,
+            378.42519,
+            313.35345
+          ],
+          [
+            229.60629,
+            313.35345,
+            378.42519,
+            341.69994
+          ],
+          [
+            229.60629,
+            341.69994,
+            378.42519,
+            370.0464
+          ],
+          [
+            229.60629,
+            370.0464,
+            378.42519,
+            398.39285
+          ],
+          [
+            229.60629,
+            398.39285,
+            378.42519,
+            426.73932
+          ],
+          [
+            229.60629,
+            426.73932,
+            378.42519,
+            455.08576
+          ],
+          [
+            229.60629,
+            455.08576,
+            378.42519,
+            483.43222
+          ],
+          [
+            229.60629,
+            483.43222,
+            378.42519,
+            511.77869
+          ],
+          [
+            229.60629,
+            511.77869,
+            378.42519,
+            540.12512
+          ],
+          [
+            229.60629,
+            540.12512,
+            378.42519,
+            568.47156
+          ],
+          [
+            378.42519,
+            256.66058,
+            527.24421,
+            285.00702
+          ],
+          [
+            378.42519,
+            285.00702,
+            527.24421,
+            313.35345
+          ],
+          [
+            378.42519,
+            313.35345,
+            527.24421,
+            341.69994
+          ],
+          [
+            378.42519,
+            341.69994,
+            527.24421,
+            370.0464
+          ],
+          [
+            378.42519,
+            370.0464,
+            527.24421,
+            398.39285
+          ],
+          [
+            378.42519,
+            398.39285,
+            527.24421,
+            426.73932
+          ],
+          [
+            378.42519,
+            426.73932,
+            527.24421,
+            455.08576
+          ],
+          [
+            378.42519,
+            455.08576,
+            527.24421,
+            483.43222
+          ],
+          [
+            378.42519,
+            483.43222,
+            527.24421,
+            511.77869
+          ],
+          [
+            378.42519,
+            511.77869,
+            527.24421,
+            540.12512
+          ],
+          [
+            378.42519,
+            540.12512,
+            527.24421,
+            568.47156
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "db156f83781f9_p2",
+        "sourceTableId": "table_1",
+        "columns": [
+          {
+            "sourceColumnIndex": 2,
+            "label": "Yes",
+            "binding": null
+          },
+          {
+            "sourceColumnIndex": 3,
+            "label": "No",
+            "binding": null
+          },
+          {
+            "sourceColumnIndex": 2,
+            "label": "Yes",
+            "binding": null
+          },
+          {
+            "sourceColumnIndex": 3,
+            "label": "No",
+            "binding": null
+          }
+        ],
+        "rowBindings": [
+          {
+            "sourceRowIndex": 2,
+            "questionId": "Q1",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "questionId": "Q2",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "questionId": "Q3",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "questionId": "Q4",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "questionId": "Q5",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "questionId": "Q6",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "questionId": "Q7",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "questionId": "Q8",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "questionId": "Q9",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "questionId": "Q10",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          }
+        ],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Client Responses",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "response_option_header",
+            "content": "Yes",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "response_option_header",
+            "content": "No",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q1",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "response_option_header",
+            "content": "Yes",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "response_option_header",
+            "content": "No",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q2",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 2,
+            "kind": "response_option_header",
+            "content": "Yes",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 3,
+            "kind": "response_option_header",
+            "content": "No",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q3",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q4",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q5",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q6",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q7",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q8",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q9",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q10",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 11,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      }
+    ],
+    "variants": {
+      "sourceStatements": [],
+      "firstAdministration": {
+        "status": "requires_review"
+      },
+      "repeatAdministration": {
+        "status": "requires_review"
+      },
+      "policy": "No chart added to the supplied table/text sample; other administration variants require separate evidence."
+    },
+    "interpretationRules": {
+      "encodedRules": [
+        {
+          "ruleId": "source_draft_1",
+          "severityBands": [
+            {
+              "label": "Low Risk",
+              "minimum_inclusive": 0,
+              "maximum_inclusive": 3
+            },
+            {
+              "label": "Moderate Risk",
+              "minimum_inclusive": 4,
+              "maximum_inclusive": 7
+            },
+            {
+              "label": "High Risk",
+              "minimum_inclusive": 8,
+              "maximum_inclusive": 26
+            }
+          ]
+        }
+      ],
+      "sourceGuidance": [
+        {
+          "title": "ORT Scoring & Interpretation",
+          "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation\n"
+        }
+      ],
+      "reportScoringGuidance": [
+        {
+          "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+          "pageNumber": 1,
+          "text": "Scores range from 0 to 26, with scores calculated differently\ndependent on gender and age.The scores are categorized into three\nrisk categories. \n-\n\tLow Risk= Scores 0-3\n-\n\tModerate Risk = scores 4 – 7\n-\n\tHigh risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the\nlow risk category have a 5.6% chance of developing one or more\naberrant behaviour when prescribed opioids. The moderate risk\ncategory had a risk of 28% while the high risk category had a risk of\n91%. Note that these percentages are not direct measures of risk of\nopioid abuse or dependence, but rather aberrant behaviours (which\nare known to be associated with abuse and dependence). Aberrant\nbehaviours are defined as:\n-Used additional opioids than those prescribed\n-Used additional opioids than those prescribed more than once\n-Forged prescription\n-Sold prescription\n-Admitted to seeking euphoria from opioids\n-Admitted to wanting opioids for anxiety\n-Overdose and death\n-Injected drug\n-Abnormal urine/blood screen\n-Abnormal urine/blood screen positive for 2 or more",
+          "usage": "source_guidance_for_review_not_executable_scoring",
+          "runtimeEnabled": false
+        },
+        {
+          "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+          "pageNumber": 2,
+          "text": "substances\n-Solicited opioids from other providers\n-Unauthorized ER visits\n-Concurrent abuse of alcohol\n-Unauthorized dose escalation",
+          "usage": "source_guidance_for_review_not_executable_scoring",
+          "runtimeEnabled": false
+        }
+      ],
+      "sourceRequirements": [],
+      "templates": [],
+      "sampleNarrativeReusable": false,
+      "runtimeEnabled": false
+    },
+    "referenceTables": [],
+    "paintStyles": [],
+    "assets": {
+      "runtimeImages": [],
+      "runtimeSourceFiles": []
+    },
+    "runtimeContract": {
+      "version2RendererRequired": true,
+      "loadDefinitionFrom": "database_json",
+      "useCurrentPatientAnswers": true,
+      "useSamplePatientValues": false,
+      "externalNetworkRequired": false,
+      "sourceArchiveRequired": false,
+      "unknownScoring": "withhold",
+      "unknownNorms": "withhold",
+      "unsupportedChart": "withhold_and_report_exception",
+      "unknownRepeatLayout": "withhold"
+    },
+    "validation": {
+      "jsonStructureValidated": true,
+      "sourceHashesVerified": true,
+      "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+      "fullPageLayoutCompared": false,
+      "scoreBindingsReviewed": false,
+      "tablesSemanticallyReviewed": false,
+      "rendererEquivalent": false,
+      "clinicalApproved": false,
+      "readyForApplicationImport": false,
+      "noChartsInSuppliedSample": "AI_full_page_visual_review_confirmed"
+    },
+    "exceptions": [
+      {
+        "code": "table_cell_semantics_require_review",
+        "count": 2,
+        "unresolvedCells": 29
+      },
+      {
+        "code": "interpretation_and_variant_rules_require_review"
+      }
+    ]
+  },
+  "export_format": {
+    "schema_version": "standalone-combined-assessment-2.0",
+    "report_definition": "report_configuration uses assessment, administration, questionnaire and scoring from this file unless it supplies its own field. Its identity uses assessment_id, assessment.name and definition_version.",
+    "baseline_reporting": "reporting contains the initial report settings; report_configuration contains the dedicated report settings.",
+    "source_content": "Archived PDF text and extraction history were omitted in the compact export. Original verification refers to source definitions.",
+    "internal_references": "Metrics use rule_id; item history uses item_id; severity_bands_rule_id identifies the scoring rule containing the bands. Other internal references use section and field names within this JSON.",
+    "external_dependencies": "No external locations are included. Asset records retain descriptive metadata only; binary assets are not embedded.",
+    "verification_scope": "Original verification records describe the source definitions before this cleanup."
+  }
+}

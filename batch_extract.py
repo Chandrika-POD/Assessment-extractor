@@ -5,7 +5,6 @@ import csv
 from datetime import datetime, timezone
 import fcntl
 import hashlib
-from html import escape
 import io
 import json
 from pathlib import Path
@@ -14,6 +13,7 @@ import subprocess
 from urllib.parse import urlsplit, urlunsplit
 
 from document import document
+from batch_index import enrich_manifest, render_index
 from extractor import extract
 from retrieval import validate_url
 
@@ -79,12 +79,15 @@ def issues_for(result):
         issues.append('no_structured_scoring')
     if any(d.get('status') not in ('processed', 'retained_excerpt') for d in result.get('documents', [])):
         issues.append('some_documents_not_processed')
+    if result.get('coverage', {}).get('unresolved'):
+        issues.append('unresolved_capture_gaps')
     if result.get('missing_fields'):
         issues.append('metadata_fields_unavailable')
     return issues
 
 
 def checkpoint(output, manifest):
+    enrich_manifest(output, manifest)
     manifest['updated_at'] = now()
     manifest['counts'] = dict(Counter(item['status'] for item in manifest['items']))
     groups = defaultdict(list)
@@ -96,27 +99,12 @@ def checkpoint(output, manifest):
     csv_buffer = io.StringIO()
     writer = csv.writer(csv_buffer)
     writer.writerow(['source_key', 'url', 'status', 'title', 'question_count', 'option_count', 'coverage_issues', 'error', 'document', 'json'])
-    rows = []
     for item in manifest['items']:
         files = item.get('files', {})
         writer.writerow([item['source_key'], item['url'], item['status'], item.get('title', ''), item.get('question_count', ''),
             item.get('option_count', ''), '; '.join(item.get('coverage_issues', [])), item.get('error', ''), files.get('document', ''), files.get('extraction', '')])
-        links = ' '.join(f'<a href="{escape(files[k], quote=True)}">{k}</a>' for k in ('document', 'extraction') if files.get(k))
-        rows.append('<tr>' + ''.join(f'<td>{escape(str(value))}</td>' for value in [
-            item.get('title') or item['source_key'], item['status'], item.get('question_count', ''),
-            ', '.join(item.get('coverage_issues', [])) or item.get('error', '')]) +
-            f'<td><a href="{escape(item["url"], quote=True)}">Source</a> {links}</td></tr>')
     atomic(output / 'summary.csv', csv_buffer.getvalue())
-    counts = ', '.join(f'{k}: {v}' for k, v in manifest['counts'].items())
-    atomic(output / 'index.html', '<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="refresh" content="30">'
-        '<title>Assessment batch review</title><style>body{font:14px system-ui;margin:32px;color:#243d32}'
-        'table{border-collapse:collapse;width:100%}th,td{text-align:left;border:1px solid #ddd;padding:10px;overflow-wrap:anywhere}'
-        'a{color:#245d4c;margin-right:8px}</style></head><body><h1>Assessment batch review</h1>'
-        f'<p>{escape(counts)} / {len(manifest["items"])} URLs. Updated: {escape(manifest["updated_at"])}</p>'
-        '<p>Extraction drafts only. No assessment is approved for clinical use or Gemini execution.</p>'
-        '<p><a href="manifest.json">Manifest</a><a href="summary.csv">CSV summary</a><a href="urls.txt">Input URLs</a></p>'
-        '<table><thead><tr><th>Assessment</th><th>Retrieval</th><th>Questions</th><th>Review issues</th><th>Files</th></tr></thead><tbody>'
-        + ''.join(rows) + '</tbody></table></body></html>')
+    atomic(output / 'index.html', render_index(manifest))
 
 
 def run(input_file, output, retry_failed=False, limit=None, extraction_fn=extract):
@@ -138,7 +126,7 @@ def run(input_file, output, retry_failed=False, limit=None, extraction_fn=extrac
         else:
             manifest = {'schema_version': 'batch/1', 'run_id': output.name, 'created_at': now(),
                 'input_sha256': fingerprint, 'extractor': code_revision(), 'run_status': 'running',
-                'configuration': {'mode': 'live', 'render_browser': True, 'process_documents': True, 'max_linked_pdfs': 3, 'concurrency': 1},
+                'configuration': {'mode': 'live', 'render_browser': True, 'process_documents': True, 'max_linked_pdfs': 100, 'capture_profile': 'rich-content-v2', 'concurrency': 1},
                 'items': [{'url': url, 'source_key': source_key(url), 'status': 'pending', 'attempts': []} for url in urls]}
             atomic(output / 'urls.txt', input_text)
         manifest['run_status'] = 'running'

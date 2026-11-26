@@ -1,0 +1,804 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total Score",
+   "minimum": 16.0,
+   "maximum": 80.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 16.0,
+    "maximum": 80.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total Score (sum of items 1–16)",
+     "y": 597.0,
+     "url": null,
+     "sha256": "bb16612de4b0826605a67f5649c0d76d97e77af4dd2841ff26440a107c6a2cee"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "f5a6e429e9d361de6c3f825556e296a558baaa81b0a00bad0b0ce180fb74eb9b",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "df5a6e429e9d3_p1",
+   "documentSha256": "f5a6e429e9d361de6c3f825556e296a558baaa81b0a00bad0b0ce180fb74eb9b",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "df5a6e429e9d3_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "df5a6e429e9d3_p1_section_1",
+    "df5a6e429e9d3_p1_section_2",
+    "df5a6e429e9d3_p1_section_3",
+    "df5a6e429e9d3_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "df5a6e429e9d3_p2",
+   "documentSha256": "f5a6e429e9d361de6c3f825556e296a558baaa81b0a00bad0b0ce180fb74eb9b",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "df5a6e429e9d3_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "df5a6e429e9d3_p3",
+   "documentSha256": "f5a6e429e9d361de6c3f825556e296a558baaa81b0a00bad0b0ce180fb74eb9b",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df5a6e429e9d3_p3_table_1"
+   ],
+   "sectionIds": [
+    "df5a6e429e9d3_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "df5a6e429e9d3_p4",
+   "documentSha256": "f5a6e429e9d361de6c3f825556e296a558baaa81b0a00bad0b0ce180fb74eb9b",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df5a6e429e9d3_p4_table_1"
+   ],
+   "sectionIds": [
+    "df5a6e429e9d3_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "df5a6e429e9d3_p1_section_1",
+   "pageId": "df5a6e429e9d3_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5a6e429e9d3_p1_section_2",
+   "pageId": "df5a6e429e9d3_p1",
+   "title": "PSWQ Total Score in Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    206.993,
+    288.03552,
+    399.70096,
+    300.03552
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5a6e429e9d3_p1_section_3",
+   "pageId": "df5a6e429e9d3_p1",
+   "title": "to Clinical and Non-Clinical Distributions",
+   "type": "source_heading",
+   "bboxPt": [
+    186.995,
+    300.03552,
+    419.69897,
+    312.03552
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5a6e429e9d3_p1_section_4",
+   "pageId": "df5a6e429e9d3_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    478.69476,
+    124.57652,
+    492.69476
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5a6e429e9d3_p2_section_1",
+   "pageId": "df5a6e429e9d3_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    290.26645,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5a6e429e9d3_p3_section_1",
+   "pageId": "df5a6e429e9d3_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    151.82051,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5a6e429e9d3_p4_section_1",
+   "pageId": "df5a6e429e9d3_p4",
+   "title": "PSWQ Score",
+   "type": "source_heading",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    119.92851,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "df5a6e429e9d3_p1_chart_1",
+   "title": null,
+   "type": "horizontal_bar",
+   "bboxPt": [
+    48.346,
+    343.938,
+    543.346,
+    439.378
+   ],
+   "widthPt": 495.0,
+   "heightPt": 95.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      187.007,
+      359.4278,
+      310.25699,
+      420.68802
+     ],
+     "colour": "#4caf50",
+     "opacity": 0.15,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      279.436,
+      368.7778,
+      433.496,
+      430.03799
+     ],
+     "colour": "#2196f3",
+     "opacity": 0.15,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      371.87701,
+      359.4278,
+      464.3168,
+      420.68802
+     ],
+     "colour": "#9c27b0",
+     "opacity": 0.15,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 16.0,
+      "positionPt": 48.3463,
+      "text": "16",
+      "colour": "#333333"
+     },
+     {
+      "value": 24.0,
+      "positionPt": 109.9666,
+      "text": "24",
+      "colour": "#333333"
+     },
+     {
+      "value": 32.0,
+      "positionPt": 171.59629999999999,
+      "text": "32",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 233.22639500000002,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 48.0,
+      "positionPt": 294.84628499999997,
+      "text": "48",
+      "colour": "#333333"
+     },
+     {
+      "value": 56.0,
+      "positionPt": 356.466585,
+      "text": "56",
+      "colour": "#333333"
+     },
+     {
+      "value": 64.0,
+      "positionPt": 418.09628499999997,
+      "text": "64",
+      "colour": "#333333"
+     },
+     {
+      "value": 72.0,
+      "positionPt": 479.72638,
+      "text": "72",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 541.34625,
+      "text": "80",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 16.0,
+    "maximum": 80.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "df5a6e429e9d3_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 318,
+    "detectedType": "line",
+    "reviewedType": "horizontal_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "to Clinical and Non-Clinical Distributions",
+     "bboxPt": [
+      186.995,
+      300.03552,
+      419.69897,
+      312.03552
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th",
+     "bboxPt": [
+      180.19501,
+      351.89926,
+      193.817,
+      358.89926
+     ],
+     "colour": "#4caf50",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      303.4447,
+      351.89926,
+      317.06671,
+      358.89926
+     ],
+     "colour": "#4caf50",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th",
+     "bboxPt": [
+      272.625,
+      431.89926,
+      286.24701,
+      438.89926
+     ],
+     "colour": "#2196f3",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      426.69501,
+      431.89926,
+      440.31702,
+      438.89926
+     ],
+     "colour": "#2196f3",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th",
+     "bboxPt": [
+      365.06601,
+      351.89926,
+      378.68802,
+      358.89926
+     ],
+     "colour": "#9c27b0",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      457.50592,
+      351.89926,
+      471.12793,
+      358.89926
+     ],
+     "colour": "#9c27b0",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Non-Clinical:",
+     "bboxPt": [
+      231.625,
+      327.98193,
+      265.62698,
+      333.98193
+     ],
+     "colour": "#4caf50",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th percentile",
+     "bboxPt": [
+      228.94922,
+      333.98193,
+      268.30322,
+      339.98193
+     ],
+     "colour": "#4caf50",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Social",
+     "bboxPt": [
+      348.297,
+      321.98196,
+      364.63501,
+      327.98196
+     ],
+     "colour": "#2196f3",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Anxiety:",
+     "bboxPt": [
+      345.79504,
+      327.98196,
+      367.13705,
+      333.98196
+     ],
+     "colour": "#2196f3",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th percentile",
+     "bboxPt": [
+      336.78918,
+      333.98196,
+      376.14316,
+      339.98196
+     ],
+     "colour": "#2196f3",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Generalised",
+     "bboxPt": [
+      401.923,
+      321.98196,
+      434.26898,
+      327.98196
+     ],
+     "colour": "#9c27b0",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Anxiety:",
+     "bboxPt": [
+      407.42496,
+      327.98196,
+      428.76697,
+      333.98196
+     ],
+     "colour": "#9c27b0",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th percentile",
+     "bboxPt": [
+      398.4191,
+      333.98196,
+      437.77307,
+      339.98196
+     ],
+     "colour": "#9c27b0",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Interpretation",
+     "bboxPt": [
+      34.3465,
+      478.69476,
+      124.57652,
+      492.69476
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "The Penn State Worry Questionnaire (PSWQ) was administered on 27 February 2026 and the",
+     "bboxPt": [
+      91.0394,
+      497.93854,
+      548.95844,
+      508.93854
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null,
+   "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Scoring the Penn State Worry Questionnaire (PSWQ)",
+    "text": "Respondents rate 11 positively worded items and five negatively worded items (reverse-scored) in terms of how typical or characteristic each statement is of them on a 5-point Likert scale (ranging from 1 (Not at all typical) to 5 (Very typical)). The PSWQ total score ranges from 16 to 80, with higher scores representing greater worry severity.\n",
+    "source_url": null
+   },
+   {
+    "title": "PSWQ Normative Data",
+    "text": "The total PSWQ score is expressed as a percentile based on three reference populations: a non-clinical sample (Gillis et al., 1995), a Social Anxiety Disorder (SAD) sample (Fresco et al., 2003), and a pooled Generalised Anxiety Disorder (GAD) sample (Behar et al., 2003; Fresco et al., 2003). Comparing scores across all three populations provides richer clinical information than any single comparison, helping clinicians understand not only whether worry is elevated relative to the general population, but also how it compares to individuals with known anxiety presentations.\n",
+    "source_url": null
+   },
+   {
+    "title": "Normative Data for the PSWQ",
+    "text": "PSWQ scores are interpreted through percentile comparisons to three reference populations: a non-clinical sample (n = 244; M = 42.2, SD = 11.5; Gillis et al., 1995), a Social Anxiety Disorder sample (n = 114; M = 56.35, SD = 14.84; Fresco et al., 2003), and a pooled Generalised Anxiety Disorder sample (n = 187; M = 67.45, SD = 7.99; Behar et al., 2003; Fresco et al., 2003). Percentiles are calculated using the cumulative normal distribution function applied to z-scores derived from each sample’s parameters. Comparing a client’s score across all three populations can provide a richer clinical context for interpreting PSWQ scores than any single comparison.\nMeans and standard deviations for three samples are shown below, and can be used to compute percentiles.\n1 – An adult community sample (n = 244) established typical scores in the normal population (Gillis, Haaga, & Ford, 1995). Age 18-44: M = 43.5, SD = 12.1 Age 45-65: M = 38.9, SD = 9.0\n2 – A social anxiety disorder sample established typical scores with those with social anxiety (n = 132). Mean 56.2 and SD = 14.8\n3 – A GAD sample established typical scores in people diagnosed with generalised anxiety disorder (n = 28), (Turk, Fresco, Mennin & Heimberg (2001). Mean = 68.1 and SD = 7.3\n",
+    "source_url": null
+   },
+   {
+    "title": "Why doesn't the PSWQ report include severity categories or diagnostic cutoff scores?",
+    "text": "Severity labels like “mild,” “moderate,” or “severe” are widely used in clinical practice but have no published research backing their specific score ranges on the PSWQ. Similarly, while some cutoff scores appear in the research literature, they were developed for study recruitment purposes rather than clinical use, and therefore likely do not translate well to real-world settings.\nRather than applying unvalidated labels or thresholds, NovoPsych uses percentile comparisons to well-characterised reference populations as the primary interpretive framework. Where cutoff scores are referenced in the report, they are provided for context only and should be interpreted with caution alongside a comprehensive clinical assessment.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "f5a6e429e9d361de6c3f825556e296a558baaa81b0a00bad0b0ce180fb74eb9b",
+    "pageNumber": 2,
+    "text": "Respondents rate 11 positively worded items and five negatively worded items (reverse-scored)\nin terms of how typical or characteristic each statement is of them on a 5-point Likert scale\n(ranging from 1 (Not at all typical) to 5 (Very typical)). The PSWQ total score ranges from 16 to\n80, with higher scores representing greater worry severity.\nPSWQ Normative Data\nThe total PSWQ score is expressed as a percentile based on three reference populations: a non-\nclinical sample (Gillis et al., 1995), a Social Anxiety Disorder (SAD) sample (Fresco et al., 2003),\nand a pooled Generalised Anxiety Disorder (GAD) sample (Behar et al., 2003; Fresco et al.,\n2003). Comparing scores across all three populations provides richer clinical information than\nany single comparison, helping clinicians understand not only whether worry is elevated relative\nto the general population, but also how it compares to individuals with known anxiety\npresentations.\nClinically Meaningful Change\nWhen the PSWQ is administered on multiple occasions, a Minimally Important Difference (MID)\nthreshold of 6 points is used to determine whether observed score changes represent clinically\nmeaningful shifts in worry levels. This threshold is derived from 0.5 standard deviation of the non-\nclinical sample (SD = 11.5; Gillis et al., 1995; Norman et al., 2003).\n- Decrease of 6 or more points: Meaningful improvement in worry levels\n- Increase of 6 or more points: Meaningful worsening of worry levels\n- Change of less than 6 points in either direction: Change may represent normal score variation\nrather than genuine change.\nPSWQ Graphs\nOn first administration, a horizontal bar graph displays the respondent's total PSWQ score\n(shown in red) alongside the score distributions of three reference populations: a non-clinical\nsample (green), individuals diagnosed with SAD (blue), and individuals diagnosed with GAD\n(purple). The shaded regions for each population represent the middle 50% of scores (from the\n25th to 75th percentile), with the dashed line indicating the 50th percentile (median). This allows\nclinicians to see at a glance where a respondent's worry level falls relative to both the general\npopulation and clinical groups.\nWhen administered more than once, a line graph tracks the respondent's total PSWQ score\nacross administrations. The background shading transitions from white (low worry) through\nyellow to red (high worry), providing a visual indicator of worry severity. Each data point is\nlabelled with the score and administration date, allowing clinicians to quickly identify the direction\nand magnitude of change over time.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The total PSWQ score is expressed as a percentile based on three reference populations: a non-clinical sample (Gillis et al., 1995), a Social Anxiety Disorder (SAD) sample (Fresco et al., 2003), and a pooled Generalised Anxiety Disorder (GAD) sample (Behar et al., 2003; Fresco et al., 2003).",
+   "PSWQ scores are interpreted through percentile comparisons to three reference populations: a non-clinical sample (n = 244; M = 42.2, SD = 11.5; Gillis et al., 1995), a Social Anxiety Disorder sample (n = 114; M = 56.35, SD = 14.84; Fresco et al., 2003), and a pooled Generalised Anxiety Disorder sample (n = 187; M = 67.45, SD = 7.99; Behar et al., 2003; Fresco et al., 2003).",
+   "Percentiles are calculated using the cumulative normal distribution function applied to z-scores derived from each sample’s parameters.",
+   "Means and standard deviations for three samples are shown below, and can be used to compute percentiles.",
+   "Rather than applying unvalidated labels or thresholds, NovoPsych uses percentile comparisons to well-characterised reference populations as the primary interpretive framework."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "df5a6e429e9d3_p1_chart_1"
+   ]
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 108
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

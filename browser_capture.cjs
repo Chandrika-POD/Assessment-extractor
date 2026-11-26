@@ -5,8 +5,8 @@ const readline = require('node:readline');
 let chromium;
 try { ({ chromium } = require('playwright')); }
 catch {
-  try { ({ chromium } = require('../assessment-database/node_modules/playwright')); }
-  catch { ({ chromium } = require(require('node:path').join(require('node:os').homedir(), 'POD/assessment-database/node_modules/playwright'))); }
+  try { ({ chromium } = require('../pod-assessment-platform/node_modules/playwright')); }
+  catch { ({ chromium } = require(require('node:path').join(require('node:os').homedir(), 'Pod_Dev/pod-assessment-platform/node_modules/playwright'))); }
 }
 const input = readline.createInterface({ input: process.stdin });
 const pending = new Map();
@@ -57,7 +57,7 @@ async function run({url, html}) {
     await page.waitForTimeout(1000);
     const selector = '.entry-content, [data-elementor-type="single-post"], [data-elementor-type="wp-post"], main, article, #content';
     const root = (await page.locator(selector).count()) ? page.locator(selector).first() : page.locator('body');
-    const snapshots = [], tabs = [];
+    const snapshots = [], tabs = [], captureGaps = [];
     async function snapshot(label) {
       const content = await root.evaluate(element => {
         function copy(node) {
@@ -70,6 +70,8 @@ async function run({url, html}) {
           const clone = node.cloneNode(false);
           clone.removeAttribute('hidden');
           clone.removeAttribute('style');
+          if (style.backgroundImage && style.backgroundImage !== 'none')
+            clone.setAttribute('data-capture-background', style.backgroundImage);
           if (node.getAttribute('role') === 'tabpanel') {
             const heading = document.createElement('h2');
             heading.textContent = document.getElementById(node.getAttribute('aria-labelledby'))?.textContent || 'Assessment tab';
@@ -84,13 +86,17 @@ async function run({url, html}) {
     }
     await snapshot('Initial page');
     const controls = root.locator('[role="tab"], .elementor-accordion .elementor-tab-title, details > summary');
+    if (await controls.count() > 40) captureGaps.push({kind: 'tab', status: 'limit_reached', error: 'More than 40 controls found; remaining controls were not opened.'});
     const seen = new Set();
     for (let i = 0; i < Math.min(await controls.count(), 40); i++) {
       const control = controls.nth(i);
-      if (!await control.isVisible()) continue;
-      const label = (await control.innerText()).trim();
+      const label = (await control.textContent()).trim();
       const target = await control.getAttribute('aria-controls');
       const key = target || label;
+      if (!await control.isVisible()) {
+        captureGaps.push({kind: 'tab', status: 'not_opened', title: label, target, error: 'Control was hidden in this viewport.'});
+        continue;
+      }
       if (seen.has(key)) continue;
       seen.add(key);
       try {
@@ -104,6 +110,8 @@ async function run({url, html}) {
         tabs.push({title: label, status: 'captured'});
       } catch (error) { tabs.push({title: label, status: 'unavailable', error: error.message.slice(0,180)}); }
     }
-    emit({type: 'complete', result: {snapshots, tabs, title: await page.title(), page_errors: pageErrors}});
+    const gaps = captureGaps.filter(gap => gap.status !== 'not_opened' ||
+      (gap.target ? !seen.has(gap.target) : !tabs.some(tab => tab.title === gap.title && tab.status === 'captured')));
+    emit({type: 'complete', result: {snapshots, tabs, title: await page.title(), page_errors: pageErrors, capture_gaps: gaps}});
   } finally { await browser.close(); input.close(); }
 }

@@ -1,0 +1,1724 @@
+[
+ {
+  "id": "Q1",
+  "order": 1,
+  "source_label": "1",
+  "text": "Current height: preferred unit",
+  "response_type": "single_choice",
+  "selection_mode": "single",
+  "response_set_id": "RS1",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    224.25,
+    562.49,
+    249.74
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "single_choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": "single",
+   "selection_mode_review_required": false,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "options": [
+   {
+    "id": "O1",
+    "text": "CENTIMETRES",
+    "source_label": "CENTIMETRES",
+    "label_origin": "printed_label",
+    "printed_value": null,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   },
+   {
+    "id": "O2",
+    "text": "FEET AND INCHES",
+    "source_label": "FEET AND INCHES",
+    "label_origin": "printed_label",
+    "printed_value": null,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   }
+  ],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q1_height_cm",
+  "order": 2,
+  "source_label": "1.height_cm",
+  "text": "Current height in centimetres",
+  "response_type": "number",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    72.79609680175781,
+    263.260009765625,
+    176.42001342773438,
+    263.9949951171875
+   ],
+   "method": "unnumbered_pdf_field_visually_checked",
+   "parent_item_id": "Q1",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "number",
+   "answer_schema": {
+    "type": "number",
+    "minimum": 0
+   },
+   "unit": "centimetres",
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+  },
+  "display_if": {
+   "item_id": "Q1",
+   "operator": "equals",
+   "value": "O1",
+   "basis": "Measurement field follows the printed preferred-unit selector."
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q1_height_feet",
+  "order": 3,
+  "source_label": "1.height_feet",
+  "text": "Current height in feet",
+  "response_type": "number",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    72.79649353027344,
+    305.2587890625,
+    148.69918823242188,
+    305.9937744140625
+   ],
+   "method": "unnumbered_pdf_field_visually_checked",
+   "parent_item_id": "Q1",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "number",
+   "answer_schema": {
+    "type": "number",
+    "minimum": 0
+   },
+   "unit": "feet",
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+  },
+  "display_if": {
+   "item_id": "Q1",
+   "operator": "equals",
+   "value": "O2",
+   "basis": "Measurement field follows the printed preferred-unit selector."
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q1_height_inches",
+  "order": 4,
+  "source_label": "1.height_inches",
+  "text": "Current height in inches",
+  "response_type": "number",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    72.79689025878906,
+    347.25799560546875,
+    157.67298889160156,
+    347.99298095703125
+   ],
+   "method": "unnumbered_pdf_field_visually_checked",
+   "parent_item_id": "Q1",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "number",
+   "answer_schema": {
+    "type": "number",
+    "minimum": 0
+   },
+   "unit": "inches",
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+  },
+  "display_if": {
+   "item_id": "Q1",
+   "operator": "equals",
+   "value": "O2",
+   "basis": "Measurement field follows the printed preferred-unit selector."
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q2",
+  "order": 5,
+  "source_label": "2",
+  "text": "Current weight: preferred unit",
+  "response_type": "single_choice",
+  "selection_mode": "single",
+  "response_set_id": "RS2",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    376.49,
+    562.49,
+    401.99
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "single_choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3"
+    ]
+   },
+   "selection_mode": "single",
+   "selection_mode_review_required": false,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "options": [
+   {
+    "id": "O1",
+    "text": "KILOGRAMS",
+    "source_label": "KILOGRAMS",
+    "label_origin": "printed_label",
+    "printed_value": null,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   },
+   {
+    "id": "O2",
+    "text": "POUNDS",
+    "source_label": "POUNDS",
+    "label_origin": "printed_label",
+    "printed_value": null,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   },
+   {
+    "id": "O3",
+    "text": "STONES",
+    "source_label": "STONES",
+    "label_origin": "printed_label",
+    "printed_value": null,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   }
+  ],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q2_weight",
+  "order": 6,
+  "source_label": "2.weight",
+  "text": "Current weight",
+  "response_type": "number",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    72.79609680175781,
+    415.50701904296875,
+    125.44723510742188,
+    416.24200439453125
+   ],
+   "method": "unnumbered_pdf_field_visually_checked",
+   "parent_item_id": "Q2",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "number",
+   "answer_schema": {
+    "type": "number",
+    "minimum": 0
+   },
+   "unit": null,
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls.",
+   "unit_from_item": {
+    "item_id": "Q2",
+    "option_units": {
+     "O1": "KILOGRAMS",
+     "O2": "POUNDS",
+     "O3": "STONES"
+    }
+   }
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q3",
+  "order": 7,
+  "source_label": "3",
+  "text": "Do you think you have a problem with eating, involving avoidance or restriction of foods or your eating overall?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    444.74,
+    562.49,
+    476.99
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q4",
+  "order": 8,
+  "source_label": "4",
+  "text": "Have other people (for example, doctors, family members, significant others) said that you have a problem with eating, involving avoidance or restriction of foods or your eating overall?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    477.74,
+    562.49,
+    518.99
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q5",
+  "order": 9,
+  "source_label": "5",
+  "text": "Have your eating habits led to difficulty maintaining a sufficient weight or, if you are still growing, difficulty gaining enough weight to keep pace with your growth?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    519.74,
+    562.49,
+    560.99
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q6",
+  "order": 10,
+  "source_label": "6",
+  "text": "Have your eating habits led to you losing weight (in other words, if you have lost weight, this is because of avoidance or restriction and not because of a medical illness, or other reason)?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    561.74,
+    562.49,
+    603.74
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q7",
+  "order": 11,
+  "source_label": "7",
+  "text": "If yes to the previous question, how much weight have you lost in the past 3 months? (please enter numbers)",
+  "response_type": "number",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    600.01,
+    565.92,
+    645.74
+   ],
+   "method": "pdf_untyped_row_geometry",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [
+   "The weight-loss field does not state a unit; do not assume kilograms or pounds."
+  ],
+  "input_spec": {
+   "kind": "number",
+   "answer_schema": {
+    "type": "number",
+    "minimum": 0
+   },
+   "unit": null,
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+  },
+  "display_if": {
+   "item_id": "Q6",
+   "operator": "equals",
+   "value": "O1",
+   "basis": "Printed conditional question wording."
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q8",
+  "order": 12,
+  "source_label": "8",
+  "text": "Have others (for example, doctors, family members) been concerned about your weight loss, or been concerned that you are having difficulty gaining enough weight to grow, or having difficulty maintaining your weight due to your eating habits?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    646.49,
+    562.49,
+    697.48
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q9",
+  "order": 13,
+  "source_label": "9",
+  "text": "Have others (for example, doctors, family members) been concerned that you are not growing taller as you should due to your eating habits?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS4",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    698.24,
+    562.49,
+    730.48
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "options": [
+   {
+    "id": "O1",
+    "text": "YES",
+    "source_label": "YES",
+    "label_origin": "printed_label",
+    "printed_value": 1,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   },
+   {
+    "id": "O2",
+    "text": "NO",
+    "source_label": "NO",
+    "label_origin": "printed_label",
+    "printed_value": 0,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   },
+   {
+    "id": "O3",
+    "text": "I HAVE FINISHED GROWING",
+    "source_label": "I HAVE FINISHED GROWING",
+    "label_origin": "printed_label",
+    "printed_value": 0,
+    "score": null,
+    "score_status": "not_assigned",
+    "used_by_scoring_rules": []
+   }
+  ],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q10",
+  "order": 14,
+  "source_label": "10",
+  "text": "Have you ever been told by any health professional that due to your eating habits you were not growing as expected, or that your height was less than it should be?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 1,
+   "bbox": [
+    33.75,
+    731.23,
+    562.49,
+    773.23
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q11",
+  "order": 15,
+  "source_label": "11",
+  "text": "Over the past month, has any health professional said that you have a nutritional deficiency due to your eating habits (for example, low iron, low vitamin B12, low vitamin C)?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    42.0,
+    562.49,
+    84.0
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q12",
+  "order": 16,
+  "source_label": "12",
+  "text": "Over the past month, has a healthcare professional prescribed special supplements (for example, pills, capsules, powders, or drinks containing vitamins and/or minerals and other micronutrients) specifically to help with your nutrition?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    84.75,
+    562.49,
+    135.75
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q13",
+  "order": 17,
+  "source_label": "13",
+  "text": "If yes to the previous question, what have you been prescribed and how much do you take each day?",
+  "response_type": "text",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": "days",
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    132.77,
+    565.92,
+    159.0
+   ],
+   "method": "pdf_untyped_row_geometry",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [
+   "The PDF prints days beside this field but asks for product name and daily amount. Retain the written answer; do not interpret it as a day count."
+  ],
+  "input_spec": {
+   "kind": "text",
+   "answer_schema": {
+    "type": "string",
+    "minLength": 1
+   },
+   "unit": null,
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "The PDF provides a written-response field. No fixed answer options or invented character limit.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+  },
+  "display_if": {
+   "item_id": "Q12",
+   "operator": "equals",
+   "value": "O1",
+   "basis": "Printed conditional question wording."
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q14",
+  "order": 18,
+  "source_label": "14",
+  "text": "Over the past month, has a healthcare professional prescribed special supplements (for example, high-calorie drinks or 'shots', or dessert-style high-calorie supplements) specifically to help you maintain or gain weight?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    159.75,
+    562.49,
+    210.75
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q15",
+  "order": 19,
+  "source_label": "15",
+  "text": "If yes to the previous question, what have you been prescribed and how much do you take each day?",
+  "response_type": "text",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": "days",
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    208.52,
+    565.92,
+    233.25
+   ],
+   "method": "pdf_untyped_row_geometry",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [
+   "The PDF prints days beside this field but asks for product name and daily amount. Retain the written answer; do not interpret it as a day count."
+  ],
+  "input_spec": {
+   "kind": "text",
+   "answer_schema": {
+    "type": "string",
+    "minLength": 1
+   },
+   "unit": null,
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "The PDF provides a written-response field. No fixed answer options or invented character limit.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+  },
+  "display_if": {
+   "item_id": "Q14",
+   "operator": "equals",
+   "value": "O1",
+   "basis": "Printed conditional question wording."
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q16",
+  "order": 20,
+  "source_label": "16",
+  "text": "Are you currently receiving any tube feeding (receiving food or fluid via a tube in your nose or into your stomach)?",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    234.0,
+    562.49,
+    265.49
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q17",
+  "order": 21,
+  "source_label": "17",
+  "text": "If yes to the previous question, what is the name of the food or fluid product you take via the tube and how much do you take each day?",
+  "response_type": "text",
+  "selection_mode": null,
+  "response_set_id": null,
+  "reverse_scored": null,
+  "printed_input_unit": "days",
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    261.77,
+    565.92,
+    298.49
+   ],
+   "method": "pdf_untyped_row_geometry",
+   "response_format_reviewed_on": "2026-11-13"
+  },
+  "review_status": "response_format_source_checked",
+  "review_flags": [
+   "The PDF prints days beside this field but asks for product name and daily amount. Retain the written answer; do not interpret it as a day count."
+  ],
+  "input_spec": {
+   "kind": "text",
+   "answer_schema": {
+    "type": "string",
+    "minLength": 1
+   },
+   "unit": null,
+   "allow_not_applicable": false,
+   "not_applicable_value": null,
+   "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+   "constraints_basis": "The PDF provides a written-response field. No fixed answer options or invented character limit.",
+   "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+  },
+  "display_if": {
+   "item_id": "Q16",
+   "operator": "equals",
+   "value": "O1",
+   "basis": "Printed conditional question wording."
+  },
+  "options": [],
+  "score_encoding": "No numeric scoring rule is assigned to this item."
+ },
+ {
+  "id": "Q18",
+  "order": 22,
+  "source_label": "18",
+  "text": "Does your eating cause you difficulties in daily functioning - that is, in how you are able to go about things each day? This might be at school/college/work or when you are at home.",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS3",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    299.24,
+    562.49,
+    340.49
+   ],
+   "method": "pdf_table_geometry"
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "No numeric scoring rule is assigned to this item.",
+  "option_set_id": "OS1"
+ },
+ {
+  "id": "Q19",
+  "order": 23,
+  "source_label": "19",
+  "text": "Does your eating cause you difficulties in interactions with other people (for example, disagreements or arguments with parents, siblings, significant others, co-workers), or difficulty making or sustaining friendships or other close relationships? Indicate how difficult interactions with other people are for you because of your eating, ranging from 0 (= no difficulty) to 6 (= extremely difficult).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q19",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    341.24,
+    562.49,
+    412.49
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "options": [
+   {
+    "id": "O1",
+    "text": "no difficulty",
+    "source_label": "no difficulty",
+    "label_origin": "printed_label",
+    "printed_value": 0,
+    "score": 0,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O2",
+    "text": "1",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 1,
+    "score": 1,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O3",
+    "text": "2",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 2,
+    "score": 2,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O4",
+    "text": "3",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 3,
+    "score": 3,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O5",
+    "text": "4",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 4,
+    "score": 4,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O6",
+    "text": "5",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 5,
+    "score": 5,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O7",
+    "text": "extremely difficult",
+    "source_label": "extremely difficult",
+    "label_origin": "printed_label",
+    "printed_value": 6,
+    "score": 6,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   }
+  ],
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+ },
+ {
+  "id": "Q20",
+  "order": 24,
+  "source_label": "20",
+  "text": "Does your eating cause you difficulties in social situations, for example does it make it difficult for you to go out with friends, eat at school/college/work, or stay away from home? Indicate how difficult social situations are for you because of your eating, ranging from 0 (= no difficulty) to 6 (= extreme difficulties/try to avoid all social situations).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q20",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    413.24,
+    562.49,
+    473.99
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "options": [
+   {
+    "id": "O1",
+    "text": "no difficulty",
+    "source_label": "no difficulty",
+    "label_origin": "printed_label",
+    "printed_value": 0,
+    "score": 0,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O2",
+    "text": "1",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 1,
+    "score": 1,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O3",
+    "text": "2",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 2,
+    "score": 2,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O4",
+    "text": "3",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 3,
+    "score": 3,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O5",
+    "text": "4",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 4,
+    "score": 4,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O6",
+    "text": "5",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 5,
+    "score": 5,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   },
+   {
+    "id": "O7",
+    "text": "extreme difficulties/try to avoid all social situations",
+    "source_label": "extreme difficulties/try to avoid all social situations",
+    "label_origin": "printed_label",
+    "printed_value": 6,
+    "score": 6,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_1"
+    ]
+   }
+  ],
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+ },
+ {
+  "id": "Q21",
+  "order": 25,
+  "source_label": "21",
+  "text": "Over the past month, have you been particularly sensitive to variation in taste (for example, noticing slight differences in the taste of foods), which has put you off eating any foods or trying any new foods? Indicate how much sensitivity to taste has affected your eating, ranging from 0 (= no negative effect/no particular sensitivity to taste) to 6 (= extremely negative effect, for example, leading to refusal to eat many foods, sticking only to a limited number of preferred foods, or extreme caution when eating).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q21",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    499.49,
+    562.49,
+    590.24
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "options": [
+   {
+    "id": "O1",
+    "text": "no negative effect/no particular sensitivity to taste",
+    "source_label": "no negative effect/no particular sensitivity to taste",
+    "label_origin": "printed_label",
+    "printed_value": 0,
+    "score": 0,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_2"
+    ]
+   },
+   {
+    "id": "O2",
+    "text": "1",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 1,
+    "score": 1,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_2"
+    ]
+   },
+   {
+    "id": "O3",
+    "text": "2",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 2,
+    "score": 2,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_2"
+    ]
+   },
+   {
+    "id": "O4",
+    "text": "3",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 3,
+    "score": 3,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_2"
+    ]
+   },
+   {
+    "id": "O5",
+    "text": "4",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 4,
+    "score": 4,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_2"
+    ]
+   },
+   {
+    "id": "O6",
+    "text": "5",
+    "source_label": null,
+    "label_origin": "printed_number_only",
+    "printed_value": 5,
+    "score": 5,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_2"
+    ]
+   },
+   {
+    "id": "O7",
+    "text": "extremely negative effect, for example, leading to refusal to eat many foods, sticking only to a limited number of preferred foods, or extreme caution when eating",
+    "source_label": "extremely negative effect, for example, leading to refusal to eat many foods, sticking only to a limited number of preferred foods, or extreme caution when eating",
+    "label_origin": "printed_label",
+    "printed_value": 6,
+    "score": 6,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "pdf_2"
+    ]
+   }
+  ],
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+ },
+ {
+  "id": "Q22",
+  "order": 26,
+  "source_label": "22",
+  "text": "Over the past month have you been particularly sensitive to the texture or consistency of food, which has put you off eating any foods or trying any new foods (for example, do you stick to foods of a certain texture only or have you had difficulty eating foods that have different textures mixed together such as pasta with sauce or sandwiches)? Indicate how much sensitivity to texture or consistency has affected your eating, ranging from 0 (= no negative effect/no particular sensitivity) to 6 (= extremely negative effect, for example, leading to refusal to eat many foods, sticking only to a limited number of preferred foods, or extreme caution when eating).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q22",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    590.99,
+    562.49,
+    701.98
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+  "option_set_id": "OS2"
+ },
+ {
+  "id": "Q23",
+  "order": 27,
+  "source_label": "23",
+  "text": "Over the past month, have you been particularly sensitive to the appearance of food, which has put you off eating any foods or trying any new foods (for example, if food does not look 'right', such as burnt ends of chips/fries, broken biscuits/cookies, or being the 'wrong' colour)? Indicate how much sensitivity to the appearance of food has affected your eating, ranging from 0 (= no negative effect/no particular sensitivity) to 6 (= extremely negative effect, for example, leading to refusal to eat many foods, sticking only to a limited number of preferred foods, or extreme caution when eating).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q23",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 2,
+   "bbox": [
+    33.75,
+    702.74,
+    562.49,
+    803.23
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+  "option_set_id": "OS2"
+ },
+ {
+  "id": "Q24",
+  "order": 28,
+  "source_label": "24",
+  "text": "Over the past month, how often have you forgotten to eat or found it difficult to make time to eat? Indicate how often you have forgotten to eat or found it difficult to make time to eat, ranging from 0 (= never) to 6 (= always).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q24",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 3,
+   "bbox": [
+    33.75,
+    67.5,
+    562.49,
+    118.5
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+  "option_set_id": "OS3"
+ },
+ {
+  "id": "Q25",
+  "order": 29,
+  "source_label": "25",
+  "text": "Over the past month, how often have you lacked enjoyment in food or eating (even if only certain foods)? Indicate how often you have lacked enjoyment in food or eating, ranging from 0 (= never) to 6 (= always).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q25",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 3,
+   "bbox": [
+    33.75,
+    119.25,
+    562.49,
+    160.5
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+  "option_set_id": "OS3"
+ },
+ {
+  "id": "Q26",
+  "order": 30,
+  "source_label": "26",
+  "text": "Over the past month, how often have you felt full before your meal is finished, or stopped eating sooner than others because you had had enough? Indicate how often you have felt full or stopped eating early, ranging from 0 (= never) to 6 (= always).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q26",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 3,
+   "bbox": [
+    33.75,
+    161.25,
+    562.49,
+    213.0
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+  "option_set_id": "OS3"
+ },
+ {
+  "id": "Q27",
+  "order": 31,
+  "source_label": "27",
+  "text": "Over the past month have you been avoiding or restricting the amount or type of food you eat, because you were afraid that something bad might happen, like being sick, choking, having an allergic reaction, or being in pain? Indicate how often being afraid something bad might happen has affected your eating, ranging from 0 (= never) to 6 (= always).",
+  "response_type": "choice",
+  "selection_mode": null,
+  "response_set_id": "RS5_anchors_Q27",
+  "reverse_scored": null,
+  "printed_input_unit": null,
+  "source": {
+   "url": null,
+   "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed",
+   "page": 3,
+   "bbox": [
+    33.75,
+    238.5,
+    562.49,
+    309.74
+   ],
+   "method": "pdf_table_geometry",
+   "option_label_origin": "Endpoint definitions printed in this question."
+  },
+  "review_status": "source_layout_extracted",
+  "review_flags": [
+   "some_printed_rating_values_have_no_verbal_anchor"
+  ],
+  "input_spec": {
+   "kind": "choice",
+   "answer_schema": {
+    "type": "string",
+    "enum": [
+     "O1",
+     "O2",
+     "O3",
+     "O4",
+     "O5",
+     "O6",
+     "O7"
+    ]
+   },
+   "selection_mode": null,
+   "selection_mode_review_required": true,
+   "source_review": "Retained printed response set; no new option labels or scores inferred."
+  },
+  "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+  "option_set_id": "OS4"
+ }
+]

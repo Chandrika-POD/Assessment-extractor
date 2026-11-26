@@ -1,0 +1,798 @@
+{
+ "version": "2.0.0-draft.1",
+ "status": "draft_requires_clinical_review",
+ "clinical_scoring_enabled": false,
+ "metrics": [
+  {
+   "rule_id": "source_draft_1",
+   "label": "Substance Use",
+   "minimum": 0,
+   "maximum": 90.0,
+   "favourable_direction": "decrease",
+   "direction_status": "source_guidance_draft",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/0",
+   "item_ids": [
+    "Q4",
+    "Q5",
+    "Q6"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "source_draft_2",
+   "label": "Risk Factors",
+   "minimum": 0.0,
+   "maximum": 180.0,
+   "favourable_direction": "decrease",
+   "direction_status": "source_guidance_draft",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/1",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q14",
+    "Q17",
+    "Q21"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "source_draft_3",
+   "label": "Protective Factors",
+   "minimum": 0.0,
+   "maximum": 180.0,
+   "favourable_direction": "increase",
+   "direction_status": "source_guidance_draft",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/2",
+   "item_ids": [
+    "Q15",
+    "Q16",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q22"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  }
+ ],
+ "charts": [
+  {
+   "id": "substance_use",
+   "title": "Alcohol and other drug use",
+   "kind": "item_trend",
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "days",
+   "series": [
+    {
+     "id": "Q4",
+     "label": "Alcohol use",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q5",
+     "label": "Heavy alcohol use",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q6",
+     "label": "Drug use / prescription medication misuse",
+     "value_field": "printed_value"
+    }
+   ],
+   "ineligible_value": 0,
+   "note": "Days in the past 30 days. Only explicitly ineligible items use zero; unknown or unanswered items remain missing."
+  },
+  {
+   "id": "specific_substances",
+   "title": "Specific drug use",
+   "kind": "item_trend",
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "days",
+   "series": [
+    {
+     "id": "Q7",
+     "label": "Marijuana",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q8",
+     "label": "Sedatives / tranquilizers",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q9",
+     "label": "Cocaine / crack",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q10",
+     "label": "Other stimulants",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q11",
+     "label": "Opiates",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q12",
+     "label": "Inhalants",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q13",
+     "label": "Other drugs",
+     "value_field": "printed_value"
+    }
+   ],
+   "ineligible_value": 0,
+   "note": "Days in the past 30 days. Only explicitly ineligible items use zero; unknown or unanswered items remain missing. Specific-drug responses do not contribute to domain totals. Missing values are never treated as observed zeros.",
+   "hide_series_when_all_observed_values_zero": true
+  },
+  {
+   "id": "health",
+   "title": "Health and wellbeing",
+   "kind": "item_trend",
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "score",
+   "series": [
+    {
+     "id": "Q1",
+     "label": "Poor physical health",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q2",
+     "label": "Disturbed sleep",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q3",
+     "label": "Emotional distress",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q21",
+     "label": "Conflict with family or friends",
+     "value_field": "printed_value"
+    }
+   ],
+   "note": "Item values on the 0–30 scoring scale; this axis does not uniformly represent days."
+  },
+  {
+   "id": "craving",
+   "title": "Craving and risk exposure",
+   "kind": "item_trend",
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "score",
+   "series": [
+    {
+     "id": "Q14",
+     "label": "Cravings and urges",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q17",
+     "label": "Risky situations",
+     "value_field": "printed_value"
+    }
+   ],
+   "note": "Item values on the 0–30 scoring scale; this axis does not uniformly represent days."
+  },
+  {
+   "id": "recovery",
+   "title": "Recovery engagement and confidence",
+   "kind": "item_trend",
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "score",
+   "series": [
+    {
+     "id": "Q15",
+     "label": "Confidence in not using",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q16",
+     "label": "Self-help attendance",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q18",
+     "label": "Spiritual support",
+     "value_field": "printed_value"
+    }
+   ],
+   "note": "Item values on the 0–30 scoring scale; this axis does not uniformly represent days."
+  },
+  {
+   "id": "support",
+   "title": "Life stability and social support",
+   "kind": "item_trend",
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "score",
+   "series": [
+    {
+     "id": "Q19",
+     "label": "Work, study or volunteering",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q20",
+     "label": "Adequate income",
+     "value_field": "printed_value"
+    },
+    {
+     "id": "Q22",
+     "label": "Supportive contact",
+     "value_field": "printed_value"
+    }
+   ],
+   "note": "Item values on the 0–30 scoring scale; this axis does not uniformly represent days."
+  },
+  {
+   "id": "satisfaction",
+   "title": "Satisfaction with recovery progress",
+   "kind": "item_trend",
+   "minimum": 0,
+   "maximum": 30,
+   "axis_unit": "score",
+   "series": [
+    {
+     "id": "Q23",
+     "label": "Recovery satisfaction",
+     "value_field": "printed_value"
+    }
+   ],
+   "note": "Item values on the 0–30 scoring scale; this axis does not uniformly represent days. Recovery satisfaction does not contribute to any domain total."
+  },
+  {
+   "id": "source_draft_1",
+   "title": "Substance Use",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "source_draft_1",
+     "label": "Substance Use",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 90.0,
+   "axis_unit": "score"
+  },
+  {
+   "id": "source_draft_2",
+   "title": "Risk Factors",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "source_draft_2",
+     "label": "Risk Factors",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0.0,
+   "maximum": 180.0,
+   "axis_unit": "score"
+  },
+  {
+   "id": "source_draft_3",
+   "title": "Protective Factors",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "source_draft_3",
+     "label": "Protective Factors",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0.0,
+   "maximum": 180.0,
+   "axis_unit": "score"
+  }
+ ],
+ "comparisons": {
+  "reference_visits": [
+   "previous",
+   "baseline"
+  ],
+  "delta_formula": "current_minus_reference",
+  "deduplicate_same_reference_visit": true,
+  "require_same_assessment_definition_language_and_scoring_version": true,
+  "missing_result": "withhold_comparison",
+  "single_visit": "show_current_scores_only",
+  "date_source": "saved_session_completion_timestamp",
+  "require_compatible_respondent_context": true,
+  "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+  "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+  "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+ },
+ "percentiles": {
+  "enabled": false,
+  "reason": "not_applicable_to_instrument"
+ },
+ "interpretation": {
+  "method": "deterministic_templates",
+  "score_template": "{label}: {score} out of {maximum}.",
+  "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+  "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+  "clinical_significance": "not_implemented_requires_review",
+  "diagnosis": "not_inferred",
+  "severity_source": "not_applicable",
+  "overall_total": null,
+  "domain_change_note": "Review which individual items changed alongside the domain totals.",
+  "combine_metrics_into_new_total": false,
+  "source_guidance_ref": "/scoring/source_guidance",
+  "source_guidance_use": "reference_text_for_review_not_executable_rules",
+  "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+  "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+  "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+ },
+ "source_evidence": {
+  "questionnaire_sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+  "guidance_titles": [
+   "BAM Scoring",
+   "BAM Domain Score Interpretation",
+   "BAM Change Score Interpretation",
+   "BAM Substance Use Domain Score Graph Over Time",
+   "Why does the BAM report raw scores rather than percentiles or a cut-off?",
+   "Why might a client's scores get worse during treatment?"
+  ]
+ },
+ "mode": "numeric_scores",
+ "required_context": [],
+ "coverage": {
+  "questionnaire_available": true,
+  "numeric_rule_count": 3,
+  "rules_included": [
+   "source_draft_1",
+   "source_draft_2",
+   "source_draft_3"
+  ],
+  "raw_calculation_status": "draft_implemented",
+  "interpretation_status": "not_compiled",
+  "full_source_coverage_verified": false,
+  "clinical_review_complete": false,
+  "remaining_work": [
+   "No overall total or percentile norms are defined by this source.",
+   "Source clinical review remains pending."
+  ],
+  "review_issue_codes": [
+   "selection_and_branching_need_review",
+   "scoring_not_structured",
+   "independent_review_pending",
+   "original_capture_gaps",
+   "source_item_count_differs"
+  ],
+  "reference_guidance_only": false,
+  "missing_direction_rule_ids": []
+ },
+ "sections": [
+  {
+   "id": "patient_details",
+   "enabled": true,
+   "source": "saved_patient_and_session"
+  },
+  {
+   "id": "assessment_summary",
+   "enabled": true,
+   "source": "assessment_and_reporting_coverage"
+  },
+  {
+   "id": "results",
+   "enabled": true,
+   "source": "reporting.metrics"
+  },
+  {
+   "id": "score_charts",
+   "enabled": true,
+   "source": "reporting.charts",
+   "single_visit": "range_bar",
+   "repeated_visits": "line_chart"
+  },
+  {
+   "id": "comparisons",
+   "enabled": true,
+   "source": "compatible_saved_sessions"
+  },
+  {
+   "id": "protocol_result",
+   "enabled": false,
+   "source": "scoring.protocol"
+  },
+  {
+   "id": "paired_profile",
+   "enabled": false,
+   "source": "scoring.paired_profile"
+  },
+  {
+   "id": "response_history",
+   "enabled": true,
+   "source": "reporting.item_history"
+  },
+  {
+   "id": "responses",
+   "enabled": true,
+   "source": "reporting.response_groups"
+  },
+  {
+   "id": "source_guidance",
+   "enabled": true,
+   "source": "scoring.source_guidance",
+   "role": "reference_material_requires_review"
+  },
+  {
+   "id": "limitations",
+   "enabled": true,
+   "source": "reporting.coverage"
+  }
+ ],
+ "response_groups": [
+  {
+   "id": "source_draft_1",
+   "label": "Substance Use",
+   "rule_id": "source_draft_1",
+   "item_ids": [
+    "Q4",
+    "Q5",
+    "Q6"
+   ]
+  },
+  {
+   "id": "source_draft_2",
+   "label": "Risk Factors",
+   "rule_id": "source_draft_2",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q14",
+    "Q17",
+    "Q21"
+   ]
+  },
+  {
+   "id": "source_draft_3",
+   "label": "Protective Factors",
+   "rule_id": "source_draft_3",
+   "item_ids": [
+    "Q15",
+    "Q16",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q22"
+   ]
+  },
+  {
+   "id": "recorded_responses",
+   "label": "Additional recorded responses",
+   "rule_id": null,
+   "item_ids": [
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q23"
+   ]
+  }
+ ],
+ "item_history": [
+  {
+   "item_id": "Q1",
+   "question_ref": "/questionnaire/items/0",
+   "source_label": "1",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q2",
+   "question_ref": "/questionnaire/items/1",
+   "source_label": "2",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "nights",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q3",
+   "question_ref": "/questionnaire/items/2",
+   "source_label": "3",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q4",
+   "question_ref": "/questionnaire/items/3",
+   "source_label": "4",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q5",
+   "question_ref": "/questionnaire/items/4",
+   "source_label": "5",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q6",
+   "question_ref": "/questionnaire/items/5",
+   "source_label": "6",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q7",
+   "question_ref": "/questionnaire/items/6",
+   "source_label": "7A",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q8",
+   "question_ref": "/questionnaire/items/7",
+   "source_label": "7B",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q9",
+   "question_ref": "/questionnaire/items/8",
+   "source_label": "7C",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q10",
+   "question_ref": "/questionnaire/items/9",
+   "source_label": "7D",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q11",
+   "question_ref": "/questionnaire/items/10",
+   "source_label": "7E",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q12",
+   "question_ref": "/questionnaire/items/11",
+   "source_label": "7F",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q13",
+   "question_ref": "/questionnaire/items/12",
+   "source_label": "7G",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q14",
+   "question_ref": "/questionnaire/items/13",
+   "source_label": "8",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q15",
+   "question_ref": "/questionnaire/items/14",
+   "source_label": "9",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q16",
+   "question_ref": "/questionnaire/items/15",
+   "source_label": "10",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q17",
+   "question_ref": "/questionnaire/items/16",
+   "source_label": "11",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q18",
+   "question_ref": "/questionnaire/items/17",
+   "source_label": "12",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q19",
+   "question_ref": "/questionnaire/items/18",
+   "source_label": "13",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q20",
+   "question_ref": "/questionnaire/items/19",
+   "source_label": "14",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q21",
+   "question_ref": "/questionnaire/items/20",
+   "source_label": "15",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q22",
+   "question_ref": "/questionnaire/items/21",
+   "source_label": "16",
+   "response_type": "integer",
+   "presentation": "numeric_history",
+   "value_field": "saved_answer",
+   "unit": "days",
+   "minimum": 0,
+   "maximum": 30,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q23",
+   "question_ref": "/questionnaire/items/22",
+   "source_label": "17",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  }
+ ],
+ "protocol": null,
+ "paired_profile": null
+}

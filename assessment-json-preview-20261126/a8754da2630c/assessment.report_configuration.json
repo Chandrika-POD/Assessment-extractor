@@ -1,0 +1,661 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Positive Affect",
+   "minimum": 10.0,
+   "maximum": 50.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Positive Affect",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q5",
+     "Q9",
+     "Q10",
+     "Q12",
+     "Q14",
+     "Q16",
+     "Q17",
+     "Q19"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Positive Affect (Sum of items 1, 3, 5, 9, 10, 12, 14, 16, 17, 19):",
+     "y": 159.8,
+     "url": null,
+     "sha256": "df1fcd06a8d150fbf16008e63706cb04a70547d54bae5239fdb925c075018b8c"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Negative Affect",
+   "minimum": 10.0,
+   "maximum": 50.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Negative Affect",
+    "method": "sum",
+    "item_ids": [
+     "Q2",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q11",
+     "Q13",
+     "Q15",
+     "Q18",
+     "Q20"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Negative Affect (Sum of items 2, 4, 6, 7, 8, 11, 13, 15, 18, 20):",
+     "y": 184.5,
+     "url": null,
+     "sha256": "df1fcd06a8d150fbf16008e63706cb04a70547d54bae5239fdb925c075018b8c"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "af3b874c543a39f4783c83790255b32a76ab86cd851a0d8755a41a2dff182c19",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "daf3b874c543a_p1",
+   "documentSha256": "af3b874c543a39f4783c83790255b32a76ab86cd851a0d8755a41a2dff182c19",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "daf3b874c543a_p1_chart_1"
+   ],
+   "tableIds": [
+    "daf3b874c543a_p1_table_1",
+    "daf3b874c543a_p1_table_2"
+   ],
+   "sectionIds": [
+    "daf3b874c543a_p1_section_1",
+    "daf3b874c543a_p1_section_2",
+    "daf3b874c543a_p1_section_3",
+    "daf3b874c543a_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "daf3b874c543a_p2",
+   "documentSha256": "af3b874c543a39f4783c83790255b32a76ab86cd851a0d8755a41a2dff182c19",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "daf3b874c543a_p2_table_1"
+   ],
+   "sectionIds": [
+    "daf3b874c543a_p2_section_1",
+    "daf3b874c543a_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "daf3b874c543a_p3",
+   "documentSha256": "af3b874c543a39f4783c83790255b32a76ab86cd851a0d8755a41a2dff182c19",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "daf3b874c543a_p3_table_1"
+   ],
+   "sectionIds": [
+    "daf3b874c543a_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "daf3b874c543a_p1_section_1",
+   "pageId": "daf3b874c543a_p1",
+   "title": "Assessment Information",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    176.72569,
+    237.39752,
+    196.00369
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf3b874c543a_p1_section_2",
+   "pageId": "daf3b874c543a_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    74.03149,
+    273.10361,
+    124.59951,
+    292.38162
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf3b874c543a_p1_section_3",
+   "pageId": "daf3b874c543a_p1",
+   "title": "Percentiles",
+   "type": "results",
+   "bboxPt": [
+    266.0155,
+    374.90805,
+    330.04749,
+    391.43204
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf3b874c543a_p1_section_4",
+   "pageId": "daf3b874c543a_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    693.89105,
+    329.95145,
+    713.16901
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf3b874c543a_p2_section_1",
+   "pageId": "daf3b874c543a_p2",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    376.61337,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf3b874c543a_p2_section_2",
+   "pageId": "daf3b874c543a_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    428.56104,
+    191.50549,
+    447.83905
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "daf3b874c543a_p3_section_1",
+   "pageId": "daf3b874c543a_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "daf3b874c543a_p1_chart_1",
+   "title": "Percentiles",
+   "type": "vertical_bar",
+   "bboxPt": [
+    111.031,
+    402.748,
+    510.031,
+    600.748
+   ],
+   "widthPt": 399.0,
+   "heightPt": 198.0,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 403.868045,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 423.468075,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 443.06805499999996,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 462.668025,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 482.268065,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 501.868045,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 521.468075,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 541.068055,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 560.668025,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 580.268065,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 599.8680449999999,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Positive Affect",
+     "colour": "#2195f2",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.24874686716791977,
+     "barThicknessPt": 78.5,
+     "fill": "#2196f3",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#2195f2"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#2195f2"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#2195f2"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#2195f2"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#2195f2"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Negative Affect",
+     "colour": "#e81d62",
+     "ruleIdCandidate": "pdf_2",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.7462406015037594,
+     "barThicknessPt": 78.5,
+     "fill": "#e91e63",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#e81d62"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#e81d62"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#e81d62"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#e81d62"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#e81d62"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_2",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "daf3b874c543a_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 336,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      266.0155,
+      374.90805,
+      330.04749,
+      391.43204
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Positive Affect",
+     "bboxPt": [
+      173.39006,
+      603.27502,
+      216.96922,
+      665.01636
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.999996185302734,
+     "direction": [
+      0.5,
+      -0.86603
+     ]
+    },
+    {
+     "text": "Negative Affect",
+     "bboxPt": [
+      369.66504,
+      603.27521,
+      415.46924,
+      668.8703
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.999996185302734,
+     "direction": [
+      0.5,
+      -0.86603
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "PANAS Scoring & Interpretation",
+    "text": "The PANAS score is separated into the Positive Affect (PA) and Negative Affect (NA) scores, with a higher score indicating more positive or negative affect respectively. Note, that although a very high score on the PA scale is worthy of attention (i.e. manic patients will typically score very highly on PA), the principal clinical concern will be with patients who show very low levels of positive affect (i.e. are anhedonic) and thus obtain low percentile ranks. In contrast, a high score on the NA (and a high percentile) is an indicator of psychological distress.\nNormative data was collected from over 1,000 Australian adults and is used to calculate percentiles. A percentile rank of 50 indicates an average level of positive or negative affectivity in comparison to the normative group.\nThere are two subscales of the PANAS:\n1. Positive Affect (items 1, 3, 5, 9, 10, 12, 14, 16, 17, and 19). Higher scores represent higher levels of PA and are associated with pleasurable engagement with the environment.\n2. Negative Affect Sore (items 2, 4, 6, 7, 8, 11, 13, 15, 18, and 20). Higher scores represent higher levels of NA and reflect a dimension of general distress summarising a variety of negative states such as anger, guilt, or anxiety.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "af3b874c543a39f4783c83790255b32a76ab86cd851a0d8755a41a2dff182c19",
+    "pageNumber": 1,
+    "text": "The PANAS score is separated into the Positive Affect (PA) and\nNegative Affect (NA) scores, with a higher score indicating more\npositive or negative affect respectively. Note, that although a very\nhigh score on the PA scale is worthy of attention (i.e. manic patients",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "af3b874c543a39f4783c83790255b32a76ab86cd851a0d8755a41a2dff182c19",
+    "pageNumber": 2,
+    "text": "will typically score very highly on PA), the principal clinical concern\nwill be with patients who show very low levels of positive affect (i.e.\nare anhedonic) and thus obtain low percentile ranks. In contrast, a\nhigh score on the NA (and a high percentile) is an indicator of\npsychological distress.\nNormative data was collected from over 1,000 Australian adults and\nis used to calculate percentiles. A percentile rank of 50 indicates an\naverage level of positive or negative affectivity in comparison to the\nnormative group. \nThere are two subscales of the PANAS:\n1. Positive Affect (items 1, 3, 5, 9, 10, 12, 14, 16, 17, and 19).\nHigher scores represent higher levels of PA and are associated with\npleasurable engagement with the environment.\n2. Negative Affect Sore (items 2, 4, 6, 7, 8, 11, 13, 15, 18, and 20).\nHigher scores represent higher levels of NA and reflect a dimension\nof general distress summarising a variety of negative states such as\nanger, guilt, or anxiety.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "are anhedonic) and thus obtain low percentile ranks.",
+   "In contrast, a high score on the NA (and a high percentile) is an indicator of psychological distress.",
+   "Normative data was collected from over 1,000 Australian adults and is used to calculate percentiles.",
+   "A percentile rank of 50 indicates an average level of positive or negative affectivity in comparison to the normative group."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 126
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

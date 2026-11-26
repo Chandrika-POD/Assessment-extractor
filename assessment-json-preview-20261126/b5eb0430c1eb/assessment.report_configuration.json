@@ -1,0 +1,1352 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total Score",
+   "minimum": 0.0,
+   "maximum": 76.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 76.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of all 19 items)",
+     "y": 282.8,
+     "url": null,
+     "sha256": "0d92e16d11d5f28519c7f875d18b99738ed9eb9337dc5563b9292f70ab60368c"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "dbb4360f1a594_p1",
+   "documentSha256": "bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "dbb4360f1a594_p1_chart_1"
+   ],
+   "tableIds": [
+    "dbb4360f1a594_p1_table_1"
+   ],
+   "sectionIds": [
+    "dbb4360f1a594_p1_section_1",
+    "dbb4360f1a594_p1_section_2",
+    "dbb4360f1a594_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "dbb4360f1a594_p2",
+   "documentSha256": "bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dbb4360f1a594_p2_table_1"
+   ],
+   "sectionIds": [
+    "dbb4360f1a594_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "dbb4360f1a594_p3",
+   "documentSha256": "bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dbb4360f1a594_p3_table_1"
+   ],
+   "sectionIds": [
+    "dbb4360f1a594_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "dbb4360f1a594_p1_section_1",
+   "pageId": "dbb4360f1a594_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dbb4360f1a594_p1_section_2",
+   "pageId": "dbb4360f1a594_p1",
+   "title": "Percentiles Compared to Clinical OCD Sample",
+   "type": "results",
+   "bboxPt": [
+    181.64101,
+    347.63187,
+    445.05295,
+    359.63187
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dbb4360f1a594_p1_section_3",
+   "pageId": "dbb4360f1a594_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    678.28949,
+    290.26645,
+    692.28949
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dbb4360f1a594_p2_section_1",
+   "pageId": "dbb4360f1a594_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    381.45004,
+    151.8205,
+    395.45004
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dbb4360f1a594_p3_section_1",
+   "pageId": "dbb4360f1a594_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "dbb4360f1a594_p1_chart_1",
+   "title": "Percentiles Compared to Clinical OCD Sample",
+   "type": "vertical_bar",
+   "bboxPt": [
+    47.346,
+    367.544,
+    550.346,
+    590.984
+   ],
+   "widthPt": 503.0,
+   "heightPt": 223.44,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 40.1224,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 370.16302,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 392.30283,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 414.45282,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 436.59302,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 458.74301,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 480.88281,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 503.02261,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 525.17255,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 547.31281,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 569.46277,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 591.60254,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "TAF-Moral",
+     "colour": "#8d0303",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.1660031338797925,
+     "barThicknessPt": 46.99999,
+     "fill": "#8e0404",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#8d0303"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#8d0303"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "TAF-Likelihood Other",
+     "colour": "#b203b2",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49801143941472226,
+     "barThicknessPt": 47.0,
+     "fill": "#b303b3",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#b203b2"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#b203b2"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "TAF-Likelihood Self",
+     "colour": "#00008b",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8300197151285496,
+     "barThicknessPt": 47.0,
+     "fill": "#01018c",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#00008b"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#00008b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "dbb4360f1a594_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 383,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Percentiles Compared to Clinical OCD Sample",
+     "bboxPt": [
+      181.64101,
+      347.63187,
+      445.05295,
+      359.63187
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "TAF-Moral",
+     "bboxPt": [
+      111.959,
+      597.16254,
+      149.735,
+      605.16254
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "TAF-Likelihood Other",
+     "bboxPt": [
+      259.83502,
+      597.16254,
+      335.85901,
+      605.16254
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "TAF-Likelihood Self",
+     "bboxPt": [
+      429.94702,
+      597.16254,
+      499.74701,
+      605.16254
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration, the subscale percentiles are presented compared to the clinical OCD sample with a shaded colour in the background for the higher percentiles (indicating more Thought-Action-Fusion).",
+   "On subsequent administrations the subscale percentiles are presented over time to indicate change as a result of treatment."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "TAFS-R Scoring & Interpretation",
+    "text": "Raw scores and percentiles for the three subscales are given as output, with higher scores indicating a stronger tendency toward thought-action-fusion like cognitions.\n\nFor each subscale, percentiles based on a student and clinical sample are computed using Safron et al., (1996) original validation samples. A percentile of 50 for the OCD clinical sample represents the average amount of TAF thoughts that a person with OCD experiences, while a percentile of 50 on the student sample indicates the average TAF thoughts that a relatively healthy individual experiences. Percentiles are not computed for the total score.\n\nThe three subscales are as follows:\n1. TAF-Moral (items: 1, 3, 4, 6, 8, 10, 11, 13, 15, 17, 18, 19): The belief that having an unacceptable thought is the moral equivalent of carrying out the unacceptable or disturbing action.\n2. TAF-Likelihood-Other (items: 2, 5, 7, 9): The belief that thinking an unacceptable thought about another person increases the likelihood of that thing happening.\n3. TAF-Likelihood-Self (items: 12, 14, 16): The belief that thinking an unacceptable thought about ourselves makes it more likely to occur.\n\nOn first administration, the subscale percentiles are presented compared to the clinical OCD sample with a shaded colour in the background for the higher percentiles (indicating more Thought-Action-Fusion). On subsequent administrations the subscale percentiles are presented over time to indicate change as a result of treatment.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "bb4360f1a59424c915a3ec96e9682a6891f9aba1f600d712517c1e5b6368838e",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the TAFS-R, \nsee here\n.\nRaw scores and percentiles for the three subscales are given as output, with higher scores\nindicating a stronger tendency toward thought-action-fusion like cognitions. For each subscale,\npercentiles based on a student and clinical sample are computed using Safron et al., (1996)",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Raw scores and percentiles for the three subscales are given as output, with higher scores indicating a stronger tendency toward thought-action-fusion like cognitions.",
+   "For each subscale, percentiles based on a student and clinical sample are computed using Safron et al., (1996) original validation samples.",
+   "A percentile of 50 for the OCD clinical sample represents the average amount of TAF thoughts that a person with OCD experiences, while a percentile of 50 on the student sample indicates the average TAF thoughts that a relatively healthy individual experiences.",
+   "Percentiles are not computed for the total score.",
+   "On first administration, the subscale percentiles are presented compared to the clinical OCD sample with a shaded colour in the background for the higher percentiles (indicating more Thought-Action-Fusion).",
+   "On subsequent administrations the subscale percentiles are presented over time to indicate change as a result of treatment."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_38dd4333e289f53939f10f1847adee57",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#989998",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_ae0f1be842ed459a5dd25bb2f52f2b2b",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ef8080",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#f08382",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#f08784",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#f18a86",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#f18e89",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#f2928b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#f2968e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#f39990",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#f39d92",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#f4a195",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#f4a597",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#f5a99a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#f5ac9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#f5b09e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#f6b4a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#f6b8a3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#f7bba5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#f7bfa8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#f8c3aa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#f8c8ad",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#f9ccb0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#f9ceb1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#fad3b4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#fad7b6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#fbdbb9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#fbdfbc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#fce2bd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#fce6c0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#fdeac3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#fdeec5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#fdf1c7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fef5ca",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fef9cc",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_b4ae5e17f3dd601f2834b5117697beff",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#989998",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#9c9c9c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#9f9f9f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#a1a1a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#a5a5a5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#a8a8a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#aaabaa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#aeaeae",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#b1b1b1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#b5b5b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#b8b9b8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#bbbbbb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#bebebe",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#c2c2c2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#c4c4c4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#c7c7c7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#cbcbcb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#cecece",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#d2d2d2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#d4d4d4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#d7d7d7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#dbdbdb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#dddddd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#e1e1e1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#e4e4e4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#e8e8e8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#ebebeb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#ededed",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#f1f1f1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#f4f4f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#f6f7f6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fafafa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fdfdfd",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_039d0068b50f45b89f47458bb8d6b951",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#fff9cd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#ffface",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#fffad0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#fffad1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#fffad3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#fffad4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#fffad5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#fffbd7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#fffbd9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#fffbda",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#fffbdc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#fffbdd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#fffbdf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#fffce1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#fffce2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#fffce3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#fffce5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#fffce7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#fffce9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#fffcea",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#fffdeb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#fffded",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#fffdee",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#fffdf0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#fffdf2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#fffdf3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#fffef5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#fffef6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#fffef8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#fffef9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#fffefb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fffefc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fffefe",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 4,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 144
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "hierarchical_percentile_band_markers",
+ "sections": [
+  "conditional_risk",
+  "empirical_hierarchy",
+  "dsm_disorders",
+  "conditional_interpretation"
+ ],
+ "sourceContract": {
+  "$file": "assessment.report_configuration.interactiveLayout.sourceContract.json"
+ },
+ "displayRules": {
+  "percentileMarker": "unrounded_percentile_from_selected_reference_group",
+  "percentileText": "rounded_1_to_99_unless_explicit_source_precision_exception",
+  "markerColour": "source_band_not_percentile",
+  "nullResult": "grey_track_without_marker",
+  "nonEndorserContext": "hazard_cluster_hidden_only_in_source_defined_substance_use_contexts"
+ },
+ "normLookupTables": null,
+ "runtimeEnabled": false
+}

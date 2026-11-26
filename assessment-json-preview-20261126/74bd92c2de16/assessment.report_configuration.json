@@ -1,0 +1,1284 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "CRAFFT Part B Yes count",
+   "minimum": 0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "CRAFFT Part B Yes count",
+    "item_ids": [
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "5a3fa96045fb00a4bddf66c3a6e6b6eda393059a2fddf5648538ba39bee9fe39",
+     "page_url": null,
+     "page_sha256": "2f50e622be1611b194d446ea95e9e1be4f564e4730140c8f22a11b7ebf19daa3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C12",
+      "C24",
+      "LIVE_C31",
+      "LIVE_C43",
+      "LIVE_C47"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "ineligible_item_policy": "zero",
+    "minimum": 0,
+    "maximum": 6.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_2",
+   "ruleId": "source_draft_2",
+   "label": "HONC Yes count",
+   "minimum": 0.0,
+   "maximum": 10.0,
+   "calculation": {
+    "id": "source_draft_2",
+    "label": "HONC Yes count",
+    "item_ids": [
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "5a3fa96045fb00a4bddf66c3a6e6b6eda393059a2fddf5648538ba39bee9fe39",
+     "page_url": null,
+     "page_sha256": "2f50e622be1611b194d446ea95e9e1be4f564e4730140c8f22a11b7ebf19daa3",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C12",
+      "C24",
+      "LIVE_C31",
+      "LIVE_C43",
+      "LIVE_C47"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "applies_if": {
+     "item_id": "Q4",
+     "operator": "gt",
+     "value": 0,
+     "value_field": "printed_value"
+    },
+    "minimum": 0.0,
+    "maximum": 10.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+   "pageCount": 6,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d4a4eb028e1e7_p1",
+   "documentSha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d4a4eb028e1e7_p1_chart_1"
+   ],
+   "tableIds": [
+    "d4a4eb028e1e7_p1_table_1"
+   ],
+   "sectionIds": [
+    "d4a4eb028e1e7_p1_section_1",
+    "d4a4eb028e1e7_p1_section_2",
+    "d4a4eb028e1e7_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d4a4eb028e1e7_p2",
+   "documentSha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d4a4eb028e1e7_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d4a4eb028e1e7_p2_section_1",
+    "d4a4eb028e1e7_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "d4a4eb028e1e7_p3",
+   "documentSha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d4a4eb028e1e7_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "d4a4eb028e1e7_p4",
+   "documentSha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d4a4eb028e1e7_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "d4a4eb028e1e7_p5",
+   "documentSha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d4a4eb028e1e7_p5_table_1",
+    "d4a4eb028e1e7_p5_table_2",
+    "d4a4eb028e1e7_p5_table_3"
+   ],
+   "sectionIds": [
+    "d4a4eb028e1e7_p5_section_1",
+    "d4a4eb028e1e7_p5_section_2",
+    "d4a4eb028e1e7_p5_section_3"
+   ]
+  },
+  {
+   "pageId": "d4a4eb028e1e7_p6",
+   "documentSha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d4a4eb028e1e7_p6_table_1"
+   ],
+   "sectionIds": [
+    "d4a4eb028e1e7_p6_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d4a4eb028e1e7_p1_section_1",
+   "pageId": "d4a4eb028e1e7_p1",
+   "title": "CRAFFT 2.1+N Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    186.42847,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p1_section_2",
+   "pageId": "d4a4eb028e1e7_p1",
+   "title": "Screen Result",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    258.93039,
+    127.71248,
+    278.2084
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p1_section_3",
+   "pageId": "d4a4eb028e1e7_p1",
+   "title": "Clinical Flags",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    324.12726,
+    124.60448,
+    343.40527
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p2_section_1",
+   "pageId": "d4a4eb028e1e7_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    434.31387,
+    124.57648,
+    453.59189
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p2_section_2",
+   "pageId": "d4a4eb028e1e7_p2",
+   "title": "Riding/Driving Risk",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    636.11536,
+    192.50336,
+    651.26239
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#ff0000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p3_section_1",
+   "pageId": "d4a4eb028e1e7_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    175.95293,
+    290.26642,
+    195.23093
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p4_section_1",
+   "pageId": "d4a4eb028e1e7_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    674.32593,
+    151.82047,
+    693.60388
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p5_section_1",
+   "pageId": "d4a4eb028e1e7_p5",
+   "title": "Substance Use Frequency (Part A)",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    263.84845,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p5_section_2",
+   "pageId": "d4a4eb028e1e7_p5",
+   "title": "CRAFFT Questions",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    372.95007,
+    162.68446,
+    392.22809
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p5_section_3",
+   "pageId": "d4a4eb028e1e7_p5",
+   "title": "Hooked on Nicotine Checklist",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    596.88715,
+    231.94246,
+    616.1651
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d4a4eb028e1e7_p6_section_1",
+   "pageId": "d4a4eb028e1e7_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d4a4eb028e1e7_p1_chart_1",
+   "title": null,
+   "type": "vertical_bar",
+   "bboxPt": [
+    152.638,
+    443.332,
+    454.638,
+    631.772
+   ],
+   "widthPt": 302.0,
+   "heightPt": 188.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      152.638,
+      585.16162,
+      452.638,
+      631.77161
+     ],
+     "colour": "#a5d6a7",
+     "opacity": 0.35,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      152.638,
+      445.3316,
+      452.638,
+      585.16162
+     ],
+     "colour": "#f5b1b1",
+     "opacity": 0.35,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 6.0,
+      "positionPt": 445.02759000000003,
+      "text": "6",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 476.09759499999996,
+      "text": "5",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 507.17762999999997,
+      "text": "4",
+      "colour": "#333333"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 538.24765,
+      "text": "3",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 569.3176599999999,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 600.3976749999999,
+      "text": "1",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 631.46762,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Total",
+     "colour": "#003f5b",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49668874172185423,
+     "barThicknessPt": 40.0,
+     "fill": "#003f5c",
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#003f5b"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#003f5b"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#003f5b"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#003f5b"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#003f5b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d4a4eb028e1e7_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 106,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "CRAFFT 2.1+N Total Score",
+     "bboxPt": [
+      223.784,
+      414.79166,
+      371.49197,
+      431.27966
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Below Cut Score",
+     "bboxPt": [
+      395.509,
+      603.35657,
+      447.638,
+      612.97461
+     ],
+     "colour": "#2e7d32",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Positive Screen",
+     "bboxPt": [
+      399.009,
+      510.13663,
+      447.638,
+      519.75464
+     ],
+     "colour": "#c62828",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Total",
+     "bboxPt": [
+      293.746,
+      635.53162,
+      311.53,
+      646.52362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "d4a4eb028e1e7_p2_chart_1",
+   "title": null,
+   "type": "vertical_bar",
+   "bboxPt": [
+    89.638,
+    172.732,
+    449.638,
+    357.732
+   ],
+   "widthPt": 360.0,
+   "heightPt": 185.0,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 115.208,
+      "text": "0",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 166.34798999999998,
+      "text": "1",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 217.498,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 268.63800000000003,
+      "text": "3",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 319.777985,
+      "text": "4",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 370.92801,
+      "text": "5",
+      "colour": "#333333"
+     },
+     {
+      "value": 6.0,
+      "positionPt": 422.06799,
+      "text": "6",
+      "colour": "#333333"
+     }
+    ],
+    "title": "2.1+N score. Higher scores indicate a higher likelihood of a substance use disorder (Mitchell et al., 2014). The highlighted bar marks where the respondent's score falls",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 174.42828500000002,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 211.02832,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 247.628295,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 284.22833,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 320.82831,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 357.42828499999996,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#9ca3af",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.21308333333333335,
+     "barThicknessPt": 21.140000000000015,
+     "fill": "#9ca3af",
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#424a58"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9ca3af"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": null,
+     "colour": "#9ca3af",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.35516663888888894,
+     "barThicknessPt": 21.140000000000015,
+     "fill": "#9ca3af",
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9ca3af"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "CRAFFT 2.1+N Score",
+     "colour": "#9ca3af",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4972222222222223,
+     "barThicknessPt": 21.140019999999993,
+     "fill": "#9ca3af",
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9ca3af"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": null,
+     "colour": "#4d79a7",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6392778194444444,
+     "barThicknessPt": 21.140010000000018,
+     "fill": "#4e79a7",
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4d79a7"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4d79a7"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4d79a7"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4d79a7"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4d79a7"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_5",
+     "label": null,
+     "colour": "#9ca3af",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.7813332916666667,
+     "barThicknessPt": 21.13999000000001,
+     "fill": "#9ca3af",
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9ca3af"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_6",
+     "label": null,
+     "colour": "#9ca3af",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.9234166527777776,
+     "barThicknessPt": 21.14000999999996,
+     "fill": "#9ca3af",
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9ca3af"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9ca3af"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d4a4eb028e1e7_p2",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 107,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "CRAFFT 2.1+N Score",
+     "bboxPt": [
+      219.59801,
+      376.20233,
+      317.67798,
+      389.94232
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "% Meeting SUD Criteria",
+     "bboxPt": [
+      52.42798,
+      213.16733,
+      66.16798,
+      319.29733
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "text": "Probability of a DSM-5 Substance Use Disorder by CRAFFT 2.1+N score",
+     "bboxPt": [
+      53.412,
+      144.19229,
+      441.86395,
+      160.68028
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Respondent's score",
+     "bboxPt": [
+      477.414,
+      189.37228,
+      547.862,
+      200.36429
+     ],
+     "colour": "#1f2937",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Each bar shows the percentage of adolescents in the validation sample who met DSM-5 substance use disorder criteria, among those scoring at or above that CRAFFT",
+     "bboxPt": [
+      35.1375,
+      400.56329,
+      554.13849,
+      410.04129
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Oblique",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "2.1+N score. Higher scores indicate a higher likelihood of a substance use disorder (Mitchell et al., 2014). The highlighted bar marks where the respondent's score falls",
+     "bboxPt": [
+      36.1245,
+      408.26331,
+      553.15149,
+      417.7413
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Oblique",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "on this scale; it describes that group in the validation sample, not this respondent's own likelihood of having a disorder.",
+     "bboxPt": [
+      111.4935,
+      415.96332,
+      477.78241,
+      425.44131
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Oblique",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "CRAFFT 2.1+N Scoring",
+    "text": "The CRAFFT 2.1+N produces a total score, a risk category, and up to two clinical flags (riding and driving risk, and nicotine). The total score is the number of Yes answers across the six CRAFFT questions in Part B. The four Part A frequency questions decide which questions each young person answers and do not contribute to any score. A young person who reports no substance use in the past 12 months answers only the Car question, so their maximum possible score is 1. One who reports any use answers all six, giving a range of 0 to 6. Higher scores indicate a greater likelihood of substance-related problems.\nNovoPsych implements the self-administered CRAFFT 2.1+N and applies the official screening cut score of 2 or more (Knight et al., 2002) across the full 12 to 21 age range.\nWhen any vaping or tobacco use is reported, the ten HONC questions are also presented. They are scored as a separate count of Yes answers from 0 to 10 and do not contribute to the CRAFFT total.\n\n",
+    "source_url": null
+   },
+   {
+    "title": "CRAFFT 2.1+N Clinical Cut Score",
+    "text": "The cut score of 2 or more was derived in the primary validation by maximising the product of sensitivity and specificity, and it was optimal for every criterion examined (Knight et al., 2002). The same threshold performed optimally against DSM-5 criteria in both later validations (Mitchell et al., 2014; Shenoi et al., 2019).\nThe developers advise that a higher cut score may be more appropriate for respondents aged 18 or older (CABHRe, 2021). In 382 adults aged 18 to 25 recruited for past-month alcohol or cannabis use, specificity at the standard cut score was low (13 to 19 percent), and a score of 4 or more gave the best balance of sensitivity and specificity (Bagley et al., 2017). Because no alternative threshold has been validated for routine use in this age range, NovoPsych retains the official cut score across the 12 to 21 range and notes in the report that scores of 2 or 3 in respondents aged 18 or older are weaker evidence of a disorder.\n",
+    "source_url": null
+   },
+   {
+    "title": "How is vaping or tobacco use handled if it does not affect the CRAFFT score?",
+    "text": "The CRAFFT total score (0 to 6) comes only from the six CRAFFT questions, which ask about alcohol and drug involvement. Like the other opening frequency questions, the vaping and tobacco question is not part of that score. Nicotine is screened separately: any reported vaping or tobacco use brings up the Hooked on Nicotine Checklist (HONC), a 10-item screen for signs of diminished control over nicotine, which is reported alongside the CRAFFT score. Even one Yes on the HONC is treated as meaningful, because loss of autonomy over nicotine can emerge quickly in adolescence, well before daily use is established.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "4a4eb028e1e74daa8fa1bf7a0959c22089b4e9c274a65c35ee552bc457485d7f",
+    "pageNumber": 3,
+    "text": "The CRAFFT 2.1+N produces a total score, a risk category, and up to two clinical flags (riding\nand driving risk and nicotine). Higher scores indicate a greater likelihood of substance-related\nproblems.\nCRAFFT 2.1+N Scoring\nThe Total Score is the number of Yes answers across the six CRAFFT 2.1+N questions. The\nfour opening frequency questions govern which of the six core questions each respondent\nanswers and do not contribute to any scoring. Respondents reporting no substance usage in the\npast 12 months answer only the Car question, resulting in a maximum possible score of 1.\nRespondents who report any use on the frequency questions are prompted to answer all six\ncore questions, resulting in a total score range of 0-6.\nHONC Administration. If any nicotine/tobacco or vaping use is indicated over the past 12 months\n(frequency question #4), the ten HONC questions are also presented, scored as a separate\ncount of Yes answers ranging from 0 to 10 that does not contribute to the CRAFFT 2.1+N total\nscore.\nLikelihood of Substance Use Disorder\nHigher CRAFFT 2.1+N total scores are associated with a greater likelihood of a DSM-5 SUD. In\nthe validation study, among adolescents scoring at or above each point on the scale, the\npercentage who met DSM-5 criteria for a substance use disorder rose with the score: 32% at a\nscore of 1 or more, 64% at 2 or more, 79% at 3 or more, 92% at 4 or more, and 100% at 5 or\nmore (Mitchell et al., 2014). This is why a score of 2 or more is treated as a positive screen.\nThese percentages reflect adolescents in the validation sample with a similar score, not an\nindividual respondent's chance of having a disorder. For respondents aged 18 or older, total\nscores of 2 to 3 constitute weaker evidence of a disorder than the same scores in younger\nadolescents.\nCRAFFT 2.1+N Risk Categories\nWhile the total score reflects the likelihood of a disorder, the risk category classifies the result\nusing the fuller pattern of responses. Following guidance in the CRAFFT manual (CABHRe,\n2021), each result is classified into one of three risk categories (Low, Medium, or High) to help\norient the provider's conversation with the young person. The category is determined by three\nfactors: (1) whether any substance use was reported in the past 12 months, (2) the response to\nthe Car question, and (3) the total score.\n-Low Risk (total score = 0): no substance use reported in the past 12 months, and a No\nresponse to the Car question . The result can provide an opportunity to reinforce and encourage\nthe young person's healthy choices.\n-Medium risk (total score = 0 to 1): reached in either of two ways - (1) no substance use reported\nin the past 12 months and a Yes response to the Car question, or (2) any use reported in the\npast 12 months with a total score on the CRAFFT questions of 0 to 1. The result can provide an\nopportunity for brief advice about the risks of substance use and of substance-related riding and\ndriving.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The same threshold performed optimally against DSM-5 criteria in both later validations (Mitchell et al., 2014; Shenoi et al., 2019).",
+   "Because no alternative threshold has been validated for routine use in this age range, NovoPsych retains the official cut score across the 12 to 21 range and notes in the report that scores of 2 or 3 in respondents aged 18 or older are weaker evidence of a disorder."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": {
+  "$file": "assessment.report_configuration.referenceTables.json"
+ },
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 5,
+   "unresolvedCells": 88
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

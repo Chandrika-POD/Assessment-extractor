@@ -1,0 +1,943 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "frost-multidimensional-perfectionism-scale-fmps--02f6904b257a",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Frost Multidimensional Perfectionism Scale (FMPS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Frost Multidimensional Perfectionism Scale (FMPS) is a 35-item self-report questionnaire designed to assess multiple dimensions of perfectionism in adolescents and adults (Frost et al., 1990).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Please answer the following questions in relation to how much they apply to you. Do not spend too much time on any one question.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34",
+   "Q35"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "total_perfectionism",
+    "label": "Total Perfectionism",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q28",
+     "Q30",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 29,
+    "maximum": 145,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "ad760c6adb6ef29156723a8f28401395806773c341bdaab21899d5c4f24f1e2a",
+     "retrieved_at": "2026-11-13T12:00:59.029186+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "concern_mistakes_doubts",
+    "label": "Concern Mistakes Doubts",
+    "item_ids": [
+     "Q9",
+     "Q10",
+     "Q13",
+     "Q14",
+     "Q17",
+     "Q18",
+     "Q21",
+     "Q23",
+     "Q25",
+     "Q28",
+     "Q32",
+     "Q33",
+     "Q34"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 13,
+    "maximum": 65,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "ad760c6adb6ef29156723a8f28401395806773c341bdaab21899d5c4f24f1e2a",
+     "retrieved_at": "2026-11-13T12:00:59.029186+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "parental_expectations_criticism",
+    "label": "Parental Expectations Criticism",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q5",
+     "Q11",
+     "Q15",
+     "Q20",
+     "Q22",
+     "Q26",
+     "Q35"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 9,
+    "maximum": 45,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "ad760c6adb6ef29156723a8f28401395806773c341bdaab21899d5c4f24f1e2a",
+     "retrieved_at": "2026-11-13T12:00:59.029186+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "personal_standards",
+    "label": "Personal Standards",
+    "item_ids": [
+     "Q4",
+     "Q6",
+     "Q12",
+     "Q16",
+     "Q19",
+     "Q24",
+     "Q30"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 7,
+    "maximum": 35,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "ad760c6adb6ef29156723a8f28401395806773c341bdaab21899d5c4f24f1e2a",
+     "retrieved_at": "2026-11-13T12:00:59.029186+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   {
+    "id": "organisation",
+    "label": "Organisation",
+    "item_ids": [
+     "Q2",
+     "Q7",
+     "Q8",
+     "Q27",
+     "Q29",
+     "Q31"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 6,
+    "maximum": 30,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "ad760c6adb6ef29156723a8f28401395806773c341bdaab21899d5c4f24f1e2a",
+     "retrieved_at": "2026-11-13T12:00:59.029186+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "The Total Perfectionism score is calculated as the sum of three of the four subscales (29 items; range 29–145):",
+   "All scores are presented as raw totals as well as percentiles, so clinicians can see both the client’s actual responses and how those scores compare with a normative sample. Percentile ranks are calculated based on Stöber’s (1998) normative sample of university students (N = 243, mean age 26.30). A percentile of 50 indicates an average level of perfectionism relative to this comparison group. Given that the normative sample consists of university students, percentiles should be interpreted with appropriate caution when applied to clinical populations, individuals from different age groups, or those from culturally diverse backgrounds. Percentiles provide a relative comparison point rather than absolute clinical thresholds.",
+   "Very Low (≤5th percentile, score 29–44): Scores at this level are well below the normative average, suggesting minimal endorsement of perfectionistic beliefs or behaviours in this domain.",
+   "Low (6th–24th percentile, score 45–60): Scores at this level are below the normative average, suggesting relatively low levels of perfectionism in this domain.",
+   "Average (25th–75th percentile, score 61–83): Scores at this level fall within the typical range for the normative sample, suggesting perfectionism levels consistent with the general population.",
+   "High (76th–94th percentile, score 84–99): Scores at this level are above the normative average, suggesting elevated perfectionism in this domain that may warrant clinical consideration.",
+   "Very High (≥95th percentile, score 100–145): Scores at this level are well above the normative average, suggesting highly elevated perfectionism in this domain that may be clinically significant.",
+   "On first administration, a percentile bar chart is presented, displaying the percentile scores for each subscale with descriptor bands (Very Low, Low, Average, Average, High, Very High) as background shading. Each bar reflects the client’s score on a 0–100 scale relative to a community sample.",
+   "Very Low (≤5th percentile, score 29-44): Scores at this level are well below the normative average, suggesting minimal endorsement of perfectionistic beliefs or behaviours in this domain.",
+   "Low (6th–24th percentile, score 45-60): Scores at this level are below the normative average, suggesting relatively low levels of perfectionism in this domain.",
+   "Average (25th–75th percentile, score 61-83): Scores at this level fall within the typical range for the normative sample, suggesting perfectionism levels consistent with the general population.",
+   "High (76th–94th percentile, score 84-99): Scores at this level are above the normative average, suggesting elevated perfectionism in this domain that may warrant clinical consideration.",
+   "Very High (≥95th percentile, score 100-145): Scores at this level are well above the normative average, suggesting highly elevated perfectionism in this domain that may be clinically significant.",
+   "No known published study has directly examined the sensitivity to change of the FMPS using the Reliable Change Index (RCI) or minimally important difference (MID) methodology. However, the FMPS has been used as a primary or secondary outcome measure in clinical trials of cognitive-behavioural therapy for perfectionism (Egan et al., 2014; Rozental et al., 2017; Shafran et al., 2017), suggesting it is responsive to treatment-related changes. In the absence of a formally established change threshold, clinicians monitoring treatment progress can use the established recommendation that changes of at least 0.5 standard deviations in scores may suggest potentially meaningful change (Norman et al., 2003; Turner et al., 2010). Using the Stöber (1998) normative data, this corresponds to an approximate MID of 5.75 points for Concern over Mistakes and Doubts about Actions, 5.12 points for Parental Expectations and Criticism, 2.52 points for Personal Standards, and 2.92 points for Organisation."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "FMPS Total and Subscale Scores",
+    "text": "All items are scored on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree). Higher scores indicate greater endorsement of perfectionistic beliefs and behaviours in a particular domain. The FMPS produces a Total Perfectionism score and four subscale scores.\n\nThe Total Perfectionism score is calculated as the sum of three of the four subscales (29 items; range 29–145):\nConcern over Mistakes and Doubts about Actions (13 items: 9, 10, 13, 14, 17, 18, 21, 23, 25, 28, 32, 33, 34; score range 13–65): reflects the tendency to equate mistakes with failure, fear loss of respect, and doubt the quality of one’s performance.\nParental Expectations and Criticism (9 items: 1, 3, 5, 11, 15, 20, 22, 26, 35; score range 9–45): reflects perceived parental pressure to be perfect and criticism for falling short.\nPersonal Standards (7 items: 4, 6, 12, 16, 19, 24, 30; score range 7–35): reflects the setting of excessively high personal standards and goals.\nThe Organisation subscale (6 items: 2, 7, 8, 27, 29, 31; score range 6–30), which reflects the importance placed on order, neatness, and organisation, is excluded from the Total Perfectionism score. High organisation is not inherently problematic; however, high Organisation combined with elevated scores on the other subscales may exacerbate perfectionistic dysfunction.\n",
+    "source_url": null
+   },
+   {
+    "title": "FMPS Percentiles",
+    "text": "All scores are presented as raw totals as well as percentiles, so clinicians can see both the client’s actual responses and how those scores compare with a normative sample. Percentile ranks are calculated based on Stöber’s (1998) normative sample of university students (N = 243, mean age 26.30). A percentile of 50 indicates an average level of perfectionism relative to this comparison group. Given that the normative sample consists of university students, percentiles should be interpreted with appropriate caution when applied to clinical populations, individuals from different age groups, or those from culturally diverse backgrounds. Percentiles provide a relative comparison point rather than absolute clinical thresholds.\n",
+    "source_url": null
+   },
+   {
+    "title": "Normative Data",
+    "text": "Normative data for the FMPS are derived from Stöber’s (1998) sample of German university students (N = 243, mean age 26.3 years, SD = 5.7). This dataset remains the only published normative sample providing means and standard deviations for the four-factor 35-item scoring structure used on NovoPsych. While subsequent studies have reported descriptive statistics for various populations, these have typically used modified versions or different factor structures, limiting their direct comparability to the original 35-item scoring. Note. CMD = Concern over Mistakes and Doubts about Actions; PEC = Parental Expectations and Criticism; PS = Personal Standards; O = Organisation. Stöber (1998) values represent the four-factor structure used on NovoPsych. Stallman and Hurst (2011) used a modified 29-item version with a five-factor structure. Dash indicates value not directly comparable or not reported for the same scoring model.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "Concern over Mistakes & Doubts (Items 9, 10, 13, 14, 17, 18, 21, 23, 25, 28, 32, 33, 34):",
+    "y": 464.2,
+    "url": null,
+    "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Parental Expectations & Criticism (Items 1, 3, 5, 11, 15, 20, 22, 26, 35):",
+    "y": 486.0,
+    "url": null,
+    "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Personal Standards (Items 4, 6, 12, 16, 19, 24, 30):",
+    "y": 507.8,
+    "url": null,
+    "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Organisation (Items 2, 7, 8, 27, 29, 31):",
+    "y": 529.5,
+    "url": null,
+    "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Total Perfectionism (sum of Concern over Mistakes & Doubts, Parental Expectations &",
+    "y": 559.5,
+    "url": null,
+    "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Note: Organisation is not included in the Total Perfectionism score. The Total Perfectionism score is the sum of the other three subscales (29 items, range 29–145).",
+    "y": 593.2,
+    "url": null,
+    "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Frost, R. O., Marten, P., Lahart, C., & Rosenblate, R. (1990). The dimensions of perfectionism. Cognitive Therapy and Research, 14 (5), 449–468. https://doi.org/10.1007/BF01172967",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Egan, S. J., Wade, T. D., & Shafran, R. (2011). Perfectionism as a transdiagnostic process: A clinical review. Clinical Psychology Review, 31 (2), 203–212. https://doi.org/10.1016/j.cpr.2010.04.009\nEgan, S. J., van Noort, E., Chee, A., Kane, R. T., Hoiles, K. J., Shafran, R., & Wade, T. D. (2014). A randomised controlled trial of face to face versus pure online self-help cognitive behavioural treatment for perfectionism. Behaviour Research and Therapy, 63 , 107–113. https://doi.org/10.1016/j.brat.2014.09.009\nFrost, R. O., Marten, P., Lahart, C., & Rosenblate, R. (1990). The dimensions of perfectionism. Cognitive Therapy and Research, 14 (5), 449–468. https://doi.org/10.1007/BF01172967\nGroth-Marnat, G., & Wright, A. J. (2016). Handbook of psychological assessment (6th ed.). John Wiley & Sons.\nHowell, J., Anderson, R., Egan, S., & McEvoy, P. (2020). One factor? Two factor? Bi-factor? A psychometric evaluation of the Frost Multidimensional Scale and the Clinical Perfectionism Questionnaire. Cognitive behaviour therapy , 49 (6), 518–530. https://doi.org/10.1080/16506073.2020.1790645\nMitchell-Parker, K., Watsford, C., & Langley, N. (2018). A Rasch analysis of the Frost Multidimensional Perfectionism Scale in a sample of athletes. Psychology of Sport and Exercise, 39 , 147–155.\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: The remarkable universality of half a standard deviation. Medical Care, 41 (5), 582–592. https://doi.org/10.1097/01.MLR.0000062554.74615.4C\nRozental, A., Shafran, R., Wade, T., Egan, S., Nordgren, L. B., Carlbring, P., Landström, A., Roos, S., Skoglund, M., Thelander, E., Trosell, L., Örtenholm, A., & Andersson, G. (2017). A randomized controlled trial of Internet-Based Cognitive Behavior Therapy for perfectionism including an investigation of outcome predictors. Behaviour Research and Therapy, 95 , 79–86. https://doi.org/10.1016/j.brat.2017.05.015\nShafran, R., Wade, T. D., Egan, S. J., Kothari, R., Allcott-Watson, H., Carlbring, P., Rozental, A., & Andersson, G. (2017). Is the devil in the detail? A preliminary investigation of the efficacy of an Internet-based CBT programme for perfectionism. Behavioural and Cognitive Psychotherapy, 45 (3), 266–282. https://doi.org/10.1017/S1352465816000618\nShafran, R., Cooper, Z., & Fairburn, C. G. (2002). Clinical perfectionism: A cognitive-behavioural analysis. Behaviour Research and Therapy, 40 (7), 773–791. https://doi.org/10.1016/S0005-7967(01)00059-6\nShafran, R., Egan, S., & Wade, T. (2018). Overcoming Perfectionism: A self-help guide using scientifically supported cognitive behavioural techniques (2nd ed.). Little Brown Book Group.\nSironic, A., & Reeve, R. A. (2015). A combined analysis of the Frost Multidimensional Perfectionism Scale (FMPS), Child and Adolescent Perfectionism Scale (CAPS), and Almost Perfect Scale–Revised (APS-R): Different profiles of perfectionists and their associated outcomes. Psychological Assessment, 27 (4), 1471–1483. https://doi.org/10.1037/pas0000137\nStallman, H. M., & Hurst, C. P. (2011). The factor structure of the Frost Multidimensional Perfectionism Scale in university students. Australian Psychologist, 46 (4), 229–236. https://doi.org/10.1111/j.1742-9544.2010.00010.x\nStöber, J. (1998). The Frost Multidimensional Perfectionism Scale revisited: More perfect with four (instead of six) dimensions. Personality and Individual Differences, 24 (4), 481–491. https://doi.org/10.1016/S0191-8869(97)00207-9\nTurner, D., Schünemann, H. J., Griffith, L. E., Beaton, D. E., Griffiths, A. M., Critch, J. N., & Guyatt, G. H. (2010). The minimal detectable change cannot reliably replace the minimal important difference. Journal of Clinical Epidemiology, 63 (1), 28–36. https://doi.org/10.1016/j.jclinepi.2009.01.024",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Frost Multidimensional Perfectionism Scale (FMPS) PDF",
+   "source_url": null,
+   "sha256": "0b6cbcd06c2cf4ff99ed1432c1be6b1d187d714e3d370992d67bb611ca82eec3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0b6cbcd06c2cf4ff99ed1432c1be6b1d187d714e3d370992d67bb611ca82eec3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Rosenberg Self-Esteem Scale (RSES)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3574e56f18e4db9fe3a3eb725ec9038038efb2e68c729ee7d6ba3be25d6d22af",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3574e56f18e4db9fe3a3eb725ec9038038efb2e68c729ee7d6ba3be25d6d22af.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "53126ca8a3e0e9ebcfe0a8d0a0c87cfc017fc34531ffbc8bbdd0a8bb4d02a667",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/53126ca8a3e0e9ebcfe0a8d0a0c87cfc017fc34531ffbc8bbdd0a8bb4d02a667.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Sample Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "40508a9736e24398adde42ceb3dfc3bbdcc04a0568426351615b066a0a3d4bd7",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/40508a9736e24398adde42ceb3dfc3bbdcc04a0568426351615b066a0a3d4bd7.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FMPS Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "29c52739e4e41976ed5c791cfc9f8740fe4af3be15f18f1cfad524599180cd7a",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/29c52739e4e41976ed5c791cfc9f8740fe4af3be15f18f1cfad524599180cd7a.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FMPS Total and Subscale Scores",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "05be916f512a6392921eb973d0df9839006a419371a0aa21d8a287c2ddce32be",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/05be916f512a6392921eb973d0df9839006a419371a0aa21d8a287c2ddce32be.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FMPS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c7ece9cd1628a934a79ab9fcdd6e74f841c933fd594536cb219d301deb3b239b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c7ece9cd1628a934a79ab9fcdd6e74f841c933fd594536cb219d301deb3b239b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FMPS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "01e208dd0a60a765d095bde2cd162dc4740e3be0b2ebc70bb4a353289b04a0b3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/01e208dd0a60a765d095bde2cd162dc4740e3be0b2ebc70bb4a353289b04a0b3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "FMPS Multiple Administration Graph",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Frost Multidimensional Perfectionism Scale (FMPS) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "FMPS Review",
+   "source_url": null,
+   "sha256": "fb7b64dda356df6b6a8bbfeca90f33acfd6da173a8a29174b4bc22d0adc7264d",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/fb7b64dda356df6b6a8bbfeca90f33acfd6da173a8a29174b4bc22d0adc7264d.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "08b22d70d0b56d9164190642be7e4b826ca661d514bfed0e587a07f868950ca7",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/08b22d70d0b56d9164190642be7e4b826ca661d514bfed0e587a07f868950ca7.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 35
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/978a6d372863f71c2a9fefa4e97b8945e5c1918c5bec9dc10be8bff8df720c35.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "08b22d70d0b56d9164190642be7e4b826ca661d514bfed0e587a07f868950ca7",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/08b22d70d0b56d9164190642be7e4b826ca661d514bfed0e587a07f868950ca7.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 6,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_3",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "fb7b64dda356df6b6a8bbfeca90f33acfd6da173a8a29174b4bc22d0adc7264d",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/fb7b64dda356df6b6a8bbfeca90f33acfd6da173a8a29174b4bc22d0adc7264d.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf",
+    "FMPS Review"
+   ],
+   "page_count": 32,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "b5135621c9e57612f28d35a92f43255bf2537b77ddf4eae90e72b7973726bfaf",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "total_perfectionism",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "concern_mistakes_doubts",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "parental_expectations_criticism",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "personal_standards",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "organisation",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "total_perfectionism",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "concern_mistakes_doubts",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "parental_expectations_criticism",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "personal_standards",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "organisation",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:51:37.992736+00:00",
+  "raw_extraction_sha256": "fbb78a823018f664d404aa15ff50a8db959d9a39a19c627f978fce63e4b68842",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Adolescent"
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": null,
+    "title": "OCD assessment questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Obsessive compulsive assessment"
+   },
+   {
+    "url": null,
+    "title": "Eating behaviour assessment"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Global self-esteem scale"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "FMPS Review"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": "https://doi.org/10.1007/BF01172967",
+    "title": "https://doi.org/10.1007/BF01172967"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.cpr.2010.04.009",
+    "title": "https://doi.org/10.1016/j.cpr.2010.04.009"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.brat.2014.09.009",
+    "title": "https://doi.org/10.1016/j.brat.2014.09.009"
+   },
+   {
+    "url": "https://doi.org/10.1080/16506073.2020.1790645",
+    "title": "https://doi.org/10.1080/16506073.2020.1790645"
+   },
+   {
+    "url": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C",
+    "title": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.brat.2017.05.015",
+    "title": "https://doi.org/10.1016/j.brat.2017.05.015"
+   },
+   {
+    "url": "https://doi.org/10.1017/S1352465816000618",
+    "title": "https://doi.org/10.1017/S1352465816000618"
+   },
+   {
+    "url": "https://doi.org/10.1016/S0005-7967(01)00059-6",
+    "title": "https://doi.org/10.1016/S0005-7967(01)00059-6"
+   },
+   {
+    "url": "https://doi.org/10.1037/pas0000137",
+    "title": "https://doi.org/10.1037/pas0000137"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1742-9544.2010.00010.x",
+    "title": "https://doi.org/10.1111/j.1742-9544.2010.00010.x"
+   },
+   {
+    "url": "https://doi.org/10.1016/S0191-8869(97)00207-9",
+    "title": "https://doi.org/10.1016/S0191-8869(97)00207-9"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jclinepi.2009.01.024",
+    "title": "https://doi.org/10.1016/j.jclinepi.2009.01.024"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,678 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total Score",
+   "minimum": 5.0,
+   "maximum": 25.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 5.0,
+    "maximum": 25.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total Score (sum of all 5 items, range 5–25)",
+     "y": 412.5,
+     "url": null,
+     "sha256": "3179a556168bf7361ade7ed7c72b366b751f977996ef017fb078e6737563edad"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "f5d148de33d8ea0cbd2f12966ea90ad7b594fa7ce55a2270cde4eea1385b14c4",
+   "pageCount": 2,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "df5d148de33d8_p1",
+   "documentSha256": "f5d148de33d8ea0cbd2f12966ea90ad7b594fa7ce55a2270cde4eea1385b14c4",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "df5d148de33d8_p1_chart_1"
+   ],
+   "tableIds": [
+    "df5d148de33d8_p1_table_1"
+   ],
+   "sectionIds": [
+    "df5d148de33d8_p1_section_1",
+    "df5d148de33d8_p1_section_2",
+    "df5d148de33d8_p1_section_3",
+    "df5d148de33d8_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "df5d148de33d8_p2",
+   "documentSha256": "f5d148de33d8ea0cbd2f12966ea90ad7b594fa7ce55a2270cde4eea1385b14c4",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df5d148de33d8_p2_table_1"
+   ],
+   "sectionIds": [
+    "df5d148de33d8_p2_section_1",
+    "df5d148de33d8_p2_section_2"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "df5d148de33d8_p1_section_1",
+   "pageId": "df5d148de33d8_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5d148de33d8_p1_section_2",
+   "pageId": "df5d148de33d8_p1",
+   "title": "K5 Psychological Distress",
+   "type": "source_heading",
+   "bboxPt": [
+    228.31599,
+    285.2005,
+    378.37598,
+    297.2005
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5d148de33d8_p1_section_3",
+   "pageId": "df5d148de33d8_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    550.85974,
+    124.57652,
+    564.85974
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5d148de33d8_p1_section_4",
+   "pageId": "df5d148de33d8_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    633.84564,
+    290.26636,
+    647.84564
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5d148de33d8_p2_section_1",
+   "pageId": "df5d148de33d8_p2",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    336.92838,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df5d148de33d8_p2_section_2",
+   "pageId": "df5d148de33d8_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3464,
+    311.73459,
+    151.8204,
+    325.73459
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "df5d148de33d8_p1_chart_1",
+   "title": "K5 Psychological Distress",
+   "type": "vertical_bar",
+   "bboxPt": [
+    165.346,
+    311.103,
+    460.346,
+    532.543
+   ],
+   "widthPt": 295.0,
+   "heightPt": 221.44,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      165.34599,
+      495.97311,
+      458.34601,
+      532.54297
+     ],
+     "colour": "#008000",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      165.34599,
+      437.45312,
+      458.34601,
+      495.97302
+     ],
+     "colour": "#ffff00",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      165.34599,
+      393.5632,
+      458.34601,
+      437.453
+     ],
+     "colour": "#ffa500",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      165.34599,
+      313.10278,
+      458.34601,
+      393.56302
+     ],
+     "colour": "#ff0000",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 5.0,
+      "positionPt": 157.565995,
+      "text": "5",
+      "colour": "#333333"
+     }
+    ],
+    "title": "This client's total score falls within the High range (76th percentile). Individuals scoring in this",
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 20.0,
+      "positionPt": 313.87616,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 19.0,
+      "positionPt": 328.50626,
+      "text": "19",
+      "colour": "#333333"
+     },
+     {
+      "value": 18.0,
+      "positionPt": 343.13635,
+      "text": "18",
+      "colour": "#333333"
+     },
+     {
+      "value": 17.0,
+      "positionPt": 357.76605,
+      "text": "17",
+      "colour": "#333333"
+     },
+     {
+      "value": 16.0,
+      "positionPt": 372.39615,
+      "text": "16",
+      "colour": "#333333"
+     },
+     {
+      "value": 15.0,
+      "positionPt": 387.02625,
+      "text": "15",
+      "colour": "#333333"
+     },
+     {
+      "value": 14.0,
+      "positionPt": 401.65634,
+      "text": "14",
+      "colour": "#333333"
+     },
+     {
+      "value": 13.0,
+      "positionPt": 416.28644,
+      "text": "13",
+      "colour": "#333333"
+     },
+     {
+      "value": 12.0,
+      "positionPt": 430.90634,
+      "text": "12",
+      "colour": "#333333"
+     },
+     {
+      "value": 11.0,
+      "positionPt": 445.53644,
+      "text": "11",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 460.16614,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 9.0,
+      "positionPt": 474.79623,
+      "text": "9",
+      "colour": "#333333"
+     },
+     {
+      "value": 8.0,
+      "positionPt": 489.42633,
+      "text": "8",
+      "colour": "#333333"
+     },
+     {
+      "value": 7.0,
+      "positionPt": 504.05643,
+      "text": "7",
+      "colour": "#333333"
+     },
+     {
+      "value": 6.0,
+      "positionPt": 518.68652,
+      "text": "6",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 533.31622,
+      "text": "5",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 5.0,
+    "maximum": 20.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#e57272",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4966102036196472,
+     "barThicknessPt": 93.0,
+     "fill": "#e57373",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#e57272"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#e57272"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#e57272"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#e57272"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#e57272"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "df5d148de33d8_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 175,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "K5 Psychological Distress",
+     "bboxPt": [
+      228.31599,
+      285.2005,
+      378.37598,
+      297.2005
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Low",
+     "bboxPt": [
+      439.00699,
+      506.98621,
+      457.34698,
+      516.98621
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      415.10699,
+      459.4462,
+      457.34695,
+      469.4462
+     ],
+     "colour": "#f1c40f",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "High",
+     "bboxPt": [
+      436.78601,
+      408.23621,
+      457.34601,
+      418.23621
+     ],
+     "colour": "#ffa500",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Very High",
+     "bboxPt": [
+      413.44601,
+      346.06622,
+      457.34601,
+      356.06622
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Interpretation",
+     "bboxPt": [
+      34.3465,
+      550.85974,
+      124.57652,
+      564.85974
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "range are likely experiencing high levels of psychological distress. They are likely to be",
+     "bboxPt": [
+      91.0394,
+      582.20404,
+      512.86737,
+      593.20404
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "K5 Scoring & Interpretation",
+    "text": "A total score is calculated by summing all items for a possible range of 5 to 25. Higher scores indicate higher levels of psychological distress.\n\nFour categories of psychological distress were outlined by the Australian Institute of Health and Welfare (AIHW, 2009), and include:\nLow (5–7)\nModerate (8–11)\nHigh (12–14)\nVery High (15–25)\n\nA normative percentile is calculated, contextualising the responses in comparison to typical patterns of responding among Aboriginal and Torres Strait Islanders (Brinkley et al., 2021; Cunningham et al., 2012). For example, a percentile of 50 indicates average (and healthy) levels of distress, while a percentile of 90 indicates the respondent has more distress than 90% of the indigenous population.\n\nA cut off score of 11 and above is indicative of clinically significant psychological distress, such as depression or anxiety symptoms (Brinckley, 2021).\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "f5d148de33d8ea0cbd2f12966ea90ad7b594fa7ce55a2270cde4eea1385b14c4",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the K-5, \nsee here\n.\nA total score is calculated by summing all items for a possible range of 5 to 25. Higher scores\nindicate higher levels of psychological distress.\nFour categories of psychological distress were outlined by the Australian Institute of Health and\nWelfare (AIHW, 2009), and include:\n- Low (5–7)\n- Moderate (8–11)",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "f5d148de33d8ea0cbd2f12966ea90ad7b594fa7ce55a2270cde4eea1385b14c4",
+    "pageNumber": 2,
+    "text": "- High (12–14)\n- Very High (15–25)\nA normative percentile is calculated, contextualising the responses in comparison to typical\npatterns of responding among Aboriginal and Torres Strait Islanders (Brinkley et al., 2021;\nCunningham et al., 2012). For example, a percentile of 50 indicates average (and healthy) levels\nof distress, while a percentile of 90 indicates the respondent has more distress than 90% of the\nindigenous population.\nA cut off score of 11 and above is indicative of clinically significant psychological distress, such\nas depression or anxiety symptoms (Brinckley, 2021).",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A normative percentile is calculated, contextualising the responses in comparison to typical patterns of responding among Aboriginal and Torres Strait Islanders (Brinkley et al., 2021; Cunningham et al., 2012).",
+   "For example, a percentile of 50 indicates average (and healthy) levels of distress, while a percentile of 90 indicates the respondent has more distress than 90% of the indigenous population.",
+   "A cut off score of 11 and above is indicative of clinically significant psychological distress, such as depression or anxiety symptoms (Brinckley, 2021)."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 43
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

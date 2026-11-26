@@ -1,0 +1,527 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openmind.local/schemas/report-visual-spec/1.0.0",
+  "title": "Assessment report visual specification",
+  "description": "Source-bound, executable description of an assessment report. Questionnaire and scoring rules remain in the referenced assessment definition; this document specifies how their results are presented.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "assessmentId",
+    "title",
+    "status",
+    "definitionRef",
+    "sources",
+    "page",
+    "theme",
+    "metricBindings",
+    "variants",
+    "sections",
+    "charts",
+    "tables",
+    "interpretationRules",
+    "assets",
+    "validation",
+    "exceptions"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "report-visual-spec/1.0.0" },
+    "assessmentId": { "$ref": "#/$defs/id" },
+    "title": { "type": "string", "minLength": 1 },
+    "status": {
+      "enum": [
+        "draft_extracted",
+        "source_validated",
+        "renderer_validated",
+        "clinically_approved"
+      ]
+    },
+    "definitionRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assessmentId", "definitionVersion", "questionnaireItemCount", "requiredRuleIds"],
+      "properties": {
+        "assessmentId": { "$ref": "#/$defs/id" },
+        "definitionVersion": { "type": "string", "minLength": 1 },
+        "questionnaireItemCount": { "type": "integer", "minimum": 0 },
+        "requiredRuleIds": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/id" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "role", "url", "sha256", "pageCount", "retrievedAt", "usage"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "role": {
+            "enum": [
+              "sample_report",
+              "blank_questionnaire",
+              "scoring_guidance",
+              "assessment_page",
+              "supporting_image"
+            ]
+          },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "archivePath": { "type": ["string", "null"] },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "pageCount": { "type": ["integer", "null"], "minimum": 1 },
+          "retrievedAt": { "type": "string", "format": "date-time" },
+          "usage": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["size", "orientation", "widthPt", "heightPt", "marginsPt", "header", "footer"],
+      "properties": {
+        "size": { "enum": ["A4", "Letter", "custom"] },
+        "orientation": { "enum": ["portrait", "landscape"] },
+        "widthPt": { "type": "number", "exclusiveMinimum": 0 },
+        "heightPt": { "type": "number", "exclusiveMinimum": 0 },
+        "marginsPt": { "$ref": "#/$defs/edges" },
+        "header": { "$ref": "#/$defs/headerFooter" },
+        "footer": { "$ref": "#/$defs/headerFooter" }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fontFamily", "baseFontSizePt", "textColor", "headingColor", "sectionHeader", "table", "chartPalette"],
+      "properties": {
+        "fontFamily": { "type": "string", "minLength": 1 },
+        "baseFontSizePt": { "type": "number", "exclusiveMinimum": 0 },
+        "textColor": { "$ref": "#/$defs/color" },
+        "headingColor": { "$ref": "#/$defs/color" },
+        "sectionHeader": { "$ref": "#/$defs/style" },
+        "table": { "$ref": "#/$defs/style" },
+        "chartPalette": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/color" }
+        }
+      }
+    },
+    "metricBindings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "ruleId", "label", "calculation", "minimum", "maximum", "unit", "precision", "missingPolicy"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "ruleId": { "$ref": "#/$defs/id" },
+          "label": { "type": "string", "minLength": 1 },
+          "calculation": { "type": "string", "minLength": 1 },
+          "minimum": { "type": "number" },
+          "maximum": { "type": "number" },
+          "unit": { "type": "string", "minLength": 1 },
+          "precision": { "type": "integer", "minimum": 0, "maximum": 6 },
+          "missingPolicy": { "enum": ["withhold", "show_gap", "not_applicable"] }
+        }
+      }
+    },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "when", "chartIds", "sectionIds", "changePolicy"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "when": { "$ref": "#/$defs/condition" },
+          "chartIds": { "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true },
+          "sectionIds": { "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true },
+          "changePolicy": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["method", "reliableChange", "highlightThresholdCrossing"],
+            "properties": {
+              "method": { "enum": ["none", "raw_difference", "percent_difference", "reliable_change"] },
+              "reliableChange": { "type": ["number", "null"] },
+              "highlightThresholdCrossing": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "order", "title", "pagePlacement", "dataBindings", "style"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "type": {
+            "enum": [
+              "patient_metadata",
+              "score_summary",
+              "chart",
+              "interpretation",
+              "scoring_information",
+              "response_table",
+              "data_table",
+              "image_table",
+              "references",
+              "page_break"
+            ]
+          },
+          "order": { "type": "integer", "minimum": 1 },
+          "title": { "type": ["string", "null"] },
+          "pagePlacement": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["preferredPage", "keepTogether", "startOnNewPage", "sourceBBoxPt"],
+            "properties": {
+              "preferredPage": { "type": ["integer", "null"], "minimum": 1 },
+              "keepTogether": { "type": "boolean" },
+              "startOnNewPage": { "type": "boolean" },
+              "sourceBBoxPt": { "anyOf": [{ "$ref": "#/$defs/bbox" }, { "type": "null" }] }
+            }
+          },
+          "dataBindings": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true
+          },
+          "chartId": { "type": "string" },
+          "tableId": { "type": "string" },
+          "style": { "$ref": "#/$defs/style" }
+        }
+      }
+    },
+    "charts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/chart" }
+    },
+    "tables": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/table" }
+    },
+    "interpretationRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "when", "template", "sourceRef", "reviewStatus"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "when": { "$ref": "#/$defs/condition" },
+          "template": { "type": "string", "minLength": 1 },
+          "sourceRef": { "type": "string", "minLength": 1 },
+          "reviewStatus": { "enum": ["extracted", "source_validated", "clinical_approved"] }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "role", "sha256", "mimeType", "path", "sourceRef", "runtimeUsage"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "role": { "enum": ["logo", "reference_chart", "image_table", "decoration", "source_page"] },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "mimeType": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "minLength": 1 },
+          "sourceRef": { "type": "string", "minLength": 1 },
+          "runtimeUsage": { "enum": ["reference_only", "render", "ocr_required"] }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expectedPageCount", "expectedFirstVisitChartCount", "expectedRepeatVisitChartCount", "scoreChecks", "visualChecks", "fullSourceCoverage", "rendererEquivalent", "clinicalApproved"],
+      "properties": {
+        "expectedPageCount": { "type": "integer", "minimum": 1 },
+        "expectedFirstVisitChartCount": { "type": "integer", "minimum": 0 },
+        "expectedRepeatVisitChartCount": { "type": "integer", "minimum": 0 },
+        "scoreChecks": { "type": "array", "items": { "$ref": "#/$defs/check" } },
+        "visualChecks": { "type": "array", "items": { "$ref": "#/$defs/check" } },
+        "fullSourceCoverage": { "type": "boolean" },
+        "rendererEquivalent": { "type": "boolean" },
+        "clinicalApproved": { "type": "boolean" }
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "severity", "message", "sourceRef", "requiredAction"],
+        "properties": {
+          "code": { "$ref": "#/$defs/id" },
+          "severity": { "enum": ["info", "warning", "blocking"] },
+          "message": { "type": "string", "minLength": 1 },
+          "sourceRef": { "type": ["string", "null"] },
+          "requiredAction": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-zA-Z][a-zA-Z0-9_.:-]*$" },
+    "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?$" },
+    "bbox": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "number" },
+        { "type": "number" },
+        { "type": "number" },
+        { "type": "number" }
+      ],
+      "items": false,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "edges": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["top", "right", "bottom", "left"],
+      "properties": {
+        "top": { "type": "number", "minimum": 0 },
+        "right": { "type": "number", "minimum": 0 },
+        "bottom": { "type": "number", "minimum": 0 },
+        "left": { "type": "number", "minimum": 0 }
+      }
+    },
+    "headerFooter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["heightPt", "elements"],
+      "properties": {
+        "heightPt": { "type": "number", "minimum": 0 },
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "binding", "alignment"],
+            "properties": {
+              "type": { "enum": ["text", "image", "page_number"] },
+              "binding": { "type": "string" },
+              "alignment": { "enum": ["left", "center", "right"] }
+            }
+          }
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fontFamily": { "type": "string" },
+        "fontSizePt": { "type": "number", "exclusiveMinimum": 0 },
+        "fontWeight": { "enum": ["normal", "bold"] },
+        "textColor": { "$ref": "#/$defs/color" },
+        "backgroundColor": { "$ref": "#/$defs/color" },
+        "borderColor": { "$ref": "#/$defs/color" },
+        "borderWidthPt": { "type": "number", "minimum": 0 },
+        "paddingPt": { "type": "number", "minimum": 0 },
+        "alignment": { "enum": ["left", "center", "right"] }
+      }
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expression", "description"],
+      "properties": {
+        "expression": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 }
+      }
+    },
+    "axis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimum", "maximum", "tickInterval", "title", "scale", "grid", "labels"],
+      "properties": {
+        "minimum": { "type": "number" },
+        "maximum": { "type": "number" },
+        "tickInterval": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "title": { "type": ["string", "null"] },
+        "scale": { "enum": ["linear", "log", "category", "date"] },
+        "grid": { "type": "boolean" },
+        "labels": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "band": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to", "includeFrom", "includeTo", "label", "fill", "opacity", "classificationRule"],
+      "properties": {
+        "from": { "type": "number" },
+        "to": { "type": "number" },
+        "includeFrom": { "type": "boolean" },
+        "includeTo": { "type": "boolean" },
+        "label": { "type": "string" },
+        "fill": { "$ref": "#/$defs/color" },
+        "opacity": { "type": "number", "minimum": 0, "maximum": 1 },
+        "classificationRule": { "type": ["string", "null"] }
+      }
+    },
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "metricId", "mark", "color", "lineWidthPt", "marker", "valueLabel"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string" },
+        "metricId": { "$ref": "#/$defs/id" },
+        "mark": { "enum": ["bar", "line", "point", "area"] },
+        "color": { "$ref": "#/$defs/color" },
+        "lineWidthPt": { "type": "number", "minimum": 0 },
+        "marker": { "enum": ["none", "circle", "square", "triangle"] },
+        "valueLabel": { "type": "boolean" }
+      }
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "value", "label", "color", "lineStyle"],
+      "properties": {
+        "type": { "enum": ["threshold_line", "text", "value", "callout"] },
+        "value": { "type": ["number", "string", "null"] },
+        "label": { "type": "string" },
+        "color": { "$ref": "#/$defs/color" },
+        "lineStyle": { "enum": ["none", "solid", "dashed", "dotted"] }
+      }
+    },
+    "chart": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "variantId", "type", "sourceRef", "sourceBBoxPt", "widthPt", "heightPt", "xAxis", "yAxis", "series", "bands", "annotations", "legend", "background", "dataPolicy"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "type": "string" },
+        "variantId": { "$ref": "#/$defs/id" },
+        "type": {
+          "enum": [
+            "vertical_bar",
+            "horizontal_bar",
+            "stacked_bar",
+            "line",
+            "multi_line",
+            "area",
+            "scatter",
+            "radar",
+            "distribution",
+            "range_band",
+            "profile",
+            "table_only",
+            "image_only"
+          ]
+        },
+        "sourceRef": { "type": "string", "minLength": 1 },
+        "sourceBBoxPt": { "anyOf": [{ "$ref": "#/$defs/bbox" }, { "type": "null" }] },
+        "widthPt": { "type": "number", "exclusiveMinimum": 0 },
+        "heightPt": { "type": "number", "exclusiveMinimum": 0 },
+        "xAxis": { "$ref": "#/$defs/axis" },
+        "yAxis": { "$ref": "#/$defs/axis" },
+        "series": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/series" } },
+        "bands": { "type": "array", "items": { "$ref": "#/$defs/band" } },
+        "gradient": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["axis", "from", "to", "stops"],
+          "properties": {
+            "axis": { "enum": ["x", "y"] },
+            "from": { "type": "number" },
+            "to": { "type": "number" },
+            "stops": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["value", "color", "opacity"],
+                "properties": {
+                  "value": { "type": "number" },
+                  "color": { "$ref": "#/$defs/color" },
+                  "opacity": { "type": "number", "minimum": 0, "maximum": 1 }
+                }
+              }
+            }
+          }
+        },
+        "annotations": { "type": "array", "items": { "$ref": "#/$defs/annotation" } },
+        "legend": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["show", "position"],
+          "properties": {
+            "show": { "type": "boolean" },
+            "position": { "enum": ["none", "top", "right", "bottom", "left"] }
+          }
+        },
+        "background": { "$ref": "#/$defs/color" },
+        "dataPolicy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["xBinding", "missingValue", "sampleValuesReusable"],
+          "properties": {
+            "xBinding": { "enum": ["category", "administration_date", "metric_value"] },
+            "missingValue": { "enum": ["gap", "withhold_chart", "zero"] },
+            "sampleValuesReusable": { "const": false }
+          }
+        }
+      }
+    },
+    "table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "title", "sourceRef", "columns", "rowBinding", "staticRows", "imageAssetId", "ocrStatus", "style"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "type": { "enum": ["patient_metadata", "score_summary", "domain_summary", "responses", "interpretation_lookup", "image_only"] },
+        "title": { "type": ["string", "null"] },
+        "sourceRef": { "type": "string" },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label", "binding", "widthPercent", "alignment"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "label": { "type": "string" },
+              "binding": { "type": ["string", "null"] },
+              "widthPercent": { "type": "number", "minimum": 0, "maximum": 100 },
+              "alignment": { "enum": ["left", "center", "right"] }
+            }
+          }
+        },
+        "rowBinding": { "type": ["string", "null"] },
+        "staticRows": { "type": "array", "items": { "type": "array", "items": { "type": ["string", "number", "boolean", "null"] } } },
+        "imageAssetId": { "type": ["string", "null"] },
+        "ocrStatus": { "enum": ["not_applicable", "not_started", "extracted_requires_review", "verified"] },
+        "style": { "$ref": "#/$defs/style" }
+      }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "expected", "observed", "sourceRef"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "status": { "enum": ["pass", "fail", "pending"] },
+        "expected": {},
+        "observed": {},
+        "sourceRef": { "type": "string" }
+      }
+    }
+  }
+}

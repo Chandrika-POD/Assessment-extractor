@@ -1,0 +1,669 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_total_raw",
+   "ruleId": "total_raw",
+   "label": "total_raw",
+   "minimum": 0,
+   "maximum": 60,
+   "calculation": {
+    "id": "total_raw",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1,
+    "value_field": "score",
+    "minimum": 0,
+    "maximum": 60,
+    "severity_bands": [
+     {
+      "label": "Normal / no symptoms",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 6
+     },
+     {
+      "label": "Mild",
+      "minimum_inclusive": 7,
+      "maximum_inclusive": 19
+     },
+     {
+      "label": "Moderate",
+      "minimum_inclusive": 20,
+      "maximum_inclusive": 30
+     },
+     {
+      "label": "Severe",
+      "minimum_inclusive": 31,
+      "maximum_inclusive": 39
+     },
+     {
+      "label": "Extremely severe",
+      "minimum_inclusive": 40,
+      "maximum_inclusive": 60
+     }
+    ]
+   },
+   "status": "requires_review",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d43e0e81f685a_p1",
+   "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d43e0e81f685a_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d43e0e81f685a_p1_section_1",
+    "d43e0e81f685a_p1_section_2",
+    "d43e0e81f685a_p1_section_3",
+    "d43e0e81f685a_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "d43e0e81f685a_p2",
+   "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d43e0e81f685a_p2_section_1",
+    "d43e0e81f685a_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "d43e0e81f685a_p3",
+   "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d43e0e81f685a_p3_table_1"
+   ],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d43e0e81f685a_p4",
+   "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d43e0e81f685a_p4_table_1"
+   ],
+   "sectionIds": [
+    "d43e0e81f685a_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d43e0e81f685a_p1_section_1",
+   "pageId": "d43e0e81f685a_p1",
+   "title": "Assessment Information",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    176.72569,
+    237.39752,
+    196.00369
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43e0e81f685a_p1_section_2",
+   "pageId": "d43e0e81f685a_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    74.03149,
+    273.10361,
+    124.59951,
+    292.38162
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43e0e81f685a_p1_section_3",
+   "pageId": "d43e0e81f685a_p1",
+   "title": "Interpretive Text",
+   "type": "interpretation",
+   "bboxPt": [
+    74.03149,
+    338.30048,
+    182.95149,
+    357.57849
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43e0e81f685a_p1_section_4",
+   "pageId": "d43e0e81f685a_p1",
+   "title": "Total MADRS Score",
+   "type": "source_heading",
+   "bboxPt": [
+    241.6915,
+    408.10324,
+    354.37149,
+    424.62723
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43e0e81f685a_p2_section_1",
+   "pageId": "d43e0e81f685a_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    329.95145,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43e0e81f685a_p2_section_2",
+   "pageId": "d43e0e81f685a_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    428.56104,
+    191.50549,
+    447.83905
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d43e0e81f685a_p4_section_1",
+   "pageId": "d43e0e81f685a_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d43e0e81f685a_p1_chart_1",
+   "title": "Total MADRS Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    105.031,
+    435.943,
+    510.031,
+    702.943
+   ],
+   "widthPt": 405.0,
+   "heightPt": 267.0,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 40.0,
+      "positionPt": 437.06323499999996,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 35.0,
+      "positionPt": 470.18823499999996,
+      "text": "35",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 503.31323499999996,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 25.0,
+      "positionPt": 536.443235,
+      "text": "25",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 569.563235,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 15.0,
+      "positionPt": 602.683225,
+      "text": "15",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 635.813235,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 668.943235,
+      "text": "5",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 702.063235,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Total",
+     "colour": "#82dfaa",
+     "ruleIdCandidate": "total_raw",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.49753086419753084,
+     "barThicknessPt": 103.00000000000003,
+     "fill": "#82e0aa",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#82dfaa"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#82dfaa"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#82dfaa"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#82dfaa"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#82dfaa"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_total_raw",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d43e0e81f685a_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 379,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Total MADRS Score",
+     "bboxPt": [
+      241.6915,
+      408.10324,
+      354.37149,
+      424.62723
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Normal",
+     "bboxPt": [
+      470.81149,
+      687.19324,
+      503.03146,
+      700.93323
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild",
+     "bboxPt": [
+      484.70151,
+      641.48328,
+      503.03149,
+      655.22327
+     ],
+     "colour": "#0000ff",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      460.7915,
+      555.35327,
+      503.03146,
+      569.09326
+     ],
+     "colour": "#f1c40f",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      471.3515,
+      482.48126,
+      503.03149,
+      496.22125
+     ],
+     "colour": "#ec7063",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Extremely Severe",
+     "bboxPt": [
+      424.12149,
+      422.85626,
+      503.03146,
+      436.59625
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Total",
+     "bboxPt": [
+      287.45367,
+      704.34174,
+      312.88831,
+      729.77637
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.000003814697266,
+     "direction": [
+      0.70711,
+      -0.70711
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "A plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [
+   {
+    "ruleId": "total_raw",
+    "severityBands": [
+     {
+      "label": "Normal / no symptoms",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 6
+     },
+     {
+      "label": "Mild",
+      "minimum_inclusive": 7,
+      "maximum_inclusive": 19
+     },
+     {
+      "label": "Moderate",
+      "minimum_inclusive": 20,
+      "maximum_inclusive": 30
+     },
+     {
+      "label": "Severe",
+      "minimum_inclusive": 31,
+      "maximum_inclusive": 39
+     },
+     {
+      "label": "Extremely severe",
+      "minimum_inclusive": 40,
+      "maximum_inclusive": 60
+     }
+    ]
+   }
+  ],
+  "sourceGuidance": [
+   {
+    "title": "MADRS Scoring & Interpretation",
+    "text": "All items are summed to provide an overall score (from 0 to 60), with higher scores reflecting more severe depressive symptoms. A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):\n0 – 6 = normal / no symptoms\n7 – 19 = mild\n20 – 30 = moderate\n31 – 39 = severe\n40 – 60 = extremely severe\n\nUpon multiple administrations of the MADRS, if the client improves by 6 points it will be noted as ‘clinically meaningful change’ or if the client improves by 12 points it will be noted as ‘clinically substantial change’ (Turkoz et al., 2020).\n\nA plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs. Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot.\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "43e0e81f685a55d1baeb67f1e07ff77882fc57a95bba0ae98eaa0ef3d7158121",
+    "pageNumber": 2,
+    "text": "All items are summed to provide an overall score (from 0 to 60), with\nhigher scores reflecting more severe depressive symptoms. A\ndepression severity descriptor is also provided (Müller et al., 2003;\nSnaith et al., 1986; Thase et al., 2021):\n0 - 6 = normal / no symptoms\n7 - 19 = mild \n20 - 30 = moderate\n31 - 39 = severe\n40 - 60 = extremely severe\nUpon multiple administrations of the MADRS, if the client improves\nby 6 points it will be noted as 'clinically meaningful change' or if the\nclient improves by 12 points it will be noted as 'clinically substantial\nchange' (Turkoz et al., 2020). \nA plot is displayed for the first administration or multiple\nadministrations of the MADRS with dotted lines indicating the\nseverity cutoffs. Although the maximum score of the MADRS is 60,\nthe y-axis may be truncated (dependent upon the client's score/s) to\nenhance the readability of the plot. ",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A depression severity descriptor is also provided (Müller et al., 2003; Snaith et al., 1986; Thase et al., 2021):",
+   "A plot is displayed for the first administration or multiple administrations of the MADRS with dotted lines indicating the severity cutoffs.",
+   "Although the maximum score of the MADRS is 60, the y-axis may be truncated (dependent upon the client’s score/s) to enhance the readability of the plot."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 65
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

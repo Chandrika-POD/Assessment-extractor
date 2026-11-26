@@ -1,0 +1,355 @@
+{
+ "version": "2.0.0-draft.1",
+ "status": "draft_requires_clinical_review",
+ "clinical_scoring_enabled": false,
+ "metrics": [
+  {
+   "rule_id": "source_draft_1",
+   "label": "Harmful Substance Use raw spectrum score",
+   "minimum": 9.0,
+   "maximum": 45.0,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/0",
+   "item_ids": [
+    "Q75",
+    "Q76",
+    "Q77",
+    "Q78",
+    "Q79",
+    "Q80",
+    "Q81",
+    "Q82",
+    "Q83"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  }
+ ],
+ "charts": [
+  {
+   "id": "source_draft_1",
+   "title": "Harmful Substance Use raw spectrum score",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "source_draft_1",
+     "label": "Harmful Substance Use raw spectrum score",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 9.0,
+   "maximum": 45.0,
+   "axis_unit": "score"
+  }
+ ],
+ "comparisons": {
+  "reference_visits": [
+   "previous",
+   "baseline"
+  ],
+  "delta_formula": "current_minus_reference",
+  "deduplicate_same_reference_visit": true,
+  "require_same_assessment_definition_language_and_scoring_version": true,
+  "missing_result": "withhold_comparison",
+  "single_visit": "show_current_scores_only",
+  "date_source": "saved_session_completion_timestamp",
+  "require_compatible_respondent_context": true,
+  "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+  "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+  "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+ },
+ "percentiles": {
+  "enabled": false,
+  "reason": "verified_lookup_not_available"
+ },
+ "interpretation": {
+  "method": "deterministic_templates",
+  "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+  "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+  "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+  "clinical_significance": "not_implemented_requires_review",
+  "diagnosis": "not_inferred",
+  "severity_source": "not_compiled",
+  "overall_total": null,
+  "combine_metrics_into_new_total": false,
+  "source_guidance_ref": "/scoring/source_guidance",
+  "source_guidance_use": "reference_text_for_review_not_executable_rules",
+  "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+  "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+  "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+ },
+ "source_evidence": {
+  "questionnaire_sha256": "5457eb65feec574de96b994fe151cbfb12bfe60cc15d70839b837886780428be",
+  "guidance_titles": [
+   "MAPsy Scoring",
+   "MAPsy Percentiles",
+   "Why are the percentiles based on a mental health sample rather than the general community?",
+   "Why does the Harmful Substance Use spectrum sometimes show no score?"
+  ]
+ },
+ "mode": "numeric_scores",
+ "required_context": [],
+ "coverage": {
+  "questionnaire_available": true,
+  "numeric_rule_count": 1,
+  "rules_included": [
+   "source_draft_1"
+  ],
+  "raw_calculation_status": "partial",
+  "interpretation_status": "not_compiled",
+  "full_source_coverage_verified": false,
+  "clinical_review_complete": false,
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "MAPsy other spectra, clusters, facets and disorder-scale mappings have not been recovered as a verified executable key. Only Harmful Substance Use raw arithmetic is implemented; this is partial coverage."
+  ],
+  "review_issue_codes": [
+   "selection_and_branching_need_review",
+   "scoring_not_structured",
+   "independent_review_pending",
+   "source_item_count_differs"
+  ],
+  "reference_guidance_only": false,
+  "missing_direction_rule_ids": [
+   "source_draft_1"
+  ]
+ },
+ "sections": [
+  {
+   "id": "patient_details",
+   "enabled": true,
+   "source": "saved_patient_and_session"
+  },
+  {
+   "id": "assessment_summary",
+   "enabled": true,
+   "source": "assessment_and_reporting_coverage"
+  },
+  {
+   "id": "results",
+   "enabled": true,
+   "source": "reporting.metrics"
+  },
+  {
+   "id": "score_charts",
+   "enabled": true,
+   "source": "reporting.charts",
+   "single_visit": "range_bar",
+   "repeated_visits": "line_chart"
+  },
+  {
+   "id": "comparisons",
+   "enabled": true,
+   "source": "compatible_saved_sessions"
+  },
+  {
+   "id": "protocol_result",
+   "enabled": false,
+   "source": "scoring.protocol"
+  },
+  {
+   "id": "paired_profile",
+   "enabled": false,
+   "source": "scoring.paired_profile"
+  },
+  {
+   "id": "response_history",
+   "enabled": true,
+   "source": "reporting.item_history"
+  },
+  {
+   "id": "responses",
+   "enabled": true,
+   "source": "reporting.response_groups"
+  },
+  {
+   "id": "source_guidance",
+   "enabled": true,
+   "source": "scoring.source_guidance",
+   "role": "reference_material_requires_review"
+  },
+  {
+   "id": "limitations",
+   "enabled": true,
+   "source": "reporting.coverage"
+  }
+ ],
+ "response_groups": [
+  {
+   "id": "source_draft_1",
+   "label": "Harmful Substance Use raw spectrum score",
+   "rule_id": "source_draft_1",
+   "item_ids": [
+    "Q75",
+    "Q76",
+    "Q77",
+    "Q78",
+    "Q79",
+    "Q80",
+    "Q81",
+    "Q82",
+    "Q83"
+   ]
+  },
+  {
+   "id": "recorded_responses",
+   "label": "Additional recorded responses",
+   "rule_id": null,
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q40",
+    "Q41",
+    "Q42",
+    "Q43",
+    "Q44",
+    "Q45",
+    "Q46",
+    "Q47",
+    "Q48",
+    "Q49",
+    "Q50",
+    "Q51",
+    "Q52",
+    "Q53",
+    "Q54",
+    "Q55",
+    "Q56",
+    "Q57",
+    "Q58",
+    "Q59",
+    "Q60",
+    "Q61",
+    "Q62",
+    "Q63",
+    "Q64",
+    "Q65",
+    "Q66",
+    "Q67",
+    "Q68",
+    "Q69",
+    "Q70",
+    "Q71",
+    "Q72",
+    "Q73",
+    "Q74",
+    "Q84",
+    "Q85",
+    "Q86",
+    "Q87",
+    "Q88",
+    "Q89",
+    "Q90",
+    "Q91",
+    "Q92",
+    "Q93",
+    "Q94",
+    "Q95",
+    "Q96",
+    "Q97",
+    "Q98",
+    "Q99",
+    "Q100",
+    "Q101",
+    "Q102",
+    "Q103",
+    "Q104",
+    "Q105",
+    "Q106",
+    "Q107",
+    "Q108",
+    "Q109",
+    "Q110",
+    "Q111",
+    "Q112",
+    "Q113",
+    "Q114",
+    "Q115",
+    "Q116",
+    "Q117",
+    "Q118",
+    "Q119",
+    "Q120",
+    "Q121",
+    "Q122",
+    "Q123",
+    "Q124",
+    "Q125",
+    "Q126",
+    "Q127",
+    "Q128",
+    "Q129",
+    "Q130",
+    "Q131",
+    "Q132",
+    "Q133",
+    "Q134",
+    "Q135",
+    "Q136",
+    "Q137",
+    "Q138",
+    "Q139",
+    "Q140",
+    "Q141",
+    "Q142",
+    "Q143",
+    "Q144",
+    "Q145",
+    "Q146",
+    "Q147",
+    "Q148",
+    "Q149",
+    "Q150",
+    "Q151",
+    "Q152",
+    "Q153",
+    "Q154",
+    "Q155"
+   ]
+  }
+ ],
+ "item_history": {
+  "$file": "assessment.reporting.item_history.json"
+ },
+ "protocol": null,
+ "paired_profile": null
+}

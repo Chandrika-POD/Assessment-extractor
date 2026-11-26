@@ -1,0 +1,749 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "buss-perry-aggression-questionnaire-bpaq--de56900b41f4",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Buss and Perry Aggression Questionnaire (BPAQ)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Buss and Perry Aggression Questionnaire (BPAQ) is self-report tool designed to measure various aspects of aggression, encompassing physical and verbal aggression, anger, and hostility.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Using the 5 point scale below, indicate how uncharacteristic or characteristic each of the following statements is in describing you.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total BPAQ Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 29.0,
+    "maximum": 145.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Total BPAQ Score (sum of all 29 items)",
+     "y": 293.2,
+     "url": null,
+     "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Normative data is available for both clinical and non-clinical samples. For instance, Pettersen and colleagues (2018) reported data on violent offenders incarcerated in Canada, while Bernstien & Gesn (1997) used a university student sample. Further details on these samples can be found in table 2 of the supplementary materials. The average total score for a violent male offender is 82, which corresponds to a non-clinical percentile of 78 for males and 93 for females. This means that the average violent offender is more aggressive than 78% of males, and 93% of females.",
+   "In determining a total cut-off score, we utilised the Jacobson and Truax (1991) method. This involves calculating a cutoff using a formula which considers the standard deviation (SD) and mean (M) of the community and clinical samples. A raw score of 76 was established to distinguish between normal and elevated levels of aggression.",
+   "Severity ranges were defined in raw score terms by considering both the cut-off and the distribution of men’s scores being higher relative to women. By using raw scores instead of gender-based percentiles, fewer women are classified in the higher aggression categories—reflective of the higher distribution of male aggression.",
+   "Average: 62-76",
+   "Above Average: 77-89"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "BPAQ Scoring & Interpretation",
+    "text": "BPAQ scores are presented both as an overall total (range 29 to 149) and at a subscale level.\n\nHigher scores indicate greater endorsement of aggressive statements and indicate a greater propensity for aggressive thoughts, feelings, and behaviours.\nPercentiles are presented, indicating the level of aggressiveness in comparison to a gender related normative sample. A percentile of 50 indicates typical (and healthy) levels of aggression, whereas a percentile of 90 indicates aggression in the top 10 percent of men or women (depending on gender). Such high percentiles indicate that aggression likely impacts relationships, personal or professional achievement and overall well-being.\nSubscales:\nPhysical Aggression : (items 2, 5, 8, 11, 13, 16, 22, 25, 29) range 9-45 Tendency to engage in physical acts of aggression.\nVerbal Aggression : (items 4, 6, 14, 21, 27) range 5-25 Propensity to engage in verbal arguments and confrontations.\nAnger : (items 1, 9, 12, 18, 19, 23, 28) range 7-35 The emotional aspect of aggression, including quick temper and frustration.\nHostility : (items 3, 7, 10, 15, 17, 20, 24, 26) range 8-40 Internalised feelings of ill will and suspicion towards others​​​​​​.\nIf administered more than once a line graph will be produced for the total and subscale scores.\n\nAggression can be largely considered pathological, particularly when excessive, inappropriate, and linked to psychological disorders. However aggression is not inherently maladaptive and is heavily reliant on contextual factors (Allen et al., 2018). Anger can propel us to take defensive, bold and vigorous action, so at least some aggression may be adaptive in many contexts.\nFindings involving correlations to aggression can provide broader behavioural and emotional insights. For example, aggression, as measured by the BPAQ, has been correlated with increased alcohol intake and trait neuroticism, while being negatively correlated to trait agreeableness (Tremblay & Ewart, 2005). Such findings place scores in a wider context and may suggest a benefit to additional questioning about substance use or interpersonal issues relating to emotional instability. In addition, anger is often considered to be a secondary emotion, whereby an uncomfortable feeling such as sadness is concealed through aggression. Indeed, aggressiveness is correlated with the presence of depression ( Rice et al., 2013) .\nWhile BPAQ scores are primarily used to assess client aggression levels, identify aggression-related issues and monitor progress, it may also be used as a risk indicator. For example, high responses on items like “Once in a while, I can’t control the urge to strike another person (item 8)” indicates the client may be a risk to themselves and others. The subscales of Physical Aggression and Hostility are of particular note when assessing risk. Archer and colleagues (1995) who observed a significant correlation between BPAQ scores and recent involvement in a violent physical altercation.\nHostility has verified links to poor health outcomes with a particular impact on coronary artery disease and mortality due to all causes (Barefoot & Williams, 2022). People high on hostility have large cardiovascular and endocrine reactions to social provocations. These physiological reactions represent fight-or-flight states accompanied by angry and aggressive responses toward other individuals.\nLevels of aggression are related to healthy relational concepts such as assertiveness, whereby people who score extremely low or extremely high on aggressiveness may lack adaptive assertiveness skills. Assertiveness is defined as “the ability to express one’s thoughts and feelings, both positive and negative, in a non-hostile way and without violating the rights of others” (Ollendick, 1983), while aggression involves violent, harmful actions or intentions towards others (Deluty, 1979). While aggression and assertiveness differ conceptually, it is important to acknowledge that they can often overlap in practice, especially in relation to Verbal Aggression (Ostrov et al., 2006). Assertive behaviours can be misinterpreted as aggressive due to their shared goal of exerting control or influence (Dirks et al., 2011; Ostrov et al., 2006). Consequently, very low levels of Verbal Aggression, as measured by the BPAQ, may also be associated with interpersonal difficulties. This is because extremely low Verbal Aggression scores may reflect the absence of assertive behaviours which are necessary for healthy social interactions. When considered along a continuum within the framework of assertiveness skills training, for example, extremely low levels of Verbal Aggression may be reflective of a passive communication style. As such, scoring one (out of five) on the item: ‘I tell my friends openly when I disagree with them’ (Item 4) , may indicate a lack of assertiveness that is detrimental to healthy inter-relational dynamics.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 3,
+    "text": "Physical Aggression (Items 2, 5, 8, 11, 13, 16, 22, 25, 29):",
+    "y": 180.0,
+    "url": null,
+    "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Verbal Aggression (Items 4, 6, 14, 21, 27):",
+    "y": 204.8,
+    "url": null,
+    "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Anger (Items 1, 9, 12, 18, 19, 23, 28):",
+    "y": 229.5,
+    "url": null,
+    "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 3,
+    "text": "Hostility (Items 3, 7, 10, 15, 17, 20, 24, 26):",
+    "y": 254.2,
+    "url": null,
+    "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Buss, A. H., & Perry, M. (1992). The Aggression Questionnaire. Journal of Personality and Social Psychology, 63 (3), 452–459. https://doi.org/10.1037/0022-3514.63.3.452",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Archer, J., & Webb, I. A. (2006). The relation between scores on the Buss-Perry Aggression Questionnaire and aggressive acts, impulsiveness, competitiveness, dominance, and sexual jealousy. Aggressive Behavior, 32 (5), 464-473. https://doi.org/10.1002/1098-2337(1995)21:5<325::AID-AB2480210503>3.0.CO;2-R\nArcher, J., Holloway, R., & McLoughlin, K. (1995). Self-reported physical aggression among young men. Aggressive Behavior, 21 (5), 325-342. https://psycnet.apa.org/doi/10.1002/1098-2337(1995)21:5%3C325::AID-AB2480210503%3E3.0.CO;2-R\nAbd-El-Fattah, S. (2007). Is the Aggression Questionnaire bias free? A Rasch analysis. International Education Journal, 8 (2), 237-248.\nAllen, J. J., Anderson, C. A., & Bushman, B. J. (2018). The General Aggression Model. Current Opinion in Psychology , 19 , 75-80. https://doi.org/10.1016/j.copsyc.2017.03.034\nBarefoot, J.C., Williams, R.B. (2022). Hostility and Health. In: Waldstein, S.R., Kop, W.J., Suarez, E.C., Lovallo, W.R., Katzel, L.I. (eds) Handbook of Cardiovascular Behavioral Medicine . Springer, New York, NY. https://doi.org/10.1007/978-0-387-85960-6_20\nBernstein, I. H., & Gesn, P. R. (1997). On the dimensionality of the Buss/Perry Aggression Questionnaire. Behavior Research and Therapy, 35 (6), 563-568. https://doi.org/10.1016/S0005-7967(97)00014-4\nBryant, F. B., & Smith, B. D. (2001). Refining the architecture of aggression: A measurement model for the Buss–Perry Aggression Questionnaire. Journal of Research in Personality, 35 (2), 138-167. https://doi.org/10.1006/jrpe.2000.2302\nBuss, A. H., & Perry, M. (1992). The Aggression Questionnaire. Journal of Personality and Social Psychology, 63 (3), 452–459. https://doi.org/10.1037/0022-3514.63.3.452\nBecker, G. (2007). The Buss–Perry Aggression Questionnaire: Some unfinished business. Journal of Research in Personality, 41 (2), 434-452. https://doi.org/10.1016/j.jrp.2006.05.004\nCorrectional Service of Canada. (2009). Reintegration programs: Violence prevention program . Ottawa, Ontario.\nCunha, O., Peixoto, M., Cruz, A. R., & Gonçalves, R. A. (2022). Buss-Perry Aggression Questionnaire: Factor structure and measurement invariance among Portuguese male perpetrators of intimate Partner violence. Criminal Justice and Behavior , 49 (3), 451-467. https://doi.org/10.1177/00938548211050113\nDirks, M. A., Treat, T. A., & Weersing, V. R. (2011). The latent structure of youth responses to peer provocation. Journal of Psychopathology and Behavioral Assessment , 33 (1), 58-68. https://doi.org/10.1007/s10862-010-9206-5\nDeluty, R. H. (1979). Children’s action tendency scale: A self-report measure of aggressiveness, assertiveness, and submissiveness in children. Journal of Consulting and Clinical Psychology, 47 , 1061-1071.\nDiamond, P. M., & Magaletta, P. R. (2006). The Short-Form Buss-Perry Aggression Questionnaire (BPAQ-SF): A validation study with federal offenders. Assessment, 13 , 227-240. https://doi.org/10.1177/1073191106287666\nFossati, A., Maffei, C., Acquarini, E., & Di Ceglie, A. (2003). Multigroup confirmatory component and factor analyses of the Italian version of the Aggression Questionnaire. European Journal of Psychological Assessment, 19 (1), 54-65. https://doi.org/10.1027/1015-5759.19.1.54\nGerevich, J., Bácskai, E., & Czobor, P. (2007). The generalizability of the Buss-Perry Aggression Questionnaire. International Journal of Methods in Psychiatric Research , 16 (3), 124-136. https://doi.org/10.1002/mpr.221\nGallagher, J. M., & Ashford, J. B. (2016). Buss–Perry Aggression Questionnaire: Testing alternative measurement models with assaultive misdemeanor offenders. Criminal Justice and Behavior, 43 (11), 1639-1652. https://doi.org/10.1177/0093854816643986\nHarris J. A. (1995). Confirmatory factor analysis of The Aggression Questionnaire. Behaviour Research and Therapy , 33 (8), 991-993. https://doi.org/10.1016/0005-7967(95)00038-y\nJacobson, N. S., & Truax, P. (1991). Clinical significance: a statistical approach to defining meaningful change in psychotherapy research. Journal of Consulting and Clinical Psychology , 59 (1), 12-19. https://doi.org/10.1037//0022-006x.59.1.12\nMaxwell J. P. (2007). Development and preliminary validation of a Chinese version of the Buss-Perry Aggression Questionnaire in a population of Hong Kong Chinese. Journal of Personality Assessment , 88 (3), 284-294. https://doi.org/10.1080/00223890701317004\nMcKay, M. T., Perry, J. L., & Harvey, S. A. (2016). The factorial validity and reliability of three versions of the Aggression Questionnaire using Confirmatory Factor Analysis and Exploratory Structural Equation Modelling. Personality and Individual Differences, 90 , 12-15. https://doi.org/10.1016/j.paid.2015.10.028\nRice, S. M., Fallon, B. J., Aucote, H. M., & Möller-Leimkühler, A. M. (2013). Development and preliminary validation of the male depression risk scale: Furthering the assessment of depression in men. Journal of Affective Disorders, 151 (3), 950-958. https://doi.org/10.1016/j.jad.2013.08.013\nTremblay, P. F., & Ewart, L. A. (2005). The Buss and Perry Aggression Questionnaire and its relations to values, the Big Five, provoking hypothetical situations, alcohol consumption patterns, and alcohol expectancies. Personality and Individual Differences, 38 (2), 337-346. https://doi.org/10.1016/j.paid.2004.04.012\nKiewitz, C., & Weaver, J. B. III. (2007). The aggression questionnaire. In R. A. Reynolds, R. Woods, & J. D. Baker (Eds.), Handbook of research on electronic surveys and measurements (pp. 343–347). Idea Group Reference/IGI Global. https://doi.org/10.4018/978-1-59140-792-8.ch047\nOstrov, J. M., Pilat, M. M., & Crick, N. R. (2006). Assertion strategies and aggression during early childhood: A short-term longitudinal study. Early Childhood Research Quarterly, 21 (4), 403-416. https://doi.org/10.1016/j.ecresq.2006.10.001\nOllendick, T. H. (1983). Development and validation of the children’s assertiveness inventory. Child and Family Behavior Therapy, 5 , 1-15.\nRitter, D. (2003). Effects of menstrual cycle phase on reporting levels of aggression using the Buss and Perry Aggression Questionnaire. Aggressive Behavior, 29 (6), 531-538. https://doi.org/10.1002/ab.10054\nVitoratou, S., Ntzoufras, I., Smyrnis, N., & Stefanis, N. C. (2009). Factorial composition of the Aggression Questionnaire: A multi-sample study in Greek adults. Psychiatry Research, 168 (1), 32-39. https://doi.org/10.1016/j.psychres.2008.01.016\nvon Collani, G., & Werner, R. (2005). Self-related and motivational constructs as determinants of aggression. An analysis and validation of a German version of the Buss-Perry Aggression Questionnaire. Personality and Individual Differences, 38 (7), 1631-1643. https://doi.org/10.1016/j.paid.2004.09.027\nZimonyi, S., Kasos, K., Halmai, Z., Csirmaz, L., Stadler, H., Rózsa, S., Szekely, A., & Kotyuk, E. (2021). Hungarian validation of the Buss-Perry Aggression Questionnaire-Is the short form more adequate?. Brain and Behavior , 11 (5), e02043. https://doi.org/10.1002/brb3.2043",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Buss and Perry Aggression Questionnaire (BPAQ) PDF",
+   "source_url": null,
+   "sha256": "ad3e5fa35a0055ab18bf07ad4a32cf7bafa77db35abafa9ab2bd7d8adadc9ccf",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ad3e5fa35a0055ab18bf07ad4a32cf7bafa77db35abafa9ab2bd7d8adadc9ccf.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Maladaptive Schema Scale (MSS)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4a2c828254c95bb7e7d49e33fee4a7ca3cf94297c1dd519ae6e89d6b2c1af5be",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4a2c828254c95bb7e7d49e33fee4a7ca3cf94297c1dd519ae6e89d6b2c1af5be.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6719386a7fa61d2aa5bcc259e502f7fea94c72a47314dca35914e7190eb9f5d9",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6719386a7fa61d2aa5bcc259e502f7fea94c72a47314dca35914e7190eb9f5d9.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BPAQ Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "5bce9ca6d260f8ba870a01555d7c249f24d9847bf120f260b04da549cd336b9a",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5bce9ca6d260f8ba870a01555d7c249f24d9847bf120f260b04da549cd336b9a.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BPAQ Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "2a67d3b3f7aeee99bb0b971a3f44b44fcc15b2bcbbd6488cd36d0696a8aacbf5",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2a67d3b3f7aeee99bb0b971a3f44b44fcc15b2bcbbd6488cd36d0696a8aacbf5.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BPAQ Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "ef4f0d9077b46146333fbcc3e9c25873cc5a36269227eff8f269202e7f13d16c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ef4f0d9077b46146333fbcc3e9c25873cc5a36269227eff8f269202e7f13d16c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "BPAQ Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "90df1fbc7846b71383fd6fc31d2f0f365a5ab2621a4329cc6f8f9451239cc5e4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/90df1fbc7846b71383fd6fc31d2f0f365a5ab2621a4329cc6f8f9451239cc5e4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Supplementary Materials",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3f3fd4f9a91bd02420c6f759d0348094938a85aa6de6a4bb4ec37a70d24630a6",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3f3fd4f9a91bd02420c6f759d0348094938a85aa6de6a4bb4ec37a70d24630a6.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Supplementary Materials",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "549a2239d16b2b1f85b27ced524193196375e97864c652b0e0bdb98beeb7c735",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/549a2239d16b2b1f85b27ced524193196375e97864c652b0e0bdb98beeb7c735.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Supplementary Materials",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the B uss-Perry Aggression Questionnaire (BPAQ) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "92718b81c0183f6311978dd4ccfc1b2c6c61c3c65f29579af267c526c7986094",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/92718b81c0183f6311978dd4ccfc1b2c6c61c3c65f29579af267c526c7986094.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 29
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4bd6e78a6bdeec11a0d4cb95d4a2258cc6f18f646ee48990f8fa2aabd438ed83.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "f3543d7f33950fa1d7e63891248fa4b32a735c8081d6bbec4dce0f05e04325bf",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:53:45.392357+00:00",
+  "raw_extraction_sha256": "de3e040ed66ae04ed0eacde7c367ecd60f72b3aa5e4cf97828c2cf5da0d3b89a",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Personality"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1037/0022-3514.63.3.452",
+    "title": "https://doi.org/10.1037/0022-3514.63.3.452"
+   },
+   {
+    "url": "https://doi.org/10.1002/1098-2337(1995)21:5%3C325::AID-AB2480210503%3E3.0.CO;2-R",
+    "title": "https://doi.org/10.1002/1098-2337(1995)21:5<325::AID-AB2480210503>3.0.CO;2-R"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1002/1098-2337(1995)21:5%3C325::AID-AB2480210503%3E3.0.CO;2-R",
+    "title": "https://psycnet.apa.org/doi/10.1002/1098-2337(1995)21:5%3C325::AID-AB2480210503%3E3.0.CO;2-R"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.copsyc.2017.03.034",
+    "title": "https://doi.org/10.1016/j.copsyc.2017.03.034"
+   },
+   {
+    "url": "https://doi.org/10.1007/978-0-387-85960-6_20",
+    "title": "https://doi.org/10.1007/978-0-387-85960-6_20"
+   },
+   {
+    "url": "https://doi.org/10.1016/S0005-7967(97)00014-4",
+    "title": "https://doi.org/10.1016/S0005-7967(97)00014-4"
+   },
+   {
+    "url": "https://doi.org/10.1006/jrpe.2000.2302",
+    "title": "https://doi.org/10.1006/jrpe.2000.2302"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1016/j.jrp.2006.05.004",
+    "title": "https://doi.org/10.1016/j.jrp.2006.05.004"
+   },
+   {
+    "url": "https://doi.org/10.1177/00938548211050113",
+    "title": "https://doi.org/10.1177/00938548211050113"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10862-010-9206-5",
+    "title": "https://doi.org/10.1007/s10862-010-9206-5"
+   },
+   {
+    "url": "https://doi.org/10.1177/1073191106287666",
+    "title": "https://doi.org/10.1177/1073191106287666"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1027/1015-5759.19.1.54",
+    "title": "https://doi.org/10.1027/1015-5759.19.1.54"
+   },
+   {
+    "url": "https://doi.org/10.1002/mpr.221",
+    "title": "https://doi.org/10.1002/mpr.221"
+   },
+   {
+    "url": "https://doi.org/10.1177/0093854816643986",
+    "title": "https://doi.org/10.1177/0093854816643986"
+   },
+   {
+    "url": "https://doi.org/10.1016/0005-7967(95)00038-y",
+    "title": "https://doi.org/10.1016/0005-7967(95)00038-y"
+   },
+   {
+    "url": "https://doi.org/10.1037//0022-006x.59.1.12",
+    "title": "https://doi.org/10.1037//0022-006x.59.1.12"
+   },
+   {
+    "url": "https://doi.org/10.1080/00223890701317004",
+    "title": "https://doi.org/10.1080/00223890701317004"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2015.10.028",
+    "title": "https://doi.org/10.1016/j.paid.2015.10.028"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jad.2013.08.013",
+    "title": "https://doi.org/10.1016/j.jad.2013.08.013"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1016/j.paid.2004.04.012",
+    "title": "https://doi.org/10.1016/j.paid.2004.04.012"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.4018/978-1-59140-792-8.ch047",
+    "title": "https://doi.org/10.4018/978-1-59140-792-8.ch047"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1016/j.ecresq.2006.10.001",
+    "title": "https://doi.org/10.1016/j.ecresq.2006.10.001"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1002/ab.10054",
+    "title": "https://doi.org/10.1002/ab.10054"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.psychres.2008.01.016",
+    "title": "https://doi.org/10.1016/j.psychres.2008.01.016"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.paid.2004.09.027",
+    "title": "https://doi.org/10.1016/j.paid.2004.09.027"
+   },
+   {
+    "url": "https://doi.org/10.1002/brb3.2043",
+    "title": "https://doi.org/10.1002/brb3.2043"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Developmental disability aggression measure"
+   },
+   {
+    "url": null,
+    "title": "Emotional dysregulation scale"
+   },
+   {
+    "url": null,
+    "title": "Borderline personality assessment"
+   },
+   {
+    "url": null,
+    "title": "Personality traits questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Young Schema Questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Risk Assessment (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

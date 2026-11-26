@@ -15,6 +15,7 @@ LABEL_PATTERN = re.compile(r'(?<!\w)(?:' + '|'.join(re.escape(label) for label i
 class Node:
     def __init__(self, tag='', attrs=()):
         self.tag, self.attrs, self.children = tag, dict(attrs), []
+        self.parent = None
 
     def walk(self, tags=None):
         if tags is None or self.tag in tags:
@@ -36,6 +37,7 @@ class Tree(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         node = Node(tag, attrs)
+        node.parent = self.stack[-1]
         self.stack[-1].children.append(node)
         if tag not in self.VOID:
             self.stack.append(node)
@@ -85,11 +87,15 @@ def parse_html(html, url):
     root = tree.root
     page_title = next((n.text() for n in root.walk({'title'})), None)
     description = next((n.attrs.get('content') for n in root.walk({'meta'}) if n.attrs.get('name', '').lower() == 'description'), None)
+    raw_scope, _ = scope_for(root, url)
+    media_inventory = [{'kind': n.tag, 'url': urljoin(url, n.attrs.get('src') or n.attrs.get('data') or ''),
+        'status': 'not_captured', 'note': 'Preserved in source HTML; interactive/vector media needs separate review.'}
+        for n in raw_scope.walk({'iframe', 'video', 'audio', 'canvas', 'svg', 'object', 'embed'})]
     visible(root)
     scope, provider = scope_for(root, url)
     headings = list(scope.walk({'h1', 'h2'}))
     name = next((n.text() for n in headings if n.tag == 'h1'), None) or next((n.text() for n in headings), page_title)
-    result = {'name': name, 'description': description, 'provider': provider, 'sections': [], 'tables': [], 'links': [], 'list_items': []}
+    result = {'name': name, 'description': description, 'provider': provider, 'sections': [], 'tables': [], 'links': [], 'list_items': [], 'images': [], 'embedded_media': media_inventory}
     current = {'title': 'Overview', 'text': '', 'source_url': url}
     def visit(node, ordinal=None):
         nonlocal current
@@ -100,7 +106,18 @@ def parse_html(html, url):
         elif node.tag == 'table':
             rows = [[c.text() for c in row.children if isinstance(c, Node) and c.tag in {'th', 'td'}] for row in node.walk({'tr'})]
             rows = [r for r in rows if r]
-            result['tables'].append({'rows': rows, 'section': current['title'], 'source_url': url})
+            def span(cell, key):
+                try:
+                    return max(1, min(100, int(cell.attrs.get(key, 1))))
+                except (ValueError, TypeError):
+                    return 1
+            cells = [[{'text': c.text(), 'header': c.tag == 'th',
+                       'rowspan': span(c, 'rowspan'), 'colspan': span(c, 'colspan')}
+                      for c in row.children if isinstance(c, Node) and c.tag in {'th', 'td'}]
+                     for row in node.walk({'tr'})]
+            result['tables'].append({'rows': rows, 'cells': [r for r in cells if r],
+                'caption': next((n.text() for n in node.walk({'caption'})), ''),
+                'section': current['title'], 'source_url': url})
             current['text'] += '\n'.join(' | '.join(row) for row in rows) + '\n'
         elif node.tag == 'ol':
             ordinal = 0
@@ -134,6 +151,49 @@ def parse_html(html, url):
         except ValueError:
             continue
     result['links'] = list({v['url']: v for v in result['links']}.values())
+    section = 'Overview'
+    for node in scope.walk():
+        if re.fullmatch('h[1-6]', node.tag):
+            section = node.text()
+        candidates = []
+        if node.tag == 'img':
+            for key in ('data-src', 'data-lazy-src', 'data-original', 'src'):
+                if node.attrs.get(key):
+                    candidates.append(node.attrs[key])
+            for key in ('data-srcset', 'srcset'):
+                parts = node.attrs.get(key, '').split(',')
+                def resolution(part):
+                    match = re.search(r'\s([\d.]+)[wx]\s*$', part)
+                    return float(match.group(1)) if match else 0
+                for part in sorted(parts, key=resolution):
+                    if part.strip():
+                        candidates.insert(0, part.strip().split()[0])
+            ancestor = node.parent
+            caption = ''
+            while ancestor and ancestor is not scope.parent:
+                if ancestor.tag == 'a' and re.search(r'\.(?:png|jpe?g|gif|webp)(?:\?|$)', ancestor.attrs.get('href', ''), re.I):
+                    candidates.insert(0, ancestor.attrs['href'])
+                if ancestor.tag == 'figure':
+                    caption = next((n.text() for n in ancestor.walk({'figcaption'})), '')
+                ancestor = ancestor.parent
+        else:
+            caption = ''
+        candidates += re.findall(r'url\([\s\"\']*([^\)\"\']+)', node.attrs.get('style', ''))
+        if node.attrs.get('data-capture-background'):
+            candidates += re.findall(r'url\([\s\"\']*([^\)\"\']+)', node.attrs['data-capture-background'])
+        targets = []
+        for candidate in candidates:
+            try:
+                target = urljoin(url, candidate)
+                if urlsplit(target).scheme == 'https' and target not in targets:
+                    targets.append(target)
+            except ValueError:
+                pass
+        if targets:
+            result['images'].append({'url': targets[0], 'alternatives': targets[1:],
+                'alt': node.attrs.get('alt', ''), 'caption': caption, 'section': section,
+                'source_url': url, 'status': 'not_processed'})
+    result['images'] = list({v['url']: v for v in result['images']}.values())
     return result
 
 

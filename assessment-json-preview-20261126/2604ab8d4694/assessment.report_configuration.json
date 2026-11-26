@@ -1,0 +1,1146 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_total_raw",
+   "ruleId": "total_raw",
+   "label": "Total",
+   "minimum": 0,
+   "maximum": 63,
+   "calculation": {
+    "id": "total_raw",
+    "label": "Total",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 63,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "da6a0d6b0e3bae5f40c4c3d4abae633c2e9f03d6a5e17f7b1109b47278cfa9ff",
+     "retrieved_at": "2026-11-13T11:59:43.528390+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_depression_raw",
+   "ruleId": "depression_raw",
+   "label": "Depression",
+   "minimum": 0,
+   "maximum": 21,
+   "calculation": {
+    "id": "depression_raw",
+    "label": "Depression",
+    "item_ids": [
+     "Q3",
+     "Q5",
+     "Q10",
+     "Q13",
+     "Q16",
+     "Q17",
+     "Q21"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 21,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "da6a0d6b0e3bae5f40c4c3d4abae633c2e9f03d6a5e17f7b1109b47278cfa9ff",
+     "retrieved_at": "2026-11-13T11:59:43.528390+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_anxiety_raw",
+   "ruleId": "anxiety_raw",
+   "label": "Anxiety",
+   "minimum": 0,
+   "maximum": 21,
+   "calculation": {
+    "id": "anxiety_raw",
+    "label": "Anxiety",
+    "item_ids": [
+     "Q2",
+     "Q4",
+     "Q7",
+     "Q9",
+     "Q15",
+     "Q19",
+     "Q20"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 21,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "da6a0d6b0e3bae5f40c4c3d4abae633c2e9f03d6a5e17f7b1109b47278cfa9ff",
+     "retrieved_at": "2026-11-13T11:59:43.528390+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_stress_raw",
+   "ruleId": "stress_raw",
+   "label": "Stress",
+   "minimum": 0,
+   "maximum": 21,
+   "calculation": {
+    "id": "stress_raw",
+    "label": "Stress",
+    "item_ids": [
+     "Q1",
+     "Q6",
+     "Q8",
+     "Q11",
+     "Q12",
+     "Q14",
+     "Q18"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 21,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "da6a0d6b0e3bae5f40c4c3d4abae633c2e9f03d6a5e17f7b1109b47278cfa9ff",
+     "retrieved_at": "2026-11-13T11:59:43.528390+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "f7191c4a7a017b0ff4f1b4feaec5fa82dd633a4e25d7635d42663dd34c5edeee",
+   "pageCount": 5,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "df7191c4a7a01_p1",
+   "documentSha256": "f7191c4a7a017b0ff4f1b4feaec5fa82dd633a4e25d7635d42663dd34c5edeee",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "df7191c4a7a01_p1_chart_1"
+   ],
+   "tableIds": [
+    "df7191c4a7a01_p1_table_1"
+   ],
+   "sectionIds": [
+    "df7191c4a7a01_p1_section_1",
+    "df7191c4a7a01_p1_section_2"
+   ]
+  },
+  {
+   "pageId": "df7191c4a7a01_p2",
+   "documentSha256": "f7191c4a7a017b0ff4f1b4feaec5fa82dd633a4e25d7635d42663dd34c5edeee",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "df7191c4a7a01_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "df7191c4a7a01_p2_section_1",
+    "df7191c4a7a01_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "df7191c4a7a01_p3",
+   "documentSha256": "f7191c4a7a017b0ff4f1b4feaec5fa82dd633a4e25d7635d42663dd34c5edeee",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "df7191c4a7a01_p3_section_1",
+    "df7191c4a7a01_p3_section_2"
+   ]
+  },
+  {
+   "pageId": "df7191c4a7a01_p4",
+   "documentSha256": "f7191c4a7a017b0ff4f1b4feaec5fa82dd633a4e25d7635d42663dd34c5edeee",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df7191c4a7a01_p4_table_1"
+   ],
+   "sectionIds": [
+    "df7191c4a7a01_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "df7191c4a7a01_p5",
+   "documentSha256": "f7191c4a7a017b0ff4f1b4feaec5fa82dd633a4e25d7635d42663dd34c5edeee",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df7191c4a7a01_p5_table_1"
+   ],
+   "sectionIds": [
+    "df7191c4a7a01_p5_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "df7191c4a7a01_p1_section_1",
+   "pageId": "df7191c4a7a01_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df7191c4a7a01_p1_section_2",
+   "pageId": "df7191c4a7a01_p1",
+   "title": "DASS-Y Score",
+   "type": "source_heading",
+   "bboxPt": [
+    267.336,
+    337.64151,
+    349.35599,
+    349.64151
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df7191c4a7a01_p2_section_1",
+   "pageId": "df7191c4a7a01_p2",
+   "title": "DASS-Y Symptom Percentiles",
+   "type": "results",
+   "bboxPt": [
+    192.991,
+    153.38954,
+    363.70297,
+    165.38954
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df7191c4a7a01_p2_section_2",
+   "pageId": "df7191c4a7a01_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    544.04871,
+    124.57652,
+    558.04871
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df7191c4a7a01_p3_section_1",
+   "pageId": "df7191c4a7a01_p3",
+   "title": "Interpretation (cont.)",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    171.23853,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df7191c4a7a01_p3_section_2",
+   "pageId": "df7191c4a7a01_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    323.83453,
+    290.26636,
+    337.83453
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df7191c4a7a01_p4_section_1",
+   "pageId": "df7191c4a7a01_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    151.82051,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df7191c4a7a01_p5_section_1",
+   "pageId": "df7191c4a7a01_p5",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "df7191c4a7a01_p1_chart_1",
+   "title": "DASS-Y Score",
+   "type": "line",
+   "bboxPt": [
+    45.346,
+    363.544,
+    518.346,
+    711.254
+   ],
+   "widthPt": 473.0,
+   "heightPt": 347.71,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      45.3465,
+      526.05383,
+      515.3465,
+      575.44397
+     ],
+     "colour": "#ffff00",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      45.3465,
+      443.7438,
+      515.3465,
+      526.05396
+     ],
+     "colour": "#ffa500",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      45.3465,
+      386.12408,
+      515.3465,
+      443.74402
+     ],
+     "colour": "#ff0000",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      45.3465,
+      365.54391,
+      515.3465,
+      386.12399
+     ],
+     "colour": "#a93226",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "multiple_visits_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    },
+    "kind": "visit_date",
+    "binding": "compatible_session_history.completedAt",
+    "minimum": null,
+    "maximum": null
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 49.0,
+      "positionPt": 366.3175,
+      "text": "49",
+      "colour": "#333333"
+     },
+     {
+      "value": 42.0,
+      "positionPt": 423.93741,
+      "text": "42",
+      "colour": "#333333"
+     },
+     {
+      "value": 35.0,
+      "positionPt": 481.55731,
+      "text": "35",
+      "colour": "#333333"
+     },
+     {
+      "value": 28.0,
+      "positionPt": 539.17761,
+      "text": "28",
+      "colour": "#333333"
+     },
+     {
+      "value": 21.0,
+      "positionPt": 596.78741,
+      "text": "21",
+      "colour": "#333333"
+     },
+     {
+      "value": 14.0,
+      "positionPt": 654.40729,
+      "text": "14",
+      "colour": "#333333"
+     },
+     {
+      "value": 7.0,
+      "positionPt": 712.02722,
+      "text": "7",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 7.0,
+    "maximum": 49.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#1976d2",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "df7191c4a7a01_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 115,
+    "detectedType": "line",
+    "reviewedType": "line",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "DASS-Y Score",
+     "bboxPt": [
+      267.336,
+      337.64151,
+      349.35599,
+      349.64151
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild",
+     "bboxPt": [
+      496.01599,
+      564.51721,
+      514.34601,
+      574.51721
+     ],
+     "colour": "#f1c40f",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      472.10699,
+      515.1272,
+      514.34698,
+      525.1272
+     ],
+     "colour": "#ffa500",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      482.66599,
+      432.8172,
+      514.34601,
+      442.8172
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Ext. Severe",
+     "bboxPt": [
+      462.65701,
+      375.1972,
+      514.34705,
+      385.1972
+     ],
+     "colour": "#b03a2e",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      519.88599,
+      361.26721,
+      569.34595,
+      371.26721
+     ],
+     "colour": "#b2babb",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 80th",
+     "bboxPt": [
+      514.77625,
+      571.16724,
+      540.34631,
+      581.16724
+     ],
+     "colour": "#b2babb",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 90th",
+     "bboxPt": [
+      514.77625,
+      501.1973,
+      540.34631,
+      511.1973
+     ],
+     "colour": "#b2babb",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 99th",
+     "bboxPt": [
+      514.77625,
+      377.72729,
+      540.34631,
+      387.72729
+     ],
+     "colour": "#b2babb",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "df7191c4a7a01_p2_chart_1",
+   "title": "DASS-Y Symptom Percentiles",
+   "type": "multi_line",
+   "bboxPt": [
+    70.347,
+    179.292,
+    528.346,
+    442.732
+   ],
+   "widthPt": 458.0,
+   "heightPt": 263.44,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      70.3465,
+      246.65179,
+      530.3465,
+      293.71204
+     ],
+     "colour": "#ffff00",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      204.82233,
+      530.3465,
+      246.65204
+     ],
+     "colour": "#ffa500",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      189.13177,
+      530.3465,
+      204.82196
+     ],
+     "colour": "#ff0000",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      181.29218,
+      530.3465,
+      189.13202
+     ],
+     "colour": "#a93226",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "multiple_visits_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    },
+    "kind": "visit_date",
+    "binding": "compatible_session_history.completedAt",
+    "minimum": null,
+    "maximum": null
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 182.06568,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 95.0,
+      "positionPt": 208.20544999999998,
+      "text": "95",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 234.355475,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 85.0,
+      "positionPt": 260.49567,
+      "text": "85",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 286.64569,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 75.0,
+      "positionPt": 312.78546,
+      "text": "75",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 338.92523,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 65.0,
+      "positionPt": 365.07523,
+      "text": "65",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 391.21542,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 55.0,
+      "positionPt": 417.36542,
+      "text": "55",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 443.50522,
+      "text": "50",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 50.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#8e0404",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": null,
+     "colour": "#b303b3",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": null,
+     "colour": "#01018c",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "df7191c4a7a01_p2",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 116,
+    "detectedType": "multi_line",
+    "reviewedType": "multi_line",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "DASS-Y Symptom Percentiles",
+     "bboxPt": [
+      192.991,
+      153.38954,
+      363.70297,
+      165.38954
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild",
+     "bboxPt": [
+      511.01599,
+      282.78522,
+      529.34595,
+      292.78522
+     ],
+     "colour": "#f1c40f",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      487.10699,
+      235.72522,
+      529.34705,
+      245.72523
+     ],
+     "colour": "#ffa500",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      497.66599,
+      193.8952,
+      529.34601,
+      203.89522
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Ext. Severe",
+     "bboxPt": [
+      477.65701,
+      178.2052,
+      529.34705,
+      188.20522
+     ],
+     "colour": "#b03a2e",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "A graph is produced on first administration showing percentiles compared to age related peers.",
+   "When the DASS-Y is administered on two or more occasions the graph demonstrates the change in symptoms over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "DASS-Y Scoring & Interpretation",
+    "text": "Scores are presented as a total score (between 0 and 63) and a score for the three subscales (between 0 and 21). In addition, percentiles are computed comparing results to age and gender related peers (Szabo & Lovibond, 2022).\n\nPercentiles help contextualise scores in relation to age and gender relevant sample, whereby a percentile of 50 indicates the respondent scored at an average (and healthy) level compared to typical peers (shown by a dotted line on the graph). Higher percentiles indicate more symptoms, with a percentile above 90, for example, indicating clinically significant psychological distress with more reported symptoms than 90 percent of peers.\n\nEach of the three DASS-Y scales contains 7 items:\nDepression: dysphoria, hopelessness, devaluation of life, self-deprecation, lack of interest / involvement, anhedonia and inertia. (Items 3, 5, 10, 13, 16, 17, 21)\nAnxiety: autonomic arousal, skeletal muscle effects, situational anxiety, and subjective experience of anxious affect. (Items 2, 4, 7, 9, 15, 19, 20)\nStress: levels of chronic nonspecific arousal, difficulty relaxing, nervous arousal, and being easily upset / agitated, irritable / over-reactive and impatient. (Items 1, 6, 8, 11, 12, 14, 18)\n\nThe primary difference between the stress and anxiety subscales lies in anxiety’s focus on acute responses and stress’s focus on chronic tension. Anxiety is more about the immediate, physiological response to perceived threats, involving fear and the body’s fight-or-flight reaction. Stress, on the other hand, encompasses a broader, more sustained response to ongoing demands that exceed an individual’s resources and coping mechanisms, leading to difficulties relaxing. The Anxiety subscale of the DASS-Y, therefore, should not be used as an indication of Generalised Anxiety Disorder, which is actually more in line with the Stress scale.\n\nA graph is produced on first administration showing percentiles compared to age related peers. When the DASS-Y is administered on two or more occasions the graph demonstrates the change in symptoms over time. Given the dimensional nature of psychological distress it is useful to consider even small changes in symptoms over time.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "f7191c4a7a017b0ff4f1b4feaec5fa82dd633a4e25d7635d42663dd34c5edeee",
+    "pageNumber": 3,
+    "text": "For comprehensive information on the DASS-Y, \nsee here\n.\nScores are presented as a total score (between 0 and 63) and a score for the three subscales\n(between 0 and 21). In addition, percentiles are computed comparing results to age and gender\nrelated peers (Szabo & Lovibond, 2022).\nPercentiles help contextualise scores in relation to age and gender relevant sample, whereby a\npercentile of 50 indicates the respondent scored at an average (and healthy) level compared to\ntypical peers (shown by a dotted line on the graph). Higher percentiles indicate more symptoms,\nwith a percentile above 90, for example, indicating clinically significant psychological distress\nwith more reported symptoms than 90 percent of peers.\nEach of the three DASS-Y scales contains 7 items:\n- Depression: dysphoria, hopelessness, devaluation of life, self-deprecation, lack of interest /\ninvolvement, anhedonia and inertia. (Items 3, 5, 10, 13, 16, 17, 21)\n- Anxiety: autonomic arousal, skeletal muscle effects, situational anxiety, and subjective\nexperience of anxious affect. (Items 2, 4, 7, 9, 15, 19, 20)\n- Stress: levels of chronic nonspecific arousal, difficulty relaxing, nervous arousal, and being\neasily upset / agitated, irritable / over-reactive and impatient. (Items 1, 6, 8, 11, 12, 14, 18)\nThe primary difference between the stress and anxiety subscales lies in anxiety’s focus on\nacute responses and stress’s focus on chronic tension. Anxiety is more about the immediate,\nphysiological response to perceived threats, involving fear and the body’s fight-or-flight reaction.\nStress, on the other hand, encompasses a broader, more sustained response to ongoing\ndemands that exceed an individual’s resources and coping mechanisms, leading to difficulties\nrelaxing. The Anxiety subscale of the DASS-Y, therefore, should not be used as an indication of\nGeneralised Anxiety Disorder, which is actually more in line with the Stress scale.\nA graph is produced on first administration showing percentiles compared to age related peers.\nWhen the DASS-Y is administered on two or more occasions the graph demonstrates the\nchange in symptoms over time. Given the dimensional nature of psychological distress it is\nuseful to consider even small changes in symptoms over time.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "In addition, percentiles are computed comparing results to age and gender related peers (Szabo & Lovibond, 2022).",
+   "Percentiles help contextualise scores in relation to age and gender relevant sample, whereby a percentile of 50 indicates the respondent scored at an average (and healthy) level compared to typical peers (shown by a dotted line on the graph).",
+   "Higher percentiles indicate more symptoms, with a percentile above 90, for example, indicating clinically significant psychological distress with more reported symptoms than 90 percent of peers.",
+   "A graph is produced on first administration showing percentiles compared to age related peers.",
+   "When the DASS-Y is administered on two or more occasions the graph demonstrates the change in symptoms over time."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 131
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,1313 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "oldenburg-burnout-inventory-olbi--95cb8dc3dd29",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Oldenburg Burnout Inventory (OLBI)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Oldenburg Burnout Inventory (OLBI) is a 16-item scale designed to measure burnout across adults employed in various occupational settings. The OLBI measures both physical and cognitive aspects of burnout as well as disengagement from work.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Below is a series of statements with which you may agree or disagree. Using the scale, please indicate the degree of your agreement by selecting the response option that corresponds with each statement.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Exhaustion",
+    "item_ids": [
+     "Q2",
+     "Q4",
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12",
+     "Q14",
+     "Q16"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+     "page_url": null,
+     "page_sha256": "019d196e247d3e4b1165eb3ecf29d3c37fff43b85854c3e2ec5892fde5560374",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 1,
+      "text": "Exhaustion (Items 2, 4, 5, 8, 10, 12, 14, 16):",
+      "y": 576.0,
+      "url": null,
+      "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "LIVE_C11"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 8.0,
+    "maximum": 32.0
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Disengagement",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q15"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+     "page_url": null,
+     "page_sha256": "019d196e247d3e4b1165eb3ecf29d3c37fff43b85854c3e2ec5892fde5560374",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 1,
+      "text": "Disengagement (Items 1, 3, 6, 7, 9, 11, 13, 15):",
+      "y": 597.8,
+      "url": null,
+      "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "LIVE_C11"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 8.0,
+    "maximum": 32.0
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+     "page_url": null,
+     "page_sha256": "019d196e247d3e4b1165eb3ecf29d3c37fff43b85854c3e2ec5892fde5560374",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "LIVE_C11"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 16.0,
+    "maximum": 64.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+   "page_url": null,
+   "page_sha256": "019d196e247d3e4b1165eb3ecf29d3c37fff43b85854c3e2ec5892fde5560374",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [
+   "Higher total scores indicate a higher level of burnout. A percentile can be computed for the total score and subscale scores, comparing the respondents scores to a pooled normative sample. Percentiles can aid in contextualising the patterns of responding in relation to the average worker. For example, a percentile of 90 represents a higher level of burnout than 90 percent of workers. This corresponds to the “high” burnout category. The average score of a worker is a raw score of 43, which corresponds to the 49th percentile. Scores above the 50th percentile are indicative of clinically significant burnout, this suggests that the typical worker is at risk of burnout.",
+   "If administered more than once a line graph will be produced for the total and subscale percentiles. Changes are evaluated against a miniminally important difference threshold of half a standard deviation or mor (Norman et al., 2003).",
+   "NovoPsych defined the total cut off for burnout as a total raw score of 44 and higher based on the severity ranges outlined above. This decision was made by following Leclercq and colleagues (2021) and on the basis of the large sample size used to derive the weighted mean and subsequent severity ranges (n=4,463)."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "OLBI Scoring & Interpretation",
+    "text": "Scores on the Oldenburg Burnout Inventory can be presented as an overall total (range 16 to 64).\n\nHigher total scores indicate a higher level of burnout. A percentile can be computed for the total score and subscale scores, comparing the respondents scores to a pooled normative sample. Percentiles can aid in contextualising the patterns of responding in relation to the average worker. For example, a percentile of 90 represents a higher level of burnout than 90 percent of workers. This corresponds to the “high” burnout category. The average score of a worker is a raw score of 43, which corresponds to the 49th percentile. Scores above the 50th percentile are indicative of clinically significant burnout, this suggests that the typical worker is at risk of burnout.\nSubscale scores are included, with each subscale having a possible range of 8 to 32:\nExhaustion (items 2, 4, 5, 8, 10, 12, 14, 16). Higher exhaustion (23 plus) subscale scores indicate greater physical, affective and cognitive fatigue.\nDisengagement (items 1, 3, 6, 7, 9, 11, 13, 15). Higher disengagement (22 plus) scores reflect a stronger tendency for individuals to distance themselves from their work and develop negative attitudes toward their job.\nIf administered more than once a line graph will be produced for the total and subscale percentiles. Changes are evaluated against a miniminally important difference threshold of half a standard deviation or mor (Norman et al., 2003).\n\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Exhaustion (Items 2, 4, 5, 8, 10, 12, 14, 16):",
+    "y": 576.0,
+    "url": null,
+    "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Disengagement (Items 1, 3, 6, 7, 9, 11, 13, 15):",
+    "y": 597.8,
+    "url": null,
+    "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Total (sum of Exhaustion + Disengagement)",
+    "y": 630.0,
+    "url": null,
+    "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Normative conversion and longitudinal change interpretation are not implemented."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "not_compiled",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Evangelia Demerouti.\nDemerouti, E. (1999). Burnout: Eine Folge konkreter Arbeitsbedingungen bei Dienstleistungsund Produktionstätigkeiten [Burnout: A consequence of specific working conditions among human services, and production tasks]. Peter Lang.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Delgadillo, J., Saxon, D., & Barkham, M. (2018). Associations between therapists’ occupational burnout and their patients’ depression and anxiety treatment outcomes. Depression and anxiety, 35(9), 844–850. https://doi.org/10.1002/da.22766\nDemerouti, E., Bakker, A. B., Vardakou, I., & Kantas, A. (2003). The convergent validity of two burnout instruments: A multitrait-multimethod analysis. European Journal of Psychological Assessment, 19(1), 12–23. https://doi.org/10.1027//1015-5759.19.1.12\nDemerouti, E. (1999). Burnout: Eine Folge konkreter Arbeitsbedingungen bei Dienstleistungsund Produktionstätigkeiten [Burnout: A consequence of specific working conditions among human services, and production tasks]. Peter Lang.\nHalbesleben, J. R. B., & Demerouti, E. (2005). The construct validity of an alternative measure of burnout: Investigating the English translation of the Oldenburg Burnout Inventory. Work & Stress, 19(3), 208–220. https://doi.org/10.1080/02678370500340728\nInnstrand S. T. (2016). Occupational differences in work engagement: A longitudinal study among eight occupational groups in Norway. Scandinavian Journal of Psychology, 57(4), 338–349. https://doi.org/10.1111/sjop.12298\nLeclercq, C., Braeckman, L., Firket, P., Babic, A., & Hansez, I. (2021). Interest of a joint use of two diagnostic tools of Burnout: Comparison between the Oldenburg Burnout Inventory and the Early Detection Tool of Burnout completed by physicians. International Journal of Environmental Research and Public Health, 18(19), 10544. https://doi.org/10.3390/ijerph181910544\nTipa, R. O., Tudose, C., & Pucarea, V. L. (2019). Measuring Burnout Among Psychiatric Residents Using the Oldenburg Burnout Inventory (OLBI) Instrument. Journal of Medicine and Life, 12(4), 354–360. https://doi.org/10.25122/jml-2019-0089\nOgunsuji, O., Ogundipe, H., Adebayo, O., Oladehin, T., Oiwoh, S., Obafemi, O., Soneye, O., Agaja, O., Uyilawa, O., Efuntoye, O., Alatishe, T., Williams, A., Ilesanmi, O., & Atilola, O. (2022). Internal reliability and validity of Copenhagen Burnout Inventory and Oldenburg Burnout Inventory compared with Maslach Burnout Inventory among Nigerian resident doctors: A pilot study. Dubai Medical Journal, 5(2), 89–95. https://doi.org/10.1159/000521376\nRaju, A., Nithiya, D. R., & Tipandjan, A. (2022). Relationship between burnout, effort-reward imbalance, and insomnia among Informational Technology professionals. Journal of Education and Health Promotion, 11, 296. https://doi.org/10.4103/jehp.jehp_1809_21\nReis, C., Tecedeiro, M., Pellegrino, P., Paiva, T., & Marôco, J. P. (2021). Psychometric Properties of the Oldenburg Burnout Inventory in a Portuguese Sample of Aircraft Maintenance Technicians. Frontiers in Psychology, 12, 725099. https://doi.org/10.3389/fpsyg.2021.725099\nReis, D., Xanthopoulou, D., & Tsaousis, I. (2015). Measuring job and academic burnout with the Oldenburg Burnout Inventory (OLBI): Factorial invariance across samples and countries. Burnout Research, 2(1), 8-18. https://doi.org/10.1016/j.burn.2014.11.001\nShoman, Y., Marca, S. C., Bianchi, R., Godderis, L., van der Molen, H. F., & Guseva Canu, I. (2021). Psychometric properties of burnout measures: A systematic review. Epidemiology and Psychiatric Sciences, 30, e8. https://doi.org/10.1017/S2045796020001134\nSinval, J., Queirós, C., Pasian, S., & Marôco, J. (2019). Transcultural Adaptation of the Oldenburg Burnout Inventory (OLBI) for Brazil and Portugal. Frontiers in Psychology, 10, 338. https://doi.org/10.3389/fpsyg.2019.00338\nSmout, M. (2024) A pragmatic pilot study of the feasibility of a common factors supervision intervention not embedded in a training program for improving confidence, burnout, and client outcomes of psychologists in routine private practice. (Unpublished Manuscript).\nSubburaj, A., & Vijayadurai, J. (2016). Translation, validation and psychometric properties of Tamil version of Oldenburg Burnout Inventory (OLBI). Procedia-Social and Behavioral Sciences, 219, 724–731. https://doi.org/10.1016/j.sbspro.2016.05.067",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Oldenburg Burnout Inventory (OLBI) PDF",
+   "source_url": null,
+   "sha256": "da04041f28038759f35c21fbe9c0833f8ba8a4df4b3a919a951bd0a0aad6d678",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/da04041f28038759f35c21fbe9c0833f8ba8a4df4b3a919a951bd0a0aad6d678.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Generalised Anxiety Disorder Assessment (GAD-7)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "8e7688cbbe7a8f1d551ce24cbc8ad8938ef556d77093795beaae842f074111ef",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8e7688cbbe7a8f1d551ce24cbc8ad8938ef556d77093795beaae842f074111ef.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4b51d148ad0b943f8720e8a415f7289b9e586e3429b2af955b4ecaaf1aaf23d0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4b51d148ad0b943f8720e8a415f7289b9e586e3429b2af955b4ecaaf1aaf23d0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "OLBI Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6e364d36ade5120faddec9cad0668839d985f03ea296b5f5d74cac820ab5a50c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6e364d36ade5120faddec9cad0668839d985f03ea296b5f5d74cac820ab5a50c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "OLBI Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0f6ae19bbf2fc60c92d11ebc852b518cb8f28765e265f474cf9d618d4a79e3df",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0f6ae19bbf2fc60c92d11ebc852b518cb8f28765e265f474cf9d618d4a79e3df.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "OLBI Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "4ba236a84762bdf139f9e8ecf4914c8411cc72966f5a6f83c80219682f03db6c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4ba236a84762bdf139f9e8ecf4914c8411cc72966f5a6f83c80219682f03db6c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "OLBI Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "2f2872448af9edca35ecd1d44c88e430eea76d654c13a9783d243b23e66037f3",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2f2872448af9edca35ecd1d44c88e430eea76d654c13a9783d243b23e66037f3.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "OLBI Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0e2360135ee5cd1b318767cf6045827bb8aa62c8e82cd45433ab99294db531f2",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0e2360135ee5cd1b318767cf6045827bb8aa62c8e82cd45433ab99294db531f2.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Sample Characteristics Table",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c7d3b605e8cdf255abaad52d3a78ba516466c19a88f671aefd31322676bf0d2f",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c7d3b605e8cdf255abaad52d3a78ba516466c19a88f671aefd31322676bf0d2f.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Burnout Percentile Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Oldenburg Burnout Inventory (OLBI) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "a18c353ac86ada6b863bb8780080bd7824463e3b31203bb4265e33ac9f9c18d8",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/a18c353ac86ada6b863bb8780080bd7824463e3b31203bb4265e33ac9f9c18d8.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 16
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [],
+   "scoring_rule_count": 3,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review.",
+    "Normative conversion and longitudinal change interpretation are not implemented."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "source_draft_1",
+    "label": "Exhaustion",
+    "minimum": 8.0,
+    "maximum": 32.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q2",
+     "Q4",
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12",
+     "Q14",
+     "Q16"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "source_draft_2",
+    "label": "Disengagement",
+    "minimum": 8.0,
+    "maximum": 32.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/1",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q15"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "source_draft_3",
+    "label": "Total raw score",
+    "minimum": 16.0,
+    "maximum": 64.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/2",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "source_draft_1",
+    "title": "Exhaustion",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_1",
+      "label": "Exhaustion",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 8.0,
+    "maximum": 32.0,
+    "axis_unit": "score"
+   },
+   {
+    "id": "source_draft_2",
+    "title": "Disengagement",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_2",
+      "label": "Disengagement",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 8.0,
+    "maximum": 32.0,
+    "axis_unit": "score"
+   },
+   {
+    "id": "source_draft_3",
+    "title": "Total raw score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_3",
+      "label": "Total raw score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 16.0,
+    "maximum": 64.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "b6bcb0abad7eae8ec507b063e7b4dea0034af019050397c6b83fa1e7969f4397",
+   "guidance_titles": [
+    "OLBI Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 3,
+   "rules_included": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3"
+   ],
+   "raw_calculation_status": "draft_implemented",
+   "interpretation_status": "not_compiled",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review.",
+    "Normative conversion and longitudinal change interpretation are not implemented."
+   ],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "source_draft_1",
+    "label": "Exhaustion",
+    "rule_id": "source_draft_1",
+    "item_ids": [
+     "Q2",
+     "Q4",
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12",
+     "Q14",
+     "Q16"
+    ]
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Disengagement",
+    "rule_id": "source_draft_2",
+    "item_ids": [
+     "Q1",
+     "Q3",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q15"
+    ]
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Total raw score",
+    "rule_id": "source_draft_3",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "2e5487023f7f65f8d5f4c8f051007107d79101205964a179fa49c64cecbcc8b6",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Normative conversion and longitudinal change interpretation are not implemented.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T10:56:45.139579+00:00",
+  "raw_extraction_sha256": "50c12fb966409ceeea076ce96a0a3b3e91870390aa46d919875f9d3b559498fb",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Outcome Monitoring"
+   },
+   {
+    "url": null,
+    "title": "Well-being"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1002/da.22766",
+    "title": "https://doi.org/10.1002/da.22766"
+   },
+   {
+    "url": "https://doi.org/10.1027//1015-5759.19.1.12",
+    "title": "https://doi.org/10.1027//1015-5759.19.1.12"
+   },
+   {
+    "url": "https://doi.org/10.1080/02678370500340728",
+    "title": "https://doi.org/10.1080/02678370500340728"
+   },
+   {
+    "url": "https://doi.org/10.1111/sjop.12298",
+    "title": "https://doi.org/10.1111/sjop.12298"
+   },
+   {
+    "url": "https://doi.org/10.3390/ijerph181910544",
+    "title": "https://doi.org/10.3390/ijerph181910544"
+   },
+   {
+    "url": "https://doi.org/10.25122/jml-2019-0089",
+    "title": "https://doi.org/10.25122/jml-2019-0089"
+   },
+   {
+    "url": "https://doi.org/10.1159/000521376",
+    "title": "https://doi.org/10.1159/000521376"
+   },
+   {
+    "url": "https://doi.org/10.4103/jehp.jehp_1809_21",
+    "title": "https://doi.org/10.4103/jehp.jehp_1809_21"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.burn.2014.11.001",
+    "title": "https://doi.org/10.1016/j.burn.2014.11.001"
+   },
+   {
+    "url": "https://doi.org/10.1017/S2045796020001134",
+    "title": "https://doi.org/10.1017/S2045796020001134"
+   },
+   {
+    "url": "https://doi.org/10.3389/fpsyg.2019.00338",
+    "title": "https://doi.org/10.3389/fpsyg.2019.00338"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.sbspro.2016.05.067",
+    "title": "https://doi.org/10.1016/j.sbspro.2016.05.067"
+   },
+   {
+    "url": null,
+    "title": "Professional wellbeing measure"
+   },
+   {
+    "url": null,
+    "title": "Stress assessment scale"
+   },
+   {
+    "url": null,
+    "title": "Exhaustion assessment measure"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Generalised anxiety questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

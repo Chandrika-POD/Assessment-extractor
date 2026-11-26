@@ -1,0 +1,1009 @@
+{
+ "version": "2.0.0-draft.1",
+ "status": "draft_requires_clinical_review",
+ "clinical_scoring_enabled": false,
+ "metrics": [
+  {
+   "rule_id": "compulsion_symptoms",
+   "label": "Compulsion Symptoms",
+   "minimum": 0,
+   "maximum": 20,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/0",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "obsession_symptoms",
+   "label": "Obsession Symptoms",
+   "minimum": 0,
+   "maximum": 20,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/1",
+   "item_ids": [
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "compulsion_impairment",
+   "label": "Compulsion Impairment",
+   "minimum": 0,
+   "maximum": 24,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/2",
+   "item_ids": [
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "obsession_impairment",
+   "label": "Obsession Impairment",
+   "minimum": 0,
+   "maximum": 24,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/3",
+   "item_ids": [
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "total_symptoms",
+   "label": "Total Symptoms",
+   "minimum": 0,
+   "maximum": 40,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/4",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  },
+  {
+   "rule_id": "total_impairment",
+   "label": "Total Impairment",
+   "minimum": 0,
+   "maximum": 48,
+   "favourable_direction": null,
+   "direction_status": "not_compiled",
+   "calculation_method": "sum",
+   "calculation_ref": "/scoring/rules/5",
+   "item_ids": [
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38"
+   ],
+   "severity_bands_ref": null,
+   "axis_unit": "score"
+  }
+ ],
+ "charts": [
+  {
+   "id": "compulsion_symptoms",
+   "title": "Compulsion Symptoms",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "compulsion_symptoms",
+     "label": "Compulsion Symptoms",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 20,
+   "axis_unit": "score"
+  },
+  {
+   "id": "obsession_symptoms",
+   "title": "Obsession Symptoms",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "obsession_symptoms",
+     "label": "Obsession Symptoms",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 20,
+   "axis_unit": "score"
+  },
+  {
+   "id": "compulsion_impairment",
+   "title": "Compulsion Impairment",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "compulsion_impairment",
+     "label": "Compulsion Impairment",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 24,
+   "axis_unit": "score"
+  },
+  {
+   "id": "obsession_impairment",
+   "title": "Obsession Impairment",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "obsession_impairment",
+     "label": "Obsession Impairment",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 24,
+   "axis_unit": "score"
+  },
+  {
+   "id": "total_symptoms",
+   "title": "Total Symptoms",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "total_symptoms",
+     "label": "Total Symptoms",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 40,
+   "axis_unit": "score"
+  },
+  {
+   "id": "total_impairment",
+   "title": "Total Impairment",
+   "kind": "domain_trend",
+   "series": [
+    {
+     "id": "total_impairment",
+     "label": "Total Impairment",
+     "value_field": "rule_result"
+    }
+   ],
+   "minimum": 0,
+   "maximum": 48,
+   "axis_unit": "score"
+  }
+ ],
+ "comparisons": {
+  "reference_visits": [
+   "previous",
+   "baseline"
+  ],
+  "delta_formula": "current_minus_reference",
+  "deduplicate_same_reference_visit": true,
+  "require_same_assessment_definition_language_and_scoring_version": true,
+  "missing_result": "withhold_comparison",
+  "single_visit": "show_current_scores_only",
+  "date_source": "saved_session_completion_timestamp",
+  "require_compatible_respondent_context": true,
+  "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+  "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+  "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+ },
+ "percentiles": {
+  "enabled": false,
+  "reason": "verified_lookup_not_available"
+ },
+ "interpretation": {
+  "method": "deterministic_templates",
+  "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+  "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+  "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+  "clinical_significance": "not_implemented_requires_review",
+  "diagnosis": "not_inferred",
+  "severity_source": "not_compiled",
+  "overall_total": null,
+  "combine_metrics_into_new_total": false,
+  "source_guidance_ref": "/scoring/source_guidance",
+  "source_guidance_use": "reference_text_for_review_not_executable_rules",
+  "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+  "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+  "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+ },
+ "source_evidence": {
+  "questionnaire_sha256": "f4279bc66d40440d894447a90388529987b845094ac109ec40906cabe5d982d6",
+  "guidance_titles": [
+   "Children’s Obsessional Compulsive Inventory – Revised – Self Report (ChOCI-R-S) Scoring",
+   "ChOCI-R-S Percentiles",
+   "Subscale interpretation of the ChOCI-R-S",
+   "ChOCI-R-S Change Score Interpretation",
+   "ChOCI-R-S Change Score Interpretation",
+   "How should I interpret a large gap between the child-rated ChOCI-R-S and the parent-rated ChOCI-R-P?",
+   "How should I respond clinically when a young person with elevated ChOCI-R-S scores also presents with anxiety, tics, or attentional difficulties?",
+   "Does a low score or a \"Minimal\" descriptor mean the young person does not have OCD?",
+   "With six scores produced, which should be the main focus for reporting and progress monitoring?"
+  ]
+ },
+ "mode": "numeric_scores",
+ "required_context": [],
+ "coverage": {
+  "questionnaire_available": true,
+  "numeric_rule_count": 6,
+  "rules_included": [
+   "compulsion_symptoms",
+   "obsession_symptoms",
+   "compulsion_impairment",
+   "obsession_impairment",
+   "total_symptoms",
+   "total_impairment"
+  ],
+  "raw_calculation_status": "draft_rules_available",
+  "interpretation_status": "requires_review",
+  "full_source_coverage_verified": false,
+  "clinical_review_complete": false,
+  "remaining_work": [],
+  "review_issue_codes": [
+   "selection_and_branching_need_review",
+   "scoring_not_structured",
+   "independent_review_pending"
+  ],
+  "reference_guidance_only": false,
+  "missing_direction_rule_ids": [
+   "compulsion_symptoms",
+   "obsession_symptoms",
+   "compulsion_impairment",
+   "obsession_impairment",
+   "total_symptoms",
+   "total_impairment"
+  ]
+ },
+ "sections": [
+  {
+   "id": "patient_details",
+   "enabled": true,
+   "source": "saved_patient_and_session"
+  },
+  {
+   "id": "assessment_summary",
+   "enabled": true,
+   "source": "assessment_and_reporting_coverage"
+  },
+  {
+   "id": "results",
+   "enabled": true,
+   "source": "reporting.metrics"
+  },
+  {
+   "id": "score_charts",
+   "enabled": true,
+   "source": "reporting.charts",
+   "single_visit": "range_bar",
+   "repeated_visits": "line_chart"
+  },
+  {
+   "id": "comparisons",
+   "enabled": true,
+   "source": "compatible_saved_sessions"
+  },
+  {
+   "id": "protocol_result",
+   "enabled": false,
+   "source": "scoring.protocol"
+  },
+  {
+   "id": "paired_profile",
+   "enabled": false,
+   "source": "scoring.paired_profile"
+  },
+  {
+   "id": "response_history",
+   "enabled": true,
+   "source": "reporting.item_history"
+  },
+  {
+   "id": "responses",
+   "enabled": true,
+   "source": "reporting.response_groups"
+  },
+  {
+   "id": "source_guidance",
+   "enabled": true,
+   "source": "scoring.source_guidance",
+   "role": "reference_material_requires_review"
+  },
+  {
+   "id": "limitations",
+   "enabled": true,
+   "source": "reporting.coverage"
+  }
+ ],
+ "response_groups": [
+  {
+   "id": "compulsion_symptoms",
+   "label": "Compulsion Symptoms",
+   "rule_id": "compulsion_symptoms",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10"
+   ]
+  },
+  {
+   "id": "obsession_symptoms",
+   "label": "Obsession Symptoms",
+   "rule_id": "obsession_symptoms",
+   "item_ids": [
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29"
+   ]
+  },
+  {
+   "id": "compulsion_impairment",
+   "label": "Compulsion Impairment",
+   "rule_id": "compulsion_impairment",
+   "item_ids": [
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19"
+   ]
+  },
+  {
+   "id": "obsession_impairment",
+   "label": "Obsession Impairment",
+   "rule_id": "obsession_impairment",
+   "item_ids": [
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38"
+   ]
+  },
+  {
+   "id": "total_symptoms",
+   "label": "Total Symptoms",
+   "rule_id": "total_symptoms",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29"
+   ]
+  },
+  {
+   "id": "total_impairment",
+   "label": "Total Impairment",
+   "rule_id": "total_impairment",
+   "item_ids": [
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38"
+   ]
+  },
+  {
+   "id": "recorded_responses",
+   "label": "Additional recorded responses",
+   "rule_id": null,
+   "item_ids": [
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q30",
+    "Q31",
+    "Q32"
+   ]
+  }
+ ],
+ "item_history": [
+  {
+   "item_id": "Q1",
+   "question_ref": "/questionnaire/items/0",
+   "source_label": "1",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q2",
+   "question_ref": "/questionnaire/items/1",
+   "source_label": "2",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q3",
+   "question_ref": "/questionnaire/items/2",
+   "source_label": "3",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q4",
+   "question_ref": "/questionnaire/items/3",
+   "source_label": "4",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q5",
+   "question_ref": "/questionnaire/items/4",
+   "source_label": "5",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q6",
+   "question_ref": "/questionnaire/items/5",
+   "source_label": "6",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q7",
+   "question_ref": "/questionnaire/items/6",
+   "source_label": "7",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q8",
+   "question_ref": "/questionnaire/items/7",
+   "source_label": "8",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q9",
+   "question_ref": "/questionnaire/items/8",
+   "source_label": "9",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q10",
+   "question_ref": "/questionnaire/items/9",
+   "source_label": "10",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q11",
+   "question_ref": "/questionnaire/items/10",
+   "source_label": "11",
+   "response_type": "text",
+   "presentation": "text_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q12",
+   "question_ref": "/questionnaire/items/11",
+   "source_label": "12",
+   "response_type": "text",
+   "presentation": "text_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q13",
+   "question_ref": "/questionnaire/items/12",
+   "source_label": "13",
+   "response_type": "text",
+   "presentation": "text_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q14",
+   "question_ref": "/questionnaire/items/13",
+   "source_label": "14",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q15",
+   "question_ref": "/questionnaire/items/14",
+   "source_label": "15",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q16",
+   "question_ref": "/questionnaire/items/15",
+   "source_label": "16",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q17",
+   "question_ref": "/questionnaire/items/16",
+   "source_label": "17",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q18",
+   "question_ref": "/questionnaire/items/17",
+   "source_label": "18",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q19",
+   "question_ref": "/questionnaire/items/18",
+   "source_label": "19",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q20",
+   "question_ref": "/questionnaire/items/19",
+   "source_label": "20",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q21",
+   "question_ref": "/questionnaire/items/20",
+   "source_label": "21",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q22",
+   "question_ref": "/questionnaire/items/21",
+   "source_label": "22",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q23",
+   "question_ref": "/questionnaire/items/22",
+   "source_label": "23",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q24",
+   "question_ref": "/questionnaire/items/23",
+   "source_label": "24",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q25",
+   "question_ref": "/questionnaire/items/24",
+   "source_label": "25",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q26",
+   "question_ref": "/questionnaire/items/25",
+   "source_label": "26",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q27",
+   "question_ref": "/questionnaire/items/26",
+   "source_label": "27",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q28",
+   "question_ref": "/questionnaire/items/27",
+   "source_label": "28",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q29",
+   "question_ref": "/questionnaire/items/28",
+   "source_label": "29",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q30",
+   "question_ref": "/questionnaire/items/29",
+   "source_label": "30",
+   "response_type": "text",
+   "presentation": "text_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q31",
+   "question_ref": "/questionnaire/items/30",
+   "source_label": "31",
+   "response_type": "text",
+   "presentation": "text_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q32",
+   "question_ref": "/questionnaire/items/31",
+   "source_label": "32",
+   "response_type": "text",
+   "presentation": "text_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q33",
+   "question_ref": "/questionnaire/items/32",
+   "source_label": "33",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q34",
+   "question_ref": "/questionnaire/items/33",
+   "source_label": "34",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q35",
+   "question_ref": "/questionnaire/items/34",
+   "source_label": "35",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q36",
+   "question_ref": "/questionnaire/items/35",
+   "source_label": "36",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q37",
+   "question_ref": "/questionnaire/items/36",
+   "source_label": "37",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  },
+  {
+   "item_id": "Q38",
+   "question_ref": "/questionnaire/items/37",
+   "source_label": "38",
+   "response_type": "choice",
+   "presentation": "choice_history",
+   "value_field": "saved_answer",
+   "unit": null,
+   "minimum": null,
+   "maximum": null,
+   "missing_value": "gap",
+   "ineligible_value": "not_asked"
+  }
+ ],
+ "protocol": null,
+ "paired_profile": null
+}

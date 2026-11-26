@@ -1,0 +1,1571 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_inattentive_raw",
+   "ruleId": "inattentive_raw",
+   "label": "Inattentive raw score",
+   "minimum": 0,
+   "maximum": 27,
+   "calculation": {
+    "id": "inattentive_raw",
+    "label": "Inattentive raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 27,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_inattentive_symptom_count",
+   "ruleId": "inattentive_symptom_count",
+   "label": "Inattentive symptom count",
+   "minimum": 0,
+   "maximum": 9,
+   "calculation": {
+    "id": "inattentive_symptom_count",
+    "label": "Inattentive symptom count",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 9,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 2,
+    "operator": ">=",
+    "item_thresholds": {}
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_hyperactive_impulsive_raw",
+   "ruleId": "hyperactive_impulsive_raw",
+   "label": "Hyperactive Impulsive raw score",
+   "minimum": 0,
+   "maximum": 27,
+   "calculation": {
+    "id": "hyperactive_impulsive_raw",
+    "label": "Hyperactive Impulsive raw score",
+    "item_ids": [
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 27,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_hyperactive_impulsive_symptom_count",
+   "ruleId": "hyperactive_impulsive_symptom_count",
+   "label": "Hyperactive Impulsive symptom count",
+   "minimum": 0,
+   "maximum": 9,
+   "calculation": {
+    "id": "hyperactive_impulsive_symptom_count",
+    "label": "Hyperactive Impulsive symptom count",
+    "item_ids": [
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 9,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 2,
+    "operator": ">=",
+    "item_thresholds": {}
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_combined_raw",
+   "ruleId": "combined_raw",
+   "label": "Combined raw score",
+   "minimum": 0,
+   "maximum": 54,
+   "calculation": {
+    "id": "combined_raw",
+    "label": "Combined raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 54,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_combined_symptom_count",
+   "ruleId": "combined_symptom_count",
+   "label": "Combined symptom count",
+   "minimum": 0,
+   "maximum": 18,
+   "calculation": {
+    "id": "combined_symptom_count",
+    "label": "Combined symptom count",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 18,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 2,
+    "operator": ">=",
+    "item_thresholds": {}
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_oppositional_conduct_raw",
+   "ruleId": "oppositional_conduct_raw",
+   "label": "Oppositional Conduct raw score",
+   "minimum": 0,
+   "maximum": 30,
+   "calculation": {
+    "id": "oppositional_conduct_raw",
+    "label": "Oppositional Conduct raw score",
+    "item_ids": [
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 30,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_oppositional_conduct_symptom_count",
+   "ruleId": "oppositional_conduct_symptom_count",
+   "label": "Oppositional Conduct symptom count",
+   "minimum": 0,
+   "maximum": 10,
+   "calculation": {
+    "id": "oppositional_conduct_symptom_count",
+    "label": "Oppositional Conduct symptom count",
+    "item_ids": [
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 10,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 2,
+    "operator": ">=",
+    "item_thresholds": {}
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_anxiety_depression_raw",
+   "ruleId": "anxiety_depression_raw",
+   "label": "Anxiety Depression raw score",
+   "minimum": 0,
+   "maximum": 21,
+   "calculation": {
+    "id": "anxiety_depression_raw",
+    "label": "Anxiety Depression raw score",
+    "item_ids": [
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 21,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_anxiety_depression_symptom_count",
+   "ruleId": "anxiety_depression_symptom_count",
+   "label": "Anxiety Depression symptom count",
+   "minimum": 0,
+   "maximum": 7,
+   "calculation": {
+    "id": "anxiety_depression_symptom_count",
+    "label": "Anxiety Depression symptom count",
+    "item_ids": [
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 7,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 2,
+    "operator": ">=",
+    "item_thresholds": {}
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_impaired_performance_domains",
+   "ruleId": "impaired_performance_domains",
+   "label": "Number of performance domains rated problematic",
+   "minimum": 0,
+   "maximum": 8,
+   "calculation": {
+    "id": "impaired_performance_domains",
+    "label": "Number of performance domains rated problematic",
+    "item_ids": [
+     "Q36",
+     "Q37",
+     "Q38",
+     "Q39",
+     "Q40",
+     "Q41",
+     "Q42",
+     "Q43"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 8,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "85e40a97f4dd8e3d575f4672c1eaca3a4a2f69bf7d61cec7aa4ed4a735e2fc13",
+     "retrieved_at": "2026-11-13T12:03:42.024720+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 2,
+    "operator": "<=",
+    "item_thresholds": {}
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageCount": 7,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d3682026d9f6a_p1",
+   "documentSha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d3682026d9f6a_p1_chart_1"
+   ],
+   "tableIds": [
+    "d3682026d9f6a_p1_table_1",
+    "d3682026d9f6a_p1_table_2"
+   ],
+   "sectionIds": [
+    "d3682026d9f6a_p1_section_1",
+    "d3682026d9f6a_p1_section_2",
+    "d3682026d9f6a_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d3682026d9f6a_p2",
+   "documentSha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d3682026d9f6a_p2_section_1",
+    "d3682026d9f6a_p2_section_2",
+    "d3682026d9f6a_p2_section_3",
+    "d3682026d9f6a_p2_section_4",
+    "d3682026d9f6a_p2_section_5",
+    "d3682026d9f6a_p2_section_6",
+    "d3682026d9f6a_p2_section_7"
+   ]
+  },
+  {
+   "pageId": "d3682026d9f6a_p3",
+   "documentSha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d3682026d9f6a_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "d3682026d9f6a_p4",
+   "documentSha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d3682026d9f6a_p4_table_1"
+   ],
+   "sectionIds": [
+    "d3682026d9f6a_p4_section_1",
+    "d3682026d9f6a_p4_section_2"
+   ]
+  },
+  {
+   "pageId": "d3682026d9f6a_p5",
+   "documentSha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d3682026d9f6a_p5_table_1"
+   ],
+   "sectionIds": [
+    "d3682026d9f6a_p5_section_1"
+   ]
+  },
+  {
+   "pageId": "d3682026d9f6a_p6",
+   "documentSha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d3682026d9f6a_p6_table_1",
+    "d3682026d9f6a_p6_table_2"
+   ],
+   "sectionIds": [
+    "d3682026d9f6a_p6_section_1"
+   ]
+  },
+  {
+   "pageId": "d3682026d9f6a_p7",
+   "documentSha256": "3682026d9f6af50f1d9f9f4e3593379f75cd07532a1b1254d627bffdbf9c28e6",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d3682026d9f6a_p7_table_1"
+   ],
+   "sectionIds": [
+    "d3682026d9f6a_p7_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d3682026d9f6a_p1_section_1",
+   "pageId": "d3682026d9f6a_p1",
+   "title": "Informant",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    98.90047,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p1_section_2",
+   "pageId": "d3682026d9f6a_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    258.93039,
+    84.91447,
+    278.2084
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p1_section_3",
+   "pageId": "d3682026d9f6a_p1",
+   "title": "VADTRS Subscale Normative Percentiles",
+   "type": "results",
+   "bboxPt": [
+    160.97446,
+    414.85165,
+    395.71841,
+    431.37564
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p2_section_1",
+   "pageId": "d3682026d9f6a_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    124.57648,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p2_section_2",
+   "pageId": "d3682026d9f6a_p2",
+   "title": "Inattentive Symptoms",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    232.77681,
+    205.34035,
+    247.92381
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p2_section_3",
+   "pageId": "d3682026d9f6a_p2",
+   "title": "Hyperactive/Impulsive Symptoms",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    402.33081,
+    266.48932,
+    417.47781
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p2_section_4",
+   "pageId": "d3682026d9f6a_p2",
+   "title": "Combined ADHD Presentation",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    475.08481,
+    249.32933,
+    490.23181
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p2_section_5",
+   "pageId": "d3682026d9f6a_p2",
+   "title": "Oppositional Defiant Symptoms",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    547.83875,
+    257.89832,
+    562.98578
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p2_section_6",
+   "pageId": "d3682026d9f6a_p2",
+   "title": "Anxiety/Depression Symptoms",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    620.59277,
+    253.02533,
+    635.73981
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p2_section_7",
+   "pageId": "d3682026d9f6a_p2",
+   "title": "Functional Impairment",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    693.3468,
+    209.00334,
+    708.49384
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p3_section_1",
+   "pageId": "d3682026d9f6a_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    290.26642,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p4_section_1",
+   "pageId": "d3682026d9f6a_p4",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    336.92834,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p4_section_2",
+   "pageId": "d3682026d9f6a_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    537.46106,
+    151.82047,
+    556.73901
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p5_section_1",
+   "pageId": "d3682026d9f6a_p5",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p6_section_1",
+   "pageId": "d3682026d9f6a_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d3682026d9f6a_p7_section_1",
+   "pageId": "d3682026d9f6a_p7",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d3682026d9f6a_p1_chart_1",
+   "title": "VADTRS Subscale Normative Percentiles",
+   "type": "vertical_bar",
+   "bboxPt": [
+    87.346,
+    443.332,
+    520.346,
+    734.272
+   ],
+   "widthPt": 433.0,
+   "heightPt": 290.94,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 445.02759000000003,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 473.9176,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 502.817625,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 531.70767,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 560.6076350000001,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 589.49765,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 618.387665,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 647.28763,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 676.177645,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 705.07767,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 733.96768,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Inattentive Subtype",
+     "colour": "#364b80",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.09260969249929293,
+     "barThicknessPt": 40.19999,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#364b80"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#364b80"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#364b80"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#364b80"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#364b80"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Hyperactive/ Impulsive Subtype",
+     "colour": "#795095",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.27782907749787883,
+     "barThicknessPt": 40.199990000000014,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#795095"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#795095"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#795095"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#795095"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#795095"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "Combined Subtype",
+     "colour": "#bc4f90",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.46304853178053257,
+     "barThicknessPt": 40.20000999999996,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#bc4f90"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#bc4f90"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#bc4f90"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#bc4f90"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#bc4f90"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": "Oppositional Defiant/ Conduct",
+     "colour": "#ef5675",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6482679629684971,
+     "barThicknessPt": 40.20001000000002,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ef5675"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ef5675"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ef5675"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ef5675"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ef5675"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_5",
+     "label": "Anxiety/ Depression",
+     "colour": "#ffa500",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8334873364197384,
+     "barThicknessPt": 40.200019999999995,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ffa500"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d3682026d9f6a_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 398,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "VADTRS Subscale Normative Percentiles",
+     "bboxPt": [
+      160.97446,
+      414.85165,
+      395.71841,
+      431.37564
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Average",
+     "bboxPt": [
+      494.00247,
+      581.03162,
+      516.34644,
+      589.27563
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Inattentive",
+     "bboxPt": [
+      108.99046,
+      738.03162,
+      145.90244,
+      749.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Subtype",
+     "bboxPt": [
+      112.77046,
+      746.03162,
+      142.12245,
+      757.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Hyperactive/",
+     "bboxPt": [
+      185.41846,
+      738.03162,
+      229.87445,
+      749.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Impulsive",
+     "bboxPt": [
+      190.75446,
+      746.03162,
+      224.53845,
+      757.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Subtype",
+     "bboxPt": [
+      192.97044,
+      754.03162,
+      222.32243,
+      765.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Combined",
+     "bboxPt": [
+      269.61847,
+      738.03162,
+      306.07446,
+      749.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Subtype",
+     "bboxPt": [
+      273.17047,
+      746.03162,
+      302.52246,
+      757.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Oppositional",
+     "bboxPt": [
+      345.81445,
+      738.03162,
+      390.27844,
+      749.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Defiant/",
+     "bboxPt": [
+      354.26245,
+      746.03162,
+      381.83044,
+      757.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Conduct",
+     "bboxPt": [
+      353.15045,
+      754.03162,
+      382.94244,
+      765.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Anxiety/",
+     "bboxPt": [
+      434.01846,
+      738.03162,
+      462.47446,
+      749.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Depression",
+     "bboxPt": [
+      428.01846,
+      746.03162,
+      468.47446,
+      757.02362
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration of the VADTRS a plot shows the normative percentiles for all subscales with a coloured background at the 90th percentile and above, indicating potentially elevated scores.",
+   "Subsequent administrations of the VADTRS show longitudinal plots showing the ADHD subtype raw scores and comorbid percentiles over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "$file": "assessment.report_configuration.interpretationRules.json"
+ },
+ "referenceTables": [],
+ "paintStyles": {
+  "$file": "assessment.report_configuration.paintStyles.json"
+ },
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 7,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 7,
+   "unresolvedCells": 272
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

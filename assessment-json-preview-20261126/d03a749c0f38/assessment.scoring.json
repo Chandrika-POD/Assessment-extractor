@@ -1,0 +1,251 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "source_draft_1",
+   "label": "PMQ-9 raw score",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+   ],
+   "method": "sum",
+   "value_field": "printed_value",
+   "multiplier": 1,
+   "severity_bands": [
+    {
+     "label": "Subthreshold",
+     "minimum_inclusive": 0,
+     "maximum_inclusive": 9
+    },
+    {
+     "label": "Elevated",
+     "minimum_inclusive": 10,
+     "maximum_inclusive": 27
+    }
+   ],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "questionnaire_url": null,
+    "questionnaire_sha256": "5a34c99c0410ad3203b126937661fb28ef9648227072df0d28780fc109d39223",
+    "page_url": null,
+    "page_sha256": "cd64db53560fc197b766d718fe8a4cf61e9eacb3d7b6939dc8fe7e509b160bfa",
+    "method": "reviewed_saved_source_membership_and_arithmetic",
+    "context_section_ids": [
+     "C13",
+     "C15",
+     "C16",
+     "C17",
+     "C18",
+     "C19",
+     "LIVE_C35",
+     "LIVE_C37",
+     "LIVE_C38",
+     "LIVE_C39",
+     "LIVE_C40",
+     "LIVE_C41"
+    ],
+    "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+   },
+   "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+   "minimum": 0.0,
+   "maximum": 27.0
+  },
+  {
+   "id": "source_draft_2",
+   "label": "PHQ-9 raw score",
+   "item_ids": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "sum",
+   "value_field": "printed_value",
+   "multiplier": 1,
+   "severity_bands": [
+    {
+     "label": "Subthreshold",
+     "minimum_inclusive": 0,
+     "maximum_inclusive": 9
+    },
+    {
+     "label": "Elevated",
+     "minimum_inclusive": 10,
+     "maximum_inclusive": 27
+    }
+   ],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "questionnaire_url": null,
+    "questionnaire_sha256": "5a34c99c0410ad3203b126937661fb28ef9648227072df0d28780fc109d39223",
+    "page_url": null,
+    "page_sha256": "cd64db53560fc197b766d718fe8a4cf61e9eacb3d7b6939dc8fe7e509b160bfa",
+    "method": "reviewed_saved_source_membership_and_arithmetic",
+    "context_section_ids": [
+     "C13",
+     "C15",
+     "C16",
+     "C17",
+     "C18",
+     "C19",
+     "LIVE_C35",
+     "LIVE_C37",
+     "LIVE_C38",
+     "LIVE_C39",
+     "LIVE_C40",
+     "LIVE_C41"
+    ],
+    "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+   },
+   "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+   "minimum": 0.0,
+   "maximum": 27.0
+  }
+ ],
+ "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+ "rules_provenance": {
+  "questionnaire_url": null,
+  "questionnaire_sha256": "5a34c99c0410ad3203b126937661fb28ef9648227072df0d28780fc109d39223",
+  "page_url": null,
+  "page_sha256": "cd64db53560fc197b766d718fe8a4cf61e9eacb3d7b6939dc8fe7e509b160bfa",
+  "method": "reviewed_saved_source_membership_and_arithmetic"
+ },
+ "source_rule_excerpts": [
+  "The PMQ-9 and PHQ-9 Paired Screening classifies respondents into one of four mood states based on whether each score falls above or below the clinical cut-off of 10:",
+  "Both the PMQ-9 and PHQ-9 use a clinical cut-off score of 10 to classify symptom severity as either:",
+  "The PMQ-9 total score reflects the severity of manic symptoms experienced over the past week. Unlike the PHQ-9, the PMQ-9 does not have validated severity bands (e.g., mild, moderate, severe). Instead, available provisional evidence supports the use of a single cut-off of 10 or greater to distinguish subthreshold versus elevated manic symptom severity for monitoring purposes.",
+  "Based on the proposed approach in the PMQ-9 literature, PMQ-9 and PHQ-9 total scores are each dichotomised using a cutoff score of 10, resulting in four possible paired symptom profiles (Cerimele et al., 2022). While these mood state classifications have not been formally validated for clinical decision-making, they provide a strong provisional descriptive framework for monitoring symptom patterns.",
+  "Subthreshold depressive and subthreshold manic symptom burden (PMQ-9 less than 10, PHQ-9 less than 10): Both manic and depressive symptom scores fall below the cutoff of 10.",
+  "High depressive and subthreshold manic symptom burden (PMQ-9 less than 10, PHQ-9 of 10 or greater): Depressive symptoms are elevated while manic symptoms remain below the cutoff.",
+  "Subthreshold depressive and high manic symptom burden (PMQ-9 of 10 or greater, PHQ-9 less than 10): Manic symptoms are elevated while depressive symptoms remain below the cutoff.",
+  "Paired Total Score Bar Chart: Displays the client’s total PMQ-9 and PHQ-9 scores side-by-side on the same scale, with a reference line at a cutoff score of 10 for each. For the PHQ-9, validated severity thresholds (Minimal, Mild, Moderate, Moderately Severe, and Severe) are also shown. This provides an immediate visual summary of relative manic and depressive symptom severity and supports paired interpretation.",
+  "Provisional score thresholds for the PMQ-9 were defined to support longitudinal symptom monitoring and mood state classification (Cerimele et al., 2022). Scores below 10 were used to indicate lower levels of manic symptom severity, and scores of 10 or higher to indicate elevated levels of manic symptoms. This clinical cutoff was selected based on clinical judgment and alignment with PHQ-9 conventions (rather than empirical optimization) and should be interpreted as provisional rather than diagnostically definitive (Cerimele et al., 2022). The determination of operating characteristics (i.e., sensitivity and specificity) has not yet been formally evaluated. The PMQ-9 clinical cutoff was combined with the psychometrically validated PHQ-9 clinical cutoff (also 10 or higher) to classify four mood states reflecting relative manic and depressive symptom severity."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "PMQ-9 and PHQ-9 Scoring & Interpretation",
+   "text": "The PMQ-9 assesses symptoms over the past week, whereas the standard PHQ-9 assesses bothersome symptoms over the past two weeks (Kroenke et al., 2001; Cerimele et al., 2022). In the PMQ-9 validation study, the PHQ-9 timeframe was modified to match the PMQ-9 (Cerimele et al., 2022). In NovoPsych, the standard PHQ-9 two-week timeframe as well as instructions are retained. Clinicians should consider these differences when interpreting paired results, as well as when comparing PHQ-9 scores directly against the validation study benchmarks.\n",
+   "source_url": null
+  },
+  {
+   "title": "Interpreting the PMQ-9 and PHQ-9 Scores",
+   "text": "Both the PMQ-9 and PHQ-9 use a clinical cut-off score of 10 to classify symptom severity as either:\n0–9: Subthreshold or\n10–27: Elevated\nThis shared classification framework allows for direct comparison between manic and depressive symptom burden, and underpins the four mood state classifications used in this report.\n",
+   "source_url": null
+  },
+  {
+   "title": "Interpreting the PMQ-9 Score",
+   "text": "The PMQ-9 total score reflects the severity of manic symptoms experienced over the past week. Unlike the PHQ-9, the PMQ-9 does not have validated severity bands (e.g., mild, moderate, severe). Instead, available provisional evidence supports the use of a single cut-off of 10 or greater to distinguish subthreshold versus elevated manic symptom severity for monitoring purposes.\nIn addition to the raw score, percentile information is based on a longitudinal bipolar disorder clinical sample and provides descriptive context for interpreting an individual’s score relative to others in this clinical group. When tracking symptoms over time, a change of approximately 3 points on the PMQ-9 between sessions has been proposed as clinically meaningful.\n",
+   "source_url": null
+  },
+  {
+   "title": "Interpreting the PHQ-9 Score",
+   "text": "The PHQ-9 total score reflects the severity of depressive symptoms over the past two weeks, with higher scores indicating more severe symptoms consistent with major depressive disorder. As with the PMQ-9, scores of 10 or more are classified as Elevated and scores below 10 as Subthreshold. Additionally, the PHQ-9 has well-established, validated severity descriptors which are shown in brackets alongside the Subthreshold/Elevated classification:\n0–4: Subthreshold (No or Minimal)\n5–9: Subthreshold (Mild)\n10–14: Elevated (Moderate)\n15–19: Elevated (Moderately-Severe)\n20–27: Elevated (Severe)\nPercentile information based on community and clinical samples provides additional context for comparing an individual’s score with normative data. When monitoring change over time, a change of 5 or more points is typically considered reliable and clinically significant.\n",
+   "source_url": null
+  },
+  {
+   "title": "Paired PMQ-9 and PHQ-9 Interpretation",
+   "text": "When administered together, the PMQ-9 and PHQ-9 support a paired interpretation framework that allows for monitoring manic and depressive symptoms concurrently in bipolar disorder. Each measure is scored and interpreted independently; however, interpreting the two scores together provides clinically useful information about relative symptom patterns over time, consistent with a measurement-based care approach (Cerimele et al., 2022).\nBased on the proposed approach in the PMQ-9 literature, PMQ-9 and PHQ-9 total scores are each dichotomised using a cutoff score of 10, resulting in four possible paired symptom profiles (Cerimele et al., 2022). While these mood state classifications have not been formally validated for clinical decision-making, they provide a strong provisional descriptive framework for monitoring symptom patterns.\n",
+   "source_url": null
+  },
+  {
+   "title": "PMQ-9 and PHQ-9 Interpretation Framework",
+   "text": "Subthreshold depressive and subthreshold manic symptom burden (PMQ-9 less than 10, PHQ-9 less than 10): Both manic and depressive symptom scores fall below the cutoff of 10.\nHigh depressive and subthreshold manic symptom burden (PMQ-9 less than 10, PHQ-9 of 10 or greater): Depressive symptoms are elevated while manic symptoms remain below the cutoff.\nSubthreshold depressive and high manic symptom burden (PMQ-9 of 10 or greater, PHQ-9 less than 10): Manic symptoms are elevated while depressive symptoms remain below the cutoff.\nHigh depressive and high manic symptom burden (PMQ-9 of 10 or greater, PHQ-9 of 10 or greater): Both manic and depressive symptom scores are elevated.\nThis paired approach allows clinicians to monitor changes in both symptom domains over time and identify shifts between mood states that may require treatment adjustments. Longitudinal tracking of these mood-state classifications provides clinically actionable information on symptom course and treatment response.\n",
+   "source_url": null
+  },
+  {
+   "title": "PMQ-9 and PHQ-9 Clinical Cutoff",
+   "text": "Provisional score thresholds for the PMQ-9 were defined to support longitudinal symptom monitoring and mood state classification (Cerimele et al., 2022). Scores below 10 were used to indicate lower levels of manic symptom severity, and scores of 10 or higher to indicate elevated levels of manic symptoms. This clinical cutoff was selected based on clinical judgment and alignment with PHQ-9 conventions (rather than empirical optimization) and should be interpreted as provisional rather than diagnostically definitive (Cerimele et al., 2022). The determination of operating characteristics (i.e., sensitivity and specificity) has not yet been formally evaluated. The PMQ-9 clinical cutoff was combined with the psychometrically validated PHQ-9 clinical cutoff (also 10 or higher) to classify four mood states reflecting relative manic and depressive symptom severity.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+ "paired_profile": {
+  "status": "source_descriptive_draft",
+  "rule_ids": [
+   "source_draft_1",
+   "source_draft_2"
+  ],
+  "thresholds": [
+   10,
+   10
+  ],
+  "cells": [
+   {
+    "elevated": [
+     false,
+     false
+    ],
+    "label": "Both below threshold"
+   },
+   {
+    "elevated": [
+     true,
+     false
+    ],
+    "label": "PMQ-9 elevated only"
+   },
+   {
+    "elevated": [
+     false,
+     true
+    ],
+    "label": "PHQ-9 elevated only"
+   },
+   {
+    "elevated": [
+     true,
+     true
+    ],
+    "label": "Both elevated"
+   }
+  ],
+  "source": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "5a34c99c0410ad3203b126937661fb28ef9648227072df0d28780fc109d39223",
+   "page_url": null,
+   "page_sha256": "cd64db53560fc197b766d718fe8a4cf61e9eacb3d7b6939dc8fe7e509b160bfa",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  }
+ },
+ "remaining_work": [
+  "Normative conversions and clinical publication require separate source-specific review.",
+  "Separate PMQ-9 and PHQ-9 recall periods remain in source instructions; conversational administration requires preserving both."
+ ],
+ "implementation_status": {
+  "raw_calculation": "draft_implemented",
+  "interpretation": "partial_source_bands",
+  "normative_conversion": "not_implemented",
+  "clinical_use": "not_approved"
+ },
+ "runtime_module": "definition_runtime.py"
+}

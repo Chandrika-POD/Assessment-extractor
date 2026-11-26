@@ -1,0 +1,1342 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "mental-health-literacy-scale-mhls--e2b1069216a6",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Mental Health Literacy Scale (MHLS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Mental Health Literacy Scale (MHLS) is a 35-item, scale-based measure of knowledge and beliefs about mental disorders which aid their recognition, management or prevention.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "The purpose of these questions is to gain an understanding of your knowledge of various aspects to do with mental health. When responding, we are interested in your degree of knowledge.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "e131d2b7ef204089427cd3d283b93494a6dab2e487f695a704b99a0647f08ea8",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28",
+   "Q29",
+   "Q30",
+   "Q31",
+   "Q32",
+   "Q33",
+   "Q34",
+   "Q35"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 35.0,
+    "maximum": 160.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of all 35 items, range 35 to 160)",
+     "y": 651.0,
+     "url": null,
+     "sha256": "e131d2b7ef204089427cd3d283b93494a6dab2e487f695a704b99a0647f08ea8"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Below Average (score of 111 to 118 (percentile between 10 and 24)",
+   "Average (score of 119 to 136) (percentile between 25 and 75)",
+   "Above Average (score of 137 to 143) (percentile between 76 and 89)"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "MHLS Scoring & Interpretation",
+    "text": "Scores on the Mental Health Literacy Scale (MHLS) range from 35 to 160, with higher scores indicating higher levels of mental health literacy (O’Connor & Casey, 2015).\n\nHigh mental health literacy is associated with help seeking behaviour, self care and lower levels of stigma.\nLow scores suggest that the respondent may benefit from further information or training aimed at improving their knowledge and attitudes regarding mental health and help-seeking.\nThe MHLS measures six attributes of mental health literacy.\nRecognition of Disorders (Items 1 to 8) Ability to correctly identify features of a disorder, a specific disorder or category of disorders.\nKnowledge of Risk Factors and Causes (Items 9 and 10) Knowledge of environmental, social, familial or biological factors that increase the risk of developing a mental illness.\nSelf-Treatment Knowledge (Items 11 and 12) Knowledge of typical treatments recommended by mental health professionals and activities that an individual can conduct.\nKnowledge of Professional Help Available (Items 13 to 15) Knowledge of mental health professionals and the services they provide.\nKnowledge of How to Seek Mental Health Information (Items 16 to 19) Knowledge of how to seek mental health information: Knowledge of where to access information and capacity to do so.\nAttitudes that Promote Recognition and Appropriate Help-Seeking (Items 20 to 35) Attitudes that impact on recognition of disorders and willingness to engage in help-seeking behaviour.\n\nA MHLS score is presented and the scoring approach uses qualitative descriptors to categorise this score. The ranges for these descriptors were determined using percentiles derived from a community sample of 372 university students obtained from a study by O’Connor and Casey (2015).\nLow (score of 35 to 110) (less than or equal to the 10th percentile)\nBelow Average (score of 111 to 118 (percentile between 10 and 24)\nAverage (score of 119 to 136) (percentile between 25 and 75)\nAbove Average (score of 137 to 143) (percentile between 76 and 89)\nHigh (score of 144 to 160) (greater than or equal to the 90th percentile)\n\nA graph comparing the respondent’s score to the community sample and a sample of mental health professionals is presented, with shaded areas around the means demarcating the two middle quartiles between the 25th and 75th percentile (O’Connor & Casey, 2015). The 50th percentile represents the typical level of mental health literacy in each sample. This graph contextualises the respondent’s score relative to the typical level of mental health literacy in the community and among mental health professionals.\n\nAlthough the MHLS does not include subscales, a graph showing the respondent’s score as a percentage of the highest possible score for each attribute of mental health literacy is presented. Converting each attribute’s score to a percentage of its maximum provides a standardised way to compare scores across different attributes. This highlights which areas of mental health literacy the respondent is stronger or weaker in, relative to the best possible performance for each attribute.\n\nIf administered more than once, a meaningful change in mental health literacy is defined as a change of 6 or more points in the total score based on a Minimally Important Difference (MID) calculation (i.e., a 6 or more point increase indicates significant improvement; a 6 or more point decrease indicates significant reduction; and less than a 6 point change indicates no significant change).\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "O’Connor, M. & Casey, L. (2015). The Mental Health Literacy Scale (MHLS): A new scale-based measure of mental health literacy. Psychiatry Research, 229 (1-2), 511-516. https://doi.org/10.1016/j.psychres.2015.05.064\nIf you are interested in using the MHLS for research purposes, please contact the developer at [email protected] The MHLS is not to be used for commercial purposes.",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Bjornsen, H. N., Eilertsen, M. E. B., Ringdal, R., Espnes, G. A., & Moksnes, U. K. (2017). Positive mental health literacy: Development and validation of a measure among Norwegian adolescents. BMC Public Health, 17 (1), 717. https://doi.org/10.1186/s12889-017-4733-6\nCaldwell, T. M., & Jorm, A. F. (2000). Mental health nurses’ beliefs about interventions for schizophrenia and depression: a comparison with psychiatrists and the public. Australian and New Zealand Journal of Psychiatry, 34 (4), 602-611. https://doi.org/10.1080/j.1440-1614.2000.00750.x\nChung, E. Y., & Tse, T. T. (2022). Effect of human library intervention on mental health literacy: A multigroup pretest-posttest study. BMC Psychiatry, 22 (1), 73. https://doi.org/10.1186/s12888-022-03725-5\nFurnham, A., Cook, R., Martin, N., & Batey, M. (2011). Mental health literacy among university students. Journal of Public Mental Health, 10 (4), 198-210. https://doi.org/10.1108/17465721111188223\nJorm, A. F., Korten, A. E., Jacomb, P. A., Christensen, H., Rodgers, B., & Pollitt, P. (1997). “Mental health literacy”: A survey of the public’s ability to recognise mental disorders and their beliefs about the effectiveness of treatment. Medical Journal of Australia, 166 (4), 182-186. https://doi.org/10.5694/j.1326-5377.1997.tb140071.x\nLauber, C., Ajdacic-Gross, V., Fritschi, N., Stulz, N., & Rossler, W. (2005). Mental health literacy in an educational elite – an online survey among university students. BMC Public Health, 5 , 44. https://doi.org/10.1186/1471-2458-5-44\nO’Connor, M. & Casey, L. (2015). The Mental Health Literacy Scale (MHLS): A new scale-based measure of mental health literacy. Psychiatry Research, 229 (1-2), 511-516. https://doi.org/10.1016/j.psychres.2015.05.064\nSmith, C. L., & Shochet, I. M. (2011). The impact of mental health literacy on help-seeking intentions: Results of a pilot study with first year psychology students. International Journal of Mental Health Promotion, 13 (2), 14-20. https://doi.org/10.1080/14623730.2011.9715652\nSuwanwong, C., Jansem, A., Intarakamhang, U., Prasittichok, P., Tuntivivat, S., Chuenphittayavut, K., Le, K., & Lien, L. T. M. (2024). Modifiable predictors of mental health literacy in the educational context: A systematic review and meta-analysis. BMC Psychology, 12 (1), 378. https://doi.org/10.1186/s40359-024-01878-4",
+   "source_url": null
+  },
+  {
+   "id": "R3",
+   "citation": "O’Connor, M. & Casey, L. (2015). The Mental Health Literacy Scale (MHLS): A new scale-based measure of mental health literacy. Psychiatry Research, 229 (1-2), 511-516. https://doi.org/10.1016/j.psychres.2015.05.064\nIf you are interested in using the MHLS for research purposes, please contact the developer at matt.f.oconnor@gmail.com The MHLS is not to be used for commercial purposes.",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Mental Health Literacy Scale (MHLS) PDF",
+   "source_url": null,
+   "sha256": "7b74e998dc034ee674bbc5d492a490e8de7c7fde12d60063bcedb2a447c316b4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7b74e998dc034ee674bbc5d492a490e8de7c7fde12d60063bcedb2a447c316b4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Agnew Relationship Measure – 5 (ARM-5)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1d23f62fde5c8283d32424020f7cf434d8351b7e6923e13d52506954af3fa4f6",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1d23f62fde5c8283d32424020f7cf434d8351b7e6923e13d52506954af3fa4f6.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Simon Baker, Ph.D",
+   "source_url": null,
+   "sha256": "9a09fa7d2de8b2ca61f3f840c48e2cb2c3825b1477285ac7b3d171e6eb16154b",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9a09fa7d2de8b2ca61f3f840c48e2cb2c3825b1477285ac7b3d171e6eb16154b.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "91df4f77b31f787eaeffab4c5cb8906b38820a7063605b800f19cd307b7f8f9a",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/91df4f77b31f787eaeffab4c5cb8906b38820a7063605b800f19cd307b7f8f9a.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MHLS Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "aedb4be689b6b02eb88663db9943f10bcc27ac70f21567c06ac4fdc6ef85e266",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/aedb4be689b6b02eb88663db9943f10bcc27ac70f21567c06ac4fdc6ef85e266.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MHLS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f629be47f4487dd8407694c5126ac747335de28aa5b893fe59f337e745876a0b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f629be47f4487dd8407694c5126ac747335de28aa5b893fe59f337e745876a0b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MHLS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0b690fcdb80c0a358bcbb434543531839ef54f836b0e5a0aade39edcdba1cd62",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0b690fcdb80c0a358bcbb434543531839ef54f836b0e5a0aade39edcdba1cd62.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MHLS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "be51a9c5d14fa629147ac2f278a9d84f1939a1b185c637051584c5a004d0ed2b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/be51a9c5d14fa629147ac2f278a9d84f1939a1b185c637051584c5a004d0ed2b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MHLS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6181dd2d682e9c87b5d81ec45745cd38dce3f7b397228b9c14c35f387322694d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6181dd2d682e9c87b5d81ec45745cd38dce3f7b397228b9c14c35f387322694d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MHLS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6769dc9ffb91921e29a5b3e6cb955a2ec2e8a2a05e149d6fec5b4a24094528f6",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6769dc9ffb91921e29a5b3e6cb955a2ec2e8a2a05e149d6fec5b4a24094528f6.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "MHLS Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Mental Health Literacy Scale (MHLS) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "e131d2b7ef204089427cd3d283b93494a6dab2e487f695a704b99a0647f08ea8",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e131d2b7ef204089427cd3d283b93494a6dab2e487f695a704b99a0647f08ea8.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "e4c90fb1e155f32f4dfadd6a658622b0c606248d1ef0a9ed7e27d649caf1e1df",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e4c90fb1e155f32f4dfadd6a658622b0c606248d1ef0a9ed7e27d649caf1e1df.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 35
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "e131d2b7ef204089427cd3d283b93494a6dab2e487f695a704b99a0647f08ea8",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e131d2b7ef204089427cd3d283b93494a6dab2e487f695a704b99a0647f08ea8.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 3,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "e4c90fb1e155f32f4dfadd6a658622b0c606248d1ef0a9ed7e27d649caf1e1df",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/e4c90fb1e155f32f4dfadd6a658622b0c606248d1ef0a9ed7e27d649caf1e1df.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 6,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total Score",
+    "minimum": 35.0,
+    "maximum": 160.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 35.0,
+    "maximum": 160.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "e131d2b7ef204089427cd3d283b93494a6dab2e487f695a704b99a0647f08ea8",
+   "guidance_titles": [
+    "MHLS Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29",
+     "Q30",
+     "Q31",
+     "Q32",
+     "Q33",
+     "Q34",
+     "Q35"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q17",
+    "question_ref": "/questionnaire/items/16",
+    "source_label": "17",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q18",
+    "question_ref": "/questionnaire/items/17",
+    "source_label": "18",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q19",
+    "question_ref": "/questionnaire/items/18",
+    "source_label": "19",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q20",
+    "question_ref": "/questionnaire/items/19",
+    "source_label": "20",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q21",
+    "question_ref": "/questionnaire/items/20",
+    "source_label": "21",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q22",
+    "question_ref": "/questionnaire/items/21",
+    "source_label": "22",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q23",
+    "question_ref": "/questionnaire/items/22",
+    "source_label": "23",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q24",
+    "question_ref": "/questionnaire/items/23",
+    "source_label": "24",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q25",
+    "question_ref": "/questionnaire/items/24",
+    "source_label": "25",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q26",
+    "question_ref": "/questionnaire/items/25",
+    "source_label": "26",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q27",
+    "question_ref": "/questionnaire/items/26",
+    "source_label": "27",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q28",
+    "question_ref": "/questionnaire/items/27",
+    "source_label": "28",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q29",
+    "question_ref": "/questionnaire/items/28",
+    "source_label": "29",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q30",
+    "question_ref": "/questionnaire/items/29",
+    "source_label": "30",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q31",
+    "question_ref": "/questionnaire/items/30",
+    "source_label": "31",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q32",
+    "question_ref": "/questionnaire/items/31",
+    "source_label": "32",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q33",
+    "question_ref": "/questionnaire/items/32",
+    "source_label": "33",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q34",
+    "question_ref": "/questionnaire/items/33",
+    "source_label": "34",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q35",
+    "question_ref": "/questionnaire/items/34",
+    "source_label": "35",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "864c561c7b3dc159788b6755a51112c11b838e0c2be7641095fc459d8e230d2c",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:52:03.039728+00:00",
+  "raw_extraction_sha256": "625887f8ff545a71e9d019eab430942d18f0208775fb2fbd44b0c7660ba81c5c",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Clinician self-assessment"
+   },
+   {
+    "url": null,
+    "title": "Formulation"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.psychres.2015.05.064",
+    "title": "https://doi.org/10.1016/j.psychres.2015.05.064"
+   },
+   {
+    "url": null,
+    "title": "[email protected]"
+   },
+   {
+    "url": "https://doi.org/10.1186/s12889-017-4733-6",
+    "title": "https://doi.org/10.1186/s12889-017-4733-6"
+   },
+   {
+    "url": "https://doi.org/10.1080/j.1440-1614.2000.00750.x",
+    "title": "https://doi.org/10.1080/j.1440-1614.2000.00750.x"
+   },
+   {
+    "url": "https://doi.org/10.1186/s12888-022-03725-5",
+    "title": "https://doi.org/10.1186/s12888-022-03725-5"
+   },
+   {
+    "url": "https://doi.org/10.1108/17465721111188223",
+    "title": "https://doi.org/10.1108/17465721111188223"
+   },
+   {
+    "url": "https://doi.org/10.5694/j.1326-5377.1997.tb140071.x",
+    "title": "https://doi.org/10.5694/j.1326-5377.1997.tb140071.x"
+   },
+   {
+    "url": "https://doi.org/10.1186/1471-2458-5-44",
+    "title": "https://doi.org/10.1186/1471-2458-5-44"
+   },
+   {
+    "url": "https://doi.org/10.1080/14623730.2011.9715652",
+    "title": "https://doi.org/10.1080/14623730.2011.9715652"
+   },
+   {
+    "url": "https://doi.org/10.1186/s40359-024-01878-4",
+    "title": "https://doi.org/10.1186/s40359-024-01878-4"
+   },
+   {
+    "url": null,
+    "title": "Supervision relationship assessment"
+   },
+   {
+    "url": null,
+    "title": "Professional wellbeing measure"
+   },
+   {
+    "url": null,
+    "title": "Therapy relationship measure"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Simon Baker, Ph.D"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Clinical Supervision (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

@@ -1,0 +1,1418 @@
+{
+ "item_count": 23,
+ "items": [
+  {
+   "id": "Q1",
+   "order": 1,
+   "source_label": "1",
+   "text": "In the past 30 days, how would you say your physical health has been?",
+   "response_type": "choice",
+   "selection_mode": null,
+   "response_set_id": "RS1",
+   "reverse_scored": null,
+   "printed_input_unit": null,
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     198.75,
+     562.49,
+     232.5
+    ],
+    "method": "pdf_table_geometry"
+   },
+   "review_status": "source_layout_extracted",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "choice",
+    "answer_schema": {
+     "type": "string",
+     "enum": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5"
+     ]
+    },
+    "selection_mode": null,
+    "selection_mode_review_required": true,
+    "source_review": "Retained printed response set; no new option labels or scores inferred."
+   },
+   "options": [
+    {
+     "id": "O1",
+     "text": "EXCELLENT",
+     "source_label": "EXCELLENT",
+     "label_origin": "printed_label",
+     "printed_value": 0,
+     "score": 0,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "source_draft_2"
+     ]
+    },
+    {
+     "id": "O2",
+     "text": "VERY GOOD",
+     "source_label": "VERY GOOD",
+     "label_origin": "printed_label",
+     "printed_value": 8,
+     "score": 8,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "source_draft_2"
+     ]
+    },
+    {
+     "id": "O3",
+     "text": "GOOD",
+     "source_label": "GOOD",
+     "label_origin": "printed_label",
+     "printed_value": 15,
+     "score": 15,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "source_draft_2"
+     ]
+    },
+    {
+     "id": "O4",
+     "text": "FAIR",
+     "source_label": "FAIR",
+     "label_origin": "printed_label",
+     "printed_value": 22,
+     "score": 22,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "source_draft_2"
+     ]
+    },
+    {
+     "id": "O5",
+     "text": "POOR",
+     "source_label": "POOR",
+     "label_origin": "printed_label",
+     "printed_value": 30,
+     "score": 30,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "source_draft_2"
+     ]
+    }
+   ],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q2",
+   "order": 2,
+   "source_label": "2",
+   "text": "In the past 30 days, how many nights did you have trouble falling asleep or staying asleep?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     228.77,
+     565.92,
+     254.99
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [
+    "Source question asks nights; the form prints days beside the box. Both are retained."
+   ],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "nights",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q3",
+   "order": 3,
+   "source_label": "3",
+   "text": "In the past 30 days, how many days have you felt depressed, anxious, angry or very upset throughout most of the day?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     252.02,
+     565.92,
+     287.24
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q4",
+   "order": 4,
+   "source_label": "4",
+   "text": "In the past 30 days, how many days did you drink ANY alcohol?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     285.02,
+     565.92,
+     309.74
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q5",
+   "order": 5,
+   "source_label": "5",
+   "text": "In the past 30 days, how many days did you have at least 5 drinks (if you are a man) or at least 4 drinks (if you are a woman)? [ One drink is considered one shot of hard liquor (1.5 oz.) or 12- ounce can / bottle of beer or 5- ounce glass of wine.]",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     341.27,
+     565.92,
+     386.99
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+   "display_if": {
+    "item_id": "Q4",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q6",
+   "order": 6,
+   "source_label": "6",
+   "text": "In the past 30 days, how many days did you use any illegal or street drugs or misuse any prescription medications?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     384.01,
+     565.92,
+     419.24
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q7",
+   "order": 7,
+   "source_label": "7A",
+   "text": "Marijuana (cannabis, pot, weed)?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     450.01,
+     565.92,
+     476.24
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "context_text": "In the past 30 days, how many days did you use the following substances?",
+   "context_origin": "Administration paraphrase of the form time window and the item 7 drug-use fields; original item text is unchanged.",
+   "options": [],
+   "score_encoding": "No numeric scoring rule is assigned to this item.",
+   "display_if": {
+    "item_id": "Q6",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q8",
+   "order": 8,
+   "source_label": "7B",
+   "text": "Sedatives and / or Tranquilizers (benzos, Valium, Xanax, Ativan, Ambien, barbs, Phenobarbital, downers, etc.)?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     474.01,
+     565.92,
+     498.74
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "context_text": "In the past 30 days, how many days did you use the following substances?",
+   "context_origin": "Administration paraphrase of the form time window and the item 7 drug-use fields; original item text is unchanged.",
+   "options": [],
+   "score_encoding": "No numeric scoring rule is assigned to this item.",
+   "display_if": {
+    "item_id": "Q6",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q9",
+   "order": 9,
+   "source_label": "7C",
+   "text": "Cocaine and / or Crack?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     496.51,
+     565.92,
+     521.24
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "context_text": "In the past 30 days, how many days did you use the following substances?",
+   "context_origin": "Administration paraphrase of the form time window and the item 7 drug-use fields; original item text is unchanged.",
+   "options": [],
+   "score_encoding": "No numeric scoring rule is assigned to this item.",
+   "display_if": {
+    "item_id": "Q6",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q10",
+   "order": 10,
+   "source_label": "7D",
+   "text": "Other Stimulants (amphetamine, methamphetamine, Dexedrine, Ritalin, Adderall, speed, crystal meth, ice, etc.)?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     519.01,
+     565.92,
+     543.74
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "context_text": "In the past 30 days, how many days did you use the following substances?",
+   "context_origin": "Administration paraphrase of the form time window and the item 7 drug-use fields; original item text is unchanged.",
+   "options": [],
+   "score_encoding": "No numeric scoring rule is assigned to this item.",
+   "display_if": {
+    "item_id": "Q6",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q11",
+   "order": 11,
+   "source_label": "7E",
+   "text": "Opiates (Heroin, Morphine, Dilaudid, Demerol, Oxycontin, oxy, codeine (Tylenol 2,3,4), Percocet, Vicodin, Fentanyl, etc.)?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     540.01,
+     565.92,
+     576.74
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "context_text": "In the past 30 days, how many days did you use the following substances?",
+   "context_origin": "Administration paraphrase of the form time window and the item 7 drug-use fields; original item text is unchanged.",
+   "options": [],
+   "score_encoding": "No numeric scoring rule is assigned to this item.",
+   "display_if": {
+    "item_id": "Q6",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q12",
+   "order": 12,
+   "source_label": "7F",
+   "text": "Inhalants (glues, adhesives, nail polish remover, paint thinner, etc.)?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     573.01,
+     565.92,
+     599.24
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "context_text": "In the past 30 days, how many days did you use the following substances?",
+   "context_origin": "Administration paraphrase of the form time window and the item 7 drug-use fields; original item text is unchanged.",
+   "options": [],
+   "score_encoding": "No numeric scoring rule is assigned to this item.",
+   "display_if": {
+    "item_id": "Q6",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q13",
+   "order": 13,
+   "source_label": "7G",
+   "text": "Other drugs (steroids, non - prescription sleep and diet pills, Benadryl, Ephedra, other over - the - counter or unknown medications)?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     596.26,
+     565.92,
+     631.49
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "context_text": "In the past 30 days, how many days did you use the following substances?",
+   "context_origin": "Administration paraphrase of the form time window and the item 7 drug-use fields; original item text is unchanged.",
+   "options": [],
+   "score_encoding": "No numeric scoring rule is assigned to this item.",
+   "display_if": {
+    "item_id": "Q6",
+    "operator": "gt",
+    "value": 0,
+    "value_field": "printed_value"
+   }
+  },
+  {
+   "id": "Q14",
+   "order": 14,
+   "source_label": "8",
+   "text": "In the past 30 days, how much were you bothered by cravings or urges to drink alcohol or use drugs?",
+   "response_type": "choice",
+   "selection_mode": null,
+   "response_set_id": "RS2",
+   "reverse_scored": null,
+   "printed_input_unit": null,
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     632.24,
+     562.49,
+     665.99
+    ],
+    "method": "pdf_table_geometry"
+   },
+   "review_status": "source_layout_extracted",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "choice",
+    "answer_schema": {
+     "type": "string",
+     "enum": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5"
+     ]
+    },
+    "selection_mode": null,
+    "selection_mode_review_required": true,
+    "source_review": "Retained printed response set; no new option labels or scores inferred."
+   },
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+   "option_set_id": "OS1"
+  },
+  {
+   "id": "Q15",
+   "order": 15,
+   "source_label": "9",
+   "text": "How confident are you that you will NOT use alcohol and drugs in the next 30 days?",
+   "response_type": "choice",
+   "selection_mode": null,
+   "response_set_id": "RS2",
+   "reverse_scored": null,
+   "printed_input_unit": null,
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     666.74,
+     562.49,
+     700.48
+    ],
+    "method": "pdf_table_geometry"
+   },
+   "review_status": "source_layout_extracted",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "choice",
+    "answer_schema": {
+     "type": "string",
+     "enum": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5"
+     ]
+    },
+    "selection_mode": null,
+    "selection_mode_review_required": true,
+    "source_review": "Retained printed response set; no new option labels or scores inferred."
+   },
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+   "option_set_id": "OS2"
+  },
+  {
+   "id": "Q16",
+   "order": 16,
+   "source_label": "10",
+   "text": "In the past 30 days, how many days did you attend self - help meetings like AA or NA to support your recovery?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     698.26,
+     565.92,
+     722.98
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q17",
+   "order": 17,
+   "source_label": "11",
+   "text": "In the past 30 days, how many days were you in any situations or with any people that might put you at an increased risk for using alcohol or drugs (i. e., around risky “ people, places or things ”)?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     720.01,
+     565.92,
+     755.23
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q18",
+   "order": 18,
+   "source_label": "12",
+   "text": "Does your religion or spirituality help support your recovery?",
+   "response_type": "choice",
+   "selection_mode": null,
+   "response_set_id": "RS2",
+   "reverse_scored": null,
+   "printed_input_unit": null,
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 1,
+    "bbox": [
+     33.75,
+     755.98,
+     562.49,
+     790.48
+    ],
+    "method": "pdf_table_geometry"
+   },
+   "review_status": "source_layout_extracted",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "choice",
+    "answer_schema": {
+     "type": "string",
+     "enum": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5"
+     ]
+    },
+    "selection_mode": null,
+    "selection_mode_review_required": true,
+    "source_review": "Retained printed response set; no new option labels or scores inferred."
+   },
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+   "option_set_id": "OS2"
+  },
+  {
+   "id": "Q19",
+   "order": 19,
+   "source_label": "13",
+   "text": "In the past 30 days, how many days did you spend much of the time at work, school, or doing volunteer work?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 2,
+    "bbox": [
+     33.75,
+     40.14,
+     565.92,
+     64.5
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q20",
+   "order": 20,
+   "source_label": "14",
+   "text": "Do you have enough income (from legal sources) to pay for necessities such as housing, transportation, food and clothing for yourself and your dependents?",
+   "response_type": "choice",
+   "selection_mode": null,
+   "response_set_id": "RS3",
+   "reverse_scored": null,
+   "printed_input_unit": null,
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 2,
+    "bbox": [
+     33.75,
+     65.25,
+     562.49,
+     106.5
+    ],
+    "method": "pdf_table_geometry"
+   },
+   "review_status": "source_layout_extracted",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "choice",
+    "answer_schema": {
+     "type": "string",
+     "enum": [
+      "O1",
+      "O2"
+     ]
+    },
+    "selection_mode": null,
+    "selection_mode_review_required": true,
+    "source_review": "Retained printed response set; no new option labels or scores inferred."
+   },
+   "options": [
+    {
+     "id": "O1",
+     "text": "NO",
+     "source_label": "NO",
+     "label_origin": "printed_label",
+     "printed_value": 0,
+     "score": 0,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "source_draft_3"
+     ]
+    },
+    {
+     "id": "O2",
+     "text": "YES",
+     "source_label": "YES",
+     "label_origin": "printed_label",
+     "printed_value": 30,
+     "score": 30,
+     "score_status": "draft_rule_value",
+     "used_by_scoring_rules": [
+      "source_draft_3"
+     ]
+    }
+   ],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q21",
+   "order": 21,
+   "source_label": "15",
+   "text": "In the past 30 days, how much have you been bothered by arguments or problems getting along with any family members or friends?",
+   "response_type": "choice",
+   "selection_mode": null,
+   "response_set_id": "RS2",
+   "reverse_scored": null,
+   "printed_input_unit": null,
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 2,
+    "bbox": [
+     33.75,
+     107.25,
+     562.49,
+     141.0
+    ],
+    "method": "pdf_table_geometry"
+   },
+   "review_status": "source_layout_extracted",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "choice",
+    "answer_schema": {
+     "type": "string",
+     "enum": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5"
+     ]
+    },
+    "selection_mode": null,
+    "selection_mode_review_required": true,
+    "source_review": "Retained printed response set; no new option labels or scores inferred."
+   },
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly.",
+   "option_set_id": "OS1"
+  },
+  {
+   "id": "Q22",
+   "order": 22,
+   "source_label": "16",
+   "text": "In the past 30 days, how many days did you contact or spend time with any family members or friends who are supportive of your recovery?",
+   "response_type": "integer",
+   "selection_mode": null,
+   "response_set_id": null,
+   "reverse_scored": null,
+   "printed_input_unit": "days",
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 2,
+    "bbox": [
+     33.75,
+     139.89,
+     565.92,
+     173.25
+    ],
+    "method": "pdf_untyped_row_geometry",
+    "response_format_reviewed_on": "2026-11-13"
+   },
+   "review_status": "response_format_source_checked",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "integer",
+    "answer_schema": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 30
+    },
+    "unit": "days",
+    "allow_not_applicable": false,
+    "not_applicable_value": null,
+    "missing_answer_representation": "Omit the answer and record skipped/unanswered separately; do not substitute 0 or NA.",
+    "constraints_basis": "Integer counts and nonnegative quantities; upper bounds only from an explicit day window or printed range.",
+    "source_review": "PDF text and field layout; targeted visual checks for ambiguous controls."
+   },
+   "options": [],
+   "score_encoding": "Option score is a base source value. Apply explicit rule transforms, coefficients, thresholds, eligibility and multiplier; do not sum inline values directly."
+  },
+  {
+   "id": "Q23",
+   "order": 23,
+   "source_label": "17",
+   "text": "How satisfied are you with your progress toward achieving your recovery goals?",
+   "response_type": "choice",
+   "selection_mode": null,
+   "response_set_id": "RS2",
+   "reverse_scored": null,
+   "printed_input_unit": null,
+   "source": {
+    "url": null,
+    "sha256": "514d8764b0a9586a63f9016ef40cd881c57bd5ea872dfcbe2d9df9500dd7e1bf",
+    "page": 2,
+    "bbox": [
+     33.75,
+     174.0,
+     562.49,
+     207.75
+    ],
+    "method": "pdf_table_geometry"
+   },
+   "review_status": "source_layout_extracted",
+   "review_flags": [],
+   "input_spec": {
+    "kind": "choice",
+    "answer_schema": {
+     "type": "string",
+     "enum": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5"
+     ]
+    },
+    "selection_mode": null,
+    "selection_mode_review_required": true,
+    "source_review": "Retained printed response set; no new option labels or scores inferred."
+   },
+   "options": [
+    {
+     "id": "O1",
+     "text": "NOT AT ALL",
+     "source_label": "NOT AT ALL",
+     "label_origin": "printed_label",
+     "printed_value": 0,
+     "score": null,
+     "score_status": "not_assigned",
+     "used_by_scoring_rules": []
+    },
+    {
+     "id": "O2",
+     "text": "SLIGHTLY",
+     "source_label": "SLIGHTLY",
+     "label_origin": "printed_label",
+     "printed_value": 8,
+     "score": null,
+     "score_status": "not_assigned",
+     "used_by_scoring_rules": []
+    },
+    {
+     "id": "O3",
+     "text": "MODERATELY",
+     "source_label": "MODERATELY",
+     "label_origin": "printed_label",
+     "printed_value": 15,
+     "score": null,
+     "score_status": "not_assigned",
+     "used_by_scoring_rules": []
+    },
+    {
+     "id": "O4",
+     "text": "CONSIDERABLY",
+     "source_label": "CONSIDERABLY",
+     "label_origin": "printed_label",
+     "printed_value": 22,
+     "score": null,
+     "score_status": "not_assigned",
+     "used_by_scoring_rules": []
+    },
+    {
+     "id": "O5",
+     "text": "EXTREMELY",
+     "source_label": "EXTREMELY",
+     "label_origin": "printed_label",
+     "printed_value": 30,
+     "score": null,
+     "score_status": "not_assigned",
+     "used_by_scoring_rules": []
+    }
+   ],
+   "score_encoding": "No numeric scoring rule is assigned to this item."
+  }
+ ],
+ "response_sets": [
+  {
+   "id": "RS1",
+   "options": [
+    {
+     "id": "O1",
+     "label": "EXCELLENT",
+     "printed_value": 0,
+     "score": 0,
+     "display_label": "EXCELLENT",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O2",
+     "label": "VERY GOOD",
+     "printed_value": 8,
+     "score": 8,
+     "display_label": "VERY GOOD",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O3",
+     "label": "GOOD",
+     "printed_value": 15,
+     "score": 15,
+     "display_label": "GOOD",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O4",
+     "label": "FAIR",
+     "printed_value": 22,
+     "score": 22,
+     "display_label": "FAIR",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O5",
+     "label": "POOR",
+     "printed_value": 30,
+     "score": 30,
+     "display_label": "POOR",
+     "display_label_origin": "printed_label"
+    }
+   ],
+   "mapping_status": "printed_values_only_scores_unverified"
+  },
+  {
+   "id": "RS2",
+   "options": [
+    {
+     "id": "O1",
+     "label": "NOT AT ALL",
+     "printed_value": 0,
+     "score": 0,
+     "display_label": "NOT AT ALL",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O2",
+     "label": "SLIGHTLY",
+     "printed_value": 8,
+     "score": 8,
+     "display_label": "SLIGHTLY",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O3",
+     "label": "MODERATELY",
+     "printed_value": 15,
+     "score": 15,
+     "display_label": "MODERATELY",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O4",
+     "label": "CONSIDERABLY",
+     "printed_value": 22,
+     "score": 22,
+     "display_label": "CONSIDERABLY",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O5",
+     "label": "EXTREMELY",
+     "printed_value": 30,
+     "score": 30,
+     "display_label": "EXTREMELY",
+     "display_label_origin": "printed_label"
+    }
+   ],
+   "mapping_status": "printed_values_only_scores_unverified"
+  },
+  {
+   "id": "RS3",
+   "options": [
+    {
+     "id": "O1",
+     "label": "NO",
+     "printed_value": 0,
+     "score": 0,
+     "display_label": "NO",
+     "display_label_origin": "printed_label"
+    },
+    {
+     "id": "O2",
+     "label": "YES",
+     "printed_value": 30,
+     "score": 30,
+     "display_label": "YES",
+     "display_label_origin": "printed_label"
+    }
+   ],
+   "mapping_status": "printed_values_only_scores_unverified"
+  }
+ ],
+ "option_sets": {
+  "OS1": [
+   {
+    "id": "O1",
+    "text": "NOT AT ALL",
+    "source_label": "NOT AT ALL",
+    "label_origin": "printed_label",
+    "printed_value": 0,
+    "score": 0,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_2"
+    ]
+   },
+   {
+    "id": "O2",
+    "text": "SLIGHTLY",
+    "source_label": "SLIGHTLY",
+    "label_origin": "printed_label",
+    "printed_value": 8,
+    "score": 8,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_2"
+    ]
+   },
+   {
+    "id": "O3",
+    "text": "MODERATELY",
+    "source_label": "MODERATELY",
+    "label_origin": "printed_label",
+    "printed_value": 15,
+    "score": 15,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_2"
+    ]
+   },
+   {
+    "id": "O4",
+    "text": "CONSIDERABLY",
+    "source_label": "CONSIDERABLY",
+    "label_origin": "printed_label",
+    "printed_value": 22,
+    "score": 22,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_2"
+    ]
+   },
+   {
+    "id": "O5",
+    "text": "EXTREMELY",
+    "source_label": "EXTREMELY",
+    "label_origin": "printed_label",
+    "printed_value": 30,
+    "score": 30,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_2"
+    ]
+   }
+  ],
+  "OS2": [
+   {
+    "id": "O1",
+    "text": "NOT AT ALL",
+    "source_label": "NOT AT ALL",
+    "label_origin": "printed_label",
+    "printed_value": 0,
+    "score": 0,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_3"
+    ]
+   },
+   {
+    "id": "O2",
+    "text": "SLIGHTLY",
+    "source_label": "SLIGHTLY",
+    "label_origin": "printed_label",
+    "printed_value": 8,
+    "score": 8,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_3"
+    ]
+   },
+   {
+    "id": "O3",
+    "text": "MODERATELY",
+    "source_label": "MODERATELY",
+    "label_origin": "printed_label",
+    "printed_value": 15,
+    "score": 15,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_3"
+    ]
+   },
+   {
+    "id": "O4",
+    "text": "CONSIDERABLY",
+    "source_label": "CONSIDERABLY",
+    "label_origin": "printed_label",
+    "printed_value": 22,
+    "score": 22,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_3"
+    ]
+   },
+   {
+    "id": "O5",
+    "text": "EXTREMELY",
+    "source_label": "EXTREMELY",
+    "label_origin": "printed_label",
+    "printed_value": 30,
+    "score": 30,
+    "score_status": "draft_rule_value",
+    "used_by_scoring_rules": [
+     "source_draft_3"
+    ]
+   }
+  ]
+ }
+}

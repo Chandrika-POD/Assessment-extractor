@@ -1,0 +1,2025 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Severity of Impact",
+   "minimum": 0.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Severity of Impact",
+    "method": "mean",
+    "item_ids": [
+     "Q19",
+     "Q20"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Severity of Impact (Items 19–20, average of circled values):",
+     "y": 489.0,
+     "url": null,
+     "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_2",
+   "ruleId": "pdf_2",
+   "label": "Sensory-based Avoidance",
+   "minimum": 0.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_2",
+    "label": "Sensory-based Avoidance",
+    "method": "mean",
+    "item_ids": [
+     "Q21",
+     "Q22",
+     "Q23"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Sensory-based Avoidance (Items 21–23, average of circled values):",
+     "y": 56.2,
+     "url": null,
+     "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_3",
+   "ruleId": "pdf_3",
+   "label": "Lack of Interest in Eating or Food",
+   "minimum": 0.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_3",
+    "label": "Lack of Interest in Eating or Food",
+    "method": "mean",
+    "item_ids": [
+     "Q24",
+     "Q25",
+     "Q26"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Lack of Interest in Eating or Food (Items 24–26, average of circled values):",
+     "y": 228.0,
+     "url": null,
+     "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_pdf_4",
+   "ruleId": "pdf_4",
+   "label": "Concern about Aversive Consequences",
+   "minimum": 0.0,
+   "maximum": 6.0,
+   "calculation": {
+    "id": "pdf_4",
+    "label": "Concern about Aversive Consequences",
+    "method": "mean",
+    "item_ids": [
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 3,
+     "text": "Concern about Aversive Consequences (Items 27–29, average of circled values):",
+     "y": 494.2,
+     "url": null,
+     "sha256": "c1b45fcbda18a2bb6ec7d57f1750b435b702c7db736bb04e0f65f4d57acf74ed"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageCount": 7,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d654246bd58cd_p1",
+   "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d654246bd58cd_p1_added_chart_1",
+    "d654246bd58cd_p1_added_chart_2"
+   ],
+   "tableIds": [
+    "d654246bd58cd_p1_table_1",
+    "d654246bd58cd_p1_table_2"
+   ],
+   "sectionIds": [
+    "d654246bd58cd_p1_section_1",
+    "d654246bd58cd_p1_section_2",
+    "d654246bd58cd_p1_section_3",
+    "d654246bd58cd_p1_section_4",
+    "d654246bd58cd_p1_section_5"
+   ]
+  },
+  {
+   "pageId": "d654246bd58cd_p2",
+   "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d654246bd58cd_p2_section_1",
+    "d654246bd58cd_p2_section_2",
+    "d654246bd58cd_p2_section_3",
+    "d654246bd58cd_p2_section_4",
+    "d654246bd58cd_p2_section_5"
+   ]
+  },
+  {
+   "pageId": "d654246bd58cd_p3",
+   "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d654246bd58cd_p4",
+   "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d654246bd58cd_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "d654246bd58cd_p5",
+   "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d654246bd58cd_p5_table_1",
+    "d654246bd58cd_p5_table_2"
+   ],
+   "sectionIds": [
+    "d654246bd58cd_p5_section_1",
+    "d654246bd58cd_p5_section_2"
+   ]
+  },
+  {
+   "pageId": "d654246bd58cd_p6",
+   "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d654246bd58cd_p6_table_1"
+   ],
+   "sectionIds": [
+    "d654246bd58cd_p6_section_1",
+    "d654246bd58cd_p6_section_2",
+    "d654246bd58cd_p6_section_3",
+    "d654246bd58cd_p6_section_4"
+   ]
+  },
+  {
+   "pageId": "d654246bd58cd_p7",
+   "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d654246bd58cd_p7_table_1"
+   ],
+   "sectionIds": [
+    "d654246bd58cd_p7_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d654246bd58cd_p1_section_1",
+   "pageId": "d654246bd58cd_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    84.91447,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p1_section_2",
+   "pageId": "d654246bd58cd_p1",
+   "title": "Subscale profile",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    287.27689,
+    142.49648,
+    306.5549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p1_section_3",
+   "pageId": "d654246bd58cd_p1",
+   "title": "ARFID subscale profile",
+   "type": "source_heading",
+   "bboxPt": [
+    209.63316,
+    406.4277,
+    340.99713,
+    422.95169
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p1_section_4",
+   "pageId": "d654246bd58cd_p1",
+   "title": "Severity of impact",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    566.41077,
+    154.94246,
+    585.68872
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p1_section_5",
+   "pageId": "d654246bd58cd_p1",
+   "title": "Severity of impact",
+   "type": "source_heading",
+   "bboxPt": [
+    223.63116,
+    654.38043,
+    326.99911,
+    670.90448
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p2_section_1",
+   "pageId": "d654246bd58cd_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    124.57648,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p2_section_2",
+   "pageId": "d654246bd58cd_p2",
+   "title": "Lack of interest in eating or food (5/6).",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    232.77681,
+    290.30429,
+    247.92381
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p2_section_3",
+   "pageId": "d654246bd58cd_p2",
+   "title": "Sensory-based avoidance (4.7/6).",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    317.63083,
+    264.6633,
+    332.77783
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p2_section_4",
+   "pageId": "d654246bd58cd_p2",
+   "title": "Concern about aversive consequences (3.3/6).",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    402.4848,
+    333.12735,
+    417.63181
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p2_section_5",
+   "pageId": "d654246bd58cd_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    546.44928,
+    290.26642,
+    565.72723
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p4_section_1",
+   "pageId": "d654246bd58cd_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    662.05933,
+    151.82047,
+    681.33728
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p5_section_1",
+   "pageId": "d654246bd58cd_p5",
+   "title": "Height and Weight",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    157.23848,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p5_section_2",
+   "pageId": "d654246bd58cd_p5",
+   "title": "Screening Items",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    252.11864,
+    142.49648,
+    271.39664
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p6_section_1",
+   "pageId": "d654246bd58cd_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p6_section_2",
+   "pageId": "d654246bd58cd_p6",
+   "title": "Severity of Impact",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    308.81149,
+    154.94246,
+    328.08951
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p6_section_3",
+   "pageId": "d654246bd58cd_p6",
+   "title": "Sensory-based Avoidance",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    419.3627,
+    209.40247,
+    438.64072
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p6_section_4",
+   "pageId": "d654246bd58cd_p6",
+   "title": "Lack of Interest in Eating or Food",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    558.26038,
+    256.83447,
+    577.53833
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d654246bd58cd_p7_section_1",
+   "pageId": "d654246bd58cd_p7",
+   "title": "Concern about Aversive Consequences",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    298.86243,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d654246bd58cd_p1_added_chart_1",
+   "title": "ARFID subscale profile",
+   "type": "horizontal_bar",
+   "bboxPt": [
+    199,
+    432,
+    513,
+    544
+   ],
+   "widthPt": 314,
+   "heightPt": 112,
+   "axisColour": null,
+   "observedDataType": "unresolved",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 199.31517000000002,
+      "text": "0",
+      "colour": "#000000"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 251.48516999999998,
+      "text": "1",
+      "colour": "#000000"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 303.64513999999997,
+      "text": "2",
+      "colour": "#000000"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 355.815155,
+      "text": "3",
+      "colour": "#000000"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 407.98517,
+      "text": "4",
+      "colour": "#000000"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 460.14513999999997,
+      "text": "5",
+      "colour": "#000000"
+     },
+     {
+      "value": 6.0,
+      "positionPt": 512.31517,
+      "text": "6",
+      "colour": "#000000"
+     }
+    ],
+    "title": "Score (0-6)",
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Sensory-based avoidance",
+     "colour": "#4d79a7",
+     "ruleIdCandidate": "pdf_2",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8276579464285712,
+     "barThicknessPt": 18.0,
+     "fill": "#4e79a7",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#426890"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4d79a7"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4d79a7"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4d79a7"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4d79a7"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_2",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Lack of interest in eating or food",
+     "colour": "#f28e2a",
+     "ruleIdCandidate": "pdf_3",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.495961875,
+     "barThicknessPt": 18.0,
+     "fill": "#f28e2b",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#f28e2a"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#f28e2a"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#f28e2a"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#f28e2a"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#f28e2a"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_3",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "Concern about aversive consequences",
+     "colour": "#af79a1",
+     "ruleIdCandidate": "pdf_4",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.16426526785714302,
+     "barThicknessPt": 18.0,
+     "fill": "#b07aa1",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#af79a1"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#af79a1"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#af79a1"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#af79a1"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#97688b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_4",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d654246bd58cd_p1",
+   "sourceChartId": "added_chart_1",
+   "typeReview": {
+    "reviewIndex": null,
+    "detectedType": null,
+    "reviewedType": "horizontal_bar",
+    "method": "AI_visual_inspection_of_complete_source_PDF_page",
+    "scope": "chart_kind_and_presence_only",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "ARFID subscale profile",
+     "bboxPt": [
+      209.63316,
+      406.4277,
+      340.99713,
+      422.95169
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "never",
+     "bboxPt": [
+      201.92517,
+      459.81769,
+      216.93117,
+      468.06171
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "always",
+     "bboxPt": [
+      493.97916,
+      459.81769,
+      512.31519,
+      468.06171
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "never",
+     "bboxPt": [
+      201.92517,
+      496.81769,
+      216.93117,
+      505.06171
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "always",
+     "bboxPt": [
+      493.97916,
+      496.81769,
+      512.31519,
+      505.06171
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "no sensitivity",
+     "bboxPt": [
+      201.92517,
+      533.81769,
+      236.26917,
+      542.06171
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "extreme sensitivity",
+     "bboxPt": [
+      462.97116,
+      533.81769,
+      512.31512,
+      542.06171
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Sensory-based avoidance",
+     "bboxPt": [
+      101.82716,
+      518.21771,
+      194.31514,
+      529.20972
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Lack of interest in eating or food",
+     "bboxPt": [
+      80.47517,
+      481.06772,
+      194.31514,
+      492.05972
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Concern about aversive consequences",
+     "bboxPt": [
+      56.02717,
+      443.91769,
+      194.31514,
+      454.9097
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severity of impact",
+     "bboxPt": [
+      34.34646,
+      566.41077,
+      154.94246,
+      585.68872
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Score (0-6)",
+     "bboxPt": [
+      482.73071,
+      594.48395,
+      537.74182,
+      609.59796
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "d654246bd58cd_p1_added_chart_2",
+   "title": "Severity of impact",
+   "type": "horizontal_bar",
+   "bboxPt": [
+    117,
+    677,
+    513,
+    734
+   ],
+   "widthPt": 396,
+   "heightPt": 57,
+   "axisColour": null,
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      150.23517,
+      679.78046,
+      222.65517,
+      733.22046
+     ],
+     "colour": "#fceaa1",
+     "opacity": 0.22,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      222.64517,
+      679.78046,
+      314.81516,
+      733.22046
+     ],
+     "colour": "#fceaa1",
+     "opacity": 0.45,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      314.81516,
+      679.78046,
+      413.56516,
+      733.22046
+     ],
+     "colour": "#f7b6b7",
+     "opacity": 0.45,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      413.56516,
+      679.78046,
+      512.31519,
+      733.22046
+     ],
+     "colour": "#e15759",
+     "opacity": 0.45,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 117.31515999999999,
+      "text": "0",
+      "colour": "#000000"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 183.14517,
+      "text": "1",
+      "colour": "#000000"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 248.98516999999998,
+      "text": "2",
+      "colour": "#000000"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 314.815155,
+      "text": "3",
+      "colour": "#000000"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 380.64513999999997,
+      "text": "4",
+      "colour": "#000000"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 446.48517,
+      "text": "5",
+      "colour": "#000000"
+     },
+     {
+      "value": 6.0,
+      "positionPt": 512.31517,
+      "text": "6",
+      "colour": "#000000"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 6.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d654246bd58cd_p1",
+   "sourceChartId": "added_chart_2",
+   "typeReview": {
+    "reviewIndex": null,
+    "detectedType": null,
+    "reviewedType": "horizontal_bar",
+    "method": "AI_visual_inspection_of_complete_source_PDF_page",
+    "scope": "chart_kind_and_presence_only",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Severity of impact",
+     "bboxPt": [
+      223.63116,
+      654.38043,
+      326.99911,
+      670.90448
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Low",
+     "bboxPt": [
+      180.93317,
+      679.79047,
+      191.93716,
+      688.03448
+     ],
+     "colour": "#777777",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Some",
+     "bboxPt": [
+      260.89917,
+      679.79047,
+      276.57114,
+      688.03448
+     ],
+     "colour": "#777777",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      351.52316,
+      679.79047,
+      376.86713,
+      688.03448
+     ],
+     "colour": "#777777",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Marked",
+     "bboxPt": [
+      452.93317,
+      679.79047,
+      472.93713,
+      688.03448
+     ],
+     "colour": "#777777",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severity of impact",
+     "bboxPt": [
+      48.73917,
+      700.02051,
+      112.31516,
+      711.01251
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null,
+   "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "PARDI-AR-Q Scoring & Interpretation",
+    "text": "The PARDI-AR-Q is originally described as a 32-item scale, however items 1, 2 and 3 are date, date of birth and sex, which are recorded automatically in the NovoPsych platform, therefore, NovoPsych refers to the PARDI-AR-Q as being a 29-item scale, numbering these items 1 to 29 in the order they are answered, beginning with height and weight. Question numbers on this page match the 29-item formatting.\nThe 29 items fall into three blocks:\n1. Anthropometric items (items 1-2): height and weight (2 items). Together with age and sex, these produce BMI and growth status.\n2. Diagnostic items (items 3 to 18): twelve are scored Yes = 1 / No = 0 and drive the screen, and the other four (items 7, 13, 15, 17) are conditionally displayed follow-ups that are not scored. Item 7 is a numeric entry (how much weight has been lost), and items 13, 15, and 17 are free text.\n3. Rating items scored 0 to 6 (items 19 to 29, 11 items): includes the severity-of-impact index (items 19 to 20, rated 0 = no difficulty, and 6 = extremely difficult) and the three subscale scores (items 21 to 29; 3 items each).\nRecall periods are not fixed and vary by item, spanning current, past-month, and past-3-month timeframes.\n",
+    "source_url": null
+   },
+   {
+    "title": "PARDI-AR-Q Scoring",
+    "text": "The PARDI-AR-Q does not produce a single total score. Instead it produces a categorical screening result, three subscale scores, a severity-of-impact score, and body mass index with growth percentiles as clinical context. Higher subscale and severity scores indicate greater symptom intensity.\n\nThe screening result (positive/negative possible ARFID) is generated by an algorithm applied to the diagnostic items (3 to 18). A positive screen for possible ARFID requires both:\nA recognised problem with eating or avoidance (item 3 or item 4)\nAt least one consequence: significant weight loss or difficulty gaining or maintaining weight (items 5, 6, 8, 9, or 10) nutritional deficiency (item 11) dependence on supplements or enteral feeding (items 12, 14, or 16) psychosocial impairment (item 18).\nBecause several different combinations of items can produce a positive result, two people who both screen positive may have endorsed quite different items.\n\nA positive screen indicates possible ARFID; it is not a diagnosis. The PARDI-AR-Q does not evaluate the exclusion criteria for ARFID, and does not assess whether the eating difficulty is better accounted for by another condition, such as anorexia nervosa or bulimia nervosa, or by a concurrent medical condition or other mental disorder.\n\nThe subscale scores and the severity-of-impact score are calculated as the average of their respective items, yielding scores that range from 0 to 6:\nSensory-based avoidance (items 21 to 23): higher scores indicate that sensitivity to the taste, texture, or appearance of food is driving avoidance, often presenting as a narrow range of accepted foods and difficulty trying new foods.\nLack of interest in eating or food (items 24 to 26): higher scores indicate reduced interest in food or eating, including forgetting to eat, low enjoyment of food, or early fullness, often presenting as inadequate intake without active fear or sensory aversion.\nConcern about aversive consequences (items 27 to 29): higher scores indicate avoidance driven by fear of an aversive outcome such as choking, vomiting, allergic reaction, or pain, often presenting as avoidance of specific foods or eating situations linked to those fears.\nSeverity of impact (items 19 and 20): higher scores indicate greater disruption to interpersonal relationships and participation in social situations arising from the eating difficulty.\nThe three subscale and severity scores are reported on their original 0 to 6 metric and interpreted directly against the response scale, which runs from the absence of the feature (0) to its most extreme expression (6).\nScore | 0 (min) | 6 (max)\nSensory-based avoidance | no particular sensitivity | extremely negative effect on eating\nLack of interest in eating or food | never | always\nConcern about aversive consequences | never | always\nSeverity of impact | no difficulty | extreme difficulty\nIn the interpretive text section, each of the three subscales is given an explanatory paragraph when its score reaches the midpoint of this scale (3 of 6) or higher; lower-scoring subscales are reported as a number only, and severity of impact is always described.\nWhere a younger child is being assessed on the parent/carer version , paediatric feeding disorder (PFD) also needs to be considered, and elevated scores should be interpreted alongside medical, developmental, oral-motor and swallowing, nutritional, feeding-skill, and psychosocial assessment (Goday et al., 2019).\n",
+    "source_url": null
+   },
+   {
+    "title": "Why doesn't the PARDI-AR-Q give a total score?",
+    "text": "The three ARFID subscales are distinct and can occur in any combination, so combining them into a single score would obscure the distinction the measure exists to draw. A person can score high on sensory-based avoidance and low on the other two, and that subscale means something different from a person with the reverse pattern. For that reason the subscales are reported and read separately rather than combined.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "654246bd58cd499a99af7f6d7aa72fc4b0579afb2b1ca7bb2d1c9555015258ca",
+    "pageNumber": 2,
+    "text": "The PARDI-AR-Q comprises 29 respondent-completed items (items 4–32 of the original\ninstrument) that fall into three blocks:\n1. Anthropometric items (items 4-5): height and weight (2 items). Together with age and sex,\nthese produce BMI and growth status.\n2. Diagnostic items (items 6 to 21): twelve are scored Yes = 1 / No = 0 and drive the screen, and\nthe other four (items 10, 16, 18, 20) are conditionally displayed follow-ups that are not scored —\nitem 10 is a numeric entry (how much weight has been lost), and items 16, 18, and 20 are free\ntext.\n3. Rating items scored 0 to 6 (items 22 to 32, 11 items): includes the severity-of-impact index\n(items 22 to 23, rated 0 = no difficulty, and 6 = extremely difficult) and the three subscale scores\n(items 24 to 32; 3 items each).\nRecall periods are not fixed and vary by item, spanning current, past-month, and past-3-month",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Instead it produces a categorical screening result, three subscale scores, a severity-of-impact score, and body mass index with growth percentiles as clinical context.",
+   "In the interpretive text section, each of the three subscales is given an explanatory paragraph when its score reaches the midpoint of this scale (3 of 6) or higher; lower-scoring subscales are reported as a number only, and severity of impact is always described."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [
+  {
+   "rows": [
+    [
+     "Score",
+     "0 (min)",
+     "6 (max)"
+    ],
+    [
+     "Sensory-based avoidance",
+     "no particular sensitivity",
+     "extremely negative effect on eating"
+    ],
+    [
+     "Lack of interest in eating or food",
+     "never",
+     "always"
+    ],
+    [
+     "Concern about aversive consequences",
+     "never",
+     "always"
+    ],
+    [
+     "Severity of impact",
+     "no difficulty",
+     "extreme difficulty"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "0 (min)",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "6 (max)",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Sensory-based avoidance",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "no particular sensitivity",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "extremely negative effect on eating",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Lack of interest in eating or food",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "never",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "always",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Concern about aversive consequences",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "never",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "always",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Severity of impact",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "no difficulty",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "extreme difficulty",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "PARDI-AR-Q Scoring",
+   "source_url": null
+  },
+  {
+   "rows": [
+    [
+     "Score",
+     "0 (min)",
+     "6 (max)"
+    ],
+    [
+     "Sensory-based avoidance",
+     "no particular sensitivity",
+     "extremely negative effect on eating"
+    ],
+    [
+     "Lack of interest in eating or food",
+     "never",
+     "always"
+    ],
+    [
+     "Concern about aversive consequences",
+     "never",
+     "always"
+    ],
+    [
+     "Severity of impact",
+     "no difficulty",
+     "extreme difficulty"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Score",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "0 (min)",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "6 (max)",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Sensory-based avoidance",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "no particular sensitivity",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "extremely negative effect on eating",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Lack of interest in eating or food",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "never",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "always",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Concern about aversive consequences",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "never",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "always",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Severity of impact",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "no difficulty",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "extreme difficulty",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "",
+   "section": "PARDI-AR-Q Scoring",
+   "source_url": null
+  }
+ ],
+ "paintStyles": [
+  {
+   "id": "paint_486fbc061eb75b49194cdf36f58fdbf6",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "horizontal",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ffffff",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#f9f9f9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#f3f3f3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#eeeeee",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#e8e8e8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e2e3e2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#dedede",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#d8d8d8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#d2d2d2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#cdcdcd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#c7c7c7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#c2c2c2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#bcbcbc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#b6b6b6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#b1b1b1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#aaabaa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#a6a6a6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#a1a1a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#9b9b9b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#959695",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#8f8f8f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#8a8a8a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#848484",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#7e7e7e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#797979",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#737373",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#6e6e6e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#696969",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#636363",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#5d5e5d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#585858",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#525252",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#4c4c4c",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_a65a649e848fcd03313c8d406d28e67e",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "horizontal",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#ffffff",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#fef9f9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#fdf4f4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#fcefef",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#fbe9ea",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#fae4e4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#f9e0e0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#f8dadb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#f7d5d5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#f6d0d0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#f5cacb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#f4c5c6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#f3c0c1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#f2bbbb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#f1b5b6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#f0afb0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#f0abac",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#efa6a7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#eea1a2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#ed9c9d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#ec9697",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#eb9092",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#ea8b8d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#e98687",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#e88182",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#e77b7d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#e67678",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#e57273",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#e46c6e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#e36769",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#e36264",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#e25c5e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#e15659",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 2,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d654246bd58cd_p1_added_chart_2"
+   ]
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 6,
+   "unresolvedCells": 220
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,1109 @@
+{
+ "fields": {
+  "validation": "Data Validation",
+  "reference": "Reference Sample Key",
+  "score": "Score",
+  "average": "Average",
+  "band": "Band",
+  "percentile": {
+   "All (16+)": "Percentile All",
+   "Youth (16-24)": "Percentile Youth",
+   "Adult (25+)": "Percentile Adult"
+  }
+ },
+ "reference_sample": {
+  "all": "All (16+)",
+  "youth": "Youth (16-24)",
+  "adult": "Adult (25+)"
+ },
+ "tree": {
+  "$file": "assessment.report_configuration.interactiveLayout.sourceContract.tree.json"
+ },
+ "constructs": {
+  "$file": "assessment.report_configuration.interactiveLayout.sourceContract.constructs.json"
+ },
+ "disorder_panel": {
+  "$file": "assessment.report_configuration.interactiveLayout.sourceContract.disorder_panel.json"
+ },
+ "spectrum_order": [
+  "Externalising",
+  "Harmful Substance Use",
+  "Mania",
+  "Detachment",
+  "Thought Disorder",
+  "Somatoform",
+  "Eating Pathology",
+  "Internalising",
+  "Neurodevelopmental and Cognitive Difficulties"
+ ],
+ "substance_use": {
+  "substances": [
+   {
+    "key": "CLUSTER Alcohol use Score",
+    "label": "Alcohol"
+   },
+   {
+    "key": "ITEM Sedatives or hypnotics Score",
+    "label": "Sedatives or hypnotics"
+   },
+   {
+    "key": "CLUSTER Cannabis use Score",
+    "label": "Cannabis"
+   },
+   {
+    "key": "ITEM Stimulants Score",
+    "label": "Stimulants"
+   },
+   {
+    "key": "ITEM Hallucinogens or psychedelics Score",
+    "label": "Hallucinogens or psychedelics"
+   },
+   {
+    "key": "ITEM Opioids Score",
+    "label": "Opioids"
+   },
+   {
+    "key": "ITEM Inhalants Score",
+    "label": "Inhalants"
+   }
+  ],
+  "endorse": {
+   "cluster:Illicit and prescription substance use": {
+    "key": "CLUSTER Illicit and prescription substance use Score",
+    "drivers": [
+     {
+      "key": "ITEM Sedatives or hypnotics Score",
+      "label": "Sedatives or hypnotics"
+     },
+     {
+      "key": "ITEM Stimulants Score",
+      "label": "Stimulants"
+     },
+     {
+      "key": "ITEM Hallucinogens or psychedelics Score",
+      "label": "Hallucinogens or psychedelics"
+     },
+     {
+      "key": "ITEM Opioids Score",
+      "label": "Opioids"
+     },
+     {
+      "key": "ITEM Inhalants Score",
+      "label": "Inhalants"
+     }
+    ]
+   },
+   "cluster:Cannabis use": {
+    "key": "CLUSTER Cannabis use Score"
+   },
+   "cluster:Alcohol use": {
+    "key": "CLUSTER Alcohol use Score"
+   }
+  },
+  "none_key": "ITEM None of the above substances Score"
+ },
+ "sud_key": "disorder:Substance Use Disorder",
+ "hsu_key": "spectrum:Harmful Substance Use",
+ "hazard_key": "cluster:Hazardous substance use",
+ "sudsym_key": "cluster:Substance use disorder symptoms",
+ "gateway_question": 74,
+ "inferred_question": 83,
+ "administered": {
+  "placeholder": "{endorsed_substances}",
+  "separator": ", ",
+  "order": [
+   "Alcohol",
+   "Sedatives or hypnotics",
+   "Cannabis",
+   "Stimulants",
+   "Hallucinogens or psychedelics",
+   "Opioids",
+   "Inhalants"
+  ],
+  "none_choice": "None",
+  "templates": {
+   "75": "I used more of a substance (e.g., {endorsed_substances}) than I had planned to, or for longer than I had planned to.",
+   "76": "I kept using a substance (e.g., {endorsed_substances}) even though it caused or worsened a problem with my mental or physical health.",
+   "77": "I spent a lot of time acquiring, using, or recovering from the effects of a substance (e.g., {endorsed_substances}).",
+   "78": "I needed more of a substance (e.g., {endorsed_substances}) to get the effect I wanted, or experienced less effect from the same amount.",
+   "79": "I had a strong desire or urge to use a substance (e.g., {endorsed_substances}).",
+   "80": "I kept using a substance (e.g., {endorsed_substances}) even though it caused or worsened problems in my relationships.",
+   "81": "I wanted to cut down on my use of a substance (e.g., {endorsed_substances}), or tried to and couldn't.",
+   "82": "I used a substance (e.g., {endorsed_substances}) to relieve or avoid withdrawal symptoms due to stopping use of that substance."
+  }
+ },
+ "items": {
+  "1": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "2": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "3": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "4": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "5": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "6": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "7": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "8": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "9": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "10": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "11": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "12": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "13": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "14": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "15": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "16": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "17": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "18": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "19": {
+   "threshold_1": 2,
+   "threshold_2": 2
+  },
+  "20": {
+   "threshold_1": 2,
+   "threshold_2": 2
+  },
+  "21": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "22": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "23": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "24": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "25": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "26": {
+   "threshold_1": 2,
+   "threshold_2": 4
+  },
+  "27": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "28": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "29": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "30": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "31": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "32": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "33": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "34": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "35": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "36": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "37": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "38": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "39": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "40": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "41": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "42": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "43": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "44": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "45": {
+   "threshold_1": 4,
+   "threshold_2": 5
+  },
+  "46": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "47": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "48": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "49": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "50": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "51": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "52": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "53": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "54": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "55": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "56": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "57": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "58": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "59": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "60": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "61": {
+   "threshold_1": 3,
+   "threshold_2": 3
+  },
+  "62": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "63": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "64": {
+   "threshold_1": 3,
+   "threshold_2": 3
+  },
+  "65": {
+   "threshold_1": 3,
+   "threshold_2": 3
+  },
+  "66": {
+   "threshold_1": 3,
+   "threshold_2": 3
+  },
+  "67": {
+   "threshold_1": 3,
+   "threshold_2": 3
+  },
+  "68": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "69": {
+   "threshold_1": 3,
+   "threshold_2": 3
+  },
+  "70": {
+   "threshold_1": 3,
+   "threshold_2": 3
+  },
+  "71": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "72": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "73": {
+   "threshold_1": 2,
+   "threshold_2": 2
+  },
+  "75": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "76": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "77": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "78": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "79": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "80": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "81": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "82": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "83": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "84": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "85": {
+   "threshold_1": 2,
+   "threshold_2": 4
+  },
+  "86": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "87": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "88": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "89": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "90": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "91": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "92": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "93": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "94": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "95": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "96": {
+   "threshold_1": 2,
+   "threshold_2": 2
+  },
+  "97": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "98": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "99": {
+   "threshold_1": 2,
+   "threshold_2": 2
+  },
+  "100": {
+   "threshold_1": 2,
+   "threshold_2": 2
+  },
+  "101": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "102": {
+   "threshold_1": 2,
+   "threshold_2": 4
+  },
+  "103": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "104": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "105": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "106": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "107": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "108": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "109": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "110": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "111": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "112": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "113": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "114": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "115": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "116": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "117": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "118": {
+   "threshold_1": 2,
+   "threshold_2": 3
+  },
+  "119": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "120": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "121": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "122": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "123": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "124": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "125": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "126": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "127": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "128": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "129": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "130": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "131": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "132": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "133": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "134": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "135": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "136": {
+   "threshold_1": 4,
+   "threshold_2": 5
+  },
+  "137": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "138": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "139": {
+   "threshold_1": 4,
+   "threshold_2": 5
+  },
+  "140": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "141": {
+   "threshold_1": 2,
+   "threshold_2": 4
+  },
+  "142": {
+   "threshold_1": 4,
+   "threshold_2": 5
+  },
+  "143": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "144": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "145": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "146": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "147": {
+   "threshold_1": 4,
+   "threshold_2": 5
+  },
+  "148": {
+   "threshold_1": 4,
+   "threshold_2": 5
+  },
+  "149": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "150": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "151": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "152": {
+   "threshold_1": 3,
+   "threshold_2": 4
+  },
+  "153": {
+   "threshold_1": 4,
+   "threshold_2": 5
+  },
+  "154": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  },
+  "155": {
+   "threshold_1": 4,
+   "threshold_2": 4
+  }
+ },
+ "low_records": {
+  "low:facet:Anxiousness (facet)": {
+   "key": "low:facet:Anxiousness (facet)",
+   "ckey": "facet:Low Anxiousness (facet)",
+   "rkey": "FACET Low Anxiousness",
+   "name": "Low Anxiousness (facet)",
+   "type": "facet",
+   "is_binary_only": false,
+   "pool": [
+    "33_R",
+    "34_R",
+    "35_R"
+   ],
+   "threshold_1_sum": 14,
+   "threshold_2_sum": 15,
+   "band_zones": {
+    "All (16+)": {
+     "threshold_1_pct": 91.15302352712425,
+     "threshold_2_pct": 95.4306824810422
+    },
+    "Youth (16-24)": {
+     "threshold_1_pct": 93.1302657161374,
+     "threshold_2_pct": 96.5651328580687
+    },
+    "Adult (25+)": {
+     "threshold_1_pct": 90.30555555555556,
+     "threshold_2_pct": 94.94444444444444
+    }
+   },
+   "tips": {
+    "bands": [
+     "band_1",
+     "band_2",
+     "band_3"
+    ],
+    "avg": {
+     "band_1": "1–4.66",
+     "band_2": "4.67–4.99",
+     "band_3": "5"
+    },
+    "pct": {
+     "All (16+)": {
+      "band_1": "0–91",
+      "band_2": "92–95",
+      "band_3": "96–100"
+     },
+     "Youth (16-24)": {
+      "band_1": "0–93",
+      "band_2": "94–96",
+      "band_3": "97–100"
+     },
+     "Adult (25+)": {
+      "band_1": "0–90",
+      "band_2": "91–94",
+      "band_3": "95–100"
+     }
+    },
+    "prec": {
+     "All (16+)": {
+      "threshold_1": 0,
+      "threshold_2": 0
+     },
+     "Youth (16-24)": {
+      "threshold_1": 0,
+      "threshold_2": 0
+     },
+     "Adult (25+)": {
+      "threshold_1": 0,
+      "threshold_2": 0
+     }
+    },
+    "vx": {
+     "All (16+)": {},
+     "Youth (16-24)": {},
+     "Adult (25+)": {}
+    }
+   },
+   "reversed": true,
+   "ith": {
+    "33": [
+     4,
+     5
+    ],
+    "34": [
+     5,
+     5
+    ],
+    "35": [
+     5,
+     5
+    ]
+   }
+  },
+  "low:facet:Withdrawal (facet)": {
+   "key": "low:facet:Withdrawal (facet)",
+   "ckey": "facet:Low Withdrawal (facet)",
+   "rkey": "FACET Low Withdrawal",
+   "name": "Low Withdrawal (facet)",
+   "type": "facet",
+   "is_binary_only": false,
+   "pool": [
+    "36_R",
+    "37_R",
+    "38_R"
+   ],
+   "threshold_1_sum": 14,
+   "threshold_2_sum": 15,
+   "band_zones": {
+    "All (16+)": {
+     "threshold_1_pct": 93.60180654873918,
+     "threshold_2_pct": 96.78208505833646
+    },
+    "Youth (16-24)": {
+     "threshold_1_pct": 92.37918215613382,
+     "threshold_2_pct": 95.9727385377943
+    },
+    "Adult (25+)": {
+     "threshold_1_pct": 94.13513513513513,
+     "threshold_2_pct": 97.13513513513513
+    }
+   },
+   "tips": {
+    "bands": [
+     "band_1",
+     "band_2",
+     "band_3"
+    ],
+    "avg": {
+     "band_1": "1–4.66",
+     "band_2": "4.67–4.99",
+     "band_3": "5"
+    },
+    "pct": {
+     "All (16+)": {
+      "band_1": "0–93",
+      "band_2": "94–96",
+      "band_3": "97–100"
+     },
+     "Youth (16-24)": {
+      "band_1": "0–92",
+      "band_2": "93–95",
+      "band_3": "96–100"
+     },
+     "Adult (25+)": {
+      "band_1": "0–94",
+      "band_2": "95–97",
+      "band_3": "98–100"
+     }
+    },
+    "prec": {
+     "All (16+)": {
+      "threshold_1": 0,
+      "threshold_2": 0
+     },
+     "Youth (16-24)": {
+      "threshold_1": 0,
+      "threshold_2": 0
+     },
+     "Adult (25+)": {
+      "threshold_1": 0,
+      "threshold_2": 0
+     }
+    },
+    "vx": {
+     "All (16+)": {},
+     "Youth (16-24)": {},
+     "Adult (25+)": {}
+    }
+   },
+   "reversed": true,
+   "ith": {
+    "36": [
+     5,
+     5
+    ],
+    "37": [
+     5,
+     5
+    ],
+    "38": [
+     4,
+     5
+    ]
+   }
+  }
+ },
+ "low_map": {
+  "disorder:Antisocial Personality Disorder, With Psychopathic Features": [
+   "low:facet:Anxiousness (facet)",
+   "low:facet:Withdrawal (facet)"
+  ]
+ },
+ "rescored": {
+  "33_R": {
+   "source": 33,
+   "score_map": {
+    "1": 5,
+    "2": 4,
+    "3": 3,
+    "4": 2,
+    "5": 1
+   }
+  },
+  "34_R": {
+   "source": 34,
+   "score_map": {
+    "1": 5,
+    "2": 4,
+    "3": 3,
+    "4": 2,
+    "5": 1
+   }
+  },
+  "35_R": {
+   "source": 35,
+   "score_map": {
+    "1": 5,
+    "2": 4,
+    "3": 3,
+    "4": 2,
+    "5": 1
+   }
+  },
+  "36_R": {
+   "source": 36,
+   "score_map": {
+    "1": 5,
+    "2": 4,
+    "3": 3,
+    "4": 2,
+    "5": 1
+   }
+  },
+  "37_R": {
+   "source": 37,
+   "score_map": {
+    "1": 5,
+    "2": 4,
+    "3": 3,
+    "4": 2,
+    "5": 1
+   }
+  },
+  "38_R": {
+   "source": 38,
+   "score_map": {
+    "1": 5,
+    "2": 4,
+    "3": 3,
+    "4": 2,
+    "5": 1
+   }
+  }
+ },
+ "risk": {
+  "ids": [
+   17,
+   18,
+   19,
+   20
+  ],
+  "grad": {
+   "20": 0,
+   "19": 1,
+   "18": 2,
+   "17": 3
+  },
+  "triggers": {
+   "att": [
+    20
+   ],
+   "sui": [
+    17,
+    18,
+    19
+   ]
+  },
+  "tri": {
+   "att": "cluster:Suicide attempt",
+   "sui": "cluster:Suicidality"
+  },
+  "tri_dsm": {
+   "att": [
+    "disorder:Bipolar I Disorder (Major Depressive Episode)",
+    "disorder:Bipolar II Disorder",
+    "disorder:Cyclothymic Disorder",
+    "disorder:Major Depressive Disorder",
+    "disorder:Schizoaffective Disorder"
+   ],
+   "sui": [
+    "disorder:Bipolar I Disorder (Major Depressive Episode)",
+    "disorder:Bipolar II Disorder",
+    "disorder:Cyclothymic Disorder",
+    "disorder:Major Depressive Disorder",
+    "disorder:Schizoaffective Disorder"
+   ]
+  },
+  "sites": {
+   "att": [
+    "cluster:Suicide attempt",
+    "disorder:Bipolar I Disorder (Major Depressive Episode)",
+    "disorder:Bipolar II Disorder",
+    "disorder:Cyclothymic Disorder",
+    "disorder:Major Depressive Disorder",
+    "disorder:Schizoaffective Disorder",
+    "spectrum:Thought Disorder",
+    "subfactor:Dissociative Experiences"
+   ],
+   "sui": [
+    "cluster:Suicidality",
+    "disorder:Bipolar I Disorder (Major Depressive Episode)",
+    "disorder:Bipolar II Disorder",
+    "disorder:Borderline Personality Disorder",
+    "disorder:Cyclothymic Disorder",
+    "disorder:Major Depressive Disorder",
+    "disorder:Schizoaffective Disorder",
+    "facet:Depressivity (facet)",
+    "spectrum:Internalising",
+    "subfactor:Distress"
+   ]
+  }
+ },
+ "descriptions": {
+  "spectrum:Detachment": "Measures disengagement from social and emotional life, together with low mood: reduced interest and pleasure, hopelessness and diminished self-worth, withdrawal from relationships and social contact, and a muted or unexpressed emotional range. In this measure, the dimension also encompasses reduced interest in sexual and romantic relationships.",
+  "spectrum:Eating Pathology": "Assesses disturbances of eating and body image, including fear of weight gain, the influence of weight or shape on self-evaluation, restrictive eating, and distress associated with overeating.",
+  "spectrum:Externalising": "Measures behaviour and emotion directed outward against other people, rules, or norms — a broad spectrum spanning impulsive, reckless, or aggressive conduct, manipulation and self-interest, reduced concern for others, and outwardly directed anger.",
+  "spectrum:Harmful Substance Use": "Assesses the core features of problematic alcohol and other drug use, including craving, loss of control over use, tolerance and withdrawal, continued use despite harm, and use in dangerous situations.",
+  "spectrum:Internalising": "Represents the broad propensity to experience negative emotions turned inward. This wide-ranging spectrum spans low mood, worry and anxious arousal, fear-based avoidance, social withdrawal, and trauma-related distress with disturbed sleep.",
+  "spectrum:Mania": "Measures the dimension of elevated and expansive mood. In this measure, it is assessed through euphoric mood, heightened sociability and talkativeness, unrestrained emotional expression, and enjoyment of attention.",
+  "spectrum:Neurodevelopmental and Cognitive Difficulties": "Encompasses difficulties of neurodevelopment and cognition — a broad spectrum spanning social communication, attentional and sensory regulation, ritualised and inflexible behaviour, and problems with memory, attention, and everyday cognitive functioning.",
+  "spectrum:Somatoform": "Assesses the experience of physical symptoms and bodily concern — pain, palpitations and breathlessness, temperature sensations, unsteadiness and slowed thinking or movement — together with health anxiety and disturbances of sleep and eating.",
+  "spectrum:Thought Disorder": "Measures disruptions to the ordinary integration of perception, thought, and consciousness, spanning psychotic-like experiences and beliefs, dissociative experiences, and associated physical and behavioural changes.",
+  "subspectrum:Cognitive Difficulties": "Assesses problems with everyday cognitive functioning: attention and concentration, memory, word-finding, planning and decision-making, mental speed, and the capacity to manage everyday tasks, possessions, and living spaces.",
+  "subspectrum:Neurodevelopmental": "Captures traits and difficulties commonly associated with neurodevelopmental conditions: social communication difficulties, overactivity and pressured speech, sensory sensitivity, unusually intense interests, and ritualised or inflexible behaviour.",
+  "subfactor:Antagonism": "Measures self-interested and manipulative interpersonal behaviour, including deceit, entitlement, attention-seeking, and deliberately annoying others.",
+  "subfactor:Antisocial Behaviour": "Represents the dimension of aggressive and harmful conduct. In this measure, it is assessed through physical aggression towards people, animals, or property.",
+  "subfactor:Callousness": "Assesses reduced empathy and emotional responsiveness to others: indifference to others' feelings, lack of concern about causing hurt, and a sense of personal superiority or entitlement.",
+  "subfactor:Disinhibition": "Measures deficient restraint over behaviour: acting without regard for consequences, recklessness, carelessness, and feeling or acting out of control.",
+  "subfactor:Externalised Negative Affect": "Captures negative emotion directed outward at other people and circumstances: irritability, anger and verbal outbursts, resentment, mistrust of others, and blaming others for one's own difficulties.",
+  "subfactor:Distress": "Represents the core negative-affect dimension of internalising — a broad blend of low mood and diminished pleasure, worry and anxious arousal, emotional lability, guilt and negative self-evaluation, and suicidality.",
+  "subfactor:Dysregulated Sleep and Trauma": "Assesses post-traumatic distress together with disturbed sleep: distress and avoidance connected to a traumatic experience, and difficulty falling or staying asleep.",
+  "subfactor:Fear": "Measures the phobic aspects of anxiety: fear and avoidance cued by particular objects, situations, or concerns — public or enclosed spaces, social scrutiny, specific phobic stimuli, illness and dying, bodily appearance, and rejection or abandonment.",
+  "subfactor:Social Withdrawal": "Assesses behavioural disengagement from social life — avoidance of and discomfort in social situations, anxiety about public spaces or being away from home, and diminished interest in other people — alongside lowered mood and enjoyment.",
+  "subfactor:Difficulties with Organisation": "Assesses difficulty keeping one's possessions and living environment manageable: losing needed items, clutter that limits the use of living areas, difficulty discarding possessions, and needing help with everyday household tasks.",
+  "subfactor:Forgetfulness": "Measures changes in memory and familiar abilities: difficulty recalling recent events, declining ease with familiar skills, and trouble finding one's way in familiar places.",
+  "subfactor:Neurocognitive Impairment": "Assesses a broad range of cognitive difficulties spanning attention, concentration, multitasking, memory, word-finding, mental speed and effort, planning and decision-making, and independence in daily activities.",
+  "subfactor:Altered Sensation and Attentional Control": "Measures dysregulation of attention, activity, speech, and sensory experience: restlessness and overactivity, pressured or excessive speech, sensitivity to sensory input, and unusually intense interests.",
+  "subfactor:Ritualised Behaviour": "Assesses rigid and repetitive patterns of behaviour: insistence on sameness, perfectionism, and repetitive acts performed to manage intrusive thoughts or distress, or to prevent something bad from happening.",
+  "subfactor:Social Communication Difficulties": "Measures difficulty understanding and using communication in social interaction: following what others mean, holding reciprocal conversations, responding when others make contact, reading and using non-verbal cues, and adapting behaviour to the social context.",
+  "subfactor:Dysregulated Eating": "Represents the dimension of disrupted eating patterns that present alongside other physical symptoms. In this measure, it is assessed through eating large amounts of food in the absence of hunger.",
+  "subfactor:Dysregulated Sleep": "Assesses disturbance of the sleep–wake cycle as a physical presentation: difficulty falling or staying asleep, and excessive daytime sleepiness despite adequate sleep.",
+  "subfactor:Somatic Symptoms": "Measures the experience of distressing bodily symptoms — pain and muscle tension, palpitations and breathlessness, temperature sensations, unsteadiness and slowed thinking or movement — together with anxiety about one's physical health.",
+  "subfactor:Dissociative Experiences": "Assesses disruptions to the ordinary integration of consciousness, perception, memory, and identity: detachment from oneself or one's surroundings, gaps in memory, experiences of separate self-states, and sudden losses of control over thought, emotion, or behaviour.",
+  "subfactor:Positive Psychosis": "Measures psychotic-like experiences and beliefs: perceptions that others do not share, beliefs held despite contrary evidence, experiences of thought interference, and thinking or behaviour that others find strange.",
+  "subfactor:Uncontrollable Physical Symptoms": "Assesses involuntary movements and unusual bodily sensations: trembling, chills, numbness or tingling, unsteadiness, and a sense of being slowed. In this measure, the dimension also encompasses being seen by others as odd or unusual."
+ }
+}

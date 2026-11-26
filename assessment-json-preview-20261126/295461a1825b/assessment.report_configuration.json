@@ -1,0 +1,826 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_compulsion_symptoms",
+   "ruleId": "compulsion_symptoms",
+   "label": "Compulsion Symptoms",
+   "minimum": 0,
+   "maximum": 20,
+   "calculation": {
+    "id": "compulsion_symptoms",
+    "label": "Compulsion Symptoms",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 20,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "d93b2da574785e08d1d6f40cf4d97eda069603d6e3607fb6666ecb419f54196b",
+     "retrieved_at": "2026-11-13T12:01:12.090573+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_obsession_symptoms",
+   "ruleId": "obsession_symptoms",
+   "label": "Obsession Symptoms",
+   "minimum": 0,
+   "maximum": 20,
+   "calculation": {
+    "id": "obsession_symptoms",
+    "label": "Obsession Symptoms",
+    "item_ids": [
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 20,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "d93b2da574785e08d1d6f40cf4d97eda069603d6e3607fb6666ecb419f54196b",
+     "retrieved_at": "2026-11-13T12:01:12.090573+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_compulsion_impairment",
+   "ruleId": "compulsion_impairment",
+   "label": "Compulsion Impairment",
+   "minimum": 0,
+   "maximum": 24,
+   "calculation": {
+    "id": "compulsion_impairment",
+    "label": "Compulsion Impairment",
+    "item_ids": [
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 24,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "d93b2da574785e08d1d6f40cf4d97eda069603d6e3607fb6666ecb419f54196b",
+     "retrieved_at": "2026-11-13T12:01:12.090573+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_obsession_impairment",
+   "ruleId": "obsession_impairment",
+   "label": "Obsession Impairment",
+   "minimum": 0,
+   "maximum": 24,
+   "calculation": {
+    "id": "obsession_impairment",
+    "label": "Obsession Impairment",
+    "item_ids": [
+     "Q33",
+     "Q34",
+     "Q35",
+     "Q36",
+     "Q37",
+     "Q38"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 24,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "d93b2da574785e08d1d6f40cf4d97eda069603d6e3607fb6666ecb419f54196b",
+     "retrieved_at": "2026-11-13T12:01:12.090573+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_total_symptoms",
+   "ruleId": "total_symptoms",
+   "label": "Total Symptoms",
+   "minimum": 0,
+   "maximum": 40,
+   "calculation": {
+    "id": "total_symptoms",
+    "label": "Total Symptoms",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28",
+     "Q29"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 40,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "d93b2da574785e08d1d6f40cf4d97eda069603d6e3607fb6666ecb419f54196b",
+     "retrieved_at": "2026-11-13T12:01:12.090573+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_total_impairment",
+   "ruleId": "total_impairment",
+   "label": "Total Impairment",
+   "minimum": 0,
+   "maximum": 48,
+   "calculation": {
+    "id": "total_impairment",
+    "label": "Total Impairment",
+    "item_ids": [
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q33",
+     "Q34",
+     "Q35",
+     "Q36",
+     "Q37",
+     "Q38"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 48,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "d93b2da574785e08d1d6f40cf4d97eda069603d6e3607fb6666ecb419f54196b",
+     "retrieved_at": "2026-11-13T12:01:12.090573+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageCount": 8,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "dd97868607793_p1",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "dd97868607793_p1_chart_1",
+    "dd97868607793_p1_chart_2",
+    "dd97868607793_p1_chart_3",
+    "dd97868607793_p1_chart_4"
+   ],
+   "tableIds": [
+    "dd97868607793_p1_table_1",
+    "dd97868607793_p1_table_2"
+   ],
+   "sectionIds": [
+    "dd97868607793_p1_section_1",
+    "dd97868607793_p1_section_2",
+    "dd97868607793_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "dd97868607793_p2",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "dd97868607793_p2_section_1",
+    "dd97868607793_p2_section_2",
+    "dd97868607793_p2_section_3",
+    "dd97868607793_p2_section_4"
+   ]
+  },
+  {
+   "pageId": "dd97868607793_p3",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "dd97868607793_p4",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "dd97868607793_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "dd97868607793_p5",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dd97868607793_p5_table_1",
+    "dd97868607793_p5_table_2",
+    "dd97868607793_p5_table_3"
+   ],
+   "sectionIds": [
+    "dd97868607793_p5_section_1",
+    "dd97868607793_p5_section_2",
+    "dd97868607793_p5_section_3"
+   ]
+  },
+  {
+   "pageId": "dd97868607793_p6",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dd97868607793_p6_table_1",
+    "dd97868607793_p6_table_2"
+   ],
+   "sectionIds": [
+    "dd97868607793_p6_section_1",
+    "dd97868607793_p6_section_2",
+    "dd97868607793_p6_section_3"
+   ]
+  },
+  {
+   "pageId": "dd97868607793_p7",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 7,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dd97868607793_p7_table_1"
+   ],
+   "sectionIds": [
+    "dd97868607793_p7_section_1"
+   ]
+  },
+  {
+   "pageId": "dd97868607793_p8",
+   "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+   "pageNumber": 8,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "dd97868607793_p8_table_1"
+   ],
+   "sectionIds": [
+    "dd97868607793_p8_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "dd97868607793_p1_section_1",
+   "pageId": "dd97868607793_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.29921,
+    194.395,
+    84.86722,
+    213.673
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p1_section_2",
+   "pageId": "dd97868607793_p1",
+   "title": "OCD Symptoms",
+   "type": "source_heading",
+   "bboxPt": [
+    34.29921,
+    316.13095,
+    125.64322,
+    332.65494
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p1_section_3",
+   "pageId": "dd97868607793_p1",
+   "title": "OCD Impairment",
+   "type": "source_heading",
+   "bboxPt": [
+    34.29921,
+    533.13879,
+    128.97922,
+    549.66284
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p2_section_1",
+   "pageId": "dd97868607793_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    124.57648,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p2_section_2",
+   "pageId": "dd97868607793_p2",
+   "title": "Symptoms:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    196.47682,
+    150.93436,
+    211.62383
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p2_section_3",
+   "pageId": "dd97868607793_p2",
+   "title": "Impairment:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    293.43082,
+    153.99234,
+    308.57782
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p2_section_4",
+   "pageId": "dd97868607793_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    392.53723,
+    290.26642,
+    411.81525
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p4_section_1",
+   "pageId": "dd97868607793_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    636.40735,
+    151.82047,
+    655.6853
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p5_section_1",
+   "pageId": "dd97868607793_p5",
+   "title": "Most Upsetting Habits",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    182.13046,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p5_section_2",
+   "pageId": "dd97868607793_p5",
+   "title": "Most Severe Thoughts",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    314.18436,
+    184.48248,
+    333.46237
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p5_section_3",
+   "pageId": "dd97868607793_p5",
+   "title": "Compulsion Symptoms",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    488.49341,
+    190.69846,
+    507.77142
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p6_section_1",
+   "pageId": "dd97868607793_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p6_section_2",
+   "pageId": "dd97868607793_p6",
+   "title": "Obsession Symptoms",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    307.11935,
+    181.38849,
+    326.39737
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p6_section_3",
+   "pageId": "dd97868607793_p6",
+   "title": "Compulsion Impairment",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    644.44226,
+    194.59045,
+    663.72021
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p7_section_1",
+   "pageId": "dd97868607793_p7",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "dd97868607793_p8_section_1",
+   "pageId": "dd97868607793_p8",
+   "title": "Obsession Impairment",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    185.28046,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "When the ChOCI-R-P is administered on multiple occasions, change between administrations can be evaluated using a Reliable Change Index (RCI)."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Children’s Obsessional Compulsive Inventory–Revised – Parent Report (ChOCI-R-P) Scoring",
+    "text": "The ChOCI-R-P produces six raw scores by summing item responses. Higher scores indicate more obsessive-compulsive symptoms or greater associated functional impairment. The measure produces two parallel sets of scores: symptoms (how often and how strongly OCD presents) and impairment (how much OCD disrupts daily life).\nTotal Symptoms : sum of Compulsion and Obsession Symptoms (range 0–40) Compulsion Symptoms : sum of items 1 to 10 (range 0–20) Obsession Symptoms : sum of items 20 to 29 (range 0–20)\nTotal Impairment : sum of Compulsion and Obsession Impairment (range 0–48) Compulsion Impairment : sum of items 14 to 19 (range 0–24) Obsession Impairment : sum of items 33 to 38 (range 0–24)\nSix open-text items (items 11 to 13 for habits and items 30 to 32 for thoughts) ask the parent to describe the child’s three most upsetting habits (compulsions) and thoughts (obsessions), respectively. These items are not scored, but provide additional clinical information to inform assessment and treatment planning.\n",
+    "source_url": null
+   },
+   {
+    "title": "ChOCI-R-P Percentiles",
+    "text": "Each raw score is presented alongside a percentile rank against an OCD-clinical reference sample (Uher et al., 2008). A percentile of 50 corresponds to the OCD-clinical reference average; a percentile of 80 indicates a score exceeding approximately 80% of OCD-diagnosed children in the reference group. Because the reference sample is clinical (not community), percentile interpretation is positional within an OCD-diagnosed group: a percentile of 50 reflects the average level for a child diagnosed with OCD, not the general paediatric population.\n",
+    "source_url": null
+   },
+   {
+    "title": "ChOCI-R-P Subscale Interpretation",
+    "text": "Each subscale assesses a different aspect of obsessive-compulsive symptoms or associated impairment. Higher scores on Compulsion Symptoms indicate that the parent has observed more frequent or more severe compulsive behaviours, including washing, checking, ordering, counting, repeating, and reassurance-seeking. Higher scores on Obsession Symptoms indicate more frequent intrusive thoughts of harm, contamination, doubt, mortality, blasphemy, or aggressive content. Higher scores on Compulsion Impairment indicate greater functional disruption from compulsions, including time spent, interference with school and friends, distress when prevented from acting, difficulty resisting or controlling compulsions, and avoidance. Higher scores on Obsession Impairment indicate similar impacts associated with obsessive thoughts.\n",
+    "source_url": null
+   },
+   {
+    "title": "ChOCI-R-P Change Score Interpretation",
+    "text": "When the ChOCI-R-P is administered on multiple occasions, change between administrations can be evaluated using a Reliable Change Index (RCI). A change of approximately 8.4 raw-score points or greater on Total Impairment, or 8.6 or greater on Total Symptoms, indicates a change that is unlikely to be attributable to measurement error alone.\n",
+    "source_url": null
+   },
+   {
+    "title": "How should I interpret a profile where Symptoms and Impairment scores diverge?",
+    "text": "Symptoms and Impairment measure related but distinct dimensions: how often and how strongly symptoms are present, and how much they disrupt daily life. The two can move independently and the gap itself is informative. Where symptoms are elevated but impairment is lower, possible explanations include early presentation, effective coping strategies, or family routines that accommodate symptoms in ways that buffer functional impact. The reverse profile (lower symptoms with elevated impairment) may indicate that the symptoms present are particularly entrenched or distressing, or that the parent is observing functional effects without fully identifying the underlying symptoms. Both divergent profiles warrant looking beyond the totals during formulation.\n",
+    "source_url": null
+   },
+   {
+    "title": "How should I interpret a large gap between the parent-rated ChOCI-R-P and the child-rated ChOCI-R-S?",
+    "text": "Discrepancies between informants are common and the gap itself is useful clinical data. Parents typically have better visibility of observable compulsions (washing, checking, asking for reassurance) and tend to underestimate obsessions and covert rituals. Children may underreport when symptoms feel shameful, when insight is limited (more common in younger children), or when they have learned to mask symptoms in front of caregivers. When the parent score substantially exceeds the child score, consider limited insight, minimisation, or symptom concealment. When the child score exceeds the parent score, suspect covert symptoms or content the child has not disclosed at home. Both perspectives can provide valuable clinical information; the divergence becomes a formulation discussion point and may warrant exploring family accommodation patterns.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "d9786860779356480c700e30bd142d32a3196f676ac177de37ca80332107a134",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the ChOCI-R-P, \nsee here\n.\nChOCI-R-P Scoring\nThe Children's Obsessional Compulsive Inventory–Revised – Parent Report (ChOCI-R-P)\nresults in six raw scores which are computed by summing item responses. Higher values\nindicate greater OCD severity. The ChOCI-R-P measures both symptoms and impairment:\n- Total Symptoms (sum of Compulsion Symptoms and Obsession Symptoms; scores range from\n0 to 40)\n- Compulsion Symptoms (items 1 to 10; scores range from 0 to 20): sum of 10 items\n- Obsession Symptoms (items 20 to 29; scores range from 0 to 20): sum of 10 items\n- Total Impairment (sum of Compulsion Impairment and Obsession Impairment; scores range\nfrom 0 to 48)\n- Compulsion Impairment (items 14 to 19; scores range from 0 to 24): sum of 6 items\n- Obsession Impairment (items 33 to 38; scores range from 0 to 24): sum of 6 items\nThree open-text items in each of the symptom sections (items 11 to 13 for habits and items 30 to\n32 for thoughts) ask the parent to describe the child's three most upsetting habits and thoughts.\nThese items are not included in the scoring, but provide more detail of the habits and thoughts to\naid in treatment planning.\nChOCI-R-P Percentiles\nEach raw score is presented with a percentile rank against an OCD-clinical reference sample. A\npercentile of 50 corresponds to the OCD-clinical reference average; a percentile of 80 indicates\na score exceeding approximately 80% of OCD-diagnosed children in the reference group.\nChOCI-R-P Severity / Descriptor Categories\nEach of the six scores is reported with a severity descriptor alongside its percentile.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Each raw score is presented alongside a percentile rank against an OCD-clinical reference sample (Uher et al., 2008).",
+   "A percentile of 50 corresponds to the OCD-clinical reference average; a percentile of 80 indicates a score exceeding approximately 80% of OCD-diagnosed children in the reference group.",
+   "Because the reference sample is clinical (not community), percentile interpretation is positional within an OCD-diagnosed group: a percentile of 50 reflects the average level for a child diagnosed with OCD, not the general paediatric population.",
+   "When the ChOCI-R-P is administered on multiple occasions, change between administrations can be evaluated using a Reliable Change Index (RCI)."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 4
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 9,
+   "unresolvedCells": 190
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

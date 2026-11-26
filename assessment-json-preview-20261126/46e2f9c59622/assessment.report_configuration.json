@@ -1,0 +1,687 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Total raw score",
+   "minimum": 0.0,
+   "maximum": 60.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "7666bff4087a18945e9cf30d91053f28be13f3426ce37e8d1323e661cad2c471",
+     "page_url": null,
+     "page_sha256": "eef40475af5953081f1c95a794ee52b25a57f8aa6cf9736cf83d309e95109adc",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "C8",
+      "LIVE_C13",
+      "LIVE_C17"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 60.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "f2f3745f186448fa925059c69888bc9261be8b431270ce6d4204dc498fd8fe4a",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "df2f3745f1864_p1",
+   "documentSha256": "f2f3745f186448fa925059c69888bc9261be8b431270ce6d4204dc498fd8fe4a",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "df2f3745f1864_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "df2f3745f1864_p1_section_1",
+    "df2f3745f1864_p1_section_2",
+    "df2f3745f1864_p1_section_3",
+    "df2f3745f1864_p1_section_4",
+    "df2f3745f1864_p1_section_5"
+   ]
+  },
+  {
+   "pageId": "df2f3745f1864_p2",
+   "documentSha256": "f2f3745f186448fa925059c69888bc9261be8b431270ce6d4204dc498fd8fe4a",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df2f3745f1864_p2_table_1"
+   ],
+   "sectionIds": [
+    "df2f3745f1864_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "df2f3745f1864_p3",
+   "documentSha256": "f2f3745f186448fa925059c69888bc9261be8b431270ce6d4204dc498fd8fe4a",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "df2f3745f1864_p3_table_1"
+   ],
+   "sectionIds": [
+    "df2f3745f1864_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "df2f3745f1864_p1_section_1",
+   "pageId": "df2f3745f1864_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df2f3745f1864_p1_section_2",
+   "pageId": "df2f3745f1864_p1",
+   "title": "Pain Self-Efficacy",
+   "type": "source_heading",
+   "bboxPt": [
+    252.995,
+    282.4455,
+    353.69897,
+    294.4455
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df2f3745f1864_p1_section_3",
+   "pageId": "df2f3745f1864_p1",
+   "title": "Questionnaire Score",
+   "type": "source_heading",
+   "bboxPt": [
+    244.66101,
+    294.4455,
+    362.03299,
+    306.4455
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df2f3745f1864_p1_section_4",
+   "pageId": "df2f3745f1864_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    553.10376,
+    124.57652,
+    567.10376
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df2f3745f1864_p1_section_5",
+   "pageId": "df2f3745f1864_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    639.02795,
+    290.26636,
+    653.02795
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df2f3745f1864_p2_section_1",
+   "pageId": "df2f3745f1864_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    650.01251,
+    151.8205,
+    664.01251
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "df2f3745f1864_p3_section_1",
+   "pageId": "df2f3745f1864_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "df2f3745f1864_p1_chart_1",
+   "title": "Pain Self-Efficacy Questionnaire Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    175.346,
+    320.347,
+    450.346,
+    504.787
+   ],
+   "widthPt": 275.0,
+   "heightPt": 184.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      175.34599,
+      322.34692,
+      448.34601,
+      384.67703
+     ],
+     "colour": "#bddbb1",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      175.34599,
+      384.67706,
+      448.34601,
+      412.047
+     ],
+     "colour": "#ddecd7",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      175.34599,
+      451.57791,
+      448.34601,
+      491.108
+     ],
+     "colour": "#ffced3",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      175.34599,
+      491.1069,
+      448.34601,
+      504.78702
+     ],
+     "colour": "#f3bcbd",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 167.565995,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 60.0,
+      "positionPt": 323.12024,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 353.53046,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 383.93005,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 414.34024,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 444.75043,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 475.15042,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 505.56021,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 60.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#4184f4",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4963636729917329,
+     "barThicknessPt": 53.0,
+     "fill": "#4285f4",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4184f4"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4184f4"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4184f4"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4184f4"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4184f4"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "df2f3745f1864_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 307,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Pain Self-Efficacy",
+     "bboxPt": [
+      252.995,
+      282.4455,
+      353.69897,
+      294.4455
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Questionnaire Score",
+     "bboxPt": [
+      244.66101,
+      294.4455,
+      362.03299,
+      306.4455
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Very Low",
+     "bboxPt": [
+      415.17001,
+      493.79926,
+      444.34601,
+      500.79926
+     ],
+     "colour": "#8b2635",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Low",
+     "bboxPt": [
+      431.509,
+      469.46826,
+      444.34698,
+      476.46826
+     ],
+     "colour": "#c1495a",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "High",
+     "bboxPt": [
+      429.95401,
+      396.49826,
+      444.34598,
+      403.49826
+     ],
+     "colour": "#2d5a1f",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      414.77899,
+      420.81827,
+      444.34698,
+      427.81827
+     ],
+     "colour": "#808080",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Very High",
+     "bboxPt": [
+      413.616,
+      350.88828,
+      444.34598,
+      357.88828
+     ],
+     "colour": "#1b4d0f",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Interpretation",
+     "bboxPt": [
+      34.3465,
+      553.10376,
+      124.57652,
+      567.10376
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "PSEQ Scoring & Interpretation",
+    "text": "In the Pain Self-Efficacy Questionnaire (PSEQ), self-efficacy is measured by a total score that can range from 0 (no self-efficacy) to 60 (complete self-efficacy).\n\nHigher scores on the PSEQ are indicative of more self-efficacy. Outcome can also be presented as percentiles to help contextualise scores in comparison to the typical range of experience of others experiencing pain. For example, a percentile of 50 represents average self-efficacy among chronic pain patients, corresponding to a raw score of approximately 19:\nVery Low Self- Efficacy (score of 0-4): 0.1 – 10th Percentile\nLow Self-Efficacy (score of 5-17): 12th: 45th percentile\nModerate Self-Efficacy (score of 18-29): 48th – 75th percentile\nHigh Self-Efficacy (score of 30-39): 77th – 89th percentile\nVery High Self-Efficacy (score of 40-60): 90th-99.99th percentile\n\nAmong injured workers, research suggests that scores around the scores around 40 are associated with return to work and maintenance of functional gains, whilst lower scores tend to predict less sustainable gains (Adams and Williams, 2003) and are non-indicative of the individual returning to work (Coughlan et al., 1995). Recent research has established that PSEQ scores below 22 are associated with twice the likelihood of daily opioid use in chronic pain patients, making this threshold (approximately 55th percentile) useful for identifying individuals who may benefit from targeted self-efficacy interventions before or alongside pharmacological treatments (Mo et al., 2023). The relation between the PSEQ and pharmacological reliance can also be supported with the response to item 7 (Ralph et al., 1994), where lower scores on this item correlate with higher doses of pain medication.\n\nWith multiple administrations, a line chart will be produced to observe progress of the client over time. The graph includes percentile-based threshold lines marking the boundaries between interpretive categories (very low, low, moderate, high, and very high self-efficacy) to provide visual context for score changes. These visual markers enhance interpretation by showing not only the magnitude of change but also the clinical significance of movement between functional categories over the course of treatment.\n",
+    "source_url": null
+   },
+   {
+    "title": "How do I interpret PSEQ scores and what clinical decisions should they inform?",
+    "text": "PSEQ scores range from 0-60, with higher scores indicating greater self-efficacy. Using normative data from 13,343 chronic pain patients: scores ≥40 (90th percentile) indicate high self-efficacy associated with successful return to work; scores 18-29 (48th-75th percentile) represent moderate self-efficacy; scores 5-17 (12th-45th percentile) suggest low self-efficacy requiring targeted intervention; and scores 0-4 (<10th percentile) indicate very low self-efficacy needing intensive support. Critically, scores below 22 (55th percentile) are associated with twice the likelihood of daily opioid use, making this a key threshold for identifying patients who may benefit from self-efficacy interventions before or alongside pharmacological treatments.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "f2f3745f186448fa925059c69888bc9261be8b431270ce6d4204dc498fd8fe4a",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the PSEQ, \nsee here\n.\nIn the Pain Self-Efficacy Questionnaire (PSEQ), self-efficacy is measured by a total score that\ncan range from 0 (no self-efficacy) to 60 (complete self-efficacy). So higher scores on the PSEQ\nare indicative of more self-efficacy. Outcome can also be presented as percentiles to help\ncontextualise scores in comparison to the typical range of experience of others experiencing\npain. For example, a percentile of 50 represents average self-efficacy among chronic pain\npatients, corresponding to a raw score of approximately 19:",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "Outcome can also be presented as percentiles to help contextualise scores in comparison to the typical range of experience of others experiencing pain.",
+   "For example, a percentile of 50 represents average self-efficacy among chronic pain patients, corresponding to a raw score of approximately 19:",
+   "Very Low Self- Efficacy (score of 0-4): 0.1 – 10th Percentile",
+   "Low Self-Efficacy (score of 5-17): 12th: 45th percentile",
+   "Moderate Self-Efficacy (score of 18-29): 48th – 75th percentile",
+   "High Self-Efficacy (score of 30-39): 77th – 89th percentile",
+   "Very High Self-Efficacy (score of 40-60): 90th-99.99th percentile",
+   "Recent research has established that PSEQ scores below 22 are associated with twice the likelihood of daily opioid use in chronic pain patients, making this threshold (approximately 55th percentile) useful for identifying individuals who may benefit from targeted self-efficacy interventions before or alongside pharmacological treatments (Mo et al., 2023).",
+   "The graph includes percentile-based threshold lines marking the boundaries between interpretive categories (very low, low, moderate, high, and very high self-efficacy) to provide visual context for score changes.",
+   "Using normative data from 13,343 chronic pain patients: scores ≥40 (90th percentile) indicate high self-efficacy associated with successful return to work; scores 18-29 (48th-75th percentile) represent moderate self-efficacy; scores 5-17 (12th-45th percentile) suggest low self-efficacy requiring targeted intervention; and scores 0-4 (<10th percentile) indicate very low self-efficacy needing intensive support.",
+   "Critically, scores below 22 (55th percentile) are associated with twice the likelihood of daily opioid use, making this a key threshold for identifying patients who may benefit from self-efficacy interventions before or alongside pharmacological treatments."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 94
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

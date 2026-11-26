@@ -1,0 +1,1252 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total BEIS-10 Score",
+   "minimum": 10.0,
+   "maximum": 50.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total BEIS-10 Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total BEIS-10 Score (sum of all 10 items)",
+     "y": 666.0,
+     "url": null,
+     "sha256": "d2aadec0fb66e9516bcb593de7fb346b1c04492b3a360326ac097e5a230d1988"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "370cfc9116e893aa2b7f80bbfa250b19370d45b514d518decc03361f69b0d9bf",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d370cfc9116e8_p1",
+   "documentSha256": "370cfc9116e893aa2b7f80bbfa250b19370d45b514d518decc03361f69b0d9bf",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d370cfc9116e8_p1_chart_1"
+   ],
+   "tableIds": [
+    "d370cfc9116e8_p1_table_1"
+   ],
+   "sectionIds": [
+    "d370cfc9116e8_p1_section_1",
+    "d370cfc9116e8_p1_section_2",
+    "d370cfc9116e8_p1_section_3",
+    "d370cfc9116e8_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "d370cfc9116e8_p2",
+   "documentSha256": "370cfc9116e893aa2b7f80bbfa250b19370d45b514d518decc03361f69b0d9bf",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d370cfc9116e8_p2_section_1",
+    "d370cfc9116e8_p2_section_2",
+    "d370cfc9116e8_p2_section_3"
+   ]
+  },
+  {
+   "pageId": "d370cfc9116e8_p3",
+   "documentSha256": "370cfc9116e893aa2b7f80bbfa250b19370d45b514d518decc03361f69b0d9bf",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d370cfc9116e8_p3_table_1"
+   ],
+   "sectionIds": []
+  }
+ ],
+ "sections": [
+  {
+   "id": "d370cfc9116e8_p1_section_1",
+   "pageId": "d370cfc9116e8_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d370cfc9116e8_p1_section_2",
+   "pageId": "d370cfc9116e8_p1",
+   "title": "BEIS-10 Total and Subscale Community Percentiles",
+   "type": "results",
+   "bboxPt": [
+    155.968,
+    368.82251,
+    450.72394,
+    380.82251
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d370cfc9116e8_p1_section_3",
+   "pageId": "d370cfc9116e8_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    639.48175,
+    124.57652,
+    653.48175
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d370cfc9116e8_p1_section_4",
+   "pageId": "d370cfc9116e8_p1",
+   "title": "Subscale Analysis:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.0394,
+    695.18884,
+    191.30437,
+    706.18884
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d370cfc9116e8_p2_section_1",
+   "pageId": "d370cfc9116e8_p2",
+   "title": "Interpretation (cont.)",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    171.23853,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d370cfc9116e8_p2_section_2",
+   "pageId": "d370cfc9116e8_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    214.93466,
+    290.26636,
+    228.93466
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d370cfc9116e8_p2_section_3",
+   "pageId": "d370cfc9116e8_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.346,
+    697.22083,
+    151.82001,
+    711.22083
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d370cfc9116e8_p1_chart_1",
+   "title": "BEIS-10 Total and Subscale Community Percentiles",
+   "type": "stacked_bar",
+   "bboxPt": [
+    70.347,
+    394.725,
+    560.346,
+    580.165
+   ],
+   "widthPt": 490.0,
+   "heightPt": 185.44,
+   "axisColour": "#333333",
+   "observedDataType": "percentile",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      70.3465,
+      569.15479,
+      559.4165,
+      580.16504
+     ],
+     "colour": "#ff0000",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      534.30499,
+      559.4165,
+      569.15503
+     ],
+     "colour": "#ffa500",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      440.755,
+      559.4165,
+      534.30499
+     ],
+     "colour": "#0000ff",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      405.89499,
+      559.4165,
+      440.74503
+     ],
+     "colour": "#90ee90",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      70.3465,
+      396.72467,
+      559.4165,
+      405.89499
+     ],
+     "colour": "#008000",
+     "opacity": 0.2,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 62.5663,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 397.49811,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 415.83832,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 434.18832,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 452.52814,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 470.87814,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 489.21835,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 507.55817,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 525.9082,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 544.24799,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 562.59802,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 580.93823,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Total",
+     "colour": "#7a5094",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.0761938517040558,
+     "barThicknessPt": 44.6699,
+     "fill": "#7a5195",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#7a5094"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Total",
+     "colour": "#bb4f8f",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.0761938517040558,
+     "barThicknessPt": 44.6699,
+     "fill": "#bc5090",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#bb4f8f"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "Total",
+     "colour": "#ef5574",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.0761938517040558,
+     "barThicknessPt": 44.6699,
+     "fill": "#ef5675",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#8f3345"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": "Total",
+     "colour": "#ff764a",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.0761938517040558,
+     "barThicknessPt": 44.6699,
+     "fill": "#ff764a",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_5",
+     "label": "Total",
+     "colour": "#ffa500",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.0761938517040558,
+     "barThicknessPt": 44.6699,
+     "fill": "#ffa600",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ffa500"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_6",
+     "label": "Appraisal of Own Emotions",
+     "colour": "#7a5094",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.22858074898891226,
+     "barThicknessPt": 44.66989000000001,
+     "fill": "#7a5195",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#7a5094"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#7a5094"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_7",
+     "label": "Appraisal of Others' Emotions",
+     "colour": "#bb4f8f",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.3809502687053707,
+     "barThicknessPt": 44.66988999999998,
+     "fill": "#bc5090",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#bb4f8f"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#bb4f8f"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_8",
+     "label": "Regulation of Own Emotions",
+     "colour": "#ef5574",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.5333361557851354,
+     "barThicknessPt": 44.66989000000001,
+     "fill": "#ef5675",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ef5574"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ef5574"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_9",
+     "label": "Regulation of Others' Emotions",
+     "colour": "#ff754a",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6857240224587163,
+     "barThicknessPt": 44.66989000000001,
+     "fill": "#ff764a",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#883e27"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ff754a"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ff754a"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ff754a"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#3f3431"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_10",
+     "label": "Utilisation of Emotions",
+     "colour": "#ffa500",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8380936136038178,
+     "barThicknessPt": 44.66991999999999,
+     "fill": "#ffa600",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ffa500"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ffa500"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d370cfc9116e8_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 63,
+    "detectedType": "stacked_bar",
+    "reviewedType": "stacked_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "BEIS-10 Total and Subscale Community Percentiles",
+     "bboxPt": [
+      155.968,
+      368.82251,
+      450.72394,
+      380.82251
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Low",
+     "bboxPt": [
+      548.34302,
+      571.37891,
+      559.34698,
+      577.37891
+     ],
+     "colour": "#ff0000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Below Average",
+     "bboxPt": [
+      518.99597,
+      549.35889,
+      559.34595,
+      555.35889
+     ],
+     "colour": "#ffa500",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Average",
+     "bboxPt": [
+      537.00201,
+      483.31894,
+      559.34601,
+      489.31894
+     ],
+     "colour": "#0000ff",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Above Average",
+     "bboxPt": [
+      518.32501,
+      419.11893,
+      559.34705,
+      425.11893
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "High",
+     "bboxPt": [
+      547.01099,
+      398.93893,
+      559.34692,
+      404.93893
+     ],
+     "colour": "#008000",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Total",
+     "bboxPt": [
+      96.5613,
+      586.63818,
+      118.7913,
+      596.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Appraisal of",
+     "bboxPt": [
+      155.9465,
+      586.63818,
+      208.74649,
+      596.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Own Emotions",
+     "bboxPt": [
+      149.8363,
+      596.63818,
+      214.85629,
+      606.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Appraisal of",
+     "bboxPt": [
+      230.61639,
+      586.63818,
+      283.41638,
+      596.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Others'",
+     "bboxPt": [
+      241.05659,
+      596.63818,
+      272.97659,
+      606.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Emotions",
+     "bboxPt": [
+      236.17651,
+      606.63818,
+      277.85651,
+      616.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Regulation of",
+     "bboxPt": [
+      302.21631,
+      586.63818,
+      361.13629,
+      596.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Own Emotions",
+     "bboxPt": [
+      299.16632,
+      596.63818,
+      364.18631,
+      606.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Regulation of",
+     "bboxPt": [
+      376.88623,
+      586.63818,
+      435.80621,
+      596.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Others'",
+     "bboxPt": [
+      390.38623,
+      596.63818,
+      422.30621,
+      606.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Emotions",
+     "bboxPt": [
+      385.50653,
+      606.63818,
+      427.18652,
+      616.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Utilisation of",
+     "bboxPt": [
+      453.78622,
+      586.63818,
+      508.24622,
+      596.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Emotions",
+     "bboxPt": [
+      460.17645,
+      596.63818,
+      501.85645,
+      606.63818
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "These scores are converted into percentiles based on a large combined normative sample (N = 2,770) drawn from multiple studies across different populations and countries.",
+   "On first administration, a stacked bar graph is presented showing the percentiles for the total score and subscales with the descriptors in the background of the plot.",
+   "If the scale is administered on multiple occasions, a graph is produced to track emotional intelligence development over time for both the total and the subscale percentiles."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "BEIS-10 Scoring & Interpretation",
+    "text": "BEIS-10 scores consist of a total raw score (range from 10 to 50) and five sub-scale scores, with higher scores indicating greater self-perceived emotional intelligence capabilities. These scores are converted into percentiles based on a large combined normative sample (N = 2,770) drawn from multiple studies across different populations and countries.\n\nSub-scales are presented for the BEIS-10:\nAppraisal of Own Emotions (items 1, 2; range 2-10): Assesses an individual’s capacity to identify and understand their own emotional states. This includes awareness of mood changes, recognition of physiological responses to emotions, and the ability to label emotional experiences accurately.\nAppraisal of Others’ Emotions (items 3, 4; range 2-10): Measures one’s ability to accurately perceive and interpret others’ emotional states through both verbal and non-verbal cues. This includes recognition of facial expressions, tone of voice, and body language.\nRegulation of Own Emotions (items 5, 6; range 2-10): Evaluates an individual’s ability to manage and modify their emotional responses. This includes skills in emotional self-control, ability to calm oneself when upset, and capacity to maintain emotional balance.\nRegulation of Others’ Emotions (items 7, 8; range 2-10): Assesses capability to influence and manage others’ emotional states. This includes helping others feel better when down, providing emotional support, and facilitating positive emotional states in others.\nUtilisation of Emotions (items 9, 10; range 2-10): Measures how effectively individuals harness emotions to enhance thinking, problem-solving, and creativity. This includes using emotions to guide decision-making and leveraging emotional states for improved performance.\n\nA percentile score interpretation framework provides qualitative descriptors ranging from Low to High emotional intelligence:\nLow : 5th percentile and below\nBelow Average: 6th to 24th percentile\nAverage : 25th to 75th percentile\nAbove Average : 76th to 94th percentile\nHigh : 95th percentile and above\nOn first administration, a stacked bar graph is presented showing the percentiles for the total score and subscales with the descriptors in the background of the plot. If the scale is administered on multiple occasions, a graph is produced to track emotional intelligence development over time for both the total and the subscale percentiles.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "370cfc9116e893aa2b7f80bbfa250b19370d45b514d518decc03361f69b0d9bf",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the BEIS-10, \nsee here\n.\nBEIS-10 scores consist of a total raw score (range from 10 to 50) and five sub-scale scores, with\nhigher scores indicating greater self-perceived emotional intelligence capabilities. These scores\nare converted into percentiles based on a large combined normative sample (N = 2,770) drawn\nfrom multiple studies across different populations and countries.\nSub-scales are presented for the BEIS-10:\n- Appraisal of Own Emotions (items 1, 2; range 2-10): Assesses an individual's capacity to\nidentify and understand their own emotional states. This includes awareness of mood changes,\nrecognition of physiological responses to emotions, and the ability to label emotional\nexperiences accurately.\n- Appraisal of Others' Emotions (items 3, 4; range 2-10): Measures one's ability to accurately\nperceive and interpret others' emotional states through both verbal and non-verbal cues. This\nincludes recognition of facial expressions, tone of voice, and body language.\n- Regulation of Own Emotions (items 5, 6; range 2-10): Evaluates an individual's ability to\nmanage and modify their emotional responses. This includes skills in emotional self-control,\nability to calm oneself when upset, and capacity to maintain emotional balance.\n- Regulation of Others' Emotions (items 7, 8; range 2-10): Assesses capability to influence and\nmanage others' emotional states. This includes helping others feel better when down, providing\nemotional support, and facilitating positive emotional states in others.\n- Utilisation of Emotions (items 9, 10; range 2-10): Measures how effectively individuals harness\nemotions to enhance thinking, problem-solving, and creativity. This includes using emotions to\nguide decision-making and leveraging emotional states for improved performance.\nA percentile score interpretation framework provides qualitative descriptors ranging from Low to\nHigh emotional intelligence:\n- Low: 5th percentile and below\n- Below Average: 6th to 24th percentile\n- Average: 25th to 75th percentile\n- Above Average: 76th to 94th percentile\n- High: 95th percentile and above\nOn first administration, a stacked bar graph is presented showing the percentiles for the total\nscore and subscales with the descriptors in the background of the plot. If the scale is\nadministered on multiple occasions, a graph is produced to track emotional intelligence\ndevelopment over time for both the total and the subscale percentiles.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "These scores are converted into percentiles based on a large combined normative sample (N = 2,770) drawn from multiple studies across different populations and countries.",
+   "A percentile score interpretation framework provides qualitative descriptors ranging from Low to High emotional intelligence:",
+   "Low : 5th percentile and below",
+   "Below Average: 6th to 24th percentile",
+   "Average : 25th to 75th percentile",
+   "Above Average : 76th to 94th percentile",
+   "High : 95th percentile and above",
+   "On first administration, a stacked bar graph is presented showing the percentiles for the total score and subscales with the descriptors in the background of the plot.",
+   "If the scale is administered on multiple occasions, a graph is produced to track emotional intelligence development over time for both the total and the subscale percentiles."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "normative_conversions_not_complete"
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 86
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

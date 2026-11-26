@@ -11,7 +11,7 @@
           <label for="url">Assessment URL</label><textarea id="url" name="url" rows="4" required spellcheck="false" placeholder="https://provider.com/assessment"></textarea>
           <button class="example" id="example" type="button">↗ Try NovoPsych GAD-7 live</button>
           <label for="mode">Source mode</label><select id="mode"><option value="live">Live extraction · submitted source</option><option value="demo">Saved example · GAD-7 or PHQ-9</option></select>
-          <label><input type="checkbox" id="process-documents" checked> Include linked PDFs (up to 3)</label>
+          <label><input type="checkbox" id="process-documents" checked> Include linked PDFs and original files</label>
           <label><input type="checkbox" id="render-browser" checked> Open page tabs with Playwright</label>
           <p class="help">Paste a public assessment link. The browser reads available tabs and linked PDFs. Missing or inaccessible content is marked in the document.</p>
           <button class="primary" id="submit" type="submit">Create assessment document <span>→</span></button>
@@ -28,7 +28,7 @@
           <div class="result-summary"><div><p id="result-label" class="eyebrow"></p><h2 id="result-name"></h2><p id="result-origin"></p></div><div class="stats"><div><strong id="question-count">0</strong><span>items</span></div><div><strong id="source-count">0</strong><span>sources</span></div><div><strong id="missing-count">0</strong><span>unavailable</span></div></div></div>
           <div id="coverage" class="coverage"></div>
           <div class="document-actions"><div class="tabs" role="tablist" aria-label="Preview format"><button id="document-tab" role="tab" aria-selected="true" aria-controls="document-pane">Document</button><button id="json-tab" role="tab" aria-selected="false" aria-controls="json-pane">JSON</button></div><div class="downloads"><button id="download-html" title="Download a self-contained HTML document">↓ Document</button><button id="download-json">↓ JSON</button><button id="print">Print / PDF</button></div></div>
-          <div id="document-pane" role="tabpanel" aria-labelledby="document-tab"><nav class="document-nav" aria-label="Document sections"><button data-section="overview">Overview</button><button data-section="questionnaire">Questions</button><button data-section="scoring">Scoring</button><button data-section="sources">Sources</button><button data-section="missing">Missing fields</button></nav><iframe id="document-frame" title="Extracted assessment document" sandbox="allow-same-origin allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe></div>
+          <div id="document-pane" role="tabpanel" aria-labelledby="document-tab"><nav class="document-nav" aria-label="Document sections"><button data-section="overview">Overview</button><button data-section="questionnaire">Questions</button><button data-section="scoring">Scoring</button><button data-section="tables">Tables</button><button data-section="images">Images</button><button data-section="coverage">Coverage</button><button data-section="sources">Sources</button><button data-section="missing">Missing fields</button></nav><iframe id="document-frame" title="Extracted assessment document" sandbox="allow-downloads allow-same-origin allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe></div>
           <pre id="json-pane" role="tabpanel" aria-labelledby="json-tab" hidden></pre>
         </div>
       </section>

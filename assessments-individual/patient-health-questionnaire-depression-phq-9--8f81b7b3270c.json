@@ -1,0 +1,4338 @@
+{
+  "schema_version": "2.3.0-clean-export.4",
+  "assessment_id": "patient-health-questionnaire-depression-phq-9--8f81b7b3270c",
+  "definition_version": "1.0.0-draft.6",
+  "status": "draft",
+  "assessment": {
+    "name": "Patient Health Questionnaire – Depression (PHQ-9)",
+    "language": "en",
+    "description": "The PHQ-9 is the nine item depression scale from the Patient Health Questionnaire, and is a widely used tool for assisting primary care clinicians in identifying depression as well as monitoring treatment (Kroenke et al., 2001).",
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [
+        "last 2 weeks"
+      ],
+      "status": "requires_review"
+    }
+  },
+  "administration": {
+    "instructions": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+    "instructions_source": {
+      "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9"
+    ],
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 9,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "Little interest or pleasure in doing things",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            189.0,
+            562.5,
+            219.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "Feeling down, depressed, or hopeless",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            219.75,
+            562.5,
+            249.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "Trouble falling or staying asleep, or sleeping too much",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            250.5,
+            562.5,
+            280.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "Feeling tired or having little energy",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            281.25,
+            562.5,
+            311.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "Poor appetite or overeating",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            312.0,
+            562.5,
+            342.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            342.75,
+            562.5,
+            372.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "Trouble concentrating on things, such as reading the newspaper or watching television",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            373.5,
+            562.5,
+            403.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q8",
+        "order": 8,
+        "source_label": "8",
+        "text": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            404.25,
+            562.5,
+            438.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q9",
+        "order": 9,
+        "source_label": "9",
+        "text": "Thoughts that you would be better off dead or of hurting yourself in some way",
+        "response_type": "single_choice",
+        "selection_mode": "single",
+        "response_set_id": "RS1",
+        "reverse_scored": false,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+          "page": 1,
+          "bbox": [
+            33.75,
+            438.75,
+            562.5,
+            468.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "single_choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": "single",
+          "selection_mode_review_required": false,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once.",
+        "options": [
+          {
+            "id": "O1",
+            "text": "NOT AT ALL",
+            "source_label": "NOT AT ALL",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SEVERAL DAYS",
+            "source_label": "SEVERAL DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "MORE THAN HALF THE DAYS",
+            "source_label": "MORE THAN HALF THE DAYS",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "NEARLY EVERY DAY",
+            "source_label": "NEARLY EVERY DAY",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw"
+            ]
+          }
+        ]
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NOT AT ALL",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NOT AT ALL",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "SEVERAL DAYS",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "SEVERAL DAYS",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "MORE THAN HALF THE DAYS",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "MORE THAN HALF THE DAYS",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "NEARLY EVERY DAY",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "NEARLY EVERY DAY",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_checked_draft"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_checked_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "total_raw",
+        "method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "multiplier": 1,
+        "value_field": "score",
+        "minimum": 0,
+        "maximum": 27,
+        "severity_bands": [
+          {
+            "label": "No or minimal depression",
+            "minimum_inclusive": 0,
+            "maximum_inclusive": 4
+          },
+          {
+            "label": "Mild depression",
+            "minimum_inclusive": 5,
+            "maximum_inclusive": 9
+          },
+          {
+            "label": "Moderate depression",
+            "minimum_inclusive": 10,
+            "maximum_inclusive": 14
+          },
+          {
+            "label": "Moderate-severe depression",
+            "minimum_inclusive": 15,
+            "maximum_inclusive": 19
+          },
+          {
+            "label": "Severe depression",
+            "minimum_inclusive": 20,
+            "maximum_inclusive": 27
+          }
+        ]
+      }
+    ],
+    "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+    "rules_provenance": "Archived questionnaire printed response values and corresponding scoring context sections; formulas tested separately.",
+    "source_rule_excerpts": [
+      "Using a cut-off score of 10, the PHQ-9 performance in detecting depression varies by severity. For major depression, the sensitivity is 81.4%, meaning the PHQ-9 correctly identifies 81.4% of individuals who truly have the condition. The specificity is 89.6%, indicating that it accurately detects 89.6% of those who do not have major depression. The Positive Predictive Value (PPV) is 92.2%, suggesting that when the test indicates a positive result, there is a 92.2% chance the individual actually has major depression. The Negative Predictive Value (NPV) is 76%, implying that a negative result corresponds to a 76% likelihood that the person does not have the condition. For moderate depression, sensitivity increases to 90.6%, with a specificity of 84.5%, PPV of 85.6%, and NPV of 89.9% (Urtasun et al., 2019)."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "PHQ-9 Scoring & Interpretation",
+        "text": "A raw score (from 0 to 27) is presented where higher scores indicate more depressive symptoms.\n\nThe scale classifies individuals into distinct severity categories based on their raw scores, as follows:\nNo or minimal depression – Scores between 0 to 4 : Scores in this range suggest minimal depressive symptoms that do not significantly impact daily functioning. The majority (76%) of people in the community score within this range.\nMild depression – Scores between 5 to 9 : Scores in this range suggest some depressive symptoms that may cause some difficulty in daily activities. Approximately 18% of the community scores within this range.\nModerate depression – Scores between 10 to 14 : Scores in this range suggest moderate depressive symptoms that likely interfere with daily life and well-being. People who score in this range likely meet the diagnostic criteria for a depressive disorder.\nModerate-severe depression – Scores between 15 to 19 : Scores in this range suggest pronounced depressive symptoms consistent with major depressive disorder that substantially affect daily functioning and quality of life.\nSevere depression – Scores between 20 to 27 : Scores in this range suggest severe depressive symptoms that profoundly disrupt daily activities and require immediate attention. Scores in this range are consistent with severe major depressive disorder.\n\nPercentiles are calculated and provide a useful context for comparing a respondent’s results with a normative community sample. A percentile of 50 represents typical patterns of responding, while higher percentiles represent higher levels of depressive symptoms. Percentiles of 76 and below corresponding to a raw score of 4, indicate no or minimal depressive symptoms (Kocalevent et al., 2013).\n\nThe horizontal graph presents the total score in comparison to individuals from the general population, individuals with major depression and people with a depressive disorder (other than major depression). Shaded areas are presented around the two middle quartiles (between the 25th and 75th percentile) (Kroenke et al., 2001; Kocalevent et al., 2013). The major depression distribution represents individuals diagnosed with major depression. The depressive distribution represents scores from individuals who have other depressive disorder, such as dysthymic disorder or adjustment disorder with depressed mood.\nScores of 10 or more have been shown to reliably predict major depression, with a sensitivity of 81.4%, meaning that 81.4% of individuals who truly have the condition score above this point. The Positive Predictive Value (PPV) is 92.2%, indicating that when a score is 10 or more, there is a 92.2% chance the individual actually has major depression (Urtasun et al., 2019).\n\nWhen using the PHQ-9 to track symptoms over time, a significant change in score is defined as an increase or decrease of 5 or more points. This criterion is based on the Reliable Change Index. Such changes indicate reliable and significant improvement or deterioration in symptoms.\nHigher scores on the PHQ-9 indicate more severe depressive symptoms, which can be particularly concerning when coupled with comorbid mental disorders. Individuals with elevated PHQ-9 scores may experience intensified feelings of sadness, anxiety, or distress, making it more challenging to manage daily responsibilities and relationships (Johansson et al., 2013). This can lead to poorer life outcomes, such as increased absenteeism at work or school, greater difficulty in social interactions, and is associated with higher prevalence of substance use (Johansson et al., 2013). The PHQ-9 focuses on depressive symptoms and therefore does not detect other high prevalence disorders such as anxiety or general levels of psychological distress.\n"
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+  },
+  "context_sections": [
+    {
+      "id": "C1",
+      "title": "Patient Health Questionnaire – Depression (PHQ-9)",
+      "text": "The PHQ-9 is the nine item depression scale from the Patient Health Questionnaire, and is a widely used tool for assisting primary care clinicians in identifying depression as well as monitoring treatment (Kroenke et al., 2001).\n2 minutes\nAges 13+\nDepression , Outcome Monitoring\nAdminister Now",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C2",
+      "title": "PHQ-9 Overview",
+      "text": "The PHQ-9 is based directly on the diagnostic criteria for major depressive disorder in the Diagnostic and Statistical Manual (DSM) and asks about symptoms in the previous two weeks. The PHQ-9 is a widely used tool for screening, diagnosing, and monitoring depression in both clinical and non-clinical settings (Kocalevent et al., 2013). Clinically, it supports treatment planning and tracking changes in symptoms, while in non-clinical settings like schools or workplaces, it serves as an initial screening tool to identify individuals who may need further evaluation. The PHQ-9 is appropriate for individuals aged 13 years and older, making it suitable for adolescents and adults (Kroenke et al., 2001; Richardson et al., 2011).\n\nScores are categorised into the following ranges (Kroenke et al., 2001):\nNo or minimal depression: No or minor depressive symptoms that do not significantly impact daily functioning. The majority (76%) of people in the community score within this range.\nMild depression: Depressive symptoms that may cause some difficulty in daily activities.\nModerate depression: Moderate depressive symptoms that likely interfere with daily life and well-being.\nModerate-severe depression: Pronounced depressive symptoms that substantially affect daily functioning and quality of life.\nSevere depression: Severe depressive symptoms that profoundly disrupt daily activities and require immediate attention.\nThe PHQ-9 was created to provide a quick, reliable method for evaluating the presence and severity of depressive symptoms based on the criteria outlined in the DSM. Each of its nine items corresponds to one of the symptoms of major depression, and it allows for a severity score to aid in clinical decision-making (Kroenke et al., 2001).",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C3",
+      "title": "PHQ-9 Scoring & Interpretation",
+      "text": "A raw score (from 0 to 27) is presented where higher scores indicate more depressive symptoms.\n\nThe scale classifies individuals into distinct severity categories based on their raw scores, as follows:\nNo or minimal depression – Scores between 0 to 4 : Scores in this range suggest minimal depressive symptoms that do not significantly impact daily functioning. The majority (76%) of people in the community score within this range.\nMild depression – Scores between 5 to 9 : Scores in this range suggest some depressive symptoms that may cause some difficulty in daily activities. Approximately 18% of the community scores within this range.\nModerate depression – Scores between 10 to 14 : Scores in this range suggest moderate depressive symptoms that likely interfere with daily life and well-being. People who score in this range likely meet the diagnostic criteria for a depressive disorder.\nModerate-severe depression – Scores between 15 to 19 : Scores in this range suggest pronounced depressive symptoms consistent with major depressive disorder that substantially affect daily functioning and quality of life.\nSevere depression – Scores between 20 to 27 : Scores in this range suggest severe depressive symptoms that profoundly disrupt daily activities and require immediate attention. Scores in this range are consistent with severe major depressive disorder.\n\nPercentiles are calculated and provide a useful context for comparing a respondent’s results with a normative community sample. A percentile of 50 represents typical patterns of responding, while higher percentiles represent higher levels of depressive symptoms. Percentiles of 76 and below corresponding to a raw score of 4, indicate no or minimal depressive symptoms (Kocalevent et al., 2013).\n\nThe horizontal graph presents the total score in comparison to individuals from the general population, individuals with major depression and people with a depressive disorder (other than major depression). Shaded areas are presented around the two middle quartiles (between the 25th and 75th percentile) (Kroenke et al., 2001; Kocalevent et al., 2013). The major depression distribution represents individuals diagnosed with major depression. The depressive distribution represents scores from individuals who have other depressive disorder, such as dysthymic disorder or adjustment disorder with depressed mood.\nScores of 10 or more have been shown to reliably predict major depression, with a sensitivity of 81.4%, meaning that 81.4% of individuals who truly have the condition score above this point. The Positive Predictive Value (PPV) is 92.2%, indicating that when a score is 10 or more, there is a 92.2% chance the individual actually has major depression (Urtasun et al., 2019).\n\nWhen using the PHQ-9 to track symptoms over time, a significant change in score is defined as an increase or decrease of 5 or more points. This criterion is based on the Reliable Change Index. Such changes indicate reliable and significant improvement or deterioration in symptoms.\nHigher scores on the PHQ-9 indicate more severe depressive symptoms, which can be particularly concerning when coupled with comorbid mental disorders. Individuals with elevated PHQ-9 scores may experience intensified feelings of sadness, anxiety, or distress, making it more challenging to manage daily responsibilities and relationships (Johansson et al., 2013). This can lead to poorer life outcomes, such as increased absenteeism at work or school, greater difficulty in social interactions, and is associated with higher prevalence of substance use (Johansson et al., 2013). The PHQ-9 focuses on depressive symptoms and therefore does not detect other high prevalence disorders such as anxiety or general levels of psychological distress.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C4",
+      "title": "PHQ-9 Psychometric Properties",
+      "text": "A recent study that employed a non-clinical sample of 58, 272 individuals from multiple countries (Mean age = 43, SD = 13, 63% female) found that the PHQ-9 consisted of a unidimensional structure and the general factor was found to be strong (e.g., factor loadings ranged from 0.725 to 0.893 in the pooled sample) (Bianchi et al., 2022).\nTo establish reliability and validity, the PHQ-9 was administered to 6,000 patients (pooled mean age = 38.5, SD = 14.32, 83% women) in 8 primary care clinics and 7 obstetrics-gynecology clinics, and construct validity and criterion validity were assessed against independent measures (Kroenke et al., 2001). Criterion validity was assessed against an independent structured mental health professional interview in a sample of 580 patients. The PHQ-9 demonstrates strong convergent validity, correlating with the Brief Beck Depression Inventory ( r = 0.73, p <.0001) and the General Health Questionnaire (GHQ-12; r = 0.59, p <.0001). Divergent validity is indicated by a lower correlation with quality of life (EuroQOL; r = -0.50, p <.0001), suggesting a stronger link to mental health than general health perceptions (Martin et al., 2006).\nThe PHQ-9 also demonstrated excellent reliability, with a Cronbach’s alpha of 0.89, indicating strong internal consistency. Additionally, test-retest reliability over a 48-hour period yielded a correlation coefficient of 0.84, suggesting stability in repeated administrations (Kroenke et al., 2001).\nUsing a cut-off score of 10, the PHQ-9 performance in detecting depression varies by severity. For major depression, the sensitivity is 81.4%, meaning the PHQ-9 correctly identifies 81.4% of individuals who truly have the condition. The specificity is 89.6%, indicating that it accurately detects 89.6% of those who do not have major depression. The Positive Predictive Value (PPV) is 92.2%, suggesting that when the test indicates a positive result, there is a 92.2% chance the individual actually has major depression. The Negative Predictive Value (NPV) is 76%, implying that a negative result corresponds to a 76% likelihood that the person does not have the condition. For moderate depression, sensitivity increases to 90.6%, with a specificity of 84.5%, PPV of 85.6%, and NPV of 89.9% (Urtasun et al., 2019).\nWhen using the PHQ-9 to track symptoms over time, a significant change in score is defined as an increase or decrease of 5 or more points. This criterion is based on the Reliable Change Index (McMillan et al., 2010) and determined using data from over 1,777 distinct episodes of care measured on NovoPsych between September 2014 and February 2022.\nTwo clinical samples are used by NovoPsych to contexualise results against individuals diagnosed with major depression and other depressive disorder (Kroenke et al., 2001):\nMajor Depression (n = 41) Mean = 17.1 SD = 6.1\nOther Depressive Disorder (n = 65) Mean = 10.4 SD = 5.4\nPercentiles are produced based on a normative community sample consisting of 5,018 individuals from the general population (age range: 14-92 years, 53.6% female), representing a broad demographic distribution (Kocalevent et al., 2013). The study reported that 76.4% of the sample had a score of between 0 to 4, 18% had a score of between 5 and 9, 4.3% had a score of between 10 to 14, and 1.3% had a score of 15+. This data has been utilised by NovoPsych to model and interpolate percentiles for comparative analysis.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C5",
+      "title": "Supplementary Material",
+      "text": "The percentile table below illustrates how total scores (see Table 1) compare to individuals in the community, individuals with other depressive disorder, and those with major depression (Kroenke et al., 2001; Kocalevent et al., 2013). Each score is accompanied by a corresponding percentile, indicating the percentage of individuals who scored the same or lower. For instance, a total score of 5 corresponds to the 80th percentile in the normative community sample, 16th percentile in the sample of people with other depressive disorder, and the 2nd percentile in the major depression sample (Table 1). This score signifies that 80% of the individuals in the general population had a score of 5 or lower, whereas only 2% of people with major depression. These graphs provide an understanding of a respondent’s standing relative to the normative community sample, those with other depressive disorder, and compared to individuals with major depression.\nTable 1. PHQ-9 Total Score Normative Community, Other Depressive Disorder, and Major Depression Percentiles.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "LIVE_C6",
+      "title": "Overview",
+      "text": "Search\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C7",
+      "title": "Patient Health Questionnaire – Depression (PHQ-9)",
+      "text": "The PHQ-9 is the nine item depression scale from the Patient Health Questionnaire, and is a widely used tool for assisting primary care clinicians in identifying depression as well as monitoring treatment (Kroenke et al., 2001).\n2 minutes\nAges 13+\nDepression , Outcome Monitoring\nAdminister Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C8",
+      "title": "PHQ-9 Overview",
+      "text": "The PHQ-9 is based directly on the diagnostic criteria for major depressive disorder in the Diagnostic and Statistical Manual (DSM) and asks about symptoms in the previous two weeks. The PHQ-9 is a widely used tool for screening, diagnosing, and monitoring depression in both clinical and non-clinical settings (Kocalevent et al., 2013). Clinically, it supports treatment planning and tracking changes in symptoms, while in non-clinical settings like schools or workplaces, it serves as an initial screening tool to identify individuals who may need further evaluation. The PHQ-9 is appropriate for individuals aged 13 years and older, making it suitable for adolescents and adults (Kroenke et al., 2001; Richardson et al., 2011).\n\nScores are categorised into the following ranges (Kroenke et al., 2001):\nNo or minimal depression: No or minor depressive symptoms that do not significantly impact daily functioning. The majority (76%) of people in the community score within this range.\nMild depression: Depressive symptoms that may cause some difficulty in daily activities.\nModerate depression: Moderate depressive symptoms that likely interfere with daily life and well-being.\nModerate-severe depression: Pronounced depressive symptoms that substantially affect daily functioning and quality of life.\nSevere depression: Severe depressive symptoms that profoundly disrupt daily activities and require immediate attention.\nThe PHQ-9 was created to provide a quick, reliable method for evaluating the presence and severity of depressive symptoms based on the criteria outlined in the DSM. Each of its nine items corresponds to one of the symptoms of major depression, and it allows for a severity score to aid in clinical decision-making (Kroenke et al., 2001).\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C9",
+      "title": "PHQ-9 Scoring & Interpretation",
+      "text": "A raw score (from 0 to 27) is presented where higher scores indicate more depressive symptoms.\n\nThe scale classifies individuals into distinct severity categories based on their raw scores, as follows:\nNo or minimal depression – Scores between 0 to 4 : Scores in this range suggest minimal depressive symptoms that do not significantly impact daily functioning. The majority (76%) of people in the community score within this range.\nMild depression – Scores between 5 to 9 : Scores in this range suggest some depressive symptoms that may cause some difficulty in daily activities. Approximately 18% of the community scores within this range.\nModerate depression – Scores between 10 to 14 : Scores in this range suggest moderate depressive symptoms that likely interfere with daily life and well-being. People who score in this range likely meet the diagnostic criteria for a depressive disorder.\nModerate-severe depression – Scores between 15 to 19 : Scores in this range suggest pronounced depressive symptoms consistent with major depressive disorder that substantially affect daily functioning and quality of life.\nSevere depression – Scores between 20 to 27 : Scores in this range suggest severe depressive symptoms that profoundly disrupt daily activities and require immediate attention. Scores in this range are consistent with severe major depressive disorder.\n\nPercentiles are calculated and provide a useful context for comparing a respondent’s results with a normative community sample. A percentile of 50 represents typical patterns of responding, while higher percentiles represent higher levels of depressive symptoms. Percentiles of 76 and below corresponding to a raw score of 4, indicate no or minimal depressive symptoms (Kocalevent et al., 2013).\n\nThe horizontal graph presents the total score in comparison to individuals from the general population, individuals with major depression and people with a depressive disorder (other than major depression). Shaded areas are presented around the two middle quartiles (between the 25th and 75th percentile) (Kroenke et al., 2001; Kocalevent et al., 2013). The major depression distribution represents individuals diagnosed with major depression. The depressive distribution represents scores from individuals who have other depressive disorder, such as dysthymic disorder or adjustment disorder with depressed mood.\nScores of 10 or more have been shown to reliably predict major depression, with a sensitivity of 81.4%, meaning that 81.4% of individuals who truly have the condition score above this point. The Positive Predictive Value (PPV) is 92.2%, indicating that when a score is 10 or more, there is a 92.2% chance the individual actually has major depression (Urtasun et al., 2019).\n\nWhen using the PHQ-9 to track symptoms over time, a significant change in score is defined as an increase or decrease of 5 or more points. This criterion is based on the Reliable Change Index. Such changes indicate reliable and significant improvement or deterioration in symptoms.\nHigher scores on the PHQ-9 indicate more severe depressive symptoms, which can be particularly concerning when coupled with comorbid mental disorders. Individuals with elevated PHQ-9 scores may experience intensified feelings of sadness, anxiety, or distress, making it more challenging to manage daily responsibilities and relationships (Johansson et al., 2013). This can lead to poorer life outcomes, such as increased absenteeism at work or school, greater difficulty in social interactions, and is associated with higher prevalence of substance use (Johansson et al., 2013). The PHQ-9 focuses on depressive symptoms and therefore does not detect other high prevalence disorders such as anxiety or general levels of psychological distress.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C10",
+      "title": "PHQ-9 Psychometric Properties",
+      "text": "A recent study that employed a non-clinical sample of 58, 272 individuals from multiple countries (Mean age = 43, SD = 13, 63% female) found that the PHQ-9 consisted of a unidimensional structure and the general factor was found to be strong (e.g., factor loadings ranged from 0.725 to 0.893 in the pooled sample) (Bianchi et al., 2022).\nTo establish reliability and validity, the PHQ-9 was administered to 6,000 patients (pooled mean age = 38.5, SD = 14.32, 83% women) in 8 primary care clinics and 7 obstetrics-gynecology clinics, and construct validity and criterion validity were assessed against independent measures (Kroenke et al., 2001). Criterion validity was assessed against an independent structured mental health professional interview in a sample of 580 patients. The PHQ-9 demonstrates strong convergent validity, correlating with the Brief Beck Depression Inventory ( r = 0.73, p <.0001) and the General Health Questionnaire (GHQ-12; r = 0.59, p <.0001). Divergent validity is indicated by a lower correlation with quality of life (EuroQOL; r = -0.50, p <.0001), suggesting a stronger link to mental health than general health perceptions (Martin et al., 2006).\nThe PHQ-9 also demonstrated excellent reliability, with a Cronbach’s alpha of 0.89, indicating strong internal consistency. Additionally, test-retest reliability over a 48-hour period yielded a correlation coefficient of 0.84, suggesting stability in repeated administrations (Kroenke et al., 2001).\nUsing a cut-off score of 10, the PHQ-9 performance in detecting depression varies by severity. For major depression, the sensitivity is 81.4%, meaning the PHQ-9 correctly identifies 81.4% of individuals who truly have the condition. The specificity is 89.6%, indicating that it accurately detects 89.6% of those who do not have major depression. The Positive Predictive Value (PPV) is 92.2%, suggesting that when the test indicates a positive result, there is a 92.2% chance the individual actually has major depression. The Negative Predictive Value (NPV) is 76%, implying that a negative result corresponds to a 76% likelihood that the person does not have the condition. For moderate depression, sensitivity increases to 90.6%, with a specificity of 84.5%, PPV of 85.6%, and NPV of 89.9% (Urtasun et al., 2019).\nWhen using the PHQ-9 to track symptoms over time, a significant change in score is defined as an increase or decrease of 5 or more points. This criterion is based on the Reliable Change Index (McMillan et al., 2010) and determined using data from over 1,777 distinct episodes of care measured on NovoPsych between September 2014 and February 2022.\nTwo clinical samples are used by NovoPsych to contexualise results against individuals diagnosed with major depression and other depressive disorder (Kroenke et al., 2001):\nMajor Depression (n = 41) Mean = 17.1 SD = 6.1\nOther Depressive Disorder (n = 65) Mean = 10.4 SD = 5.4\nPercentiles are produced based on a normative community sample consisting of 5,018 individuals from the general population (age range: 14-92 years, 53.6% female), representing a broad demographic distribution (Kocalevent et al., 2013). The study reported that 76.4% of the sample had a score of between 0 to 4, 18% had a score of between 5 and 9, 4.3% had a score of between 10 to 14, and 1.3% had a score of 15+. This data has been utilised by NovoPsych to model and interpolate percentiles for comparative analysis.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C11",
+      "title": "Supplementary Material",
+      "text": "The percentile table below illustrates how total scores (see Table 1) compare to individuals in the community, individuals with other depressive disorder, and those with major depression (Kroenke et al., 2001; Kocalevent et al., 2013). Each score is accompanied by a corresponding percentile, indicating the percentage of individuals who scored the same or lower. For instance, a total score of 5 corresponds to the 80th percentile in the normative community sample, 16th percentile in the sample of people with other depressive disorder, and the 2nd percentile in the major depression sample (Table 1). This score signifies that 80% of the individuals in the general population had a score of 5 or lower, whereas only 2% of people with major depression. These graphs provide an understanding of a respondent’s standing relative to the normative community sample, those with other depressive disorder, and compared to individuals with major depression.\nTable 1. PHQ-9 Total Score Normative Community, Other Depressive Disorder, and Major Depression Percentiles.\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C12",
+      "title": "Assess your patients with the Patient Health Questionnaire (PHQ-9) using a NovoPsych account",
+      "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C13",
+      "title": "Developer",
+      "text": "Kroenke, K., Spitzer, R. L., & Williams, J. B. W. (2001). The PHQ‐9. Journal of General Internal Medicine : JGIM, 16 (9), 606–613. [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C14",
+      "title": "References",
+      "text": "Bianchi, R., Verkuilen, J., Toker, S., Schonfeld, I. S., Gerber, M., Brähler, E., & Kroenke, K. (2022). Is the PHQ-9 a Unidimensional Measure of Depression? A 58,272-Participant Study. Psychological Assessment, 34 (6), 595–603. [reference removed]\nJohansson, R., Carlbring, P., Heedman, Å., Paxling, B., & Andersson, G. (2013). Depression, anxiety and their comorbidity in the Swedish general population: point prevalence and the effect on health-related quality of life. PeerJ, 1 , e98-. [reference removed]\nKocalevent, R.-D., Hinz, A., & Brähler, E. (2013). Standardization of the depression screener Patient Health Questionnaire (PHQ-9) in the general population. General Hospital Psychiatry, 35 (5), 551–555. [reference removed]\nKroenke, K., Spitzer, R. L., & Williams, J. B. W. (2001). The PHQ‐9. Journal of General Internal Medicine : JGIM, 16(9), 606–613. [reference removed]\nMartin, A., Rief, W., Klaiberg, A., & Braehler, E. (2006). Validity of the Brief Patient Health Questionnaire Mood Scale (PHQ-9) in the general population. General Hospital Psychiatry, 28 (1), 71–77. [reference removed]\nMcMillan, D., Gilbody, S., & Richards, D. (2010). Defining successful treatment outcome in depression using the PHQ-9: A comparison of methods. Journal of Affective Disorders, 127 (1), 122–129. [reference removed]\nRichardson, L. P., McCauley, E., Grossman, D. C., McCarty, C. A., Richards, J., Russo, J. E., Rockhill, C., & Katon, W. (2010). Evaluation of the Patient Health Questionnaire-9 Item for detecting major depression among adolescents. Pediatrics, 126 (6), 1117-1123. [reference removed]\nUrtasun, M., Daray, F. M., Teti, G. L., Coppolillo, F., Herlax, G., Saba, G., Rubinstein, A., Araya, R., & Irazola, V. (2019). Validation and calibration of the patient health questionnaire (PHQ-9) in Argentina. BMC Psychiatry, 19 (1), 291–291. [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C15",
+      "title": "Generalised Anxiety Disorder Assessment (GAD-7)",
+      "text": "Also known as: GAD-7 , GAD scale , Generalised Anxiety Disorder Assessment , Anxiety screening tool , Generalised anxiety questionnaire\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C16",
+      "title": "Depression Anxiety Stress Scales – Short Form (DASS-21)",
+      "text": "Also known as: DASS-21 , DASS , Depression Anxiety Stress Scales , Mental health screening tool\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C17",
+      "title": "The Kessler Psychological Distress Scale (K10)",
+      "text": "Also known as: K10 , Kessler-10 , Kessler Psychological Distress Scale , Mental health screening tool\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C18",
+      "title": "Center for Epidemiologic Studies Depression Scale – Revised (CESD-R)",
+      "text": "Also known as: CESD-R , CES-D Revised , Center for Epidemiologic Studies Depression Scale , Community depression screening\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C19",
+      "title": "Montgomery-Asberg Rating Scale (MADRS)",
+      "text": "Also known as: MADRS , Montgomery-Asberg Rating Scale , Clinician depression rating , Clinical depression assessment\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C20",
+      "title": "Sample Results",
+      "text": "Administer Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C21",
+      "title": "Dr Ben Buchanan",
+      "text": "NovoPsych CEO & Clinical Psychologist\n",
+      "review_status": "fresh_source_text_needs_review"
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Kroenke, K., Spitzer, R. L., & Williams, J. B. W. (2001). The PHQ‐9. Journal of General Internal Medicine : JGIM, 16 (9), 606–613. [reference removed]"
+    },
+    {
+      "id": "R2",
+      "citation": "Bianchi, R., Verkuilen, J., Toker, S., Schonfeld, I. S., Gerber, M., Brähler, E., & Kroenke, K. (2022). Is the PHQ-9 a Unidimensional Measure of Depression? A 58,272-Participant Study. Psychological Assessment, 34 (6), 595–603. [reference removed]\nJohansson, R., Carlbring, P., Heedman, Å., Paxling, B., & Andersson, G. (2013). Depression, anxiety and their comorbidity in the Swedish general population: point prevalence and the effect on health-related quality of life. PeerJ, 1 , e98-. [reference removed]\nKocalevent, R.-D., Hinz, A., & Brähler, E. (2013). Standardization of the depression screener Patient Health Questionnaire (PHQ-9) in the general population. General Hospital Psychiatry, 35 (5), 551–555. [reference removed]\nKroenke, K., Spitzer, R. L., & Williams, J. B. W. (2001). The PHQ‐9. Journal of General Internal Medicine : JGIM, 16(9), 606–613. [reference removed]\nMartin, A., Rief, W., Klaiberg, A., & Braehler, E. (2006). Validity of the Brief Patient Health Questionnaire Mood Scale (PHQ-9) in the general population. General Hospital Psychiatry, 28 (1), 71–77. [reference removed]\nMcMillan, D., Gilbody, S., & Richards, D. (2010). Defining successful treatment outcome in depression using the PHQ-9: A comparison of methods. Journal of Affective Disorders, 127 (1), 122–129. [reference removed]\nRichardson, L. P., McCauley, E., Grossman, D. C., McCarty, C. A., Richards, J., Russo, J. E., Rockhill, C., & Katon, W. (2010). Evaluation of the Patient Health Questionnaire-9 Item for detecting major depression among adolescents. Pediatrics, 126 (6), 1117-1123. [reference removed]\nUrtasun, M., Daray, F. M., Teti, G. L., Coppolillo, F., Herlax, G., Saba, G., Rubinstein, A., Araya, R., & Irazola, V. (2019). Validation and calibration of the patient health questionnaire (PHQ-9) in Argentina. BMC Psychiatry, 19 (1), 291–291. [reference removed]"
+    }
+  ],
+  "tables": [],
+  "assets": [
+    {
+      "id": "A1",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "'Back to Assessments' navigation button",
+      "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A2",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Patient Health Questionnaire – Depression (PHQ-9) PDF",
+      "sha256": "43bc6ab962fb769f24f1bc269d3c2dbbb0c1cd6d4fa0a07f4ae2b6aa3823fa6e",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Montgomery-Asberg Rating Scale (MADRS)",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A3",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "14d47c979e5ff2044f19849379b4cb12692973379e2f297ae1299c08e4f9a70a",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Download PDF",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A4",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Picture of Dr Ben Buchanan",
+      "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+      "mime_type": "image/jpeg",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Scale information composed by:",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A5",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Patient Health Questionnaire questions",
+      "sha256": "1deb786b724ef9de7b197f51d9d11705cedb86d2d296872e9e0d78830e0d19d0",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PHQ-9 Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A6",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "0c84e60be3107756ca8de3e3045a8e49524d8412023ea09a777d545489d79ee2",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PHQ-9 Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A7",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "d28784b8cad5e7c3f504aab2f308379f78e48bb567735e0ffad031e3edb42a85",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PHQ-9 Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A8",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "d6da74614ee7b1cbabdddca11d2e96ea4791480b0b72eb954337625dd81535b8",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PHQ-9 Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A9",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "fabe634a6e077f57ab5df16c96a066af6992ae5f96b0566594a5b3db92880739",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PHQ-9 Scoring & Interpretation",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A10",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "2e5073d0e69e45da078b538fb3a5f681a72879ee6fb478f67e959321f8d872fa",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Supplementary Material",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A11",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Assess your patients with the Patient Health Questionnaire (PHQ-9) using a NovoPsych account",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A12",
+      "kind": "documents",
+      "role": "selected_questionnaire",
+      "title": "Download PDF",
+      "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A13",
+      "kind": "documents",
+      "role": "sample_report_not_runtime_context",
+      "title": "Sample Results",
+      "sha256": "4a3a57e2313e27925189b1bc007baa83fb8c80a8d8f78caf9466924e8bc985ca",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A14",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Original response",
+      "sha256": "2575ca455eb5cf8de82e8e20b99b48627027c0510b71341d5de43e0044d189b0",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A15",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Initial page",
+      "sha256": "aeb6aab212d87162fdaa4738e739ca85f7ee34a9139410ecd416762a847c1062",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A16",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "PHQ-9 Overview",
+      "sha256": "aeb6aab212d87162fdaa4738e739ca85f7ee34a9139410ecd416762a847c1062",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A17",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "PHQ-9 Scoring & Interpretation",
+      "sha256": "eb9139fbec14115c6dcf2079baa028cecbe0da0fa031b8aeb8ab85ca0616c740",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A18",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "PHQ-9 Psychometric Properties",
+      "sha256": "239ffdde6fe3f33229aae504a76cc6d11fc1c9feab54eeb6ebaa88347db87ead",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A19",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Professional Access",
+      "sha256": "4dbe30009b2512a6d36e0f8cb3c0c83fbc04e5cf7cc9fd9e7807309669024b55",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    }
+  ],
+  "conversation_policy": {
+    "status": "draft_disabled_pending_review",
+    "preserve_question_wording": true,
+    "require_answer_confirmation": true,
+    "infer_unanswered_items": false,
+    "calculate_scores_in_backend": true,
+    "treat_source_as_data_not_instructions": true,
+    "context_allowlist": [
+      "assessment",
+      "administration",
+      "questionnaire",
+      "context_sections"
+    ],
+    "send_asset_bytes_or_sample_reports": false
+  },
+  "review": {
+    "ready_for_clinical_use": false,
+    "questionnaire_status": "recovered_needs_review",
+    "questionnaire_completeness_verified": false,
+    "complete_capture_verified": false,
+    "independent_clinical_review_completed": false,
+    "issues": [
+      {
+        "code": "independent_review_pending",
+        "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+      }
+    ],
+    "previous_review_notes": [],
+    "response_structure_complete": true,
+    "unresolved_response_item_ids": [],
+    "required_input_widgets": [
+      "single_choice"
+    ],
+    "option_refresh": {
+      "corrected_cells_or_fields": 0,
+      "unrenderable_option_count": 0,
+      "numeric_only_options_are_not_missing": true,
+      "selection_modes_still_needing_review": 0
+    }
+  },
+  "rights": {
+    "access": "public_page",
+    "reproduction_permission": "not_verified",
+    "note": "Public retrieval does not establish licensing or reuse rights."
+  },
+  "source_documents": [
+    {
+      "id": "selected_pdf",
+      "role": "questionnaire_source",
+      "sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+      "runtime_context_allowed": false,
+      "page_count": 1,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    }
+  ],
+  "reporting": {
+    "version": "2.0.0-draft.1",
+    "status": "draft_requires_clinical_review",
+    "clinical_scoring_enabled": false,
+    "metrics": [
+      {
+        "rule_id": "total_raw",
+        "label": "PHQ-9 total score",
+        "minimum": 0,
+        "maximum": 27,
+        "favourable_direction": "decrease",
+        "direction_status": "source_guidance_draft",
+        "calculation_method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "severity_bands_rule_id": "total_raw",
+        "axis_unit": "score"
+      }
+    ],
+    "charts": [
+      {
+        "id": "total_raw",
+        "title": "PHQ-9 total score",
+        "kind": "domain_trend",
+        "series": [
+          {
+            "id": "total_raw",
+            "label": "PHQ-9 total score",
+            "value_field": "rule_result"
+          }
+        ],
+        "minimum": 0,
+        "maximum": 27,
+        "axis_unit": "score"
+      }
+    ],
+    "comparisons": {
+      "reference_visits": [
+        "previous",
+        "baseline"
+      ],
+      "delta_formula": "current_minus_reference",
+      "deduplicate_same_reference_visit": true,
+      "require_same_assessment_definition_language_and_scoring_version": true,
+      "missing_result": "withhold_comparison",
+      "single_visit": "show_current_scores_only",
+      "date_source": "saved_session_completion_timestamp",
+      "require_compatible_respondent_context": true,
+      "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+      "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+      "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+    },
+    "percentiles": {
+      "enabled": false,
+      "reason": "verified_lookup_not_available"
+    },
+    "interpretation": {
+      "method": "deterministic_templates",
+      "score_template": "{label}: {score} out of {maximum}.",
+      "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+      "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+      "clinical_significance": "not_implemented_requires_review",
+      "diagnosis": "not_inferred",
+      "severity_source": "rule.severity_bands",
+      "overall_total": "total_raw",
+      "combine_metrics_into_new_total": false,
+      "source_guidance_ref": {
+        "section": "scoring",
+        "field": "source_guidance"
+      },
+      "source_guidance_use": "reference_text_for_review_not_executable_rules",
+      "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+      "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+      "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+    },
+    "source_evidence": {
+      "questionnaire_sha256": "290217464b363a57ed360e18b1765bd63939d956a1c2f1b8fb3edc39be48efd2",
+      "guidance_titles": [
+        "PHQ-9 Scoring & Interpretation"
+      ]
+    },
+    "mode": "numeric_scores",
+    "required_context": [],
+    "coverage": {
+      "questionnaire_available": true,
+      "numeric_rule_count": 1,
+      "rules_included": [
+        "total_raw"
+      ],
+      "raw_calculation_status": "draft_rules_available",
+      "interpretation_status": "requires_review",
+      "full_source_coverage_verified": false,
+      "clinical_review_complete": false,
+      "remaining_work": [],
+      "review_issue_codes": [
+        "independent_review_pending"
+      ],
+      "reference_guidance_only": false,
+      "missing_direction_rule_ids": []
+    },
+    "sections": [
+      {
+        "id": "patient_details",
+        "enabled": true,
+        "source": "saved_patient_and_session"
+      },
+      {
+        "id": "assessment_summary",
+        "enabled": true,
+        "source": "assessment_and_reporting_coverage"
+      },
+      {
+        "id": "results",
+        "enabled": true,
+        "source": "reporting.metrics"
+      },
+      {
+        "id": "score_charts",
+        "enabled": true,
+        "source": "reporting.charts",
+        "single_visit": "range_bar",
+        "repeated_visits": "line_chart"
+      },
+      {
+        "id": "comparisons",
+        "enabled": true,
+        "source": "compatible_saved_sessions"
+      },
+      {
+        "id": "protocol_result",
+        "enabled": false,
+        "source": "scoring.protocol"
+      },
+      {
+        "id": "paired_profile",
+        "enabled": false,
+        "source": "scoring.paired_profile"
+      },
+      {
+        "id": "response_history",
+        "enabled": true,
+        "source": "reporting.item_history"
+      },
+      {
+        "id": "responses",
+        "enabled": true,
+        "source": "reporting.response_groups"
+      },
+      {
+        "id": "source_guidance",
+        "enabled": true,
+        "source": "scoring.source_guidance",
+        "role": "reference_material_requires_review"
+      },
+      {
+        "id": "limitations",
+        "enabled": true,
+        "source": "reporting.coverage"
+      }
+    ],
+    "response_groups": [
+      {
+        "id": "total_raw",
+        "label": "PHQ-9 total score",
+        "rule_id": "total_raw",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ]
+      }
+    ],
+    "item_history": [
+      {
+        "item_id": "Q1",
+        "source_label": "1",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q2",
+        "source_label": "2",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q3",
+        "source_label": "3",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q4",
+        "source_label": "4",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q5",
+        "source_label": "5",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q6",
+        "source_label": "6",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q7",
+        "source_label": "7",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q8",
+        "source_label": "8",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q9",
+        "source_label": "9",
+        "response_type": "single_choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      }
+    ],
+    "protocol": null,
+    "paired_profile": null
+  },
+  "verification": {
+    "schema_version": "1.0.0",
+    "checked_on": "2026-11-18",
+    "definition_version": "1.0.0-draft.6",
+    "scoring_content_sha256": "9990acd2fc826fed5b2794635a67ddfce58ec6132c50cf696b9f575415bb5ab8",
+    "status": "technical_checks_passed",
+    "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+    "questionnaire": {
+      "status": "pending_independent_review",
+      "complete_wording_review": false
+    },
+    "rules": [
+      {
+        "rule_id": "total_raw",
+        "technical_status": "passed",
+        "source_check": "selected_formula_checks_matched",
+        "source_scope": "Complete-response total and severity boundaries only; questionnaire wording, diagnosis, risk workflow and partial responses are not approved.",
+        "source_ids": [
+          "phq_gad_manual"
+        ],
+        "example_case_ids": [
+          "8f81b7b3270c:total_0",
+          "8f81b7b3270c:total_1",
+          "8f81b7b3270c:total_2",
+          "8f81b7b3270c:total_3",
+          "8f81b7b3270c:total_4",
+          "8f81b7b3270c:total_5",
+          "8f81b7b3270c:total_6",
+          "8f81b7b3270c:total_7",
+          "8f81b7b3270c:total_8",
+          "8f81b7b3270c:total_9",
+          "8f81b7b3270c:total_10",
+          "8f81b7b3270c:total_11",
+          "8f81b7b3270c:total_12",
+          "8f81b7b3270c:total_13",
+          "8f81b7b3270c:total_14",
+          "8f81b7b3270c:total_15",
+          "8f81b7b3270c:total_16",
+          "8f81b7b3270c:total_17",
+          "8f81b7b3270c:total_18",
+          "8f81b7b3270c:total_19",
+          "8f81b7b3270c:total_20",
+          "8f81b7b3270c:total_21",
+          "8f81b7b3270c:total_22",
+          "8f81b7b3270c:total_23",
+          "8f81b7b3270c:total_24",
+          "8f81b7b3270c:total_25",
+          "8f81b7b3270c:total_26",
+          "8f81b7b3270c:total_27",
+          "8f81b7b3270c:missing_required",
+          "8f81b7b3270c:invalid_answer"
+        ],
+        "example_result_counts": {
+          "passed": 30,
+          "known_gap_confirmed": 0,
+          "failed": 0
+        },
+        "clinical_approved": false
+      }
+    ],
+    "interpretation": [
+      {
+        "rule_id": "total_raw",
+        "status": "selected_boundaries_checked",
+        "clinical_approved": false
+      }
+    ],
+    "percentiles": {
+      "status": "not_implemented",
+      "clinical_approved": false
+    },
+    "protocol": {
+      "status": "not_encoded",
+      "clinical_approved": false
+    },
+    "source_references": [
+      {
+        "id": "phq_gad_manual",
+        "retrieved_on": "2026-11-18",
+        "sha256": "6ed2f00f97e438c1168cd702d38d31fc923031445c720653005f138aa424228a",
+        "access": "archived_pdf",
+        "runtime_fetch_required": false,
+        "location": "pp. 3, 5–7"
+      }
+    ],
+    "evidence_build": {
+      "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+      "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+      "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+      "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+    },
+    "remaining_work": [
+      "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+    ],
+    "clinical_approval": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "approved_definition_version": null,
+      "approved_scoring_sha256": null
+    },
+    "runtime_policy": {
+      "clinical_scoring_enabled": false,
+      "draft_label": "Draft score — not clinically validated",
+      "draft_requires_explicit_opt_in": true,
+      "missing_rule_result": "unavailable",
+      "reject_stale_verification": true,
+      "source_links_are_evidence_only": true
+    }
+  },
+  "report_configuration": {
+    "schemaVersion": "assessment-report-config/2.0.0",
+    "status": "source_specific_draft",
+    "metricBindings": [
+      {
+        "id": "metric_total_raw",
+        "ruleId": "total_raw",
+        "label": "total_raw",
+        "minimum": 0,
+        "maximum": 27,
+        "calculation": {
+          "id": "total_raw",
+          "method": "sum",
+          "item_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q6",
+            "Q7",
+            "Q8",
+            "Q9"
+          ],
+          "multiplier": 1,
+          "value_field": "score",
+          "minimum": 0,
+          "maximum": 27,
+          "severity_bands": [
+            {
+              "label": "No or minimal depression",
+              "minimum_inclusive": 0,
+              "maximum_inclusive": 4
+            },
+            {
+              "label": "Mild depression",
+              "minimum_inclusive": 5,
+              "maximum_inclusive": 9
+            },
+            {
+              "label": "Moderate depression",
+              "minimum_inclusive": 10,
+              "maximum_inclusive": 14
+            },
+            {
+              "label": "Moderate-severe depression",
+              "minimum_inclusive": 15,
+              "maximum_inclusive": 19
+            },
+            {
+              "label": "Severe depression",
+              "minimum_inclusive": 20,
+              "maximum_inclusive": 27
+            }
+          ]
+        },
+        "status": "requires_review",
+        "runtimeEnabled": false
+      }
+    ],
+    "sources": [
+      {
+        "sha256": "4a3a57e2313e27925189b1bc007baa83fb8c80a8d8f78caf9466924e8bc985ca",
+        "pageCount": 3,
+        "identityStatus": "title_or_acronym_matches",
+        "hashVerified": true,
+        "usage": "reference_identity_only_no_runtime_fetch"
+      }
+    ],
+    "page": {
+      "coordinateUnit": "pt",
+      "origin": "top_left",
+      "documentsAreAlternativesNotConcatenated": true
+    },
+    "theme": {
+      "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+      "branding": "application_branding",
+      "sourceLogosRequired": false
+    },
+    "pages": [
+      {
+        "pageId": "d4a3a57e2313e_p1",
+        "documentSha256": "4a3a57e2313e27925189b1bc007baa83fb8c80a8d8f78caf9466924e8bc985ca",
+        "pageNumber": 1,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [
+          "d4a3a57e2313e_p1_chart_1",
+          "d4a3a57e2313e_p1_chart_2"
+        ],
+        "tableIds": [
+          "d4a3a57e2313e_p1_table_1"
+        ],
+        "sectionIds": [
+          "d4a3a57e2313e_p1_section_1",
+          "d4a3a57e2313e_p1_section_2",
+          "d4a3a57e2313e_p1_section_3",
+          "d4a3a57e2313e_p1_section_4",
+          "d4a3a57e2313e_p1_section_5",
+          "d4a3a57e2313e_p1_section_6"
+        ]
+      },
+      {
+        "pageId": "d4a3a57e2313e_p2",
+        "documentSha256": "4a3a57e2313e27925189b1bc007baa83fb8c80a8d8f78caf9466924e8bc985ca",
+        "pageNumber": 2,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [],
+        "sectionIds": [
+          "d4a3a57e2313e_p2_section_1"
+        ]
+      },
+      {
+        "pageId": "d4a3a57e2313e_p3",
+        "documentSha256": "4a3a57e2313e27925189b1bc007baa83fb8c80a8d8f78caf9466924e8bc985ca",
+        "pageNumber": 3,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [
+          "d4a3a57e2313e_p3_table_1"
+        ],
+        "sectionIds": [
+          "d4a3a57e2313e_p3_section_1",
+          "d4a3a57e2313e_p3_section_2"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "d4a3a57e2313e_p1_section_1",
+        "pageId": "d4a3a57e2313e_p1",
+        "title": "Results",
+        "type": "results",
+        "bboxPt": [
+          34.3465,
+          197.90677,
+          84.91451,
+          211.90677
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p1_section_2",
+        "pageId": "d4a3a57e2313e_p1",
+        "title": "PHQ-9 Total Score",
+        "type": "source_heading",
+        "bboxPt": [
+          246.533,
+          272.4455,
+          351.89297,
+          284.4455
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p1_section_3",
+        "pageId": "d4a3a57e2313e_p1",
+        "title": "Score Compared to Normative Community, Depressive,",
+        "type": "source_heading",
+        "bboxPt": [
+          128.22,
+          495.7525,
+          444.29996,
+          507.7525
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p1_section_4",
+        "pageId": "d4a3a57e2313e_p1",
+        "title": "and Major Depression Populations",
+        "type": "source_heading",
+        "bboxPt": [
+          187.57201,
+          507.7525,
+          384.94797,
+          519.7525
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p1_section_5",
+        "pageId": "d4a3a57e2313e_p1",
+        "title": "Interpretation",
+        "type": "interpretation",
+        "bboxPt": [
+          34.3465,
+          666.41077,
+          124.57652,
+          680.41077
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p1_section_6",
+        "pageId": "d4a3a57e2313e_p1",
+        "title": " ‘Moderate-Severe'",
+        "type": "source_heading",
+        "bboxPt": [
+          352.707,
+          685.81842,
+          450.07901,
+          696.81842
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 11.0,
+          "colour": "#ff0000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p2_section_1",
+        "pageId": "d4a3a57e2313e_p2",
+        "title": "Scoring and Interpretation Information",
+        "type": "scoring_guidance",
+        "bboxPt": [
+          34.3465,
+          144.0488,
+          290.26645,
+          158.0488
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p3_section_1",
+        "pageId": "d4a3a57e2313e_p3",
+        "title": "Scoring and Interpretation Information (cont.)",
+        "type": "scoring_guidance",
+        "bboxPt": [
+          34.3465,
+          144.0488,
+          336.92838,
+          158.0488
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d4a3a57e2313e_p3_section_2",
+        "pageId": "d4a3a57e2313e_p3",
+        "title": "Client Responses",
+        "type": "responses",
+        "bboxPt": [
+          34.3464,
+          287.53452,
+          151.8204,
+          301.53452
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      }
+    ],
+    "charts": [
+      {
+        "id": "d4a3a57e2313e_p1_chart_1",
+        "title": "PHQ-9 Total Score",
+        "type": "vertical_bar",
+        "bboxPt": [
+          166.213,
+          298.347,
+          451.213,
+          463.787
+        ],
+        "widthPt": 285.0,
+        "heightPt": 165.44,
+        "axisColour": "#333333",
+        "observedDataType": "raw_score",
+        "backgroundBands": [
+          {
+            "bboxPt": [
+              166.213,
+              406.27713,
+              451.21298,
+              436.54703
+            ],
+            "colour": "#ffff00",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              166.213,
+              376.01712,
+              451.21298,
+              406.28702
+            ],
+            "colour": "#ffa500",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              166.213,
+              345.7471,
+              451.21298,
+              376.017
+            ],
+            "colour": "#ff0000",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              166.213,
+              300.34698,
+              451.21298,
+              345.74698
+            ],
+            "colour": "#a93226",
+            "opacity": 0.2,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          }
+        ],
+        "variantEvidence": "single_visit_observed",
+        "xAxis": {
+          "status": "unresolved",
+          "ticks": [
+            {
+              "value": 0.0,
+              "positionPt": 158.433,
+              "text": "0",
+              "colour": "#333333"
+            }
+          ],
+          "title": "Score Compared to Normative Community, Depressive,",
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "yAxis": {
+          "status": "linear_ticks_observed",
+          "ticks": [
+            {
+              "value": 27.0,
+              "positionPt": 301.12006,
+              "text": "27",
+              "colour": "#333333"
+            },
+            {
+              "value": 24.0,
+              "positionPt": 319.28027,
+              "text": "24",
+              "colour": "#333333"
+            },
+            {
+              "value": 21.0,
+              "positionPt": 337.44009,
+              "text": "21",
+              "colour": "#333333"
+            },
+            {
+              "value": 18.0,
+              "positionPt": 355.60028,
+              "text": "18",
+              "colour": "#333333"
+            },
+            {
+              "value": 15.0,
+              "positionPt": 373.76007,
+              "text": "15",
+              "colour": "#333333"
+            },
+            {
+              "value": 12.0,
+              "positionPt": 391.92026,
+              "text": "12",
+              "colour": "#333333"
+            },
+            {
+              "value": 9.0,
+              "positionPt": 410.08005,
+              "text": "9",
+              "colour": "#333333"
+            },
+            {
+              "value": 6.0,
+              "positionPt": 428.24023,
+              "text": "6",
+              "colour": "#333333"
+            },
+            {
+              "value": 3.0,
+              "positionPt": 446.40042,
+              "text": "3",
+              "colour": "#333333"
+            },
+            {
+              "value": 0.0,
+              "positionPt": 464.56021,
+              "text": "0",
+              "colour": "#333333"
+            }
+          ],
+          "title": null,
+          "minimum": 0.0,
+          "maximum": 27.0,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "series": [
+          {
+            "id": "series_1",
+            "label": "Total Score Compared to Normative Community, Depressive,",
+            "colour": "#bb2f99",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.49649119273622405,
+            "barThicknessPt": 50.0,
+            "fill": "#bc2f9a",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#bb2f99"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#bb2f99"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#bb2f99"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#bb2f99"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#bb2f99"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          }
+        ],
+        "runtimePolicy": {
+          "missingBinding": "withhold_chart",
+          "missingNorm": "withhold_chart",
+          "useSampleValues": false,
+          "substituteRawScoreForPercentile": false,
+          "unknownHistoryVariant": "withhold_unestablished_variant",
+          "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+        },
+        "pageId": "d4a3a57e2313e_p1",
+        "sourceChartId": "chart_1",
+        "typeReview": {
+          "reviewIndex": 310,
+          "detectedType": "vertical_bar",
+          "reviewedType": "vertical_bar",
+          "method": "AI_visual_inspection_of_source_PDF_crop",
+          "scope": "chart_kind_only_not_scoring_or_full_layout",
+          "panelCount": 1,
+          "changed": false
+        },
+        "panelCount": 1,
+        "runtimeEnabled": false,
+        "labels": [
+          {
+            "text": "PHQ-9 Total Score",
+            "bboxPt": [
+              246.533,
+              272.4455,
+              351.89297,
+              284.4455
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "No or Minimal",
+            "bboxPt": [
+              407.54401,
+              445.65826,
+              450.71295,
+              452.65826
+            ],
+            "colour": "#808080",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Mild",
+            "bboxPt": [
+              437.88199,
+              418.41827,
+              450.71295,
+              425.41827
+            ],
+            "colour": "#ffa500",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Moderate",
+            "bboxPt": [
+              421.14499,
+              388.15826,
+              450.71298,
+              395.15826
+            ],
+            "colour": "#ff0000",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Moderate-Severe",
+            "bboxPt": [
+              396.638,
+              357.88828,
+              450.71298,
+              364.88828
+            ],
+            "colour": "#b03a2e",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Severe",
+            "bboxPt": [
+              428.53699,
+              321.56824,
+              450.71298,
+              328.56824
+            ],
+            "colour": "#a93226",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Percentiles",
+            "bboxPt": [
+              451.591,
+              297.35828,
+              486.21298,
+              304.35828
+            ],
+            "colour": "#999999",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "50th",
+            "bboxPt": [
+              452.591,
+              452.07828,
+              466.21301,
+              459.07828
+            ],
+            "colour": "#999999",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "75th",
+            "bboxPt": [
+              452.591,
+              437.66849,
+              466.21301,
+              444.66849
+            ],
+            "colour": "#999999",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "95th",
+            "bboxPt": [
+              452.591,
+              400.2583,
+              466.21301,
+              407.2583
+            ],
+            "colour": "#999999",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "99th",
+            "bboxPt": [
+              452.591,
+              357.8884,
+              466.21301,
+              364.8884
+            ],
+            "colour": "#999999",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "99.9th",
+            "bboxPt": [
+              451.75272,
+              306.42822,
+              471.21274,
+              313.42822
+            ],
+            "colour": "#999999",
+            "font": "Helvetica",
+            "fontSizePt": 7.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Total",
+            "bboxPt": [
+              296.59799,
+              470.26019,
+              318.82797,
+              480.26019
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 10.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Score Compared to Normative Community, Depressive,",
+            "bboxPt": [
+              128.22,
+              495.7525,
+              444.29996,
+              507.7525
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "and Major Depression Populations",
+            "bboxPt": [
+              187.57201,
+              507.7525,
+              384.94797,
+              519.7525
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+        "referenceDistributions": null
+      },
+      {
+        "id": "d4a3a57e2313e_p1_chart_2",
+        "title": null,
+        "type": "horizontal_bar",
+        "bboxPt": [
+          85.26,
+          551.654,
+          517.261,
+          624.094
+        ],
+        "widthPt": 432.0,
+        "heightPt": 72.44,
+        "axisColour": "#333333",
+        "observedDataType": "raw_score",
+        "backgroundBands": [
+          {
+            "bboxPt": [
+              292.30002,
+              553.65417,
+              422.88998,
+              614.09399
+            ],
+            "colour": "#ff1111",
+            "opacity": 0.1,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              193.561,
+              563.65417,
+              308.23102,
+              624.09399
+            ],
+            "colour": "#ffa500",
+            "opacity": 0.3,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              90.0406,
+              563.65417,
+              146.1004,
+              624.09399
+            ],
+            "colour": "#1111ff",
+            "opacity": 0.1,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          }
+        ],
+        "variantEvidence": "single_visit_observed",
+        "xAxis": {
+          "status": "linear_ticks_observed",
+          "ticks": [
+            {
+              "value": 0.0,
+              "positionPt": 85.26050000000001,
+              "text": "0",
+              "colour": "#333333"
+            },
+            {
+              "value": 3.0,
+              "positionPt": 133.04059,
+              "text": "3",
+              "colour": "#333333"
+            },
+            {
+              "value": 6.0,
+              "positionPt": 180.82068,
+              "text": "6",
+              "colour": "#333333"
+            },
+            {
+              "value": 9.0,
+              "positionPt": 228.590575,
+              "text": "9",
+              "colour": "#333333"
+            },
+            {
+              "value": 12.0,
+              "positionPt": 276.37057500000003,
+              "text": "12",
+              "colour": "#333333"
+            },
+            {
+              "value": 15.0,
+              "positionPt": 324.150665,
+              "text": "15",
+              "colour": "#333333"
+            },
+            {
+              "value": 18.0,
+              "positionPt": 371.93036,
+              "text": "18",
+              "colour": "#333333"
+            },
+            {
+              "value": 21.0,
+              "positionPt": 419.700655,
+              "text": "21",
+              "colour": "#333333"
+            },
+            {
+              "value": 24.0,
+              "positionPt": 467.480345,
+              "text": "24",
+              "colour": "#333333"
+            },
+            {
+              "value": 27.0,
+              "positionPt": 515.260435,
+              "text": "27",
+              "colour": "#333333"
+            }
+          ],
+          "title": "PHQ-9 Total Score",
+          "minimum": 0.0,
+          "maximum": 27.0,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "yAxis": {
+          "status": "unresolved",
+          "ticks": [],
+          "title": null,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "series": [],
+        "runtimePolicy": {
+          "missingBinding": "withhold_chart",
+          "missingNorm": "withhold_chart",
+          "useSampleValues": false,
+          "substituteRawScoreForPercentile": false,
+          "unknownHistoryVariant": "withhold_unestablished_variant",
+          "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+        },
+        "pageId": "d4a3a57e2313e_p1",
+        "sourceChartId": "chart_2",
+        "typeReview": {
+          "reviewIndex": 311,
+          "detectedType": "unresolved",
+          "reviewedType": "horizontal_bar",
+          "method": "AI_visual_inspection_of_source_PDF_crop",
+          "scope": "chart_kind_only_not_scoring_or_full_layout",
+          "panelCount": 1,
+          "changed": true
+        },
+        "panelCount": 1,
+        "runtimeEnabled": false,
+        "labels": [
+          {
+            "text": "and Major Depression Populations",
+            "bboxPt": [
+              187.57201,
+              507.7525,
+              384.94797,
+              519.7525
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "PHQ-9 Total Score",
+            "bboxPt": [
+              258.02499,
+              647.86719,
+              342.49496,
+              657.86719
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 10.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Cut-off",
+            "bboxPt": [
+              229.058,
+              549.73059,
+              244.06299,
+              554.73059
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Depressive",
+            "bboxPt": [
+              243.168,
+              530.65161,
+              268.17297,
+              535.65161
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "50th Percentile",
+            "bboxPt": [
+              238.99535,
+              535.65161,
+              272.34534,
+              540.65161
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Major Depression",
+            "bboxPt": [
+              336.68399,
+              536.69421,
+              379.77664,
+              542.19421
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.5,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "50th Percentile",
+            "bboxPt": [
+              339.88751,
+              542.19421,
+              376.5726,
+              547.69421
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.5,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Major Depression",
+            "bboxPt": [
+              280.673,
+              530.65161,
+              319.84799,
+              535.65161
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "25th Percentile",
+            "bboxPt": [
+              283.58551,
+              535.65161,
+              316.93552,
+              540.65161
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Major Depression",
+            "bboxPt": [
+              403.30301,
+              530.65161,
+              442.478,
+              535.65161
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "75th Percentile",
+            "bboxPt": [
+              406.21552,
+              535.65161,
+              439.56552,
+              540.65161
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Community",
+            "bboxPt": [
+              94.2863,
+              536.69421,
+              122.09429,
+              542.19421
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.5,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "50th Percentile",
+            "bboxPt": [
+              89.84802,
+              542.19421,
+              126.53301,
+              547.69421
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 5.5,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Interpretation",
+            "bboxPt": [
+              34.3465,
+              666.41077,
+              124.57652,
+              680.41077
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 14.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+        "referenceDistributions": null,
+        "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+      }
+    ],
+    "tables": [
+      {
+        "id": "d4a3a57e2313e_p1_table_1",
+        "type": "unresolved_table",
+        "bboxPt": [
+          28.3465,
+          195.59017,
+          566.92939,
+          246.61401
+        ],
+        "rowCount": 3,
+        "columnCount": 5,
+        "cellsPt": [
+          [
+            28.3465,
+            195.59017,
+            566.92939,
+            215.43321
+          ],
+          [
+            28.3465,
+            215.43321,
+            85.01143,
+            231.02377
+          ],
+          [
+            28.3465,
+            231.02377,
+            85.01143,
+            246.61401
+          ],
+          [
+            85.01143,
+            215.43321,
+            212.59825,
+            231.02377
+          ],
+          [
+            85.01143,
+            231.02377,
+            212.59825,
+            246.61401
+          ],
+          [
+            212.59825,
+            215.43321,
+            311.81076,
+            231.02377
+          ],
+          [
+            212.59825,
+            231.02377,
+            311.81076,
+            246.61401
+          ],
+          [
+            311.81076,
+            215.43321,
+            424.42818,
+            231.02377
+          ],
+          [
+            311.81076,
+            231.02377,
+            424.42818,
+            246.61401
+          ],
+          [
+            424.42818,
+            215.43321,
+            566.92939,
+            231.02377
+          ],
+          [
+            424.42818,
+            231.02377,
+            566.92939,
+            246.61401
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d4a3a57e2313e_p1",
+        "sourceTableId": "table_1",
+        "columns": [
+          {
+            "sourceColumnIndex": 2,
+            "label": "Score",
+            "binding": null
+          },
+          {
+            "sourceColumnIndex": 4,
+            "label": "Descriptor",
+            "binding": null
+          },
+          {
+            "sourceColumnIndex": 1,
+            "label": "Total Score (0 to 27)",
+            "binding": null
+          }
+        ],
+        "rowBindings": [],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Results",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "static_column_header",
+            "content": "Score",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 4,
+            "kind": "static_column_header",
+            "content": "Descriptor",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "static_column_header",
+            "content": "Total Score (0 to 27)",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      },
+      {
+        "id": "d4a3a57e2313e_p3_table_1",
+        "type": "response_table",
+        "bboxPt": [
+          28.3465,
+          285.21812,
+          566.92959,
+          588.52502
+        ],
+        "rowCount": 11,
+        "columnCount": 7,
+        "cellsPt": [
+          [
+            28.3465,
+            285.21812,
+            566.92959,
+            305.06035
+          ],
+          [
+            28.3465,
+            305.06035,
+            51.02344,
+            333.40687
+          ],
+          [
+            28.3465,
+            333.40687,
+            51.02344,
+            361.75314
+          ],
+          [
+            28.3465,
+            361.75314,
+            51.02344,
+            390.09987
+          ],
+          [
+            28.3465,
+            390.09987,
+            51.02344,
+            418.44615
+          ],
+          [
+            28.3465,
+            418.44615,
+            51.02344,
+            446.79287
+          ],
+          [
+            28.3465,
+            446.79287,
+            51.02344,
+            475.13914
+          ],
+          [
+            28.3465,
+            475.13914,
+            51.02344,
+            503.48586
+          ],
+          [
+            28.3465,
+            503.48586,
+            51.02344,
+            531.83216
+          ],
+          [
+            28.3465,
+            531.83216,
+            51.02344,
+            560.17882
+          ],
+          [
+            28.3465,
+            560.17882,
+            51.02344,
+            588.52502
+          ],
+          [
+            51.02344,
+            305.06035,
+            257.9528,
+            333.40687
+          ],
+          [
+            51.02344,
+            333.40687,
+            257.9528,
+            361.75314
+          ],
+          [
+            51.02344,
+            361.75314,
+            257.9528,
+            390.09987
+          ],
+          [
+            51.02344,
+            390.09987,
+            257.9528,
+            418.44615
+          ],
+          [
+            51.02344,
+            418.44615,
+            257.9528,
+            446.79287
+          ],
+          [
+            51.02344,
+            446.79287,
+            257.9528,
+            475.13914
+          ],
+          [
+            51.02344,
+            475.13914,
+            257.9528,
+            503.48586
+          ],
+          [
+            51.02344,
+            503.48586,
+            257.9528,
+            531.83216
+          ],
+          [
+            51.02344,
+            531.83216,
+            257.9528,
+            560.17882
+          ],
+          [
+            51.02344,
+            560.17882,
+            257.9528,
+            588.52502
+          ],
+          [
+            257.9528,
+            305.06035,
+            332.36215,
+            333.40687
+          ],
+          [
+            257.9528,
+            333.40687,
+            332.36215,
+            361.75314
+          ],
+          [
+            257.9528,
+            361.75314,
+            332.36215,
+            390.09987
+          ],
+          [
+            257.9528,
+            390.09987,
+            332.36215,
+            418.44615
+          ],
+          [
+            257.9528,
+            418.44615,
+            332.36215,
+            446.79287
+          ],
+          [
+            257.9528,
+            446.79287,
+            332.36215,
+            475.13914
+          ],
+          [
+            257.9528,
+            475.13914,
+            332.36215,
+            503.48586
+          ],
+          [
+            257.9528,
+            503.48586,
+            332.36215,
+            531.83216
+          ],
+          [
+            257.9528,
+            531.83216,
+            332.36215,
+            560.17882
+          ],
+          [
+            257.9528,
+            560.17882,
+            332.36215,
+            588.52502
+          ],
+          [
+            332.36215,
+            305.06035,
+            406.77181,
+            333.40687
+          ],
+          [
+            332.36215,
+            333.40687,
+            406.77181,
+            361.75314
+          ],
+          [
+            332.36215,
+            361.75314,
+            406.77181,
+            390.09987
+          ],
+          [
+            332.36215,
+            390.09987,
+            406.77181,
+            418.44615
+          ],
+          [
+            332.36215,
+            418.44615,
+            406.77181,
+            446.79287
+          ],
+          [
+            332.36215,
+            446.79287,
+            406.77181,
+            475.13914
+          ],
+          [
+            332.36215,
+            475.13914,
+            406.77181,
+            503.48586
+          ],
+          [
+            332.36215,
+            503.48586,
+            406.77181,
+            531.83216
+          ],
+          [
+            332.36215,
+            531.83216,
+            406.77181,
+            560.17882
+          ],
+          [
+            332.36215,
+            560.17882,
+            406.77181,
+            588.52502
+          ],
+          [
+            406.77181,
+            305.06035,
+            481.18113,
+            333.40687
+          ],
+          [
+            406.77181,
+            333.40687,
+            481.18113,
+            361.75314
+          ],
+          [
+            406.77181,
+            361.75314,
+            481.18113,
+            390.09987
+          ],
+          [
+            406.77181,
+            390.09987,
+            481.18113,
+            418.44615
+          ],
+          [
+            406.77181,
+            418.44615,
+            481.18113,
+            446.79287
+          ],
+          [
+            406.77181,
+            446.79287,
+            481.18113,
+            475.13914
+          ],
+          [
+            406.77181,
+            475.13914,
+            481.18113,
+            503.48586
+          ],
+          [
+            406.77181,
+            503.48586,
+            481.18113,
+            531.83216
+          ],
+          [
+            406.77181,
+            531.83216,
+            481.18113,
+            560.17882
+          ],
+          [
+            406.77181,
+            560.17882,
+            481.18113,
+            588.52502
+          ],
+          [
+            481.18113,
+            305.06035,
+            555.59045,
+            333.40687
+          ],
+          [
+            481.18113,
+            333.40687,
+            555.59045,
+            361.75314
+          ],
+          [
+            481.18113,
+            361.75314,
+            555.59045,
+            390.09987
+          ],
+          [
+            481.18113,
+            390.09987,
+            555.59045,
+            418.44615
+          ],
+          [
+            481.18113,
+            418.44615,
+            555.59045,
+            446.79287
+          ],
+          [
+            481.18113,
+            446.79287,
+            555.59045,
+            475.13914
+          ],
+          [
+            481.18113,
+            475.13914,
+            555.59045,
+            503.48586
+          ],
+          [
+            481.18113,
+            503.48586,
+            555.59045,
+            531.83216
+          ],
+          [
+            481.18113,
+            531.83216,
+            555.59045,
+            560.17882
+          ],
+          [
+            481.18113,
+            560.17882,
+            555.59045,
+            588.52502
+          ],
+          [
+            555.59045,
+            305.06035,
+            566.92959,
+            588.52502
+          ]
+        ],
+        "dataBinding": null,
+        "runtimeEnabled": false,
+        "reviewStatus": "cell_semantics_require_review",
+        "pageId": "d4a3a57e2313e_p3",
+        "sourceTableId": "table_1",
+        "columns": [],
+        "rowBindings": [
+          {
+            "sourceRowIndex": 2,
+            "questionId": "Q1",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "questionId": "Q2",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "questionId": "Q3",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "questionId": "Q4",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "questionId": "Q5",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "questionId": "Q6",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "questionId": "Q7",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "questionId": "Q9",
+            "contentBinding": "session.answers",
+            "status": "question_text_matched_response_cells_require_review",
+            "runtimeEnabled": false
+          }
+        ],
+        "cellTemplates": [
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 0,
+            "kind": "static_heading",
+            "content": "Client Responses",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 2,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 3,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 4,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 5,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 0,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 0,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 1,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 2,
+            "kind": "response_option_header",
+            "content": "Notatall",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 3,
+            "kind": "response_option_header",
+            "content": "Severaldays",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 4,
+            "kind": "response_option_header",
+            "content": "Morethanhalf\nthedays",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 5,
+            "kind": "response_option_header",
+            "content": "Nearlyeveryday",
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 1,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q1",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 2,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q2",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 3,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q3",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 4,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q4",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 5,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q5",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 6,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q6",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 7,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q7",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 8,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 1,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 9,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 0,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 1,
+            "kind": "question_text",
+            "content": null,
+            "runtimeEnabled": false,
+            "questionId": "Q9",
+            "contentBinding": "questionnaire.items.text",
+            "matchingMethod": "exact_normalized_source_text"
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 2,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 3,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 4,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 5,
+            "kind": "unresolved",
+            "content": null,
+            "runtimeEnabled": false
+          },
+          {
+            "sourceRowIndex": 10,
+            "sourceColumnIndex": 6,
+            "kind": "empty",
+            "content": null,
+            "runtimeEnabled": false
+          }
+        ],
+        "contentPolicy": {
+          "sampleCellValuesExcluded": true,
+          "patientCells": "bind_current_patient_session",
+          "responseCells": "bind_questionnaire_items_and_session_answers",
+          "unresolvedCells": "withhold",
+          "referenceCellsRequireReview": true
+        }
+      }
+    ],
+    "variants": {
+      "sourceStatements": [],
+      "firstAdministration": {
+        "status": "requires_review"
+      },
+      "repeatAdministration": {
+        "status": "requires_review"
+      },
+      "policy": "Do not invent a repeat chart from an observed first-visit chart."
+    },
+    "interpretationRules": {
+      "encodedRules": [
+        {
+          "ruleId": "total_raw",
+          "severityBands": [
+            {
+              "label": "No or minimal depression",
+              "minimum_inclusive": 0,
+              "maximum_inclusive": 4
+            },
+            {
+              "label": "Mild depression",
+              "minimum_inclusive": 5,
+              "maximum_inclusive": 9
+            },
+            {
+              "label": "Moderate depression",
+              "minimum_inclusive": 10,
+              "maximum_inclusive": 14
+            },
+            {
+              "label": "Moderate-severe depression",
+              "minimum_inclusive": 15,
+              "maximum_inclusive": 19
+            },
+            {
+              "label": "Severe depression",
+              "minimum_inclusive": 20,
+              "maximum_inclusive": 27
+            }
+          ]
+        }
+      ],
+      "sourceGuidance": [
+        {
+          "title": "PHQ-9 Scoring & Interpretation",
+          "text": "A raw score (from 0 to 27) is presented where higher scores indicate more depressive symptoms.\n\nThe scale classifies individuals into distinct severity categories based on their raw scores, as follows:\nNo or minimal depression – Scores between 0 to 4 : Scores in this range suggest minimal depressive symptoms that do not significantly impact daily functioning. The majority (76%) of people in the community score within this range.\nMild depression – Scores between 5 to 9 : Scores in this range suggest some depressive symptoms that may cause some difficulty in daily activities. Approximately 18% of the community scores within this range.\nModerate depression – Scores between 10 to 14 : Scores in this range suggest moderate depressive symptoms that likely interfere with daily life and well-being. People who score in this range likely meet the diagnostic criteria for a depressive disorder.\nModerate-severe depression – Scores between 15 to 19 : Scores in this range suggest pronounced depressive symptoms consistent with major depressive disorder that substantially affect daily functioning and quality of life.\nSevere depression – Scores between 20 to 27 : Scores in this range suggest severe depressive symptoms that profoundly disrupt daily activities and require immediate attention. Scores in this range are consistent with severe major depressive disorder.\n\nPercentiles are calculated and provide a useful context for comparing a respondent’s results with a normative community sample. A percentile of 50 represents typical patterns of responding, while higher percentiles represent higher levels of depressive symptoms. Percentiles of 76 and below corresponding to a raw score of 4, indicate no or minimal depressive symptoms (Kocalevent et al., 2013).\n\nThe horizontal graph presents the total score in comparison to individuals from the general population, individuals with major depression and people with a depressive disorder (other than major depression). Shaded areas are presented around the two middle quartiles (between the 25th and 75th percentile) (Kroenke et al., 2001; Kocalevent et al., 2013). The major depression distribution represents individuals diagnosed with major depression. The depressive distribution represents scores from individuals who have other depressive disorder, such as dysthymic disorder or adjustment disorder with depressed mood.\nScores of 10 or more have been shown to reliably predict major depression, with a sensitivity of 81.4%, meaning that 81.4% of individuals who truly have the condition score above this point. The Positive Predictive Value (PPV) is 92.2%, indicating that when a score is 10 or more, there is a 92.2% chance the individual actually has major depression (Urtasun et al., 2019).\n\nWhen using the PHQ-9 to track symptoms over time, a significant change in score is defined as an increase or decrease of 5 or more points. This criterion is based on the Reliable Change Index. Such changes indicate reliable and significant improvement or deterioration in symptoms.\nHigher scores on the PHQ-9 indicate more severe depressive symptoms, which can be particularly concerning when coupled with comorbid mental disorders. Individuals with elevated PHQ-9 scores may experience intensified feelings of sadness, anxiety, or distress, making it more challenging to manage daily responsibilities and relationships (Johansson et al., 2013). This can lead to poorer life outcomes, such as increased absenteeism at work or school, greater difficulty in social interactions, and is associated with higher prevalence of substance use (Johansson et al., 2013). The PHQ-9 focuses on depressive symptoms and therefore does not detect other high prevalence disorders such as anxiety or general levels of psychological distress.\n"
+        }
+      ],
+      "reportScoringGuidance": [
+        {
+          "documentSha256": "4a3a57e2313e27925189b1bc007baa83fb8c80a8d8f78caf9466924e8bc985ca",
+          "pageNumber": 2,
+          "text": "For comprehensive information on the PHQ-9, \nsee here\n.\nA raw score (from 0 to 27) is presented where higher scores indicate more depressive\nsymptoms. The scale classifies individuals into distinct severity categories based on their raw\nscores, as follows:\n-No or minimal depression – Scores between 0 to 4 : Scores in this range suggest minimal\ndepressive symptoms that do not significantly impact daily functioning. The majority (76%) of\npeople in the community score within this range.\n-Mild depression – Scores between 5 to 9 : Scores in this range suggest some depressive\nsymptoms that may cause some difficulty in daily activities. Approximately 18% of the\ncommunity scores within this range.\n-Moderate depression – Scores between 10 to 14 : Scores in this range suggest moderate\ndepressive symptoms that likely interfere with daily life and well-being. People who score in this\nrange likely meet the diagnostic criteria for a depressive disorder.\n-Moderate - severe depression – Scores between 15 to 19 : Scores in this range suggest\npronounced depressive symptoms consistent with major depressive disorder that substantially\naffect daily functioning and quality of life.\n-Severe depression – Scores between 20 to 27 : Scores in this range suggest severe depressive\nsymptoms that profoundly disrupt daily activities and require immediate attention. Scores in this\nrange are consistent with severe major depressive disorder.\nPercentiles are calculated and provide a useful context for comparing a respondent’s results\nwith a normative community sample. A percentile of 50 represents typical patterns of\nresponding, while higher percentiles represent higher levels of depressive symptoms.\nPercentiles of 76 and below corresponding to a raw score of 4, indicate no or minimal\ndepressive symptoms (Kocalevent et al., 2013).\nThe horizontal graph presents the total score in comparison to individuals from the general\npopulation, individuals with major depression and people with a depressive disorder (other than\nmajor depression). Shaded areas are presented around the two middle quartiles (between the\n25th and 75th percentile) (Kroenke et al., 2001; Kocalevent et al., 2013). The major depression\ndistribution represents individuals diagnosed with major depression. The depressive distribution\nrepresents scores from individuals who have other depressive disorder, such as dysthymic\ndisorder or adjustment disorder with depressed mood.\nScores of 10 or more have been shown to reliably predict major depression, with a sensitivity of\n81.4%, meaning that 81.4% of individuals who truly have the condition score above this point.\nThe Positive Predictive Value (PPV) is 92.2%, indicating that when a score is 10 or more, there\nis a 92.2% chance the individual actually has major depression (Urtasun et al., 2019).\nWhen using the PHQ-9 to track symptoms over time, a significant change in score is defined as\nan increase or decrease of 5 or more points. This criterion is based on the Reliable Change\nIndex. Such changes indicate reliable and significant improvement or deterioration in symptoms.",
+          "usage": "source_guidance_for_review_not_executable_scoring",
+          "runtimeEnabled": false
+        },
+        {
+          "documentSha256": "4a3a57e2313e27925189b1bc007baa83fb8c80a8d8f78caf9466924e8bc985ca",
+          "pageNumber": 3,
+          "text": "Higher scores on the PHQ-9 indicate more severe depressive symptoms, which can be\nparticularly concerning when coupled with comorbid mental disorders. Individuals with elevated\nPHQ-9 scores may experience intensified feelings of sadness, anxiety, or distress, making it\nmore challenging to manage daily responsibilities and relationships (Johansson et al., 2013).\nThis can lead to poorer life outcomes, such as increased absenteeism at work or school, greater\ndifficulty in social interactions, and is associated with higher prevalence of substance use\n(Johansson et al., 2013). The PHQ-9 focuses on depressive symptoms and therefore does not\ndetect other high prevalence disorders such as anxiety or general levels of psychological\ndistress.",
+          "usage": "source_guidance_for_review_not_executable_scoring",
+          "runtimeEnabled": false
+        }
+      ],
+      "sourceRequirements": [
+        "Percentiles are calculated and provide a useful context for comparing a respondent’s results with a normative community sample.",
+        "A percentile of 50 represents typical patterns of responding, while higher percentiles represent higher levels of depressive symptoms.",
+        "Percentiles of 76 and below corresponding to a raw score of 4, indicate no or minimal depressive symptoms (Kocalevent et al., 2013).",
+        "The horizontal graph presents the total score in comparison to individuals from the general population, individuals with major depression and people with a depressive disorder (other than major depression).",
+        "Shaded areas are presented around the two middle quartiles (between the 25th and 75th percentile) (Kroenke et al., 2001; Kocalevent et al., 2013).",
+        "This criterion is based on the Reliable Change Index."
+      ],
+      "templates": [],
+      "sampleNarrativeReusable": false,
+      "runtimeEnabled": false
+    },
+    "referenceTables": [],
+    "paintStyles": [],
+    "assets": {
+      "runtimeImages": [],
+      "runtimeSourceFiles": []
+    },
+    "runtimeContract": {
+      "version2RendererRequired": true,
+      "loadDefinitionFrom": "database_json",
+      "useCurrentPatientAnswers": true,
+      "useSamplePatientValues": false,
+      "externalNetworkRequired": false,
+      "sourceArchiveRequired": false,
+      "unknownScoring": "withhold",
+      "unknownNorms": "withhold",
+      "unsupportedChart": "withhold_and_report_exception",
+      "unknownRepeatLayout": "withhold"
+    },
+    "validation": {
+      "jsonStructureValidated": true,
+      "sourceHashesVerified": true,
+      "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+      "fullPageLayoutCompared": false,
+      "scoreBindingsReviewed": false,
+      "tablesSemanticallyReviewed": false,
+      "rendererEquivalent": false,
+      "clinicalApproved": false,
+      "readyForApplicationImport": false
+    },
+    "exceptions": [
+      {
+        "code": "score_and_series_bindings_require_review",
+        "count": 2
+      },
+      {
+        "code": "chart_series_not_resolved",
+        "chartIds": [
+          "d4a3a57e2313e_p1_chart_2"
+        ]
+      },
+      {
+        "code": "table_cell_semantics_require_review",
+        "count": 2,
+        "unresolvedCells": 50
+      },
+      {
+        "code": "interpretation_and_variant_rules_require_review"
+      }
+    ]
+  },
+  "export_format": {
+    "schema_version": "standalone-combined-assessment-2.0",
+    "report_definition": "report_configuration uses assessment, administration, questionnaire and scoring from this file unless it supplies its own field. Its identity uses assessment_id, assessment.name and definition_version.",
+    "baseline_reporting": "reporting contains the initial report settings; report_configuration contains the dedicated report settings.",
+    "source_content": "Archived PDF text and extraction history were omitted in the compact export. Original verification refers to source definitions.",
+    "internal_references": "Metrics use rule_id; item history uses item_id; severity_bands_rule_id identifies the scoring rule containing the bands. Other internal references use section and field names within this JSON.",
+    "external_dependencies": "No external locations are included. Asset records retain descriptive metadata only; binary assets are not embedded.",
+    "verification_scope": "Original verification records describe the source definitions before this cleanup."
+  }
+}

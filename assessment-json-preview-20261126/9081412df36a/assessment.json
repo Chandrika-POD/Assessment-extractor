@@ -1,0 +1,1423 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "alcohol-use-disorders-identification-test-audit--9081412df36a",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Alcohol Use Disorders Identification Test (AUDIT)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Alcohol Use Disorders Identification Test (AUDIT) is a 12-item self-report screening questionnaire designed to measure harmful alcohol use (Saunders et al., 1993a). This includes the 10 standard questions of the AUDIT and 2 questions at the end to determine self-identified problem drinking and self-perceived difficulty in stopping drinking.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Because alcohol use can affect your health and can interfere with certain medications and treatments, it is important that we ask some questions about your use of alcohol. Please read the following questions and tap the box that best describes your answer to each question.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "3a8c5181f96e4d1d92ce0d642e107bd8e2c4291f6781ca41054b58ad0edaef35",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total AUDIT Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total AUDIT Score (sum of questions 1 to 10)",
+     "y": 607.5,
+     "url": null,
+     "sha256": "3a8c5181f96e4d1d92ce0d642e107bd8e2c4291f6781ca41054b58ad0edaef35"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Low Risk (0 to 7 for total score, or 0 to 0.7 for average score) : indicates that the individual’s alcohol consumption (if any) is generally safe and unlikely to cause harm.",
+   "Hazardous (8 to 15 for total score or 0.8 to 1.5 for average score) : indicates a moderate level of alcohol use that may pose risks to health and well-being.",
+   "Harmful (16 to 19 for total score and 1.6 to 1.9 for average score) : indicates a significant risk associated with alcohol consumption that could lead to serious health issues.",
+   "High Risk (20 + for total score or 2+ for average score) : indicates a severe level of alcohol use, requiring immediate intervention to prevent substantial harm to health and functioning.",
+   "A raw score above 4 (average score 1.3) on the Dependence subscale indicates that the client may have alcohol dependency.",
+   "The test development sample (Saunders et al, 1993a) consisted of 1888 individuals. Participants from primary health care facilities were categorised into ‘non-drinkers’ (36%), ‘drinking patients’ (48%), and ‘alcoholics’ (16%) based on their interview responses. Mean ages were 36.1 ± 10.9 for non-drinkers, 35.3 ± 10.2 for drinking patients, and 38.7 ± 9.2 for alcoholics. A cut-off value of 8 yielded sensitivities for various indices of problematic drinking that were in the mid-0.90s. Subsequent research has evaluated the AUDIT against other measures of alcohol problems including data from comprehensive interviews. One such study (Bush et al., 1998) found that among 477 participants who completed the AUDIT and were interviewed to determine significant alcohol-related problems, a cutoff score of 8 had a sensitivity (false negative) of 59% and a specificity (false positive) of 91%. That is, a score of 8 or more will only be sensitive to 59% of individuals who actually have drinking problems, and one can be 91% sure it is not a false positive."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "AUDIT Scoring & Interpretation",
+    "text": "Total scores range from 0 to 40, with higher scores indicating a greater likelihood of hazardous and harmful drinking. Scoring is computed by adding scores (0 – 4) on questions 1 to 8, and questions 9 and 10 scored 0, 2, or 4 points. Questions 11 and 12 are not scored.\n\nRisk levels are categorised using qualitative descriptors based on the following total scores:\nLow Risk (0 to 7 for total score, or 0 to 0.7 for average score) : indicates that the individual’s alcohol consumption (if any) is generally safe and unlikely to cause harm.\nHazardous (8 to 15 for total score or 0.8 to 1.5 for average score) : indicates a moderate level of alcohol use that may pose risks to health and well-being.\nHarmful (16 to 19 for total score and 1.6 to 1.9 for average score) : indicates a significant risk associated with alcohol consumption that could lead to serious health issues.\nHigh Risk (20 + for total score or 2+ for average score) : indicates a severe level of alcohol use, requiring immediate intervention to prevent substantial harm to health and functioning.\n\nScores are also presented as a percentile compared to a sample of individuals from the community without an alcohol addiction (Moussas et al., 2009). A percentile of 50 indicates a typical score for someone from the general public, with higher percentiles indicating high severity. Percentiles of 81 and below (raw score of 7) indicate no drinking problem.\n\nTotal scores of 8 or more are recommended as indicators of hazardous and harmful alcohol use. However, a score of 8 or more will only be sensitive to 59% of individuals who actually have drinking problems (Bush et al, 1998). For women, a cut score of 8 on the AUDIT accurately identifies 73% who are at-risk drinkers (positive predictive value, or PPV = 0.73) and correctly rules out 77% of those who are not at risk (negative predictive value, or NPV = 0.77). For men, the assessment shows higher effectiveness, accurately identifying 91% of at-risk drinkers (PPV = 0.91) and correctly ruling out 86% of those who are not at risk (NPV = 0.86) (Demartini & Casey, 2012).\n\nWhen looking at individual responses the questions can be conceptualised using the following three categories:\nHazardous health impacts (questions 1, 2 & 3) : Higher scores indicate more risk of negative health effects associated with alcohol use.\nDependence symptoms (questions 4, 5 & 6) : Higher scores indicate a greater presence of behaviours consistent with alcohol dependence.\nBehavioural or social problems of use (questions 7, 8, 9 & 10) : Higher scores indicate more significant behavioural or social issues arising from alcohol use.\n\nA raw score above 4 (average score 1.3) on the Dependence subscale indicates that the client may have alcohol dependency.\n\nThe last two questions help with managing self-beliefs about drinking problems and self-perceived difficulties in stopping or reducing drinking levels within the next 3 months.\nThe horizontal graph presents the total score in comparison to community, binge-drinking, and alcohol dependence distributions, with shaded areas around the two middle quartiles (between the 25th and 75th percentile). The binge-drinking distribution represents scores from individuals who have engaged in binge drinking in the last month. The alcohol dependence distribution represents individuals diagnosed with alcohol dependence and who are presenting for inpatient admission (Moussas et al., 2009). This graph helps contextualise patterns of responding in comparison to the distribution of responses among community and binge drinking samples and those with a diagnosis of alcohol addiction (Moussas et al., 2009).\n\nAlcohol intake is intricately linked to various mental health conditions and life outcomes, often creating a cycle of adverse effects. High levels of alcohol consumption can exacerbate symptoms of anxiety, depression, and other mental disorders, leading to a decline in overall mental well-being (Boschloo et al., 2012). Conversely, individuals struggling with mental health issues may turn to alcohol as a coping mechanism, resulting in increased consumption and dependency (Almeida-Filho et al., 2007). This cycle can significantly impact life outcomes, including deteriorating relationships and decreased work performance (Thorisson et al., 2019).\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [
+   {
+    "rows": [
+     [
+      "Country",
+      "One standard drink",
+      "A normal can of beer",
+      "A normal glass of wine",
+      "One shot of spirits"
+     ],
+     [
+      "Australia",
+      "10 g",
+      "375 ml can (4.8%) 14.2 g 1.4 standard drinks",
+      "150 ml glass (13.5%) 16.0 g 1.6 standard drinks",
+      "30 ml nip (40%) 9.5 g 1 standard drink"
+     ],
+     [
+      "New Zealand",
+      "10 g",
+      "330 ml can (4%) 10.4 g 1 standard drink",
+      "150 ml glass (13%) 15.4 g 1.5 standard drinks",
+      "30 ml pour (42%) 10.0 g 1 standard drink"
+     ],
+     [
+      "United Kingdom",
+      "8 g (1 unit)",
+      "440 ml can (5.5%) 19.1 g 2.4 units",
+      "175 ml glass (12%) 16.6 g 2.1 units",
+      "25 ml shot (40%) 7.9 g 1 unit"
+     ],
+     [
+      "Canada",
+      "13.45 g",
+      "355 ml can (5%) 14.0 g 1 standard drink",
+      "171 ml glass (12%) 16.2 g 1.2 standard drinks",
+      "43 ml shot (40%) 13.6 g 1 standard drink"
+     ]
+    ],
+    "cells": [
+     [
+      {
+       "text": "Country",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "One standard drink",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "A normal can of beer",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "A normal glass of wine",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "One shot of spirits",
+       "header": true,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "Australia",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "10 g",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "375 ml can (4.8%) 14.2 g 1.4 standard drinks",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "150 ml glass (13.5%) 16.0 g 1.6 standard drinks",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "30 ml nip (40%) 9.5 g 1 standard drink",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "New Zealand",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "10 g",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "330 ml can (4%) 10.4 g 1 standard drink",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "150 ml glass (13%) 15.4 g 1.5 standard drinks",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "30 ml pour (42%) 10.0 g 1 standard drink",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "United Kingdom",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "8 g (1 unit)",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "440 ml can (5.5%) 19.1 g 2.4 units",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "175 ml glass (12%) 16.6 g 2.1 units",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "25 ml shot (40%) 7.9 g 1 unit",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ],
+     [
+      {
+       "text": "Canada",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "13.45 g",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "355 ml can (5%) 14.0 g 1 standard drink",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "171 ml glass (12%) 16.2 g 1.2 standard drinks",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      },
+      {
+       "text": "43 ml shot (40%) 13.6 g 1 standard drink",
+       "header": false,
+       "rowspan": 1,
+       "colspan": 1
+      }
+     ]
+    ],
+    "caption": "Each country sets its own standard drink, and drinks are sold in different sizes.",
+    "section": "What counts as one drink?",
+    "source_url": null
+   }
+  ],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [],
+ "tables": [
+  {
+   "rows": [
+    [
+     "Country",
+     "One standard drink",
+     "A normal can of beer",
+     "A normal glass of wine",
+     "One shot of spirits"
+    ],
+    [
+     "Australia",
+     "10 g",
+     "375 ml can (4.8%) 14.2 g 1.4 standard drinks",
+     "150 ml glass (13.5%) 16.0 g 1.6 standard drinks",
+     "30 ml nip (40%) 9.5 g 1 standard drink"
+    ],
+    [
+     "New Zealand",
+     "10 g",
+     "330 ml can (4%) 10.4 g 1 standard drink",
+     "150 ml glass (13%) 15.4 g 1.5 standard drinks",
+     "30 ml pour (42%) 10.0 g 1 standard drink"
+    ],
+    [
+     "United Kingdom",
+     "8 g (1 unit)",
+     "440 ml can (5.5%) 19.1 g 2.4 units",
+     "175 ml glass (12%) 16.6 g 2.1 units",
+     "25 ml shot (40%) 7.9 g 1 unit"
+    ],
+    [
+     "Canada",
+     "13.45 g",
+     "355 ml can (5%) 14.0 g 1 standard drink",
+     "171 ml glass (12%) 16.2 g 1.2 standard drinks",
+     "43 ml shot (40%) 13.6 g 1 standard drink"
+    ]
+   ],
+   "cells": [
+    [
+     {
+      "text": "Country",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "One standard drink",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "A normal can of beer",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "A normal glass of wine",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "One shot of spirits",
+      "header": true,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Australia",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "10 g",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "375 ml can (4.8%) 14.2 g 1.4 standard drinks",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "150 ml glass (13.5%) 16.0 g 1.6 standard drinks",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "30 ml nip (40%) 9.5 g 1 standard drink",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "New Zealand",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "10 g",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "330 ml can (4%) 10.4 g 1 standard drink",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "150 ml glass (13%) 15.4 g 1.5 standard drinks",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "30 ml pour (42%) 10.0 g 1 standard drink",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "United Kingdom",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "8 g (1 unit)",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "440 ml can (5.5%) 19.1 g 2.4 units",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "175 ml glass (12%) 16.6 g 2.1 units",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "25 ml shot (40%) 7.9 g 1 unit",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ],
+    [
+     {
+      "text": "Canada",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "13.45 g",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "355 ml can (5%) 14.0 g 1 standard drink",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "171 ml glass (12%) 16.2 g 1.2 standard drinks",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     },
+     {
+      "text": "43 ml shot (40%) 13.6 g 1 standard drink",
+      "header": false,
+      "rowspan": 1,
+      "colspan": 1
+     }
+    ]
+   ],
+   "caption": "Each country sets its own standard drink, and drinks are sold in different sizes.",
+   "section": "What counts as one drink?",
+   "source_url": null
+  }
+ ],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Alcohol Use Disorders Identification Test (AUDIT) PDF",
+   "source_url": null,
+   "sha256": "2e61b8a2407970942179469d4031031723eb62681cb9be09e45671824763a00c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/2e61b8a2407970942179469d4031031723eb62681cb9be09e45671824763a00c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "The Kessler Psychological Distress Scale (K10)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e8515ae4ea785e9b95d7261a7597d9e101f919c331fae26efed50a1ee820054d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e8515ae4ea785e9b95d7261a7597d9e101f919c331fae26efed50a1ee820054d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Ben Buchanan",
+   "source_url": null,
+   "sha256": "1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e4d8e8b28b7f5d139a6220cc4b271dd9154eb9592cd5f4084aa58e7f10ebc12.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "AUDIT question 1 in the NovoPsych online questionnaire asking how often you have a drink containing alcohol, with five answer options from Never to 4 or more times a week",
+   "source_url": null,
+   "sha256": "fab6acb427031c9cf3b3abe8828b6300551d8ad248f5f8e46c8ad23a3cbac0e1",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/fab6acb427031c9cf3b3abe8828b6300551d8ad248f5f8e46c8ad23a3cbac0e1.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "3ad1b25cdc298ef4e606836a14fc18191ec3419f12f82108ff6f1e8ac5127d77",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3ad1b25cdc298ef4e606836a14fc18191ec3419f12f82108ff6f1e8ac5127d77.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "230d523c22c02696e63e7fd77a0f52b1d3c7557b1c9dda5d2d25910f735cae02",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/230d523c22c02696e63e7fd77a0f52b1d3c7557b1c9dda5d2d25910f735cae02.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "acd16bcd5f20e69cafaf75bb0cafebd56023a1692723abf39a289447ff7f7356",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/acd16bcd5f20e69cafaf75bb0cafebd56023a1692723abf39a289447ff7f7356.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "97b1f0b7c8c939436f95c53ad70b1c178b50d8a4a3baf11e66aad8de5cecff12",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/97b1f0b7c8c939436f95c53ad70b1c178b50d8a4a3baf11e66aad8de5cecff12.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "a382fb4b9c9e5a13c0d9c3be88241fbf10aaabfee59828ea2634546551c3f9de",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/a382fb4b9c9e5a13c0d9c3be88241fbf10aaabfee59828ea2634546551c3f9de.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "cb91ec541dcc071e7d63c50b727a38a49b794cacce6998728dc8867e8c4b29dc",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/cb91ec541dcc071e7d63c50b727a38a49b794cacce6998728dc8867e8c4b29dc.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "66779ca688ce3efe111d6b3b02e8aa084e1db8ca3115afc5ce5ca7e97a30232b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/66779ca688ce3efe111d6b3b02e8aa084e1db8ca3115afc5ce5ca7e97a30232b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "AUDIT Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "485a01c63a832b9b1b63228d7ee15317eef5641892fe94288c4500f0fce7405e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/485a01c63a832b9b1b63228d7ee15317eef5641892fe94288c4500f0fce7405e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Supplementary Material",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Alcohol Use Disorders Identification Test using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A15",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "3a8c5181f96e4d1d92ce0d642e107bd8e2c4291f6781ca41054b58ad0edaef35",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3a8c5181f96e4d1d92ce0d642e107bd8e2c4291f6781ca41054b58ad0edaef35.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A16",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "d43bb97b221292db5a230be0232e4e9947c22f64a016656d221f8e1e386d3c93",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d43bb97b221292db5a230be0232e4e9947c22f64a016656d221f8e1e386d3c93.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A23",
+   "kind": "embedded_media",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": null,
+   "mime_type": null,
+   "archive_path": null,
+   "status": "not_captured",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "original_capture_gaps",
+    "detail": "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 12
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "3a8c5181f96e4d1d92ce0d642e107bd8e2c4291f6781ca41054b58ad0edaef35",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/3a8c5181f96e4d1d92ce0d642e107bd8e2c4291f6781ca41054b58ad0edaef35.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "d43bb97b221292db5a230be0232e4e9947c22f64a016656d221f8e1e386d3c93",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/d43bb97b221292db5a230be0232e4e9947c22f64a016656d221f8e1e386d3c93.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 5,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total AUDIT Score",
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total AUDIT Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total AUDIT Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "3a8c5181f96e4d1d92ce0d642e107bd8e2c4291f6781ca41054b58ad0edaef35",
+   "guidance_titles": [
+    "AUDIT Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending",
+    "original_capture_gaps"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total AUDIT Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ]
+   },
+   {
+    "id": "recorded_responses",
+    "label": "Additional recorded responses",
+    "rule_id": null,
+    "item_ids": [
+     "Q11",
+     "Q12"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "45a891c968673acbd2cb039f7239feac845446fa5cd07e7b86dba51c8792b964",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T11:28:07.594635+00:00",
+  "raw_extraction_sha256": "f918bc64579dca9a2cc38a02f79a264a3a6487d1d576868e769c5bb27aae18bc",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Addiction"
+   },
+   {
+    "url": null,
+    "title": "Health"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1360-0443.1993.tb00822.x",
+    "title": "https://doi.org/10.1111/j.1360-0443.1993.tb00822.x"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1360-0443.1993.tb02093.x",
+    "title": "https://doi.org/10.1111/j.1360-0443.1993.tb02093.x"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00406-007-0752-0",
+    "title": "https://doi.org/10.1007/s00406-007-0752-0"
+   },
+   {
+    "url": "https://doi.org/10.1192/bjp.bp.111.097550",
+    "title": "https://doi.org/10.1192/bjp.bp.111.09755"
+   },
+   {
+    "url": "https://doi.org/10.1001/archinte.158.16.1789",
+    "title": "https://doi.org/10.1001/archinte.158.16.1789"
+   },
+   {
+    "url": "https://doi.org/10.1037/a0028519",
+    "title": "https://doi.org/10.1037/a0028519"
+   },
+   {
+    "url": "https://doi.org/10.1371/journal.pone.0219618",
+    "title": "https://doi.org/10.1371/journal.pone.0219618"
+   },
+   {
+    "url": "https://doi.org/10.1186/1744-859x-8-11",
+    "title": "https://doi.org/10.1186/1744-859x-8-11"
+   },
+   {
+    "url": "https://doi.org/10.1093/alcalc/agv049",
+    "title": "https://doi.org/10.1093/alcalc/agv049"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.drugalcdep.2009.01.017",
+    "title": "https://doi.org/10.1016/j.drugalcdep.2009.01.017"
+   },
+   {
+    "url": "https://doi.org/10.1136/bmjopen-2019-029184",
+    "title": "https://doi.org/10.1136/bmjopen-2019-029184"
+   },
+   {
+    "url": null,
+    "title": "Psychological dependence assessment"
+   },
+   {
+    "url": null,
+    "title": "Gambling addiction measure"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Mental health screening tool"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Ben Buchanan"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Drug and Alcohol Initial Assessment"
+   },
+   {
+    "url": null,
+    "title": "Risk Assessment (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Psychiatric Clinical Interview and Assessment (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "57"
+   },
+   {
+    "url": "https://iris.who.int/server/api/core/bitstreams/c57d9855-5450-4c46-84b1-c88a6df4192c/content",
+    "title": "AUDIT: The Alcohol Use Disorders Identification Test, Guidelines for Use in Primary Care"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

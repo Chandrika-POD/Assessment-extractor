@@ -1,0 +1,1018 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "life-skills-profile-16-item-version--16e3384c0fb9",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Life Skills Profile (LSP-16)",
+  "short_name": null,
+  "language": "en",
+  "description": "The abbreviated Life Skills Profile (LSP-16; Rosen et al., 1989) is a clinician-rated assessment that contains 16 items which provide a key measure of function and disability for people with mental illness. The focus of LSP-16 is on the person’s general functioning, i.e. how the person functions in terms of their social relationships and ability to do day-to-day tasks.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "past three months"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": ": Complete the questionnaire as you assess the client's general functioning (i.e. not during crises when he or she is ill, or becoming ill, but his or her general state over the past three months).",
+  "instructions_source": {
+   "url": null,
+   "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 48.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of all 16 items)",
+     "y": 253.5,
+     "url": null,
+     "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "Higher scores for the total score and subscale scores indicate a greater degree of disability. A total LSP scale score is calculated by adding individual scores for the whole scale together. Therefore, for the LSP-16, the total score can range from 0 to 48. As some items might not be relevant, items are optional and items with missing data are excluded from the calculation. An average score is provided for the total score and subscale scores so that comparisons can be made to determine relative areas of strength of challenges.",
+   "Plots are presented to show the average score for the first administration and multiple administrations of the LSP-16. The background colours on the plots match up to the response options on the LSP-16 to indicate what response category the average score is closest to (e.g., a score of 1.5 is closer to 2 and so is categorised as “moderate difficulties”)."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "LSP-16 Scoring & Interpretation",
+    "text": "Higher scores for the total score and subscale scores indicate a greater degree of disability. A total LSP scale score is calculated by adding individual scores for the whole scale together. Therefore, for the LSP-16, the total score can range from 0 to 48. As some items might not be relevant, items are optional and items with missing data are excluded from the calculation. An average score is provided for the total score and subscale scores so that comparisons can be made to determine relative areas of strength of challenges.\n\nThere are four subscales in the LSP-16:\n1. Withdrawal (items 1, 2, 3, 8): This subscale assesses an individual’s tendency to withdraw from social interactions and activities. It reflects the extent to which a person prefers solitude or faces challenges in engaging with others, where higher scores indicate more social withdrawal.\n2. (Lack of) Self-Care (items 4, 5, 6, 9, 16): The Self-Care subscale evaluates an individual’s ability to independently manage personal care activities. It includes tasks such as grooming, dressing, and maintaining personal hygiene. Higher scores indicate more difficulties with self-care.\n3. (Lack of) Compliance (items 10, 11, 12): Compliance measures the degree to which an individual adheres to rules, instructions, or social norms. High scores on this subscale suggest less compliance and rule-abiding behaviour.\n4. Anti-Social (items 7, 13, 14, 15): The Anti-Social subscale focuses on behaviours that are disruptive, defiant, or contrary to social norms. It assesses tendencies towards antisocial or oppositional conduct, with higher scores reflecting more anti-social behaviours.\n\nPlots are presented to show the average score for the first administration and multiple administrations of the LSP-16. The background colours on the plots match up to the response options on the LSP-16 to indicate what response category the average score is closest to (e.g., a score of 1.5 is closer to 2 and so is categorised as “moderate difficulties”).\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Life Skills Profile (16-item version) (LSP-16)",
+    "y": 102.8,
+    "url": null,
+    "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Withdrawal (Items 1, 2, 3, 8):",
+    "y": 140.2,
+    "url": null,
+    "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "(Lack of) Self-Care (Items 4, 5, 6, 9, 16):",
+    "y": 165.0,
+    "url": null,
+    "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "(Lack of) Compliance (Items 10, 11, 12):",
+    "y": 189.8,
+    "url": null,
+    "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Anti-Social (Items 7, 13, 14, 15):",
+    "y": 214.5,
+    "url": null,
+    "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Rosen, A., Hadzi-Pavlovic, & D., Parker, G. (1989). The Life Skills Profile: A measure assessing function and disability in schizophrenia. Schizophrenia Bulletin. 15(2): 325-337. https://psycnet.apa.org/doi/10.1093/schbul/15.2.325",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Dickinson, D. & Coursey, R.D. (2002). Independence and overlap among neurocognitive correlates of community functioning in schizophrenia. Schizophrenia Research. 56(1-2): 161- 170. https://doi.org/10.1016/s0920-9964(01)00229-8\nNorman, R.M.G., Malla, A.K., McLean, T., et al. (2000). The relationship of symptoms and level of functioning in schizophrenia to general wellbeing and the Quality of Life Scale. Acta Psychiatrica Scandinavica. 102(4):303-309. https://doi.org/10.1034/j.1600-0447.2000.102004303.x\nParker, G., O’Donnell, M., Hadzi-Pavlovic, D., & Proberts, M. (2002). Assessing outcome in community mental health patients: A comparative analysis of measures. International Journal of Social Psychiatry. 48(1):11-19. https://doi.org/10.1177/002076402128783046\nParker, G., Rosen, A., Emdur, N., & Hadzi-Pavlovic, D. (1991). The Life Skills Profile: Psychometric properties of a measure assessing function and disability in schizophrenia. Acta Psychiatrica Scandinavica. 83(2): 145-152 https://doi.org/10.1111/j.1600-0447.1991.tb07381.x\nSimon, A.E., Giaocomini, V., Ferrero, F., & Mohr, S. (2003). Dysexecutive syndrome and social adjustment in schizophrenia. Australian and New Zealand Journal of Psychiatry. 37(3):340- 346. https://doi.org/10.1046/j.1440-1614.2003.01186.x\nTrauer, T., Duckmanton, R.A., & Chiu, E. (1995). The Life Skills Profile: A study of its psychometric properties. Australian and New Zealand Journal of Psychiatry. 29(3): 492-499. https://psycnet.apa.org/doi/10.3109/00048679509064959\nTrauer, T., Eagar, K., Gaines, P., & Bower, A. (2004). New Zealand Mental Health Consumers and their Outcomes. Auckland: Health Research Council of New Zealand. https://www.researchgate.net/publication/265246873_New_Zealand_Mental_Health_Consumers_and_Their_Outcomes\nWooff, D., Schneider, J., Carpenter, J., & Brandon, T. (2003). Correlates of stress in carers. Journal of Mental Health. 12(1):29-40. https://doi.org/10.1080/09638230021000058274",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Life Skills Profile (LSP-16) PDF",
+   "source_url": null,
+   "sha256": "37ec5e84e75406cd9ded7ff62659938116461415570b76b32cf19f401c9bbe31",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/37ec5e84e75406cd9ded7ff62659938116461415570b76b32cf19f401c9bbe31.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "General Behaviour Inventory (GBI)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c5a1fd2b8def278c57905ad571ed00eef8bc20f634c076da68f679b9623c9a16",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c5a1fd2b8def278c57905ad571ed00eef8bc20f634c076da68f679b9623c9a16.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c09df201a4d99bfbf6d4e41f2d3b48e7b3d1c3b9fa19889cb22ba163224259c2",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c09df201a4d99bfbf6d4e41f2d3b48e7b3d1c3b9fa19889cb22ba163224259c2.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "bf7295338dfeee27312c1accab3bd5abc34aaa0975a2f042c35bd99f8f38ff4d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/bf7295338dfeee27312c1accab3bd5abc34aaa0975a2f042c35bd99f8f38ff4d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "LSP-16 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "9e1e84d4a2730891e3ebc5995e31c8e4bfb108ea4a9752bb6d19a3dd650752e9",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9e1e84d4a2730891e3ebc5995e31c8e4bfb108ea4a9752bb6d19a3dd650752e9.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "LSP-16 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "74765af89e7d79c2ecd29a353bd4f1dbbb7a8d042ffde48c49c437b1aedabb7e",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/74765af89e7d79c2ecd29a353bd4f1dbbb7a8d042ffde48c49c437b1aedabb7e.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "LSP-16 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Life Skills Profile – 16 item version using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "4f3762e888db257be1a2a3a2053d1bb8f14b90468a1b79a4907a42703d184941",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4f3762e888db257be1a2a3a2053d1bb8f14b90468a1b79a4907a42703d184941.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 16
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "4f3762e888db257be1a2a3a2053d1bb8f14b90468a1b79a4907a42703d184941",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/4f3762e888db257be1a2a3a2053d1bb8f14b90468a1b79a4907a42703d184941.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 4,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "Total Score",
+    "minimum": 0.0,
+    "maximum": 48.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "Total Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "Total Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 48.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "96e2d88af2f34e06d718bd06f41240cfbbdebf7661ba7b8ddf22326186a4e287",
+   "guidance_titles": [
+    "LSP-16 Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "e026b197ed8db0878c662ff7caca06a49576cfcc3ac0ef29d506131f24535e17",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T09:10:25.073841+00:00",
+  "raw_extraction_sha256": "7ae32c96cb4ae96cb5a73b1f9c20fdce4531ca9d80eb753113c4016e95eb66be",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Disability"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1093/schbul/15.2.325",
+    "title": "https://psycnet.apa.org/doi/10.1093/schbul/15.2.325"
+   },
+   {
+    "url": "https://doi.org/10.1016/s0920-9964(01)00229-8",
+    "title": "https://doi.org/10.1016/s0920-9964(01)00229-8"
+   },
+   {
+    "url": "https://doi.org/10.1034/j.1600-0447.2000.102004303.x",
+    "title": "https://doi.org/10.1034/j.1600-0447.2000.102004303.x"
+   },
+   {
+    "url": "https://doi.org/10.1177/002076402128783046",
+    "title": "https://doi.org/10.1177/002076402128783046"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1600-0447.1991.tb07381.x",
+    "title": "https://doi.org/10.1111/j.1600-0447.1991.tb07381.x"
+   },
+   {
+    "url": "https://doi.org/10.1046/j.1440-1614.2003.01186.x",
+    "title": "https://doi.org/10.1046/j.1440-1614.2003.01186.x"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.3109/00048679509064959",
+    "title": "https://psycnet.apa.org/doi/10.3109/00048679509064959"
+   },
+   {
+    "url": "https://www.researchgate.net/publication/265246873_New_Zealand_Mental_Health_Consumers_and_Their_Outcomes",
+    "title": "https://www.researchgate.net/publication/265246873_New_Zealand_Mental_Health_Consumers_and_Their_Outcomes"
+   },
+   {
+    "url": "https://doi.org/10.1080/09638230021000058274",
+    "title": "https://doi.org/10.1080/09638230021000058274"
+   },
+   {
+    "url": null,
+    "title": "Developmental disability mental health questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Routine evaluation measure"
+   },
+   {
+    "url": null,
+    "title": "Clinical depression assessment"
+   },
+   {
+    "url": null,
+    "title": "Mood variability measure"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "NDIS Report (Report Template)"
+   },
+   {
+    "url": null,
+    "title": "GP Letter – Progress Update or Mental Health Treatment Plan Reporting (Letter Template)"
+   },
+   {
+    "url": null,
+    "title": "First Session (Assessment Session)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

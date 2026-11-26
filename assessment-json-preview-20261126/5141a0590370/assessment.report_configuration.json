@@ -1,0 +1,1624 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Total weighted score",
+   "minimum": 0.0,
+   "maximum": 26,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Total weighted score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [
+     {
+      "label": "Low Risk",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 3
+     },
+     {
+      "label": "Moderate Risk",
+      "minimum_inclusive": 4,
+      "maximum_inclusive": 7
+     },
+     {
+      "label": "High Risk",
+      "minimum_inclusive": 8,
+      "maximum_inclusive": 26
+     }
+    ],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "37b002ef019db91da8044f27ba1967377421c9b8f1327fd855aeb2050b200cbe",
+     "page_url": null,
+     "page_sha256": "d6516cf68cc372b2a2645ce68d2c457b0980a39efe2ddc4d9fa1f926eded7fb8",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "context_constraints": [
+     {
+      "context_key": "source_scoring_sex",
+      "allowed_values": [
+       "female",
+       "male"
+      ],
+      "allowed_options": {
+       "Q1": {
+        "female": [
+         "O1",
+         "O2"
+        ],
+        "male": [
+         "O1",
+         "O3"
+        ]
+       },
+       "Q2": {
+        "female": [
+         "O1",
+         "O2"
+        ],
+        "male": [
+         "O1",
+         "O3"
+        ]
+       },
+       "Q8": {
+        "female": [
+         "O1",
+         "O2"
+        ],
+        "male": [
+         "O1",
+         "O3"
+        ]
+       }
+      }
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 26,
+    "bounds_basis": "Maximum over consistent female or male source columns; mixed-column maximum 29 is invalid."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+   "pageCount": 2,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "db156f83781f9_p1",
+   "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db156f83781f9_p1_table_1"
+   ],
+   "sectionIds": [
+    "db156f83781f9_p1_section_1",
+    "db156f83781f9_p1_section_2",
+    "db156f83781f9_p1_section_3",
+    "db156f83781f9_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "db156f83781f9_p2",
+   "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db156f83781f9_p2_table_1"
+   ],
+   "sectionIds": [
+    "db156f83781f9_p2_section_1",
+    "db156f83781f9_p2_section_2",
+    "db156f83781f9_p2_section_3",
+    "db156f83781f9_p2_section_4",
+    "db156f83781f9_p2_section_5",
+    "db156f83781f9_p2_section_6",
+    "db156f83781f9_p2_section_7",
+    "db156f83781f9_p2_section_8",
+    "db156f83781f9_p2_section_9",
+    "db156f83781f9_p2_section_10",
+    "db156f83781f9_p2_section_11",
+    "db156f83781f9_p2_section_12",
+    "db156f83781f9_p2_section_13",
+    "db156f83781f9_p2_section_14",
+    "db156f83781f9_p2_section_15",
+    "db156f83781f9_p2_section_16",
+    "db156f83781f9_p2_section_17",
+    "db156f83781f9_p2_section_18",
+    "db156f83781f9_p2_section_19",
+    "db156f83781f9_p2_section_20",
+    "db156f83781f9_p2_section_21",
+    "db156f83781f9_p2_section_22"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "db156f83781f9_p1_section_1",
+   "pageId": "db156f83781f9_p1",
+   "title": "Assessment Information",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    176.72569,
+    237.39752,
+    196.00369
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p1_section_2",
+   "pageId": "db156f83781f9_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    74.03149,
+    273.10361,
+    124.59951,
+    292.38162
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p1_section_3",
+   "pageId": "db156f83781f9_p1",
+   "title": "Interpretive Text",
+   "type": "interpretation",
+   "bboxPt": [
+    74.03149,
+    338.30048,
+    182.95149,
+    357.57849
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p1_section_4",
+   "pageId": "db156f83781f9_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    409.18625,
+    329.95145,
+    428.46426
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_1",
+   "pageId": "db156f83781f9_p2",
+   "title": "Scoring and Interpretation Information (cont.)",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    376.61337,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_2",
+   "pageId": "db156f83781f9_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    234.96104,
+    191.50549,
+    254.23904
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_3",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    292.15027,
+    312.91077,
+    305.92029
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_4",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    292.15027,
+    459.49963,
+    305.92029
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_5",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    320.4967,
+    312.91077,
+    334.26672
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_6",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    320.4967,
+    459.49963,
+    334.26672
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_7",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    348.84314,
+    312.91077,
+    362.61316
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_8",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    348.84314,
+    459.49963,
+    362.61316
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_9",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    377.18961,
+    312.91077,
+    390.95963
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_10",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    377.18961,
+    459.49963,
+    390.95963
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_11",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    405.53607,
+    312.91077,
+    419.30609
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_12",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    405.53607,
+    459.49963,
+    419.30609
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_13",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    433.88251,
+    312.91077,
+    447.65253
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_14",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    433.88251,
+    459.49963,
+    447.65253
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_15",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    462.22897,
+    312.91077,
+    475.99899
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_16",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    462.22897,
+    459.49963,
+    475.99899
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_17",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    490.57544,
+    312.91077,
+    504.34546
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_18",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    490.57544,
+    459.49963,
+    504.34546
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_19",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    518.92194,
+    312.91077,
+    532.69196
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_20",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    518.92194,
+    459.49963,
+    532.69196
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_21",
+   "pageId": "db156f83781f9_p2",
+   "title": "Yes",
+   "type": "source_heading",
+   "bboxPt": [
+    295.12076,
+    547.26837,
+    312.91077,
+    561.03839
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#ffffff"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db156f83781f9_p2_section_22",
+   "pageId": "db156f83781f9_p2",
+   "title": "No",
+   "type": "source_heading",
+   "bboxPt": [
+    446.16965,
+    547.26837,
+    459.49963,
+    561.03839
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 10.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [],
+ "tables": [
+  {
+   "id": "db156f83781f9_p1_table_1",
+   "type": "unresolved_table",
+   "bboxPt": [
+    195.43547,
+    298.60495,
+    439.26035,
+    324.47003
+   ],
+   "rowCount": 2,
+   "columnCount": 2,
+   "cellsPt": [
+    [
+     195.43547,
+     298.60495,
+     323.14963,
+     310.39377
+    ],
+    [
+     323.14963,
+     298.60495,
+     439.26035,
+     310.39377
+    ],
+    [
+     195.43547,
+     310.39377,
+     323.14963,
+     324.47003
+    ],
+    [
+     323.14963,
+     310.39377,
+     439.26035,
+     324.47003
+    ]
+   ],
+   "dataBinding": null,
+   "runtimeEnabled": false,
+   "reviewStatus": "cell_semantics_require_review",
+   "pageId": "db156f83781f9_p1",
+   "sourceTableId": "table_1",
+   "columns": [],
+   "rowBindings": [],
+   "cellTemplates": [
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    }
+   ],
+   "contentPolicy": {
+    "sampleCellValuesExcluded": true,
+    "patientCells": "bind_current_patient_session",
+    "responseCells": "bind_questionnaire_items_and_session_answers",
+    "unresolvedCells": "withhold",
+    "referenceCellsRequireReview": true
+   }
+  },
+  {
+   "id": "db156f83781f9_p2_table_1",
+   "type": "response_table",
+   "bboxPt": [
+    68.03149,
+    236.81805,
+    527.24421,
+    568.47156
+   ],
+   "rowCount": 12,
+   "columnCount": 4,
+   "cellsPt": [
+    [
+     68.03149,
+     236.81805,
+     527.24421,
+     256.66058
+    ],
+    [
+     68.03149,
+     256.66058,
+     87.87402,
+     285.00702
+    ],
+    [
+     68.03149,
+     285.00702,
+     87.87402,
+     313.35345
+    ],
+    [
+     68.03149,
+     313.35345,
+     87.87402,
+     341.69994
+    ],
+    [
+     68.03149,
+     341.69994,
+     87.87402,
+     370.0464
+    ],
+    [
+     68.03149,
+     370.0464,
+     87.87402,
+     398.39285
+    ],
+    [
+     68.03149,
+     398.39285,
+     87.87402,
+     426.73932
+    ],
+    [
+     68.03149,
+     426.73932,
+     87.87402,
+     455.08576
+    ],
+    [
+     68.03149,
+     455.08576,
+     87.87402,
+     483.43222
+    ],
+    [
+     68.03149,
+     483.43222,
+     87.87402,
+     511.77869
+    ],
+    [
+     68.03149,
+     511.77869,
+     87.87402,
+     540.12512
+    ],
+    [
+     68.03149,
+     540.12512,
+     87.87402,
+     568.47156
+    ],
+    [
+     87.87402,
+     256.66058,
+     229.60629,
+     285.00702
+    ],
+    [
+     87.87402,
+     285.00702,
+     229.60629,
+     313.35345
+    ],
+    [
+     87.87402,
+     313.35345,
+     229.60629,
+     341.69994
+    ],
+    [
+     87.87402,
+     341.69994,
+     229.60629,
+     370.0464
+    ],
+    [
+     87.87402,
+     370.0464,
+     229.60629,
+     398.39285
+    ],
+    [
+     87.87402,
+     398.39285,
+     229.60629,
+     426.73932
+    ],
+    [
+     87.87402,
+     426.73932,
+     229.60629,
+     455.08576
+    ],
+    [
+     87.87402,
+     455.08576,
+     229.60629,
+     483.43222
+    ],
+    [
+     87.87402,
+     483.43222,
+     229.60629,
+     511.77869
+    ],
+    [
+     87.87402,
+     511.77869,
+     229.60629,
+     540.12512
+    ],
+    [
+     87.87402,
+     540.12512,
+     229.60629,
+     568.47156
+    ],
+    [
+     229.60629,
+     256.66058,
+     378.42519,
+     285.00702
+    ],
+    [
+     229.60629,
+     285.00702,
+     378.42519,
+     313.35345
+    ],
+    [
+     229.60629,
+     313.35345,
+     378.42519,
+     341.69994
+    ],
+    [
+     229.60629,
+     341.69994,
+     378.42519,
+     370.0464
+    ],
+    [
+     229.60629,
+     370.0464,
+     378.42519,
+     398.39285
+    ],
+    [
+     229.60629,
+     398.39285,
+     378.42519,
+     426.73932
+    ],
+    [
+     229.60629,
+     426.73932,
+     378.42519,
+     455.08576
+    ],
+    [
+     229.60629,
+     455.08576,
+     378.42519,
+     483.43222
+    ],
+    [
+     229.60629,
+     483.43222,
+     378.42519,
+     511.77869
+    ],
+    [
+     229.60629,
+     511.77869,
+     378.42519,
+     540.12512
+    ],
+    [
+     229.60629,
+     540.12512,
+     378.42519,
+     568.47156
+    ],
+    [
+     378.42519,
+     256.66058,
+     527.24421,
+     285.00702
+    ],
+    [
+     378.42519,
+     285.00702,
+     527.24421,
+     313.35345
+    ],
+    [
+     378.42519,
+     313.35345,
+     527.24421,
+     341.69994
+    ],
+    [
+     378.42519,
+     341.69994,
+     527.24421,
+     370.0464
+    ],
+    [
+     378.42519,
+     370.0464,
+     527.24421,
+     398.39285
+    ],
+    [
+     378.42519,
+     398.39285,
+     527.24421,
+     426.73932
+    ],
+    [
+     378.42519,
+     426.73932,
+     527.24421,
+     455.08576
+    ],
+    [
+     378.42519,
+     455.08576,
+     527.24421,
+     483.43222
+    ],
+    [
+     378.42519,
+     483.43222,
+     527.24421,
+     511.77869
+    ],
+    [
+     378.42519,
+     511.77869,
+     527.24421,
+     540.12512
+    ],
+    [
+     378.42519,
+     540.12512,
+     527.24421,
+     568.47156
+    ]
+   ],
+   "dataBinding": null,
+   "runtimeEnabled": false,
+   "reviewStatus": "cell_semantics_require_review",
+   "pageId": "db156f83781f9_p2",
+   "sourceTableId": "table_1",
+   "columns": [
+    {
+     "sourceColumnIndex": 2,
+     "label": "Yes",
+     "binding": null
+    },
+    {
+     "sourceColumnIndex": 3,
+     "label": "No",
+     "binding": null
+    },
+    {
+     "sourceColumnIndex": 2,
+     "label": "Yes",
+     "binding": null
+    },
+    {
+     "sourceColumnIndex": 3,
+     "label": "No",
+     "binding": null
+    }
+   ],
+   "rowBindings": [
+    {
+     "sourceRowIndex": 2,
+     "questionId": "Q1",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 3,
+     "questionId": "Q2",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 4,
+     "questionId": "Q3",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 5,
+     "questionId": "Q4",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 6,
+     "questionId": "Q5",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 7,
+     "questionId": "Q6",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 8,
+     "questionId": "Q7",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 9,
+     "questionId": "Q8",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 10,
+     "questionId": "Q9",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 11,
+     "questionId": "Q10",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    }
+   ],
+   "cellTemplates": [
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 0,
+     "kind": "static_heading",
+     "content": "Client Responses",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 1,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 2,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 3,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 1,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 2,
+     "kind": "response_option_header",
+     "content": "Yes",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 3,
+     "kind": "response_option_header",
+     "content": "No",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 2,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 2,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q1",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 2,
+     "sourceColumnIndex": 2,
+     "kind": "response_option_header",
+     "content": "Yes",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 2,
+     "sourceColumnIndex": 3,
+     "kind": "response_option_header",
+     "content": "No",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 3,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 3,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q2",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 3,
+     "sourceColumnIndex": 2,
+     "kind": "response_option_header",
+     "content": "Yes",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 3,
+     "sourceColumnIndex": 3,
+     "kind": "response_option_header",
+     "content": "No",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 4,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 4,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q3",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 4,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 4,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 5,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 5,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q4",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 5,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 5,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 6,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 6,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q5",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 6,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 6,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 7,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 7,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q6",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 7,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 7,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 8,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 8,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q7",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 8,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 8,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 9,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 9,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q8",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 9,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 9,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 10,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 10,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q9",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 10,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 10,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 11,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 11,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q10",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 11,
+     "sourceColumnIndex": 2,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 11,
+     "sourceColumnIndex": 3,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    }
+   ],
+   "contentPolicy": {
+    "sampleCellValuesExcluded": true,
+    "patientCells": "bind_current_patient_session",
+    "responseCells": "bind_questionnaire_items_and_session_answers",
+    "unresolvedCells": "withhold",
+    "referenceCellsRequireReview": true
+   }
+  }
+ ],
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "No chart added to the supplied table/text sample; other administration variants require separate evidence."
+ },
+ "interpretationRules": {
+  "encodedRules": [
+   {
+    "ruleId": "source_draft_1",
+    "severityBands": [
+     {
+      "label": "Low Risk",
+      "minimum_inclusive": 0,
+      "maximum_inclusive": 3
+     },
+     {
+      "label": "Moderate Risk",
+      "minimum_inclusive": 4,
+      "maximum_inclusive": 7
+     },
+     {
+      "label": "High Risk",
+      "minimum_inclusive": 8,
+      "maximum_inclusive": 26
+     }
+    ]
+   }
+  ],
+  "sourceGuidance": [
+   {
+    "title": "ORT Scoring & Interpretation",
+    "text": "Scores range from 0 to 26. The scores are categorized into three risk categories.\n– Low Risk= Scores 0-3 – Moderate Risk = scores 4 – 7 – High risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the low risk category have a 5.6% chance of developing one or more aberrant behaviour when prescribed opioids. The moderate risk category had a risk of 28% while the high risk category had a risk of 91%. Note that these percentages are not direct measures of risk of opioid abuse or dependence, but rather aberrant behaviours (which are known to be associated with abuse and dependence). Aberrant behaviours are defined as:\n-Used additional opioids than those prescribed -Used additional opioids than those prescribed more than once -Forged prescription -Sold prescription -Admitted to seeking euphoria from opioids -Admitted to wanting opioids for anxiety -Overdose and death -Injected drug -Abnormal urine/blood screen -Abnormal urine/blood screen positive for 2 or more substances -Solicited opioids from other providers -Unauthorized ER visits -Concurrent abuse of alcohol -Unauthorized dose escalation\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+    "pageNumber": 1,
+    "text": "Scores range from 0 to 26, with scores calculated differently\ndependent on gender and age.The scores are categorized into three\nrisk categories. \n-\n\tLow Risk= Scores 0-3\n-\n\tModerate Risk = scores 4 – 7\n-\n\tHigh risk = Scores 8 or more\nAccording to the validation sample (Webster, 2005) patients in the\nlow risk category have a 5.6% chance of developing one or more\naberrant behaviour when prescribed opioids. The moderate risk\ncategory had a risk of 28% while the high risk category had a risk of\n91%. Note that these percentages are not direct measures of risk of\nopioid abuse or dependence, but rather aberrant behaviours (which\nare known to be associated with abuse and dependence). Aberrant\nbehaviours are defined as:\n-Used additional opioids than those prescribed\n-Used additional opioids than those prescribed more than once\n-Forged prescription\n-Sold prescription\n-Admitted to seeking euphoria from opioids\n-Admitted to wanting opioids for anxiety\n-Overdose and death\n-Injected drug\n-Abnormal urine/blood screen\n-Abnormal urine/blood screen positive for 2 or more",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   },
+   {
+    "documentSha256": "b156f83781f9c62c58bf681aa8b46fac931f084b280c1ba37020a69a371a86cf",
+    "pageNumber": 2,
+    "text": "substances\n-Solicited opioids from other providers\n-Unauthorized ER visits\n-Concurrent abuse of alcohol\n-Unauthorized dose escalation",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false,
+  "noChartsInSuppliedSample": "AI_full_page_visual_review_confirmed"
+ },
+ "exceptions": [
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 29
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

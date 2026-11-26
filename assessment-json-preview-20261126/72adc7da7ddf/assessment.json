@@ -1,0 +1,1255 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "session-reactions-scale-3-brief-srs-3-b--72adc7da7ddf",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Session Reactions Scale – 3 – Brief (SRS-3-B)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Session Reactions Scale – 3 – Brief Version (SRS-3-B) is a 15-item self-report post-session measure for collecting systematic feedback on clients’ session reactions in the context of feedback-informed treatment (Řiháček et al., 2023). It is suitable for clients engaged in psychological therapy who are 18 years and older, and is designed to be administered periodically to track the therapeutic relationship.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": ": Take a moment to think back over the most recent therapy session you have completed and what you got from it. Please compare your sense of this session to each of the following descriptions to rate how well they fit, based on the words in each item that fit your experience best. It is important to note that not every item will be rated high (or low) because each session is unique and the reactions to sessions are different. As a result of my most recent session:",
+  "instructions_source": {
+   "url": null,
+   "sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Helpful Reactions raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q14"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+     "page_url": null,
+     "page_sha256": "dec9641f4f96fe2d02c8320c150a8fe0df148076ca253499a6c357cf896e57ac",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 10.0,
+    "maximum": 50.0
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Helpful Reactions mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q14"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+     "page_url": null,
+     "page_sha256": "dec9641f4f96fe2d02c8320c150a8fe0df148076ca253499a6c357cf896e57ac",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 1.0,
+    "maximum": 5.0
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Hindering Reactions raw",
+    "item_ids": [
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+     "page_url": null,
+     "page_sha256": "dec9641f4f96fe2d02c8320c150a8fe0df148076ca253499a6c357cf896e57ac",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 4.0,
+    "maximum": 20.0
+   },
+   {
+    "id": "source_draft_4",
+    "label": "Hindering Reactions mean",
+    "item_ids": [
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+     "page_url": null,
+     "page_sha256": "dec9641f4f96fe2d02c8320c150a8fe0df148076ca253499a6c357cf896e57ac",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C3",
+      "LIVE_C9"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 1.0,
+    "maximum": 5.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+   "page_url": null,
+   "page_sha256": "dec9641f4f96fe2d02c8320c150a8fe0df148076ca253499a6c357cf896e57ac",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [
+   "Raw scores and an average score (between 1 and 5) are presented. An average score for each subscale is presented so that the two can be compared (as there are a different number of items in each scale). The two subscales measured are:"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "SRS-3-B Scoring & Interpretation",
+    "text": "The SRS-3-B can be meaningfully used both at the item level (yielding clients’ scores for specific reactions) and at the subscale level (yielding clients’ global evaluation of the session) with a higher score being indicative of more alignment with the question or subscale – therefore, a positive experience are typically indicated by higher Helpful Reactions score and a lower Hindering Reactions score.\nIt is important to note that higher scores on the Hinder Reactions subscale or lower scores on the Helpful Reactions subscale should be interpreted in light of a therapists knowledge of the therapeutic relationship. For example, this pattern of responding could be indicative of your client’s honesty with you due to their experience of unconditional positive regard. It is the process of using the SRS-3-B that is of greatest clinical use as opposed to just a simple interpretation of the score.\nRaw scores and an average score (between 1 and 5) are presented. An average score for each subscale is presented so that the two can be compared (as there are a different number of items in each scale). The two subscales measured are:\n1. Helpful Reactions (Items 1, 2, 3, 4, 6, 7, 9, 11, 13, 14) – measuring reactions such as the client gaining a new perspective, feeling more empowered, hopeful or positive, and having clear goals to work on.\n2. Hindering Reactions (Items 5, 8, 10, 12) – measuring reactions such as the client feeling stuck, feeling uncomfortable about what the therapist is suggesting, and feeling there is a lack of direction or guidance from the therapist.\nFor clinical utility, if there is significant variation/inconsistency within a subscale’s scores (defined as a standard deviation greater than or equal to 0.85), then a note is made in Interpretive Text that it might be better to be looking at the results of the SRS-3-B at an item level to gain better insight into the client’s view of the session.\nA plot is presented after multiple administrations of the SRS-3-B so that you can track helpful and hindering reactions over time. When administered repeatedly, variations in patterns of responding are key to interpreting the results rather than absolute scores.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "that not every item will be rated high (or low) because each session is unique and the reactions to sessions are different.",
+    "y": 191.2,
+    "url": null,
+    "sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Helpful Reactions (Items 1, 2, 3, 4, 6, 7, 9, 11, 13, 14):",
+    "y": 605.2,
+    "url": null,
+    "sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 1,
+    "text": "Hindering Reactions (Items 5, 8, 10, 12):",
+    "y": 627.0,
+    "url": null,
+    "sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Within-subscale variability interpretation is not automated."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "not_compiled",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Řiháček, T., Elliott, R., Owen, J., Ladmanová, M., Coleman, J. J., & Bugatti, M. (2023). Session Reactions Scale-3: Initial psychometric evidence. Psychotherapy Research: Journal of the Society for Psychotherapy Research, 1–15. https://doi.org/10.1080/10503307.2023.2241983",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Constantino, M. J., Coyne, A. E., & Muir, H. J. (2020). Evidence-based therapist responsivity to disruptive clinical process. Cognitive and Behavioral Practice, 27 (4), 405–416. https://doi.org/10.1016/j.cbpra.2020.01.003\nElliott, R., & James, E. (1989). Varieties of client experience in psychotherapy: An analysis of the literature. Clinical Psychology Review, 9 (4), 443–467. https://doi.org/10.1016/0272-7358(89)90003-2\nElliott, R., & Wexler, M. M. (1994). Measuring the impact of sessions in process-experiential therapy of depression: The session impacts scale. Journal of Counseling Psychology, 41 (2), 166–174. https://doi.org/10.1037/0022-0167.41.2.166\nFarber, B. A. (2020). Disclosure, concealment, and dishonesty in psychotherapy: A clinically focused review. Journal of Clinical Psychology, 76 (2), 251–257. https://doi.org/10.1002/jclp.22891\nMander, J., Schlarb, A., Teufel, M., Keller, F., Hautzinger, M.,Zipfel, S., Wittorf, A., & Sammet, I. (2015). The Individual Therapy Process Questionnaire: Development and validation of a revised measure to evaluate general change mechanisms in psychotherapy. Clinical Psychology & Psychotherapy, 22 (4), 328–345. https://doi.org/10.1002/cpp.1892\nReeker, J., Elliott, R., & Ensing, D. (1996).Measuring session effects in process-experiential and cognitive-behavioral therapies of PTSD: The Revised Session Reaction Scale. Paper Presented at Meetingo f the Society for Psychotherapy Research, Amelia Island, Florida. http://www.eft-scotland.org/wp-content/uploads/2021/12/Reeker-Elliott-Ensing-1996.doc\nWu, M. B., & Levitt, H. M. (2020). A qualitative meta-analytic review of the therapist responsiveness literature: Guidelines for practice and training. Journal of Contemporary Psychotherapy, 50(3), 161-175. https://doi.org/10.1007/s10879-020-09450-y",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Session Reactions Scale – 3 – Brief (SRS-3-B) PDF",
+   "source_url": null,
+   "sha256": "1e54df0575bec216c63e0a457fa0d697c7d3df74052dbbb58d01e6499cabf5c0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1e54df0575bec216c63e0a457fa0d697c7d3df74052dbbb58d01e6499cabf5c0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Supervisory Styles Inventory (SSI)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "8ba54cfe26276c0173705d810f81b3631f0fbf2be2b638ccab022a54253ef79d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/8ba54cfe26276c0173705d810f81b3631f0fbf2be2b638ccab022a54253ef79d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "e4279f64974da4968b2da1e9a22b3ffebd17cc8fad4ec9837d21a4f85c22d064",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e4279f64974da4968b2da1e9a22b3ffebd17cc8fad4ec9837d21a4f85c22d064.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Session Reactions Scale – 3 – Brief using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "0c55efd094f6818a36791303ae32dbdde339155420dc6563a52b915d2901b378",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0c55efd094f6818a36791303ae32dbdde339155420dc6563a52b915d2901b378.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_format_review": {
+   "resolved_previously_untyped_fields": 1,
+   "basis": "Selected archived PDF edition checked against current public PDF and inspected for field controls.",
+   "clinical_scoring_review": false
+  },
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice",
+   "text"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 14
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [],
+   "scoring_rule_count": 4,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review.",
+    "Within-subscale variability interpretation is not automated."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "source_draft_1",
+    "label": "Helpful Reactions raw",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q14"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "source_draft_2",
+    "label": "Helpful Reactions mean",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q14"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   },
+   {
+    "rule_id": "source_draft_3",
+    "label": "Hindering Reactions raw",
+    "minimum": 4.0,
+    "maximum": 20.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/2",
+    "item_ids": [
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   },
+   {
+    "rule_id": "source_draft_4",
+    "label": "Hindering Reactions mean",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "mean",
+    "calculation_ref": "/scoring/rules/3",
+    "item_ids": [
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "mean score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "source_draft_1",
+    "title": "Helpful Reactions raw",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_1",
+      "label": "Helpful Reactions raw",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "axis_unit": "score"
+   },
+   {
+    "id": "source_draft_2",
+    "title": "Helpful Reactions mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_2",
+      "label": "Helpful Reactions mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   },
+   {
+    "id": "source_draft_3",
+    "title": "Hindering Reactions raw",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_3",
+      "label": "Hindering Reactions raw",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 4.0,
+    "maximum": 20.0,
+    "axis_unit": "score"
+   },
+   {
+    "id": "source_draft_4",
+    "title": "Hindering Reactions mean",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_4",
+      "label": "Hindering Reactions mean",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "axis_unit": "mean score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "1c0e37540c5271a8b5ce77f8c7f82fda9dd17e3fe532193f0107de3538567a8f",
+   "guidance_titles": [
+    "SRS-3-B Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 4,
+   "rules_included": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3",
+    "source_draft_4"
+   ],
+   "raw_calculation_status": "draft_implemented",
+   "interpretation_status": "not_compiled",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review.",
+    "Within-subscale variability interpretation is not automated."
+   ],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "source_draft_1",
+    "source_draft_2",
+    "source_draft_3",
+    "source_draft_4"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "source_draft_1",
+    "label": "Helpful Reactions raw",
+    "rule_id": "source_draft_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q14"
+    ]
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Helpful Reactions mean",
+    "rule_id": "source_draft_2",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q6",
+     "Q7",
+     "Q9",
+     "Q11",
+     "Q13",
+     "Q14"
+    ]
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Hindering Reactions raw",
+    "rule_id": "source_draft_3",
+    "item_ids": [
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12"
+    ]
+   },
+   {
+    "id": "source_draft_4",
+    "label": "Hindering Reactions mean",
+    "rule_id": "source_draft_4",
+    "item_ids": [
+     "Q5",
+     "Q8",
+     "Q10",
+     "Q12"
+    ]
+   },
+   {
+    "id": "recorded_responses",
+    "label": "Additional recorded responses",
+    "rule_id": null,
+    "item_ids": [
+     "Q15"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "text",
+    "presentation": "text_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "20b479e55bb6886ca134740888b3980fb0825c31fc9b2298264be400942e0262",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Within-subscale variability interpretation is not automated.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T11:03:00.276285+00:00",
+  "raw_extraction_sha256": "fa02ca2492d77cad82b957fea6aa8e501690ed9595be40a3638953012bf56b9e",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Feedback-informed"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1080/10503307.2023.2241983",
+    "title": "https://doi.org/10.1080/10503307.2023.2241983"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.cbpra.2020.01.003",
+    "title": "https://doi.org/10.1016/j.cbpra.2020.01.003"
+   },
+   {
+    "url": "https://doi.org/10.1016/0272-7358(89)90003-2",
+    "title": "https://doi.org/10.1016/0272-7358(89)90003-2"
+   },
+   {
+    "url": "https://doi.org/10.1037/0022-0167.41.2.166",
+    "title": "https://doi.org/10.1037/0022-0167.41.2.166"
+   },
+   {
+    "url": "https://doi.org/10.1002/jclp.22891",
+    "title": "https://doi.org/10.1002/jclp.22891"
+   },
+   {
+    "url": "https://doi.org/10.1002/cpp.1892",
+    "title": "https://doi.org/10.1002/cpp.1892"
+   },
+   {
+    "url": "https://doi.org/10.1007/s10879-020-09450-y",
+    "title": "https://doi.org/10.1007/s10879-020-09450-y"
+   },
+   {
+    "url": null,
+    "title": "Therapy relationship measure"
+   },
+   {
+    "url": null,
+    "title": "Therapy feedback form"
+   },
+   {
+    "url": null,
+    "title": "Treatment experience measure"
+   },
+   {
+    "url": null,
+    "title": "Short outcome measure"
+   },
+   {
+    "url": null,
+    "title": "Supervision relationship assessment"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Clinical Supervision (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

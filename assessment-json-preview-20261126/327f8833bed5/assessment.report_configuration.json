@@ -1,0 +1,1396 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_part_a_raw",
+   "ruleId": "part_a_raw",
+   "label": "Part A Raw",
+   "minimum": 0,
+   "maximum": 24,
+   "calculation": {
+    "id": "part_a_raw",
+    "label": "Part A Raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 24,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+     "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_part_b_raw",
+   "ruleId": "part_b_raw",
+   "label": "Part B Raw",
+   "minimum": 0,
+   "maximum": 48,
+   "calculation": {
+    "id": "part_b_raw",
+    "label": "Part B Raw",
+    "item_ids": [
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 48,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+     "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_total_raw",
+   "ruleId": "total_raw",
+   "label": "Total Raw",
+   "minimum": 0,
+   "maximum": 72,
+   "calculation": {
+    "id": "total_raw",
+    "label": "Total Raw",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 72,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+     "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_inattentive_count",
+   "ruleId": "inattentive_count",
+   "label": "Inattentiveness symptom count",
+   "minimum": 0,
+   "maximum": 9,
+   "calculation": {
+    "id": "inattentive_count",
+    "label": "Inattentiveness symptom count",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 9,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+     "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 3,
+    "operator": ">=",
+    "item_thresholds": {
+     "Q1": 2,
+     "Q2": 2,
+     "Q3": 2,
+     "Q9": 2,
+     "Q12": 2,
+     "Q16": 2,
+     "Q18": 2
+    }
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_hyperactive_impulsive_count",
+   "ruleId": "hyperactive_impulsive_count",
+   "label": "Hyperactivity/Impulsivity symptom count",
+   "minimum": 0,
+   "maximum": 9,
+   "calculation": {
+    "id": "hyperactive_impulsive_count",
+    "label": "Hyperactivity/Impulsivity symptom count",
+    "item_ids": [
+     "Q5",
+     "Q6",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18"
+    ],
+    "method": "count_threshold",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 9,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+     "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+    "threshold": 3,
+    "operator": ">=",
+    "item_thresholds": {
+     "Q1": 2,
+     "Q2": 2,
+     "Q3": 2,
+     "Q9": 2,
+     "Q12": 2,
+     "Q16": 2,
+     "Q18": 2
+    }
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+   "pageCount": 6,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "da3fb7a47fae2_p1",
+   "documentSha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "da3fb7a47fae2_p1_chart_1"
+   ],
+   "tableIds": [
+    "da3fb7a47fae2_p1_table_1"
+   ],
+   "sectionIds": [
+    "da3fb7a47fae2_p1_section_1",
+    "da3fb7a47fae2_p1_section_2",
+    "da3fb7a47fae2_p1_section_3",
+    "da3fb7a47fae2_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "da3fb7a47fae2_p2",
+   "documentSha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "da3fb7a47fae2_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "da3fb7a47fae2_p2_section_1",
+    "da3fb7a47fae2_p2_section_2",
+    "da3fb7a47fae2_p2_section_3",
+    "da3fb7a47fae2_p2_section_4",
+    "da3fb7a47fae2_p2_section_5"
+   ]
+  },
+  {
+   "pageId": "da3fb7a47fae2_p3",
+   "documentSha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "da3fb7a47fae2_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "da3fb7a47fae2_p4",
+   "documentSha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "da3fb7a47fae2_p5",
+   "documentSha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "da3fb7a47fae2_p5_table_1"
+   ],
+   "sectionIds": [
+    "da3fb7a47fae2_p5_section_1"
+   ]
+  },
+  {
+   "pageId": "da3fb7a47fae2_p6",
+   "documentSha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+   "pageNumber": 6,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "da3fb7a47fae2_p6_table_1"
+   ],
+   "sectionIds": [
+    "da3fb7a47fae2_p6_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "da3fb7a47fae2_p1_section_1",
+   "pageId": "da3fb7a47fae2_p1",
+   "title": "Informant Details",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    193.73357,
+    148.69847,
+    213.01157
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p1_section_2",
+   "pageId": "da3fb7a47fae2_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.34646,
+    274.52097,
+    84.91447,
+    293.79898
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p1_section_3",
+   "pageId": "da3fb7a47fae2_p1",
+   "title": "ADHD Subscales",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34646,
+    389.3241,
+    147.92847,
+    408.60211
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p1_section_4",
+   "pageId": "da3fb7a47fae2_p1",
+   "title": "Observer ADHD Screener (Part A)",
+   "type": "source_heading",
+   "bboxPt": [
+    207.32245,
+    480.04855,
+    399.37042,
+    496.57254
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p2_section_1",
+   "pageId": "da3fb7a47fae2_p2",
+   "title": "Observer ADHD Subscale Symptoms (Percent Endorsed)",
+   "type": "source_heading",
+   "bboxPt": [
+    115.63846,
+    144.81235,
+    441.05444,
+    161.33635
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p2_section_2",
+   "pageId": "da3fb7a47fae2_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.34646,
+    439.87527,
+    124.57648,
+    459.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p2_section_3",
+   "pageId": "da3fb7a47fae2_p2",
+   "title": "Part A, B, & Total Score:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    460.17682,
+    218.17734,
+    475.32382
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p2_section_4",
+   "pageId": "da3fb7a47fae2_p2",
+   "title": "Subscale Scores:",
+   "type": "results",
+   "bboxPt": [
+    91.03937,
+    557.1308,
+    182.74635,
+    572.27783
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p2_section_5",
+   "pageId": "da3fb7a47fae2_p2",
+   "title": "Additional information provided by the informant:",
+   "type": "source_heading",
+   "bboxPt": [
+    91.03937,
+    702.4848,
+    350.78235,
+    717.63184
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p3_section_1",
+   "pageId": "da3fb7a47fae2_p3",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    290.26642,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p5_section_1",
+   "pageId": "da3fb7a47fae2_p5",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    151.82047,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da3fb7a47fae2_p6_section_1",
+   "pageId": "da3fb7a47fae2_p6",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.34646,
+    139.87529,
+    198.48247,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": {
+  "$file": "assessment.report_configuration.charts.json"
+ },
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "ASRS-O Scoring & Interpretation",
+    "text": "The ASRS-O consists of 18 items, each rated by the informant on a five-point frequency scale ranging from Never (0) to Very Often (4). The 18 items are divided into Part A (items 1–6) and Part B (items 7–18). Higher scores reflect more frequently observed ADHD-consistent behaviours. No percentile norms are available for observer ratings. Because the ASRS-O mirrors the item content of the self-report ASRS , scores from the two measures can be compared directly when both have been administered.\n\n",
+    "source_url": null
+   },
+   {
+    "title": "ASRS-O Scoring",
+    "text": "Results are presented as two complementary scoring approaches. Part A, Part B, and Total scores index the frequency of observed behaviours, while the subscales indicate the domain in which observed difficulties are concentrated.\nPart A, Part B, and Total Score:\nCriterion (Part A): items 1–6; range 0 to 24. Consists of the six items most predictive of ADHD diagnostic status and, when used alone, constitutes the six-item ASRS Screener.\nAdditional Symptoms (Part B): items 7–18; range 0 to 48. Provide additional information to support clinical interpretation beyond Part A.\nTotal Score: items 1–18; range 0 to 72; overall level of observed ADHD-consistent behaviours.\n\nThe ASRS-O subscales are scored differently from the Part A, Part B, and total scores. Rather than summing the informant’s response options (0 to 4), each subscale scores symptoms dichotomously (i.e., present or absent). A symptom is counted when the informant rates the behaviour at or above its scoring threshold. For some behaviours, a rating of Sometimes or higher counts as an endorsed symptom (items 1-3, 9, 12, 16, 18); behaviours that are common in everyday life count only when rated Often or higher (items 4-8, 10, 11, 13-15, 17). The response table at the end of the report shows the level at which each item is counted; the scoring values displayed there are these dichotomous counting values (0 and 1), rather than the 0 to 4 frequency scores summed for Part A, Part B, and the Total.\nASRS-O Subscales:\nInattentiveness (items 1–4, 7–11; range 0 to 9): observed difficulty sustaining attention, staying organised, remembering appointments, avoiding careless mistakes, and concentrating.\nHyperactivity/Impulsivity (Motor & Verbal) (items 5, 6, 12–18; range 0 to 9): comprising a motor component (items 5, 6, 12–14), reflecting observed difficulty sitting still, staying seated, and relaxing, and a verbal component (items 15–18), reflecting observed difficulty regulating how much the person talks, interrupting others, and waiting their turn.\nThe subscale score is the number of symptoms counted, also expressed as a percentage of symptoms endorsed — for example, 7 of 9 symptoms on the Inattentiveness subscale is shown as 78%. This symptom-counting approach matches how the subscales are scored on the self-report ASRS.\n\n",
+    "source_url": null
+   },
+   {
+    "title": "ASRS-O Part A Interpretive Categories",
+    "text": "The following categories apply only to the ASRS-O Part A score (items 1-6). Interpretation is based on two complementary approaches: the four interpretive categories below and a screening threshold of 14 or more for a positive observer screen. Both are derived from the validation research on the self-report ASRS Screener (Kessler et al., 2007) and reflect the current official scoring guidance (Harvard Medical School, 2024). These categories derive entirely from self-report ASRS research and have not been validated for observer ratings. They should therefore be regarded as approximate reference points for interpreting observer scores rather than as established cutoffs for informant data.\nASRS-O Interpretive Categories:\n0 to 9: Not consistent with ADHD. The informant reports the observed behaviours occurring at a frequency well below the screening threshold.\n10 to 13: Subthreshold. The informant reports some observed ADHD-consistent behaviours, below the level of a positive screen but potentially worth clinical attention in the context of other clinical information.\n14 to 17: Consistent with ADHD. The informant’s ratings reach the positive screening threshold of 14 or more, indicating observed behaviours at a level that may warrant further assessment.\n18 to 24: Highly consistent with ADHD. The informant reports observed ADHD-consistent behaviours at a high frequency across the screener items.\nA score of 14 or more on Part A meets the threshold for a positive observer screen. It indicates that a person who knows the adult well has observed ADHD-consistent behaviours at a clinically notable frequency; it does not establish a diagnosis. Observer ratings provide collateral information that complements, rather than substitutes for, self-report and clinical interview, and the ASRS-O results should be integrated with the broader clinical picture.\n",
+    "source_url": null
+   },
+   {
+    "title": "How should I interpret a difference between a client's self-report and the observer's ratings?",
+    "text": "Differences between the two perspectives are common and are themselves useful assessment information rather than a problem with either measure. Some adults rate their internal restlessness and mental effort required to stay focused higher than an observer can see from the outside; others under-recognise behaviours that people around them notice frequently. Research has found both patterns across adult ADHD populations. Exploring the discrepancy during a clinical interview, including asking what each rater based their answers on, can often help clarify how symptoms present across settings and help build a fuller picture of the adult’s functioning.\n",
+    "source_url": null
+   },
+   {
+    "title": "Why do the Part A interpretive categories come from self-report research?",
+    "text": "The ASRS was developed and validated as a self-report instrument, and no independently validated scoring system yet exists for observer versions. NovoPsych therefore applies the current official self-report screener thresholds as reference points for interpreting observer ratings, while clearly indicating that they have not been validated for observer versions. Although observer-specific thresholds have not been validated, the available informant research is broadly consistent with this approach. The report therefore makes the origin of the thresholds explicit so clinicians can interpret observer scores in the appropriate context.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "a3fb7a47fae2c651c04eb6ce727ae24bbd22a73ee17fb59bf2c0c1e8f578ba9c",
+    "pageNumber": 3,
+    "text": "For comprehensive information on the ASRS-O, \nsee here\n.\nThe ASRS-O consists of 18 items, each rated by the informant on a five-point frequency scale\nranging from Never (0) to Very Often (4). The 18 items are divided into Part A (items 1–6) and\nPart B (items 7–18). Higher scores reflect more frequently observed ADHD-consistent\nbehaviours. No percentile norms are available for observer ratings. Because the ASRS-O\nmirrors the item content of the self-report ASRS, scores from the two measures can be\ncompared directly when both have been administered.\nASRS-O Scoring\nResults are presented as two complementary scoring approaches. Part A, Part B, and Total\nscores index the frequency of observed behaviours, while the subscales indicate the domain in\nwhich observed difficulties are concentrated.\nPart A, Part B, and Total Score:\n- Criterion (Part A): items 1–6; range 0 to 24. Consists of the six items most predictive of ADHD\ndiagnostic status and, when used alone, constitutes the six-item ASRS Screener.\n- Additional Symptoms (Part B): items 7–18; range 0 to 48. Provide additional information to\nsupport clinical interpretation beyond Part A.\n- Total Score: items 1–18; range 0 to 72; overall level of observed ADHD-consistent behaviours.\nADHD Subscales. The ASRS-O subscales are scored differently from the Part A, Part B, and\ntotal scores. Rather than summing the informant's response options (0 to 4), each subscale\nscores symptoms dichotomously (i.e., present or absent). A symptom is counted when the\ninformant rates the behaviour at or above its scoring threshold. For some behaviours, a rating of\nSometimes or higher counts as an endorsed symptom (items 1-3, 9, 12, 16, 18); behaviours that\nare common in everyday life count only when rated Often or higher (items 4-8, 10, 11, 13-15,\n17). The response table at the end of the report shows the level at which each item is counted;\nthe scoring values displayed there are these dichotomous counting values (0 and 1), rather than\nthe 0 to 4 frequency scores summed for Part A, Part B, and the Total.\nASRS-O Subscales:\n- Inattentiveness (items 1–4, 7–11; range 0 to 9): observed difficulty sustaining attention, staying\norganised, remembering appointments, avoiding careless mistakes, and concentrating.\n- Hyperactivity/Impulsivity (Motor & Verbal) (items 5, 6, 12–18; range 0 to 9): comprising a motor\ncomponent (items 5, 6, 12–14), reflecting observed difficulty sitting still, staying seated, and\nrelaxing, and a verbal component (items 15–18), reflecting observed difficulty regulating how\nmuch the person talks, interrupting others, and waiting their turn.\nThe subscale score is the number of symptoms counted, also expressed as a percentage of\nsymptoms endorsed — for example, 7 of 9 symptoms on the Inattentiveness subscale is shown\nas 78%. This symptom-counting approach matches how the subscales are scored on the self-\nreport ASRS.\nASRS-O Part A Interpretive Categories\nThe following categories apply only to the ASRS-O Part A score (items 1-6). Interpretation is",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "No percentile norms are available for observer ratings.",
+   "A symptom is counted when the informant rates the behaviour at or above its scoring threshold.",
+   "Interpretation is based on two complementary approaches: the four interpretive categories below and a screening threshold of 14 or more for a positive observer screen.",
+   "The informant reports the observed behaviours occurring at a frequency well below the screening threshold.",
+   "10 to 13: Subthreshold.",
+   "The informant’s ratings reach the positive screening threshold of 14 or more, indicating observed behaviours at a level that may warrant further assessment.",
+   "A score of 14 or more on Part A meets the threshold for a positive observer screen.",
+   "NovoPsych therefore applies the current official self-report screener thresholds as reference points for interpreting observer ratings, while clearly indicating that they have not been validated for observer versions.",
+   "Although observer-specific thresholds have not been validated, the available informant research is broadly consistent with this approach.",
+   "The report therefore makes the origin of the thresholds explicit so clinicians can interpret observer scores in the appropriate context."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_a237fd5532565fd96ea7d6738c6e129e",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#656665",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_c8b9e0a0ff8cbf6849b2bfe5e95bdb45",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#e47272",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#e57774",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#e67a75",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#e77e76",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#e88277",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e88679",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#e98a7a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#ea8f7c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#eb927d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#ec967e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#ed9b80",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#ed9e81",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#eea382",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#efa683",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#f0ab85",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#f0ae86",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#f1b387",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#f2b789",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#f3bb8a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#f4bf8b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#f5c38c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#f5c78e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#f6cb8f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#f7cf90",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#f8d492",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#f9d793",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#fadc94",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#fadf96",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#fbe497",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#fce798",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#fdec9a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fdef9b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fef39c",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_104ca6cc5472e99a414980574ca1587c",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#656665",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#656565",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#626262",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#606060",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#5c5d5c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#5b5b5b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#575757",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#565656",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#525252",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#515151",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#4f4f4f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#4c4c4c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#4a4a4a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#474747",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#454545",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#424242",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#404040",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#3e3e3e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#3b3b3b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#393939",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#363636",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#343434",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#313131",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#2f2f2f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#2e2e2e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#2a2a2a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#292929",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#252525",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#242424",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#202020",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#1e1e1e",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#1b1b1b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#1a1a1a",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_9bf444af613b80841d85f9647c2c5b29",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#fff49c",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#fef49d",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#fef4a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#fef4a3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#fdf4a7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#fdf4a9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#fdf4ad",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#fcf4ae",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#fcf4b3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#fcf4b4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#fcf4b6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#fbf4ba",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#fbf4bc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#faf4c0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#faf4c2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#faf4c6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#faf4c8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#f9f4ca",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#f9f4ce",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#f9f4cf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#f8f4d3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#f8f4d5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#f8f4d9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#f7f4db",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#f7f4dd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#f7f4e1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#f7f4e3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#f6f4e6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#f6f4e8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#f5f4ec",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#f5f4ee",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#f5f4f2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#f5f4f4",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 4,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 3,
+   "unresolvedCells": 136
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

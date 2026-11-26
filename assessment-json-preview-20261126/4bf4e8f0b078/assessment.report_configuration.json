@@ -1,0 +1,1867 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total ARM-5 Score",
+   "minimum": 5.0,
+   "maximum": 35.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total ARM-5 Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 5.0,
+    "maximum": 35.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total ARM-5 Score (sum of all 5 items)",
+     "y": 477.0,
+     "url": null,
+     "sha256": "d358aac8d7c122c87c835938a0b81202603e117376588038e6355e235acac3b0"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "b1e36bd36d7dc59c59c9d514d22580d9aa66600313cf991b01ee37bedd818e99",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "db1e36bd36d7d_p1",
+   "documentSha256": "b1e36bd36d7dc59c59c9d514d22580d9aa66600313cf991b01ee37bedd818e99",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "db1e36bd36d7d_p1_chart_1"
+   ],
+   "tableIds": [
+    "db1e36bd36d7d_p1_table_1"
+   ],
+   "sectionIds": [
+    "db1e36bd36d7d_p1_section_1",
+    "db1e36bd36d7d_p1_section_2"
+   ]
+  },
+  {
+   "pageId": "db1e36bd36d7d_p2",
+   "documentSha256": "b1e36bd36d7dc59c59c9d514d22580d9aa66600313cf991b01ee37bedd818e99",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "db1e36bd36d7d_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "db1e36bd36d7d_p2_section_1",
+    "db1e36bd36d7d_p2_section_2",
+    "db1e36bd36d7d_p2_section_3"
+   ]
+  },
+  {
+   "pageId": "db1e36bd36d7d_p3",
+   "documentSha256": "b1e36bd36d7dc59c59c9d514d22580d9aa66600313cf991b01ee37bedd818e99",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "db1e36bd36d7d_p4",
+   "documentSha256": "b1e36bd36d7dc59c59c9d514d22580d9aa66600313cf991b01ee37bedd818e99",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db1e36bd36d7d_p4_table_1"
+   ],
+   "sectionIds": [
+    "db1e36bd36d7d_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "db1e36bd36d7d_p1_section_1",
+   "pageId": "db1e36bd36d7d_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e36bd36d7d_p1_section_2",
+   "pageId": "db1e36bd36d7d_p1",
+   "title": "Total Average Therapeutic Alliance Over Time",
+   "type": "source_heading",
+   "bboxPt": [
+    157.3,
+    342.63187,
+    419.39197,
+    354.63187
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e36bd36d7d_p2_section_1",
+   "pageId": "db1e36bd36d7d_p2",
+   "title": "Bond, Partnership and Confidence Over Time",
+   "type": "source_heading",
+   "bboxPt": [
+    158.64999,
+    158.37988,
+    418.04196,
+    170.37988
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e36bd36d7d_p2_section_2",
+   "pageId": "db1e36bd36d7d_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    484.03751,
+    124.57652,
+    498.03751
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e36bd36d7d_p2_section_3",
+   "pageId": "db1e36bd36d7d_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    608.43958,
+    290.26636,
+    622.43958
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db1e36bd36d7d_p4_section_1",
+   "pageId": "db1e36bd36d7d_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    339.26923,
+    151.8205,
+    353.26923
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "db1e36bd36d7d_p1_chart_1",
+   "title": "Total Average Therapeutic Alliance Over Time",
+   "type": "line",
+   "bboxPt": [
+    88.347,
+    370.544,
+    520.346,
+    587.984
+   ],
+   "widthPt": 432.0,
+   "heightPt": 217.44,
+   "axisColour": "#333333",
+   "observedDataType": "mean",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      88.3465,
+      446.15399,
+      520.3465,
+      587.98401
+     ],
+     "colour": "#f3bcbd",
+     "opacity": 0.45,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      88.3465,
+      410.2438,
+      520.3465,
+      446.15399
+     ],
+     "colour": "#fceaa1",
+     "opacity": 0.45,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      88.3465,
+      392.29401,
+      520.3465,
+      410.24402
+     ],
+     "colour": "#ddecd7",
+     "opacity": 0.45,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      88.3465,
+      372.54401,
+      520.3465,
+      392.29401
+     ],
+     "colour": "#bddbb1",
+     "opacity": 0.45,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "multiple_visits_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    },
+    "kind": "visit_date",
+    "binding": "compatible_session_history.completedAt",
+    "minimum": null,
+    "maximum": null
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#8e0404",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "db1e36bd36d7d_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 16,
+    "detectedType": "line",
+    "reviewedType": "line",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Total Average Therapeutic Alliance Over Time",
+     "bboxPt": [
+      157.3,
+      342.63187,
+      419.39197,
+      354.63187
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Significantly",
+     "bboxPt": [
+      464.332,
+      508.53989,
+      512.34692,
+      517.53992
+     ],
+     "colour": "#c29697",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Challenged",
+     "bboxPt": [
+      466.82498,
+      517.53992,
+      512.34692,
+      526.53992
+     ],
+     "colour": "#c29697",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Challenged",
+     "bboxPt": [
+      466.82501,
+      424.34988,
+      512.34698,
+      433.34988
+     ],
+     "colour": "#8a7320",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      474.32999,
+      397.41989,
+      512.34601,
+      406.41989
+     ],
+     "colour": "#b1bdac",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Strong",
+     "bboxPt": [
+      485.832,
+      378.74988,
+      512.34601,
+      387.74988
+     ],
+     "colour": "#97af8e",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": ">82",
+     "bboxPt": [
+      525.34601,
+      369.12259,
+      538.914,
+      377.12259
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      495.34601,
+      359.603,
+      534.914,
+      367.603
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "1 Strongly",
+     "bboxPt": [
+      51.8324,
+      581.52527,
+      83.3464,
+      588.52527
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Disagree",
+     "bboxPt": [
+      55.33943,
+      588.52527,
+      83.34643,
+      595.52527
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "2 Disagree",
+     "bboxPt": [
+      49.50154,
+      549.11548,
+      83.34653,
+      556.11548
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "3 Slightly",
+     "bboxPt": [
+      54.94724,
+      509.71552,
+      83.34624,
+      516.71552
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Disagree",
+     "bboxPt": [
+      55.33943,
+      516.71552,
+      83.34643,
+      523.71552
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "4 Neither agree",
+     "bboxPt": [
+      35.10233,
+      473.8053,
+      83.34634,
+      480.8053
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "nor disagree",
+     "bboxPt": [
+      44.44061,
+      480.8053,
+      83.34661,
+      487.8053
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "5 Slightly",
+     "bboxPt": [
+      54.94721,
+      437.89511,
+      83.34621,
+      444.89511
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Agree",
+     "bboxPt": [
+      64.67027,
+      444.89511,
+      83.34626,
+      451.89511
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "6 Agree",
+     "bboxPt": [
+      58.83237,
+      405.49512,
+      83.34637,
+      412.49512
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "7 Strongly",
+     "bboxPt": [
+      51.83237,
+      366.08533,
+      83.34637,
+      373.08533
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Agree",
+     "bboxPt": [
+      64.67027,
+      373.08533,
+      83.34627,
+      380.08533
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  },
+  {
+   "id": "db1e36bd36d7d_p2_chart_1",
+   "title": "Bond, Partnership and Confidence Over Time",
+   "type": "multi_line",
+   "bboxPt": [
+    101.346,
+    186.292,
+    518.346,
+    393.732
+   ],
+   "widthPt": 417.0,
+   "heightPt": 207.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [],
+   "variantEvidence": "multiple_visits_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    },
+    "kind": "visit_date",
+    "binding": "compatible_session_history.completedAt",
+    "minimum": null,
+    "maximum": null
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#01018c",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": null,
+     "colour": "#008c8c",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": null,
+     "barThicknessPt": null,
+     "fill": null,
+     "stroke": null,
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "db1e36bd36d7d_p2",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 17,
+    "detectedType": "multi_line",
+    "reviewedType": "multi_line",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Bond, Partnership and Confidence Over Time",
+     "bboxPt": [
+      158.64999,
+      158.37988,
+      418.04196,
+      170.37988
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "1 Strongly",
+     "bboxPt": [
+      64.8324,
+      387.27325,
+      96.34639,
+      394.27325
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Disagree",
+     "bboxPt": [
+      68.33942,
+      394.27325,
+      96.34642,
+      401.27325
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "2 Disagree",
+     "bboxPt": [
+      62.50153,
+      356.53345,
+      96.34653,
+      363.53345
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "3 Slightly",
+     "bboxPt": [
+      67.94762,
+      318.79327,
+      96.34662,
+      325.79327
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Disagree",
+     "bboxPt": [
+      68.33942,
+      325.79327,
+      96.34642,
+      332.79327
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "4 Neither agree",
+     "bboxPt": [
+      48.10233,
+      284.55347,
+      96.34632,
+      291.55347
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "nor disagree",
+     "bboxPt": [
+      57.44061,
+      291.55347,
+      96.3466,
+      298.55347
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "5 Slightly",
+     "bboxPt": [
+      67.9476,
+      250.31366,
+      96.3466,
+      257.31366
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Agree",
+     "bboxPt": [
+      77.67026,
+      257.31366,
+      96.34625,
+      264.31366
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "6 Agree",
+     "bboxPt": [
+      71.83237,
+      219.57349,
+      96.34636,
+      226.57349
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "7 Strongly",
+     "bboxPt": [
+      64.83237,
+      181.83368,
+      96.34636,
+      188.83368
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Agree",
+     "bboxPt": [
+      77.67027,
+      188.83368,
+      96.34626,
+      195.83368
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Bond",
+     "bboxPt": [
+      208.34599,
+      453.79059,
+      227.02599,
+      461.79059
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Partnership",
+     "bboxPt": [
+      279.54599,
+      453.79059,
+      320.44998,
+      461.79059
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Confidence",
+     "bboxPt": [
+      350.73581,
+      453.79059,
+      391.1998,
+      461.79059
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 8.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "The direction and size of any change in the total score since the previous administration are reported and plotted over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Agnew Relationship Measure – 5 (ARM-5) Scoring",
+    "text": "The ARM-5 produces a total core alliance score. The total is reported both as a raw score (ranging from 5 to 35) and as an average item score (ranging from 1 to 7), where higher scores indicate a stronger client-rated alliance. Because the three content areas (Bond, Partnership, and Confidence) are highly interrelated and tend to move in the same direction, the total score is the primary output.\n",
+    "source_url": null
+   },
+   {
+    "title": "ARM-5 Percentile Context",
+    "text": "A percentile is presented for the total alliance score to give relative context. The percentile compares the client’s average alliance score against the NovoPsych routine-care sample. A percentile of 50 marks the median score, the middle of the sample. A higher percentile indicates a stronger client-rated alliance relative to the sample, and a lower percentile indicates a weaker alliance. Because client alliance ratings cluster high, the percentile is best read as a relative position within a therapy sample rather than as an absolute judgement of the relationship, and the highest possible ARM-5 score sits at around the 82nd percentile.\n",
+    "source_url": null
+   },
+   {
+    "title": "ARM-5 Score Descriptors",
+    "text": "Total ARM-5 scores are grouped into four descriptor bands. The bands are anchored to the response scale, where 6 is “agree” and 7 is “strongly agree”, so an average of 6.6 or above means the client agrees the alliance is strong; the percentile is shown alongside as relative context against the adult reference sample.\nStrong (average 6.6 or above; raw 33–35): consistent agreement that the alliance is strong; around the 50th percentile and above.\nModerate (average 6.0 to 6.4; raw 30–32): the client agrees the alliance is good; around the 23rd to 42nd percentile.\nChallenged (average 5.0 to 5.8; raw 25–29): only slight agreement, so the alliance is not yet fully endorsed; around the 3rd to 14th percentile.\nSignificantly Challenged (average below 5.0; raw 5–24): at or below slight agreement, indicating a more substantial concern; around the 3rd percentile or below.\nMost clients fall in the Moderate or Strong bands; the lower two flag relationships to attend to and openly discuss. A drop in score over time is more telling than any single rating.\n",
+    "source_url": null
+   },
+   {
+    "title": "ARM-5 Interpreting Change",
+    "text": "The ARM-5 is designed for repeated administration so that change in the alliance can be tracked over the course of therapy. The direction and size of any change in the total score since the previous administration are reported and plotted over time. Any decrease in a client’s score is treated as potentially meaningful and worth attention. Even small, session-to-session drops in the alliance can matter: single-point decreases on a brief alliance measure have been associated with poorer outcomes at the end of treatment, even when scores otherwise remain high (Miller et al., 2016), and session-to-session change in the alliance predicts later symptom change (Falkenström et al., 2013). A decline is therefore highlighted as a prompt to consider and discuss the working relationship.\n",
+    "source_url": null
+   },
+   {
+    "title": "What does a declining alliance score mean?",
+    "text": "A declining score indicates that, from the client’s perspective, the working relationship has weakened since a previous administration. Because a client’s own change over time is more informative than the absolute level, a drop is the signal to attend to. Alliance ratings can shift for many reasons, including a difficult session, a misunderstanding, or a change in how therapy is going, so a drop is best read as a signal about the current state of the relationship rather than a fixed judgement, and as a prompt to discuss and repair. Eliciting honest feedback, including some negative feedback, gives the clinician the chance to address concerns before the client disengages.\n",
+    "source_url": null
+   },
+   {
+    "title": "Why are client alliance scores often high, and what does that mean for interpretation?",
+    "text": "Clients tend to rate the alliance positively, so scores cluster near the top of the scale and the average is often quite high. A change over time, particularly a drop, is often more informative than the absolute level at any single point.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "b1e36bd36d7dc59c59c9d514d22580d9aa66600313cf991b01ee37bedd818e99",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the Agnew Relationship Measure (ARM-5), \nsee here\n.\nThe ARM-5 produces a total core alliance score. The total is reported both as a raw score\n(ranging from 5 to 35) and as an average item score (ranging from 1 to 7), where higher scores\nindicate a stronger client-rated alliance. Because the three content areas (Bond, Partnership, &\nConfidence) are highly interrelated and tend to move in the same direction, the total score is the\nprimary output.\nARM Subscales\nThe ARM-5's five items map onto three content areas of the alliance:\n- Bond (item 1, \"My therapist is supportive\"; score range 1–7): the client's sense of a supportive,",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A percentile is presented for the total alliance score to give relative context.",
+   "The percentile compares the client’s average alliance score against the NovoPsych routine-care sample.",
+   "A percentile of 50 marks the median score, the middle of the sample.",
+   "A higher percentile indicates a stronger client-rated alliance relative to the sample, and a lower percentile indicates a weaker alliance.",
+   "Because client alliance ratings cluster high, the percentile is best read as a relative position within a therapy sample rather than as an absolute judgement of the relationship, and the highest possible ARM-5 score sits at around the 82nd percentile.",
+   "Total ARM-5 scores are grouped into four descriptor bands.",
+   "The bands are anchored to the response scale, where 6 is “agree” and 7 is “strongly agree”, so an average of 6.6 or above means the client agrees the alliance is strong; the percentile is shown alongside as relative context against the adult reference sample.",
+   "Strong (average 6.6 or above; raw 33–35): consistent agreement that the alliance is strong; around the 50th percentile and above.",
+   "Moderate (average 6.0 to 6.4; raw 30–32): the client agrees the alliance is good; around the 23rd to 42nd percentile.",
+   "Challenged (average 5.0 to 5.8; raw 25–29): only slight agreement, so the alliance is not yet fully endorsed; around the 3rd to 14th percentile.",
+   "Significantly Challenged (average below 5.0; raw 5–24): at or below slight agreement, indicating a more substantial concern; around the 3rd percentile or below.",
+   "The direction and size of any change in the total score since the previous administration are reported and plotted over time."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_305fc9810a41d09b2ed3289080111309",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_d73c31a992cfe89c6bade2b1df8ad6ba",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#bcdbb1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#bddbb0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#c0dbaf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#c2dcaf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#c3dcaf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#c6ddae",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#c8ddae",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#c9dead",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#ccdead",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#cedfac",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#cfdfac",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#d2e0ab",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#d3e0ab",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#d5e0aa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#d8e1aa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#d9e1a9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#dce2a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#dee2a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#dfe3a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#e2e4a7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#e4e4a7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#e5e4a6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#e8e5a5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#e9e5a5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#ebe6a5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#eee6a4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#efe7a4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#f1e7a3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#f4e8a2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#f5e8a2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#f7e8a2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fae9a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fbe9a1",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_0e40e67bab2cbc030e8e6d62d9e360a3",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#e5e5e5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#e0e1e0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#d6d6d6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#d0d0d0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#cbcbcb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#c0c0c0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#bbbbbb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#b5b5b5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#b0b0b0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#a6a6a6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#a1a1a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#9b9b9b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#909090",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#8b8b8b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#868686",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#7b7b7b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#757575",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#707070",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#656565",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#606060",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#5a5a5a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#505050",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#4a4a4a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#454545",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#3a3a3a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#353535",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#2f2f2f",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#2b2b2b",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#202020",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#1a1a1a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#151515",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#0a0a0a",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#050505",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_d0c4583e121447a41b2723c67c457064",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#fbe9a1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#fceaa2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#fceba7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#fceba9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#fcecab",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#fcedb0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#fcedb2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#fceeb4",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#fceeb6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#fcefba",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#fcf0bd",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#fcf0bf",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#fdf1c3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#fdf2c5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#fdf2c8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#fdf3cc",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#fdf4ce",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#fdf4d0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#fdf5d5",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#fdf6d7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#fdf6d9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#fdf7de",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#fef8e0",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#fef8e2",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#fef9e7",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#fefae9",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#fefaeb",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#fefbed",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#fefcf1",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#fefcf3",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#fefdf6",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#fefefa",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#fefefc",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 4,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 74
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

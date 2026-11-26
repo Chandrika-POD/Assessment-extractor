@@ -1,0 +1,775 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Personal Wellbeing Index",
+   "minimum": 0,
+   "maximum": 100,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Personal Wellbeing Index",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 10,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "ec5ec905048d9f990dad38d87e78b9f632d391e15f35a38fd8e999956117409c",
+     "page_url": null,
+     "page_sha256": "e7d3b9dcd368b63286e307d30fc3d8a0236d7377421a09695b9a22b6af09f6d0",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C6",
+      "C9",
+      "LIVE_C28",
+      "LIVE_C30"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "optional_item_ids": [
+     "Q9"
+    ],
+    "minimum": 0,
+    "maximum": 100
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "b6bf2d03a9a886ca43911b9fed1d2eb8a5b3748a26df6899233bd89ee92b5e68",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "db6bf2d03a9a8_p1",
+   "documentSha256": "b6bf2d03a9a886ca43911b9fed1d2eb8a5b3748a26df6899233bd89ee92b5e68",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "db6bf2d03a9a8_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "db6bf2d03a9a8_p1_section_1",
+    "db6bf2d03a9a8_p1_section_2",
+    "db6bf2d03a9a8_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "db6bf2d03a9a8_p2",
+   "documentSha256": "b6bf2d03a9a886ca43911b9fed1d2eb8a5b3748a26df6899233bd89ee92b5e68",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "db6bf2d03a9a8_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "db6bf2d03a9a8_p3",
+   "documentSha256": "b6bf2d03a9a886ca43911b9fed1d2eb8a5b3748a26df6899233bd89ee92b5e68",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db6bf2d03a9a8_p3_table_1"
+   ],
+   "sectionIds": [
+    "db6bf2d03a9a8_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "db6bf2d03a9a8_p4",
+   "documentSha256": "b6bf2d03a9a886ca43911b9fed1d2eb8a5b3748a26df6899233bd89ee92b5e68",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "db6bf2d03a9a8_p4_table_1"
+   ],
+   "sectionIds": [
+    "db6bf2d03a9a8_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "db6bf2d03a9a8_p1_section_1",
+   "pageId": "db6bf2d03a9a8_p1",
+   "title": "PWI-A Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    130.02252,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db6bf2d03a9a8_p1_section_2",
+   "pageId": "db6bf2d03a9a8_p1",
+   "title": "PWI-A Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    273.681,
+    279.52185,
+    377.69699,
+    291.52185
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db6bf2d03a9a8_p1_section_3",
+   "pageId": "db6bf2d03a9a8_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    666.71552,
+    124.57652,
+    680.71552
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db6bf2d03a9a8_p2_section_1",
+   "pageId": "db6bf2d03a9a8_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    305.74573,
+    290.26645,
+    319.74573
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db6bf2d03a9a8_p3_section_1",
+   "pageId": "db6bf2d03a9a8_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    457.81665,
+    151.8205,
+    471.81665
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "db6bf2d03a9a8_p4_section_1",
+   "pageId": "db6bf2d03a9a8_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "db6bf2d03a9a8_p1_chart_1",
+   "title": "PWI-A Total Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    130.189,
+    305.434,
+    480.189,
+    601.874
+   ],
+   "widthPt": 350.0,
+   "heightPt": 296.44,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      130.18901,
+      455.83401,
+      478.18903,
+      603.02405
+     ],
+     "colour": "#f4cdcc",
+     "opacity": 0.7,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      130.18901,
+      396.94382,
+      478.18903,
+      455.83401
+     ],
+     "colour": "#ffedcc",
+     "opacity": 0.7,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      130.18901,
+      307.4342,
+      478.18903,
+      396.944
+     ],
+     "colour": "#ccdecc",
+     "opacity": 0.7,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 122.40899999999999,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 100.0,
+      "positionPt": 308.20758,
+      "text": "100",
+      "colour": "#333333"
+     },
+     {
+      "value": 90.0,
+      "positionPt": 337.64737,
+      "text": "90",
+      "colour": "#333333"
+     },
+     {
+      "value": 80.0,
+      "positionPt": 367.09738,
+      "text": "80",
+      "colour": "#333333"
+     },
+     {
+      "value": 70.0,
+      "positionPt": 396.53717,
+      "text": "70",
+      "colour": "#333333"
+     },
+     {
+      "value": 60.0,
+      "positionPt": 425.98718,
+      "text": "60",
+      "colour": "#333333"
+     },
+     {
+      "value": 50.0,
+      "positionPt": 455.4274,
+      "text": "50",
+      "colour": "#333333"
+     },
+     {
+      "value": 40.0,
+      "positionPt": 484.86719,
+      "text": "40",
+      "colour": "#333333"
+     },
+     {
+      "value": 30.0,
+      "positionPt": 514.3172,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 543.75739,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 573.2074,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 602.64722,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#89e7f1",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4971428001632686,
+     "barThicknessPt": 40.0,
+     "fill": "#8ae7f1",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#89e7f1"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#89e7f1"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#89e7f1"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#89e7f1"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#89e7f1"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "db6bf2d03a9a8_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 320,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "PWI-A Total Score",
+     "bboxPt": [
+      273.681,
+      279.52185,
+      377.69699,
+      291.52185
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Challenged",
+     "bboxPt": [
+      437.78299,
+      519.31525,
+      473.18893,
+      526.31525
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Compromised",
+     "bboxPt": [
+      429.6279,
+      419.20526,
+      473.18884,
+      426.20526
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Normal",
+     "bboxPt": [
+      450.63489,
+      348.53537,
+      473.18884,
+      355.53537
+     ],
+     "colour": "#666666",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "5th",
+     "bboxPt": [
+      485.45901,
+      438.41525,
+      495.18903,
+      445.41525
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "15th",
+     "bboxPt": [
+      481.56683,
+      414.85504,
+      495.18884,
+      421.85504
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "35th",
+     "bboxPt": [
+      481.56683,
+      392.77533,
+      495.18884,
+      399.77533
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "50th",
+     "bboxPt": [
+      481.56683,
+      378.05502,
+      495.18884,
+      385.05502
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "80th",
+     "bboxPt": [
+      481.56683,
+      347.13513,
+      495.18884,
+      354.13513
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "90th",
+     "bboxPt": [
+      481.56683,
+      327.99533,
+      495.18884,
+      334.99533
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "95th",
+     "bboxPt": [
+      481.56683,
+      316.21521,
+      495.18884,
+      323.21521
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Community",
+     "bboxPt": [
+      479.79691,
+      292.10498,
+      515.18884,
+      299.10498
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      480.56683,
+      299.10498,
+      515.18884,
+      306.10498
+     ],
+     "colour": "#7d8283",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Structure and Scored Domains",
+    "text": "The standard PWI-A index is based on seven single-item core life domains, each rated for satisfaction, that are averaged to produce the personal wellbeing index score:\nStandard of living\nHealth\nAchievement in life\nPersonal relationships\nSafety\nCommunity\nFuture security\nOptional items included:\n“Satisfaction with life as a whole” is presented as an optional first item but is not included in the PWI-A composite score. It provides a global life satisfaction rating for comparison with the domain-based index.\nThe spirituality/religion item is also optional and is presented as the final item if it is applicable to the respondent. It is only included in scoring if a response is provided.\n",
+    "source_url": null
+   },
+   {
+    "title": "PWI-A Scoring & Interpretation",
+    "text": "The PWI-A uses a standardised composite scoring system which converts raw scores from the 0–10 response scale to a 0–100 scale by multiplying by 10. Higher scores indicate greater satisfaction across life domains and therefore higher levels of subjective wellbeing.\n\nThe composite score is calculated as the average of the 7 core domain items. The first item (satisfaction with life as a whole) is optional and not included as part of the scoring, and the final item (religion/spirituality) is also optional and only included in scoring if it was completed. When the optional spirituality/religion item is completed, it is included as an 8th domain in the composite score.\n",
+    "source_url": null
+   },
+   {
+    "title": "PWI-A Percentiles",
+    "text": "The PWI-A composite score is presented as a percentile compared to an Australian adult population (Khor et al., 2020). The percentile represents how an individual scored compared to peers. For example, a percentile of 50 indicates average wellbeing and a percentile of 10 represents wellbeing in the bottom 10th percentile of the population. Note: Published Australian normative data are based on the 7-item version of the PWI-A. When the spirituality/religion item has been included in the composite, comparisons to population norms should be interpreted with this in mind.\nIndividual scores on the PWI can be interpreted using the following guidelines:\n70-100 = ‘Normal’ level of Subjective Wellbeing. In homeostatic terms ‘Well’. Describes w ellbeing within the typical range observed in adult population samples; homeostatic functioning is intact.\n50 – 69 = ‘Compromised’ level of Subjective Wellbeing. In homeostatic terms ‘UnderWell’. Describes w ellbeing below typical levels; may reflect reduced resilience or increased life strain; homeostatic functioning is compromised.\n0 to 49 = ‘Challenged’ level of Subjective Wellbeing. In homeostatic terms ‘NoWell’. Describes w ellbeing substantially below typical levels; associated with significant psychological distress; homeostatic functioning has been challenged.\n",
+    "source_url": null
+   },
+   {
+    "title": "Normative Data",
+    "text": "Normative data for the PWI-A are drawn from the Australian Unity Wellbeing Index, a series of cross-sectional telephone surveys of approximately 2,000 Australian adults per wave, conducted between 2002 and 2023 (IWBG , 2024). Participants were aged 18 years and older (averaging approximately 50 years), English-speaking, with equal gender balance, and primarily residing in large cities proportional to state population distribution. The normative data do not include individuals who were under 18, institutionalised, not fluent in English, or who declined participation. Khor et al. (2020) reported data from 34 survey waves (N = 65,722), yielding a mean PWI-A score of 75.3 (SD = 12.6) on the 0–100 percentage-point scale. The 2024 manual (Chapter 5) reports data from 38 waves of the same survey series. Percentile calculations in NovoPsych use the Khor et al. (2020) parameters.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "b6bf2d03a9a886ca43911b9fed1d2eb8a5b3748a26df6899233bd89ee92b5e68",
+    "pageNumber": 2,
+    "text": "The PWI-A uses a standardised composite scoring system, which converts raw scores from the\n0–10 response scale to a 0–100 scale by multiplying by 10. Higher scores indicate greater\nsatisfaction across life domains and therefore higher levels of subjective wellbeing.\nThe composite score is calculated as the average of the 7 core domain items. The first item\n(satisfaction with life as a whole) is optional and not included as part of the scoring, and the final\nitem (religion/spirituality) is also optional and only included in scoring if it was completed. When\nthe optional spirituality/religion item is completed, it is included as an 8th domain in the\ncomposite score.\nThe PWI-A composite score is presented as a percentile compared to an Australian adult\npopulation (Khor et al., 2020). The percentile represents how an individual scored compared to\npeers. For example, a percentile of 50 indicates average wellbeing and a percentile of 10\nrepresents wellbeing in the bottom 10th percentile of the population. Note: Published Australian\nnormative data are based on the 7-item version of the PWI-A. When the spirituality/religion item\nhas been included in the composite, comparisons to population norms should be interpreted with\nthis in mind.\nPWI-A Wellbeing Threshold Categories\n-Normal - 70–100 - Well - Wellbeing is maintained within the typical functioning range in adult\npopulation samples; reflects homeostatic integrity.\n-Compromised - 50–69 - UnderWell - Wellbeing below typical levels; may reflect reduced\nresilience or increased life strain.\n-Challenged - 0–49 - NoWell - Wellbeing substantially below typical levels; may reflect\nhomeostatic failure, where subjective wellbeing is substantially reduced and associated with\nincreased likelihood of psychological distress.\nPWI-A Tracking Treatment Progress\nChange is assessed using the Reliable Change Index (RCI; Jacobson & Truax, 1991), based on\ntest–retest reliability of .84 (Lau & Cummins, 2005) and SD = 12.6 (Khor et al., 2020). A change\nof 14 or more points exceeds measurement error at the 95% confidence level. Given that\nsubjective wellbeing is theoretically maintained by homeostatic processes and tends to be",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The PWI-A composite score is presented as a percentile compared to an Australian adult population (Khor et al., 2020).",
+   "The percentile represents how an individual scored compared to peers.",
+   "For example, a percentile of 50 indicates average wellbeing and a percentile of 10 represents wellbeing in the bottom 10th percentile of the population.",
+   "Percentile calculations in NovoPsych use the Khor et al."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 2,
+   "unresolvedCells": 131
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

@@ -1,0 +1,1330 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total Score",
+   "minimum": 0.0,
+   "maximum": 28.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 28.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "Total Score (sum of all 7 items)",
+     "y": 442.5,
+     "url": null,
+     "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+   "pageCount": 4,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d13fa01802f43_p1",
+   "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d13fa01802f43_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d13fa01802f43_p1_section_1",
+    "d13fa01802f43_p1_section_2",
+    "d13fa01802f43_p1_section_3",
+    "d13fa01802f43_p1_section_4",
+    "d13fa01802f43_p1_section_5"
+   ]
+  },
+  {
+   "pageId": "d13fa01802f43_p2",
+   "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d13fa01802f43_p2_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d13fa01802f43_p2_section_1",
+    "d13fa01802f43_p2_section_2",
+    "d13fa01802f43_p2_section_3"
+   ]
+  },
+  {
+   "pageId": "d13fa01802f43_p3",
+   "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d13fa01802f43_p3_section_1"
+   ]
+  },
+  {
+   "pageId": "d13fa01802f43_p4",
+   "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d13fa01802f43_p4_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d13fa01802f43_p1_section_1",
+   "pageId": "d13fa01802f43_p1",
+   "title": "PDSS Average Severity Score",
+   "type": "source_heading",
+   "bboxPt": [
+    201.22301,
+    290.87048,
+    371.29898,
+    302.87048
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p1_section_2",
+   "pageId": "d13fa01802f43_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    421.52979,
+    124.57652,
+    435.52979
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p1_section_3",
+   "pageId": "d13fa01802f43_p1",
+   "title": "Panic Frequency",
+   "type": "source_heading",
+   "bboxPt": [
+    109.9921,
+    549.83636,
+    198.02505,
+    560.83636
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p1_section_4",
+   "pageId": "d13fa01802f43_p1",
+   "title": "Distress During Panic",
+   "type": "source_heading",
+   "bboxPt": [
+    109.992,
+    574.19031,
+    224.30397,
+    585.19031
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p1_section_5",
+   "pageId": "d13fa01802f43_p1",
+   "title": "Agoraphobic Fear and Avoidance",
+   "type": "source_heading",
+   "bboxPt": [
+    109.99168,
+    598.54419,
+    285.41962,
+    609.54419
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p2_section_1",
+   "pageId": "d13fa01802f43_p2",
+   "title": "PDSS Item",
+   "type": "source_heading",
+   "bboxPt": [
+    255.918,
+    153.38954,
+    316.60199,
+    165.38954
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p2_section_2",
+   "pageId": "d13fa01802f43_p2",
+   "title": "Responses",
+   "type": "responses",
+   "bboxPt": [
+    254.25003,
+    165.38954,
+    318.27002,
+    177.38954
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p2_section_3",
+   "pageId": "d13fa01802f43_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    564.04871,
+    290.26645,
+    578.04871
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p3_section_1",
+   "pageId": "d13fa01802f43_p3",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    151.82051,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d13fa01802f43_p4_section_1",
+   "pageId": "d13fa01802f43_p4",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d13fa01802f43_p1_chart_1",
+   "title": null,
+   "type": "horizontal_bar",
+   "bboxPt": [
+    69.26,
+    334.772,
+    520.261,
+    393.213
+   ],
+   "widthPt": 451.0,
+   "heightPt": 58.441,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      72.0703,
+      336.77283,
+      125.3906,
+      393.21301
+     ],
+     "colour": "#ffffff",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      125.38,
+      336.77283,
+      237.63,
+      393.21301
+     ],
+     "colour": "#fceaa1",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      237.64099,
+      336.77283,
+      349.89099,
+      393.21301
+     ],
+     "colour": "#fdc689",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      349.88,
+      336.77283,
+      462.12997,
+      393.21301
+     ],
+     "colour": "#ff9da7",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      462.14102,
+      336.77283,
+      518.26093,
+      393.21301
+     ],
+     "colour": "#e15759",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 69.26060000000001,
+      "text": "0",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 181.51040999999998,
+      "text": "1",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 293.76021000000003,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 406.01002500000004,
+      "text": "3",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 518.259825,
+      "text": "4",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d13fa01802f43_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 308,
+    "detectedType": "line",
+    "reviewedType": "horizontal_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "PDSS Average Severity Score",
+     "bboxPt": [
+      201.22301,
+      290.87048,
+      371.29898,
+      302.87048
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Absent or Limited",
+     "bboxPt": [
+      75.1074,
+      384.25693,
+      121.79339,
+      390.25693
+     ],
+     "colour": "#808080",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild",
+     "bboxPt": [
+      176.011,
+      384.25693,
+      187.009,
+      390.25693
+     ],
+     "colour": "#cbc6ae",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      281.08801,
+      384.25693,
+      306.43198,
+      390.25693
+     ],
+     "colour": "#cbbaa6",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      396.50699,
+      384.25693,
+      415.51498,
+      390.25693
+     ],
+     "colour": "#cca5a9",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Extreme",
+     "bboxPt": [
+      479.03201,
+      384.25693,
+      501.37,
+      390.25693
+     ],
+     "colour": "#c29697",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Interpretation",
+     "bboxPt": [
+      34.3465,
+      421.52979,
+      124.57652,
+      435.52979
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "The self-report Panic Disorder Severity Scale (PDSS) was administered on 21 April 2026. The",
+     "bboxPt": [
+      91.0394,
+      440.77353,
+      548.30939,
+      451.77353
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null,
+   "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+  },
+  {
+   "id": "d13fa01802f43_p2_chart_1",
+   "title": "Responses",
+   "type": "horizontal_bar",
+   "bboxPt": [
+    178.261,
+    197.292,
+    520.261,
+    535.732
+   ],
+   "widthPt": 342.0,
+   "heightPt": 338.44,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      180.38,
+      199.29199,
+      220.76012,
+      535.73199
+     ],
+     "colour": "#ffffff",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      220.76102,
+      199.29199,
+      305.76102,
+      535.73199
+     ],
+     "colour": "#fceaa1",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      305.76102,
+      199.29199,
+      390.76102,
+      535.73199
+     ],
+     "colour": "#fdc689",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      390.76102,
+      199.29199,
+      475.76105,
+      535.73199
+     ],
+     "colour": "#ff9da7",
+     "opacity": 0.5,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      475.76099,
+      199.29199,
+      518.26099,
+      535.73199
+     ],
+     "colour": "#e15759",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 178.261,
+      "text": "0",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 263.26097,
+      "text": "1",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 348.26094,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 433.26090999999997,
+      "text": "3",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 518.260865,
+      "text": "4",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 4.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "7. Social Impairment",
+     "colour": "#ff9ca6",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.928998079423236,
+     "barThicknessPt": 34.05977999999999,
+     "fill": "#ff9da7",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ff9ca6"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ff9ca6"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ff9ca6"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ff9ca6"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ff9ca6"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "6. Work Impairment",
+     "colour": "#ae7aa0",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.786963494267817,
+     "barThicknessPt": 34.060209999999984,
+     "fill": "#af7aa1",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#ae7aa0"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#ae7aa0"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#ae7aa0"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#ae7aa0"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#ae7aa0"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": "5. Interoceptive Avoidance",
+     "colour": "#edc949",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6449595940196194,
+     "barThicknessPt": 34.05980999999997,
+     "fill": "#edc949",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#edc949"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#edc949"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#edc949"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#edc949"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#edc949"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": "4. Agoraphobic Avoidance",
+     "colour": "#59a04f",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.5029545118780285,
+     "barThicknessPt": 34.060209999999984,
+     "fill": "#59a14f",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#59a04f"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#59a04f"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#59a04f"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#59a04f"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#59a04f"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_5",
+     "label": "3. Anticipatory Anxiety",
+     "colour": "#e15659",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.36095052298782654,
+     "barThicknessPt": 34.05980999999997,
+     "fill": "#e15759",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#e15659"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#e15659"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#e15659"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#e15659"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#e15659"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_6",
+     "label": "2. Distress During Panic",
+     "colour": "#f28d2b",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.21891602647441205,
+     "barThicknessPt": 34.06024000000002,
+     "fill": "#f28e2b",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#f28d2b"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#f28d2b"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#f28d2b"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#f28d2b"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#f28d2b"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_7",
+     "label": "1. Panic Frequency",
+     "colour": "#4e79a6",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.0769119932632077,
+     "barThicknessPt": 34.05981,
+     "fill": "#4e79a7",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#4e79a6"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#4e79a6"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d13fa01802f43_p2",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 309,
+    "detectedType": "horizontal_bar",
+    "reviewedType": "horizontal_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "PDSS Item",
+     "bboxPt": [
+      255.918,
+      153.38954,
+      316.60199,
+      165.38954
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Responses",
+     "bboxPt": [
+      254.25003,
+      165.38954,
+      318.27002,
+      177.38954
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "7. Social Impairment",
+     "bboxPt": [
+      91.2344,
+      507.89792,
+      173.26036,
+      516.89795
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "6. Work Impairment",
+     "bboxPt": [
+      94.74456,
+      459.8381,
+      173.26053,
+      468.8381
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "5. Interoceptive Avoidance",
+     "bboxPt": [
+      67.20436,
+      411.76822,
+      173.26035,
+      420.76822
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "4. Agoraphobic Avoidance",
+     "bboxPt": [
+      68.20358,
+      363.70801,
+      173.26056,
+      372.70801
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "3. Anticipatory Anxiety",
+     "bboxPt": [
+      84.22348,
+      315.6478,
+      173.26047,
+      324.6478
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "2. Distress During Panic",
+     "bboxPt": [
+      76.73559,
+      267.57791,
+      173.26057,
+      276.57791
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "1. Panic Frequency",
+     "bboxPt": [
+      95.72539,
+      219.51811,
+      173.26035,
+      228.51811
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 9.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Scoring and Interpretation Information",
+     "bboxPt": [
+      34.3465,
+      564.04871,
+      290.26645,
+      578.04871
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 14.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "For comprehensive information on the PDSS, ",
+     "bboxPt": [
+      91.0394,
+      583.29303,
+      315.4064,
+      594.29303
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "see here",
+     "bboxPt": [
+      315.40601,
+      583.29358,
+      358.207,
+      594.29358
+     ],
+     "colour": "#0000ff",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": [],
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Scoring the Panic Disorder Severity Scale (PDSS)",
+    "text": "Each item is rated on a 5-point scale, where 0 represents the complete absence of panic disorder symptoms (e.g., ‘not at all distressing’, ‘no panic’) and 4 represents the most severe level (e.g., ‘extremely distressing’, ‘nearly constant’) over the past week. Response anchors vary across items but follow the same severity progression. The PDSS total score is the sum of all seven items, yielding a possible range of 0 to 28. Higher scores indicate greater panic disorder symptom severity. In addition to the total score, a composite score (average of all items) is computed and ranges from 0 to 4.\n",
+    "source_url": null
+   },
+   {
+    "title": "PDSS Change Score Interpretation",
+    "text": "When PDSS scores are available from multiple timepoints, changes in scores from the baseline administration can provide valuable information about the effectiveness of interventions or symptom trajectory. Changes of at least 0.5 standard deviations on measures are generally considered the minimally important difference (MID; Norman et al., 2003; Turner et al., 2010).\nBased on a standard deviation of 6.6 from a self-report clinical sample using the full 7-item PDSS (Houck et al., 2002, N = 108, SD = 6.6), the minimally important difference for the PDSS total score is 3 points.\nChanges in PDSS total scores are categorised as:\nDecrease of 3 or more points: suggests clinically meaningful improvement in panic disorder symptoms\nIncrease of 3 or more points: suggests clinically meaningful worsening of panic disorder symptoms\nMinimal change: increase or decrease of 1 or 2 points, which suggests relatively stable panic severity\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the PDSS, \nsee here\n.\nThe PDSS is a 7-item self-report measure assessing the severity of seven dimensions of panic\ndisorder: panic attack frequency, distress during attacks, anticipatory anxiety, agoraphobic\navoidance, interoceptive avoidance, work impairment, and social impairment. Each item is rated\non a 0 to 4 scale, where 0 represents no symptoms and 4 represents extreme severity. Higher\nscores indicate greater severity of panic disorder symptoms. Individual items rated at the severe\n(3) or extreme (4) level are highlighted as these ratings correspond to significant impairment in\ndaily functioning based on the scale's item-level descriptors. The PDSS is designed to measure\npanic disorder symptom severity and is not intended as a diagnostic instrument.",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d13fa01802f43_p1_chart_1"
+   ]
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

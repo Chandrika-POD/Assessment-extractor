@@ -1,0 +1,561 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "inattentive_raw",
+   "label": "Inattentive raw score",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 27,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "inattentive_symptom_count",
+   "label": "Inattentive symptom count",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 9,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 2,
+   "operator": ">=",
+   "item_thresholds": {}
+  },
+  {
+   "id": "hyperactive_impulsive_raw",
+   "label": "Hyperactive Impulsive raw score",
+   "item_ids": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 27,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "hyperactive_impulsive_symptom_count",
+   "label": "Hyperactive Impulsive symptom count",
+   "item_ids": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 9,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 2,
+   "operator": ">=",
+   "item_thresholds": {}
+  },
+  {
+   "id": "combined_raw",
+   "label": "Combined raw score",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 54,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "combined_symptom_count",
+   "label": "Combined symptom count",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 18,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 2,
+   "operator": ">=",
+   "item_thresholds": {}
+  },
+  {
+   "id": "oppositional_raw",
+   "label": "Oppositional raw score",
+   "item_ids": [
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 24,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "oppositional_symptom_count",
+   "label": "Oppositional symptom count",
+   "item_ids": [
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 8,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 2,
+   "operator": ">=",
+   "item_thresholds": {}
+  },
+  {
+   "id": "conduct_raw",
+   "label": "Conduct raw score",
+   "item_ids": [
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q40"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 42,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "conduct_symptom_count",
+   "label": "Conduct symptom count",
+   "item_ids": [
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q40"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 14,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 2,
+   "operator": ">=",
+   "item_thresholds": {}
+  },
+  {
+   "id": "anxiety_depression_raw",
+   "label": "Anxiety Depression raw score",
+   "item_ids": [
+    "Q41",
+    "Q42",
+    "Q43",
+    "Q44",
+    "Q45",
+    "Q46",
+    "Q47"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 21,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "anxiety_depression_symptom_count",
+   "label": "Anxiety Depression symptom count",
+   "item_ids": [
+    "Q41",
+    "Q42",
+    "Q43",
+    "Q44",
+    "Q45",
+    "Q46",
+    "Q47"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 7,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 2,
+   "operator": ">=",
+   "item_thresholds": {}
+  },
+  {
+   "id": "impaired_performance_domains",
+   "label": "Number of performance domains rated problematic",
+   "item_ids": [
+    "Q48",
+    "Q49",
+    "Q50",
+    "Q51",
+    "Q52",
+    "Q53",
+    "Q54",
+    "Q55"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 8,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "254bfdd659bb8e43f2260ed4f9255d99723a9cec8b7c65f03cb7157956dba1af",
+    "retrieved_at": "2026-11-13T12:03:53.097097+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 2,
+   "operator": "<=",
+   "item_thresholds": {}
+  }
+ ],
+ "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+ "rules_provenance": null,
+ "source_rule_excerpts": [
+  "Additionally, the scale assesses functional impairment in academic and social domains, evaluating the child’s performance across eight areas, including reading, mathematics, and peer relationships. This functional impairment scale is used to determine whether or not a child meets the clinical cutoff criteria for each of the dimensions assessed.",
+  "T he VADPRS employs both symptom count and dimensional scoring approaches. The raw score uses the dimensional scoring technique where sum scores for each subscale provide continuous measures of symptom severity, where higher scores equate to higher symptom severity. The percentiles are based upon these dimensional raw scores and are derived from a sample of 1,570 caregivers of children aged 5-12 years of age (Anderson et al., 2022). Scores are presented as percentile ranks based on age-specific normative data for four groups: 5-6 years, 7-8 years, 9-10 years, and 11-12 years. Percentiles indicate the child’s position relative to same-aged peers in the normative sample. For children outside the target age range, combined norms are used with appropriate caution in interpretation. A percentile of 50 indicates that the symptom level for the child is at average and expected levels for a child of that age group and a percentile of 90 indicates that the child has relatively high symptom levels compared to their peers (i.e., higher than 90 percent of their peers).",
+  "The clinical cutoffs use the symptom count approach where behaviours rated as “often” or “very often” are flagged as a significant symptom with clinical cutoffs based upon meeting both threshold numbers AND functional impairment (Items 48-55). ADHD presentations require six or more qualifying symptoms plus functional impairment in at least one domain. Oppositional Defiant Disorder requires four or more symptoms plus impairment, Conduct Disorder requires three or more symptoms plus impairment, and Anxiety/Depression requires three or more symptoms plus functional impairment. The functional impairment questions (Items 48-55) evaluate eight domains of academic performance and social relationships, where scores of 1 or 2 indicate significant impairment.",
+  "Note, there can sometimes be discrepancies where a child might not meet the clinical cutoff but their percentile could be high (at the 90th percentile or higher). This could happen for a number of reasons. Firstly, they might not meet the functional impairment criteria – their symptoms are high but it does not appear to be impacting daily functioning. This might require further investigation and interviewing the informant with regard to whether they have a good understanding of the impact on daily functioning for the child. The other reason this might happen is that the client scores high on a small number of symptom questions but then very low on others and even though they might have functional impairment, the actual threshold using the symptom count approach used for the clinical cutoff falls just short. This too is unusual and might require further investigation.",
+  "On first administration of the VADPRS, there are two plots shown. The first horizontal bar plot shows the ADHD subtype raw scores with the normative and clinical samples shaded in the background (with the samples shown as between the 25th and 75th percentiles). The normative percentile sample is the same as those used to derive the percentiles (i.e., the Anderson et al., 2022 sample) whereas the clinical percentiles are derived from a NovoPsych sample of over 3,000 children who met the clinical cutoff criteria. The second plot shows the normative percentiles for all subscales with a coloured background at the 90th percentile and above, indicating elevated scores. A line is presented on this plot at the 50th percentile which indicates an average symptom level for each of the subscales. Subsequent administrations of the VADPRS show two longitudinal plots showing (i) the ADHD subtype raw scores and (ii) the comorbid percentiles over time."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "VADPRS Scoring & Interpretation",
+   "text": "The Vanderbilt ADHD Diagnostic Parent Rating Scale (VADPRS) scores consist of subscale scores across multiple clinical domains. Higher scores represent higher levels of symptoms within each of the domains measured. Scores are provided for the following subscales of the VADPRS:\n1. Inattentive (Items 1-9) assesses core symptoms of inattention including difficulty sustaining attention, not listening when spoken to, failing to follow instructions, and being easily distracted.\n2. Hyperactive/Impulsive (Items 10-18) measures hyperactivity and impulsivity symptoms including fidgeting, inappropriate movement, excessive talking, and interrupting others.\n3. Combined presentation occurs when both Inattentive and Hyperactive/Impulsive criteria are met.\n4. Oppositional Defiant Disorder (Items 19-26) screens for oppositional behaviours such as arguing with adults, defying requests, and being angry or resentful.\n5. Conduct Disorder (Items 27-40) assesses severe behavioural problems including aggression, property destruction, and rule violations.\n6. Anxiety/Depression (Items 41-47) screens for internalising symptoms including sadness, fearfulness, and sleep difficulties.\n\nT he VADPRS employs both symptom count and dimensional scoring approaches. The raw score uses the dimensional scoring technique where sum scores for each subscale provide continuous measures of symptom severity, where higher scores equate to higher symptom severity. The percentiles are based upon these dimensional raw scores and are derived from a sample of 1,570 caregivers of children aged 5-12 years of age (Anderson et al., 2022). Scores are presented as percentile ranks based on age-specific normative data for four groups: 5-6 years, 7-8 years, 9-10 years, and 11-12 years. Percentiles indicate the child’s position relative to same-aged peers in the normative sample. For children outside the target age range, combined norms are used with appropriate caution in interpretation. A percentile of 50 indicates that the symptom level for the child is at average and expected levels for a child of that age group and a percentile of 90 indicates that the child has relatively high symptom levels compared to their peers (i.e., higher than 90 percent of their peers).\n\nThe clinical cutoffs use the symptom count approach where behaviours rated as “often” or “very often” are flagged as a significant symptom with clinical cutoffs based upon meeting both threshold numbers AND functional impairment (Items 48-55). ADHD presentations require six or more qualifying symptoms plus functional impairment in at least one domain. Oppositional Defiant Disorder requires four or more symptoms plus impairment, Conduct Disorder requires three or more symptoms plus impairment, and Anxiety/Depression requires three or more symptoms plus functional impairment. The functional impairment questions (Items 48-55) evaluate eight domains of academic performance and social relationships, where scores of 1 or 2 indicate significant impairment.\n\nNote, there can sometimes be discrepancies where a child might not meet the clinical cutoff but their percentile could be high (at the 90th percentile or higher). This could happen for a number of reasons. Firstly, they might not meet the functional impairment criteria – their symptoms are high but it does not appear to be impacting daily functioning. This might require further investigation and interviewing the informant with regard to whether they have a good understanding of the impact on daily functioning for the child. The other reason this might happen is that the client scores high on a small number of symptom questions but then very low on others and even though they might have functional impairment, the actual threshold using the symptom count approach used for the clinical cutoff falls just short. This too is unusual and might require further investigation.\n\nOn first administration of the VADPRS, there are two plots shown. The first horizontal bar plot shows the ADHD subtype raw scores with the normative and clinical samples shaded in the background (with the samples shown as between the 25th and 75th percentiles). The normative percentile sample is the same as those used to derive the percentiles (i.e., the Anderson et al., 2022 sample) whereas the clinical percentiles are derived from a NovoPsych sample of over 3,000 children who met the clinical cutoff criteria. The second plot shows the normative percentiles for all subscales with a coloured background at the 90th percentile and above, indicating elevated scores. A line is presented on this plot at the 50th percentile which indicates an average symptom level for each of the subscales. Subsequent administrations of the VADPRS show two longitudinal plots showing (i) the ADHD subtype raw scores and (ii) the comorbid percentiles over time.\n\nWhen VADPRS scores are available from multiple timepoints, changes in scores can provide valuable information about the effectiveness of interventions or developmental changes in symptoms. For comparative interpretation, changes of at least 0.5 standard deviations in raw scores are considered clinically meaningful (the minimally important difference) (Norman et al., 2003; Turner et al., 2010). These changes are categorised as ‘significant’ (either improvement (minimally important difference reduction in raw score) or deterioration (minimally important difference increase in raw score)), ‘slight’ (showing some change but not quite to the minimally important difference level), or ‘none’ (no change in raw score). If applicable, this interpretive text outlining change in scores is displayed first within the interpretive text section.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [
+  {
+   "page": 1,
+   "text": "Inattentive (Items 1–9):",
+   "y": 439.5,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Hyperactive/Impulsive (Items 10–18):",
+   "y": 694.5,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Combined (Items 1–18):",
+   "y": 716.2,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Oppositional Defiant Disorder (Items 19–26):",
+   "y": 189.8,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Conduct Disorder (Items 27–40):",
+   "y": 557.2,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Anxiety/Depression (Items 41–47):",
+   "y": 766.5,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 3,
+   "text": "Items 48-51 rate academic performance. They are not summed into a subscale score; a rating of 1 (Problematic) or 2 (Somewhat of a Problem) on any item",
+   "y": 72.8,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 3,
+   "text": "Items 52-55 rate behavioural performance. They are not summed into a subscale score; a rating of 1 (Problematic) or 2 (Somewhat of a Problem) on any item",
+   "y": 402.0,
+   "url": null,
+   "sha256": "5de9e7f337b0cb0f0742482b4242e65134d01d88116115f7425e9f87f3b83246",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  }
+ ],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+}

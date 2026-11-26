@@ -1,0 +1,1652 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_total_raw",
+   "ruleId": "total_raw",
+   "label": "Total urge severity",
+   "minimum": 0,
+   "maximum": 30,
+   "calculation": {
+    "id": "total_raw",
+    "label": "Total urge severity",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 30,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "b859f28885285deae4408022bbfe799c63dac985551beec622583bfb4e9b12b2",
+     "retrieved_at": "2026-11-13T11:57:02.145179+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "68cfaa7edabbd240992645efa77a5b0b30bc66698a5cacbbe6759a67dbe6e9b5",
+   "pageCount": 5,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d68cfaa7edabb_p1",
+   "documentSha256": "68cfaa7edabbd240992645efa77a5b0b30bc66698a5cacbbe6759a67dbe6e9b5",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d68cfaa7edabb_p1_chart_1"
+   ],
+   "tableIds": [],
+   "sectionIds": [
+    "d68cfaa7edabb_p1_section_1",
+    "d68cfaa7edabb_p1_section_2",
+    "d68cfaa7edabb_p1_section_3",
+    "d68cfaa7edabb_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "d68cfaa7edabb_p2",
+   "documentSha256": "68cfaa7edabbd240992645efa77a5b0b30bc66698a5cacbbe6759a67dbe6e9b5",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d68cfaa7edabb_p3",
+   "documentSha256": "68cfaa7edabbd240992645efa77a5b0b30bc66698a5cacbbe6759a67dbe6e9b5",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d68cfaa7edabb_p4",
+   "documentSha256": "68cfaa7edabbd240992645efa77a5b0b30bc66698a5cacbbe6759a67dbe6e9b5",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d68cfaa7edabb_p4_table_1"
+   ],
+   "sectionIds": [
+    "d68cfaa7edabb_p4_section_1"
+   ]
+  },
+  {
+   "pageId": "d68cfaa7edabb_p5",
+   "documentSha256": "68cfaa7edabbd240992645efa77a5b0b30bc66698a5cacbbe6759a67dbe6e9b5",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d68cfaa7edabb_p5_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d68cfaa7edabb_p1_section_1",
+   "pageId": "d68cfaa7edabb_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.89549,
+    84.91451,
+    211.89549
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d68cfaa7edabb_p1_section_2",
+   "pageId": "d68cfaa7edabb_p1",
+   "title": "ABUSI Total Score",
+   "type": "source_heading",
+   "bboxPt": [
+    244.62801,
+    290.86084,
+    350.64798,
+    302.86084
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d68cfaa7edabb_p1_section_3",
+   "pageId": "d68cfaa7edabb_p1",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    481.51852,
+    124.57652,
+    495.51852
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d68cfaa7edabb_p1_section_4",
+   "pageId": "d68cfaa7edabb_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    695.7027,
+    290.26636,
+    709.7027
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d68cfaa7edabb_p4_section_1",
+   "pageId": "d68cfaa7edabb_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    184.85551,
+    151.82051,
+    198.85551
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d68cfaa7edabb_p5_section_1",
+   "pageId": "d68cfaa7edabb_p5",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.03752,
+    198.48251,
+    158.03752
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d68cfaa7edabb_p1_chart_1",
+   "title": "ABUSI Total Score",
+   "type": "vertical_bar",
+   "bboxPt": [
+    199.638,
+    316.772,
+    384.638,
+    443.213
+   ],
+   "widthPt": 185.0,
+   "heightPt": 126.441,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      199.638,
+      318.77283,
+      382.638,
+      341.58304
+     ],
+     "colour": "#e15759",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      199.638,
+      341.58292,
+      382.638,
+      383.06302
+     ],
+     "colour": "#fdc689",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      199.638,
+      383.06223,
+      382.638,
+      439.10202
+     ],
+     "colour": "#fceaa1",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      199.638,
+      439.10284,
+      382.638,
+      443.21301
+     ],
+     "colour": "#ffffff",
+     "opacity": 0.4,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [
+     {
+      "value": 0.0,
+      "positionPt": 191.858,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 30.0,
+      "positionPt": 319.5462,
+      "text": "30",
+      "colour": "#333333"
+     },
+     {
+      "value": 25.0,
+      "positionPt": 340.28638,
+      "text": "25",
+      "colour": "#333333"
+     },
+     {
+      "value": 20.0,
+      "positionPt": 361.02618,
+      "text": "20",
+      "colour": "#333333"
+     },
+     {
+      "value": 15.0,
+      "positionPt": 381.76639,
+      "text": "15",
+      "colour": "#333333"
+     },
+     {
+      "value": 10.0,
+      "positionPt": 402.5062,
+      "text": "10",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 423.246,
+      "text": "5",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 443.98621,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 30.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d68cfaa7edabb_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 21,
+    "detectedType": "line",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "ABUSI Total Score",
+     "bboxPt": [
+      244.62801,
+      290.86084,
+      350.64798,
+      302.86084
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "None Reported",
+     "bboxPt": [
+      350.51401,
+      439.22229,
+      377.638,
+      443.22229
+     ],
+     "colour": "#808080",
+     "font": "Helvetica",
+     "fontSizePt": 4.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mild",
+     "bboxPt": [
+      366.64001,
+      409.53595,
+      377.638,
+      415.53595
+     ],
+     "colour": "#cbc6ae",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Moderate",
+     "bboxPt": [
+      352.29401,
+      359.75693,
+      377.63797,
+      365.75693
+     ],
+     "colour": "#cbbaa6",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Severe",
+     "bboxPt": [
+      358.63,
+      327.61594,
+      377.638,
+      333.61594
+     ],
+     "colour": "#c29697",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "NSSI Treatment",
+     "bboxPt": [
+      366.62399,
+      303.74692,
+      409.63797,
+      309.74692
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Percentiles",
+     "bboxPt": [
+      379.96228,
+      309.74692,
+      409.63828,
+      315.74692
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 50th",
+     "bboxPt": [
+      383.29626,
+      364.32703,
+      398.63824,
+      370.32703
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 75th",
+     "bboxPt": [
+      383.29626,
+      341.92703,
+      398.63824,
+      347.92703
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 80th",
+     "bboxPt": [
+      383.29626,
+      336.5368,
+      398.63824,
+      342.5368
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 85th",
+     "bboxPt": [
+      383.29626,
+      329.89697,
+      398.63824,
+      335.89697
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "- 90th",
+     "bboxPt": [
+      383.29626,
+      321.59695,
+      398.63824,
+      327.59695
+     ],
+     "colour": "#999999",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "The Alexian Brothers Urge to Self-Injure Scale (ABUSI) was administered on 06 August 2026.",
+     "bboxPt": [
+      91.0394,
+      500.77414,
+      547.12146,
+      511.77414
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 11.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null,
+   "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+  }
+ ],
+ "tables": [
+  {
+   "id": "d68cfaa7edabb_p4_table_1",
+   "type": "response_table",
+   "bboxPt": [
+    28.3465,
+    182.54962,
+    566.93005,
+    681.99701
+   ],
+   "rowCount": 33,
+   "columnCount": 2,
+   "cellsPt": [
+    [
+     28.3465,
+     182.54962,
+     566.93005,
+     202.3924
+    ],
+    [
+     28.3465,
+     202.3924,
+     48.1891,
+     223.08087
+    ],
+    [
+     28.3465,
+     223.08087,
+     48.1891,
+     237.25403
+    ],
+    [
+     28.3465,
+     237.25403,
+     48.1891,
+     251.42731
+    ],
+    [
+     28.3465,
+     251.42731,
+     48.1891,
+     265.60101
+    ],
+    [
+     28.3465,
+     265.60101,
+     48.1891,
+     279.7738
+    ],
+    [
+     28.3465,
+     279.7738,
+     48.1891,
+     293.94696
+    ],
+    [
+     28.3465,
+     293.94696,
+     48.1891,
+     308.1203
+    ],
+    [
+     28.3465,
+     308.1203,
+     48.1891,
+     322.2939
+    ],
+    [
+     28.3465,
+     322.2939,
+     48.1891,
+     342.98186
+    ],
+    [
+     28.3465,
+     342.98186,
+     48.1891,
+     357.155
+    ],
+    [
+     28.3465,
+     357.155,
+     48.1891,
+     371.32832
+    ],
+    [
+     28.3465,
+     371.32832,
+     48.1891,
+     385.50201
+    ],
+    [
+     28.3465,
+     385.50201,
+     48.1891,
+     399.67482
+    ],
+    [
+     28.3465,
+     399.67482,
+     48.1891,
+     413.84802
+    ],
+    [
+     28.3465,
+     413.84802,
+     48.1891,
+     428.02132
+    ],
+    [
+     28.3465,
+     428.02132,
+     48.1891,
+     442.19477
+    ],
+    [
+     28.3465,
+     442.19477,
+     48.1891,
+     462.88286
+    ],
+    [
+     28.3465,
+     462.88286,
+     48.1891,
+     477.056
+    ],
+    [
+     28.3465,
+     477.056,
+     48.1891,
+     491.22931
+    ],
+    [
+     28.3465,
+     491.22931,
+     48.1891,
+     505.403
+    ],
+    [
+     28.3465,
+     505.403,
+     48.1891,
+     519.57584
+    ],
+    [
+     28.3465,
+     519.57584,
+     48.1891,
+     533.74902
+    ],
+    [
+     28.3465,
+     533.74902,
+     48.1891,
+     547.9223
+    ],
+    [
+     28.3465,
+     547.9223,
+     48.1891,
+     562.09611
+    ],
+    [
+     28.3465,
+     562.09611,
+     48.1891,
+     582.78455
+    ],
+    [
+     28.3465,
+     582.78455,
+     48.1891,
+     596.95801
+    ],
+    [
+     28.3465,
+     596.95801,
+     48.1891,
+     611.1308
+    ],
+    [
+     28.3465,
+     611.1308,
+     48.1891,
+     625.30402
+    ],
+    [
+     28.3465,
+     625.30402,
+     48.1891,
+     639.47729
+    ],
+    [
+     28.3465,
+     639.47729,
+     48.1891,
+     653.651
+    ],
+    [
+     28.3465,
+     653.651,
+     48.1891,
+     667.82379
+    ],
+    [
+     28.3465,
+     667.82379,
+     48.1891,
+     681.99701
+    ],
+    [
+     48.1891,
+     202.3924,
+     566.93005,
+     223.08087
+    ],
+    [
+     48.1891,
+     223.08087,
+     566.93005,
+     237.25403
+    ],
+    [
+     48.1891,
+     237.25403,
+     566.93005,
+     251.42731
+    ],
+    [
+     48.1891,
+     251.42731,
+     566.93005,
+     265.60101
+    ],
+    [
+     48.1891,
+     265.60101,
+     566.93005,
+     279.7738
+    ],
+    [
+     48.1891,
+     279.7738,
+     566.93005,
+     293.94696
+    ],
+    [
+     48.1891,
+     293.94696,
+     566.93005,
+     308.1203
+    ],
+    [
+     48.1891,
+     308.1203,
+     566.93005,
+     322.2939
+    ],
+    [
+     48.1891,
+     322.2939,
+     566.93005,
+     342.98186
+    ],
+    [
+     48.1891,
+     342.98186,
+     566.93005,
+     357.155
+    ],
+    [
+     48.1891,
+     357.155,
+     566.93005,
+     371.32832
+    ],
+    [
+     48.1891,
+     371.32832,
+     566.93005,
+     385.50201
+    ],
+    [
+     48.1891,
+     385.50201,
+     566.93005,
+     399.67482
+    ],
+    [
+     48.1891,
+     399.67482,
+     566.93005,
+     413.84802
+    ],
+    [
+     48.1891,
+     413.84802,
+     566.93005,
+     428.02132
+    ],
+    [
+     48.1891,
+     428.02132,
+     566.93005,
+     442.19477
+    ],
+    [
+     48.1891,
+     442.19477,
+     566.93005,
+     462.88286
+    ],
+    [
+     48.1891,
+     462.88286,
+     566.93005,
+     477.056
+    ],
+    [
+     48.1891,
+     477.056,
+     566.93005,
+     491.22931
+    ],
+    [
+     48.1891,
+     491.22931,
+     566.93005,
+     505.403
+    ],
+    [
+     48.1891,
+     505.403,
+     566.93005,
+     519.57584
+    ],
+    [
+     48.1891,
+     519.57584,
+     566.93005,
+     533.74902
+    ],
+    [
+     48.1891,
+     533.74902,
+     566.93005,
+     547.9223
+    ],
+    [
+     48.1891,
+     547.9223,
+     566.93005,
+     562.09611
+    ],
+    [
+     48.1891,
+     562.09611,
+     566.93005,
+     582.78455
+    ],
+    [
+     48.1891,
+     582.78455,
+     566.93005,
+     596.95801
+    ],
+    [
+     48.1891,
+     596.95801,
+     566.93005,
+     611.1308
+    ],
+    [
+     48.1891,
+     611.1308,
+     566.93005,
+     625.30402
+    ],
+    [
+     48.1891,
+     625.30402,
+     566.93005,
+     639.47729
+    ],
+    [
+     48.1891,
+     639.47729,
+     566.93005,
+     653.651
+    ],
+    [
+     48.1891,
+     653.651,
+     566.93005,
+     667.82379
+    ],
+    [
+     48.1891,
+     667.82379,
+     566.93005,
+     681.99701
+    ]
+   ],
+   "dataBinding": null,
+   "runtimeEnabled": false,
+   "reviewStatus": "cell_semantics_require_review",
+   "pageId": "d68cfaa7edabb_p4",
+   "sourceTableId": "table_1",
+   "columns": [],
+   "rowBindings": [
+    {
+     "sourceRowIndex": 1,
+     "questionId": "Q1",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 9,
+     "questionId": "Q2",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 17,
+     "questionId": "Q3",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 25,
+     "questionId": "Q4",
+     "contentBinding": "session.answers",
+     "status": "question_text_matched_response_cells_require_review",
+     "runtimeEnabled": false
+    }
+   ],
+   "cellTemplates": [
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 0,
+     "kind": "static_heading",
+     "content": "Client Responses",
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 0,
+     "sourceColumnIndex": 1,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 1,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q1",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 2,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 2,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 3,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 3,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 4,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 4,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 5,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 5,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 6,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 6,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 7,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 7,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 8,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 8,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 9,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 9,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q2",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 10,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 10,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 11,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 11,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 12,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 12,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 13,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 13,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 14,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 14,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 15,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 15,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 16,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 16,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 17,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 17,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q3",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 18,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 18,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 19,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 19,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 20,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 20,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 21,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 21,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 22,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 22,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 23,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 23,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 24,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 24,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 25,
+     "sourceColumnIndex": 0,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 25,
+     "sourceColumnIndex": 1,
+     "kind": "question_text",
+     "content": null,
+     "runtimeEnabled": false,
+     "questionId": "Q4",
+     "contentBinding": "questionnaire.items.text",
+     "matchingMethod": "exact_normalized_source_text"
+    },
+    {
+     "sourceRowIndex": 26,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 26,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 27,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 27,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 28,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 28,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 29,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 29,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 30,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 30,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 31,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 31,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 32,
+     "sourceColumnIndex": 0,
+     "kind": "empty",
+     "content": null,
+     "runtimeEnabled": false
+    },
+    {
+     "sourceRowIndex": 32,
+     "sourceColumnIndex": 1,
+     "kind": "unresolved",
+     "content": null,
+     "runtimeEnabled": false
+    }
+   ],
+   "contentPolicy": {
+    "sampleCellValuesExcluded": true,
+    "patientCells": "bind_current_patient_session",
+    "responseCells": "bind_questionnaire_items_and_session_answers",
+    "unresolvedCells": "withhold",
+    "referenceCellsRequireReview": true
+   }
+  }
+ ],
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "ABUSI Scoring",
+    "text": "Each item is rated on a 7-point scale from 0, the complete absence of an urge (for example, never or none), to 6, the most severe level (for example, nearly all of the time or was not able to resist). The response anchors vary across items but follow the same severity progression. The total score is the sum of the five items and ranges from 0 to 30, with higher scores indicating a more severe urge to self-injure over the past week. There are no subscales and no reverse-scored items.\n",
+    "source_url": null
+   },
+   {
+    "title": "ABUSI Percentiles",
+    "text": "The NSSI Treatment Percentile compares the client with 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of non-suicidal self-injury, who averaged 18.4 (SD 8.0) at admission (Washburn et al., 2023). This is a severely affected group, so the 50th percentile describes the level typical of someone entering intensive treatment, and a client can score well below it while still reporting clinically relevant urges. The percentiles are estimated from the sample’s average and spread assuming a normal distribution, and are least accurate at the bottom of the scale, where roughly one in eight clients in treatment report no urge in a given week. The maximum score of 30 sits at the 93rd percentile.\nTotal score | Severity category | NSSI Treatment Percentile\n0 | None reported | 1.1\n1 | Mild | 1.5\n2 | Mild | 2\n3 | Mild | 3\n4 | Mild | 4\n5 | Mild | 5\n6 | Mild | 6\n7 | Mild | 8\n8 | Mild | 10\n9 | Mild | 12\n10 | Mild | 15\n11 | Mild | 18\n12 | Mild | 21\n13 | Mild | 25\n14 | Mild | 29\n15 | Moderate | 34\n16 | Moderate | 38\n17 | Moderate | 43\n18 | Moderate | 48\n19 | Moderate | 53\n20 | Moderate | 58\n21 | Moderate | 63\n22 | Moderate | 67\n23 | Moderate | 72\n24 | Moderate | 76\n25 | Severe | 80\n26 | Severe | 83\n27 | Severe | 86\n28 | Severe | 88\n29 | Severe | 91\n30 | Severe | 93\n",
+    "source_url": null
+   },
+   {
+    "title": "ABUSI Normative Data",
+    "text": "No community norms exist for the ABUSI. The NSSI Treatment Percentile is calculated by NovoPsych from a single clinical sample of 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of NSSI, who scored 18.4 (SD 8.0) at admission (Washburn et al., 2023). That sample was 87.4% female and 75.3% non-Hispanic white. The average closely matches the development sample a decade earlier (18.02, SD 8.45; Washburn et al., 2010), supporting the stability of the reference point, and clients reporting self-injurious disordered eating scored higher than those presenting with self-injury alone (21.3 compared with 17.2; Washburn et al., 2023).\n",
+    "source_url": null
+   },
+   {
+    "title": "Does a score of zero mean the person is not at risk?",
+    "text": "No. A score of zero means the client reported no urge to self-injure during the seven days the measure asks about. Among adolescents and adults admitted for treatment of self-injury, roughly one in eight reported no urge in the week before admission, so a zero is not unusual even in a population receiving intensive treatment. It is best read as information about that particular week rather than a general statement about the presence or absence of self-injury concerns.\n",
+    "source_url": null
+   },
+   {
+    "title": "The percentile compares my client with people in treatment for self-injury. How should I interpret that?",
+    "text": "With the comparison group in mind. Because everyone in the reference sample was admitted for treatment of NSSI, a client can score well below that group and still be reporting urges that are clinically relevant. This is why the severity category, which is based on what the response options themselves describe, is the primary basis for interpretation. The percentile adds context about how the client compares with a treatment population and should be read alongside the severity category, the individual item responses, and the broader clinical picture.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "68cfaa7edabbd240992645efa77a5b0b30bc66698a5cacbbe6759a67dbe6e9b5",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the ABUSI, \nsee here\n.\nABUSI Scoring",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "The NSSI Treatment Percentile compares the client with 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of non-suicidal self-injury, who averaged 18.4 (SD 8.0) at admission (Washburn et al., 2023).",
+   "This is a severely affected group, so the 50th percentile describes the level typical of someone entering intensive treatment, and a client can score well below it while still reporting clinically relevant urges.",
+   "The percentiles are estimated from the sample’s average and spread assuming a normal distribution, and are least accurate at the bottom of the scale, where roughly one in eight clients in treatment report no urge in a given week.",
+   "The maximum score of 30 sits at the 93rd percentile.",
+   "Total score | Severity category | NSSI Treatment Percentile",
+   "The NSSI Treatment Percentile is calculated by NovoPsych from a single clinical sample of 1,327 adolescents and adults admitted for partial hospitalisation or intensive outpatient treatment of NSSI, who scored 18.4 (SD 8.0) at admission (Washburn et al., 2023).",
+   "The percentile adds context about how the client compares with a treatment population and should be read alongside the severity category, the individual item responses, and the broader clinical picture."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": {
+  "$file": "assessment.report_configuration.referenceTables.json"
+ },
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "chart_series_not_resolved",
+   "chartIds": [
+    "d68cfaa7edabb_p1_chart_1"
+   ]
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 1,
+   "unresolvedCells": 32
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

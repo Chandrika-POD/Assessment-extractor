@@ -1,0 +1,286 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "part_a_raw",
+   "label": "Part A Raw",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 24,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+    "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "part_b_raw",
+   "label": "Part B Raw",
+   "item_ids": [
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 48,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+    "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "total_raw",
+   "label": "Total Raw",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "sum",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 72,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+    "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+  },
+  {
+   "id": "inattentive_count",
+   "label": "Inattentiveness symptom count",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 9,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+    "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 3,
+   "operator": ">=",
+   "item_thresholds": {
+    "Q1": 2,
+    "Q2": 2,
+    "Q3": 2,
+    "Q9": 2,
+    "Q12": 2,
+    "Q16": 2,
+    "Q18": 2
+   }
+  },
+  {
+   "id": "hyperactive_impulsive_count",
+   "label": "Hyperactivity/Impulsivity symptom count",
+   "item_ids": [
+    "Q5",
+    "Q6",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+   ],
+   "method": "count_threshold",
+   "multiplier": 1,
+   "value_field": "printed_value",
+   "minimum": 0,
+   "maximum": 9,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "url": null,
+    "sha256": "b39259c5ab7e853c8d5e0755498354822f2d92d1055bfd5bb789d870a062a573",
+    "retrieved_at": "2026-11-13T11:56:30.183289+00:00",
+    "section": "Scoring & Interpretation",
+    "method": "reviewed_explicit_source_rule"
+   },
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred.",
+   "threshold": 3,
+   "operator": ">=",
+   "item_thresholds": {
+    "Q1": 2,
+    "Q2": 2,
+    "Q3": 2,
+    "Q9": 2,
+    "Q12": 2,
+    "Q16": 2,
+    "Q18": 2
+   }
+  }
+ ],
+ "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+ "rules_provenance": null,
+ "source_rule_excerpts": [
+  "No single questionnaire diagnoses ADHD, and that applies to the ASRS-O as well. A score at or above the screening threshold means a person who knows the adult well has observed ADHD-consistent behaviours at a frequency that may warrant a comprehensive assessment. Diagnosis typically requires a comprehensive clinical evaluation that considers symptom history from childhood, functioning across settings, and whether the symptoms are better explained by another condition. The ASRS-O contributes one important source of information to that process: a structured account of the adult’s behaviour from someone who knows them well.",
+  "Corroborative screening and referral support: Observer ratings that reach the screening threshold strengthen the case for comprehensive assessment, and the structured report provides documentation of informant corroboration for referrers and prescribers throughout the diagnostic pathway.",
+  "The ASRS-O subscales are scored differently from the Part A, Part B, and total scores. Rather than summing the informant’s response options (0 to 4), each subscale scores symptoms dichotomously (i.e., present or absent). A symptom is counted when the informant rates the behaviour at or above its scoring threshold. For some behaviours, a rating of Sometimes or higher counts as an endorsed symptom (items 1-3, 9, 12, 16, 18); behaviours that are common in everyday life count only when rated Often or higher (items 4-8, 10, 11, 13-15, 17). The response table at the end of the report shows the level at which each item is counted; the scoring values displayed there are these dichotomous counting values (0 and 1), rather than the 0 to 4 frequency scores summed for Part A, Part B, and the Total.",
+  "The following categories apply only to the ASRS-O Part A score (items 1-6). Interpretation is based on two complementary approaches: the four interpretive categories below and a screening threshold of 14 or more for a positive observer screen. Both are derived from the validation research on the self-report ASRS Screener (Kessler et al., 2007) and reflect the current official scoring guidance (Harvard Medical School, 2024). These categories derive entirely from self-report ASRS research and have not been validated for observer ratings. They should therefore be regarded as approximate reference points for interpreting observer scores rather than as established cutoffs for informant data.",
+  "0 to 9: Not consistent with ADHD. The informant reports the observed behaviours occurring at a frequency well below the screening threshold.",
+  "14 to 17: Consistent with ADHD. The informant’s ratings reach the positive screening threshold of 14 or more, indicating observed behaviours at a level that may warrant further assessment.",
+  "A score of 14 or more on Part A meets the threshold for a positive observer screen. It indicates that a person who knows the adult well has observed ADHD-consistent behaviours at a clinically notable frequency; it does not establish a diagnosis. Observer ratings provide collateral information that complements, rather than substitutes for, self-report and clinical interview, and the ASRS-O results should be integrated with the broader clinical picture.",
+  "On first administration, the report presents two graphs. The first displays the Criterion (Part A) score along the 0 to 24 range, displayed against the four Part A interpretive categories and the screening threshold of 14.",
+  "Agreement Benchmarks From Other Adult ADHD Measures. The level of agreement Gray et al. (2014) found between self-report and observer forms of the ASRS is typical of informant ratings across instruments and populations. A meta-analysis of cross-informant correlations in adult psychopathology found average self-informant correlations of .43 for internalising and .44 for externalising problems when both parties completed parallel instruments (Achenbach et al., 2005). For adult ADHD specifically, self-partner agreement on the Conners’ Adult ADHD Rating Scales (CAARS), measured with intraclass correlations, ranged from .44 to .61 across symptom clusters in a clinical sample (Kooij et al., 2008), and self-informant agreement averaged .59 in a community sample of mixed informants completing the short observer form (Amador-Campos et al., 2014). The self–observer agreement observed for the ASRS therefore falls within the expected range for informant measures of adult ADHD, supporting the conclusion that the observer adaptation shows a pattern of agreement similar to informant versions of comparable scales."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "ASRS-O Scoring & Interpretation",
+   "text": "The ASRS-O consists of 18 items, each rated by the informant on a five-point frequency scale ranging from Never (0) to Very Often (4). The 18 items are divided into Part A (items 1–6) and Part B (items 7–18). Higher scores reflect more frequently observed ADHD-consistent behaviours. No percentile norms are available for observer ratings. Because the ASRS-O mirrors the item content of the self-report ASRS , scores from the two measures can be compared directly when both have been administered.\n\n",
+   "source_url": null
+  },
+  {
+   "title": "ASRS-O Scoring",
+   "text": "Results are presented as two complementary scoring approaches. Part A, Part B, and Total scores index the frequency of observed behaviours, while the subscales indicate the domain in which observed difficulties are concentrated.\nPart A, Part B, and Total Score:\nCriterion (Part A): items 1–6; range 0 to 24. Consists of the six items most predictive of ADHD diagnostic status and, when used alone, constitutes the six-item ASRS Screener.\nAdditional Symptoms (Part B): items 7–18; range 0 to 48. Provide additional information to support clinical interpretation beyond Part A.\nTotal Score: items 1–18; range 0 to 72; overall level of observed ADHD-consistent behaviours.\n\nThe ASRS-O subscales are scored differently from the Part A, Part B, and total scores. Rather than summing the informant’s response options (0 to 4), each subscale scores symptoms dichotomously (i.e., present or absent). A symptom is counted when the informant rates the behaviour at or above its scoring threshold. For some behaviours, a rating of Sometimes or higher counts as an endorsed symptom (items 1-3, 9, 12, 16, 18); behaviours that are common in everyday life count only when rated Often or higher (items 4-8, 10, 11, 13-15, 17). The response table at the end of the report shows the level at which each item is counted; the scoring values displayed there are these dichotomous counting values (0 and 1), rather than the 0 to 4 frequency scores summed for Part A, Part B, and the Total.\nASRS-O Subscales:\nInattentiveness (items 1–4, 7–11; range 0 to 9): observed difficulty sustaining attention, staying organised, remembering appointments, avoiding careless mistakes, and concentrating.\nHyperactivity/Impulsivity (Motor & Verbal) (items 5, 6, 12–18; range 0 to 9): comprising a motor component (items 5, 6, 12–14), reflecting observed difficulty sitting still, staying seated, and relaxing, and a verbal component (items 15–18), reflecting observed difficulty regulating how much the person talks, interrupting others, and waiting their turn.\nThe subscale score is the number of symptoms counted, also expressed as a percentage of symptoms endorsed — for example, 7 of 9 symptoms on the Inattentiveness subscale is shown as 78%. This symptom-counting approach matches how the subscales are scored on the self-report ASRS.\n\n",
+   "source_url": null
+  },
+  {
+   "title": "ASRS-O Part A Interpretive Categories",
+   "text": "The following categories apply only to the ASRS-O Part A score (items 1-6). Interpretation is based on two complementary approaches: the four interpretive categories below and a screening threshold of 14 or more for a positive observer screen. Both are derived from the validation research on the self-report ASRS Screener (Kessler et al., 2007) and reflect the current official scoring guidance (Harvard Medical School, 2024). These categories derive entirely from self-report ASRS research and have not been validated for observer ratings. They should therefore be regarded as approximate reference points for interpreting observer scores rather than as established cutoffs for informant data.\nASRS-O Interpretive Categories:\n0 to 9: Not consistent with ADHD. The informant reports the observed behaviours occurring at a frequency well below the screening threshold.\n10 to 13: Subthreshold. The informant reports some observed ADHD-consistent behaviours, below the level of a positive screen but potentially worth clinical attention in the context of other clinical information.\n14 to 17: Consistent with ADHD. The informant’s ratings reach the positive screening threshold of 14 or more, indicating observed behaviours at a level that may warrant further assessment.\n18 to 24: Highly consistent with ADHD. The informant reports observed ADHD-consistent behaviours at a high frequency across the screener items.\nA score of 14 or more on Part A meets the threshold for a positive observer screen. It indicates that a person who knows the adult well has observed ADHD-consistent behaviours at a clinically notable frequency; it does not establish a diagnosis. Observer ratings provide collateral information that complements, rather than substitutes for, self-report and clinical interview, and the ASRS-O results should be integrated with the broader clinical picture.\n",
+   "source_url": null
+  },
+  {
+   "title": "How should I interpret a difference between a client's self-report and the observer's ratings?",
+   "text": "Differences between the two perspectives are common and are themselves useful assessment information rather than a problem with either measure. Some adults rate their internal restlessness and mental effort required to stay focused higher than an observer can see from the outside; others under-recognise behaviours that people around them notice frequently. Research has found both patterns across adult ADHD populations. Exploring the discrepancy during a clinical interview, including asking what each rater based their answers on, can often help clarify how symptoms present across settings and help build a fuller picture of the adult’s functioning.\n",
+   "source_url": null
+  },
+  {
+   "title": "Why do the Part A interpretive categories come from self-report research?",
+   "text": "The ASRS was developed and validated as a self-report instrument, and no independently validated scoring system yet exists for observer versions. NovoPsych therefore applies the current official self-report screener thresholds as reference points for interpreting observer ratings, while clearly indicating that they have not been validated for observer versions. Although observer-specific thresholds have not been validated, the available informant research is broadly consistent with this approach. The report therefore makes the origin of the thresholds explicit so clinicians can interpret observer scores in the appropriate context.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [
+  {
+   "page": 1,
+   "text": "Criterion (Part A) score (Items 1–6):",
+   "y": 445.5,
+   "url": null,
+   "sha256": "d0408ea44b10841512c3e0bf11699549c366ff296615fda893bb8c4bdcb15fa7",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Additional Symptoms (Part B) score (Items 7–18):",
+   "y": 158.2,
+   "url": null,
+   "sha256": "d0408ea44b10841512c3e0bf11699549c366ff296615fda893bb8c4bdcb15fa7",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "Total Score (Part A + Part B, items 1–18)",
+   "y": 197.2,
+   "url": null,
+   "sha256": "d0408ea44b10841512c3e0bf11699549c366ff296615fda893bb8c4bdcb15fa7",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 2,
+   "text": "The ASRS-O also yields two symptom-count subscales, scored separately from the sums above: Inattentiveness (items 1–4 and 7–11) and Hyperactivity/Impulsivity (items 5, 6 and",
+   "y": 224.2,
+   "url": null,
+   "sha256": "d0408ea44b10841512c3e0bf11699549c366ff296615fda893bb8c4bdcb15fa7",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  }
+ ],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+}

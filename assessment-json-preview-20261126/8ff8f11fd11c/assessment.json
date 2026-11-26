@@ -1,0 +1,1088 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "child-dissociative-checklist-scale-cdc--8ff8f11fd11c",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Child Dissociative Checklist (CDC)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Child Dissociative Checklist (CDC) is a 20-item observer-report screening measure designed to identify dissociative symptoms in children aged 5-12 years. (Putnam et al., 1993 ).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [
+    "past 12 months"
+   ],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": ": Below is a list of behaviors that describe children. For each item that describes your child now or within the past 12 months.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "aa41eb1268985eeb9c49b6d17b383abc32ada60b1440c6ee5878403a26769844",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "pdf_1",
+    "label": "CDC Total Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 2,
+     "text": "CDC Total Score (sum of all 20 items)",
+     "y": 257.2,
+     "url": null,
+     "sha256": "aa41eb1268985eeb9c49b6d17b383abc32ada60b1440c6ee5878403a26769844"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   }
+  ],
+  "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+  "rules_provenance": null,
+  "source_rule_excerpts": [
+   "When the CDC score is at 12 or higher, further assessment for a dissociative disorder may be recommended as this threshold identified 96% of children meeting criteria for dissociative disorders in previous validation studies (Putnam et al., 1993). Scores at or above this threshold warrant additional attention and potential follow-up with structured interviews or other more comprehensive assessment to investigate the nature and extent of dissociative symptoms.",
+   "A score of 12 or higher has been established as the clinical cutoff for significant dissociation. This cutoff has shown a good ability to distinguish between children with dissociative disorders and non-clinical samples, with approximately 96% of children with diagnosed dissociative disorders scoring above this threshold (Putnam et al., 1993).",
+   "Category descriptors for the CDC were derived based on percentile distributions from the non-abused sample reported by Wherry et al. (2009), and in consideration of the wider literature. The clinical cutoff of 12 (Putnam et al., 1993) serves as the boundary between normal and mild-to-moderate dissociation. The percentile distribution of the non-dissociative sample shows the 1st-80th percentiles with equivalent scores of 0-11 within the typical range for most, and 81st-95th percentiles corresponding to scores 12-15 indicating elevated dissociation. The equivalent score range for the 99th-99.99th percentiles are scores 17-20, indicating high levels of dissociation, and the 99.99th percentile and greater corresponds to scores 21+, reflecting severe dissociative symptoms typically seen in dissociative disorders."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "CDC Scoring & Interpretation",
+    "text": "The CDC total score ranges from 0-40. Higher scores indicate more severe dissociative symptoms. While no formal subscales exist, clinicians may find it helpful to evaluate items in context of the domains described earlier (amnesia, identity confusion, depersonalization/derealization, perceptual disturbances, and mood/behavior fluctuations) to better understand specific symptoms.\n\nBased on research using the CDC, the following interpretive guidelines are recommended:\nNormal to mild : Score 0-11, 1st to 80th percentile: Within normal limits for most children.\nModerate : Score 12-15, 81st to 95th percentile: Above the typical range for non-dissociative children and may reflect some significant dissociative symptoms. Scores are common in children with histories of abuse or significant stressors.\nHigh : Score 17-20 = 99th to 99.98th percentile: Strong indication of clinically significant dissociative symptoms and potential traumatic etiology. Most children with dissociative disorders score in this range.\nSevere : Score ≥ 21= ≥ 99.99th percentile: Extreme level of dissociative symptoms, strongly suggestive of Dissociative Identity Disorder or other severe dissociative condition. Scores in this range are commonly seen in children with diagnosed dissociative disorders.\nThe total score is also expressed as a percentile rank, based on normative data from Endo et al. (2006) of non-dissocative children. This percentile contextualises the client’s score relative to the general population, indicating the percentage of individuals who scored lower than the client. For example, a score at the 85th percentile means that 85% of people in the community sample scored lower than the client, placing them in the upper range of dissociative experiences.\nWhen the CDC score is at 12 or higher, further assessment for a dissociative disorder may be recommended as this threshold identified 96% of children meeting criteria for dissociative disorders in previous validation studies (Putnam et al., 1993). Scores at or above this threshold warrant additional attention and potential follow-up with structured interviews or other more comprehensive assessment to investigate the nature and extent of dissociative symptoms.\nSignificant changes in the total score are indicated by shifts of half a standard deviation or greater (approximately 6 total score points or more) following the guidelines of the Minimally Important Difference (Turner et al., 2010).\nOn first administration a bar graph showing the CDC total score is displayed.\n\nIn addition to the bar graph, a comparison graph illustrating the client’s scores relative to dissociative and non-dissociative reference groups are displayed.\n\nWhen the assessment is administered multiple times, a longitudinal line graph of the total CDC score is generated to track changes over time.\n\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Putnam, F. W., Helmers, K., & Trickett, P. K. (1993). Development, reliability, and validity of a child dissociation scale. Child Abuse & Neglect, 17 (6), 731–741. https://doi.org/10.1016/0145-2134(93)90006-Q",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "American American Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). American Psychiatric Publishing.\nEndo, T., Sugiyama, T., & Someya, T. (2006). Attention-deficit/hyperactivity disorder and dissociative disorder among abused children. Psychiatry and Clinical Neurosciences, 60 (4), 434–438. https://doi.org/10.1111/j.1440-1819.2006.01528.x\nHornstein, N. L. (1993). Recognition and differential diagnosis of dissociative disorders in children and adolescents. Dissociation, 6 (2–3), 136–144.\nHulette, A. C., Freyd, J. J., Pears, K. C., Kim, H. K., Fisher, P. A., & Becker-Blease, K. A. (2008). Dissociation and posttraumatic symptoms in maltreated preschool children. Journal of Child & Adolescent Trauma, 1 (2), 93–108. https://doi.org/10.1080/19361520802083980\nKisiel, C. L., & Lyons, J. S. (2001). Dissociation as a mediator of psychopathology among sexually abused children and adolescents. American Journal of Psychiatry, 158 (7), 1034–1039. https://doi.org/10.1176/appi.ajp.158.7.1034\nLewis, J., Binion, G., Rogers, M., & Zalewski, M. (2020). The associations of maternal emotion dysregulation and early child dissociative behaviors. Journal of Trauma & Dissociation, 21 (2), 203–216. https://doi.org/10.1080/15299732.2019.1678211\nMacfie, J., Cicchetti, D., & Toth, S. L. (2001a). The development of dissociation in maltreated preschool-aged children. Development and Psychopathology, 13 (2), 233–254. https://doi.org/10.1017/S0954579401002036\nMacfie, J., Cicchetti, D., & Toth, S. L. (2001b). Dissociation in maltreated versus nonmaltreated preschool-aged children. Child Abuse & Neglect, 25 (9), 1253–1267. https://doi.org/10.1016/S0145-2134(01)00266-6\nMilot, T., Plamondon, A., Éthier, L. S., Lemelin, J., St-Laurent, D., & Rousseau, M. (2013). Validity of CBCL-derived PTSD and dissociation scales: Further evidence in a sample of neglected children and adolescents. Child Maltreatment, 18 (2), 122–128. https://doi.org/10.1177/1077559513490246\nPutnam, F. W. (1997). Dissociation in children and adolescents: A developmental perspective . Guilford Press.\nPutnam, F. W., Helmers, K., & Trickett, P. K. (1993). Development, reliability, and validity of a child dissociation scale. Child Abuse & Neglect, 17 (6), 731–741. https://doi.org/10.1016/0145-2134(93)90006-Q\nWherry, J. N., Jolly, J. B., Feldman, J., Adam, B., & Manjanatha, S. (1997). The Child Dissociative Checklist: Preliminary findings of a screening measure. Journal of Child Sexual Abuse, 3 (3), 51–66. https://doi.org/10.1300/J070v03n03_04\nWherry, J. N., Neil, D. A., & Taylor, T. N. (2009). Pathological dissociation as measured by the Child Dissociative Checklist. Journal of Child Sexual Abuse, 18 (1), 93–102. https://doi.org/10.1080/10538710802584643",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Child Dissociative Checklist (CDC) PDF",
+   "source_url": null,
+   "sha256": "f3161c5e89cf2486d80766afe157c5c554cebb5a112e79dde886236336113f34",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f3161c5e89cf2486d80766afe157c5c554cebb5a112e79dde886236336113f34.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "International Trauma Questionnaire – Child and Adolescent Version (ITQ-CA)",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0b229cfacc23da5297cceefb8d205011774375d9095ab8a93538bbd825bba3a8",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0b229cfacc23da5297cceefb8d205011774375d9095ab8a93538bbd825bba3a8.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "090390502f136e223f37c8a6eac883a62b62b8c16f2c41f720e07baa1845e650",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/090390502f136e223f37c8a6eac883a62b62b8c16f2c41f720e07baa1845e650.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Sample Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Emerson Bartholomew",
+   "source_url": null,
+   "sha256": "136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/136918e8409af32700be35b5d1f9b5a62396d10df0b741b9953e3e5e549dd972.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "93389c081fab1d0b63688f3f4c9bf92bf82093c154288656834e750a20d7e62b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/93389c081fab1d0b63688f3f4c9bf92bf82093c154288656834e750a20d7e62b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CDC Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "c89b9d2bb25e62fdc897bad7c360f1aee01aa91c0305e00249db9c6fff5582b8",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c89b9d2bb25e62fdc897bad7c360f1aee01aa91c0305e00249db9c6fff5582b8.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CDC Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "d0060749f28f2a884884d6d0757e8e324f980db78611072618a0c248d35d36d2",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/d0060749f28f2a884884d6d0757e8e324f980db78611072618a0c248d35d36d2.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CDC Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "f224b2299be2c28c63d2055c39b689ffc13fae56587daa0588d551ff86bbe547",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f224b2299be2c28c63d2055c39b689ffc13fae56587daa0588d551ff86bbe547.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CDC Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "fc91fc814ed76b7cce1a0f75b941035dcac77ce52244cb73c2d4b7575ee883ba",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/fc91fc814ed76b7cce1a0f75b941035dcac77ce52244cb73c2d4b7575ee883ba.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "CDC Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Child Dissociative Checklist (CDC) using a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download PDF",
+   "source_url": null,
+   "sha256": "aa41eb1268985eeb9c49b6d17b383abc32ada60b1440c6ee5878403a26769844",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/aa41eb1268985eeb9c49b6d17b383abc32ada60b1440c6ee5878403a26769844.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "CDC Review",
+   "source_url": null,
+   "sha256": "546ea09ec4993064649e54179bf1b533e06b065028a138be8ba6f1a9baa57362",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/546ea09ec4993064649e54179bf1b533e06b065028a138be8ba6f1a9baa57362.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "Sample Results",
+   "source_url": null,
+   "sha256": "4e92cb51696f493dfd565f30b45a7e7cea1d3cd2717a5fb36c66a36624607770",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/4e92cb51696f493dfd565f30b45a7e7cea1d3cd2717a5fb36c66a36624607770.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 20
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "aa41eb1268985eeb9c49b6d17b383abc32ada60b1440c6ee5878403a26769844",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/aa41eb1268985eeb9c49b6d17b383abc32ada60b1440c6ee5878403a26769844.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "546ea09ec4993064649e54179bf1b533e06b065028a138be8ba6f1a9baa57362",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/546ea09ec4993064649e54179bf1b533e06b065028a138be8ba6f1a9baa57362.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "CDC Review"
+   ],
+   "page_count": 17,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "pdf_1",
+    "label": "CDC Total Score",
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "pdf_1",
+    "title": "CDC Total Score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "pdf_1",
+      "label": "CDC Total Score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "aa41eb1268985eeb9c49b6d17b383abc32ada60b1440c6ee5878403a26769844",
+   "guidance_titles": [
+    "CDC Scoring & Interpretation"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "pdf_1"
+   ],
+   "raw_calculation_status": "draft_rules_available",
+   "interpretation_status": "requires_review",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "pdf_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "pdf_1",
+    "label": "CDC Total Score",
+    "rule_id": "pdf_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q6",
+    "question_ref": "/questionnaire/items/5",
+    "source_label": "6",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q7",
+    "question_ref": "/questionnaire/items/6",
+    "source_label": "7",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q8",
+    "question_ref": "/questionnaire/items/7",
+    "source_label": "8",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q9",
+    "question_ref": "/questionnaire/items/8",
+    "source_label": "9",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q10",
+    "question_ref": "/questionnaire/items/9",
+    "source_label": "10",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q11",
+    "question_ref": "/questionnaire/items/10",
+    "source_label": "11",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q12",
+    "question_ref": "/questionnaire/items/11",
+    "source_label": "12",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q13",
+    "question_ref": "/questionnaire/items/12",
+    "source_label": "13",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q14",
+    "question_ref": "/questionnaire/items/13",
+    "source_label": "14",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q15",
+    "question_ref": "/questionnaire/items/14",
+    "source_label": "15",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q16",
+    "question_ref": "/questionnaire/items/15",
+    "source_label": "16",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q17",
+    "question_ref": "/questionnaire/items/16",
+    "source_label": "17",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q18",
+    "question_ref": "/questionnaire/items/17",
+    "source_label": "18",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q19",
+    "question_ref": "/questionnaire/items/18",
+    "source_label": "19",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q20",
+    "question_ref": "/questionnaire/items/19",
+    "source_label": "20",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "b0fdd28971f076c91e31f8e3df40bd6139c77ca2c6ff29b47f522175ec248d2f",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "pdf_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "pdf_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T08:28:23.587285+00:00",
+  "raw_extraction_sha256": "84c09914f9d0ff0829fc3dede92c20fed13a3914aa154c70bc50b8f89b79b0f7",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Child"
+   },
+   {
+    "url": null,
+    "title": "Trauma"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1016/0145-2134(93)90006-Q",
+    "title": "https://doi.org/10.1016/0145-2134(93)90006-Q"
+   },
+   {
+    "url": "https://doi.org/10.1111/j.1440-1819.2006.01528.x",
+    "title": "https://doi.org/10.1111/j.1440-1819.2006.01528.x"
+   },
+   {
+    "url": "https://doi.org/10.1080/19361520802083980",
+    "title": "https://doi.org/10.1080/19361520802083980"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.ajp.158.7.1034",
+    "title": "https://doi.org/10.1176/appi.ajp.158.7.1034"
+   },
+   {
+    "url": "https://doi.org/10.1080/15299732.2019.1678211",
+    "title": "https://doi.org/10.1080/15299732.2019.1678211"
+   },
+   {
+    "url": "https://doi.org/10.1017/S0954579401002036",
+    "title": "https://doi.org/10.1017/S0954579401002036"
+   },
+   {
+    "url": "https://doi.org/10.1016/S0145-2134(01)00266-6",
+    "title": "https://doi.org/10.1016/S0145-2134(01)00266-6"
+   },
+   {
+    "url": "https://doi.org/10.1177/1077559513490246",
+    "title": "https://doi.org/10.1177/1077559513490246"
+   },
+   {
+    "url": "https://doi.org/10.1300/J070v03n03_04",
+    "title": "https://doi.org/10.1300/J070v03n03_04"
+   },
+   {
+    "url": "https://doi.org/10.1080/10538710802584643",
+    "title": "https://doi.org/10.1080/10538710802584643"
+   },
+   {
+    "url": null,
+    "title": "Adolescent dissociation questionnaire"
+   },
+   {
+    "url": null,
+    "title": "Paediatric complex trauma scale"
+   },
+   {
+    "url": null,
+    "title": "Download PDF"
+   },
+   {
+    "url": null,
+    "title": "Sample Results"
+   },
+   {
+    "url": null,
+    "title": "CDC Review"
+   },
+   {
+    "url": null,
+    "title": "Emerson Bartholomew"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Trauma-Focused CBT (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Play Therapy (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

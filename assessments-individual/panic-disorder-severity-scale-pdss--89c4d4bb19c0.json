@@ -1,0 +1,3527 @@
+{
+  "schema_version": "2.3.0-clean-export.4",
+  "assessment_id": "panic-disorder-severity-scale-pdss--89c4d4bb19c0",
+  "definition_version": "1.0.0-draft.6",
+  "status": "draft",
+  "assessment": {
+    "name": "Panic Disorder Severity Scale (PDSS)",
+    "language": "en",
+    "description": "The self-report Panic Disorder Severity Scale (PDSS, also known as the PDSS-SR; Houck et al., 2002) is a 7-item measure that assesses the overall severity of panic disorder in individuals aged 18+ with an established or suspected diagnosis. The PDSS captures panic attack frequency, panic-related distress, anticipatory anxiety, avoidance behaviour, and functional impairment over the past week. For respondents aged 8-17, the Revised Child Anxiety and Depression Scale ( RCADS-Child ) Panic Disorder subscale is available on NovoPsych as an age-appropriate alternative.",
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [],
+      "status": "requires_review"
+    }
+  },
+  "administration": {
+    "instructions": "Several of the following questions refer to panic attacks and limited symptom attacks. For this questionnaire we define a panic attack as a sudden rush of fear or discomfort accompanied by at least 4 of the symptoms listed below. In order to qualify as a sudden rush, the symptoms must peak within 10 minutes. Episodes like panic attacks but having fewer than 4 of the listed symptoms are called limited symptom attacks. Here are the symptoms to count: Rapid or pounding heartbeat, Chest pain or discomfort, Chills or hot flushes, Sweating, Nausea, Trembling or shaking, Dizziness or faintness, Fear of losing control or going crazy, Breathlessness, Feelings of unreality, Fear of dying, Feeling of choking, Numbness or tingling.",
+    "instructions_source": {
+      "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7"
+    ],
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 7,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "How many panic and limited symptoms attacks did you have during the week?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+          "page": 1,
+          "bbox": [
+            33.75,
+            226.14,
+            565.92,
+            319.5
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "No panic or limited symptom episodes",
+            "source_label": "No panic or limited symptom episodes",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Mild: no full panic attacks and no more than 1 limited symptom attack/day",
+            "source_label": "Mild: no full panic attacks and no more than 1 limited symptom attack/day",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Moderate: 1 or 2 full panic attacks and/or multiple limited symptom attacks/day",
+            "source_label": "Moderate: 1 or 2 full panic attacks and/or multiple limited symptom attacks/day",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Severe: more than 2 full attacks but not more than 1/day on average",
+            "source_label": "Severe: more than 2 full attacks but not more than 1/day on average",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Extreme: full panic attacks occurred more than once a day, more days than not",
+            "source_label": "Extreme: full panic attacks occurred more than once a day, more days than not",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "If you had any panic attacks during the past week, how distressing (uncomfortable, frightening) were they while they were happening? (If you had more than one, give an average rating. If you didn't have any panic attacks but did have limited symptom attacks, answer for the limited symptom attacks.)",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS2",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+          "page": 1,
+          "bbox": [
+            33.75,
+            317.64,
+            565.92,
+            432.0
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all distressing, or no panic or limited symptom attacks during the past week",
+            "source_label": "Not at all distressing, or no panic or limited symptom attacks during the past week",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Mildly distressing (not too intense)",
+            "source_label": "Mildly distressing (not too intense)",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Moderately distressing (intense, but still manageable)",
+            "source_label": "Moderately distressing (intense, but still manageable)",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Severely distressing (very intense)",
+            "source_label": "Severely distressing (very intense)",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Extremely distressing (extreme distress during all attacks)",
+            "source_label": "Extremely distressing (extreme distress during all attacks)",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "During the past week, how much have you worried or felt anxious about when your next panic attack would occur or about fears related to the attacks (for example, that they could mean you have physical or mental health problems or could cause you social embarrassment)?",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS3",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+          "page": 1,
+          "bbox": [
+            33.75,
+            430.14,
+            565.92,
+            534.0
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "Not at all",
+            "source_label": "Not at all",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Occasionally or only mildly",
+            "source_label": "Occasionally or only mildly",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Frequently or moderately",
+            "source_label": "Frequently or moderately",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Very often or to a very disturbing degree",
+            "source_label": "Very often or to a very disturbing degree",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Nearly constantly and to a disabling extent",
+            "source_label": "Nearly constantly and to a disabling extent",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "During the past week were there any places or situations (e.g., public transportation, movie theaters, crowds, bridges, tunnels, shopping malls, being alone) you avoided, or felt afraid of (uncomfortable in, wanted to avoid or leave), because of fear of having a panic attack? Are there any other situations that you would have avoided or been afraid of if they had come up during the week, for the same reason? If yes to either question, please rate your level of fear and avoidance this past week.",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS4",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+          "page": 1,
+          "bbox": [
+            33.75,
+            532.89,
+            565.92,
+            683.25
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "None: no fear or avoidance",
+            "source_label": "None: no fear or avoidance",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Mild: occasional fear and/or avoidance but I could usually confront or endure the situation. There was little or no modification of my lifestyle due to this",
+            "source_label": "Mild: occasional fear and/or avoidance but I could usually confront or endure the situation. There was little or no modification of my lifestyle due to this",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Moderate: noticeable fear and/or avoidance but still manageable. I avoided some situations, but I could confront them with a companion. There was some modification of my lifestyle because of this, but my overall functioning was not impaired",
+            "source_label": "Moderate: noticeable fear and/or avoidance but still manageable. I avoided some situations, but I could confront them with a companion. There was some modification of my lifestyle because of this, but my overall functioning was not impaired",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Severe: extensive avoidance. Substantial modification of my lifestyle was required to accommodate the avoidance making it difficult to manage usual activities",
+            "source_label": "Severe: extensive avoidance. Substantial modification of my lifestyle was required to accommodate the avoidance making it difficult to manage usual activities",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Extreme: pervasive disabling fear and/or avoidance. Extensive modification in my lifestyle was required such that important tasks were not performed",
+            "source_label": "Extreme: pervasive disabling fear and/or avoidance. Extensive modification in my lifestyle was required such that important tasks were not performed",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "During the past week, were there any activities (e.g., physical exertion, sexual relations, taking a hot shower or bath, drinking coffee, watching an exciting or scary movie) that you avoided, or felt afraid of (uncomfortable doing, wanted to avoid or stop), because they caused physical sensations like those you feel during panic attacks or that you were afraid might trigger a panic attack? Are there any other activities that you would have avoided or been afraid of if they had come up during the week for that reason? If yes to either question, please rate your level of fear and avoidance of those activities this past week.",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS5",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+          "page": 2,
+          "bbox": [
+            33.75,
+            39.37,
+            565.92,
+            194.25
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "No fear or avoidance of situations or activities because of distressing physical sensations",
+            "source_label": "No fear or avoidance of situations or activities because of distressing physical sensations",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Mild: occasional fear and/or avoidance, but usually I could confront or endure with little distress activities that cause physical sensations. There was little modification of my lifestyle due to this",
+            "source_label": "Mild: occasional fear and/or avoidance, but usually I could confront or endure with little distress activities that cause physical sensations. There was little modification of my lifestyle due to this",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Moderate: noticeable avoidance but still manageable. There was definite, but limited, modification of my lifestyle such that my overall functioning was not impaired",
+            "source_label": "Moderate: noticeable avoidance but still manageable. There was definite, but limited, modification of my lifestyle such that my overall functioning was not impaired",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Severe: extensive avoidance. There was substantial modification of my lifestyle or interference in my functioning",
+            "source_label": "Severe: extensive avoidance. There was substantial modification of my lifestyle or interference in my functioning",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Extreme: pervasive and disabling avoidance. There was extensive modification in my lifestyle due to this such that important tasks or activities were not performed",
+            "source_label": "Extreme: pervasive and disabling avoidance. There was extensive modification in my lifestyle due to this such that important tasks or activities were not performed",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "During the past week, how much did the above symptoms altogether (panic and limited symptom attacks, worry about attacks, and fear of situations and activities because of attacks) interfere with your ability to work or carry out your responsibilities at home? (If your work or home responsibilities were less than usual this past week, answer how you think you would have done if the responsibilities had been usual.)",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS6",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+          "page": 2,
+          "bbox": [
+            33.75,
+            191.62,
+            565.92,
+            306.0
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "No interference with work or home responsibilities",
+            "source_label": "No interference with work or home responsibilities",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Slight interference with work or home responsibilities, but I could do nearly everything I could if I didn't have these problems",
+            "source_label": "Slight interference with work or home responsibilities, but I could do nearly everything I could if I didn't have these problems",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Significant interference with work or home responsibilities, but I still could manage to do the things I needed to do",
+            "source_label": "Significant interference with work or home responsibilities, but I still could manage to do the things I needed to do",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Substantial impairment in work or home responsibilities; there were many important things I couldn't do because of these problems",
+            "source_label": "Substantial impairment in work or home responsibilities; there were many important things I couldn't do because of these problems",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Extreme, incapacitating impairment such that I was essentially unable to manage any work or home responsibilities",
+            "source_label": "Extreme, incapacitating impairment such that I was essentially unable to manage any work or home responsibilities",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "During the past week, how much did panic and limited symptom attacks, worry about attacks and fear of situations and activities because of attacks interfere with your social life? (If you didn't have many opportunities to socialize this past week, answer how you think you would have done if you did have opportunities.)",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS7",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+          "page": 2,
+          "bbox": [
+            33.75,
+            303.37,
+            565.92,
+            417.75
+          ],
+          "method": "pdf_stacked_response_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4",
+              "O5"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "No interference",
+            "source_label": "No interference",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "Slight interference with social activities, but I could do nearly everything I could if I didn't have these problems.",
+            "source_label": "Slight interference with social activities, but I could do nearly everything I could if I didn't have these problems.",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "Significant interference with social activities but I could manage to do most things if I made the effort",
+            "source_label": "Significant interference with social activities but I could manage to do most things if I made the effort",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "Substantial impairment in social activities; there are many social things I couldn't do because of these problems",
+            "source_label": "Substantial impairment in social activities; there are many social things I couldn't do because of these problems",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          },
+          {
+            "id": "O5",
+            "text": "Extreme, incapacitating impairment, such that there was hardly anything social I could do",
+            "source_label": "Extreme, incapacitating impairment, such that there was hardly anything social I could do",
+            "label_origin": "printed_label",
+            "printed_value": 4,
+            "score": 4,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "pdf_1"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "No panic or limited symptom episodes",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "No panic or limited symptom episodes",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Mild: no full panic attacks and no more than 1 limited symptom attack/day",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Mild: no full panic attacks and no more than 1 limited symptom attack/day",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Moderate: 1 or 2 full panic attacks and/or multiple limited symptom attacks/day",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Moderate: 1 or 2 full panic attacks and/or multiple limited symptom attacks/day",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Severe: more than 2 full attacks but not more than 1/day on average",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Severe: more than 2 full attacks but not more than 1/day on average",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Extreme: full panic attacks occurred more than once a day, more days than not",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Extreme: full panic attacks occurred more than once a day, more days than not",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS2",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Not at all distressing, or no panic or limited symptom attacks during the past week",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Not at all distressing, or no panic or limited symptom attacks during the past week",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Mildly distressing (not too intense)",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Mildly distressing (not too intense)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Moderately distressing (intense, but still manageable)",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Moderately distressing (intense, but still manageable)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Severely distressing (very intense)",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Severely distressing (very intense)",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Extremely distressing (extreme distress during all attacks)",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Extremely distressing (extreme distress during all attacks)",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS3",
+        "options": [
+          {
+            "id": "O1",
+            "label": "Not at all",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "Not at all",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Occasionally or only mildly",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Occasionally or only mildly",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Frequently or moderately",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Frequently or moderately",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Very often or to a very disturbing degree",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Very often or to a very disturbing degree",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Nearly constantly and to a disabling extent",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Nearly constantly and to a disabling extent",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS4",
+        "options": [
+          {
+            "id": "O1",
+            "label": "None: no fear or avoidance",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "None: no fear or avoidance",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Mild: occasional fear and/or avoidance but I could usually confront or endure the situation. There was little or no modification of my lifestyle due to this",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Mild: occasional fear and/or avoidance but I could usually confront or endure the situation. There was little or no modification of my lifestyle due to this",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Moderate: noticeable fear and/or avoidance but still manageable. I avoided some situations, but I could confront them with a companion. There was some modification of my lifestyle because of this, but my overall functioning was not impaired",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Moderate: noticeable fear and/or avoidance but still manageable. I avoided some situations, but I could confront them with a companion. There was some modification of my lifestyle because of this, but my overall functioning was not impaired",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Severe: extensive avoidance. Substantial modification of my lifestyle was required to accommodate the avoidance making it difficult to manage usual activities",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Severe: extensive avoidance. Substantial modification of my lifestyle was required to accommodate the avoidance making it difficult to manage usual activities",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Extreme: pervasive disabling fear and/or avoidance. Extensive modification in my lifestyle was required such that important tasks were not performed",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Extreme: pervasive disabling fear and/or avoidance. Extensive modification in my lifestyle was required such that important tasks were not performed",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS5",
+        "options": [
+          {
+            "id": "O1",
+            "label": "No fear or avoidance of situations or activities because of distressing physical sensations",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "No fear or avoidance of situations or activities because of distressing physical sensations",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Mild: occasional fear and/or avoidance, but usually I could confront or endure with little distress activities that cause physical sensations. There was little modification of my lifestyle due to this",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Mild: occasional fear and/or avoidance, but usually I could confront or endure with little distress activities that cause physical sensations. There was little modification of my lifestyle due to this",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Moderate: noticeable avoidance but still manageable. There was definite, but limited, modification of my lifestyle such that my overall functioning was not impaired",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Moderate: noticeable avoidance but still manageable. There was definite, but limited, modification of my lifestyle such that my overall functioning was not impaired",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Severe: extensive avoidance. There was substantial modification of my lifestyle or interference in my functioning",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Severe: extensive avoidance. There was substantial modification of my lifestyle or interference in my functioning",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Extreme: pervasive and disabling avoidance. There was extensive modification in my lifestyle due to this such that important tasks or activities were not performed",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Extreme: pervasive and disabling avoidance. There was extensive modification in my lifestyle due to this such that important tasks or activities were not performed",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS6",
+        "options": [
+          {
+            "id": "O1",
+            "label": "No interference with work or home responsibilities",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "No interference with work or home responsibilities",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Slight interference with work or home responsibilities, but I could do nearly everything I could if I didn't have these problems",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Slight interference with work or home responsibilities, but I could do nearly everything I could if I didn't have these problems",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Significant interference with work or home responsibilities, but I still could manage to do the things I needed to do",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Significant interference with work or home responsibilities, but I still could manage to do the things I needed to do",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Substantial impairment in work or home responsibilities; there were many important things I couldn't do because of these problems",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Substantial impairment in work or home responsibilities; there were many important things I couldn't do because of these problems",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Extreme, incapacitating impairment such that I was essentially unable to manage any work or home responsibilities",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Extreme, incapacitating impairment such that I was essentially unable to manage any work or home responsibilities",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      },
+      {
+        "id": "RS7",
+        "options": [
+          {
+            "id": "O1",
+            "label": "No interference",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "No interference",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "Slight interference with social activities, but I could do nearly everything I could if I didn't have these problems.",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "Slight interference with social activities, but I could do nearly everything I could if I didn't have these problems.",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "Significant interference with social activities but I could manage to do most things if I made the effort",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "Significant interference with social activities but I could manage to do most things if I made the effort",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "Substantial impairment in social activities; there are many social things I couldn't do because of these problems",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "Substantial impairment in social activities; there are many social things I couldn't do because of these problems",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O5",
+            "label": "Extreme, incapacitating impairment, such that there was hardly anything social I could do",
+            "printed_value": 4,
+            "score": 4,
+            "display_label": "Extreme, incapacitating impairment, such that there was hardly anything social I could do",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "pdf_1",
+        "label": "Total Score",
+        "method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ],
+        "multiplier": 1.0,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 28.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "page": 2,
+          "text": "Total Score (sum of all 7 items)",
+          "y": 442.5,
+          "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38"
+        },
+        "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+      }
+    ],
+    "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+    "rules_provenance": null,
+    "source_rule_excerpts": [
+      "The PDSS includes both full panic attacks and limited symptom attacks in its assessment. In the instructions presented to respondents, a panic attack is defined as a sudden surge of fear or discomfort with at least four symptoms (e.g., heart palpitations, breathlessness, dizziness) that peak within minutes, whereas limited symptom attacks involve fewer than four symptoms. By incorporating both, the measure captures the full range of panic-related experiences rather than focusing only on full-threshold attacks.",
+      "Each item is rated on a 5-point scale, where 0 represents the complete absence of panic disorder symptoms (e.g., ‘not at all distressing’, ‘no panic’) and 4 represents the most severe level (e.g., ‘extremely distressing’, ‘nearly constant’) over the past week. Response anchors vary across items but follow the same severity progression. The PDSS total score is the sum of all seven items, yielding a possible range of 0 to 28. Higher scores indicate greater panic disorder symptom severity. In addition to the total score, a composite score (average of all items) is computed and ranges from 0 to 4.",
+      "To support clinical interpretation of the average score (because PDSS does not have published empirical cut-off scores for severity classification), the composite score is categorised below using the response scale anchors built into the measure itself. Each PDSS item is rated on a 0–4 scale, where 0 = absent, 1 = mild, 2 = moderate, 3 = severe, and 4 = extreme, and the severity descriptors below apply these same anchors to the average score across all seven items.",
+      "Absent or Limited (average score 0 to 0.49): The client’s average item rating fell in the absent or limited range, indicating minimal or no current panic-related difficulties over the past week.",
+      "Mild (average score 0.50 to 1.49): The client’s average item rating fell in the mild range. Panic symptoms have been present but appear generally manageable over the past week, with little modification to lifestyle or functioning.",
+      "Moderate (average score 1.50 to 2.49): Moderate panic-related difficulty over the past week, with symptoms noticeable but generally still manageable and overall functioning not yet significantly impaired. Individual item scores may vary in severity.",
+      "Severe (average score 2.50 to 3.49): The client’s average item rating fell in the severe range, indicating that panic disorder is causing extensive difficulty over the past week, with substantial impact on lifestyle and functioning. Individual item scores may vary in severity.",
+      "Extreme (average score 3.50 to 4.00): The client’s average item rating fell in the extreme range, indicating that panic symptoms are likely causing pervasive, disabling difficulty across multiple life domains over the past week.",
+      "Note: These are response-scale-derived categories, not empirically validated diagnostic thresholds. Because the average score summarises across all seven items, high distress in specific domains may be masked by lower scores elsewhere. Clinicians should review individual item scores. Any item rated 3 (severe) or 4 (extreme) may indicate significant impairment in that domain, even if the overall average is lower.",
+      "Results are presented in a summary table reporting the total score, average score, and severity descriptor.",
+      "A horizontal bar chart is displayed on the first administration only, and shows the respondent’s average score as a horizontal bar against colour-coded severity descriptor bands spanning the 0 to 4 scale.",
+      "The PDSS item responses chart displays each of the seven PDSS domains as a horizontal bar on the 0-4 response scale. This visual profile allows clinicians to quickly identify which specific domains are driving the respondent’s overall score and where the greatest difficulties lie. As each item uses domain-specific response anchors, the severity band descriptors from the average score chart are not applied here.",
+      "A line plot is displayed when two or more administrations of the PDSS are completed. It plots the respondent’s average score over time, with each data point labelled with its value and the administration date on the horizontal axis.",
+      "The PDSS items are displayed as individual line graphs across administrations, with domain-specific severity descriptors reflecting the unique response anchors for each item. These charts allow clinicians to monitor changes in specific domains over time and identify patterns that may not be apparent from the average score alone.",
+      "The PDSS was originally developed by Shear and colleagues (1997) as a brief clinician-administered measure of panic disorder severity, modelled after the Yale-Brown Obsessive Compulsive Scale (Y-BOCS). It was later adapted into a self-report format (the PDSS-SR) to enable practical, repeated symptom monitoring without the need for a trained interviewer (Houck et al., 2002). Houck and colleagues (2002) found a strong correspondence between the self-report and clinician-administered versions (ICC = .81), though self-report scores were on average 2.5 points lower than clinician-rated scores. The self-report version demonstrated comparable internal consistency, test-retest reliability, and sensitivity to change.",
+      "Houck and colleagues (2002) reported a mean decrease of 7.3 points (SD = 5.1) on the PDSS self-report version total score (0 to 28 scale) following cognitive-behavioural treatment, corresponding to improvement from a pre-treatment average of 13.3 to a post-treatment average of 6.1. These findings support the use of the PDSS for being sensitive to clinically meaningful change as part of monitoring treatment response over time."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "Scoring the Panic Disorder Severity Scale (PDSS)",
+        "text": "Each item is rated on a 5-point scale, where 0 represents the complete absence of panic disorder symptoms (e.g., ‘not at all distressing’, ‘no panic’) and 4 represents the most severe level (e.g., ‘extremely distressing’, ‘nearly constant’) over the past week. Response anchors vary across items but follow the same severity progression. The PDSS total score is the sum of all seven items, yielding a possible range of 0 to 28. Higher scores indicate greater panic disorder symptom severity. In addition to the total score, a composite score (average of all items) is computed and ranges from 0 to 4.\n"
+      },
+      {
+        "title": "PDSS Change Score Interpretation",
+        "text": "When PDSS scores are available from multiple timepoints, changes in scores from the baseline administration can provide valuable information about the effectiveness of interventions or symptom trajectory. Changes of at least 0.5 standard deviations on measures are generally considered the minimally important difference (MID; Norman et al., 2003; Turner et al., 2010).\nBased on a standard deviation of 6.6 from a self-report clinical sample using the full 7-item PDSS (Houck et al., 2002, N = 108, SD = 6.6), the minimally important difference for the PDSS total score is 3 points.\nChanges in PDSS total scores are categorised as:\nDecrease of 3 or more points: suggests clinically meaningful improvement in panic disorder symptoms\nIncrease of 3 or more points: suggests clinically meaningful worsening of panic disorder symptoms\nMinimal change: increase or decrease of 1 or 2 points, which suggests relatively stable panic severity\n"
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [
+      {
+        "page": 1,
+        "text": "the attacks (for example, that they could mean you have physical or mental health problems or could cause you social embarrassment)?",
+        "y": 453.8,
+        "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      },
+      {
+        "page": 2,
+        "text": "A Composite Score (range 0–4) can also be calculated by averaging the seven item scores (Total Score ÷ 7).",
+        "y": 467.2,
+        "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      }
+    ],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+  },
+  "context_sections": [
+    {
+      "id": "C1",
+      "title": "Panic Disorder Severity Scale (PDSS)",
+      "text": "The self-report Panic Disorder Severity Scale (PDSS, also known as the PDSS-SR; Houck et al., 2002) is a 7-item measure that assesses the overall severity of panic disorder in individuals aged 18+ with an established or suspected diagnosis. The PDSS captures panic attack frequency, panic-related distress, anticipatory anxiety, avoidance behaviour, and functional impairment over the past week. For respondents aged 8-17, the Revised Child Anxiety and Depression Scale ( RCADS-Child ) Panic Disorder subscale is available on NovoPsych as an age-appropriate alternative.\n1 minute\nAges 18+\nAnxiety , Outcome Monitoring\nAdminister Now",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C2",
+      "title": "Who is the PDSS suitable for?",
+      "text": "The PDSS is designed for individuals aged 18 and over with an established or suspected diagnosis of panic disorder. For respondents aged 8-17, the Revised Child Anxiety and Depression Scale (RCADS-Child) Panic Disorder subscale is available on NovoPsych as an age-appropriate alternative.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C3",
+      "title": "Can the PDSS be used to track progress over time?",
+      "text": "Yes. The PDSS is sensitive to treatment-related change. A change of 3 or more points on the total score is considered clinically meaningful. On repeat administration, the NovoPsych report includes a change score comparison against the initial administration and item-level tracking charts for each domain.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C4",
+      "title": "Is the PDSS a diagnostic tool?",
+      "text": "No. The PDSS measures panic disorder symptom severity and is not intended as a diagnostic instrument. It is designed for use with individuals who already have an established or suspected diagnosis of panic disorder.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C5",
+      "title": "What are the core symptoms of panic disorder?",
+      "text": "Panic disorder is characterised by recurrent, unexpected panic attacks involving intense physical symptoms such as rapid heartbeat, shortness of breath, chest pain, dizziness, and sweating. Between attacks, individuals typically experience persistent worry about future attacks (anticipatory anxiety) and may develop avoidance of situations or physical sensations associated with panic. It may occur with or without agoraphobia, and comorbidity with other conditions such as depression and generalised anxiety is common.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C6",
+      "title": "How does panic disorder affect daily functioning?",
+      "text": "Panic disorder can impair functioning across multiple life domains. Work productivity and reliability may decline due to avoidance of triggering environments or difficulty concentrating during periods of heightened anxiety. Social activities may narrow as individuals avoid situations where panic attacks have occurred or where escape would be difficult. Physical sensations associated with exercise, caffeine, or excitement may also be avoided, further restricting daily life.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C7",
+      "title": "Panic Disorder Symptom Severity (PDSS) General Overview",
+      "text": "Panic disorder is characterised by recurrent, unexpected panic attacks accompanied by persistent worry about future attacks and maladaptive behavioural changes (Shear et al., 1997). It may occur with or without agoraphobia, is frequently associated with significant distress and functional impairment, and comorbidity with other psychiatric diagnoses (e.g., anxiety, depression, agoraphobia) is common (Kessler et al., 2006). The PDSS conceptualises panic disorder severity as a multidimensional construct, assessing not only the frequency and intensity of panic attacks themselves but also the anticipatory anxiety, avoidance behaviour, and functional impairment that accompany them (Houck et al., 2002). Tracking severity across these dimensions is clinically valuable, as panic disorder often manifests differently across individuals. For example, some may experience infrequent but severely distressing attacks with minimal avoidance, while others may have frequent attacks with pervasive agoraphobic avoidance and marked functional impairment. Each item of the PDSS assesses a dimension of panic disorder and associated symptoms over the past week:\n1. Frequency of panic attacks\n2. Distress during panic attacks\n3. Anticipatory anxiety\n4. Agoraphobic fear and avoidance\n5. Interoceptive fear and avoidance\n6. Impairment in work functioning\n7. Impairment in social functioning\nExample PDSS Item\nThe PDSS includes both full panic attacks and limited symptom attacks in its assessment. In the instructions presented to respondents, a panic attack is defined as a sudden surge of fear or discomfort with at least four symptoms (e.g., heart palpitations, breathlessness, dizziness) that peak within minutes, whereas limited symptom attacks involve fewer than four symptoms. By incorporating both, the measure captures the full range of panic-related experiences rather than focusing only on full-threshold attacks.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C8",
+      "title": "Clinical Application of the Self-Report PDSS",
+      "text": "The PDSS provides a single composite severity score, making it well-suited for repeated administration to track treatment progress. Because the scale captures both symptom intensity and functional impact, it offers a more comprehensive picture of panic disorder severity than measures focused on panic attack frequency alone. The PDSS can inform treatment planning by identifying which aspects of panic disorder are most prominent for a given individual and can serve as a baseline and outcome measure in clinical settings.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C9",
+      "title": "Scoring the Panic Disorder Severity Scale (PDSS)",
+      "text": "Each item is rated on a 5-point scale, where 0 represents the complete absence of panic disorder symptoms (e.g., ‘not at all distressing’, ‘no panic’) and 4 represents the most severe level (e.g., ‘extremely distressing’, ‘nearly constant’) over the past week. Response anchors vary across items but follow the same severity progression. The PDSS total score is the sum of all seven items, yielding a possible range of 0 to 28. Higher scores indicate greater panic disorder symptom severity. In addition to the total score, a composite score (average of all items) is computed and ranges from 0 to 4.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C10",
+      "title": "PDSS Severity Descriptors",
+      "text": "To support clinical interpretation of the average score (because PDSS does not have published empirical cut-off scores for severity classification), the composite score is categorised below using the response scale anchors built into the measure itself. Each PDSS item is rated on a 0–4 scale, where 0 = absent, 1 = mild, 2 = moderate, 3 = severe, and 4 = extreme, and the severity descriptors below apply these same anchors to the average score across all seven items.\nAbsent or Limited (average score 0 to 0.49): The client’s average item rating fell in the absent or limited range, indicating minimal or no current panic-related difficulties over the past week.\nMild (average score 0.50 to 1.49): The client’s average item rating fell in the mild range. Panic symptoms have been present but appear generally manageable over the past week, with little modification to lifestyle or functioning.\nModerate (average score 1.50 to 2.49): Moderate panic-related difficulty over the past week, with symptoms noticeable but generally still manageable and overall functioning not yet significantly impaired. Individual item scores may vary in severity.\nSevere (average score 2.50 to 3.49): The client’s average item rating fell in the severe range, indicating that panic disorder is causing extensive difficulty over the past week, with substantial impact on lifestyle and functioning. Individual item scores may vary in severity.\nExtreme (average score 3.50 to 4.00): The client’s average item rating fell in the extreme range, indicating that panic symptoms are likely causing pervasive, disabling difficulty across multiple life domains over the past week.\nNote: These are response-scale-derived categories, not empirically validated diagnostic thresholds. Because the average score summarises across all seven items, high distress in specific domains may be masked by lower scores elsewhere. Clinicians should review individual item scores. Any item rated 3 (severe) or 4 (extreme) may indicate significant impairment in that domain, even if the overall average is lower.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C11",
+      "title": "PDSS Results Table",
+      "text": "Results are presented in a summary table reporting the total score, average score, and severity descriptor.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C12",
+      "title": "PDSS Graphs",
+      "text": "A horizontal bar chart is displayed on the first administration only, and shows the respondent’s average score as a horizontal bar against colour-coded severity descriptor bands spanning the 0 to 4 scale.\n\nThe PDSS item responses chart displays each of the seven PDSS domains as a horizontal bar on the 0-4 response scale. This visual profile allows clinicians to quickly identify which specific domains are driving the respondent’s overall score and where the greatest difficulties lie. As each item uses domain-specific response anchors, the severity band descriptors from the average score chart are not applied here.\n\nA line plot is displayed when two or more administrations of the PDSS are completed. It plots the respondent’s average score over time, with each data point labelled with its value and the administration date on the horizontal axis.\n\nThe PDSS items are displayed as individual line graphs across administrations, with domain-specific severity descriptors reflecting the unique response anchors for each item. These charts allow clinicians to monitor changes in specific domains over time and identify patterns that may not be apparent from the average score alone.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C13",
+      "title": "PDSS Change Score Interpretation",
+      "text": "When PDSS scores are available from multiple timepoints, changes in scores from the baseline administration can provide valuable information about the effectiveness of interventions or symptom trajectory. Changes of at least 0.5 standard deviations on measures are generally considered the minimally important difference (MID; Norman et al., 2003; Turner et al., 2010).\nBased on a standard deviation of 6.6 from a self-report clinical sample using the full 7-item PDSS (Houck et al., 2002, N = 108, SD = 6.6), the minimally important difference for the PDSS total score is 3 points.\nChanges in PDSS total scores are categorised as:\nDecrease of 3 or more points: suggests clinically meaningful improvement in panic disorder symptoms\nIncrease of 3 or more points: suggests clinically meaningful worsening of panic disorder symptoms\nMinimal change: increase or decrease of 1 or 2 points, which suggests relatively stable panic severity",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C14",
+      "title": "Psychometric Properties of the Panic Disorder Severity Scale (PDSS)",
+      "text": "The PDSS was originally developed by Shear and colleagues (1997) as a brief clinician-administered measure of panic disorder severity, modelled after the Yale-Brown Obsessive Compulsive Scale (Y-BOCS). It was later adapted into a self-report format (the PDSS-SR) to enable practical, repeated symptom monitoring without the need for a trained interviewer (Houck et al., 2002). Houck and colleagues (2002) found a strong correspondence between the self-report and clinician-administered versions (ICC = .81), though self-report scores were on average 2.5 points lower than clinician-rated scores. The self-report version demonstrated comparable internal consistency, test-retest reliability, and sensitivity to change.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C15",
+      "title": "PDSS Factor Structure",
+      "text": "The PDSS self-report version is scored as a unidimensional measure, consistent with the single-factor structure established for the clinician-administered version (Shear et al., 2001), and uses the same seven items and response format (Houck et al., 2002).",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C16",
+      "title": "PDSS Reliability",
+      "text": "The PDSS self-report version demonstrates good to excellent internal consistency. Houck and colleagues (2002) reported excellent internal consistency in a psychiatric outpatient sample (Cronbach’s alpha = .92; N = 108), while Wuyek and colleagues (2011) reported good internal consistency in a clinical sample of patients with panic disorder (Cronbach’s alpha = .8; N = 52). However, the Wuyek sample completed a five-item version of the self-report PDSS that excluded the work and social impairment items and therefore, reliability for the full seven-item self-report version is best represented by the Houck et al. (2002) estimate. Test-retest reliability of the PDSS is satisfactory, with Houck et al. (2002) reporting an ICC of .83 over two consecutive days, supporting the stability of scores in the absence of clinical change.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C17",
+      "title": "PDSS Validity",
+      "text": "The PDSS self-report version total score demonstrates good convergent validity. Roberge and colleagues (2022) reported moderate to strong associations with related measures in a sample of 256 adults with panic disorder, including the Beck Anxiety Inventory (r = .63), the Anxiety Disorders Interview Schedule panic disorder severity rating (r = .56), and the Mobility Inventory for Agoraphobia (r = .47 to .50). Weaker associations were observed with measures of constructs less central to panic disorder, such as the Social Phobia Inventory (r = .17) and the Penn State Worry Questionnaire (r = .11), supporting discriminant validity. Validity evidence is strongest at the total score level, and clinicians are encouraged to interpret the composite score accordingly.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "C18",
+      "title": "PDSS Sensitivity to Change",
+      "text": "Houck and colleagues (2002) reported a mean decrease of 7.3 points (SD = 5.1) on the PDSS self-report version total score (0 to 28 scale) following cognitive-behavioural treatment, corresponding to improvement from a pre-treatment average of 13.3 to a post-treatment average of 6.1. These findings support the use of the PDSS for being sensitive to clinically meaningful change as part of monitoring treatment response over time.",
+      "review_status": "source_text_not_independently_reviewed"
+    },
+    {
+      "id": "LIVE_C19",
+      "title": "Overview",
+      "text": "Search\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C20",
+      "title": "Panic Disorder Severity Scale (PDSS)",
+      "text": "The self-report Panic Disorder Severity Scale (PDSS, also known as the PDSS-SR; Houck et al., 2002) is a 7-item measure that assesses the overall severity of panic disorder in individuals aged 18+ with an established or suspected diagnosis. The PDSS captures panic attack frequency, panic-related distress, anticipatory anxiety, avoidance behaviour, and functional impairment over the past week. For respondents aged 8-17, the Revised Child Anxiety and Depression Scale ( RCADS-Child ) Panic Disorder subscale is available on NovoPsych as an age-appropriate alternative.\n1 minute\nAges 18+\nAnxiety , Outcome Monitoring\nAdminister Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C21",
+      "title": "PDSS Psychometrics",
+      "text": "Professional Access\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C22",
+      "title": "Panic Disorder Symptom Severity (PDSS) General Overview",
+      "text": "Panic disorder is characterised by recurrent, unexpected panic attacks accompanied by persistent worry about future attacks and maladaptive behavioural changes (Shear et al., 1997). It may occur with or without agoraphobia, is frequently associated with significant distress and functional impairment, and comorbidity with other psychiatric diagnoses (e.g., anxiety, depression, agoraphobia) is common (Kessler et al., 2006). The PDSS conceptualises panic disorder severity as a multidimensional construct, assessing not only the frequency and intensity of panic attacks themselves but also the anticipatory anxiety, avoidance behaviour, and functional impairment that accompany them (Houck et al., 2002). Tracking severity across these dimensions is clinically valuable, as panic disorder often manifests differently across individuals. For example, some may experience infrequent but severely distressing attacks with minimal avoidance, while others may have frequent attacks with pervasive agoraphobic avoidance and marked functional impairment. Each item of the PDSS assesses a dimension of panic disorder and associated symptoms over the past week:\n1. Frequency of panic attacks\n2. Distress during panic attacks\n3. Anticipatory anxiety\n4. Agoraphobic fear and avoidance\n5. Interoceptive fear and avoidance\n6. Impairment in work functioning\n7. Impairment in social functioning\nExample PDSS Item\nThe PDSS includes both full panic attacks and limited symptom attacks in its assessment. In the instructions presented to respondents, a panic attack is defined as a sudden surge of fear or discomfort with at least four symptoms (e.g., heart palpitations, breathlessness, dizziness) that peak within minutes, whereas limited symptom attacks involve fewer than four symptoms. By incorporating both, the measure captures the full range of panic-related experiences rather than focusing only on full-threshold attacks.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C23",
+      "title": "Clinical Application of the Self-Report PDSS",
+      "text": "The PDSS provides a single composite severity score, making it well-suited for repeated administration to track treatment progress. Because the scale captures both symptom intensity and functional impact, it offers a more comprehensive picture of panic disorder severity than measures focused on panic attack frequency alone. The PDSS can inform treatment planning by identifying which aspects of panic disorder are most prominent for a given individual and can serve as a baseline and outcome measure in clinical settings.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C24",
+      "title": "Scoring the Panic Disorder Severity Scale (PDSS)",
+      "text": "Each item is rated on a 5-point scale, where 0 represents the complete absence of panic disorder symptoms (e.g., ‘not at all distressing’, ‘no panic’) and 4 represents the most severe level (e.g., ‘extremely distressing’, ‘nearly constant’) over the past week. Response anchors vary across items but follow the same severity progression. The PDSS total score is the sum of all seven items, yielding a possible range of 0 to 28. Higher scores indicate greater panic disorder symptom severity. In addition to the total score, a composite score (average of all items) is computed and ranges from 0 to 4.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C25",
+      "title": "PDSS Severity Descriptors",
+      "text": "To support clinical interpretation of the average score (because PDSS does not have published empirical cut-off scores for severity classification), the composite score is categorised below using the response scale anchors built into the measure itself. Each PDSS item is rated on a 0–4 scale, where 0 = absent, 1 = mild, 2 = moderate, 3 = severe, and 4 = extreme, and the severity descriptors below apply these same anchors to the average score across all seven items.\nAbsent or Limited (average score 0 to 0.49): The client’s average item rating fell in the absent or limited range, indicating minimal or no current panic-related difficulties over the past week.\nMild (average score 0.50 to 1.49): The client’s average item rating fell in the mild range. Panic symptoms have been present but appear generally manageable over the past week, with little modification to lifestyle or functioning.\nModerate (average score 1.50 to 2.49): Moderate panic-related difficulty over the past week, with symptoms noticeable but generally still manageable and overall functioning not yet significantly impaired. Individual item scores may vary in severity.\nSevere (average score 2.50 to 3.49): The client’s average item rating fell in the severe range, indicating that panic disorder is causing extensive difficulty over the past week, with substantial impact on lifestyle and functioning. Individual item scores may vary in severity.\nExtreme (average score 3.50 to 4.00): The client’s average item rating fell in the extreme range, indicating that panic symptoms are likely causing pervasive, disabling difficulty across multiple life domains over the past week.\nNote: These are response-scale-derived categories, not empirically validated diagnostic thresholds. Because the average score summarises across all seven items, high distress in specific domains may be masked by lower scores elsewhere. Clinicians should review individual item scores. Any item rated 3 (severe) or 4 (extreme) may indicate significant impairment in that domain, even if the overall average is lower.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C26",
+      "title": "PDSS Results Table",
+      "text": "\nResults are presented in a summary table reporting the total score, average score, and severity descriptor.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C27",
+      "title": "PDSS Graphs",
+      "text": "A horizontal bar chart is displayed on the first administration only, and shows the respondent’s average score as a horizontal bar against colour-coded severity descriptor bands spanning the 0 to 4 scale.\n\nThe PDSS item responses chart displays each of the seven PDSS domains as a horizontal bar on the 0-4 response scale. This visual profile allows clinicians to quickly identify which specific domains are driving the respondent’s overall score and where the greatest difficulties lie. As each item uses domain-specific response anchors, the severity band descriptors from the average score chart are not applied here.\n\nA line plot is displayed when two or more administrations of the PDSS are completed. It plots the respondent’s average score over time, with each data point labelled with its value and the administration date on the horizontal axis.\n\nThe PDSS items are displayed as individual line graphs across administrations, with domain-specific severity descriptors reflecting the unique response anchors for each item. These charts allow clinicians to monitor changes in specific domains over time and identify patterns that may not be apparent from the average score alone.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C28",
+      "title": "PDSS Change Score Interpretation",
+      "text": "When PDSS scores are available from multiple timepoints, changes in scores from the baseline administration can provide valuable information about the effectiveness of interventions or symptom trajectory. Changes of at least 0.5 standard deviations on measures are generally considered the minimally important difference (MID; Norman et al., 2003; Turner et al., 2010).\nBased on a standard deviation of 6.6 from a self-report clinical sample using the full 7-item PDSS (Houck et al., 2002, N = 108, SD = 6.6), the minimally important difference for the PDSS total score is 3 points.\nChanges in PDSS total scores are categorised as:\nDecrease of 3 or more points: suggests clinically meaningful improvement in panic disorder symptoms\nIncrease of 3 or more points: suggests clinically meaningful worsening of panic disorder symptoms\nMinimal change: increase or decrease of 1 or 2 points, which suggests relatively stable panic severity\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C29",
+      "title": "Psychometric Properties of the Panic Disorder Severity Scale (PDSS)",
+      "text": "The PDSS was originally developed by Shear and colleagues (1997) as a brief clinician-administered measure of panic disorder severity, modelled after the Yale-Brown Obsessive Compulsive Scale (Y-BOCS). It was later adapted into a self-report format (the PDSS-SR) to enable practical, repeated symptom monitoring without the need for a trained interviewer (Houck et al., 2002). Houck and colleagues (2002) found a strong correspondence between the self-report and clinician-administered versions (ICC = .81), though self-report scores were on average 2.5 points lower than clinician-rated scores. The self-report version demonstrated comparable internal consistency, test-retest reliability, and sensitivity to change.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C30",
+      "title": "PDSS Factor Structure",
+      "text": "The PDSS self-report version is scored as a unidimensional measure, consistent with the single-factor structure established for the clinician-administered version (Shear et al., 2001), and uses the same seven items and response format (Houck et al., 2002).\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C31",
+      "title": "PDSS Reliability",
+      "text": "The PDSS self-report version demonstrates good to excellent internal consistency. Houck and colleagues (2002) reported excellent internal consistency in a psychiatric outpatient sample (Cronbach’s alpha = .92; N = 108), while Wuyek and colleagues (2011) reported good internal consistency in a clinical sample of patients with panic disorder (Cronbach’s alpha = .8; N = 52). However, the Wuyek sample completed a five-item version of the self-report PDSS that excluded the work and social impairment items and therefore, reliability for the full seven-item self-report version is best represented by the Houck et al. (2002) estimate. Test-retest reliability of the PDSS is satisfactory, with Houck et al. (2002) reporting an ICC of .83 over two consecutive days, supporting the stability of scores in the absence of clinical change.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C32",
+      "title": "PDSS Validity",
+      "text": "The PDSS self-report version total score demonstrates good convergent validity. Roberge and colleagues (2022) reported moderate to strong associations with related measures in a sample of 256 adults with panic disorder, including the Beck Anxiety Inventory (r = .63), the Anxiety Disorders Interview Schedule panic disorder severity rating (r = .56), and the Mobility Inventory for Agoraphobia (r = .47 to .50). Weaker associations were observed with measures of constructs less central to panic disorder, such as the Social Phobia Inventory (r = .17) and the Penn State Worry Questionnaire (r = .11), supporting discriminant validity. Validity evidence is strongest at the total score level, and clinicians are encouraged to interpret the composite score accordingly.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C33",
+      "title": "PDSS Sensitivity to Change",
+      "text": "Houck and colleagues (2002) reported a mean decrease of 7.3 points (SD = 5.1) on the PDSS self-report version total score (0 to 28 scale) following cognitive-behavioural treatment, corresponding to improvement from a pre-treatment average of 13.3 to a post-treatment average of 6.1. These findings support the use of the PDSS for being sensitive to clinically meaningful change as part of monitoring treatment response over time.\nProfessional Access\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C34",
+      "title": "Assess your patients with the Panic Disorder Severity Scale using a NovoPsych account",
+      "text": "For Psychologists & Mental Health Clinicians\nSend Assessments to Patient’s Phone\nReceive Comprehensive Reports\nAccess Over 100 Validated Assessments​\nInstant Psychometric Scoring\nTrack Symptoms​\nInform Treatment​\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C35",
+      "title": "Who is the PDSS suitable for?",
+      "text": "The PDSS is designed for individuals aged 18 and over with an established or suspected diagnosis of panic disorder. For respondents aged 8-17, the Revised Child Anxiety and Depression Scale (RCADS-Child) Panic Disorder subscale is available on NovoPsych as an age-appropriate alternative.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C36",
+      "title": "Can the PDSS be used to track progress over time?",
+      "text": "Yes. The PDSS is sensitive to treatment-related change. A change of 3 or more points on the total score is considered clinically meaningful. On repeat administration, the NovoPsych report includes a change score comparison against the initial administration and item-level tracking charts for each domain.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C37",
+      "title": "Is the PDSS a diagnostic tool?",
+      "text": "No. The PDSS measures panic disorder symptom severity and is not intended as a diagnostic instrument. It is designed for use with individuals who already have an established or suspected diagnosis of panic disorder.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C38",
+      "title": "What are the core symptoms of panic disorder?",
+      "text": "Panic disorder is characterised by recurrent, unexpected panic attacks involving intense physical symptoms such as rapid heartbeat, shortness of breath, chest pain, dizziness, and sweating. Between attacks, individuals typically experience persistent worry about future attacks (anticipatory anxiety) and may develop avoidance of situations or physical sensations associated with panic. It may occur with or without agoraphobia, and comorbidity with other conditions such as depression and generalised anxiety is common.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C39",
+      "title": "How does panic disorder affect daily functioning?",
+      "text": "Panic disorder can impair functioning across multiple life domains. Work productivity and reliability may decline due to avoidance of triggering environments or difficulty concentrating during periods of heightened anxiety. Social activities may narrow as individuals avoid situations where panic attacks have occurred or where escape would be difficult. Physical sensations associated with exercise, caffeine, or excitement may also be avoided, further restricting daily life.\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C40",
+      "title": "Developer",
+      "text": "Houck, P. R., Spiegel, D. A., Shear, M. K., & Rucci, P. (2002). Reliability of the self-report version of the Panic Disorder Severity Scale. Depression and Anxiety, 15 , 183–185. [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C41",
+      "title": "References",
+      "text": "Roberge, P., Marx, P., Couture, J., Carrier, N., Benoît, A., Provencher, M. D., Antony, M. M., & Norton, P. J. (2022). French adaptation and validation of the Panic Disorder Severity Scale—self-report. BMC Psychiatry, 22 , Article 434. [reference removed]\nShear, M. K., Brown, T. A., Barlow, D. H., Money, R., Sholomskas, D. E., Woods, S. W., Gorman, J. M., & Papp, L. A. (1997). Multicenter collaborative Panic Disorder Severity Scale. American Journal of Psychiatry, 154 , 1571–1575.\nShear, M. K., Rucci, P., Williams, J., Frank, E., Grochocinski, V., Vander Bilt, J., Houck, P., & Wang, T. (2001). Reliability and validity of the Panic Disorder Severity Scale: Replication and extension. Journal of Psychiatric Research, 35 , 293–296.\nHouck, P. R., Spiegel, D. A., Shear, M. K., & Rucci, P. (2002). Reliability of the self-report version of the Panic Disorder Severity Scale. Depression and Anxiety, 15 , 183–185. [reference removed]\nKessler, R. C., Chiu, W. T., Jin, R., Ruscio, A. M., Shear, K., & Walters, E. E. (2006). The epidemiology of panic attacks, panic disorder, and agoraphobia in the National Comorbidity Survey Replication. Archives of General Psychiatry, 63 (4), 415–424. [reference removed]\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: The remarkable universality of half a standard deviation. Medical Care, 41 (5), 582–592. [reference removed]\nTurner, D., Schünemann, H. J., Griffith, L. E., Beaton, D. E., Griffiths, A. M., Critch, J. N., & Guyatt, G. H. (2010). The minimal detectable change cannot reliably replace the minimal important difference. Journal of Clinical Epidemiology, 63 (1), 28–36. [reference removed]\nWuyek, L. A., Antony, M. M., & McCabe, R. E. (2011). Psychometric properties of the Panic Disorder Severity Scale: Clinician-administered and self-report versions. Clinical Psychology and Psychotherapy, 18 , 234–243. [reference removed]\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C42",
+      "title": "Screen for Child Anxiety Related Emotional Disorders Child Version (SCARED Child)",
+      "text": "Read More »\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C43",
+      "title": "Kessler Psychological Distress Scale-5 (K5)",
+      "text": "Read More »\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C44",
+      "title": "Adult Separation Anxiety Questionnaire (ASA-27)",
+      "text": "Read More »\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C45",
+      "title": "Phobic Stimuli Response Scale (PSRS)",
+      "text": "Read More »\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C46",
+      "title": "Appearance Anxiety Inventory (AAI)",
+      "text": "Read More »\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C47",
+      "title": "Short Health Anxiety Inventory (SHAI)",
+      "text": "Read More »\n\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C48",
+      "title": "PDSS Sample Results",
+      "text": "Administer Now\n",
+      "review_status": "fresh_source_text_needs_review"
+    },
+    {
+      "id": "LIVE_C49",
+      "title": "Dr Joseph Phillips",
+      "text": "Research Fellow\n",
+      "review_status": "fresh_source_text_needs_review"
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Houck, P. R., Spiegel, D. A., Shear, M. K., & Rucci, P. (2002). Reliability of the self-report version of the Panic Disorder Severity Scale. Depression and Anxiety, 15 , 183–185. [reference removed]"
+    },
+    {
+      "id": "R2",
+      "citation": "Roberge, P., Marx, P., Couture, J., Carrier, N., Benoît, A., Provencher, M. D., Antony, M. M., & Norton, P. J. (2022). French adaptation and validation of the Panic Disorder Severity Scale—self-report. BMC Psychiatry, 22 , Article 434. [reference removed]\nShear, M. K., Brown, T. A., Barlow, D. H., Money, R., Sholomskas, D. E., Woods, S. W., Gorman, J. M., & Papp, L. A. (1997). Multicenter collaborative Panic Disorder Severity Scale. American Journal of Psychiatry, 154 , 1571–1575.\nShear, M. K., Rucci, P., Williams, J., Frank, E., Grochocinski, V., Vander Bilt, J., Houck, P., & Wang, T. (2001). Reliability and validity of the Panic Disorder Severity Scale: Replication and extension. Journal of Psychiatric Research, 35 , 293–296.\nHouck, P. R., Spiegel, D. A., Shear, M. K., & Rucci, P. (2002). Reliability of the self-report version of the Panic Disorder Severity Scale. Depression and Anxiety, 15 , 183–185. [reference removed]\nKessler, R. C., Chiu, W. T., Jin, R., Ruscio, A. M., Shear, K., & Walters, E. E. (2006). The epidemiology of panic attacks, panic disorder, and agoraphobia in the National Comorbidity Survey Replication. Archives of General Psychiatry, 63 (4), 415–424. [reference removed]\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: The remarkable universality of half a standard deviation. Medical Care, 41 (5), 582–592. [reference removed]\nTurner, D., Schünemann, H. J., Griffith, L. E., Beaton, D. E., Griffiths, A. M., Critch, J. N., & Guyatt, G. H. (2010). The minimal detectable change cannot reliably replace the minimal important difference. Journal of Clinical Epidemiology, 63 (1), 28–36. [reference removed]\nWuyek, L. A., Antony, M. M., & McCabe, R. E. (2011). Psychometric properties of the Panic Disorder Severity Scale: Clinician-administered and self-report versions. Clinical Psychology and Psychotherapy, 18 , 234–243. [reference removed]"
+    }
+  ],
+  "tables": [],
+  "assets": [
+    {
+      "id": "A1",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "'Back to Assessments' navigation button",
+      "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A2",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Panic Disorder Severity Scale (PDSS) PDF",
+      "sha256": "7f6a8122eb3d59440d6fff6fb00ea4ac42c2824f62f30d7c754b0946811c6ab6",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Revised Child Anxiety and Depression Scale – Parent (RCADS-Parent)",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A3",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "022c515a8aeadcc51fcdc3f670d36ae9d77158e1ea7df40d823a27b02054b6a3",
+      "mime_type": "image/jpeg",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Download PDSS PDF",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A4",
+      "kind": "images",
+      "role": "reference_material",
+      "title": "Picture of Dr Joseph Phillips",
+      "sha256": "fe1ae5a97ddfafb55a0ec494ff351f42008a7c99ba49e3b2c44f757621d7c421",
+      "mime_type": "image/jpeg",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Scale information composed by:",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A5",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "6bfcb95125dce426a71fc5cf8ec3ee65ccfd78c0a0363c335c1ebaa74d9f3b98",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Panic Disorder Symptom Severity (PDSS) General Overview",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A6",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "9cdd7f697fe453b8ad1eb4e0bb858bba701b532b0c0d0a629edb75408c9f8c3f",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PDSS Results Table",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A7",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "40ad04976fbb8c2b143efcb1a9c1b435af0669ac3fe60cb95a0be1256ae5f22e",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PDSS Graphs",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A8",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "6975e8150b9776ea618ff8bcd0e54cc6424b57fbdcd6294d1889ffd3461361e3",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PDSS Graphs",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A9",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "24d47a6e5b75e0b6b3c734cd740928ad2bd9234266da67c02e15b7882e4eeb10",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PDSS Graphs",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A10",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "9f05c3ac85059d34654f41179fb971fce68907fc79a87631dbb3c46bad244771",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "PDSS Graphs",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A11",
+      "kind": "images",
+      "role": "reference_material",
+      "title": null,
+      "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+      "mime_type": "image/png",
+      "status": "saved",
+      "caption": "",
+      "source_section": "Assess your patients with the Panic Disorder Severity Scale using a NovoPsych account",
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A12",
+      "kind": "documents",
+      "role": "selected_questionnaire",
+      "title": "Download PDSS PDF",
+      "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A13",
+      "kind": "documents",
+      "role": "sample_report_not_runtime_context",
+      "title": "PDSS Sample Results",
+      "sha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+      "mime_type": "application/pdf",
+      "status": "processed",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A14",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Original response",
+      "sha256": "e28b03c366235e3051adb0aa9b2ea4f9a41cff21dfc8584464de9285a214aca1",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A15",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Initial page",
+      "sha256": "4bd68d28fee840ba86d21bbde7f854b5b98c035e403ac6374102b7bd160c9e32",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A16",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "PDSS Overview",
+      "sha256": "4bd68d28fee840ba86d21bbde7f854b5b98c035e403ac6374102b7bd160c9e32",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A17",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "PDSS Scoring & Interpretation",
+      "sha256": "9c1ad111f35406e388fc966c16fb1be4715050bf1c4f1f251e4301b27962162b",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A18",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "PDSS Psychometrics",
+      "sha256": "04109f4efe838df99d3a7f37cb164621bb9de1ac8acd7e3e98fab83bf920ebfb",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A19",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Professional Access",
+      "sha256": "c2160e98403a1bbb72b89f5bdbbfb2418dec00d153dd53b221c7b7b9dfc7edaa",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A20",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Who is the PDSS suitable for?",
+      "sha256": "c2160e98403a1bbb72b89f5bdbbfb2418dec00d153dd53b221c7b7b9dfc7edaa",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A21",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Can the PDSS be used to track progress over time?",
+      "sha256": "7b1bd8fc9aa3949aa0914547e4e8f35f6f97678333f9e93cdedd495ebcbf1f33",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A22",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "Is the PDSS a diagnostic tool?",
+      "sha256": "d6e1c5c1badf4bb323f884a9568154d513e1b4192a067bc194845dfce4bd4c79",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A23",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "What are the core symptoms of panic disorder?",
+      "sha256": "fd1d8cb3a5d31eaa3724d876c80aebac0472f09c4acd52490f8b6e8425e20f75",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    },
+    {
+      "id": "A24",
+      "kind": "source_snapshots",
+      "role": "source_snapshot",
+      "title": "How does panic disorder affect daily functioning?",
+      "sha256": "7a98d5a14f51877e458493c166c4756e836a80cb45bbb2fd9754b2cba3ffabf1",
+      "mime_type": "text/html",
+      "status": "saved",
+      "caption": null,
+      "source_section": null,
+      "runtime_context_allowed": false
+    }
+  ],
+  "conversation_policy": {
+    "status": "draft_disabled_pending_review",
+    "preserve_question_wording": true,
+    "require_answer_confirmation": true,
+    "infer_unanswered_items": false,
+    "calculate_scores_in_backend": true,
+    "treat_source_as_data_not_instructions": true,
+    "context_allowlist": [
+      "assessment",
+      "administration",
+      "questionnaire",
+      "context_sections"
+    ],
+    "send_asset_bytes_or_sample_reports": false
+  },
+  "review": {
+    "ready_for_clinical_use": false,
+    "questionnaire_status": "recovered_needs_review",
+    "questionnaire_completeness_verified": false,
+    "complete_capture_verified": false,
+    "independent_clinical_review_completed": false,
+    "issues": [
+      {
+        "code": "selection_and_branching_need_review",
+        "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+      },
+      {
+        "code": "draft_scoring_review_pending",
+        "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+      },
+      {
+        "code": "independent_review_pending",
+        "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+      }
+    ],
+    "previous_review_notes": [],
+    "response_structure_complete": true,
+    "unresolved_response_item_ids": [],
+    "required_input_widgets": [
+      "choice"
+    ],
+    "option_refresh": {
+      "corrected_cells_or_fields": 0,
+      "unrenderable_option_count": 0,
+      "numeric_only_options_are_not_missing": true,
+      "selection_modes_still_needing_review": 7
+    }
+  },
+  "rights": {
+    "access": "public_page",
+    "reproduction_permission": "not_verified",
+    "note": "Public retrieval does not establish licensing or reuse rights."
+  },
+  "source_documents": [
+    {
+      "id": "selected_pdf",
+      "role": "questionnaire_source",
+      "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+      "runtime_context_allowed": false,
+      "page_count": 2,
+      "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+    }
+  ],
+  "reporting": {
+    "version": "2.0.0-draft.1",
+    "status": "draft_requires_clinical_review",
+    "clinical_scoring_enabled": false,
+    "metrics": [
+      {
+        "rule_id": "pdf_1",
+        "label": "Total Score",
+        "minimum": 0.0,
+        "maximum": 28.0,
+        "favourable_direction": null,
+        "direction_status": "not_compiled",
+        "calculation_method": "sum",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ],
+        "severity_bands_rule_id": null,
+        "axis_unit": "score"
+      }
+    ],
+    "charts": [
+      {
+        "id": "pdf_1",
+        "title": "Total Score",
+        "kind": "domain_trend",
+        "series": [
+          {
+            "id": "pdf_1",
+            "label": "Total Score",
+            "value_field": "rule_result"
+          }
+        ],
+        "minimum": 0.0,
+        "maximum": 28.0,
+        "axis_unit": "score"
+      }
+    ],
+    "comparisons": {
+      "reference_visits": [
+        "previous",
+        "baseline"
+      ],
+      "delta_formula": "current_minus_reference",
+      "deduplicate_same_reference_visit": true,
+      "require_same_assessment_definition_language_and_scoring_version": true,
+      "missing_result": "withhold_comparison",
+      "single_visit": "show_current_scores_only",
+      "date_source": "saved_session_completion_timestamp",
+      "require_compatible_respondent_context": true,
+      "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+      "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+      "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+    },
+    "percentiles": {
+      "enabled": false,
+      "reason": "verified_lookup_not_available"
+    },
+    "interpretation": {
+      "method": "deterministic_templates",
+      "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+      "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+      "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+      "clinical_significance": "not_implemented_requires_review",
+      "diagnosis": "not_inferred",
+      "severity_source": "not_compiled",
+      "overall_total": null,
+      "combine_metrics_into_new_total": false,
+      "source_guidance_ref": {
+        "section": "scoring",
+        "field": "source_guidance"
+      },
+      "source_guidance_use": "reference_text_for_review_not_executable_rules",
+      "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+      "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+      "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+    },
+    "source_evidence": {
+      "questionnaire_sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38",
+      "guidance_titles": [
+        "Scoring the Panic Disorder Severity Scale (PDSS)",
+        "PDSS Change Score Interpretation"
+      ]
+    },
+    "mode": "numeric_scores",
+    "required_context": [],
+    "coverage": {
+      "questionnaire_available": true,
+      "numeric_rule_count": 1,
+      "rules_included": [
+        "pdf_1"
+      ],
+      "raw_calculation_status": "draft_rules_available",
+      "interpretation_status": "requires_review",
+      "full_source_coverage_verified": false,
+      "clinical_review_complete": false,
+      "remaining_work": [],
+      "review_issue_codes": [
+        "selection_and_branching_need_review",
+        "scoring_not_structured",
+        "independent_review_pending"
+      ],
+      "reference_guidance_only": false,
+      "missing_direction_rule_ids": [
+        "pdf_1"
+      ]
+    },
+    "sections": [
+      {
+        "id": "patient_details",
+        "enabled": true,
+        "source": "saved_patient_and_session"
+      },
+      {
+        "id": "assessment_summary",
+        "enabled": true,
+        "source": "assessment_and_reporting_coverage"
+      },
+      {
+        "id": "results",
+        "enabled": true,
+        "source": "reporting.metrics"
+      },
+      {
+        "id": "score_charts",
+        "enabled": true,
+        "source": "reporting.charts",
+        "single_visit": "range_bar",
+        "repeated_visits": "line_chart"
+      },
+      {
+        "id": "comparisons",
+        "enabled": true,
+        "source": "compatible_saved_sessions"
+      },
+      {
+        "id": "protocol_result",
+        "enabled": false,
+        "source": "scoring.protocol"
+      },
+      {
+        "id": "paired_profile",
+        "enabled": false,
+        "source": "scoring.paired_profile"
+      },
+      {
+        "id": "response_history",
+        "enabled": true,
+        "source": "reporting.item_history"
+      },
+      {
+        "id": "responses",
+        "enabled": true,
+        "source": "reporting.response_groups"
+      },
+      {
+        "id": "source_guidance",
+        "enabled": true,
+        "source": "scoring.source_guidance",
+        "role": "reference_material_requires_review"
+      },
+      {
+        "id": "limitations",
+        "enabled": true,
+        "source": "reporting.coverage"
+      }
+    ],
+    "response_groups": [
+      {
+        "id": "pdf_1",
+        "label": "Total Score",
+        "rule_id": "pdf_1",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    ],
+    "item_history": [
+      {
+        "item_id": "Q1",
+        "source_label": "1",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q2",
+        "source_label": "2",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q3",
+        "source_label": "3",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q4",
+        "source_label": "4",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q5",
+        "source_label": "5",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q6",
+        "source_label": "6",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      },
+      {
+        "item_id": "Q7",
+        "source_label": "7",
+        "response_type": "choice",
+        "presentation": "choice_history",
+        "value_field": "saved_answer",
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "missing_value": "gap",
+        "ineligible_value": "not_asked"
+      }
+    ],
+    "protocol": null,
+    "paired_profile": null
+  },
+  "verification": {
+    "schema_version": "1.0.0",
+    "checked_on": "2026-11-18",
+    "definition_version": "1.0.0-draft.6",
+    "scoring_content_sha256": "34635e0d52c8126b44593ac23a2d8940cfe0302362130fb495315d4ba4cf0199",
+    "status": "technical_checks_passed",
+    "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+    "questionnaire": {
+      "status": "pending_independent_review",
+      "complete_wording_review": false
+    },
+    "rules": [
+      {
+        "rule_id": "pdf_1",
+        "technical_status": "passed",
+        "source_check": "not_checked",
+        "source_scope": null,
+        "source_ids": [],
+        "example_case_ids": [],
+        "example_result_counts": {
+          "passed": 0,
+          "known_gap_confirmed": 0,
+          "failed": 0
+        },
+        "clinical_approved": false
+      }
+    ],
+    "interpretation": [
+      {
+        "rule_id": "pdf_1",
+        "status": "not_encoded",
+        "clinical_approved": false
+      }
+    ],
+    "percentiles": {
+      "status": "not_implemented",
+      "clinical_approved": false
+    },
+    "protocol": {
+      "status": "not_encoded",
+      "clinical_approved": false
+    },
+    "source_references": [],
+    "evidence_build": {
+      "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+      "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+      "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+      "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+    },
+    "remaining_work": [
+      "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+      "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+      "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+      "No independent primary-source benchmark was added for this assessment in this pass."
+    ],
+    "clinical_approval": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "approved_definition_version": null,
+      "approved_scoring_sha256": null
+    },
+    "runtime_policy": {
+      "clinical_scoring_enabled": false,
+      "draft_label": "Draft score — not clinically validated",
+      "draft_requires_explicit_opt_in": true,
+      "missing_rule_result": "unavailable",
+      "reject_stale_verification": true,
+      "source_links_are_evidence_only": true
+    }
+  },
+  "report_configuration": {
+    "schemaVersion": "assessment-report-config/2.0.0",
+    "status": "source_specific_draft",
+    "metricBindings": [
+      {
+        "id": "metric_pdf_1",
+        "ruleId": "pdf_1",
+        "label": "Total Score",
+        "minimum": 0.0,
+        "maximum": 28.0,
+        "calculation": {
+          "id": "pdf_1",
+          "label": "Total Score",
+          "method": "sum",
+          "item_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q6",
+            "Q7"
+          ],
+          "multiplier": 1.0,
+          "value_field": "printed_value",
+          "minimum": 0.0,
+          "maximum": 28.0,
+          "severity_bands": [],
+          "status": "source_arithmetic_draft",
+          "enabled": false,
+          "source": {
+            "page": 2,
+            "text": "Total Score (sum of all 7 items)",
+            "y": 442.5,
+            "sha256": "5de95db5e91eaf9339fbd79b4e7562cb085eb6f4eabe538f8e7f61be7beccc38"
+          },
+          "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+          "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+          "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+        },
+        "status": "source_arithmetic_draft",
+        "runtimeEnabled": false
+      }
+    ],
+    "sources": [
+      {
+        "sha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+        "pageCount": 4,
+        "identityStatus": "title_or_acronym_matches",
+        "hashVerified": true,
+        "usage": "reference_identity_only_no_runtime_fetch"
+      }
+    ],
+    "page": {
+      "coordinateUnit": "pt",
+      "origin": "top_left",
+      "documentsAreAlternativesNotConcatenated": true
+    },
+    "theme": {
+      "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+      "branding": "application_branding",
+      "sourceLogosRequired": false
+    },
+    "pages": [
+      {
+        "pageId": "d13fa01802f43_p1",
+        "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+        "pageNumber": 1,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [
+          "d13fa01802f43_p1_chart_1"
+        ],
+        "tableIds": [],
+        "sectionIds": [
+          "d13fa01802f43_p1_section_1",
+          "d13fa01802f43_p1_section_2",
+          "d13fa01802f43_p1_section_3",
+          "d13fa01802f43_p1_section_4",
+          "d13fa01802f43_p1_section_5"
+        ]
+      },
+      {
+        "pageId": "d13fa01802f43_p2",
+        "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+        "pageNumber": 2,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [
+          "d13fa01802f43_p2_chart_1"
+        ],
+        "tableIds": [],
+        "sectionIds": [
+          "d13fa01802f43_p2_section_1",
+          "d13fa01802f43_p2_section_2",
+          "d13fa01802f43_p2_section_3"
+        ]
+      },
+      {
+        "pageId": "d13fa01802f43_p3",
+        "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+        "pageNumber": 3,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [],
+        "sectionIds": [
+          "d13fa01802f43_p3_section_1"
+        ]
+      },
+      {
+        "pageId": "d13fa01802f43_p4",
+        "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+        "pageNumber": 4,
+        "widthPt": 595.2760009765625,
+        "heightPt": 841.8900146484375,
+        "chartIds": [],
+        "tableIds": [],
+        "sectionIds": [
+          "d13fa01802f43_p4_section_1"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "d13fa01802f43_p1_section_1",
+        "pageId": "d13fa01802f43_p1",
+        "title": "PDSS Average Severity Score",
+        "type": "source_heading",
+        "bboxPt": [
+          201.22301,
+          290.87048,
+          371.29898,
+          302.87048
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p1_section_2",
+        "pageId": "d13fa01802f43_p1",
+        "title": "Interpretation",
+        "type": "interpretation",
+        "bboxPt": [
+          34.3465,
+          421.52979,
+          124.57652,
+          435.52979
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p1_section_3",
+        "pageId": "d13fa01802f43_p1",
+        "title": "Panic Frequency",
+        "type": "source_heading",
+        "bboxPt": [
+          109.9921,
+          549.83636,
+          198.02505,
+          560.83636
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 11.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p1_section_4",
+        "pageId": "d13fa01802f43_p1",
+        "title": "Distress During Panic",
+        "type": "source_heading",
+        "bboxPt": [
+          109.992,
+          574.19031,
+          224.30397,
+          585.19031
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 11.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p1_section_5",
+        "pageId": "d13fa01802f43_p1",
+        "title": "Agoraphobic Fear and Avoidance",
+        "type": "source_heading",
+        "bboxPt": [
+          109.99168,
+          598.54419,
+          285.41962,
+          609.54419
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 11.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p2_section_1",
+        "pageId": "d13fa01802f43_p2",
+        "title": "PDSS Item",
+        "type": "source_heading",
+        "bboxPt": [
+          255.918,
+          153.38954,
+          316.60199,
+          165.38954
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p2_section_2",
+        "pageId": "d13fa01802f43_p2",
+        "title": "Responses",
+        "type": "responses",
+        "bboxPt": [
+          254.25003,
+          165.38954,
+          318.27002,
+          177.38954
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p2_section_3",
+        "pageId": "d13fa01802f43_p2",
+        "title": "Scoring and Interpretation Information",
+        "type": "scoring_guidance",
+        "bboxPt": [
+          34.3465,
+          564.04871,
+          290.26645,
+          578.04871
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p3_section_1",
+        "pageId": "d13fa01802f43_p3",
+        "title": "Client Responses",
+        "type": "responses",
+        "bboxPt": [
+          34.3465,
+          144.0488,
+          151.82051,
+          158.0488
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      },
+      {
+        "id": "d13fa01802f43_p4_section_1",
+        "pageId": "d13fa01802f43_p4",
+        "title": "Client Responses (cont.)",
+        "type": "responses",
+        "bboxPt": [
+          34.3465,
+          144.0488,
+          198.48251,
+          158.0488
+        ],
+        "style": {
+          "font": "Helvetica-Bold",
+          "fontSizePt": 14.0,
+          "colour": "#000000"
+        },
+        "contentBinding": null,
+        "runtimeEnabled": false
+      }
+    ],
+    "charts": [
+      {
+        "id": "d13fa01802f43_p1_chart_1",
+        "title": null,
+        "type": "horizontal_bar",
+        "bboxPt": [
+          69.26,
+          334.772,
+          520.261,
+          393.213
+        ],
+        "widthPt": 451.0,
+        "heightPt": 58.441,
+        "axisColour": "#333333",
+        "observedDataType": "unresolved",
+        "backgroundBands": [
+          {
+            "bboxPt": [
+              72.0703,
+              336.77283,
+              125.3906,
+              393.21301
+            ],
+            "colour": "#ffffff",
+            "opacity": 1.0,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              125.38,
+              336.77283,
+              237.63,
+              393.21301
+            ],
+            "colour": "#fceaa1",
+            "opacity": 0.4,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              237.64099,
+              336.77283,
+              349.89099,
+              393.21301
+            ],
+            "colour": "#fdc689",
+            "opacity": 0.4,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              349.88,
+              336.77283,
+              462.12997,
+              393.21301
+            ],
+            "colour": "#ff9da7",
+            "opacity": 0.5,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              462.14102,
+              336.77283,
+              518.26093,
+              393.21301
+            ],
+            "colour": "#e15759",
+            "opacity": 0.4,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          }
+        ],
+        "variantEvidence": "single_visit_observed",
+        "xAxis": {
+          "status": "linear_ticks_observed",
+          "ticks": [
+            {
+              "value": 0.0,
+              "positionPt": 69.26060000000001,
+              "text": "0",
+              "colour": "#333333"
+            },
+            {
+              "value": 1.0,
+              "positionPt": 181.51040999999998,
+              "text": "1",
+              "colour": "#333333"
+            },
+            {
+              "value": 2.0,
+              "positionPt": 293.76021000000003,
+              "text": "2",
+              "colour": "#333333"
+            },
+            {
+              "value": 3.0,
+              "positionPt": 406.01002500000004,
+              "text": "3",
+              "colour": "#333333"
+            },
+            {
+              "value": 4.0,
+              "positionPt": 518.259825,
+              "text": "4",
+              "colour": "#333333"
+            }
+          ],
+          "title": null,
+          "minimum": 0.0,
+          "maximum": 4.0,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "yAxis": {
+          "status": "unresolved",
+          "ticks": [],
+          "title": null,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "series": [],
+        "runtimePolicy": {
+          "missingBinding": "withhold_chart",
+          "missingNorm": "withhold_chart",
+          "useSampleValues": false,
+          "substituteRawScoreForPercentile": false,
+          "unknownHistoryVariant": "withhold_unestablished_variant",
+          "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+        },
+        "pageId": "d13fa01802f43_p1",
+        "sourceChartId": "chart_1",
+        "typeReview": {
+          "reviewIndex": 308,
+          "detectedType": "line",
+          "reviewedType": "horizontal_bar",
+          "method": "AI_visual_inspection_of_source_PDF_crop",
+          "scope": "chart_kind_only_not_scoring_or_full_layout",
+          "panelCount": 1,
+          "changed": true
+        },
+        "panelCount": 1,
+        "runtimeEnabled": false,
+        "labels": [
+          {
+            "text": "PDSS Average Severity Score",
+            "bboxPt": [
+              201.22301,
+              290.87048,
+              371.29898,
+              302.87048
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Absent or Limited",
+            "bboxPt": [
+              75.1074,
+              384.25693,
+              121.79339,
+              390.25693
+            ],
+            "colour": "#808080",
+            "font": "Helvetica",
+            "fontSizePt": 6.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Mild",
+            "bboxPt": [
+              176.011,
+              384.25693,
+              187.009,
+              390.25693
+            ],
+            "colour": "#cbc6ae",
+            "font": "Helvetica",
+            "fontSizePt": 6.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Moderate",
+            "bboxPt": [
+              281.08801,
+              384.25693,
+              306.43198,
+              390.25693
+            ],
+            "colour": "#cbbaa6",
+            "font": "Helvetica",
+            "fontSizePt": 6.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Severe",
+            "bboxPt": [
+              396.50699,
+              384.25693,
+              415.51498,
+              390.25693
+            ],
+            "colour": "#cca5a9",
+            "font": "Helvetica",
+            "fontSizePt": 6.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Extreme",
+            "bboxPt": [
+              479.03201,
+              384.25693,
+              501.37,
+              390.25693
+            ],
+            "colour": "#c29697",
+            "font": "Helvetica",
+            "fontSizePt": 6.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Interpretation",
+            "bboxPt": [
+              34.3465,
+              421.52979,
+              124.57652,
+              435.52979
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 14.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "The self-report Panic Disorder Severity Scale (PDSS) was administered on 21 April 2026. The",
+            "bboxPt": [
+              91.0394,
+              440.77353,
+              548.30939,
+              451.77353
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 11.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+        "referenceDistributions": null,
+        "seriesDiscoveryStatus": "requires_mapping_from_source_labels_and_marks"
+      },
+      {
+        "id": "d13fa01802f43_p2_chart_1",
+        "title": "Responses",
+        "type": "horizontal_bar",
+        "bboxPt": [
+          178.261,
+          197.292,
+          520.261,
+          535.732
+        ],
+        "widthPt": 342.0,
+        "heightPt": 338.44,
+        "axisColour": "#333333",
+        "observedDataType": "unresolved",
+        "backgroundBands": [
+          {
+            "bboxPt": [
+              180.38,
+              199.29199,
+              220.76012,
+              535.73199
+            ],
+            "colour": "#ffffff",
+            "opacity": 1.0,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              220.76102,
+              199.29199,
+              305.76102,
+              535.73199
+            ],
+            "colour": "#fceaa1",
+            "opacity": 0.4,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              305.76102,
+              199.29199,
+              390.76102,
+              535.73199
+            ],
+            "colour": "#fdc689",
+            "opacity": 0.4,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              390.76102,
+              199.29199,
+              475.76105,
+              535.73199
+            ],
+            "colour": "#ff9da7",
+            "opacity": 0.5,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          },
+          {
+            "bboxPt": [
+              475.76099,
+              199.29199,
+              518.26099,
+              535.73199
+            ],
+            "colour": "#e15759",
+            "opacity": 0.4,
+            "semantics": "visual_background_only_not_a_scoring_threshold"
+          }
+        ],
+        "variantEvidence": "single_visit_observed",
+        "xAxis": {
+          "status": "linear_ticks_observed",
+          "ticks": [
+            {
+              "value": 0.0,
+              "positionPt": 178.261,
+              "text": "0",
+              "colour": "#333333"
+            },
+            {
+              "value": 1.0,
+              "positionPt": 263.26097,
+              "text": "1",
+              "colour": "#333333"
+            },
+            {
+              "value": 2.0,
+              "positionPt": 348.26094,
+              "text": "2",
+              "colour": "#333333"
+            },
+            {
+              "value": 3.0,
+              "positionPt": 433.26090999999997,
+              "text": "3",
+              "colour": "#333333"
+            },
+            {
+              "value": 4.0,
+              "positionPt": 518.260865,
+              "text": "4",
+              "colour": "#333333"
+            }
+          ],
+          "title": null,
+          "minimum": 0.0,
+          "maximum": 4.0,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "yAxis": {
+          "status": "unresolved",
+          "ticks": [],
+          "title": null,
+          "domainPolicy": {
+            "status": "sample_extent_observed",
+            "runtimeRule": null,
+            "note": "Observed ticks do not establish a fixed domain for every patient."
+          }
+        },
+        "series": [
+          {
+            "id": "series_1",
+            "label": "7. Social Impairment",
+            "colour": "#ff9ca6",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.928998079423236,
+            "barThicknessPt": 34.05977999999999,
+            "fill": "#ff9da7",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#ff9ca6"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#ff9ca6"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#ff9ca6"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#ff9ca6"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#ff9ca6"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          },
+          {
+            "id": "series_2",
+            "label": "6. Work Impairment",
+            "colour": "#ae7aa0",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.786963494267817,
+            "barThicknessPt": 34.060209999999984,
+            "fill": "#af7aa1",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#ae7aa0"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#ae7aa0"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#ae7aa0"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#ae7aa0"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#ae7aa0"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          },
+          {
+            "id": "series_3",
+            "label": "5. Interoceptive Avoidance",
+            "colour": "#edc949",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.6449595940196194,
+            "barThicknessPt": 34.05980999999997,
+            "fill": "#edc949",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#edc949"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#edc949"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#edc949"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#edc949"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#edc949"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          },
+          {
+            "id": "series_4",
+            "label": "4. Agoraphobic Avoidance",
+            "colour": "#59a04f",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.5029545118780285,
+            "barThicknessPt": 34.060209999999984,
+            "fill": "#59a14f",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#59a04f"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#59a04f"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#59a04f"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#59a04f"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#59a04f"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          },
+          {
+            "id": "series_5",
+            "label": "3. Anticipatory Anxiety",
+            "colour": "#e15659",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.36095052298782654,
+            "barThicknessPt": 34.05980999999997,
+            "fill": "#e15759",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#e15659"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#e15659"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#e15659"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#e15659"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#e15659"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          },
+          {
+            "id": "series_6",
+            "label": "2. Distress During Panic",
+            "colour": "#f28d2b",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.21891602647441205,
+            "barThicknessPt": 34.06024000000002,
+            "fill": "#f28e2b",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#f28d2b"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#f28d2b"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#f28d2b"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#f28d2b"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#f28d2b"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          },
+          {
+            "id": "series_7",
+            "label": "1. Panic Frequency",
+            "colour": "#4e79a6",
+            "ruleIdCandidate": null,
+            "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+            "categoryPosition": 0.0769119932632077,
+            "barThicknessPt": 34.05981,
+            "fill": "#4e79a7",
+            "stroke": "#000000",
+            "valueTransform": null,
+            "runtimeEnabled": false,
+            "observedFill": {
+              "method": "source_PDF_interior_colour_samples",
+              "direction": "vertical",
+              "stops": [
+                {
+                  "offset": 0.1,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.3,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.5,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.7,
+                  "colour": "#4e79a6"
+                },
+                {
+                  "offset": 0.9,
+                  "colour": "#4e79a6"
+                }
+              ],
+              "runtimeColourRuleVerified": false
+            },
+            "metricId": null,
+            "metricIdCandidate": null,
+            "dataSource": "patient_metric_or_compatible_visit_history"
+          }
+        ],
+        "runtimePolicy": {
+          "missingBinding": "withhold_chart",
+          "missingNorm": "withhold_chart",
+          "useSampleValues": false,
+          "substituteRawScoreForPercentile": false,
+          "unknownHistoryVariant": "withhold_unestablished_variant",
+          "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+        },
+        "pageId": "d13fa01802f43_p2",
+        "sourceChartId": "chart_1",
+        "typeReview": {
+          "reviewIndex": 309,
+          "detectedType": "horizontal_bar",
+          "reviewedType": "horizontal_bar",
+          "method": "AI_visual_inspection_of_source_PDF_crop",
+          "scope": "chart_kind_only_not_scoring_or_full_layout",
+          "panelCount": 1,
+          "changed": false
+        },
+        "panelCount": 1,
+        "runtimeEnabled": false,
+        "labels": [
+          {
+            "text": "PDSS Item",
+            "bboxPt": [
+              255.918,
+              153.38954,
+              316.60199,
+              165.38954
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Responses",
+            "bboxPt": [
+              254.25003,
+              165.38954,
+              318.27002,
+              177.38954
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 12.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "7. Social Impairment",
+            "bboxPt": [
+              91.2344,
+              507.89792,
+              173.26036,
+              516.89795
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 9.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "6. Work Impairment",
+            "bboxPt": [
+              94.74456,
+              459.8381,
+              173.26053,
+              468.8381
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 9.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "5. Interoceptive Avoidance",
+            "bboxPt": [
+              67.20436,
+              411.76822,
+              173.26035,
+              420.76822
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 9.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "4. Agoraphobic Avoidance",
+            "bboxPt": [
+              68.20358,
+              363.70801,
+              173.26056,
+              372.70801
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 9.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "3. Anticipatory Anxiety",
+            "bboxPt": [
+              84.22348,
+              315.6478,
+              173.26047,
+              324.6478
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 9.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "2. Distress During Panic",
+            "bboxPt": [
+              76.73559,
+              267.57791,
+              173.26057,
+              276.57791
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 9.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "1. Panic Frequency",
+            "bboxPt": [
+              95.72539,
+              219.51811,
+              173.26035,
+              228.51811
+            ],
+            "colour": "#333333",
+            "font": "Helvetica",
+            "fontSizePt": 9.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "Scoring and Interpretation Information",
+            "bboxPt": [
+              34.3465,
+              564.04871,
+              290.26645,
+              578.04871
+            ],
+            "colour": "#000000",
+            "font": "Helvetica-Bold",
+            "fontSizePt": 14.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "For comprehensive information on the PDSS, ",
+            "bboxPt": [
+              91.0394,
+              583.29303,
+              315.4064,
+              594.29303
+            ],
+            "colour": "#000000",
+            "font": "Helvetica",
+            "fontSizePt": 11.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "text": "see here",
+            "bboxPt": [
+              315.40601,
+              583.29358,
+              358.207,
+              594.29358
+            ],
+            "colour": "#0000ff",
+            "font": "Helvetica",
+            "fontSizePt": 11.0,
+            "direction": [
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+        "referenceDistributions": null
+      }
+    ],
+    "tables": [],
+    "variants": {
+      "sourceStatements": [],
+      "firstAdministration": {
+        "status": "requires_review"
+      },
+      "repeatAdministration": {
+        "status": "requires_review"
+      },
+      "policy": "Do not invent a repeat chart from an observed first-visit chart."
+    },
+    "interpretationRules": {
+      "encodedRules": [],
+      "sourceGuidance": [
+        {
+          "title": "Scoring the Panic Disorder Severity Scale (PDSS)",
+          "text": "Each item is rated on a 5-point scale, where 0 represents the complete absence of panic disorder symptoms (e.g., ‘not at all distressing’, ‘no panic’) and 4 represents the most severe level (e.g., ‘extremely distressing’, ‘nearly constant’) over the past week. Response anchors vary across items but follow the same severity progression. The PDSS total score is the sum of all seven items, yielding a possible range of 0 to 28. Higher scores indicate greater panic disorder symptom severity. In addition to the total score, a composite score (average of all items) is computed and ranges from 0 to 4.\n"
+        },
+        {
+          "title": "PDSS Change Score Interpretation",
+          "text": "When PDSS scores are available from multiple timepoints, changes in scores from the baseline administration can provide valuable information about the effectiveness of interventions or symptom trajectory. Changes of at least 0.5 standard deviations on measures are generally considered the minimally important difference (MID; Norman et al., 2003; Turner et al., 2010).\nBased on a standard deviation of 6.6 from a self-report clinical sample using the full 7-item PDSS (Houck et al., 2002, N = 108, SD = 6.6), the minimally important difference for the PDSS total score is 3 points.\nChanges in PDSS total scores are categorised as:\nDecrease of 3 or more points: suggests clinically meaningful improvement in panic disorder symptoms\nIncrease of 3 or more points: suggests clinically meaningful worsening of panic disorder symptoms\nMinimal change: increase or decrease of 1 or 2 points, which suggests relatively stable panic severity\n"
+        }
+      ],
+      "reportScoringGuidance": [
+        {
+          "documentSha256": "13fa01802f43880002526ff4f4ed7bfa3aa0700de8cc766b47e4410de621acb0",
+          "pageNumber": 2,
+          "text": "For comprehensive information on the PDSS, \nsee here\n.\nThe PDSS is a 7-item self-report measure assessing the severity of seven dimensions of panic\ndisorder: panic attack frequency, distress during attacks, anticipatory anxiety, agoraphobic\navoidance, interoceptive avoidance, work impairment, and social impairment. Each item is rated\non a 0 to 4 scale, where 0 represents no symptoms and 4 represents extreme severity. Higher\nscores indicate greater severity of panic disorder symptoms. Individual items rated at the severe\n(3) or extreme (4) level are highlighted as these ratings correspond to significant impairment in\ndaily functioning based on the scale's item-level descriptors. The PDSS is designed to measure\npanic disorder symptom severity and is not intended as a diagnostic instrument.",
+          "usage": "source_guidance_for_review_not_executable_scoring",
+          "runtimeEnabled": false
+        }
+      ],
+      "sourceRequirements": [],
+      "templates": [],
+      "sampleNarrativeReusable": false,
+      "runtimeEnabled": false
+    },
+    "referenceTables": [],
+    "paintStyles": [],
+    "assets": {
+      "runtimeImages": [],
+      "runtimeSourceFiles": []
+    },
+    "runtimeContract": {
+      "version2RendererRequired": true,
+      "loadDefinitionFrom": "database_json",
+      "useCurrentPatientAnswers": true,
+      "useSamplePatientValues": false,
+      "externalNetworkRequired": false,
+      "sourceArchiveRequired": false,
+      "unknownScoring": "withhold",
+      "unknownNorms": "withhold",
+      "unsupportedChart": "withhold_and_report_exception",
+      "unknownRepeatLayout": "withhold"
+    },
+    "validation": {
+      "jsonStructureValidated": true,
+      "sourceHashesVerified": true,
+      "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+      "fullPageLayoutCompared": false,
+      "scoreBindingsReviewed": false,
+      "tablesSemanticallyReviewed": false,
+      "rendererEquivalent": false,
+      "clinicalApproved": false,
+      "readyForApplicationImport": false
+    },
+    "exceptions": [
+      {
+        "code": "score_and_series_bindings_require_review",
+        "count": 2
+      },
+      {
+        "code": "chart_series_not_resolved",
+        "chartIds": [
+          "d13fa01802f43_p1_chart_1"
+        ]
+      },
+      {
+        "code": "interpretation_and_variant_rules_require_review"
+      }
+    ]
+  },
+  "export_format": {
+    "schema_version": "standalone-combined-assessment-2.0",
+    "report_definition": "report_configuration uses assessment, administration, questionnaire and scoring from this file unless it supplies its own field. Its identity uses assessment_id, assessment.name and definition_version.",
+    "baseline_reporting": "reporting contains the initial report settings; report_configuration contains the dedicated report settings.",
+    "source_content": "Archived PDF text and extraction history were omitted in the compact export. Original verification refers to source definitions.",
+    "internal_references": "Metrics use rule_id; item history uses item_id; severity_bands_rule_id identifies the scoring rule containing the bands. Other internal references use section and field names within this JSON.",
+    "external_dependencies": "No external locations are included. Asset records retain descriptive metadata only; binary assets are not embedded.",
+    "verification_scope": "Original verification records describe the source definitions before this cleanup."
+  }
+}

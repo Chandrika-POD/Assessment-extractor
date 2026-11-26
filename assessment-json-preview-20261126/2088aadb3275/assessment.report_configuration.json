@@ -1,0 +1,931 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_total_raw",
+   "ruleId": "total_raw",
+   "label": "Total",
+   "minimum": 0,
+   "maximum": 78,
+   "calculation": {
+    "id": "total_raw",
+    "label": "Total",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26"
+    ],
+    "method": "sum",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0,
+    "maximum": 78,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "848def74756ee774325b4e0e50ff25831ee74d540902fcd44f42aae30ca292f3",
+     "retrieved_at": "2026-11-13T11:59:01.057226+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_dieting_mean",
+   "ruleId": "dieting_mean",
+   "label": "Dieting mean",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "dieting_mean",
+    "label": "Dieting mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q6",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q14",
+     "Q16",
+     "Q17",
+     "Q22",
+     "Q23",
+     "Q24"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "848def74756ee774325b4e0e50ff25831ee74d540902fcd44f42aae30ca292f3",
+     "retrieved_at": "2026-11-13T11:59:01.057226+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_restricting_and_purging_mean",
+   "ruleId": "restricting_and_purging_mean",
+   "label": "Restricting and Purging mean",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "restricting_and_purging_mean",
+    "label": "Restricting and Purging mean",
+    "item_ids": [
+     "Q2",
+     "Q7",
+     "Q9",
+     "Q10",
+     "Q17",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q26"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "848def74756ee774325b4e0e50ff25831ee74d540902fcd44f42aae30ca292f3",
+     "retrieved_at": "2026-11-13T11:59:01.057226+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_food_preoccupation_mean",
+   "ruleId": "food_preoccupation_mean",
+   "label": "Food Preoccupation mean",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "food_preoccupation_mean",
+    "label": "Food Preoccupation mean",
+    "item_ids": [
+     "Q3",
+     "Q4",
+     "Q18",
+     "Q20",
+     "Q21"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "848def74756ee774325b4e0e50ff25831ee74d540902fcd44f42aae30ca292f3",
+     "retrieved_at": "2026-11-13T11:59:01.057226+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_oral_control_mean",
+   "ruleId": "oral_control_mean",
+   "label": "Oral Control mean",
+   "minimum": 0.0,
+   "maximum": 3.0,
+   "calculation": {
+    "id": "oral_control_mean",
+    "label": "Oral Control mean",
+    "item_ids": [
+     "Q8",
+     "Q13",
+     "Q15",
+     "Q20"
+    ],
+    "method": "mean",
+    "multiplier": 1,
+    "value_field": "printed_value",
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "url": null,
+     "sha256": "848def74756ee774325b4e0e50ff25831ee74d540902fcd44f42aae30ca292f3",
+     "retrieved_at": "2026-11-13T11:59:01.057226+00:00",
+     "section": "Scoring & Interpretation",
+     "method": "reviewed_explicit_source_rule"
+    },
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "a7d897503d656837d67950a849217119dd427404b7f693aefeb1c14c9a51c757",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "da7d897503d65_p1",
+   "documentSha256": "a7d897503d656837d67950a849217119dd427404b7f693aefeb1c14c9a51c757",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "da7d897503d65_p1_chart_1"
+   ],
+   "tableIds": [
+    "da7d897503d65_p1_table_1"
+   ],
+   "sectionIds": [
+    "da7d897503d65_p1_section_1",
+    "da7d897503d65_p1_section_2",
+    "da7d897503d65_p1_section_3",
+    "da7d897503d65_p1_section_4"
+   ]
+  },
+  {
+   "pageId": "da7d897503d65_p2",
+   "documentSha256": "a7d897503d656837d67950a849217119dd427404b7f693aefeb1c14c9a51c757",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "da7d897503d65_p2_table_1",
+    "da7d897503d65_p2_table_2"
+   ],
+   "sectionIds": [
+    "da7d897503d65_p2_section_1",
+    "da7d897503d65_p2_section_2"
+   ]
+  },
+  {
+   "pageId": "da7d897503d65_p3",
+   "documentSha256": "a7d897503d656837d67950a849217119dd427404b7f693aefeb1c14c9a51c757",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "da7d897503d65_p3_table_1"
+   ],
+   "sectionIds": [
+    "da7d897503d65_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "da7d897503d65_p1_section_1",
+   "pageId": "da7d897503d65_p1",
+   "title": "Assessment Information",
+   "type": "source_heading",
+   "bboxPt": [
+    74.03149,
+    176.72569,
+    237.39752,
+    196.00369
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da7d897503d65_p1_section_2",
+   "pageId": "da7d897503d65_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    74.03149,
+    273.10361,
+    124.59951,
+    292.38162
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da7d897503d65_p1_section_3",
+   "pageId": "da7d897503d65_p1",
+   "title": "Interpretive Text",
+   "type": "interpretation",
+   "bboxPt": [
+    74.03149,
+    400.66269,
+    182.95149,
+    419.9407
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da7d897503d65_p1_section_4",
+   "pageId": "da7d897503d65_p1",
+   "title": "Average Scores",
+   "type": "results",
+   "bboxPt": [
+    252.67749,
+    482.5654,
+    343.38547,
+    499.08939
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da7d897503d65_p2_section_1",
+   "pageId": "da7d897503d65_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    329.95145,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da7d897503d65_p2_section_2",
+   "pageId": "da7d897503d65_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    368.06104,
+    191.50549,
+    387.33905
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "da7d897503d65_p3_section_1",
+   "pageId": "da7d897503d65_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    74.03149,
+    139.87529,
+    238.1675,
+    159.15329
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "da7d897503d65_p1_chart_1",
+   "title": "Average Scores",
+   "type": "vertical_bar",
+   "bboxPt": [
+    111.031,
+    510.405,
+    510.031,
+    647.405
+   ],
+   "widthPt": 399.0,
+   "heightPt": 137.0,
+   "axisColour": "#333333",
+   "observedDataType": "mean",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 3.0,
+      "positionPt": 511.525395,
+      "text": "3",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.5,
+      "positionPt": 534.025395,
+      "text": "2.5",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 556.525395,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.5,
+      "positionPt": 579.025395,
+      "text": "1.5",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 601.525395,
+      "text": "1",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.5,
+      "positionPt": 624.025395,
+      "text": "0.5",
+      "colour": "#333333"
+     },
+     {
+      "value": 0.0,
+      "positionPt": 646.525395,
+      "text": "0",
+      "colour": "#333333"
+     }
+    ],
+    "title": null,
+    "minimum": 0.0,
+    "maximum": 3.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Total Score",
+     "colour": "#2d89a8",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.09949874686716793,
+     "barThicknessPt": 39.400000000000006,
+     "fill": "#2d8aa8",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#2d89a8"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Dieting",
+     "colour": "#2d89a8",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.2984962280701754,
+     "barThicknessPt": 39.39999,
+     "fill": "#2d8aa8",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#2d89a8"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_3",
+     "label": null,
+     "colour": "#2d89a8",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.4974937468671679,
+     "barThicknessPt": 39.400030000000015,
+     "fill": "#2d8aa8",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#2d89a8"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_4",
+     "label": null,
+     "colour": "#2d89a8",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.6964912656641604,
+     "barThicknessPt": 39.39999,
+     "fill": "#2d8aa8",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#2d89a8"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_5",
+     "label": "Oral Control",
+     "colour": "#2d89a8",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.8954887343358396,
+     "barThicknessPt": 39.39999,
+     "fill": "#2d8aa8",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#2d89a8"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#2d89a8"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "da7d897503d65_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 90,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Average Scores",
+     "bboxPt": [
+      252.67749,
+      482.5654,
+      343.38547,
+      499.08939
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Total Score",
+     "bboxPt": [
+      111.21824,
+      648.80383,
+      157.08824,
+      694.67383
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.000003814697266,
+     "direction": [
+      0.70711,
+      -0.70711
+     ]
+    },
+    {
+     "text": "Dieting",
+     "bboxPt": [
+      204.76747,
+      648.80383,
+      236.48827,
+      680.5246
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.000003814697266,
+     "direction": [
+      0.70711,
+      -0.70711
+     ]
+    },
+    {
+     "text": "Restricting & Purging",
+     "bboxPt": [
+      239.76112,
+      648.80377,
+      315.88828,
+      724.93091
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.000003814697266,
+     "direction": [
+      0.70711,
+      -0.70711
+     ]
+    },
+    {
+     "text": "Food Preoccupation",
+     "bboxPt": [
+      322.29364,
+      648.80377,
+      395.28833,
+      721.79846
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.000003814697266,
+     "direction": [
+      0.70711,
+      -0.70711
+     ]
+    },
+    {
+     "text": "Oral Control",
+     "bboxPt": [
+      426.85959,
+      648.80383,
+      474.68829,
+      696.63251
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.000003814697266,
+     "direction": [
+      0.70711,
+      -0.70711
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "ChEAT Scoring & Interpretation",
+    "text": "\nItems are summed to obtain a total score. A cut-off score of 20 more indicates the presence of disturbed eating patterns and highlights the need for further assessment (Garner et l., 1982). A total score of 20 corresponds to an average score of 0.77.\nAverage scores between 0 and 3 are computed by dividing the raw score by the number of questions, and are presented for each of the four subscales.\nHigher scores indicate increased symptom severity. Subscales are derived by summing the following items:\nDieting : 1, 2, 6, 10,11, 12, 14, 16, 17, 22, 23, 24\nRestricting and Purging : 2, 7, 9,10, 17, 22, 23, 24, 26\nFood Preoccupation : 3, 4, 18, 20, 21\nOral Control: 8, 13, 15, 20\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "a7d897503d656837d67950a849217119dd427404b7f693aefeb1c14c9a51c757",
+    "pageNumber": 2,
+    "text": "Items are summed to obtain a total score. A cut-off score of 20 more\nindicates the presence of disturbed eating patterns and highlights\nthe need for further assessment (Garner et l., 1982). A total score of\n20 corresponds to an average score of 0.77.\nAverage scores between 0 and 3 are computed by dividing the raw\nscore by the number of questions, and are presented for each of the\nfour subscales.\nHigher scores indicate increased symptom severity. Subscales are\nderived by summing the following items:\n- Dieting: 1, 2, 6, 10,11, 12, 14, 16, 17, 22, 23, 24 \n- Restricting and Purging: 2, 7, 9,10, 17, 22, 23, 24, 26\n- Food Preoccupation: 3, 4, 18, 20, 21\n- Oral Control: 8, 13, 15, 20",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A cut-off score of 20 more indicates the presence of disturbed eating patterns and highlights the need for further assessment (Garner et l., 1982)."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 199
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

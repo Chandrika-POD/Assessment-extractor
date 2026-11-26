@@ -1,0 +1,1184 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_source_draft_1",
+   "ruleId": "source_draft_1",
+   "label": "Total Self-Compassion mean",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "source_draft_1",
+    "label": "Total Self-Compassion mean",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+     "page_url": null,
+     "page_sha256": "938d8452e711455699bebd90930efbafb0ac3805911a155651050586df212d9e",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C20",
+      "LIVE_C26",
+      "LIVE_C27",
+      "LIVE_C36",
+      "LIVE_C40"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 1.0,
+    "maximum": 5.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_2",
+   "ruleId": "source_draft_2",
+   "label": "Self Care mean",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "source_draft_2",
+    "label": "Self Care mean",
+    "item_ids": [
+     "Q2",
+     "Q3",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q10"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+     "page_url": null,
+     "page_sha256": "938d8452e711455699bebd90930efbafb0ac3805911a155651050586df212d9e",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C20",
+      "LIVE_C26",
+      "LIVE_C27",
+      "LIVE_C36",
+      "LIVE_C40"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 1.0,
+    "maximum": 5.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  },
+  {
+   "id": "metric_source_draft_3",
+   "ruleId": "source_draft_3",
+   "label": "Self Disparagement mean",
+   "minimum": 1.0,
+   "maximum": 5.0,
+   "calculation": {
+    "id": "source_draft_3",
+    "label": "Self Disparagement mean",
+    "item_ids": [
+     "Q1",
+     "Q4",
+     "Q8",
+     "Q9",
+     "Q11",
+     "Q12"
+    ],
+    "method": "mean",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "2d820acb50ab780bc5d11e3b62b5c45cb0d235f3d8258f0b9f1bcb12dfdc425c",
+     "page_url": null,
+     "page_sha256": "938d8452e711455699bebd90930efbafb0ac3805911a155651050586df212d9e",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C20",
+      "LIVE_C26",
+      "LIVE_C27",
+      "LIVE_C36",
+      "LIVE_C40"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "item_transforms": {
+     "Q1": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q4": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q8": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q9": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q11": {
+      "scale": -1,
+      "offset": 6
+     },
+     "Q12": {
+      "scale": -1,
+      "offset": 6
+     }
+    },
+    "minimum": 1.0,
+    "maximum": 5.0
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "pageCount": 5,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d1ef498c9415d_p1",
+   "documentSha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d1ef498c9415d_p1_chart_1",
+    "d1ef498c9415d_p1_chart_2"
+   ],
+   "tableIds": [
+    "d1ef498c9415d_p1_table_1"
+   ],
+   "sectionIds": [
+    "d1ef498c9415d_p1_section_1",
+    "d1ef498c9415d_p1_section_2",
+    "d1ef498c9415d_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d1ef498c9415d_p2",
+   "documentSha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": [
+    "d1ef498c9415d_p2_section_1",
+    "d1ef498c9415d_p2_section_2",
+    "d1ef498c9415d_p2_section_3",
+    "d1ef498c9415d_p2_section_4"
+   ]
+  },
+  {
+   "pageId": "d1ef498c9415d_p3",
+   "documentSha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [],
+   "sectionIds": []
+  },
+  {
+   "pageId": "d1ef498c9415d_p4",
+   "documentSha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "pageNumber": 4,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d1ef498c9415d_p4_table_1",
+    "d1ef498c9415d_p4_table_2"
+   ],
+   "sectionIds": [
+    "d1ef498c9415d_p4_section_1",
+    "d1ef498c9415d_p4_section_2",
+    "d1ef498c9415d_p4_section_3"
+   ]
+  },
+  {
+   "pageId": "d1ef498c9415d_p5",
+   "documentSha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+   "pageNumber": 5,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d1ef498c9415d_p5_table_1"
+   ],
+   "sectionIds": [
+    "d1ef498c9415d_p5_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d1ef498c9415d_p1_section_1",
+   "pageId": "d1ef498c9415d_p1",
+   "title": "SCS-SF Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    140.14452,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p1_section_2",
+   "pageId": "d1ef498c9415d_p1",
+   "title": "SCS-SF Total Average Score",
+   "type": "source_heading",
+   "bboxPt": [
+    215.948,
+    310.71252,
+    379.32797,
+    322.71252
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p1_section_3",
+   "pageId": "d1ef498c9415d_p1",
+   "title": "SCS-SF Subscale Average Scores",
+   "type": "results",
+   "bboxPt": [
+    198.10001,
+    520.79254,
+    392.17596,
+    532.79254
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p2_section_1",
+   "pageId": "d1ef498c9415d_p2",
+   "title": "Interpretation",
+   "type": "interpretation",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    124.57652,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p2_section_2",
+   "pageId": "d1ef498c9415d_p2",
+   "title": "Self Disparagement",
+   "type": "source_heading",
+   "bboxPt": [
+    91.0394,
+    223.94638,
+    193.73537,
+    234.94638
+   ],
+   "style": {
+    "font": "Helvetica-BoldOblique",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p2_section_3",
+   "pageId": "d1ef498c9415d_p2",
+   "title": "Self Care",
+   "type": "source_heading",
+   "bboxPt": [
+    91.0394,
+    381.40063,
+    138.7244,
+    392.40063
+   ],
+   "style": {
+    "font": "Helvetica-BoldOblique",
+    "fontSizePt": 11.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p2_section_4",
+   "pageId": "d1ef498c9415d_p2",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3464,
+    563.44824,
+    290.26636,
+    577.44824
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p4_section_1",
+   "pageId": "d1ef498c9415d_p4",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    281.45242,
+    151.8205,
+    295.45242
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p4_section_2",
+   "pageId": "d1ef498c9415d_p4",
+   "title": "Self Disparagement",
+   "type": "source_heading",
+   "bboxPt": [
+    34.3465,
+    301.29501,
+    165.05051,
+    315.29501
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p4_section_3",
+   "pageId": "d1ef498c9415d_p4",
+   "title": "Self Care",
+   "type": "source_heading",
+   "bboxPt": [
+    34.34601,
+    525.23242,
+    95.03602,
+    539.23242
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d1ef498c9415d_p5_section_1",
+   "pageId": "d1ef498c9415d_p5",
+   "title": "Legacy Clinical Comparison",
+   "type": "source_heading",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    221.84851,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d1ef498c9415d_p1_chart_1",
+   "title": null,
+   "type": "distribution",
+   "bboxPt": [
+    70.638,
+    354.615,
+    526.638,
+    449.055
+   ],
+   "widthPt": 456.0,
+   "heightPt": 94.44,
+   "axisColour": "#333333",
+   "observedDataType": "raw_score",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_or_unspecified",
+   "xAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 1.0,
+      "positionPt": 70.6378,
+      "text": "1",
+      "colour": "#333333"
+     },
+     {
+      "value": 1.5,
+      "positionPt": 127.38789499999999,
+      "text": "1.5",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 184.13818,
+      "text": "2",
+      "colour": "#333333"
+     },
+     {
+      "value": 2.5,
+      "positionPt": 240.88789500000001,
+      "text": "2.5",
+      "colour": "#333333"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 297.63818000000003,
+      "text": "3",
+      "colour": "#333333"
+     },
+     {
+      "value": 3.5,
+      "positionPt": 354.387895,
+      "text": "3.5",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.0,
+      "positionPt": 411.13818000000003,
+      "text": "4",
+      "colour": "#333333"
+     },
+     {
+      "value": 4.5,
+      "positionPt": 467.887895,
+      "text": "4.5",
+      "colour": "#333333"
+     },
+     {
+      "value": 5.0,
+      "positionPt": 524.638215,
+      "text": "5",
+      "colour": "#333333"
+     }
+    ],
+    "title": "Average Score",
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": null,
+     "colour": "#e74c3c",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.9229153715317787,
+     "barThicknessPt": 11.439819999999997,
+     "fill": null,
+     "stroke": "#e74c3c",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": null,
+     "colour": "#4caf50",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.9229153715317787,
+     "barThicknessPt": 11.439819999999997,
+     "fill": null,
+     "stroke": "#4caf50",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d1ef498c9415d_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 363,
+    "detectedType": "horizontal_bar",
+    "reviewedType": "distribution",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "SCS-SF Total Average Score",
+     "bboxPt": [
+      215.948,
+      310.71252,
+      379.32797,
+      322.71252
+     ],
+     "colour": "#000000",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 12.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Score",
+     "bboxPt": [
+      162.36649,
+      404.54596,
+      183.20898,
+      412.04596
+     ],
+     "colour": "#1976d2",
+     "font": "Helvetica-Bold",
+     "fontSizePt": 7.5,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "25th",
+     "bboxPt": [
+      261.16,
+      367.09894,
+      272.836,
+      373.09894
+     ],
+     "colour": "#4682b4",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "75th",
+     "bboxPt": [
+      342.88,
+      367.09894,
+      354.556,
+      373.09894
+     ],
+     "colour": "#4682b4",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Average Score",
+     "bboxPt": [
+      264.56799,
+      472.82822,
+      330.70798,
+      482.82822
+     ],
+     "colour": "#fdfefe",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Community",
+     "bboxPt": [
+      292.67999,
+      338.65894,
+      323.01596,
+      344.65894
+     ],
+     "colour": "#4682b4",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Mean",
+     "bboxPt": [
+      300.34482,
+      344.65894,
+      315.3508,
+      350.65894
+     ],
+     "colour": "#4682b4",
+     "font": "Helvetica",
+     "fontSizePt": 6.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": {
+    "status": "parameters_require_source_verification",
+    "curves": [],
+    "patientMarkerBinding": null
+   }
+  },
+  {
+   "id": "d1ef498c9415d_p1_chart_2",
+   "title": null,
+   "type": "vertical_bar",
+   "bboxPt": [
+    182.888,
+    567.175,
+    407.388,
+    722.0
+   ],
+   "widthPt": 224.5,
+   "heightPt": 154.825,
+   "axisColour": null,
+   "observedDataType": "unresolved",
+   "backgroundBands": [],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 4.0,
+      "positionPt": 589.22821,
+      "text": "4",
+      "colour": "#000000"
+     },
+     {
+      "value": 3.0,
+      "positionPt": 633.47821,
+      "text": "3",
+      "colour": "#000000"
+     },
+     {
+      "value": 2.0,
+      "positionPt": 677.72821,
+      "text": "2",
+      "colour": "#000000"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 721.97821,
+      "text": "1",
+      "colour": "#000000"
+     }
+    ],
+    "title": null,
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Self Disparagement",
+     "colour": "#9a59b5",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.178173697104677,
+     "barThicknessPt": 49.99999,
+     "fill": "#9b59b6",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#9a59b5"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#9a59b5"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#9a59b5"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#9a59b5"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#9a59b5"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    },
+    {
+     "id": "series_2",
+     "label": "Self Care",
+     "colour": "#f39b11",
+     "ruleIdCandidate": null,
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.821826280623608,
+     "barThicknessPt": 50.0,
+     "fill": "#f39c12",
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#f39b11"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#f39b11"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#f39b11"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#f39b11"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#f39b11"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": null,
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d1ef498c9415d_p1",
+   "sourceChartId": "chart_2",
+   "typeReview": {
+    "reviewIndex": 364,
+    "detectedType": "vertical_bar",
+    "reviewedType": "vertical_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": false
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Low",
+     "bboxPt": [
+      114.219,
+      707.79626,
+      127.057,
+      714.79626
+     ],
+     "colour": "#99a3a4",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "(Almost",
+     "bboxPt": [
+      108.77642,
+      714.79626,
+      132.49942,
+      721.79626
+     ],
+     "colour": "#99a3a4",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Never)",
+     "bboxPt": [
+      110.13775,
+      721.79626,
+      131.13774,
+      728.79626
+     ],
+     "colour": "#99a3a4",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "High",
+     "bboxPt": [
+      113.44205,
+      530.79626,
+      127.83405,
+      537.79626
+     ],
+     "colour": "#99a3a4",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "(Almost",
+     "bboxPt": [
+      108.77642,
+      537.79626,
+      132.49942,
+      544.79626
+     ],
+     "colour": "#99a3a4",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Always)",
+     "bboxPt": [
+      108.38775,
+      544.79626,
+      132.88774,
+      551.79626
+     ],
+     "colour": "#99a3a4",
+     "font": "Helvetica",
+     "fontSizePt": 7.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Self Disparagement",
+     "bboxPt": [
+      178.983,
+      727.62817,
+      266.793,
+      737.62817
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Self Care",
+     "bboxPt": [
+      346.54779,
+      727.62817,
+      388.22778,
+      737.62817
+     ],
+     "colour": "#000000",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "Self-Compassion Scale – Short Form (SCS-SF) Scoring",
+    "text": "The SCS-SF total average score is an overall indicator of self-compassion. It is the average of all 12 items (range 1 to 5), made up of the six Self Care items and the six Self Disparagement items. The Self Disparagement items are reverse-scored first so that higher totals reflect more self-compassion. As a result, a high total reflects high Self Care together with low Self Disparagement.\n",
+    "source_url": null
+   },
+   {
+    "title": "SCS-SF Subscale Interpretation",
+    "text": "Subscale interpretation is provided only to support clinical conversation about the relative balance between Self Disparagement and Self Care dimensions of self-compassion. Both subscales are total averages using the same scale as the total score (1-5).\nSelf Disparagement (items 1, 4, 8, 9, 11, 12): Captures harsh self-criticism, feeling alone in failure, and fixation on personal inadequacy. On this subscale, higher scores indicate more self-critical responses to difficulty (e.g., thoughts like “there’s something wrong with me”, or a sense that everyone else is coping better). Lower scores indicate fewer self-critical responses. Because these items are reverse-scored in the total, lower Self Disparagement contributes to a higher total self-compassion score.\nSelf Care (items 2, 3, 5, 6, 7, 10): Captures self-kindness, recognition of common humanity, and a balanced, mindful stance. Higher scores indicate warmer, more balanced responses to difficulty. People who score high on Self Care find thoughts such as “this is hard, and that’s understandable” relatively accessible, and may offer themselves comfort or rest when distressed. Lower scores may indicate that a person pushes through distress without acknowledging it, or makes limited use of self-soothing strategies.\n",
+    "source_url": null
+   },
+   {
+    "title": "SCS-SF Percentiles",
+    "text": "A percentile is presented for the average total score and for each subscale, indicating how the respondent’s score compares with the community reference sample (Adu et al., 2024, New Zealand subsample). A community percentile of 50 represents a typical score within the community reference sample. Importantly, the subscales run in opposite directions, so a high percentile does not mean the same for each average score:\nFor the Total Score and Self Care, a higher percentile suggests greater self-compassion, while a low percentile (e.g., 5, meaning lower than 95 percent of the community sample) flags low self-compassion and is a useful prompt for psychoeducation about self-compassion as a learnable skill.\nFor Self Disparagement the direction is reversed: a higher percentile means more self-criticism, so a high percentile (rather than a low one) is clinically notable.\n",
+    "source_url": null
+   },
+   {
+    "title": "SCS-SF Change Score Interpretation",
+    "text": "When SCS-SF scores are available from multiple administrations, changes in the total score can indicate the effectiveness of treatment or shifts in self-compassion over time. In NovoPsych, change is interpreted against a Minimum Important Difference (MID; Norman et al., 2003) of 0.4 on the 1–5 average scale, equivalent to a 5-point change on the raw 12–60 total score (half the community SD, rounded up to the nearest whole total-score point). Changes are presented as change in average score and are categorised as:\nMeaningful improvement of self-compassion: average increase of 0.4 or more (an increase of 5 or more points on the total score).\nMeaningful decline of self-compassion: average decrease of 0.4 or more (a decrease of 5 or more points on the total score).\nMinimal change of self-compassion: average change below 0.4 (a change of fewer than 5 points on the total score).\nProfessional Access\n",
+    "source_url": null
+   },
+   {
+    "title": "What if a client scores very low on the total SCS-SF?",
+    "text": "A low score does not indicate a fixed problem; it often reflects a current relationship with the self that can shift with focused work. Very low scores tend to be common in clients presenting with depression, anxiety, perfectionism, or chronic self-criticism. Self-compassion typically responds well to brief, structured interventions (e.g., CFT, MSC, brief writing tasks). The subscale pattern can complement the total at the low end, since a low Self Care score and a high Self Disparagement score point to different therapeutic emphases.\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "1ef498c9415d06d2ae4563e521bdb8836baf3495835feadfceb9c817aa642e74",
+    "pageNumber": 2,
+    "text": "For comprehensive information on the SCS-SF, \nsee here\n.\nThe SCS-SF total average score is an overall indicator of self-compassion. It is the average of\nall 12 items (range 1 to 5), made up of the six Self Care items and the six Self Disparagement\nitems. The Self Disparagement items are reverse-scored first so that higher totals reflect more\nself-compassion. As a result, a high total reflects high Self Care together with low Self\nDisparagement.\nSCS-SF Subscale Interpretation\nSubscale interpretation is provided only to support clinical conversation about the relative\nbalance between Self Disparagement and Self Care dimensions of self-compassion. Both\nsubscales are total averages using the same scale as the total score (1-5).\nSelf Disparagement (items 1, 4, 8, 9, 11, 12): captures harsh self-criticism, isolation in failure,\nand fixation on personal inadequacy. Unlike the total score, in which the Self Disparagement",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A percentile is presented for the average total score and for each subscale, indicating how the respondent’s score compares with the community reference sample (Adu et al., 2024, New Zealand subsample).",
+   "A community percentile of 50 represents a typical score within the community reference sample.",
+   "Importantly, the subscales run in opposite directions, so a high percentile does not mean the same for each average score:",
+   "For the Total Score and Self Care, a higher percentile suggests greater self-compassion, while a low percentile (e.g., 5, meaning lower than 95 percent of the community sample) flags low self-compassion and is a useful prompt for psychoeducation about self-compassion as a learnable skill.",
+   "For Self Disparagement the direction is reversed: a higher percentile means more self-criticism, so a high percentile (rather than a low one) is clinically notable."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": {
+  "$file": "assessment.report_configuration.paintStyles.json"
+ },
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 12,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 2
+  },
+  {
+   "code": "reference_distribution_curves_require_numeric_parameters",
+   "chartIds": [
+    "d1ef498c9415d_p1_chart_1"
+   ]
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 106
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

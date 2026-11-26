@@ -1,0 +1,965 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "work-and-social-adjustment-scale--35083c2245b6",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Work and Social Adjustment Scale (WSAS)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Work and Social Adjustment Scale (WSAS; Mundt et al., 2002) is a five-item adult self-report measure of functional impairment across key areas of daily life attributable to a person’s difficulties.",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "Rate each of the following questions on a 0 to 8 scale: 0 indicates no impairment at all and 8 indicates very severe impairment. Because of my difficulties, my ability to work is impaired.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+     "page_url": null,
+     "page_sha256": "63ee77e88d8b23123fb3965979a2785a0702c719c3683b6c038d682af3064c75",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C5",
+      "C12",
+      "C15",
+      "LIVE_C30",
+      "LIVE_C33",
+      "LIVE_C46"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "option_value_overrides": {
+     "Q1": {
+      "O10": 0
+     }
+    },
+    "minimum": 0.0,
+    "maximum": 40.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+   "page_url": null,
+   "page_sha256": "63ee77e88d8b23123fb3965979a2785a0702c719c3683b6c038d682af3064c75",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [
+   "No. The WSAS quantifies the real-world impact of a person’s difficulties on daily functioning but does not identify or confirm any specific diagnosis. That said, it speaks directly to a criterion that runs through much of the DSM-5-TR: most disorders require evidence that symptoms cause “clinically significant distress or impairment in social, occupational, or other important areas of functioning” before the diagnostic threshold is met. The five WSAS domains map closely onto this criterion, making the measure a useful adjunct to symptom-focused tools when establishing whether the impairment threshold has been reached. Used alongside diagnosis-specific measures (such as the SADS , PSWQ , CESD-R , or PCL-5 ), the WSAS adds the functional dimension that those measures do not capture and supports a more complete clinical picture for diagnostic and treatment-planning decisions.",
+   "Functional impairment is widely treated as a marker of clinical significance in mental health and broader clinical practice. Many DSM-5-TR disorders include a requirement that symptoms cause clinically significant distress or impairment across key areas of functioning before meeting the diagnostic threshold (American Psychiatric Association, 2022). This requirement highlights that often the experiential impact of a difficulty, not symptom presence alone, defines its clinical relevance. Different difficulties affect functioning in distinct ways and to different extents. For example, agoraphobia may primarily impact social engagement and movement outside the home, while a chronic physical condition may primarily limit work or daily activities. Functional impairment is also a key predictor of treatment-seeking, treatment retention, and relapse risk, and symptom remission alone does not always translate into functional recovery.",
+   "The WSAS total score is calculated as the sum of the five item ratings and ranges from 0 to 40, with higher scores indicating greater overall functional impairment. Both the total score and item-level responses are clinically informative: the total provides an overall index of functional impairment, while item-level responses identify which specific life domains are affected.",
+   "To provide additional interpretive context, percentile rankings are derived from a reference sample of adults at intake for primary-care psychological therapy (Zahra et al., 2014). These percentiles indicate a respondent’s position relative to others entering outpatient therapy, not relative to the general population. For example, a total score of 10 corresponds to approximately the 17th percentile in this reference sample, indicating that roughly one in six adults entering primary-care therapy scored at or below this level. A score of 19 corresponds to approximately the 50th percentile (close to the reference sample average), and a score of 30 corresponds to approximately the 89th percentile."
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "Work and Social Adjustment Scale (WSAS) Scoring",
+    "text": "Each WSAS item rates the degree of impairment in a specific life domain (work, home management, social leisure, private leisure, or close relationships) on a nine-point scale, ranging from 0 (not at all impaired) to 8 (very severely impaired).\nItem 1 (Work) includes an additional response option: “I am not working for reasons unrelated to my difficulties.” This accommodates respondents who are not currently in paid work (e.g., retired individuals, students, or full-time caregivers) where rating impairment in “ability to work” does not apply meaningfully. When selected, item 1 is scored as 0, and the total is calculated normally.\nThe WSAS total score is calculated as the sum of the five item ratings and ranges from 0 to 40, with higher scores indicating greater overall functional impairment. Both the total score and item-level responses are clinically informative: the total provides an overall index of functional impairment, while item-level responses identify which specific life domains are affected.\n",
+    "source_url": null
+   },
+   {
+    "title": "WSAS Percentile Context",
+    "text": "To provide additional interpretive context, percentile rankings are derived from a reference sample of adults at intake for primary-care psychological therapy (Zahra et al., 2014). These percentiles indicate a respondent’s position relative to others entering outpatient therapy, not relative to the general population. For example, a total score of 10 corresponds to approximately the 17th percentile in this reference sample, indicating that roughly one in six adults entering primary-care therapy scored at or below this level. A score of 19 corresponds to approximately the 50th percentile (close to the reference sample average), and a score of 30 corresponds to approximately the 89th percentile.\n",
+    "source_url": null
+   },
+   {
+    "title": "WSAS Change Score Interpretation",
+    "text": "When WSAS scores are available from multiple timepoints, changes in scores can provide valuable information about the effectiveness of interventions or changes in functional impairment. Changes of at least 0.5 standard deviations are considered clinically meaningful (Norman et al., 2003; Turner et al., 2010). Based on Zahra et al. (2014), the minimally important difference (MID) = 5 points. These changes are categorised as:\nSignificant reduction : equal to or greater than 5-point reduction in score.\nSignificant increase : equal to or greater than 5-point increase in score.\nMinimal change : less than 5 points or no change in score.\nOf note, Zahra et al. (2014) proposed an 8-point change as clinically meaningful, derived from the measurement error of the WSAS. NovoPsych instead uses a 5-point change, consistent with what patients typically perceive as a meaningful change in functioning.\n",
+    "source_url": null
+   },
+   {
+    "title": "What does it mean if a client's symptom scores and WSAS scores don't align?",
+    "text": "This pattern is clinically informative rather than a problem with the measure. The WSAS captures a distinct construct from symptom severity, and research has shown that WSAS scores load on a factor separate from depression and anxiety symptoms even when correlations between them are moderate to strong. A discrepancy can indicate several things.\nElevated symptoms with relatively preserved functioning may reflect strong external supports, an early or acute stage of presentation, or specific resilience factors that warrant exploration.\nLow symptoms with persistent functional impairment may indicate residual disability after partial symptom remission, a different difficulty driving the impairment (for example, a chronic physical condition or relational issue), or entrenched avoidance patterns that have not yet shifted.\nThese mismatches are particularly useful at treatment review: symptom reduction without functional gain is a common signal to revisit the case formulation and consider whether the most clinically meaningful treatment targets have been identified.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 1,
+    "text": "Total Score (sum of all items)",
+    "y": 519.8,
+    "url": null,
+    "sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "not_compiled",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Mundt, J. C., Marks, I. M., Shear, M. K., & Greist, J. H. (2002). The Work and Social Adjustment Scale: A simple measure of impairment in functioning. British Journal of Psychiatry, 180 (5), 461–464. https://doi.org/10.1192/bjp.180.5.461",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "American Psychiatric Association. (2022). Diagnostic and statistical manual of mental disorders (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787\nHeissel, A., Bollmann, J., Kangas, M., Abdulla, K., Rapp, M., & Sanchez, A. (2021). Validation of the German version of the Work and Social Adjustment Scale in a sample of depressed patients. BMC Health Services Research, 21 , 593. https://doi.org/10.1186/s12913-021-06622-x\nJansson-Fröjmark, M. (2014). The Work and Social Adjustment Scale as a measure of dysfunction in chronic insomnia: Reliability and validity. Behavioural and Cognitive Psychotherapy, 42 (2), 186–198. https://doi.org/10.1017/S135246581200104X\nLundqvist, L.-O., et al. (2024). The Work and Social Adjustment Scale (WSAS): An investigation of reliability, validity, and associations with clinical characteristics in psychiatric outpatients. PLOS ONE, 19 (10), e0311420. https://doi.org/10.1371/journal.pone.0311420\nMataix-Cols, D., Cowley, A. J., Hankins, M., Schneider, A., Bachofen, M., Kenwright, M., Gega, L., Cameron, R., & Marks, I. M. (2005). Reliability and validity of the Work and Social Adjustment Scale in phobic disorders. Comprehensive Psychiatry, 46 (3), 223–228. https://doi.org/10.1016/j.comppsych.2004.08.007\nMundt, J. C., Marks, I. M., Shear, M. K., & Greist, J. H. (2002). The Work and Social Adjustment Scale: A simple measure of impairment in functioning. British Journal of Psychiatry, 180 (5), 461–464. https://doi.org/10.1192/bjp.180.5.461\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: The remarkable universality of half a standard deviation. Medical Care, 41 (5), 582–592. https://doi.org/10.1097/01.MLR.0000062554.74615.4C\nPedersen, G., Kvarstein, E. H., & Wilberg, T. (2017). The Work and Social Adjustment Scale: Psychometric properties and validity among males and females, and outpatients with and without personality disorders. Personality and Mental Health, 11 (4), 215–228. https://doi.org/10.1002/pmh.1382\nShih, C.-Y., Zhang, Y., Lai, C. Y. Y., Leung, C., Bressington, D., & Molassiotis, A. (2021). Psychometric properties of Chinese version of Work and Social Adjustment Scale for outpatients with common mental disorders: Classical test theory and Rasch analysis. East Asian Archives of Psychiatry, 31 (4), 97–104. https://doi.org/10.12809/eaap20101\nThandi, G., Fear, N. T., & Chalder, T. (2017). A comparison of the Work and Social Adjustment Scale (WSAS) across different patient populations using Rasch analysis and exploratory factor analysis. Journal of Psychosomatic Research, 92 , 45–48. https://doi.org/10.1016/j.jpsychores.2016.11.009\nTolchard, B. (2016). Reliability and validity of the Work and Social Adjustment Scale in treatment-seeking problem gamblers. Journal of Addictions Nursing, 27 (4), 229–233.\nTurner, D., Schünemann, H. J., Griffith, L. E., Beaton, D. E., Griffiths, A. M., Critch, J. N., & Guyatt, G. H. (2010). The minimal detectable change cannot reliably replace the minimal important difference. Journal of Clinical Epidemiology, 63 (1), 28–36. https://doi.org/10.1016/j.jclinepi.2009.01.024\nVázquez Morejón, A. J., Vázquez-Morejón, R., & Conde Álvarez, P. (2021). Work and Social Adjustment Scale (WSAS): Psychometric characteristics of a Spanish adaptation in a clinical population. Behavioural and Cognitive Psychotherapy, 49 (6), 764–768. https://doi.org/10.1017/S1352465821000308\nZahra, D., Qureshi, A., Henley, W., Taylor, R., Quinn, C., Pooler, J., Hardy, G., Newbold, A., & Byng, R. (2014). The Work and Social Adjustment Scale: Reliability, sensitivity and value. International Journal of Psychiatry in Clinical Practice, 18 (2), 131–138. https://doi.org/10.3109/13651501.2014.894072",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Work and Social Adjustment Scale (WSAS) PDF",
+   "source_url": null,
+   "sha256": "9e14e91e599c2f32d69f66e52ed60d2cfaf476dbc18bc3136e3dd7b4b3c49a1d",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/9e14e91e599c2f32d69f66e52ed60d2cfaf476dbc18bc3136e3dd7b4b3c49a1d.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "The World Health Organisation Disability Assessment Schedule (WHODAS 2.0) – Self-Report Version",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "746748428cbe09e3ce6de7cafd00f6e9c2eb76a19319f1d3003b825ea3397bd1",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/746748428cbe09e3ce6de7cafd00f6e9c2eb76a19319f1d3003b825ea3397bd1.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download WSAS PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr Joseph Phillips",
+   "source_url": null,
+   "sha256": "fe1ae5a97ddfafb55a0ec494ff351f42008a7c99ba49e3b2c44f757621d7c421",
+   "mime_type": "image/jpeg",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/fe1ae5a97ddfafb55a0ec494ff351f42008a7c99ba49e3b2c44f757621d7c421.jpg",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "61cc979236a70023ec121da745f5d52e2eff75a0d6bd8694c1b2597453dfb1b7",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/61cc979236a70023ec121da745f5d52e2eff75a0d6bd8694c1b2597453dfb1b7.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "WSAS Example Item",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "0d499b7b100ba6bd6bae127f00c73f2c8eb664cff8300a7d7f0cdfc6578101ce",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/0d499b7b100ba6bd6bae127f00c73f2c8eb664cff8300a7d7f0cdfc6578101ce.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "WSAS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "1bfebc0d864f2d413017c8ae676456f76678b222489a19b98d414a9dfa0c09a0",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/1bfebc0d864f2d413017c8ae676456f76678b222489a19b98d414a9dfa0c09a0.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "WSAS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "ec586a99540e0f625315c17f33649712d35b19da226bfc7f255105ed2793fd0b",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/ec586a99540e0f625315c17f33649712d35b19da226bfc7f255105ed2793fd0b.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "WSAS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "5729cb79f73027f44cac7596d17ae27a8cf5d5ebe3b71805159bc65cda94b83a",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/5729cb79f73027f44cac7596d17ae27a8cf5d5ebe3b71805159bc65cda94b83a.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "WSAS Graphs",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Work and Social Adjustment Scale (WSAS) u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "work-and-social-adjustment-scale-blank-form-survey-questions-pdf.pdf",
+   "source_url": null,
+   "sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "Download WSAS PDF",
+   "source_url": null,
+   "sha256": "f7f302503730bb204986738fbedb4f3b7f509059f676abe07f34135d717911cd",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f7f302503730bb204986738fbedb4f3b7f509059f676abe07f34135d717911cd.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "WSAS-Sample-Results-Report-1.pdf",
+   "source_url": null,
+   "sha256": "fab9da1be1dc45fc05fef506020c2c6a0cd0801f7876e1f8daf038d918a1f2f5",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/fab9da1be1dc45fc05fef506020c2c6a0cd0801f7876e1f8daf038d918a1f2f5.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A14",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "WSAS Sample Results",
+   "source_url": null,
+   "sha256": "af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/af0afa7f57cf0ff50f84ac990b8c6bfec693c74b7b5114ed814c5df5a83e215b.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 5
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [
+    "Restored WSAS Q1 stem and its separate non-working choice O10; preserved all prior option IDs. Source guidance explicitly maps O10 to zero."
+   ],
+   "scoring_rule_count": 1,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 1,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "f7f302503730bb204986738fbedb4f3b7f509059f676abe07f34135d717911cd",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/f7f302503730bb204986738fbedb4f3b7f509059f676abe07f34135d717911cd.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "Download WSAS PDF"
+   ],
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "version": "2.0.0-draft.1",
+  "status": "draft_requires_clinical_review",
+  "clinical_scoring_enabled": false,
+  "metrics": [
+   {
+    "rule_id": "source_draft_1",
+    "label": "Total raw score",
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "favourable_direction": null,
+    "direction_status": "not_compiled",
+    "calculation_method": "sum",
+    "calculation_ref": "/scoring/rules/0",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5"
+    ],
+    "severity_bands_ref": null,
+    "axis_unit": "score"
+   }
+  ],
+  "charts": [
+   {
+    "id": "source_draft_1",
+    "title": "Total raw score",
+    "kind": "domain_trend",
+    "series": [
+     {
+      "id": "source_draft_1",
+      "label": "Total raw score",
+      "value_field": "rule_result"
+     }
+    ],
+    "minimum": 0.0,
+    "maximum": 40.0,
+    "axis_unit": "score"
+   }
+  ],
+  "comparisons": {
+   "reference_visits": [
+    "previous",
+    "baseline"
+   ],
+   "delta_formula": "current_minus_reference",
+   "deduplicate_same_reference_visit": true,
+   "require_same_assessment_definition_language_and_scoring_version": true,
+   "missing_result": "withhold_comparison",
+   "single_visit": "show_current_scores_only",
+   "date_source": "saved_session_completion_timestamp",
+   "require_compatible_respondent_context": true,
+   "unknown_direction": "report_numeric_change_without_improvement_or_deterioration_label",
+   "score_colour_policy": "neutral_unless_direction_has_been_reviewed",
+   "non_numeric_results": "show_state_or_response_history_without_numeric_delta"
+  },
+  "percentiles": {
+   "enabled": false,
+   "reason": "verified_lookup_not_available"
+  },
+  "interpretation": {
+   "method": "deterministic_templates",
+   "score_template": "{label}: {score} (scale {minimum} to {maximum}).",
+   "change_template": "{label} changed by {signed_delta} points since {reference_date}.",
+   "missing_result_template": "Result unavailable: required responses or eligibility information are missing.",
+   "clinical_significance": "not_implemented_requires_review",
+   "diagnosis": "not_inferred",
+   "severity_source": "not_compiled",
+   "overall_total": null,
+   "combine_metrics_into_new_total": false,
+   "source_guidance_ref": "/scoring/source_guidance",
+   "source_guidance_use": "reference_text_for_review_not_executable_rules",
+   "descriptor_template": "{label}: {descriptor} (draft source descriptor).",
+   "descriptive_template": "Responses are shown individually; no numeric total is defined.",
+   "unavailable_template": "This assessment's questionnaire is unavailable in the supplied definitions."
+  },
+  "source_evidence": {
+   "questionnaire_sha256": "f66afcdad72cfc869eb635b9658a3eb9f937ccd58ae6238239a458b821730ab0",
+   "guidance_titles": [
+    "Work and Social Adjustment Scale (WSAS) Scoring",
+    "WSAS Percentile Context",
+    "WSAS Change Score Interpretation",
+    "What does it mean if a client's symptom scores and WSAS scores don't align?"
+   ]
+  },
+  "mode": "numeric_scores",
+  "required_context": [],
+  "coverage": {
+   "questionnaire_available": true,
+   "numeric_rule_count": 1,
+   "rules_included": [
+    "source_draft_1"
+   ],
+   "raw_calculation_status": "draft_implemented",
+   "interpretation_status": "not_compiled",
+   "full_source_coverage_verified": false,
+   "clinical_review_complete": false,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "review_issue_codes": [
+    "selection_and_branching_need_review",
+    "scoring_not_structured",
+    "independent_review_pending"
+   ],
+   "reference_guidance_only": false,
+   "missing_direction_rule_ids": [
+    "source_draft_1"
+   ]
+  },
+  "sections": [
+   {
+    "id": "patient_details",
+    "enabled": true,
+    "source": "saved_patient_and_session"
+   },
+   {
+    "id": "assessment_summary",
+    "enabled": true,
+    "source": "assessment_and_reporting_coverage"
+   },
+   {
+    "id": "results",
+    "enabled": true,
+    "source": "reporting.metrics"
+   },
+   {
+    "id": "score_charts",
+    "enabled": true,
+    "source": "reporting.charts",
+    "single_visit": "range_bar",
+    "repeated_visits": "line_chart"
+   },
+   {
+    "id": "comparisons",
+    "enabled": true,
+    "source": "compatible_saved_sessions"
+   },
+   {
+    "id": "protocol_result",
+    "enabled": false,
+    "source": "scoring.protocol"
+   },
+   {
+    "id": "paired_profile",
+    "enabled": false,
+    "source": "scoring.paired_profile"
+   },
+   {
+    "id": "response_history",
+    "enabled": true,
+    "source": "reporting.item_history"
+   },
+   {
+    "id": "responses",
+    "enabled": true,
+    "source": "reporting.response_groups"
+   },
+   {
+    "id": "source_guidance",
+    "enabled": true,
+    "source": "scoring.source_guidance",
+    "role": "reference_material_requires_review"
+   },
+   {
+    "id": "limitations",
+    "enabled": true,
+    "source": "reporting.coverage"
+   }
+  ],
+  "response_groups": [
+   {
+    "id": "source_draft_1",
+    "label": "Total raw score",
+    "rule_id": "source_draft_1",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5"
+    ]
+   }
+  ],
+  "item_history": [
+   {
+    "item_id": "Q1",
+    "question_ref": "/questionnaire/items/0",
+    "source_label": "1",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q2",
+    "question_ref": "/questionnaire/items/1",
+    "source_label": "2",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q3",
+    "question_ref": "/questionnaire/items/2",
+    "source_label": "3",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q4",
+    "question_ref": "/questionnaire/items/3",
+    "source_label": "4",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   },
+   {
+    "item_id": "Q5",
+    "question_ref": "/questionnaire/items/4",
+    "source_label": "5",
+    "response_type": "choice",
+    "presentation": "choice_history",
+    "value_field": "saved_answer",
+    "unit": null,
+    "minimum": null,
+    "maximum": null,
+    "missing_value": "gap",
+    "ineligible_value": "not_asked"
+   }
+  ],
+  "protocol": null,
+  "paired_profile": null
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "ada6fa619209d6f4992190ecf3a425a553bd0940ae40ee8e7d92df77a47e26d6",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T10:05:00.654069+00:00",
+  "raw_extraction_sha256": "751fbc117c49e6d8e8b4302c0ffddafabb948438bb56121187bc23267b58a9d4",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Disability"
+   },
+   {
+    "url": null,
+    "title": "Health"
+   },
+   {
+    "url": null,
+    "title": "Outcome Monitoring"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": null,
+    "title": "SADS"
+   },
+   {
+    "url": null,
+    "title": "PSWQ"
+   },
+   {
+    "url": null,
+    "title": "CESD-R"
+   },
+   {
+    "url": null,
+    "title": "PCL-5"
+   },
+   {
+    "url": "https://doi.org/10.1192/bjp.180.5.461",
+    "title": "https://doi.org/10.1192/bjp.180.5.461"
+   },
+   {
+    "url": "https://doi.org/10.1176/appi.books.9780890425787",
+    "title": "https://doi.org/10.1176/appi.books.9780890425787"
+   },
+   {
+    "url": "https://doi.org/10.1186/s12913-021-06622-x",
+    "title": "https://doi.org/10.1186/s12913-021-06622-x"
+   },
+   {
+    "url": "https://doi.org/10.1017/S135246581200104X",
+    "title": "https://doi.org/10.1017/S135246581200104X"
+   },
+   {
+    "url": "https://doi.org/10.1371/journal.pone.0311420",
+    "title": "https://doi.org/10.1371/journal.pone.0311420"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.comppsych.2004.08.007",
+    "title": "https://doi.org/10.1016/j.comppsych.2004.08.007"
+   },
+   {
+    "url": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C",
+    "title": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C"
+   },
+   {
+    "url": "https://doi.org/10.1002/pmh.1382",
+    "title": "https://doi.org/10.1002/pmh.1382"
+   },
+   {
+    "url": "https://doi.org/10.12809/eaap20101",
+    "title": "https://doi.org/10.12809/eaap20101"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jpsychores.2016.11.009",
+    "title": "https://doi.org/10.1016/j.jpsychores.2016.11.009"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jclinepi.2009.01.024",
+    "title": "https://doi.org/10.1016/j.jclinepi.2009.01.024"
+   },
+   {
+    "url": "https://doi.org/10.1017/S1352465821000308",
+    "title": "https://doi.org/10.1017/S1352465821000308"
+   },
+   {
+    "url": "https://doi.org/10.3109/13651501.2014.894072",
+    "title": "https://doi.org/10.3109/13651501.2014.894072"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "work-and-social-adjustment-scale-blank-form-survey-questions-pdf.pdf"
+   },
+   {
+    "url": null,
+    "title": "Download WSAS PDF"
+   },
+   {
+    "url": null,
+    "title": "WSAS-Sample-Results-Report-1.pdf"
+   },
+   {
+    "url": null,
+    "title": "WSAS Sample Results"
+   },
+   {
+    "url": null,
+    "title": "Dr Joseph Phillips"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note Template)"
+   },
+   {
+    "url": null,
+    "title": "NDIS Report - Comprehensive (Report Template)"
+   },
+   {
+    "url": null,
+    "title": "Disability Support Pension (DSP) Letter Template"
+   },
+   {
+    "url": null,
+    "title": "PHQ-9"
+   },
+   {
+    "url": null,
+    "title": "GAD-7,"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}

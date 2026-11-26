@@ -1,0 +1,134 @@
+{
+ "status": "source_arithmetic_draft",
+ "enabled": false,
+ "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+ "rules": [
+  {
+   "id": "pdf_1",
+   "label": "Total ARM-5 Score",
+   "method": "sum",
+   "item_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5"
+   ],
+   "multiplier": 1.0,
+   "value_field": "printed_value",
+   "minimum": 5.0,
+   "maximum": 35.0,
+   "severity_bands": [],
+   "status": "source_arithmetic_draft",
+   "enabled": false,
+   "source": {
+    "page": 1,
+    "text": "Total ARM-5 Score (sum of all 5 items)",
+    "y": 477.0,
+    "url": null,
+    "sha256": "d358aac8d7c122c87c835938a0b81202603e117376588038e6355e235acac3b0"
+   },
+   "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+   "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+   "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+  }
+ ],
+ "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+ "rules_provenance": null,
+ "source_rule_excerpts": [
+  "Clients tend to rate the alliance positively, so scores cluster near the top of the scale and the average is often quite high. A change over time, particularly a drop, is often more informative than the absolute level at any single point.",
+  "Clients tend to rate the alliance highly, so ARM-5 scores cluster near the top of the scale, a ceiling effect common to all alliance measures (Meier, 2022; Cahill et al., 2012). This ceiling effect means that comparing the score to a normative sample is not that useful, as changes in the higher percentiles reflect very small change in the ARM-5. The average score and descriptor bands are the focus of the ARM, particularly scores low enough to suggest disagreement or doubt. In this case an average of less than 6 indicates responses at the “slightly agree” or less, suggesting that the alliance is Challenged or Significantly Challenged. Another key output of the ARM-5 is change over time; a decline, even a small one from a high score, is the main prompt to attend to the relationship (Miller et al., 2016).",
+  "The ARM-5 produces a total core alliance score. The total is reported both as a raw score (ranging from 5 to 35) and as an average item score (ranging from 1 to 7), where higher scores indicate a stronger client-rated alliance. Because the three content areas (Bond, Partnership, and Confidence) are highly interrelated and tend to move in the same direction, the total score is the primary output.",
+  "A percentile is presented for the total alliance score to give relative context. The percentile compares the client’s average alliance score against the NovoPsych routine-care sample. A percentile of 50 marks the median score, the middle of the sample. A higher percentile indicates a stronger client-rated alliance relative to the sample, and a lower percentile indicates a weaker alliance. Because client alliance ratings cluster high, the percentile is best read as a relative position within a therapy sample rather than as an absolute judgement of the relationship, and the highest possible ARM-5 score sits at around the 82nd percentile.",
+  "Total ARM-5 scores are grouped into four descriptor bands. The bands are anchored to the response scale, where 6 is “agree” and 7 is “strongly agree”, so an average of 6.6 or above means the client agrees the alliance is strong; the percentile is shown alongside as relative context against the adult reference sample.",
+  "Strong (average 6.6 or above; raw 33–35): consistent agreement that the alliance is strong; around the 50th percentile and above.",
+  "Moderate (average 6.0 to 6.4; raw 30–32): the client agrees the alliance is good; around the 23rd to 42nd percentile.",
+  "Challenged (average 5.0 to 5.8; raw 25–29): only slight agreement, so the alliance is not yet fully endorsed; around the 3rd to 14th percentile.",
+  "Significantly Challenged (average below 5.0; raw 5–24): at or below slight agreement, indicating a more substantial concern; around the 3rd percentile or below.",
+  "On a first administration the report presents the client’s current total alliance score against the four descriptor bands, with the percentile shown as context on the right-hand side. Because alliance scores cluster near the top of the scale, the chart’s average-score axis is truncated to a floor of 4 (the neutral point) whenever the score is above 4, so that differences near the ceiling remain visible; if the score is 4 or below, the axis extends to the full 1 to 7 range. A second chart displays the Bond, Partnership and Confidence areas as separate bars.",
+  "Percentiles are derived empirically from a NovoPsych routine-care sample of 2,674 adult clients (aged 18 and over) who completed the ARM-5 on first administration, between January 2019 and October 2025. Data was drawn from 30 clinicians who had opted to have their de-identified data used to improve clinical scales. Clients were 60.5% female, 30.9% male, 0.3% gender diverse or other, and 8.3% not specified, and ranged in age from 18 to 82 years (M = 36.9; SD = 13.4). Most clients (52.3%) completed the ARM-5 on multiple occasions, while 47.7% completed it once; among those assessed more than once, the average number of administrations was 4.26 (SD = 2.99).",
+  "In this sample the average response on first administration was 6.42 (SD = 0.69; median = 6.6), equivalent to a total score of 32.09 (SD = 3.45; median = 33). As is typical of alliance measures (Meier, 2022; Cahill et al., 2012), ratings are clustered at the high end of the scale, giving a marked ceiling effect. Percentiles are therefore calculated empirically from the observed distribution.",
+  "The four descriptor bands are derived by NovoPsych and anchored to the meaning of the ARM-5 response scale rather than to percentile landmarks. On the 1-to-7 scale a rating of 6 corresponds to “agree” and 7 to “strongly agree”, so that an average of 6 or above reflects a client who, overall, agrees the alliance is strong. An average below 6 requires some responses to be “slightly agree” or weaker: even a score that looks high, such as 5.8, indicates a relationship the client is not yet fully endorsing and is classed as Challenged, while averages below 5.0 indicate a more substantial concern.",
+  "This anchoring is a deliberate response to the ceiling effect. Because client ratings cluster near the top of the scale, percentiles compress at the upper end (the maximum average score sits at only around the 82nd percentile), so bands based on percentile alone would draw their main distinctions among near-maximum scores and tell clinicians little. Anchoring to the response-scale meaning sets the bands deliberately high: most clients fall in Moderate or Strong, and the lower two bands flag the minority of relationships that warrant attention. Percentiles are retained as relative context rather than as the basis for the cut-points."
+ ],
+ "missing_item_policy": {
+  "origin": "application_policy",
+  "action": "withhold_result_if_any_required_response_is_missing",
+  "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+ },
+ "percentile_rules": [],
+ "percentile_status": "not_implemented_no_unverified_lookup",
+ "limitations": [
+  "Rules do not establish a diagnosis.",
+  "No normative percentile is inferred from sample results or approximate distribution data."
+ ],
+ "source_guidance": [
+  {
+   "title": "Agnew Relationship Measure – 5 (ARM-5) Scoring",
+   "text": "The ARM-5 produces a total core alliance score. The total is reported both as a raw score (ranging from 5 to 35) and as an average item score (ranging from 1 to 7), where higher scores indicate a stronger client-rated alliance. Because the three content areas (Bond, Partnership, and Confidence) are highly interrelated and tend to move in the same direction, the total score is the primary output.\n",
+   "source_url": null
+  },
+  {
+   "title": "ARM-5 Percentile Context",
+   "text": "A percentile is presented for the total alliance score to give relative context. The percentile compares the client’s average alliance score against the NovoPsych routine-care sample. A percentile of 50 marks the median score, the middle of the sample. A higher percentile indicates a stronger client-rated alliance relative to the sample, and a lower percentile indicates a weaker alliance. Because client alliance ratings cluster high, the percentile is best read as a relative position within a therapy sample rather than as an absolute judgement of the relationship, and the highest possible ARM-5 score sits at around the 82nd percentile.\n",
+   "source_url": null
+  },
+  {
+   "title": "ARM-5 Score Descriptors",
+   "text": "Total ARM-5 scores are grouped into four descriptor bands. The bands are anchored to the response scale, where 6 is “agree” and 7 is “strongly agree”, so an average of 6.6 or above means the client agrees the alliance is strong; the percentile is shown alongside as relative context against the adult reference sample.\nStrong (average 6.6 or above; raw 33–35): consistent agreement that the alliance is strong; around the 50th percentile and above.\nModerate (average 6.0 to 6.4; raw 30–32): the client agrees the alliance is good; around the 23rd to 42nd percentile.\nChallenged (average 5.0 to 5.8; raw 25–29): only slight agreement, so the alliance is not yet fully endorsed; around the 3rd to 14th percentile.\nSignificantly Challenged (average below 5.0; raw 5–24): at or below slight agreement, indicating a more substantial concern; around the 3rd percentile or below.\nMost clients fall in the Moderate or Strong bands; the lower two flag relationships to attend to and openly discuss. A drop in score over time is more telling than any single rating.\n",
+   "source_url": null
+  },
+  {
+   "title": "ARM-5 Interpreting Change",
+   "text": "The ARM-5 is designed for repeated administration so that change in the alliance can be tracked over the course of therapy. The direction and size of any change in the total score since the previous administration are reported and plotted over time. Any decrease in a client’s score is treated as potentially meaningful and worth attention. Even small, session-to-session drops in the alliance can matter: single-point decreases on a brief alliance measure have been associated with poorer outcomes at the end of treatment, even when scores otherwise remain high (Miller et al., 2016), and session-to-session change in the alliance predicts later symptom change (Falkenström et al., 2013). A decline is therefore highlighted as a prompt to consider and discuss the working relationship.\n",
+   "source_url": null
+  },
+  {
+   "title": "What does a declining alliance score mean?",
+   "text": "A declining score indicates that, from the client’s perspective, the working relationship has weakened since a previous administration. Because a client’s own change over time is more informative than the absolute level, a drop is the signal to attend to. Alliance ratings can shift for many reasons, including a difficult session, a misunderstanding, or a change in how therapy is going, so a drop is best read as a signal about the current state of the relationship rather than a fixed judgement, and as a prompt to discuss and repair. Eliciting honest feedback, including some negative feedback, gives the clinician the chance to address concerns before the client disengages.\n",
+   "source_url": null
+  },
+  {
+   "title": "Why are client alliance scores often high, and what does that mean for interpretation?",
+   "text": "Clients tend to rate the alliance positively, so scores cluster near the top of the scale and the average is often quite high. A change over time, particularly a drop, is often more informative than the absolute level at any single point.\n",
+   "source_url": null
+  }
+ ],
+ "source_tables": [],
+ "unparsed_pdf_expressions": [
+  {
+   "page": 1,
+   "text": "Bond (Item 1):",
+   "y": 388.5,
+   "url": null,
+   "sha256": "d358aac8d7c122c87c835938a0b81202603e117376588038e6355e235acac3b0",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Partnership (Items 2–3):",
+   "y": 413.2,
+   "url": null,
+   "sha256": "d358aac8d7c122c87c835938a0b81202603e117376588038e6355e235acac3b0",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Confidence (Items 4–5):",
+   "y": 438.0,
+   "url": null,
+   "sha256": "d358aac8d7c122c87c835938a0b81202603e117376588038e6355e235acac3b0",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  },
+  {
+   "page": 1,
+   "text": "Note: an average item score (1 to 7) can also be calculated by dividing the total by 5. Item 3 is reverse scored; the reversed values are already printed on that row, so circle the",
+   "y": 504.0,
+   "url": null,
+   "sha256": "d358aac8d7c122c87c835938a0b81202603e117376588038e6355e235acac3b0",
+   "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+  }
+ ],
+ "calculation_status": "draft_rules_available",
+ "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+}

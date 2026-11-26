@@ -1,0 +1,1569 @@
+{
+ "schemaVersion": "assessment-report-config/2.0.0",
+ "status": "source_specific_draft",
+ "metricBindings": [
+  {
+   "id": "metric_pdf_1",
+   "ruleId": "pdf_1",
+   "label": "Total APSQ Score",
+   "minimum": 10.0,
+   "maximum": 50.0,
+   "calculation": {
+    "id": "pdf_1",
+    "label": "Total APSQ Score",
+    "method": "sum",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10"
+    ],
+    "multiplier": 1.0,
+    "value_field": "printed_value",
+    "minimum": 10.0,
+    "maximum": 50.0,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "page": 1,
+     "text": "Total APSQ Score (sum of all 10 items)",
+     "y": 664.5,
+     "url": null,
+     "sha256": "d5e45049fafac6efedfccaf197adb152cd0262caa5e1cb336afa23cbe1627c38"
+    },
+    "reverse_scoring_handling": "Use the printed source values once. Do not reverse again based only on item wording.",
+    "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+    "coverage": "Arithmetic only; diagnostic algorithms, norms and source-specific missing-answer exceptions are not implied."
+   },
+   "status": "source_arithmetic_draft",
+   "runtimeEnabled": false
+  }
+ ],
+ "sources": [
+  {
+   "sha256": "0dc8e673b1372c2a1070af4ae6dc86f59a57e22bd04a6063db1ac055ad6bb5bb",
+   "pageCount": 3,
+   "identityStatus": "title_or_acronym_matches",
+   "hashVerified": true,
+   "usage": "reference_identity_only_no_runtime_fetch"
+  }
+ ],
+ "page": {
+  "coordinateUnit": "pt",
+  "origin": "top_left",
+  "documentsAreAlternativesNotConcatenated": true
+ },
+ "theme": {
+  "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+  "branding": "application_branding",
+  "sourceLogosRequired": false
+ },
+ "pages": [
+  {
+   "pageId": "d0dc8e673b137_p1",
+   "documentSha256": "0dc8e673b1372c2a1070af4ae6dc86f59a57e22bd04a6063db1ac055ad6bb5bb",
+   "pageNumber": 1,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [
+    "d0dc8e673b137_p1_chart_1"
+   ],
+   "tableIds": [
+    "d0dc8e673b137_p1_table_1",
+    "d0dc8e673b137_p1_table_2"
+   ],
+   "sectionIds": [
+    "d0dc8e673b137_p1_section_1",
+    "d0dc8e673b137_p1_section_2",
+    "d0dc8e673b137_p1_section_3"
+   ]
+  },
+  {
+   "pageId": "d0dc8e673b137_p2",
+   "documentSha256": "0dc8e673b1372c2a1070af4ae6dc86f59a57e22bd04a6063db1ac055ad6bb5bb",
+   "pageNumber": 2,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d0dc8e673b137_p2_table_1"
+   ],
+   "sectionIds": [
+    "d0dc8e673b137_p2_section_1"
+   ]
+  },
+  {
+   "pageId": "d0dc8e673b137_p3",
+   "documentSha256": "0dc8e673b1372c2a1070af4ae6dc86f59a57e22bd04a6063db1ac055ad6bb5bb",
+   "pageNumber": 3,
+   "widthPt": 595.2760009765625,
+   "heightPt": 841.8900146484375,
+   "chartIds": [],
+   "tableIds": [
+    "d0dc8e673b137_p3_table_1"
+   ],
+   "sectionIds": [
+    "d0dc8e673b137_p3_section_1"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "d0dc8e673b137_p1_section_1",
+   "pageId": "d0dc8e673b137_p1",
+   "title": "Results",
+   "type": "results",
+   "bboxPt": [
+    34.3465,
+    197.90677,
+    84.91451,
+    211.90677
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d0dc8e673b137_p1_section_2",
+   "pageId": "d0dc8e673b137_p1",
+   "title": "APSQ Average Score",
+   "type": "source_heading",
+   "bboxPt": [
+    280.01901,
+    337.64151,
+    401.39899,
+    349.64151
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 12.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d0dc8e673b137_p1_section_3",
+   "pageId": "d0dc8e673b137_p1",
+   "title": "Scoring and Interpretation Information",
+   "type": "scoring_guidance",
+   "bboxPt": [
+    34.3465,
+    678.30072,
+    290.26645,
+    692.30072
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d0dc8e673b137_p2_section_1",
+   "pageId": "d0dc8e673b137_p2",
+   "title": "Client Responses",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    535.37354,
+    151.8205,
+    549.37354
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  },
+  {
+   "id": "d0dc8e673b137_p3_section_1",
+   "pageId": "d0dc8e673b137_p3",
+   "title": "Client Responses (cont.)",
+   "type": "responses",
+   "bboxPt": [
+    34.3465,
+    144.0488,
+    198.48251,
+    158.0488
+   ],
+   "style": {
+    "font": "Helvetica-Bold",
+    "fontSizePt": 14.0,
+    "colour": "#000000"
+   },
+   "contentBinding": null,
+   "runtimeEnabled": false
+  }
+ ],
+ "charts": [
+  {
+   "id": "d0dc8e673b137_p1_chart_1",
+   "title": null,
+   "type": "stacked_bar",
+   "bboxPt": [
+    110.709,
+    514.674,
+    480.709,
+    578.984
+   ],
+   "widthPt": 370.0,
+   "heightPt": 64.31,
+   "axisColour": "#333333",
+   "observedDataType": "unresolved",
+   "backgroundBands": [
+    {
+     "bboxPt": [
+      110.709,
+      541.13367,
+      482.20898,
+      552.104
+     ],
+     "colour": "#ffedcc",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    },
+    {
+     "bboxPt": [
+      110.709,
+      524.67419,
+      482.20898,
+      541.13403
+     ],
+     "colour": "#ffcccc",
+     "opacity": 1.0,
+     "semantics": "visual_background_only_not_a_scoring_threshold"
+    }
+   ],
+   "variantEvidence": "single_visit_observed",
+   "xAxis": {
+    "status": "unresolved",
+    "ticks": [],
+    "title": null,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "yAxis": {
+    "status": "linear_ticks_observed",
+    "ticks": [
+     {
+      "value": 2.0,
+      "positionPt": 521.66992,
+      "text": "2",
+      "colour": "#000000"
+     },
+     {
+      "value": 1.5,
+      "positionPt": 549.09991,
+      "text": "1.5",
+      "colour": "#000000"
+     },
+     {
+      "value": 1.0,
+      "positionPt": 576.52991,
+      "text": "1",
+      "colour": "#000000"
+     }
+    ],
+    "title": null,
+    "minimum": 1.0,
+    "maximum": 2.0,
+    "domainPolicy": {
+     "status": "sample_extent_observed",
+     "runtimeRule": null,
+     "note": "Observed ticks do not establish a fixed domain for every patient."
+    }
+   },
+   "series": [
+    {
+     "id": "series_1",
+     "label": "Total",
+     "colour": "#2da875",
+     "ruleIdCandidate": "pdf_1",
+     "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+     "categoryPosition": 0.12500000675675713,
+     "barThicknessPt": 62.5,
+     "fill": null,
+     "stroke": "#000000",
+     "valueTransform": null,
+     "runtimeEnabled": false,
+     "observedFill": {
+      "method": "source_PDF_interior_colour_samples",
+      "direction": "vertical",
+      "stops": [
+       {
+        "offset": 0.1,
+        "colour": "#2da875"
+       },
+       {
+        "offset": 0.3,
+        "colour": "#2da875"
+       },
+       {
+        "offset": 0.5,
+        "colour": "#2da875"
+       },
+       {
+        "offset": 0.7,
+        "colour": "#2da875"
+       },
+       {
+        "offset": 0.9,
+        "colour": "#2da875"
+       }
+      ],
+      "runtimeColourRuleVerified": false
+     },
+     "metricId": null,
+     "metricIdCandidate": "metric_pdf_1",
+     "dataSource": "patient_metric_or_compatible_visit_history"
+    }
+   ],
+   "runtimePolicy": {
+    "missingBinding": "withhold_chart",
+    "missingNorm": "withhold_chart",
+    "useSampleValues": false,
+    "substituteRawScoreForPercentile": false,
+    "unknownHistoryVariant": "withhold_unestablished_variant",
+    "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+   },
+   "pageId": "d0dc8e673b137_p1",
+   "sourceChartId": "chart_1",
+   "typeReview": {
+    "reviewIndex": 27,
+    "detectedType": "vertical_bar",
+    "reviewedType": "stacked_bar",
+    "method": "AI_visual_inspection_of_source_PDF_crop",
+    "scope": "chart_kind_only_not_scoring_or_full_layout",
+    "panelCount": 1,
+    "changed": true
+   },
+   "panelCount": 1,
+   "runtimeEnabled": false,
+   "labels": [
+    {
+     "text": "Total",
+     "bboxPt": [
+      145.84399,
+      585.45721,
+      168.07399,
+      595.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Self Regulation",
+     "bboxPt": [
+      215.55379,
+      585.45721,
+      283.36377,
+      595.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "Performance",
+     "bboxPt": [
+      313.33887,
+      585.45721,
+      370.57883,
+      595.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "text": "External Coping",
+     "bboxPt": [
+      398.88882,
+      585.45721,
+      470.02881,
+      595.45721
+     ],
+     "colour": "#333333",
+     "font": "Helvetica",
+     "fontSizePt": 10.0,
+     "direction": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+   "referenceDistributions": null
+  }
+ ],
+ "tables": {
+  "$file": "assessment.report_configuration.tables.json"
+ },
+ "variants": {
+  "sourceStatements": [
+   "On first administration, a stacked bar graph of the total and subscale average scores is shown.",
+   "For multiple administrations, a line graph of the total and subscale average scores is produced to track changes over time."
+  ],
+  "firstAdministration": {
+   "status": "requires_review"
+  },
+  "repeatAdministration": {
+   "status": "requires_review"
+  },
+  "policy": "Do not invent a repeat chart from an observed first-visit chart."
+ },
+ "interpretationRules": {
+  "encodedRules": [],
+  "sourceGuidance": [
+   {
+    "title": "APSQ Scoring & Interpretation",
+    "text": "A total score is given ranging from 10 to 50. Higher scores indicate greater psychological strain and distress. Subscale scores are also available with ranges below:\nSelf-Regulation (Items 1, 2, 3, 4): Raw score range 4-20. Assesses a combination of low motivation for training/competition and interpersonal difficulties in relationship with teammates and coaches.\nPerformance (Items 5, 6, 7, 8): Raw score range 4-20. Evaluates anxiety, pressure, and distress specifically related to competitive performance and achievement expectations.\nExternal Coping (Items 9, 10): Raw score range 2-10. Measures externalised coping strategies including substance use and risk-taking behaviours outside the sporting context.\n\nRaw scores are converted into average scores, indicating the average response for each question.\nA percentile score is presented based upon sex from the data provided by Rice et al. (2020). Cut off scores to assist in interpretation are provided by Rice et al. (2020):\n10-14 Minimal Strain\n15-16 Moderate Strain\n17-19 High Strain\n≥20 Very High Strain\n\nOn first administration, a stacked bar graph of the total and subscale average scores is shown. For multiple administrations, a line graph of the total and subscale average scores is produced to track changes over time.\n\n",
+    "source_url": null
+   }
+  ],
+  "reportScoringGuidance": [
+   {
+    "documentSha256": "0dc8e673b1372c2a1070af4ae6dc86f59a57e22bd04a6063db1ac055ad6bb5bb",
+    "pageNumber": 1,
+    "text": "For comprehensive information on the APSQ, \nsee here\n.\nA total score is given ranging from 10 to 50. Higher scores indicate greater psychological strain\nand distress. Subscale scores are also available with ranges below:",
+    "usage": "source_guidance_for_review_not_executable_scoring",
+    "runtimeEnabled": false
+   }
+  ],
+  "sourceRequirements": [
+   "A percentile score is presented based upon sex from the data provided by Rice et al.",
+   "Cut off scores to assist in interpretation are provided by Rice et al.",
+   "On first administration, a stacked bar graph of the total and subscale average scores is shown.",
+   "For multiple administrations, a line graph of the total and subscale average scores is produced to track changes over time."
+  ],
+  "templates": [],
+  "sampleNarrativeReusable": false,
+  "runtimeEnabled": false
+ },
+ "referenceTables": [],
+ "paintStyles": [
+  {
+   "id": "paint_6c7804ec2bfd5226bcfd3f52c5b7db50",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#2da875",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_12c6ebaa33a320f3b7b5aa40f934dde3",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_b5653e4b799689b183d358e8e5c47a4a",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_c7800d6a0c36bf44c66767fc296d7baa",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#2da875",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#2da875",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_e84d13d26f8ce29b51ecb4e23d726763",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#2d89a8",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  },
+  {
+   "id": "paint_8becde2299cdd7f5972b5d78c7c32c95",
+   "status": "source_colour_stops_extracted_role_requires_review",
+   "type": "linear_gradient_samples",
+   "direction": "vertical",
+   "stops": [
+    {
+     "offset": 0.0,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.03125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.0625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.09375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.15625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.1875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.21875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.25,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.28125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.3125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.34375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.40625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.4375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.46875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.53125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.5625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.59375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.65625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.6875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.71875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.75,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.78125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.8125,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.84375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.90625,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.9375,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 0.96875,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    },
+    {
+     "offset": 1.0,
+     "colour": "#2d36a8",
+     "opacity": 1.0
+    }
+   ],
+   "runtimeEnabled": false
+  }
+ ],
+ "assets": {
+  "runtimeImages": [],
+  "runtimeSourceFiles": [],
+  "runtimeSourceUrls": []
+ },
+ "runtimeContract": {
+  "version2RendererRequired": true,
+  "loadDefinitionFrom": "database_json",
+  "useCurrentPatientAnswers": true,
+  "useSamplePatientValues": false,
+  "externalNetworkRequired": false,
+  "sourceArchiveRequired": false,
+  "unknownScoring": "withhold",
+  "unknownNorms": "withhold",
+  "unsupportedChart": "withhold_and_report_exception",
+  "unknownRepeatLayout": "withhold"
+ },
+ "validation": {
+  "jsonStructureValidated": true,
+  "sourceHashesVerified": true,
+  "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+  "fullPageLayoutCompared": false,
+  "scoreBindingsReviewed": false,
+  "tablesSemanticallyReviewed": false,
+  "rendererEquivalent": false,
+  "clinicalApproved": false,
+  "readyForApplicationImport": false
+ },
+ "exceptions": [
+  {
+   "code": "paint_style_roles_require_review",
+   "count": 6,
+   "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+  },
+  {
+   "code": "score_and_series_bindings_require_review",
+   "count": 1
+  },
+  {
+   "code": "table_cell_semantics_require_review",
+   "count": 4,
+   "unresolvedCells": 81
+  },
+  {
+   "code": "interpretation_and_variant_rules_require_review"
+  }
+ ]
+}

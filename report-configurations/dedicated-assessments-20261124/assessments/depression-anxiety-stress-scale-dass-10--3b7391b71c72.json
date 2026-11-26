@@ -1,0 +1,6555 @@
+{
+  "schemaVersion": "assessment-report-config/2.0.0",
+  "assessmentId": "depression-anxiety-stress-scale-dass-10--3b7391b71c72",
+  "title": "Depression Anxiety Stress Scale (DASS-10)",
+  "status": "source_specific_draft",
+  "definitionVersion": "1.0.0-draft.6",
+  "assessment": {
+    "name": "Depression Anxiety Stress Scale (DASS-10)",
+    "short_name": null,
+    "language": "en",
+    "description": "The Depression Anxiety Stress Scale (DASS-10) is a brief 10-item version of the full version of the Depression Anxiety Stress Scale (DASS-42) . The DASS-10 can determine the overall level of distress as well as provides subscale scores for two symptom clusters: Depression and Anxiety/Stress",
+    "respondent_type": null,
+    "source_provider": "NovoPsych",
+    "reference_period": {
+      "structured": null,
+      "instruction_claims": [
+        "PAST WEEK"
+      ],
+      "status": "requires_review"
+    },
+    "target_population": null,
+    "intended_uses": null,
+    "estimated_administration_minutes": null
+  },
+  "administration": {
+    "instructions": "Please read each statement and select the statement that indicates how much each item has applied to you over the PAST WEEK. There are no right or wrong answers. Do not spend too much time on any statement. The rating scale is as follows: - Never - Did not apply to me at all - Sometimes - Applied to me to some degree, or some of the time - Often - Applied to me to a considerable degree, or a good part of time - Almost Always - Applied to me very much, or most of the time",
+    "instructions_source": {
+      "url": null,
+      "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+      "page": null,
+      "bbox": null,
+      "method": "pdf_layout"
+    },
+    "item_order": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12"
+    ],
+    "selected_form_url": null,
+    "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+    "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+  },
+  "questionnaire": {
+    "item_count": 12,
+    "items": [
+      {
+        "id": "Q1",
+        "order": 1,
+        "source_label": "1",
+        "text": "I felt I was close to panic",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            255.75,
+            562.5,
+            277.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q2",
+        "order": 2,
+        "source_label": "2",
+        "text": "I found it difficult to work up the initiative to do things",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            278.25,
+            562.5,
+            300.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q3",
+        "order": 3,
+        "source_label": "3",
+        "text": "I felt down hearted and blue",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            300.75,
+            562.5,
+            322.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q4",
+        "order": 4,
+        "source_label": "4",
+        "text": "I was intolerant of anything that kept me from getting on with what I was doing",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            323.25,
+            562.5,
+            345.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q5",
+        "order": 5,
+        "source_label": "5",
+        "text": "I felt that I had nothing to look forward to",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            345.75,
+            562.5,
+            367.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q6",
+        "order": 6,
+        "source_label": "6",
+        "text": "I felt scared without any good reason",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            368.25,
+            562.5,
+            390.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q7",
+        "order": 7,
+        "source_label": "7",
+        "text": "I tended to over react to situations",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            390.75,
+            562.5,
+            412.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q8",
+        "order": 8,
+        "source_label": "8",
+        "text": "I was worried about situations in which I might panic and make a fool of myself",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            413.25,
+            562.5,
+            435.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q9",
+        "order": 9,
+        "source_label": "9",
+        "text": "I found it difficult to relax",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            435.75,
+            562.5,
+            457.5
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "anxiety_stress_raw",
+              "anxiety_stress_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q10",
+        "order": 10,
+        "source_label": "10",
+        "text": "I couldnʼt seem to experience any positive feelings at all",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            458.25,
+            562.5,
+            480.0
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": 0,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": 1,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": 2,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": 3,
+            "score_status": "draft_rule_value",
+            "used_by_scoring_rules": [
+              "total_raw",
+              "total_mean",
+              "depression_raw",
+              "depression_mean"
+            ]
+          }
+        ],
+        "score_encoding": "Evaluate explicit scoring rules; printed reverse-coded values are used once."
+      },
+      {
+        "id": "Q11",
+        "order": 11,
+        "source_label": "11",
+        "text": "I felt annoyed by people that criticised my drinking or drug use (if not applicable, select \"Never\")",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            480.75,
+            562.5,
+            504.75
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          }
+        ],
+        "score_encoding": "No numeric scoring rule is assigned to this item."
+      },
+      {
+        "id": "Q12",
+        "order": 12,
+        "source_label": "12",
+        "text": "I have thoughts of ending my life",
+        "response_type": "choice",
+        "selection_mode": null,
+        "response_set_id": "RS1",
+        "reverse_scored": null,
+        "printed_input_unit": null,
+        "source": {
+          "url": null,
+          "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+          "page": 1,
+          "bbox": [
+            33.75,
+            505.5,
+            562.5,
+            527.25
+          ],
+          "method": "pdf_table_geometry"
+        },
+        "review_status": "source_layout_extracted",
+        "review_flags": [],
+        "input_spec": {
+          "kind": "choice",
+          "answer_schema": {
+            "type": "string",
+            "enum": [
+              "O1",
+              "O2",
+              "O3",
+              "O4"
+            ]
+          },
+          "selection_mode": null,
+          "selection_mode_review_required": true,
+          "source_review": "Retained printed response set; no new option labels or scores inferred."
+        },
+        "options": [
+          {
+            "id": "O1",
+            "text": "NEVER",
+            "source_label": "NEVER",
+            "label_origin": "printed_label",
+            "printed_value": 0,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          },
+          {
+            "id": "O2",
+            "text": "SOMETIMES",
+            "source_label": "SOMETIMES",
+            "label_origin": "printed_label",
+            "printed_value": 1,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          },
+          {
+            "id": "O3",
+            "text": "OFTEN",
+            "source_label": "OFTEN",
+            "label_origin": "printed_label",
+            "printed_value": 2,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          },
+          {
+            "id": "O4",
+            "text": "ALMOST ALWAYS",
+            "source_label": "ALMOST ALWAYS",
+            "label_origin": "printed_label",
+            "printed_value": 3,
+            "score": null,
+            "score_status": "not_assigned",
+            "used_by_scoring_rules": []
+          }
+        ],
+        "score_encoding": "No numeric scoring rule is assigned to this item."
+      }
+    ],
+    "response_sets": [
+      {
+        "id": "RS1",
+        "options": [
+          {
+            "id": "O1",
+            "label": "NEVER",
+            "printed_value": 0,
+            "score": 0,
+            "display_label": "NEVER",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O2",
+            "label": "SOMETIMES",
+            "printed_value": 1,
+            "score": 1,
+            "display_label": "SOMETIMES",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O3",
+            "label": "OFTEN",
+            "printed_value": 2,
+            "score": 2,
+            "display_label": "OFTEN",
+            "display_label_origin": "printed_label"
+          },
+          {
+            "id": "O4",
+            "label": "ALMOST ALWAYS",
+            "printed_value": 3,
+            "score": 3,
+            "display_label": "ALMOST ALWAYS",
+            "display_label_origin": "printed_label"
+          }
+        ],
+        "mapping_status": "source_arithmetic_draft"
+      }
+    ]
+  },
+  "scoring": {
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+    "rules": [
+      {
+        "id": "total_raw",
+        "label": "Total",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 30,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      {
+        "id": "total_mean",
+        "label": "Total mean",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "mean",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      {
+        "id": "anxiety_stress_raw",
+        "label": "Anxiety Stress",
+        "item_ids": [
+          "Q1",
+          "Q4",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 18,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      {
+        "id": "anxiety_stress_mean",
+        "label": "Anxiety Stress mean",
+        "item_ids": [
+          "Q1",
+          "Q4",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "method": "mean",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      {
+        "id": "depression_raw",
+        "label": "Depression",
+        "item_ids": [
+          "Q2",
+          "Q3",
+          "Q5",
+          "Q10"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 12,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      {
+        "id": "depression_mean",
+        "label": "Depression mean",
+        "item_ids": [
+          "Q2",
+          "Q3",
+          "Q5",
+          "Q10"
+        ],
+        "method": "mean",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      }
+    ],
+    "coverage": "Implemented formulas have explicit item membership and numeric source evidence. Remaining expressions, diagnostic algorithms, percentiles, custom missing-answer policies and interpretation require review.",
+    "rules_provenance": null,
+    "source_rule_excerpts": [
+      "In addition to the raw score being computed, average scores are calculated by dividing the raw score by the number of items, giving a sense of the general pattern of responding at the subscale level. Average scores are helpful for interpretation as they allow comparisons between total score and subscales.",
+      "subclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)",
+      "mild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )",
+      "moderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)",
+      "severe (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)",
+      "extremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)",
+      "When administered more than once, average scores are graphed, showing the change in symptoms over time."
+    ],
+    "missing_item_policy": {
+      "origin": "application_policy",
+      "action": "withhold_result_if_any_required_response_is_missing",
+      "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+    },
+    "percentile_rules": [],
+    "percentile_status": "not_implemented_no_unverified_lookup",
+    "limitations": [
+      "Rules do not establish a diagnosis.",
+      "No normative percentile is inferred from sample results or approximate distribution data."
+    ],
+    "source_guidance": [
+      {
+        "title": "DASS-10 Scoring & Interpretation",
+        "text": "The total score for questions 1-10 represents overall distress (0 to 30), with higher scores indicating more severe or greater number of symptoms. Two subscales are presented:\nAnxiety-Stress : Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\nDepression : Items 2, 3, 5, 10 (raw score range = 0 to 12)\n\nIn addition to the raw score being computed, average scores are calculated by dividing the raw score by the number of items, giving a sense of the general pattern of responding at the subscale level. Average scores are helpful for interpretation as they allow comparisons between total score and subscales.\n\nOverall scores can be classified into three severity groups:\nsubclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)\nmild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )\nmoderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)\nsevere (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)\nextremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)\nA normative percentile is computed based on a community sample (Halford & Frost, 2021), indicating how the respondent scored in relation to a typical pattern of responding for adults. For example, a percentile of 83 or less indicates the individual has more distress than 83 percent of the normal population, but this puts them in the mild category. In mental health settings it is typical to see people with percentiles in the 90s.\n\nWhen administered more than once, average scores are graphed, showing the change in symptoms over time.\n\nBased on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:\nintensified significantly (increase in score by 5 or more)\nintensified slightly (score increased by between 2 to 4)\nnot significantly changed (score increased by 1, reduced by 1 or did not change at all)\nimproved slightly (score reduced by between 2 to 4)\nimproved significantly (score reduced by 5 or more)\nThe last two questions are used by clinicians to determine whether the client has a potential substance use issue (Question 11) or whether the client has had suicidal ideation (Question 12). Both these items do not contribute towards the overall score or subscale scores, but are highlighted in the the Interpretive Text section if any problems are reported.\n",
+        "source_url": null
+      }
+    ],
+    "source_tables": [],
+    "unparsed_pdf_expressions": [
+      {
+        "page": 1,
+        "text": "Anxiety–Stress score (Items 1, 4, 6, 7, 8, 9):",
+        "y": 540.8,
+        "url": null,
+        "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      },
+      {
+        "page": 1,
+        "text": "Depression score (Items 2, 3, 5, 10):",
+        "y": 562.5,
+        "url": null,
+        "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      },
+      {
+        "page": 1,
+        "text": "Total Distress Score (sum of items 1–10 · items 11 and 12 are not scored)",
+        "y": 595.5,
+        "url": null,
+        "sha256": "2165580c075c8260ba0b9e870c43e08c08bf1a924122e0c5947ddbc743c38e74",
+        "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+      }
+    ],
+    "calculation_status": "draft_rules_available",
+    "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true."
+  },
+  "metricBindings": [
+    {
+      "id": "metric_total_raw",
+      "ruleId": "total_raw",
+      "label": "Total",
+      "minimum": 0,
+      "maximum": 30,
+      "calculation": {
+        "id": "total_raw",
+        "label": "Total",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 30,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    },
+    {
+      "id": "metric_total_mean",
+      "ruleId": "total_mean",
+      "label": "Total mean",
+      "minimum": 0.0,
+      "maximum": 3.0,
+      "calculation": {
+        "id": "total_mean",
+        "label": "Total mean",
+        "item_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "method": "mean",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    },
+    {
+      "id": "metric_anxiety_stress_raw",
+      "ruleId": "anxiety_stress_raw",
+      "label": "Anxiety Stress",
+      "minimum": 0,
+      "maximum": 18,
+      "calculation": {
+        "id": "anxiety_stress_raw",
+        "label": "Anxiety Stress",
+        "item_ids": [
+          "Q1",
+          "Q4",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 18,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    },
+    {
+      "id": "metric_anxiety_stress_mean",
+      "ruleId": "anxiety_stress_mean",
+      "label": "Anxiety Stress mean",
+      "minimum": 0.0,
+      "maximum": 3.0,
+      "calculation": {
+        "id": "anxiety_stress_mean",
+        "label": "Anxiety Stress mean",
+        "item_ids": [
+          "Q1",
+          "Q4",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "method": "mean",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    },
+    {
+      "id": "metric_depression_raw",
+      "ruleId": "depression_raw",
+      "label": "Depression",
+      "minimum": 0,
+      "maximum": 12,
+      "calculation": {
+        "id": "depression_raw",
+        "label": "Depression",
+        "item_ids": [
+          "Q2",
+          "Q3",
+          "Q5",
+          "Q10"
+        ],
+        "method": "sum",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0,
+        "maximum": 12,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    },
+    {
+      "id": "metric_depression_mean",
+      "ruleId": "depression_mean",
+      "label": "Depression mean",
+      "minimum": 0.0,
+      "maximum": 3.0,
+      "calculation": {
+        "id": "depression_mean",
+        "label": "Depression mean",
+        "item_ids": [
+          "Q2",
+          "Q3",
+          "Q5",
+          "Q10"
+        ],
+        "method": "mean",
+        "multiplier": 1,
+        "value_field": "printed_value",
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "severity_bands": [],
+        "status": "source_arithmetic_draft",
+        "enabled": false,
+        "source": {
+          "url": null,
+          "sha256": "320d982541548a82346bb572c71faef432c41feaeed640ef9c93b6a100917149",
+          "retrieved_at": "2026-11-13T12:00:23.380596+00:00",
+          "section": "Scoring & Interpretation",
+          "method": "reviewed_explicit_source_rule"
+        },
+        "missing_item_policy": "withhold_if_any_required_answer_is_missing",
+        "coverage": "Raw dimensional or symptom-count output only. Diagnosis and normative percentiles are not inferred."
+      },
+      "status": "source_arithmetic_draft",
+      "runtimeEnabled": false
+    }
+  ],
+  "sources": [
+    {
+      "sha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+      "pageCount": 4,
+      "identityStatus": "title_or_acronym_matches",
+      "hashVerified": true,
+      "usage": "reference_identity_only_no_runtime_fetch"
+    },
+    {
+      "sha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+      "pageCount": 4,
+      "identityStatus": "title_or_acronym_matches",
+      "hashVerified": true,
+      "usage": "reference_identity_only_no_runtime_fetch"
+    }
+  ],
+  "page": {
+    "coordinateUnit": "pt",
+    "origin": "top_left",
+    "documentsAreAlternativesNotConcatenated": true
+  },
+  "theme": {
+    "fontPolicy": "use_per_section_source_fonts_or_reviewed_equivalents",
+    "branding": "application_branding",
+    "sourceLogosRequired": false
+  },
+  "pages": [
+    {
+      "pageId": "d3e8c51d2ff7e_p1",
+      "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+      "pageNumber": 1,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "d3e8c51d2ff7e_p1_chart_1"
+      ],
+      "tableIds": [
+        "d3e8c51d2ff7e_p1_table_1",
+        "d3e8c51d2ff7e_p1_table_2"
+      ],
+      "sectionIds": [
+        "d3e8c51d2ff7e_p1_section_1",
+        "d3e8c51d2ff7e_p1_section_2"
+      ]
+    },
+    {
+      "pageId": "d3e8c51d2ff7e_p2",
+      "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+      "pageNumber": 2,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "d3e8c51d2ff7e_p2_chart_1"
+      ],
+      "tableIds": [],
+      "sectionIds": [
+        "d3e8c51d2ff7e_p2_section_1",
+        "d3e8c51d2ff7e_p2_section_2",
+        "d3e8c51d2ff7e_p2_section_3"
+      ]
+    },
+    {
+      "pageId": "d3e8c51d2ff7e_p3",
+      "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+      "pageNumber": 3,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [],
+      "sectionIds": [
+        "d3e8c51d2ff7e_p3_section_1",
+        "d3e8c51d2ff7e_p3_section_2"
+      ]
+    },
+    {
+      "pageId": "d3e8c51d2ff7e_p4",
+      "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+      "pageNumber": 4,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [
+        "d3e8c51d2ff7e_p4_table_1"
+      ],
+      "sectionIds": []
+    },
+    {
+      "pageId": "dddd74404c2d1_p1",
+      "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+      "pageNumber": 1,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "dddd74404c2d1_p1_chart_1"
+      ],
+      "tableIds": [],
+      "sectionIds": [
+        "dddd74404c2d1_p1_section_1",
+        "dddd74404c2d1_p1_section_2",
+        "dddd74404c2d1_p1_section_3"
+      ]
+    },
+    {
+      "pageId": "dddd74404c2d1_p2",
+      "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+      "pageNumber": 2,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [
+        "dddd74404c2d1_p2_chart_1"
+      ],
+      "tableIds": [],
+      "sectionIds": [
+        "dddd74404c2d1_p2_section_1"
+      ]
+    },
+    {
+      "pageId": "dddd74404c2d1_p3",
+      "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+      "pageNumber": 3,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [
+        "dddd74404c2d1_p3_table_1",
+        "dddd74404c2d1_p3_table_2"
+      ],
+      "sectionIds": [
+        "dddd74404c2d1_p3_section_1",
+        "dddd74404c2d1_p3_section_2"
+      ]
+    },
+    {
+      "pageId": "dddd74404c2d1_p4",
+      "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+      "pageNumber": 4,
+      "widthPt": 595.2760009765625,
+      "heightPt": 841.8900146484375,
+      "chartIds": [],
+      "tableIds": [
+        "dddd74404c2d1_p4_table_1"
+      ],
+      "sectionIds": [
+        "dddd74404c2d1_p4_section_1"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "d3e8c51d2ff7e_p1_section_1",
+      "pageId": "d3e8c51d2ff7e_p1",
+      "title": "Results",
+      "type": "results",
+      "bboxPt": [
+        34.3465,
+        197.90677,
+        84.91451,
+        211.90677
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d3e8c51d2ff7e_p1_section_2",
+      "pageId": "d3e8c51d2ff7e_p1",
+      "title": "DASS-10 Score",
+      "type": "source_heading",
+      "bboxPt": [
+        264.66599,
+        290.87048,
+        352.02597,
+        302.87048
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d3e8c51d2ff7e_p2_section_1",
+      "pageId": "d3e8c51d2ff7e_p2",
+      "title": "DASS-10 Symptom Average Scores",
+      "type": "results",
+      "bboxPt": [
+        191.98199,
+        153.38954,
+        394.70996,
+        165.38954
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 12.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d3e8c51d2ff7e_p2_section_2",
+      "pageId": "d3e8c51d2ff7e_p2",
+      "title": "Interpretation",
+      "type": "interpretation",
+      "bboxPt": [
+        34.3465,
+        544.04871,
+        124.57652,
+        558.04871
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d3e8c51d2ff7e_p2_section_3",
+      "pageId": "d3e8c51d2ff7e_p2",
+      "title": "Scoring and Interpretation Information",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        34.3461,
+        699.63513,
+        290.26605,
+        713.63513
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d3e8c51d2ff7e_p3_section_1",
+      "pageId": "d3e8c51d2ff7e_p3",
+      "title": "Scoring and Interpretation Information (cont.)",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        34.3465,
+        144.0488,
+        336.92838,
+        158.0488
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "d3e8c51d2ff7e_p3_section_2",
+      "pageId": "d3e8c51d2ff7e_p3",
+      "title": "Client Responses",
+      "type": "responses",
+      "bboxPt": [
+        34.3464,
+        686.83417,
+        151.8204,
+        700.83417
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dddd74404c2d1_p1_section_1",
+      "pageId": "dddd74404c2d1_p1",
+      "title": "Assessment Information",
+      "type": "source_heading",
+      "bboxPt": [
+        74.03149,
+        176.72569,
+        237.39752,
+        196.00369
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dddd74404c2d1_p1_section_2",
+      "pageId": "dddd74404c2d1_p1",
+      "title": "Results",
+      "type": "results",
+      "bboxPt": [
+        74.03149,
+        273.10361,
+        124.59951,
+        292.38162
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dddd74404c2d1_p1_section_3",
+      "pageId": "dddd74404c2d1_p1",
+      "title": "Interpretive Text",
+      "type": "interpretation",
+      "bboxPt": [
+        74.03149,
+        338.30048,
+        182.95149,
+        357.57849
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dddd74404c2d1_p2_section_1",
+      "pageId": "dddd74404c2d1_p2",
+      "title": "Scoring and Interpretation Information",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        74.03149,
+        429.87527,
+        329.95145,
+        449.15329
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dddd74404c2d1_p3_section_1",
+      "pageId": "dddd74404c2d1_p3",
+      "title": "Scoring and Interpretation Information (cont.)",
+      "type": "scoring_guidance",
+      "bboxPt": [
+        74.03149,
+        139.87529,
+        376.61337,
+        159.15329
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dddd74404c2d1_p3_section_2",
+      "pageId": "dddd74404c2d1_p3",
+      "title": "Client Responses",
+      "type": "responses",
+      "bboxPt": [
+        74.03149,
+        440.66104,
+        191.50549,
+        459.93906
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "dddd74404c2d1_p4_section_1",
+      "pageId": "dddd74404c2d1_p4",
+      "title": "Client Responses (cont.)",
+      "type": "responses",
+      "bboxPt": [
+        74.03149,
+        139.87529,
+        238.1675,
+        159.15329
+      ],
+      "style": {
+        "font": "Helvetica-Bold",
+        "fontSizePt": 14.0,
+        "colour": "#000000"
+      },
+      "contentBinding": null,
+      "runtimeEnabled": false
+    }
+  ],
+  "charts": [
+    {
+      "id": "d3e8c51d2ff7e_p1_chart_1",
+      "title": "DASS-10 Score",
+      "type": "line",
+      "bboxPt": [
+        45.346,
+        316.772,
+        511.346,
+        717.243
+      ],
+      "widthPt": 466.0,
+      "heightPt": 400.471,
+      "axisColour": "#333333",
+      "observedDataType": "unresolved",
+      "backgroundBands": [],
+      "variantEvidence": "multiple_visits_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        },
+        "kind": "visit_date",
+        "binding": "compatible_session_history.completedAt",
+        "minimum": null,
+        "maximum": null
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 22.0,
+            "positionPt": 319.54584,
+            "text": "22",
+            "colour": "#333333"
+          },
+          {
+            "value": 20.0,
+            "positionPt": 355.76614,
+            "text": "20",
+            "colour": "#333333"
+          },
+          {
+            "value": 18.0,
+            "positionPt": 391.99585,
+            "text": "18",
+            "colour": "#333333"
+          },
+          {
+            "value": 16.0,
+            "positionPt": 428.21616,
+            "text": "16",
+            "colour": "#333333"
+          },
+          {
+            "value": 14.0,
+            "positionPt": 464.44586,
+            "text": "14",
+            "colour": "#333333"
+          },
+          {
+            "value": 12.0,
+            "positionPt": 500.66617,
+            "text": "12",
+            "colour": "#333333"
+          },
+          {
+            "value": 10.0,
+            "positionPt": 536.89587,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 8.0,
+            "positionPt": 573.11621,
+            "text": "8",
+            "colour": "#333333"
+          },
+          {
+            "value": 6.0,
+            "positionPt": 609.34589,
+            "text": "6",
+            "colour": "#333333"
+          },
+          {
+            "value": 4.0,
+            "positionPt": 645.56616,
+            "text": "4",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.0,
+            "positionPt": 681.7959,
+            "text": "2",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 718.01624,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 22.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": null,
+          "colour": "#1976d2",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": null,
+          "barThicknessPt": null,
+          "fill": null,
+          "stroke": null,
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "d3e8c51d2ff7e_p1",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 111,
+        "detectedType": "line",
+        "reviewedType": "line",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "DASS-10 Score",
+          "bboxPt": [
+            264.66599,
+            290.87048,
+            352.02597,
+            302.87048
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Mild",
+          "bboxPt": [
+            496.01599,
+            624.81622,
+            514.34601,
+            634.81622
+          ],
+          "colour": "#f1c40f",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Moderate",
+          "bboxPt": [
+            472.10699,
+            588.58618,
+            514.34698,
+            598.58618
+          ],
+          "colour": "#ffa500",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Severe",
+          "bboxPt": [
+            482.66599,
+            479.9162,
+            514.34601,
+            489.9162
+          ],
+          "colour": "#ff0000",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Ext. Severe",
+          "bboxPt": [
+            462.65701,
+            335.0162,
+            514.34705,
+            345.0162
+          ],
+          "colour": "#b03a2e",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "Percentiles",
+          "bboxPt": [
+            519.88599,
+            314.49518,
+            569.34595,
+            324.49518
+          ],
+          "colour": "#e0e0e0",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "- 50th",
+          "bboxPt": [
+            514.77625,
+            658.62518,
+            540.34631,
+            668.62518
+          ],
+          "colour": "#e0e0e0",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "- 70th",
+          "bboxPt": [
+            514.77625,
+            624.21539,
+            540.34631,
+            634.21539
+          ],
+          "colour": "#e0e0e0",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "- 90th",
+          "bboxPt": [
+            514.77625,
+            559.01538,
+            540.34631,
+            569.01538
+          ],
+          "colour": "#e0e0e0",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "text": "- 99th",
+          "bboxPt": [
+            514.77625,
+            405.05536,
+            540.34631,
+            415.05536
+          ],
+          "colour": "#e0e0e0",
+          "font": "Helvetica",
+          "fontSizePt": 10.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    },
+    {
+      "id": "d3e8c51d2ff7e_p2_chart_1",
+      "title": "DASS-10 Symptom Average Scores",
+      "type": "multi_line",
+      "bboxPt": [
+        48.346,
+        179.292,
+        522.346,
+        440.732
+      ],
+      "widthPt": 474.0,
+      "heightPt": 261.44,
+      "axisColour": "#333333",
+      "observedDataType": "mean",
+      "backgroundBands": [],
+      "variantEvidence": "multiple_visits_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        },
+        "kind": "visit_date",
+        "binding": "compatible_session_history.completedAt",
+        "minimum": null,
+        "maximum": null
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 3.0,
+            "positionPt": 182.06562,
+            "text": "3",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.5,
+            "positionPt": 225.30543,
+            "text": "2.5",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.0,
+            "positionPt": 268.54559,
+            "text": "2",
+            "colour": "#333333"
+          },
+          {
+            "value": 1.5,
+            "positionPt": 311.7854,
+            "text": "1.5",
+            "colour": "#333333"
+          },
+          {
+            "value": 1.0,
+            "positionPt": 355.02521,
+            "text": "1",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.5,
+            "positionPt": 398.26541,
+            "text": "0.5",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 441.50522,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": null,
+          "colour": "#8e0404",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": null,
+          "barThicknessPt": null,
+          "fill": null,
+          "stroke": null,
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        },
+        {
+          "id": "series_2",
+          "label": null,
+          "colour": "#b303b3",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": null,
+          "barThicknessPt": null,
+          "fill": null,
+          "stroke": null,
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "d3e8c51d2ff7e_p2",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 112,
+        "detectedType": "multi_line",
+        "reviewedType": "multi_line",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "DASS-10 Symptom Average Scores",
+          "bboxPt": [
+            191.98199,
+            153.38954,
+            394.70996,
+            165.38954
+          ],
+          "colour": "#000000",
+          "font": "Helvetica-Bold",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    },
+    {
+      "id": "dddd74404c2d1_p1_chart_1",
+      "title": null,
+      "type": "line",
+      "bboxPt": [
+        121.031,
+        472.243,
+        507.031,
+        661.243
+      ],
+      "widthPt": 386.0,
+      "heightPt": 189.0,
+      "axisColour": "#333333",
+      "observedDataType": "unresolved",
+      "backgroundBands": [],
+      "variantEvidence": "multiple_visits_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        },
+        "kind": "visit_date",
+        "binding": "compatible_session_history.completedAt",
+        "minimum": null,
+        "maximum": null
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 30.0,
+            "positionPt": 473.363285,
+            "text": "30",
+            "colour": "#333333"
+          },
+          {
+            "value": 25.0,
+            "positionPt": 504.53027499999996,
+            "text": "25",
+            "colour": "#333333"
+          },
+          {
+            "value": 20.0,
+            "positionPt": 535.693295,
+            "text": "20",
+            "colour": "#333333"
+          },
+          {
+            "value": 15.0,
+            "positionPt": 566.863285,
+            "text": "15",
+            "colour": "#333333"
+          },
+          {
+            "value": 10.0,
+            "positionPt": 598.033325,
+            "text": "10",
+            "colour": "#333333"
+          },
+          {
+            "value": 5.0,
+            "positionPt": 629.193295,
+            "text": "5",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 660.363285,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 30.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": null,
+          "colour": "#b303b3",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": null,
+          "barThicknessPt": null,
+          "fill": null,
+          "stroke": null,
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "dddd74404c2d1_p1",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 113,
+        "detectedType": "line",
+        "reviewedType": "line",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Total Scores",
+          "bboxPt": [
+            264.35352,
+            444.34329,
+            331.7095,
+            460.8313
+          ],
+          "colour": "#000000",
+          "font": "Helvetica",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    },
+    {
+      "id": "dddd74404c2d1_p2_chart_1",
+      "title": null,
+      "type": "multi_line",
+      "bboxPt": [
+        121.031,
+        178.732,
+        497.031,
+        327.732
+      ],
+      "widthPt": 376.0,
+      "heightPt": 149.0,
+      "axisColour": "#333333",
+      "observedDataType": "unresolved",
+      "backgroundBands": [],
+      "variantEvidence": "multiple_visits_observed",
+      "xAxis": {
+        "status": "unresolved",
+        "ticks": [],
+        "title": null,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        },
+        "kind": "visit_date",
+        "binding": "compatible_session_history.completedAt",
+        "minimum": null,
+        "maximum": null
+      },
+      "yAxis": {
+        "status": "linear_ticks_observed",
+        "ticks": [
+          {
+            "value": 3.0,
+            "positionPt": 179.852305,
+            "text": "3",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.5,
+            "positionPt": 204.352305,
+            "text": "2.5",
+            "colour": "#333333"
+          },
+          {
+            "value": 2.0,
+            "positionPt": 228.852305,
+            "text": "2",
+            "colour": "#333333"
+          },
+          {
+            "value": 1.5,
+            "positionPt": 253.352295,
+            "text": "1.5",
+            "colour": "#333333"
+          },
+          {
+            "value": 1.0,
+            "positionPt": 277.852295,
+            "text": "1",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.5,
+            "positionPt": 302.352295,
+            "text": "0.5",
+            "colour": "#333333"
+          },
+          {
+            "value": 0.0,
+            "positionPt": 326.852295,
+            "text": "0",
+            "colour": "#333333"
+          }
+        ],
+        "title": null,
+        "minimum": 0.0,
+        "maximum": 3.0,
+        "domainPolicy": {
+          "status": "sample_extent_observed",
+          "runtimeRule": null,
+          "note": "Observed ticks do not establish a fixed domain for every patient."
+        }
+      },
+      "series": [
+        {
+          "id": "series_1",
+          "label": null,
+          "colour": "#b303b3",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": null,
+          "barThicknessPt": null,
+          "fill": null,
+          "stroke": null,
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        },
+        {
+          "id": "series_2",
+          "label": null,
+          "colour": "#01018c",
+          "ruleIdCandidate": null,
+          "bindingStatus": "candidate_requires_unit_formula_and_norm_review",
+          "categoryPosition": null,
+          "barThicknessPt": null,
+          "fill": null,
+          "stroke": null,
+          "valueTransform": null,
+          "runtimeEnabled": false,
+          "metricId": null,
+          "metricIdCandidate": null,
+          "dataSource": "patient_metric_or_compatible_visit_history"
+        }
+      ],
+      "runtimePolicy": {
+        "missingBinding": "withhold_chart",
+        "missingNorm": "withhold_chart",
+        "useSampleValues": false,
+        "substituteRawScoreForPercentile": false,
+        "unknownHistoryVariant": "withhold_unestablished_variant",
+        "unknownAxisDomain": "withhold_until_domain_rule_reviewed"
+      },
+      "pageId": "dddd74404c2d1_p2",
+      "sourceChartId": "chart_1",
+      "typeReview": {
+        "reviewIndex": 114,
+        "detectedType": "multi_line",
+        "reviewedType": "multi_line",
+        "method": "AI_visual_inspection_of_source_PDF_crop",
+        "scope": "chart_kind_only_not_scoring_or_full_layout",
+        "panelCount": 1,
+        "changed": false
+      },
+      "panelCount": 1,
+      "runtimeEnabled": false,
+      "labels": [
+        {
+          "text": "Subscale Average Scores",
+          "bboxPt": [
+            229.0015,
+            150.83231,
+            367.06146,
+            167.3203
+          ],
+          "colour": "#000000",
+          "font": "Helvetica",
+          "fontSizePt": 12.0,
+          "direction": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "labelReviewStatus": "source_labels_extracted_not_all_semantically_classified",
+      "referenceDistributions": null
+    }
+  ],
+  "tables": [
+    {
+      "id": "d3e8c51d2ff7e_p1_table_1",
+      "type": "patient_metadata",
+      "bboxPt": [
+        28.3465,
+        113.38562,
+        566.92941,
+        180.0
+      ],
+      "rowCount": 4,
+      "columnCount": 4,
+      "cellsPt": [
+        [
+          28.3465,
+          113.38562,
+          566.92941,
+          133.22818
+        ],
+        [
+          28.3465,
+          133.22818,
+          141.73214,
+          148.81921
+        ],
+        [
+          28.3465,
+          148.81921,
+          141.73214,
+          164.40973
+        ],
+        [
+          28.3465,
+          164.40973,
+          141.73214,
+          180.0
+        ],
+        [
+          141.73214,
+          133.22818,
+          354.33051,
+          148.81921
+        ],
+        [
+          141.73214,
+          148.81921,
+          354.33051,
+          164.40973
+        ],
+        [
+          141.73214,
+          164.40973,
+          354.33051,
+          180.0
+        ],
+        [
+          354.33051,
+          133.22818,
+          467.7164,
+          148.81921
+        ],
+        [
+          354.33051,
+          148.81921,
+          467.7164,
+          164.40973
+        ],
+        [
+          354.33051,
+          164.40973,
+          467.7164,
+          180.0
+        ],
+        [
+          467.7164,
+          133.22818,
+          566.92941,
+          148.81921
+        ],
+        [
+          467.7164,
+          148.81921,
+          566.92941,
+          164.40973
+        ],
+        [
+          467.7164,
+          164.40973,
+          566.92941,
+          180.0
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "d3e8c51d2ff7e_p1",
+      "sourceTableId": "table_1",
+      "columns": [],
+      "rowBindings": [],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Client Name",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "patient.displayName"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "patient.displayName"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "static_label",
+          "content": "Date administered",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.completedAt"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.completedAt"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Date of birth (age)",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "patient.dateOfBirthAndAgeAtAdministration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "patient.dateOfBirthAndAgeAtAdministration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "static_label",
+          "content": "Time taken",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.duration"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.duration"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "static_label",
+          "content": "Assessor",
+          "runtimeEnabled": false,
+          "followingCellBindingCandidate": "session.assessorName"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "patient_or_session_field",
+          "content": null,
+          "runtimeEnabled": false,
+          "contentBinding": "session.assessorName"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "d3e8c51d2ff7e_p1_table_2",
+      "type": "unresolved_table",
+      "bboxPt": [
+        193.15567,
+        222.26508,
+        552.21771,
+        261.37964
+      ],
+      "rowCount": 3,
+      "columnCount": 10,
+      "cellsPt": [
+        [
+          193.15567,
+          222.26508,
+          306.11099,
+          243.74899
+        ],
+        [
+          306.11099,
+          222.26508,
+          311.811,
+          243.74899
+        ],
+        [
+          311.811,
+          222.26508,
+          317.51102,
+          243.74899
+        ],
+        [
+          317.51102,
+          222.26508,
+          391.14999,
+          243.74899
+        ],
+        [
+          391.14999,
+          222.26508,
+          396.85025,
+          243.74899
+        ],
+        [
+          396.85025,
+          222.26508,
+          402.55002,
+          243.74899
+        ],
+        [
+          402.55002,
+          222.26508,
+          476.18997,
+          243.74899
+        ],
+        [
+          476.18997,
+          222.26508,
+          481.88974,
+          243.74899
+        ],
+        [
+          481.88974,
+          222.26508,
+          487.59,
+          243.74899
+        ],
+        [
+          487.59,
+          222.26508,
+          552.21771,
+          243.74899
+        ],
+        [
+          193.15567,
+          243.74899,
+          306.11099,
+          249.44891
+        ],
+        [
+          306.11099,
+          243.74899,
+          311.811,
+          249.44891
+        ],
+        [
+          311.811,
+          243.74899,
+          317.51102,
+          249.44891
+        ],
+        [
+          317.51102,
+          243.74899,
+          391.14999,
+          249.44891
+        ],
+        [
+          391.14999,
+          243.74899,
+          396.85025,
+          249.44891
+        ],
+        [
+          396.85025,
+          243.74899,
+          402.55002,
+          249.44891
+        ],
+        [
+          402.55002,
+          243.74899,
+          476.18997,
+          249.44891
+        ],
+        [
+          476.18997,
+          243.74899,
+          481.88974,
+          249.44891
+        ],
+        [
+          481.88974,
+          243.74899,
+          487.59,
+          249.44891
+        ],
+        [
+          487.59,
+          243.74899,
+          552.21771,
+          249.44891
+        ],
+        [
+          193.15567,
+          249.44891,
+          306.11099,
+          261.37964
+        ],
+        [
+          306.11099,
+          249.44891,
+          311.811,
+          261.37964
+        ],
+        [
+          311.811,
+          249.44891,
+          317.51102,
+          261.37964
+        ],
+        [
+          317.51102,
+          249.44891,
+          391.14999,
+          261.37964
+        ],
+        [
+          391.14999,
+          249.44891,
+          396.85025,
+          261.37964
+        ],
+        [
+          396.85025,
+          249.44891,
+          402.55002,
+          261.37964
+        ],
+        [
+          402.55002,
+          249.44891,
+          476.18997,
+          261.37964
+        ],
+        [
+          476.18997,
+          249.44891,
+          481.88974,
+          261.37964
+        ],
+        [
+          481.88974,
+          249.44891,
+          487.59,
+          261.37964
+        ],
+        [
+          487.59,
+          249.44891,
+          552.21771,
+          261.37964
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "d3e8c51d2ff7e_p1",
+      "sourceTableId": "table_2",
+      "columns": [
+        {
+          "sourceColumnIndex": 3,
+          "label": "Raw Score",
+          "binding": null
+        }
+      ],
+      "rowBindings": [],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "static_column_header",
+          "content": "Raw Score",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 5,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 6,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 7,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 8,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 9,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 5,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 6,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 7,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 8,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 9,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 5,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 6,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 7,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 8,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 9,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "d3e8c51d2ff7e_p4_table_1",
+      "type": "response_table",
+      "bboxPt": [
+        28.3465,
+        141.73229,
+        555.59049,
+        510.23599
+      ],
+      "rowCount": 13,
+      "columnCount": 6,
+      "cellsPt": [
+        [
+          28.3465,
+          141.73229,
+          51.02344,
+          170.0789
+        ],
+        [
+          28.3465,
+          170.0789,
+          51.02344,
+          198.42512
+        ],
+        [
+          28.3465,
+          198.42512,
+          51.02344,
+          226.77184
+        ],
+        [
+          28.3465,
+          226.77184,
+          51.02344,
+          255.11813
+        ],
+        [
+          28.3465,
+          255.11813,
+          51.02344,
+          283.46489
+        ],
+        [
+          28.3465,
+          283.46489,
+          51.02344,
+          311.81112
+        ],
+        [
+          28.3465,
+          311.81112,
+          51.02344,
+          340.15789
+        ],
+        [
+          28.3465,
+          340.15789,
+          51.02344,
+          368.50416
+        ],
+        [
+          28.3465,
+          368.50416,
+          51.02344,
+          396.85085
+        ],
+        [
+          28.3465,
+          396.85085,
+          51.02344,
+          425.19686
+        ],
+        [
+          28.3465,
+          425.19686,
+          51.02344,
+          453.54313
+        ],
+        [
+          28.3465,
+          453.54313,
+          51.02344,
+          481.88987
+        ],
+        [
+          28.3465,
+          481.88987,
+          51.02344,
+          510.23599
+        ],
+        [
+          51.02344,
+          141.73229,
+          257.9528,
+          170.0789
+        ],
+        [
+          51.02344,
+          170.0789,
+          257.9528,
+          198.42512
+        ],
+        [
+          51.02344,
+          198.42512,
+          257.9528,
+          226.77184
+        ],
+        [
+          51.02344,
+          226.77184,
+          257.9528,
+          255.11813
+        ],
+        [
+          51.02344,
+          255.11813,
+          257.9528,
+          283.46489
+        ],
+        [
+          51.02344,
+          283.46489,
+          257.9528,
+          311.81112
+        ],
+        [
+          51.02344,
+          311.81112,
+          257.9528,
+          340.15789
+        ],
+        [
+          51.02344,
+          340.15789,
+          257.9528,
+          368.50416
+        ],
+        [
+          51.02344,
+          368.50416,
+          257.9528,
+          396.85085
+        ],
+        [
+          51.02344,
+          396.85085,
+          257.9528,
+          425.19686
+        ],
+        [
+          51.02344,
+          425.19686,
+          257.9528,
+          453.54313
+        ],
+        [
+          51.02344,
+          453.54313,
+          257.9528,
+          481.88987
+        ],
+        [
+          51.02344,
+          481.88987,
+          257.9528,
+          510.23599
+        ],
+        [
+          257.9528,
+          141.73229,
+          332.36215,
+          170.0789
+        ],
+        [
+          257.9528,
+          170.0789,
+          332.36215,
+          198.42512
+        ],
+        [
+          257.9528,
+          198.42512,
+          332.36215,
+          226.77184
+        ],
+        [
+          257.9528,
+          226.77184,
+          332.36215,
+          255.11813
+        ],
+        [
+          257.9528,
+          255.11813,
+          332.36215,
+          283.46489
+        ],
+        [
+          257.9528,
+          283.46489,
+          332.36215,
+          311.81112
+        ],
+        [
+          257.9528,
+          311.81112,
+          332.36215,
+          340.15789
+        ],
+        [
+          257.9528,
+          340.15789,
+          332.36215,
+          368.50416
+        ],
+        [
+          257.9528,
+          368.50416,
+          332.36215,
+          396.85085
+        ],
+        [
+          257.9528,
+          396.85085,
+          332.36215,
+          425.19686
+        ],
+        [
+          257.9528,
+          425.19686,
+          332.36215,
+          453.54313
+        ],
+        [
+          257.9528,
+          453.54313,
+          332.36215,
+          481.88987
+        ],
+        [
+          257.9528,
+          481.88987,
+          332.36215,
+          510.23599
+        ],
+        [
+          332.36215,
+          141.73229,
+          406.77181,
+          170.0789
+        ],
+        [
+          332.36215,
+          170.0789,
+          406.77181,
+          198.42512
+        ],
+        [
+          332.36215,
+          198.42512,
+          406.77181,
+          226.77184
+        ],
+        [
+          332.36215,
+          226.77184,
+          406.77181,
+          255.11813
+        ],
+        [
+          332.36215,
+          255.11813,
+          406.77181,
+          283.46489
+        ],
+        [
+          332.36215,
+          283.46489,
+          406.77181,
+          311.81112
+        ],
+        [
+          332.36215,
+          311.81112,
+          406.77181,
+          340.15789
+        ],
+        [
+          332.36215,
+          340.15789,
+          406.77181,
+          368.50416
+        ],
+        [
+          332.36215,
+          368.50416,
+          406.77181,
+          396.85085
+        ],
+        [
+          332.36215,
+          396.85085,
+          406.77181,
+          425.19686
+        ],
+        [
+          332.36215,
+          425.19686,
+          406.77181,
+          453.54313
+        ],
+        [
+          332.36215,
+          453.54313,
+          406.77181,
+          481.88987
+        ],
+        [
+          332.36215,
+          481.88987,
+          406.77181,
+          510.23599
+        ],
+        [
+          406.77181,
+          141.73229,
+          481.18113,
+          170.0789
+        ],
+        [
+          406.77181,
+          170.0789,
+          481.18113,
+          198.42512
+        ],
+        [
+          406.77181,
+          198.42512,
+          481.18113,
+          226.77184
+        ],
+        [
+          406.77181,
+          226.77184,
+          481.18113,
+          255.11813
+        ],
+        [
+          406.77181,
+          255.11813,
+          481.18113,
+          283.46489
+        ],
+        [
+          406.77181,
+          283.46489,
+          481.18113,
+          311.81112
+        ],
+        [
+          406.77181,
+          311.81112,
+          481.18113,
+          340.15789
+        ],
+        [
+          406.77181,
+          340.15789,
+          481.18113,
+          368.50416
+        ],
+        [
+          406.77181,
+          368.50416,
+          481.18113,
+          396.85085
+        ],
+        [
+          406.77181,
+          396.85085,
+          481.18113,
+          425.19686
+        ],
+        [
+          406.77181,
+          425.19686,
+          481.18113,
+          453.54313
+        ],
+        [
+          406.77181,
+          453.54313,
+          481.18113,
+          481.88987
+        ],
+        [
+          406.77181,
+          481.88987,
+          481.18113,
+          510.23599
+        ],
+        [
+          481.18113,
+          141.73229,
+          555.59049,
+          170.0789
+        ],
+        [
+          481.18113,
+          170.0789,
+          555.59049,
+          198.42512
+        ],
+        [
+          481.18113,
+          198.42512,
+          555.59049,
+          226.77184
+        ],
+        [
+          481.18113,
+          226.77184,
+          555.59049,
+          255.11813
+        ],
+        [
+          481.18113,
+          255.11813,
+          555.59049,
+          283.46489
+        ],
+        [
+          481.18113,
+          283.46489,
+          555.59049,
+          311.81112
+        ],
+        [
+          481.18113,
+          311.81112,
+          555.59049,
+          340.15789
+        ],
+        [
+          481.18113,
+          340.15789,
+          555.59049,
+          368.50416
+        ],
+        [
+          481.18113,
+          368.50416,
+          555.59049,
+          396.85085
+        ],
+        [
+          481.18113,
+          396.85085,
+          555.59049,
+          425.19686
+        ],
+        [
+          481.18113,
+          425.19686,
+          555.59049,
+          453.54313
+        ],
+        [
+          481.18113,
+          453.54313,
+          555.59049,
+          481.88987
+        ],
+        [
+          481.18113,
+          481.88987,
+          555.59049,
+          510.23599
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "d3e8c51d2ff7e_p4",
+      "sourceTableId": "table_1",
+      "columns": [
+        {
+          "sourceColumnIndex": 2,
+          "label": "Never",
+          "binding": null
+        },
+        {
+          "sourceColumnIndex": 3,
+          "label": "Sometimes",
+          "binding": null
+        }
+      ],
+      "rowBindings": [
+        {
+          "sourceRowIndex": 1,
+          "questionId": "Q1",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "questionId": "Q2",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "questionId": "Q3",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "questionId": "Q4",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "questionId": "Q5",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "questionId": "Q6",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "questionId": "Q7",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "questionId": "Q8",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "questionId": "Q9",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "questionId": "Q10",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "questionId": "Q11",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "questionId": "Q12",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        }
+      ],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "response_option_header",
+          "content": "Never",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "response_option_header",
+          "content": "Sometimes",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 4,
+          "kind": "response_option_header",
+          "content": "Often",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 5,
+          "kind": "response_option_header",
+          "content": "AlmostAlways",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q1",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q2",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q3",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q4",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q5",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q6",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q7",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q8",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q9",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q10",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q11",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 11,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q12",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 12,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "dddd74404c2d1_p3_table_1",
+      "type": "unresolved_table",
+      "bboxPt": [
+        68.03149,
+        141.7323,
+        527.24424,
+        428.34482
+      ],
+      "rowCount": 2,
+      "columnCount": 2,
+      "cellsPt": [
+        [
+          68.03149,
+          141.7323,
+          527.24424,
+          161.57483
+        ],
+        [
+          68.03149,
+          161.57483,
+          181.41733,
+          428.34482
+        ],
+        [
+          181.41733,
+          161.57483,
+          527.24424,
+          428.34482
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "dddd74404c2d1_p3",
+      "sourceTableId": "table_1",
+      "columns": [],
+      "rowBindings": [],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "dddd74404c2d1_p3_table_2",
+      "type": "response_table",
+      "bboxPt": [
+        68.03149,
+        442.51804,
+        527.24424,
+        745.82513
+      ],
+      "rowCount": 11,
+      "columnCount": 6,
+      "cellsPt": [
+        [
+          68.03149,
+          442.51804,
+          527.24424,
+          462.36057
+        ],
+        [
+          68.03149,
+          462.36057,
+          87.87402,
+          490.70703
+        ],
+        [
+          68.03149,
+          490.70703,
+          87.87402,
+          519.05347
+        ],
+        [
+          68.03149,
+          519.05347,
+          87.87402,
+          547.3999
+        ],
+        [
+          68.03149,
+          547.3999,
+          87.87402,
+          575.7464
+        ],
+        [
+          68.03149,
+          575.7464,
+          87.87402,
+          604.09283
+        ],
+        [
+          68.03149,
+          604.09283,
+          87.87402,
+          632.43933
+        ],
+        [
+          68.03149,
+          632.43933,
+          87.87402,
+          660.78577
+        ],
+        [
+          68.03149,
+          660.78577,
+          87.87402,
+          689.1322
+        ],
+        [
+          68.03149,
+          689.1322,
+          87.87402,
+          717.4787
+        ],
+        [
+          68.03149,
+          717.4787,
+          87.87402,
+          745.82513
+        ],
+        [
+          87.87402,
+          462.36057,
+          229.60629,
+          490.70703
+        ],
+        [
+          87.87402,
+          490.70703,
+          229.60629,
+          519.05347
+        ],
+        [
+          87.87402,
+          519.05347,
+          229.60629,
+          547.3999
+        ],
+        [
+          87.87402,
+          547.3999,
+          229.60629,
+          575.7464
+        ],
+        [
+          87.87402,
+          575.7464,
+          229.60629,
+          604.09283
+        ],
+        [
+          87.87402,
+          604.09283,
+          229.60629,
+          632.43933
+        ],
+        [
+          87.87402,
+          632.43933,
+          229.60629,
+          660.78577
+        ],
+        [
+          87.87402,
+          660.78577,
+          229.60629,
+          689.1322
+        ],
+        [
+          87.87402,
+          689.1322,
+          229.60629,
+          717.4787
+        ],
+        [
+          87.87402,
+          717.4787,
+          229.60629,
+          745.82513
+        ],
+        [
+          229.60629,
+          462.36057,
+          304.01575,
+          490.70703
+        ],
+        [
+          229.60629,
+          490.70703,
+          304.01575,
+          519.05347
+        ],
+        [
+          229.60629,
+          519.05347,
+          304.01575,
+          547.3999
+        ],
+        [
+          229.60629,
+          547.3999,
+          304.01575,
+          575.7464
+        ],
+        [
+          229.60629,
+          575.7464,
+          304.01575,
+          604.09283
+        ],
+        [
+          229.60629,
+          604.09283,
+          304.01575,
+          632.43933
+        ],
+        [
+          229.60629,
+          632.43933,
+          304.01575,
+          660.78577
+        ],
+        [
+          229.60629,
+          660.78577,
+          304.01575,
+          689.1322
+        ],
+        [
+          229.60629,
+          689.1322,
+          304.01575,
+          717.4787
+        ],
+        [
+          229.60629,
+          717.4787,
+          304.01575,
+          745.82513
+        ],
+        [
+          304.01575,
+          462.36057,
+          378.4252,
+          490.70703
+        ],
+        [
+          304.01575,
+          490.70703,
+          378.4252,
+          519.05347
+        ],
+        [
+          304.01575,
+          519.05347,
+          378.4252,
+          547.3999
+        ],
+        [
+          304.01575,
+          547.3999,
+          378.4252,
+          575.7464
+        ],
+        [
+          304.01575,
+          575.7464,
+          378.4252,
+          604.09283
+        ],
+        [
+          304.01575,
+          604.09283,
+          378.4252,
+          632.43933
+        ],
+        [
+          304.01575,
+          632.43933,
+          378.4252,
+          660.78577
+        ],
+        [
+          304.01575,
+          660.78577,
+          378.4252,
+          689.1322
+        ],
+        [
+          304.01575,
+          689.1322,
+          378.4252,
+          717.4787
+        ],
+        [
+          304.01575,
+          717.4787,
+          378.4252,
+          745.82513
+        ],
+        [
+          378.4252,
+          462.36057,
+          452.83466,
+          490.70703
+        ],
+        [
+          378.4252,
+          490.70703,
+          452.83466,
+          519.05347
+        ],
+        [
+          378.4252,
+          519.05347,
+          452.83466,
+          547.3999
+        ],
+        [
+          378.4252,
+          547.3999,
+          452.83466,
+          575.7464
+        ],
+        [
+          378.4252,
+          575.7464,
+          452.83466,
+          604.09283
+        ],
+        [
+          378.4252,
+          604.09283,
+          452.83466,
+          632.43933
+        ],
+        [
+          378.4252,
+          632.43933,
+          452.83466,
+          660.78577
+        ],
+        [
+          378.4252,
+          660.78577,
+          452.83466,
+          689.1322
+        ],
+        [
+          378.4252,
+          689.1322,
+          452.83466,
+          717.4787
+        ],
+        [
+          378.4252,
+          717.4787,
+          452.83466,
+          745.82513
+        ],
+        [
+          452.83466,
+          462.36057,
+          527.24424,
+          490.70703
+        ],
+        [
+          452.83466,
+          490.70703,
+          527.24424,
+          519.05347
+        ],
+        [
+          452.83466,
+          519.05347,
+          527.24424,
+          547.3999
+        ],
+        [
+          452.83466,
+          547.3999,
+          527.24424,
+          575.7464
+        ],
+        [
+          452.83466,
+          575.7464,
+          527.24424,
+          604.09283
+        ],
+        [
+          452.83466,
+          604.09283,
+          527.24424,
+          632.43933
+        ],
+        [
+          452.83466,
+          632.43933,
+          527.24424,
+          660.78577
+        ],
+        [
+          452.83466,
+          660.78577,
+          527.24424,
+          689.1322
+        ],
+        [
+          452.83466,
+          689.1322,
+          527.24424,
+          717.4787
+        ],
+        [
+          452.83466,
+          717.4787,
+          527.24424,
+          745.82513
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "dddd74404c2d1_p3",
+      "sourceTableId": "table_2",
+      "columns": [
+        {
+          "sourceColumnIndex": 2,
+          "label": "Never",
+          "binding": null
+        },
+        {
+          "sourceColumnIndex": 3,
+          "label": "Sometimes",
+          "binding": null
+        }
+      ],
+      "rowBindings": [
+        {
+          "sourceRowIndex": 2,
+          "questionId": "Q1",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "questionId": "Q2",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "questionId": "Q3",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "questionId": "Q4",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "questionId": "Q5",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "questionId": "Q6",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "questionId": "Q7",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "questionId": "Q9",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        }
+      ],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "static_heading",
+          "content": "Client Responses",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 5,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "response_option_header",
+          "content": "Never",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "response_option_header",
+          "content": "Sometimes",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 4,
+          "kind": "response_option_header",
+          "content": "Often",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 5,
+          "kind": "response_option_header",
+          "content": "AlmostAlways",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q1",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q2",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 3,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q3",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 4,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q4",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 5,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q5",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 6,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q6",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 7,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q7",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 8,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 1,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 9,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q9",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 10,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    },
+    {
+      "id": "dddd74404c2d1_p4_table_1",
+      "type": "response_table",
+      "bboxPt": [
+        68.03149,
+        141.7323,
+        527.24429,
+        218.26773
+      ],
+      "rowCount": 3,
+      "columnCount": 6,
+      "cellsPt": [
+        [
+          68.03149,
+          141.7323,
+          527.24429,
+          161.57483
+        ],
+        [
+          68.03149,
+          161.57483,
+          87.87402,
+          189.92126
+        ],
+        [
+          68.03149,
+          189.92126,
+          87.87402,
+          218.26773
+        ],
+        [
+          87.87402,
+          161.57483,
+          229.60629,
+          189.92126
+        ],
+        [
+          87.87402,
+          189.92126,
+          229.60629,
+          218.26773
+        ],
+        [
+          229.60629,
+          161.57483,
+          304.01575,
+          189.92126
+        ],
+        [
+          229.60629,
+          189.92126,
+          304.01575,
+          218.26773
+        ],
+        [
+          304.01575,
+          161.57483,
+          378.4252,
+          189.92126
+        ],
+        [
+          304.01575,
+          189.92126,
+          378.4252,
+          218.26773
+        ],
+        [
+          378.4252,
+          161.57483,
+          452.83466,
+          189.92126
+        ],
+        [
+          378.4252,
+          189.92126,
+          452.83466,
+          218.26773
+        ],
+        [
+          452.83466,
+          161.57483,
+          527.24429,
+          189.92126
+        ],
+        [
+          452.83466,
+          189.92126,
+          527.24429,
+          218.26773
+        ]
+      ],
+      "dataBinding": null,
+      "runtimeEnabled": false,
+      "reviewStatus": "cell_semantics_require_review",
+      "pageId": "dddd74404c2d1_p4",
+      "sourceTableId": "table_1",
+      "columns": [
+        {
+          "sourceColumnIndex": 2,
+          "label": "Never",
+          "binding": null
+        },
+        {
+          "sourceColumnIndex": 3,
+          "label": "Sometimes",
+          "binding": null
+        }
+      ],
+      "rowBindings": [
+        {
+          "sourceRowIndex": 2,
+          "questionId": "Q10",
+          "contentBinding": "session.answers",
+          "status": "question_text_matched_response_cells_require_review",
+          "runtimeEnabled": false
+        }
+      ],
+      "cellTemplates": [
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 0,
+          "kind": "static_heading",
+          "content": "Client Responses (cont )\n.",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 2,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 3,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 4,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 0,
+          "sourceColumnIndex": 5,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 0,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 1,
+          "kind": "empty",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 2,
+          "kind": "response_option_header",
+          "content": "Never",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 3,
+          "kind": "response_option_header",
+          "content": "Sometimes",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 4,
+          "kind": "response_option_header",
+          "content": "Often",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 1,
+          "sourceColumnIndex": 5,
+          "kind": "response_option_header",
+          "content": "AlmostAlways",
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 0,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 1,
+          "kind": "question_text",
+          "content": null,
+          "runtimeEnabled": false,
+          "questionId": "Q10",
+          "contentBinding": "questionnaire.items.text",
+          "matchingMethod": "exact_normalized_source_text"
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 2,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 3,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 4,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        },
+        {
+          "sourceRowIndex": 2,
+          "sourceColumnIndex": 5,
+          "kind": "unresolved",
+          "content": null,
+          "runtimeEnabled": false
+        }
+      ],
+      "contentPolicy": {
+        "sampleCellValuesExcluded": true,
+        "patientCells": "bind_current_patient_session",
+        "responseCells": "bind_questionnaire_items_and_session_answers",
+        "unresolvedCells": "withhold",
+        "referenceCellsRequireReview": true
+      }
+    }
+  ],
+  "variants": {
+    "sourceStatements": [
+      "When administered more than once, average scores are graphed, showing the change in symptoms over time.",
+      "Based on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:"
+    ],
+    "firstAdministration": {
+      "status": "requires_review"
+    },
+    "repeatAdministration": {
+      "status": "requires_review"
+    },
+    "policy": "Do not invent a repeat chart from an observed first-visit chart."
+  },
+  "interpretationRules": {
+    "encodedRules": [],
+    "sourceGuidance": [
+      {
+        "title": "DASS-10 Scoring & Interpretation",
+        "text": "The total score for questions 1-10 represents overall distress (0 to 30), with higher scores indicating more severe or greater number of symptoms. Two subscales are presented:\nAnxiety-Stress : Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\nDepression : Items 2, 3, 5, 10 (raw score range = 0 to 12)\n\nIn addition to the raw score being computed, average scores are calculated by dividing the raw score by the number of items, giving a sense of the general pattern of responding at the subscale level. Average scores are helpful for interpretation as they allow comparisons between total score and subscales.\n\nOverall scores can be classified into three severity groups:\nsubclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)\nmild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )\nmoderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)\nsevere (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)\nextremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)\nA normative percentile is computed based on a community sample (Halford & Frost, 2021), indicating how the respondent scored in relation to a typical pattern of responding for adults. For example, a percentile of 83 or less indicates the individual has more distress than 83 percent of the normal population, but this puts them in the mild category. In mental health settings it is typical to see people with percentiles in the 90s.\n\nWhen administered more than once, average scores are graphed, showing the change in symptoms over time.\n\nBased on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:\nintensified significantly (increase in score by 5 or more)\nintensified slightly (score increased by between 2 to 4)\nnot significantly changed (score increased by 1, reduced by 1 or did not change at all)\nimproved slightly (score reduced by between 2 to 4)\nimproved significantly (score reduced by 5 or more)\nThe last two questions are used by clinicians to determine whether the client has a potential substance use issue (Question 11) or whether the client has had suicidal ideation (Question 12). Both these items do not contribute towards the overall score or subscale scores, but are highlighted in the the Interpretive Text section if any problems are reported.\n",
+        "source_url": null
+      }
+    ],
+    "reportScoringGuidance": [
+      {
+        "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+        "pageNumber": 2,
+        "text": "For comprehensive information on the DASS-21, \nsee here\n.\nThe total score for questions 1-10 represents overall distress (0 to 30), with higher scores\nindicating more severe or greater number of symptoms. Two subscales are presented:",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      },
+      {
+        "documentSha256": "3e8c51d2ff7efffa24b488e25457e6ec35d130519b601e56f16d667c38ba5f87",
+        "pageNumber": 3,
+        "text": "- Anxiety-Stress: Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\n- Depression: Items 2, 3, 5, 10 (raw score range = 0 to 12)\nIn addition to the raw score being computed, average scores are calculated by dividing the raw\nscore by the number of items, giving a sense of the general pattern of responding at the\nsubscale level.\nAverage scores are helpful for interpretation as they allow comparisons between total score and\nsubscales.\n0 = Not at all\n1 = Some of the time\n2 = Considerable degree\n3= Very much\nOverall scores can be classified into three severity groups:\n- subclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)\n- mild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )\n- moderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)\n- severe (raw score 13-20, average score 1.3-2.0; percentile of 97 - 99.6)\n- extremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)\nA normative percentile is computed based on a community sample (Halford & Frost, 2021),\nindicating how the respondent scored in relation to a typical pattern of responding for adults. For\nexample, a percentile of 83 or less indicates the individual has more distress than 83 percent of\nthe normal population, but this puts them in the mild category. In mental health settings it is\ntypical to see people with percentiles in the 90s.\nWhen administered more than once, average scores are graphed, showing the change in\nsymptoms over time.\nBased on reliable change calculations, interpretive text is provided describing the respondent's\nchange in symptoms from first to last administrations, as either having experienced:\n- deterioration (increase in scores by 5 or more)\n- no reliable change (scores changed by 4 or less)\n- reliable improvement (scores reduced by 5 or more)\n- recovery (scored reduced by 5 or more and most recent score is 6 or less, putting the in the\nMild/Subclinical range)\nThe last two questions are used by clinicians to determine whether the client has a potential\nsubstance use issue (Question 11) or whether the client has had suicidal ideation (Question 12).\nBoth these items do not contribute towards the overall score or subscale scores, but are\nhighlighted in the the Interpretive Text section if any problems are reported.",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      },
+      {
+        "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+        "pageNumber": 2,
+        "text": "The total score represents overall distress (0 to 30), with higher\nscores indicating more severe or greater number of symptoms.  Two\nsubscales are presented:\n- Anxiety-Stress: Items 1, 4, 6, 7, 8, 9 (raw score range = 0 to 18)\n- Depression: Items  2, 3, 5, 10 (raw score range = 0 to 12)\nIn addition to the raw score being computed, average scores are\ncalculated by dividing the raw score by the number of items, giving a\nsense of the general pattern of responding at the subscale level.\nAverage scores are helpful for interpretation as they allow\ncomparisons between total score and subscales. \n0 = Not at all\n1 = Some of the time\n2 = Considerable degree\n3=  Very much\nOverall scores can be classified into three severity groups: \n- Mild/subclinical (raw score = 6 or less, average score 0.6 or less;\nwhich is equivalent to a percentile of 83 or less)\n- Moderate (raw score between 7 and 12, average between 0.7 and\n1.2; which is equivalent to a percentile of between 84 and 99.8)\n- Severe (raw score 13 or more, average between 1.3 and 3; which\nis equivalent to a percentile of between of 99.9 or",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      },
+      {
+        "documentSha256": "ddd74404c2d1ebfd8f4e263c173e0b70e5e0662782d22bf7ab965d27052d53fc",
+        "pageNumber": 3,
+        "text": "greater)\nA normative percentile is computed based on a community sample\n(Halford & Frost, 2021), indicating how the respondent scored in\nrelation to a typical pattern of responding for adults. For example, a\npercentile of 83 or less indicates the individual has less distress than\n83 percent of the normal population, and puts them in the\nmild/subclinical category. In mental health settings it is typical to see\npeople with percentiles in the 90s.\nWhen administered more than once, average scores are graphed,\nshowing the change in symptoms over time. \nBased on reliable change calculations, interpretive text is provided\ndescribing the respondent's change in symptoms from first to last\nadministrations, as either having experinced:\n- deterioration (increase in scores by 5 or more)\n- no reliable change (scores changed by 4 or less)\n- reliable improvement (scores reduced by 5 or more)\n- recovery (scored reduced by 5 or more and most recent score is 6\nor less, putting the in the Mild/Subclinical range)",
+        "usage": "source_guidance_for_review_not_executable_scoring",
+        "runtimeEnabled": false
+      }
+    ],
+    "sourceRequirements": [
+      "subclinical (raw score 0-4, average score 0-0.4; equivalent to a percentile of 70 or less)",
+      "mild (raw score 5-6, average score 0.5-0.6, percentile of 71-86 )",
+      "moderate (raw score 7-12, average score 0.7-1.2; percentile of 87-96)",
+      "severe (raw score 13-20, average score 1.3-2.0; percentile of 97 – 99.6)",
+      "extremely severe (raw score 21-30, average score 2.1-3; percentile of 99.7 and above)",
+      "A normative percentile is computed based on a community sample (Halford & Frost, 2021), indicating how the respondent scored in relation to a typical pattern of responding for adults.",
+      "For example, a percentile of 83 or less indicates the individual has more distress than 83 percent of the normal population, but this puts them in the mild category.",
+      "In mental health settings it is typical to see people with percentiles in the 90s.",
+      "When administered more than once, average scores are graphed, showing the change in symptoms over time.",
+      "Based on reliable change calculations, interpretive text is provided describing the respondent’s change in symptoms from first to last administrations, as either having experienced:"
+    ],
+    "templates": [],
+    "sampleNarrativeReusable": false,
+    "runtimeEnabled": false
+  },
+  "referenceTables": [],
+  "paintStyles": [
+    {
+      "id": "paint_e0ec5dc1c2a963e2191f5dc093070c95",
+      "status": "source_colour_stops_extracted_role_requires_review",
+      "type": "linear_gradient_samples",
+      "direction": "vertical",
+      "stops": [
+        {
+          "offset": 0.0,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.03125,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.0625,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.09375,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.125,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.15625,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.1875,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.21875,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.25,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.28125,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.3125,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.34375,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.375,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.40625,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.4375,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.46875,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.53125,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5625,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.59375,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.625,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.65625,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.6875,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.71875,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.75,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.78125,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.8125,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.84375,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.875,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.90625,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.9375,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.96875,
+          "colour": "#989998",
+          "opacity": 1.0
+        },
+        {
+          "offset": 1.0,
+          "colour": "#989998",
+          "opacity": 1.0
+        }
+      ],
+      "runtimeEnabled": false
+    },
+    {
+      "id": "paint_fb396d8f4cc3438c4b8423c46bcb644b",
+      "status": "source_colour_stops_extracted_role_requires_review",
+      "type": "linear_gradient_samples",
+      "direction": "vertical",
+      "stops": [
+        {
+          "offset": 0.0,
+          "colour": "#e47272",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.03125,
+          "colour": "#e57674",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.0625,
+          "colour": "#e67b75",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.09375,
+          "colour": "#e77e76",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.125,
+          "colour": "#e88278",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.15625,
+          "colour": "#e88679",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.1875,
+          "colour": "#e98a7a",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.21875,
+          "colour": "#ea8f7c",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.25,
+          "colour": "#eb937d",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.28125,
+          "colour": "#ec977e",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.3125,
+          "colour": "#ed9b80",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.34375,
+          "colour": "#ed9e81",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.375,
+          "colour": "#eea382",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.40625,
+          "colour": "#efa783",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.4375,
+          "colour": "#f0ab85",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.46875,
+          "colour": "#f1af86",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5,
+          "colour": "#f1b387",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.53125,
+          "colour": "#f2b789",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.5625,
+          "colour": "#f3bb8a",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.59375,
+          "colour": "#f4bf8b",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.625,
+          "colour": "#f5c38d",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.65625,
+          "colour": "#f6c88e",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.6875,
+          "colour": "#f6cb8f",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.71875,
+          "colour": "#f7cf90",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.75,
+          "colour": "#f8d392",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.78125,
+          "colour": "#f9d793",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.8125,
+          "colour": "#fadc95",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.84375,
+          "colour": "#fae096",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.875,
+          "colour": "#fbe497",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.90625,
+          "colour": "#fce898",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.9375,
+          "colour": "#fdeb9a",
+          "opacity": 1.0
+        },
+        {
+          "offset": 0.96875,
+          "colour": "#fef09b",
+          "opacity": 1.0
+        },
+        {
+          "offset": 1.0,
+          "colour": "#fef49c",
+          "opacity": 1.0
+        }
+      ],
+      "runtimeEnabled": false
+    }
+  ],
+  "assets": {
+    "runtimeImages": [],
+    "runtimeSourceFiles": [],
+    "runtimeSourceUrls": []
+  },
+  "runtimeContract": {
+    "version2RendererRequired": true,
+    "loadDefinitionFrom": "database_json",
+    "useCurrentPatientAnswers": true,
+    "useSamplePatientValues": false,
+    "externalNetworkRequired": false,
+    "sourceArchiveRequired": false,
+    "unknownScoring": "withhold",
+    "unknownNorms": "withhold",
+    "unsupportedChart": "withhold_and_report_exception",
+    "unknownRepeatLayout": "withhold"
+  },
+  "validation": {
+    "jsonStructureValidated": true,
+    "sourceHashesVerified": true,
+    "chartTypeReview": "AI_visual_review_of_detected_regions_and_zero_detection_documents",
+    "fullPageLayoutCompared": false,
+    "scoreBindingsReviewed": false,
+    "tablesSemanticallyReviewed": false,
+    "rendererEquivalent": false,
+    "clinicalApproved": false,
+    "readyForApplicationImport": false
+  },
+  "exceptions": [
+    {
+      "code": "paint_style_roles_require_review",
+      "count": 2,
+      "detail": "All detected body image fills were converted to numeric colour stops. Assign background versus patient-series roles before rendering."
+    },
+    {
+      "code": "score_and_series_bindings_require_review",
+      "count": 4
+    },
+    {
+      "code": "table_cell_semantics_require_review",
+      "count": 6,
+      "unresolvedCells": 120
+    },
+    {
+      "code": "interpretation_and_variant_rules_require_review"
+    }
+  ]
+}

@@ -1,0 +1,1190 @@
+{
+ "schema_version": "2.3.0-clean-export.4",
+ "assessment_id": "athletic-coping-skills-inventory-acsi-28--7f2fb9189c36",
+ "definition_version": "1.0.0-draft.6",
+ "status": "draft",
+ "cleaned_on": "2026-11-13",
+ "assessment": {
+  "name": "Athletic Coping Skills Inventory (ACSI-28)",
+  "short_name": null,
+  "language": "en",
+  "description": "The Athletic Coping Skills Inventory-28 (ACSI-28) is a 28-item self-report measure designed to assess the psychological skills and coping strategies employed by athletes in competitive sports settings (Smith et al., 1995). The ACSI-28 can be used with adolescents or adults (ages 14+).",
+  "respondent_type": null,
+  "source_provider": "NovoPsych",
+  "reference_period": {
+   "structured": null,
+   "instruction_claims": [],
+   "status": "requires_review"
+  },
+  "target_population": null,
+  "intended_uses": null,
+  "estimated_administration_minutes": null
+ },
+ "administration": {
+  "instructions": "The following are statements that athletes have used to describe their experiences. Please read each statement carefully, and then recall as accurately as possible how often you experience the same thing. There are no right or wrong answers. Please indicate how often you have these experiences when playing sport.",
+  "instructions_source": {
+   "url": null,
+   "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+   "page": null,
+   "bbox": null,
+   "method": "pdf_layout"
+  },
+  "item_order": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q6",
+   "Q7",
+   "Q8",
+   "Q9",
+   "Q10",
+   "Q11",
+   "Q12",
+   "Q13",
+   "Q14",
+   "Q15",
+   "Q16",
+   "Q17",
+   "Q18",
+   "Q19",
+   "Q20",
+   "Q21",
+   "Q22",
+   "Q23",
+   "Q24",
+   "Q25",
+   "Q26",
+   "Q27",
+   "Q28"
+  ],
+  "selected_form_url": null,
+  "form_scope": "One selected archived form. Other editions and related forms remain separate source assets.",
+  "additional_instructions_status": "Review source PDF for section stems, branching, free-text fields and administration details."
+ },
+ "questionnaire": {
+  "$file": "assessment.questionnaire.json"
+ },
+ "scoring": {
+  "status": "source_arithmetic_draft",
+  "enabled": false,
+  "disabled_reason": "Review draft: source arithmetic is extracted and tested, but clinical publication remains disabled.",
+  "rules": [
+   {
+    "id": "source_draft_1",
+    "label": "Coping with Adversity",
+    "item_ids": [
+     "Q5",
+     "Q17",
+     "Q21",
+     "Q24"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Coping with Adversity (Items 5, 17, 21, 24):",
+      "y": 331.5,
+      "url": null,
+      "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 12.0
+   },
+   {
+    "id": "source_draft_2",
+    "label": "Peaking Under Pressure",
+    "item_ids": [
+     "Q6",
+     "Q18",
+     "Q22",
+     "Q28"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Peaking Under Pressure (Items 6, 18, 22, 28):",
+      "y": 353.2,
+      "url": null,
+      "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 12.0
+   },
+   {
+    "id": "source_draft_3",
+    "label": "Goal Setting / Mental Preparation",
+    "item_ids": [
+     "Q1",
+     "Q8",
+     "Q13",
+     "Q20"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Goal Setting / Mental Preparation (Items 1, 8, 13, 20):",
+      "y": 375.0,
+      "url": null,
+      "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 12.0
+   },
+   {
+    "id": "source_draft_4",
+    "label": "Concentration",
+    "item_ids": [
+     "Q4",
+     "Q11",
+     "Q16",
+     "Q25"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Concentration (Items 4, 11, 16, 25):",
+      "y": 396.8,
+      "url": null,
+      "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 12.0
+   },
+   {
+    "id": "source_draft_5",
+    "label": "Freedom from Worry",
+    "item_ids": [
+     "Q7",
+     "Q12",
+     "Q19",
+     "Q23"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Freedom from Worry (Items 7, 12, 19, 23):",
+      "y": 418.5,
+      "url": null,
+      "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 12.0
+   },
+   {
+    "id": "source_draft_6",
+    "label": "Confidence and Achievement Motivation",
+    "item_ids": [
+     "Q2",
+     "Q9",
+     "Q14",
+     "Q26"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Confidence and Achievement Motivation (Items 2, 9, 14, 26):",
+      "y": 440.2,
+      "url": null,
+      "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 12.0
+   },
+   {
+    "id": "source_draft_7",
+    "label": "Coachability",
+    "item_ids": [
+     "Q3",
+     "Q10",
+     "Q15",
+     "Q27"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "pdf_caption": {
+      "page": 2,
+      "text": "Coachability (Items 3, 10, 15, 27):",
+      "y": 462.0,
+      "url": null,
+      "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+      "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+     },
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 12.0
+   },
+   {
+    "id": "source_draft_8",
+    "label": "Total raw score",
+    "item_ids": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12",
+     "Q13",
+     "Q14",
+     "Q15",
+     "Q16",
+     "Q17",
+     "Q18",
+     "Q19",
+     "Q20",
+     "Q21",
+     "Q22",
+     "Q23",
+     "Q24",
+     "Q25",
+     "Q26",
+     "Q27",
+     "Q28"
+    ],
+    "method": "sum",
+    "value_field": "printed_value",
+    "multiplier": 1,
+    "severity_bands": [],
+    "status": "source_arithmetic_draft",
+    "enabled": false,
+    "source": {
+     "questionnaire_url": null,
+     "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+     "page_url": null,
+     "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+     "method": "reviewed_saved_source_membership_and_arithmetic",
+     "context_section_ids": [
+      "C4",
+      "C6",
+      "C9",
+      "LIVE_C14",
+      "LIVE_C19",
+      "LIVE_C21"
+     ],
+     "retained_evidence": "Full source text in context_sections and source_documents; draft implementation requires reviewer sign-off."
+    },
+    "missing_item_policy": "withhold_if_required_answer_or_eligibility_is_unknown",
+    "minimum": 0.0,
+    "maximum": 84.0
+   }
+  ],
+  "coverage": "Source-bound draft arithmetic/protocol. Norms, partial-answer exceptions, additional algorithms and clinical interpretation remain subject to the explicit remaining_work list.",
+  "rules_provenance": {
+   "questionnaire_url": null,
+   "questionnaire_sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+   "page_url": null,
+   "page_sha256": "6fe736b4b693391d24dbac611d3f67f4463d69baeac65f4fe543c2cfaf70e8c6",
+   "method": "reviewed_saved_source_membership_and_arithmetic"
+  },
+  "source_rule_excerpts": [
+   "Average (17th to 83rd percentile): Indicates a typical level of psychological skills and coping strategies compared to other athletes.",
+   "For clinical interpretation, ACSI-28 scores are typically evaluated dimensionally, with higher average scores indicating greater psychological coping skills in specific domains. Based on the combined sample ( N = 1,024; 594 male and 433 female varsity athletes) from Smith et al. (1995), the following means and standard deviations provide reference points for interpretation:"
+  ],
+  "missing_item_policy": {
+   "origin": "application_policy",
+   "action": "withhold_result_if_any_required_response_is_missing",
+   "note": "Conservative prototype policy, not a claim that the source prohibits prorating. Source exceptions require an explicit reviewed rule."
+  },
+  "percentile_rules": [],
+  "percentile_status": "not_implemented_no_unverified_lookup",
+  "limitations": [
+   "Rules do not establish a diagnosis.",
+   "No normative percentile is inferred from sample results or approximate distribution data."
+  ],
+  "source_guidance": [
+   {
+    "title": "ACSI-28 Scoring & Interpretation",
+    "text": "The Athletic Coping Skills Inventory (ACSI-28) scores consist of a total score (between 0 and 84) and scores for each of the seven subscales (raw score between 0 and 12). Higher scores represent higher levels of psychological skills and coping strategies. Scores are provided for the following subscales of the ACSI-28:\n1. Coping with Adversity (Items 5, 17, 21, and 24) – assesses the ability to remain positive and enthusiastic during competition despite unfavourable situations, maintaining emotional control and bouncing back quickly from mistakes and setbacks.\n2. Peaking Under Pressure (Items 6, 18, 22, and 28) – measures how athletes respond to competitive pressure situations, including whether they perceive pressure as a challenge rather than a threat and their ability to perform well under pressure.\n3. Goal Setting/Mental Preparation (Items 1, 8, 13, and 20) – evaluates the athlete’s tendency to set specific performance goals, plan, and mentally prepare for competition.\n4. Concentration (Items 4, 11, 16, and 25) – assesses the ability to focus on the task at hand and maintain attention during both training and competition, even when faced with distractions or adverse situations.\n5. Freedom from Worry (Items 7, 12, 19, and 23, all reverse scored) – measures the tendency to avoid putting pressure on oneself through excessive worry about performing poorly, making mistakes, or concern about others’ perceptions.\n6. Confidence and Achievement Motivation (Items 2, 9, 14, and 26) – evaluates confidence levels and motivation, particularly the tendency to give 100% during practice and competition and work consistently to improve skills.\n7. Coachability (Items 3R, 10R, 15, and 27) – assesses openness to instruction, willingness to learn from coaches, and the ability to accept constructive criticism without taking it personally or becoming upset.\n\nIn addition, scores are presented as percentile ranks, where a percentile of 50 indicates the typical score compared to 1,027 male and female athletes (Smith et al., 1995). These percentile ranks are used to derive descriptive categories that aid in clinical interpretation. The descriptive categories for each subscale and the total score are:\nLow (16th percentile or below): Indicates significantly less psychological skills and coping strategies than most other athletes.\nAverage (17th to 83rd percentile): Indicates a typical level of psychological skills and coping strategies compared to other athletes.\nHigh (84th percentile or above): Indicates significantly more psychological skills and coping strategies than other athletes.\n\nOn first administration a plot is presented displaying the ACSI-28 total and the subscale percentiles. The percentiles are presented with the qualitative descriptors in the background for ease of interpretation. When administered on multiple occasions, a longitudinal plot is displayed showing the subscale percentiles over time. When ACSI-28 scores are available from multiple timepoints, changes in scores can provide valuable information about the effectiveness of interventions or developmental changes in psychological skills and coping strategies. For comparative interpretation, changes of at least 0.5 standard deviations in raw scores are considered clinically meaningful (the minimally important difference) (Norman et al., 2003; Turner et al., 2010). When interpreting changes, attention should be paid to both the total score and the patterns of change across subscales.\n\n",
+    "source_url": null
+   },
+   {
+    "title": "Is a higher ACSI-28 score always better?",
+    "text": "Generally yes, as higher scores indicate better psychological coping skills. However, extremely high scores might suggest overconfidence or lack of self-awareness about areas needing improvement. Balance across subscales is often more important than total score.\n",
+    "source_url": null
+   },
+   {
+    "title": "How can athletes improve their ACSI-28 scores?",
+    "text": "Coping skills can be developed through mental skills training, including goal-setting exercises, imagery practice, concentration training, and confidence-building activities.\n",
+    "source_url": null
+   }
+  ],
+  "source_tables": [],
+  "unparsed_pdf_expressions": [
+   {
+    "page": 2,
+    "text": "Coping with Adversity (Items 5, 17, 21, 24):",
+    "y": 331.5,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Peaking Under Pressure (Items 6, 18, 22, 28):",
+    "y": 353.2,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Goal Setting / Mental Preparation (Items 1, 8, 13, 20):",
+    "y": 375.0,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Concentration (Items 4, 11, 16, 25):",
+    "y": 396.8,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Freedom from Worry (Items 7, 12, 19, 23):",
+    "y": 418.5,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Confidence and Achievement Motivation (Items 2, 9, 14, 26):",
+    "y": 440.2,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Coachability (Items 3, 10, 15, 27):",
+    "y": 462.0,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   },
+   {
+    "page": 2,
+    "text": "Total ACSI-28 Score (sum of all 7 subscale scores)",
+    "y": 495.0,
+    "url": null,
+    "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+    "reason": "Caption was not automatically parsed; retain it for review and check rules for manually implemented equivalents."
+   }
+  ],
+  "calculation_status": "draft_rules_available",
+  "reverse_scoring_policy": "Printed values may already encode reverse scoring. Evaluate each rule once using its value_field; never reverse again solely because reverse_scored is true.",
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review."
+  ],
+  "implementation_status": {
+   "raw_calculation": "draft_implemented",
+   "interpretation": "not_compiled",
+   "normative_conversion": "not_implemented",
+   "clinical_use": "not_approved"
+  },
+  "runtime_module": "definition_runtime.py"
+ },
+ "context_sections": {
+  "$file": "assessment.context_sections.json"
+ },
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Smith, R. E., Schutz, R. W., Smoll, F. L., & Ptacek, J. T. (1995). Development and validation of a multidimensional measure of sport-specific psychological skills: The Athletic Coping Skills Inventory-28. Journal of Sport and Exercise Psychology , 17, 379-398. https://doi.org/10.1123/jsep.17.4.379",
+   "source_url": null
+  },
+  {
+   "id": "R2",
+   "citation": "Barrick, M. R., & Mount, M. K. (1996). Effects of impression management and self-deception on the predictive validity of personality constructs. Journal of Applied Psychology , 81, 261–272. https://psycnet.apa.org/doi/10.1037/0021-9010.81.3.261\nBelem, I. C., Caruzzo, N. M., do Nascimento Junior, J. R. A., Vieira, J. L. L., & Vieira, L. F. (2014). Impact of coping strategies on resilience of elite beach volleyball athletes. Revista Brasileira de Cineantropometria e Desempenho Humano , 16(4), 447-455. https://doi.org/10.5007/1980-0037.2014v16n4p447\nBourgeois, A. E., Loss, R., Meyers, M. C., & LeUnes, A. D. (2003). The athletic coping skills inventory: Relationship with impression management and self-deception aspects of socially desirable responding. Psychology of Sport and Exercise , 4, 71-79. https://doi.org/10.1016/S1469-0292(01)00024-3\nChristensen, D. S., & Smith, R. E. (2018). Leveling the playing field: Can psychological coping resources reduce the influence of physical and technical skills on athletic performance? Anxiety, Stress, & Coping , 31(6), 626-638. https://doi.org/10.1080/10615806.2018.1506646\nKimbrough, S., DeBolt, L., & Balkin, R. S. (2007). Use of the athletic coping skills inventory for prediction of performance in collegiate baseball. The Sport Journal , 10(1).\nNorman, G. R., Sloan, J. A., & Wyrwich, K. W. (2003). Interpretation of changes in health-related quality of life: The remarkable universality of half a standard deviation. Medical Care , 41(5), 582–592. https://doi.org/10.1097/01.MLR.0000062554.74615.4C\nÖzcan, V. (2021). Correlation between ability to cope with sporting problems and athlete engagement. OPUS International Journal of Society Research , 18(44), 7435-7450. https://doi.org/10.26466/opus.969885\nPereira, F. S. A., Passos, M. A., Pesca, A. D., & Cruz, R. M. (2020). Coping measurement in the sports context: A systematic review. Revista de Psicología del Deporte , 29(2), 35-46.\nSmith, R. E., & Smoll, F. L. (1991). Behavioral research and intervention in youth sports. Behavior Therapy , 22 (3), 329–344. https://doi.org/10.1016/s0005-7894(05)80370-3\nTurner, D., Schünemann, H. J., Griffith, L. E., Beaton, D. E., Griffiths, A. M., Critch, J. N., & Guyatt, G. H. (2010). The minimal detectable change cannot reliably replace the minimal important difference. Journal of Clinical Epidemiology , 63(1), 28–36. https://doi.org/10.1016/j.jclinepi.2009.01.024\nVerkasalo, M., & Lindeman, M. (1994). Personal ideals and socially desirable responding. European Journal of Personality , 8, 385–393. https://doi.org/10.1002/per.2410080504\nYoung, P. R., & Knight, E. L. (2014). Use of psychological skills by risk sport athletes. Journal of Human Performance in Extreme Environments , 11(2), Article 2. https://doi.org/ 10.7771/2327-2937.1061",
+   "source_url": null
+  }
+ ],
+ "tables": [],
+ "assets": [
+  {
+   "id": "A1",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "'Back to Assessments' navigation button",
+   "source_url": null,
+   "sha256": "165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/165068b7dd8bf14f565c405475d7302ed4fdc95a067d0533998c77ef48a40915.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A2",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Athletic Coping Skills Inventory (ACSI-28) PDF",
+   "source_url": null,
+   "sha256": "c5e4b9ace0b4a0a0573ec4b004dc7ce76c112bcfcafa4fc31383e9a30fc13e07",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/c5e4b9ace0b4a0a0573ec4b004dc7ce76c112bcfcafa4fc31383e9a30fc13e07.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "References",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A3",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "14d53cf36fdf2de8eff460132e5fb70b3982bde0cbb36a1509db525fd3255838",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/14d53cf36fdf2de8eff460132e5fb70b3982bde0cbb36a1509db525fd3255838.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Download ACSI-28 PDF",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A4",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "bca74d6307a16c41d824d4647f9d6f636729ece39fc14d087198f12ba800312c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/bca74d6307a16c41d824d4647f9d6f636729ece39fc14d087198f12ba800312c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACSI-28 Sample Results",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A5",
+   "kind": "images",
+   "role": "reference_material",
+   "title": "Picture of Dr David Hegarty",
+   "source_url": null,
+   "sha256": "7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/7ace6563be2486eaaab7f0727cbc69537dfc8cabc2c284db3053f68e8f541c2c.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Scale information composed by:",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A6",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "66b66608d8fd7bff4a7645e8fa125f318738b8208eb720ffcca92e65a44b71a4",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/66b66608d8fd7bff4a7645e8fa125f318738b8208eb720ffcca92e65a44b71a4.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACSI-28 Overview",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A7",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "b534fa93d604f5f8161337e2b7c5af149eac5f0eb920b45c6e3622d441a68844",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/b534fa93d604f5f8161337e2b7c5af149eac5f0eb920b45c6e3622d441a68844.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACSI-28 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A8",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "774cb447d7d713150ca0b453359ac9e1b0932792e9cad0fab2d92744fb873b63",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/774cb447d7d713150ca0b453359ac9e1b0932792e9cad0fab2d92744fb873b63.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACSI-28 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A9",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "6c6caf34a1d223745bbbf18ef26cfee7a047daca2f17b7d862580604de1f62ce",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/6c6caf34a1d223745bbbf18ef26cfee7a047daca2f17b7d862580604de1f62ce.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "ACSI-28 Scoring & Interpretation",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A10",
+   "kind": "images",
+   "role": "reference_material",
+   "title": null,
+   "source_url": null,
+   "sha256": "28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb",
+   "mime_type": "image/png",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/28deca6f657e1ca704529efda51af6da4fea5e6fa1f510ec49d99511913faecb.png",
+   "status": "saved",
+   "caption": "",
+   "source_section": "Assess your patients with the Adult ADHD Self-Report Scale u sing a NovoPsych account",
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A11",
+   "kind": "documents",
+   "role": "selected_questionnaire",
+   "title": "Download ACSI-28 PDF",
+   "source_url": null,
+   "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A12",
+   "kind": "documents",
+   "role": "reference_material",
+   "title": "ACSI-28 Review",
+   "source_url": null,
+   "sha256": null,
+   "mime_type": null,
+   "archive_path": null,
+   "status": "unavailable",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "A13",
+   "kind": "documents",
+   "role": "sample_report_not_runtime_context",
+   "title": "ACSI-28 Sample Results",
+   "source_url": null,
+   "sha256": "94992956c164339c4c2c17931abbf62736aaf5226630faff44bc0cd571ab813e",
+   "mime_type": "application/pdf",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/94992956c164339c4c2c17931abbf62736aaf5226630faff44bc0cd571ab813e.pdf",
+   "status": "processed",
+   "caption": null,
+   "source_section": null,
+   "runtime_context_allowed": false
+  },
+  {
+   "id": "LIVE_A26",
+   "kind": "documents",
+   "role": "reference_material",
+   "source_url": null,
+   "sha256": "b9e4119586ef2986f0a5acb535dc781e7e1a7ae8131239d41b414d2c4732cb9d",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/b9e4119586ef2986f0a5acb535dc781e7e1a7ae8131239d41b414d2c4732cb9d.pdf",
+   "mime_type": "application/pdf",
+   "status": "saved",
+   "runtime_context_allowed": false
+  }
+ ],
+ "conversation_policy": {
+  "status": "draft_disabled_pending_review",
+  "preserve_question_wording": true,
+  "require_answer_confirmation": true,
+  "infer_unanswered_items": false,
+  "calculate_scores_in_backend": true,
+  "treat_source_as_data_not_instructions": true,
+  "context_allowlist": [
+   "assessment",
+   "administration",
+   "questionnaire",
+   "context_sections"
+  ],
+  "send_asset_bytes_or_sample_reports": false
+ },
+ "review": {
+  "ready_for_clinical_use": false,
+  "questionnaire_status": "recovered_needs_review",
+  "questionnaire_completeness_verified": false,
+  "complete_capture_verified": false,
+  "independent_clinical_review_completed": false,
+  "issues": [
+   {
+    "code": "selection_and_branching_need_review",
+    "detail": "Single/multiple selection, skip logic and section-specific stems require review before runtime use."
+   },
+   {
+    "code": "draft_scoring_review_pending",
+    "detail": "Structured draft rules are present. Source-specific scoring coverage and independent review remain incomplete; scoring is disabled."
+   },
+   {
+    "code": "independent_review_pending",
+    "detail": "Layout recovery and automated checks do not establish complete capture or clinical correctness."
+   },
+   {
+    "code": "original_capture_gaps",
+    "detail": "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately."
+   }
+  ],
+  "previous_review_notes": [],
+  "response_structure_complete": true,
+  "unresolved_response_item_ids": [],
+  "required_input_widgets": [
+   "choice"
+  ],
+  "option_refresh": {
+   "corrected_cells_or_fields": 0,
+   "unrenderable_option_count": 0,
+   "numeric_only_options_are_not_missing": true,
+   "selection_modes_still_needing_review": 28
+  },
+  "definition_repair": {
+   "status": "source_implementation_draft",
+   "content_repairs": [],
+   "scoring_rule_count": 8,
+   "remaining_work": [
+    "Normative conversions and clinical publication require separate source-specific review."
+   ],
+   "clinical_approval": false
+  }
+ },
+ "rights": {
+  "access": "public_page",
+  "reproduction_permission": "not_verified",
+  "note": "Public retrieval does not establish licensing or reuse rights."
+ },
+ "source_documents": [
+  {
+   "id": "selected_pdf",
+   "role": "questionnaire_source",
+   "url": null,
+   "sha256": "e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/assessment-exports/cleaned-assessments-20261112/assets/e6c09b051f8b195d2bb8502549b572e2bbd2ec21d7848df436f9ff8075405663.pdf",
+   "runtime_context_allowed": false,
+   "page_count": 2,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_2",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "94992956c164339c4c2c17931abbf62736aaf5226630faff44bc0cd571ab813e",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/94992956c164339c4c2c17931abbf62736aaf5226630faff44bc0cd571ab813e.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf"
+   ],
+   "page_count": 5,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  },
+  {
+   "id": "live_pdf_3",
+   "role": "supplemental_source_document",
+   "url": null,
+   "sha256": "b9e4119586ef2986f0a5acb535dc781e7e1a7ae8131239d41b414d2c4732cb9d",
+   "archive_path": "/home/chandrikak/Pod_Dev/assessment-url-preview/artifacts/live-refresh-20261113/assets/b9e4119586ef2986f0a5acb535dc781e7e1a7ae8131239d41b414d2c4732cb9d.pdf",
+   "runtime_context_allowed": false,
+   "source_titles": [
+    "linked_pdf",
+    "ACSI-28 Review"
+   ],
+   "page_count": 18,
+   "coverage_note": "Page text includes printed instructions, notes and scoring text. OCR requires review; PDF images/diagrams are preserved in the source asset, not interpreted as validated data."
+  }
+ ],
+ "reporting": {
+  "$file": "assessment.reporting.json"
+ },
+ "verification": {
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-18",
+  "definition_version": "1.0.0-draft.6",
+  "scoring_content_sha256": "beffa178aa983e188e9c9b29871c46d130374922a56fbe95b6d1eddc745a3caf",
+  "status": "technical_checks_passed",
+  "scope": "AI-assisted technical checks. Definition-derived range tests are distinct from selected primary-source examples. No human clinical sign-off.",
+  "questionnaire": {
+   "status": "pending_independent_review",
+   "complete_wording_review": false
+  },
+  "rules": [
+   {
+    "rule_id": "source_draft_1",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_5",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_6",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_7",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_8",
+    "technical_status": "passed",
+    "source_check": "not_checked",
+    "source_scope": null,
+    "source_ids": [],
+    "example_case_ids": [],
+    "example_result_counts": {
+     "passed": 0,
+     "known_gap_confirmed": 0,
+     "failed": 0
+    },
+    "clinical_approved": false
+   }
+  ],
+  "interpretation": [
+   {
+    "rule_id": "source_draft_1",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_2",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_3",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_4",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_5",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_6",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_7",
+    "status": "not_encoded",
+    "clinical_approved": false
+   },
+   {
+    "rule_id": "source_draft_8",
+    "status": "not_encoded",
+    "clinical_approved": false
+   }
+  ],
+  "percentiles": {
+   "status": "not_implemented",
+   "clinical_approved": false
+  },
+  "protocol": {
+   "status": "not_encoded",
+   "clinical_approved": false
+  },
+  "source_references": [],
+  "evidence_build": {
+   "definition_runtime.py": "97a981e2ad8f2f4f4df762514e8d34f30c137bb37f6b020e6ad90d206f37dc5a",
+   "audit_scoring.py": "fbe97afa8a7a1c7853d80723cf5529ae8a2873311a8c3bea0a9ea0412b07927f",
+   "build_scoring_verification.py": "a46eb4cd60a2d2a228fc54621bf2190523f35c19d8bba73b74bcf40f5f9f4529",
+   "scoring_benchmarks.json": "1b3261d314dd77f2d37d2827f6fd2263e4eebd0dfb56afb880d42299f015beb1"
+  },
+  "remaining_work": [
+   "Normative conversions and clinical publication require separate source-specific review.",
+   "Single/multiple selection, skip logic and section-specific stems require review before runtime use.",
+   "Source scoring guidance is retained, but executable rules and item weights are not verified.",
+   "Layout recovery and automated checks do not establish complete capture or clinical correctness.",
+   "Original capture gaps remain in provenance; new questionnaire recoveries are recorded separately.",
+   "No independent primary-source benchmark was added for this assessment in this pass."
+  ],
+  "clinical_approval": {
+   "approved": false,
+   "reviewer": null,
+   "reviewed_on": null,
+   "approved_definition_version": null,
+   "approved_scoring_sha256": null
+  },
+  "runtime_policy": {
+   "clinical_scoring_enabled": false,
+   "draft_label": "Draft score — not clinically validated",
+   "draft_requires_explicit_opt_in": true,
+   "missing_rule_result": "unavailable",
+   "reject_stale_verification": true,
+   "source_links_are_evidence_only": true
+  }
+ },
+ "provenance": {
+  "source_url": null,
+  "extracted_at": "2026-11-10T10:31:14.615574+00:00",
+  "raw_extraction_sha256": "4dcd57d36b3888bbab52ac3570df0e2305e3b771e44f961e056728ca61c1f2a7",
+  "original_source_links": [
+   {
+    "url": null,
+    "title": ""
+   },
+   {
+    "url": null,
+    "title": "Sport"
+   },
+   {
+    "url": null,
+    "title": "Administer Now"
+   },
+   {
+    "url": "https://doi.org/10.1123/jsep.17.4.379",
+    "title": "https://doi.org/10.1123/jsep.17.4.379"
+   },
+   {
+    "url": "https://psycnet.apa.org/doi/10.1037/0021-9010.81.3.261",
+    "title": "https://psycnet.apa.org/doi/10.1037/0021-9010.81.3.261"
+   },
+   {
+    "url": "https://doi.org/10.5007/1980-0037.2014v16n4p447",
+    "title": "https://doi.org/10.5007/1980-0037.2014v16n4p447"
+   },
+   {
+    "url": "https://doi.org/10.1016/S1469-0292(01)00024-3",
+    "title": "https://doi.org/10.1016/S1469-0292(01)00024-3"
+   },
+   {
+    "url": "https://doi.org/10.1080/10615806.2018.1506646",
+    "title": "https://doi.org/10.1080/10615806.2018.1506646"
+   },
+   {
+    "url": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C",
+    "title": "https://doi.org/10.1097/01.MLR.0000062554.74615.4C"
+   },
+   {
+    "url": "https://doi.org/10.26466/opus.969885",
+    "title": "https://doi.org/10.26466/opus.969885"
+   },
+   {
+    "url": "https://doi.org/10.1016/s0005-7894(05)80370-3",
+    "title": "https://doi.org/10.1016/s0005-7894(05)80370-3"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.jclinepi.2009.01.024",
+    "title": "https://doi.org/10.1016/j.jclinepi.2009.01.024"
+   },
+   {
+    "url": "https://doi.org/10.1002/per.2410080504",
+    "title": "https://doi.org/10.1002/per.2410080504"
+   },
+   {
+    "url": "https://doi.org/10.7771/2327-2937.1061",
+    "title": "https://doi.org/ 10.7771/2327-2937.1061"
+   },
+   {
+    "url": null,
+    "title": "Download ACSI-28 PDF"
+   },
+   {
+    "url": null,
+    "title": "ACSI-28 Sample Results"
+   },
+   {
+    "url": null,
+    "title": "ACSI-28 Review"
+   },
+   {
+    "url": null,
+    "title": "Dr David Hegarty"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Read More »"
+   },
+   {
+    "url": null,
+    "title": "Related NovoNote Clinical Documents"
+   },
+   {
+    "url": null,
+    "title": "Summary of Conversation (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "Comprehensive Psychology Note (Session Note)"
+   },
+   {
+    "url": null,
+    "title": "professional-access"
+   }
+  ]
+ },
+ "report_configuration": {
+  "$file": "assessment.report_configuration.json"
+ }
+}
